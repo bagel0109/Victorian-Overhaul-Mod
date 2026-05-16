@@ -1,0 +1,3137 @@
+﻿l_english:
+
+ ####
+
+ dyn_c_kmc_absolutist_monarchy:0 "Kingdom of Kamchatka"
+
+ dyn_c_kmc_monarchy:0 "Kingdom of Kamchatka"
+
+ dyn_c_kmc_dictatorship:0 "Kamchatkan Empire"
+
+ dyn_c_kmc_republic:0 "Republic of Kamchatka"
+
+ dyn_c_kmc_communist:0 "People's State of Kamchatka"
+
+ dyn_c_kmc_communistvote:0 "People's Republic of Kamchatka"
+
+ dyn_c_kmc_theocratic:0 "Holy State of Kamchatka"
+
+ dyn_c_kmc_theocraticvote:0 "Orthodox Republic of Kamchatka"
+
+ dyn_c_kmc_anarchy:0 "Free Communes of Kamchatka"
+
+ dyn_c_tns_absolutist_monarchy:0 "Kingdom of Tungus"
+
+ dyn_c_tns_monarchy:0 "Kingdom of Tungus"
+ 
+ dyn_c_tns_dictatorship:0 "Loyal State of Tungus"
+ 
+ dyn_c_tns_republic:0 "Tungusian Union"
+ 
+ dyn_c_tns_communist:0 "Tungusian Communist Federation"
+ 
+ dyn_c_tns_communistvote:0 "Red Republic of Tungus"
+ 
+ dyn_c_tns_theocratic:0 "Holy State of Tungus"
+ 
+ dyn_c_tns_theocraticvote:0 "Holy Congress of Tungus"
+ 
+ dyn_c_tns_anarchy:0 "Tungus Collectives"
+ 
+ dyn_c_TNS_puppet_ABK:0 "Abkhaz Tungus"
+ 
+ dyn_c_TNS_puppet_ABU:0 "Trucial Tungus"
+ 
+ dyn_c_TNS_puppet_ACE:0 "Acehnese Tungus"
+ 
+ dyn_c_TNS_puppet_ACH:0 "Acholi Tungus"
+ 
+ dyn_c_TNS_puppet_AFG:0 "Afghan Tungus"
+ 
+ dyn_c_TNS_puppet_ALB:0 "Albanian Tungus"
+ 
+ dyn_c_TNS_puppet_ALD:0 "Algerian Tungus"
+ 
+ dyn_c_TNS_puppet_AOT:0 "Aotearoan Tungus"
+ 
+ dyn_c_TNS_puppet_ASA:0 "New African Tungus"
+ 
+ dyn_c_TNS_puppet_AUS:0 "Austrian"
+ 
+ dyn_c_TNS_puppet_AWA:0 "Awadhi"
+ 
+ dyn_c_TNS_puppet_AMZ:0 "Amazonian Tungus"
+ 
+ dyn_c_TNS_puppet_ANL:0 "Andalusian Tungus"
+ 
+ dyn_c_TNS_puppet_AGJ:0 "New Angolan Tungus"
+ 
+ dyn_c_TNS_puppet_ANH:0 "Anhaltian Tungus"
+ 
+ dyn_c_TNS_puppet_ANK:0 "Ankole Tungus"
+ 
+ dyn_c_TNS_puppet_ARA:0 "Arab Tungus"
+ 
+ dyn_c_TNS_puppet_ARG:0 "Argentinian Tungus"
+ 
+ dyn_c_TNS_puppet_ARM:0 "Armenian Tungus"
+ 
+ dyn_c_TNS_puppet_ASH:0 "Ashanti Tungus"
+ 
+ dyn_c_TNS_puppet_AWS:0 "Aussan Tungus"
+ 
+ dyn_c_TNS_puppet_AST:0 "Australian Tungus"
+ 
+ dyn_c_TNS_puppet_AZB:0 "Azerbaijani Tungus"
+ 
+ dyn_c_TNS_puppet_BAB:0 "Babylonian Tungus"
+ 
+ dyn_c_TNS_puppet_BAD:0 "Baden Tungus"
+ 
+ dyn_c_TNS_puppet_BAH:0 "Bahamian Tungus"
+ 
+ dyn_c_TNS_puppet_BAL:0 "Balinese Tungus"
+ 
+ dyn_c_TNS_puppet_BAS:0 "Bastar Tungus"
+ 
+ dyn_c_TNS_puppet_BAV:0 "Bavarian Tungus"
+ 
+ dyn_c_TNS_puppet_BEL:0 "Belgian Tungus"
+ 
+ dyn_c_TNS_puppet_BEN:0 "Benin Tungus"
+ 
+ dyn_c_TNS_puppet_BER:0 "Barodan Tungus"
+ 
+ dyn_c_TNS_puppet_BGI:0 "Bagirmi Tungus"
+ 
+ dyn_c_TNS_puppet_BGL:0 "Bengali Tungus"
+ 
+ dyn_c_TNS_puppet_BGM:0 "Begemder Tungus"
+ 
+ dyn_c_TNS_puppet_BHO:0 "Bhopali Tungus"
+ 
+ dyn_c_TNS_puppet_BHU:0 "Bhutanese Tungus"
+ 
+ dyn_c_TNS_puppet_BIC:0 "East India Tungus"
+ 
+ dyn_c_TNS_puppet_BIK:0 "Bikaneri Tungus"
+ 
+ dyn_c_TNS_puppet_BLG:0 "Bulungan Tungus"
+ 
+ dyn_c_TNS_puppet_BNY:0 "Bunyoro Tungus"
+ 
+ dyn_c_TNS_puppet_BOH:0 "Bohemian Tungus"
+ 
+ dyn_c_TNS_puppet_BOL:0 "Bolivian Tungus"
+ 
+ dyn_c_TNS_puppet_BOR:0 "Bornu Tungus"
+ 
+ dyn_c_TNS_puppet_BOS:0 "Bosnian Tungus"
+ 
+ dyn_c_TNS_puppet_BRA:0 "Brunswickian Tungus"
+ 
+ dyn_c_TNS_puppet_BRD:0 "Burundi Tungus"
+ 
+ dyn_c_TNS_puppet_BRE:0 "Bremian Tungus"
+ 
+ dyn_c_TNS_puppet_BRI:0 "Breton Tungus"
+ 
+ dyn_c_TNS_puppet_BRN:0 "Borana Tungus"
+ 
+ dyn_c_TNS_puppet_BRU:0 "Brunei Tungus"
+ 
+ dyn_c_TNS_puppet_BRZ:0 "Brazilian Tungus"
+ 
+ dyn_c_TNS_puppet_BUG:0 "Bugandan Tungus"
+ 
+ dyn_c_TNS_puppet_BUK:0 "Bukharan Tungus"
+ 
+ dyn_c_TNS_puppet_BUL:0 "Bulgarian Tungus"
+ 
+ dyn_c_TNS_puppet_BUN:0 "Orchhan Tungus"
+ 
+ dyn_c_TNS_puppet_BUR:0 "Burmese Tungus"
+ 
+ dyn_c_TNS_puppet_BYE:0 "Byelorussian Tungus"
+ 
+ dyn_c_TNS_puppet_BYZ:0 "Byzantine Tungus"
+ 
+ dyn_c_TNS_puppet_CAL:0 "Californian Tungus"
+ 
+ dyn_c_TNS_puppet_CAM:0 "Cambodian Tungus"
+ 
+ dyn_c_TNS_puppet_CAN:0 "Canadian Tungus"
+ 
+ dyn_c_TNS_puppet_CAS:0 "Castilian Tungus"
+ 
+ dyn_c_TNS_puppet_CAT:0 "Catalonian Tungus"
+ 
+ dyn_c_TNS_puppet_CHE:0 "Cherokee Tungus"
+ 
+ dyn_c_TNS_puppet_CHI:0 "Chinese Tungus"
+ 
+ dyn_c_TNS_puppet_CHL:0 "Chilean Tungus"
+ 
+ dyn_c_TNS_puppet_CHP:0 "Champassakan Tungus"
+ 
+ dyn_c_TNS_puppet_CLM:0 "Colombian Tungus"
+ 
+ dyn_c_TNS_puppet_CMI:0 "Chiang Maian Tungus"
+ 
+ dyn_c_TNS_puppet_CNG:0 "Congolese Tungus"
+ 
+ dyn_c_TNS_puppet_CNW:0 "Cornish Tungus"
+ 
+ dyn_c_TNS_puppet_COB:0 "Saxon Tungus"
+ 
+ dyn_c_TNS_puppet_COL:0 "Columbian Tungus"
+ 
+ dyn_c_TNS_puppet_COS:0 "Costa Rican Tungus"
+ 
+ dyn_c_TNS_puppet_CRE:0 "Cretian Tungus"
+ 
+ dyn_c_TNS_puppet_CRI:0 "Crimean Tungus"
+ 
+ dyn_c_TNS_puppet_CRO:0 "Croatian Tungus"
+ 
+ dyn_c_TNS_puppet_CSA:0 "Confederate Tungus"
+ 
+ dyn_c_TNS_puppet_CUB:0 "Cuban Tungus"
+ 
+ dyn_c_TNS_puppet_CYP:0 "Cypriot Tungus"
+ 
+ dyn_c_TNS_puppet_CZH:0 "Czechoslovakian Tungus"
+ 
+ dyn_c_TNS_puppet_DAG:0 "Dagestani Tungus"
+ 
+ dyn_c_TNS_puppet_DAH:0 "Dahomey Tungus"
+ 
+ dyn_c_TNS_puppet_DAI:0 "Vietnamese Tungus"
+ 
+ dyn_c_TNS_puppet_DEN:0 "Danish Tungus"
+ 
+ dyn_c_TNS_puppet_DES:0 "Mormon Tungus"
+ 
+ dyn_c_TNS_puppet_DFR:0 "Darfuri Tungus"
+ 
+ dyn_c_TNS_puppet_DOM:0 "Dominican Tungus"
+ 
+ dyn_c_TNS_puppet_DZG:0 "Danziger Tungus"
+ 
+ dyn_c_TNS_puppet_ECU:0 "Ecuadorian Tungus"
+ 
+ dyn_c_TNS_puppet_EGY:0 "Egyptian Tungus"
+ 
+ dyn_c_TNS_puppet_ELS:0 "El Salvadorian Tungus"
+ 
+ dyn_c_TNS_puppet_ENG:0 "English Tungus"
+ 
+ dyn_c_TNS_puppet_EST:0 "Estonian Tungus"
+ 
+ dyn_c_TNS_puppet_ETH:0 "Ethiopian Tungus"
+ 
+ dyn_c_TNS_puppet_FIN:0 "Finnish Tungus"
+ 
+ dyn_c_TNS_puppet_FLA:0 "Flemish Tungus"
+ 
+ dyn_c_TNS_puppet_FRA:0 "French Tungus"
+ 
+ dyn_c_TNS_puppet_FRM:0 "Frankfurter Tungus"
+ 
+ dyn_c_TNS_puppet_FSA:0 "Free American Tungus"
+ 
+ dyn_c_TNS_puppet_FTJ:0 "Futa Jallon Tungus"
+ 
+ dyn_c_TNS_puppet_FTR:0 "Futa Toro Tungus"
+ 
+ dyn_c_TNS_puppet_GAL:0 "Galician-Lodomerian Tungus"
+ 
+ dyn_c_TNS_puppet_GAM:0 "Gambian Tungus"
+ 
+ dyn_c_TNS_puppet_GBR:0 "British Tungus"
+ 
+ dyn_c_TNS_puppet_GCO:0 "Gran Colombian Tungus"
+ 
+ dyn_c_TNS_puppet_GEO:0 "Georgian Tungus"
+ 
+ dyn_c_TNS_puppet_GER:0 "German Tungus"
+ 
+ dyn_c_TNS_puppet_GGR:0 "Greater German Tungus"
+ 
+ dyn_c_TNS_puppet_GJM:0 "Gojjam Tungus"
+ 
+ dyn_c_TNS_puppet_GLC:0 "Gold Coast Tungus"
+ 
+ dyn_c_TNS_puppet_GLD:0 "Geledi Tungus"
+ 
+ dyn_c_TNS_puppet_GRE:0 "Greek Tungus"
+ 
+ dyn_c_TNS_puppet_GRI:0 "Guarani Tungus"
+ 
+ dyn_c_TNS_puppet_GRN:0 "Greenlandic Tungus"
+ 
+ dyn_c_TNS_puppet_GUA:0 "Guatemalan Tungus"
+ 
+ dyn_c_TNS_puppet_GWA:0 "Gwaliori Tungus"
+ 
+ dyn_c_TNS_puppet_HAI:0 "Haitian Tungus"
+ 
+ dyn_c_TNS_puppet_HAM:0 "Hamburgian Tungus"
+ 
+ dyn_c_TNS_puppet_HAN:0 "Hanoverian Tungus"
+ 
+ dyn_c_TNS_puppet_HAR:0 "Harari Tungus"
+ 
+ dyn_c_TNS_puppet_HAU:0 "Gobir Tungus"
+ 
+ dyn_c_TNS_puppet_HAW:0 "Hawaiian Tungus"
+ 
+ dyn_c_TNS_puppet_HDJ:0 "Hedjazi Tungus"
+ 
+ dyn_c_TNS_puppet_HEK:0 "Hessian Tungus"
+ 
+ dyn_c_TNS_puppet_HES:0 "Hessian Tungus"
+ 
+ dyn_c_TNS_puppet_HND:0 "Indian Tungus"
+ 
+ dyn_c_TNS_puppet_HOB:0 "Hobyo Tungus"
+ 
+ dyn_c_TNS_puppet_HOL:0 "Holsteinian Tungus"
+ 
+ dyn_c_TNS_puppet_HON:0 "Honduran Tungus"
+ 
+ dyn_c_TNS_puppet_HUN:0 "Hungarian Tungus"
+ 
+ dyn_c_TNS_puppet_HYD:0 "Hyderabadi Tungus"
+ 
+ dyn_c_TNS_puppet_IBE:0 "Iberian Tungus"
+ 
+ dyn_c_TNS_puppet_ICL:0 "Icelandic Tungus"
+ 
+ dyn_c_TNS_puppet_IND:0 "Indori Tungus"
+ 
+ dyn_c_TNS_puppet_ION:0 "Ionian Tungus"
+ 
+ dyn_c_TNS_puppet_IRE:0 "Irish Tungus"
+ 
+ dyn_c_TNS_puppet_IRQ:0 "Iraqi Tungus"
+ 
+ dyn_c_TNS_puppet_ISQ:0 "Isaaqi Tungus"
+ 
+ dyn_c_TNS_puppet_ISR:0 "Israeli Tungus"
+ 
+ dyn_c_TNS_puppet_ITA:0 "Italian Tungus"
+ 
+ dyn_c_TNS_puppet_JAI:0 "Dhundhari Tungus"
+ 
+ dyn_c_TNS_puppet_JAM:0 "Jamaican Tungus"
+ 
+ dyn_c_TNS_puppet_JAN:0 "Jan Mayen Tungus"
+ 
+ dyn_c_TNS_puppet_JAP:0 "Japanese Tungus"
+ 
+ dyn_c_TNS_puppet_JAS:0 "Jaisalmeri Tungus"
+ 
+ dyn_c_TNS_puppet_JAV:0 "Javanese Tungus"
+ 
+ dyn_c_TNS_puppet_JOD:0 "Marwari Tungus"
+ 
+ dyn_c_TNS_puppet_JOH:0 "Johorean Tungus"
+ 
+ dyn_c_TNS_puppet_KAL:0 "Kalati Tungus"
+ 
+ dyn_c_TNS_puppet_KAS:0 "Kashmiri Tungus"
+ 
+ dyn_c_TNS_puppet_KAU:0 "Kaurna Tungus"
+ 
+ dyn_c_TNS_puppet_KAZ:0 "Kazakh Tungus"
+ 
+ dyn_c_TNS_puppet_KFA:0 "Kaffa Tungus"
+ 
+ dyn_c_TNS_puppet_KHI:0 "Khivan Tungus"
+ 
+ dyn_c_TNS_puppet_KOK:0 "Kokandi Tungus"
+ 
+ dyn_c_TNS_puppet_KON:0 "Kongolese Tungus"
+ 
+ dyn_c_TNS_puppet_KOR:0 "Korean Tungus"
+ 
+ dyn_c_TNS_puppet_KRA:0 "Krakowian Tungus"
+ 
+ dyn_c_TNS_puppet_KRG:0 "Karagwe Tungus"
+ 
+ dyn_c_TNS_puppet_KRT:0 "Kaarta Tungus"
+ 
+ dyn_c_TNS_puppet_KTI:0 "Kutai Tungus"
+ 
+ dyn_c_TNS_puppet_KUK:0 "Danubian Tungus"
+ 
+ dyn_c_TNS_puppet_KUT:0 "Kutchi Tungus"
+ 
+ dyn_c_TNS_puppet_KZH:0 "Kishi Tungus"
+ 
+ dyn_c_TNS_puppet_LAD:0 "Ladakhi Tungus"
+ 
+ dyn_c_TNS_puppet_LAN:0 "Lanfangan Tungus"
+ 
+ dyn_c_TNS_puppet_LAO:0 "Laotian Tungus"
+ 
+ dyn_c_TNS_puppet_LAT:0 "Latvian Tungus"
+ 
+ dyn_c_TNS_puppet_LIB:0 "Liberian Tungus"
+ 
+ dyn_c_TNS_puppet_LIP:0 "Lippish Tungus"
+ 
+ dyn_c_TNS_puppet_SCM:0 "Schaumburger Tungus"
+ 
+ dyn_c_TNS_puppet_HOH:0 "Hohenzollern Tungus"
+ 
+ dyn_c_TNS_puppet_SCW:0 "Schwarzburger Tungus"
+ 
+ dyn_c_TNS_puppet_LIT:0 "Lithuanian Tungus"
+ 
+ dyn_c_TNS_puppet_LOM:0 "Lombardian Tungus"
+ 
+ dyn_c_TNS_puppet_LUA:0 "Luang Prabangi Tungus"
+ 
+ dyn_c_TNS_puppet_LUB:0 "Lubeckian Tungus"
+ 
+ dyn_c_TNS_puppet_LUC:0 "Luccan Tungus"
+ 
+ dyn_c_TNS_puppet_LUX:0 "Luxembourgian Tungus"
+ 
+ dyn_c_TNS_puppet_MAD:0 "Madagascarian Tungus"
+ 
+ dyn_c_TNS_puppet_MAK:0 "Makran Tungus"
+ 
+ dyn_c_TNS_puppet_MAN:0 "Manhattanite Tungus"
+ 
+ dyn_c_TNS_puppet_MAY:0 "Maya Tungus"
+ 
+ dyn_c_TNS_puppet_MCH:0 "Manchu Tungus"
+ 
+ dyn_c_TNS_puppet_MEC:0 "Mecklenburgian Tungus"
+ 
+ dyn_c_TNS_puppet_MST:0 "Mecklenburgian Tungus"
+ 
+ dyn_c_TNS_puppet_WLD:0 "Waldeckerd Tungus"
+ 
+ dyn_c_TNS_puppet_MEI:0 "Saxon Tungus"
+ 
+ dyn_c_TNS_puppet_MEW:0 "Mewari Tungus"
+ 
+ dyn_c_TNS_puppet_MEX:0 "Mexican Tungus"
+ 
+ dyn_c_TNS_puppet_MGL:0 "Mongolian Tungus"
+ 
+ dyn_c_TNS_puppet_MJT:0 "Majerteenian Tungus"
+ 
+ dyn_c_TNS_puppet_MKT:0 "Miskito Tungus"
+ 
+ dyn_c_TNS_puppet_MNS:0 "Massinan Tungus"
+ 
+ dyn_c_TNS_puppet_MOD:0 "Modenian Tungus"
+ 
+ dyn_c_TNS_puppet_MOL:0 "Moldavian Tungus"
+ 
+ dyn_c_TNS_puppet_MON:0 "Montenegrin Tungus"
+ 
+ dyn_c_TNS_puppet_MOR:0 "Moroccan Tungus"
+ 
+ dyn_c_TNS_puppet_MSN:0 "Massina Tungus"
+ 
+ dyn_c_TNS_puppet_MTC:0 "Métis Tungus"
+ 
+ dyn_c_TNS_puppet_MUG:0 "Mughal Tungus"
+ 
+ dyn_c_TNS_puppet_MYS:0 "Mysori Tungus"
+ 
+ dyn_c_TNS_puppet_NAG:0 "Nagpuri Tungus"
+ 
+ dyn_c_TNS_puppet_NAH:0 "Anahuacan Tungus"
+ 
+ dyn_c_TNS_puppet_NAL:0 "Natalian Tungus"
+ 
+ dyn_c_TNS_puppet_NAS:0 "Nassauan Tungus"
+ 
+ dyn_c_TNS_puppet_NAV:0 "Navarran Tungus"
+ 
+ dyn_c_TNS_puppet_NEJ:0 "Nejdi Tungus"
+ 
+ dyn_c_TNS_puppet_NEN:0 "New Englander Tungus"
+ 
+ dyn_c_TNS_puppet_NEP:0 "Nepali Tungus"
+ 
+ dyn_c_TNS_puppet_NET:0 "Dutch Tungus"
+ 
+ dyn_c_TNS_puppet_NEW:0 "Newfoundlander Tungus"
+ 
+ dyn_c_TNS_puppet_NGF:0 "North German Tungus"
+ 
+ dyn_c_TNS_puppet_NIC:0 "Nicaraguan Tungus"
+ 
+ dyn_c_TNS_puppet_NOR:0 "Norwegian Tungus"
+ 
+ dyn_c_TNS_puppet_NZL:0 "New Zealand Tungus"
+ 
+ dyn_c_TNS_puppet_OLD:0 "Oldenburgian Tungus"
+ 
+ dyn_c_TNS_puppet_OMA:0 "Omani Tungus"
+ 
+ dyn_c_TNS_puppet_ORA:0 "Oranjean Tungus"
+ 
+ dyn_c_TNS_puppet_ORG:0 "Oregonian Tungus"
+ 
+ dyn_c_TNS_puppet_ORI:0 "Orissan Tungus"
+ 
+ dyn_c_TNS_puppet_OYO:0 "Oyo Tungus"
+ 
+ dyn_c_TNS_puppet_OZH:0 "Orta Tungus"
+ 
+ dyn_c_TNS_puppet_PAN:0 "Punjabi Tungus"
+ 
+ dyn_c_TNS_puppet_PAP:0 "Roman Tungus"
+ 
+ dyn_c_TNS_puppet_PAR:0 "Parmese Tungus"
+ 
+ dyn_c_TNS_puppet_PER:0 "Persian Tungus"
+ 
+ dyn_c_TNS_puppet_PEU:0 "Peruvian Tungus"
+ 
+ dyn_c_TNS_puppet_PHI:0 "Philippine Tungus"
+ 
+ dyn_c_TNS_puppet_PLC:0 "Polish-Lithuanian Tungus"
+ 
+ dyn_c_TNS_puppet_PLY:0 "Tahitian Tungus"
+ 
+ dyn_c_TNS_puppet_PNS:0 "Polynesian Tungus"
+ 
+ dyn_c_TNS_puppet_YUZ:0 "Yuanzhumin Tungus"
+ 
+ dyn_c_TNS_puppet_PNM:0 "Panamanian Tungus"
+ 
+ dyn_c_TNS_puppet_POL:0 "Polish Tungus"
+ 
+ dyn_c_TNS_puppet_POM:0 "Pomeranian Tungus"
+ 
+ dyn_c_TNS_puppet_POR:0 "Portuguese Tungus"
+ 
+ dyn_c_TNS_puppet_PRG:0 "Paraguayan Tungus"
+ 
+ dyn_c_TNS_puppet_PRU:0 "Prussian Tungus"
+ 
+ dyn_c_TNS_puppet_PCO:0 "Puerto Rican Tungus"
+ 
+ dyn_c_TNS_puppet_QUE:0 "Quebec Tungus"
+ 
+ dyn_c_TNS_puppet_REB:0 "Rebel Tungus"
+ 
+ dyn_c_TNS_puppet_ROM:0 "Romanian Tungus"
+ 
+ dyn_c_TNS_puppet_RUS:0 "Russian Tungus"
+ 
+ dyn_c_TNS_puppet_RUT:0 "Ruthenian Tungus"
+ 
+ dyn_c_TNS_puppet_RWD:0 "Rwandan Tungus"
+ 
+ dyn_c_TNS_puppet_SAF:0 "South African Tungus"
+ 
+ dyn_c_TNS_puppet_SAR:0 "Piedmontian Tungus"
+ 
+ dyn_c_TNS_puppet_SAX:0 "Saxon Tungus"
+ 
+ dyn_c_TNS_puppet_SCA:0 "Scandinavian Tungus"
+ 
+ dyn_c_TNS_puppet_SCH:0 "Schleswigian Tungus"
+ 
+ dyn_c_TNS_puppet_SCN:0 "Scanian Tungus"
+ 
+ dyn_c_TNS_puppet_SCO:0 "Scottish Tungus"
+ 
+ dyn_c_TNS_puppet_SDM:0 "Sidama Tungus"
+ 
+ dyn_c_TNS_puppet_SEQ:0 "Indian Tungus"
+ 
+ dyn_c_TNS_puppet_SER:0 "Serb Tungus"
+ 
+ dyn_c_TNS_puppet_SGF:0 "German Tungus"
+ 
+ dyn_c_TNS_puppet_SGU:0 "Segou Tungus"
+ 
+ dyn_c_TNS_puppet_SHI:0 "Shimlan Tungus"
+ 
+ dyn_c_TNS_puppet_SHW:0 "Shewan Tungus"
+ 
+ dyn_c_TNS_puppet_SIA:0 "Siamese Tungus"
+ 
+ dyn_c_TNS_puppet_SIC:0 "Sicilian Tungus"
+ 
+ dyn_c_TNS_puppet_SIK:0 "Sikkim Tungus"
+ 
+ dyn_c_TNS_puppet_SIL:0 "Sierra Leonean Tungus"
+ 
+ dyn_c_TNS_puppet_SIN:0 "Sindi Tungus"
+ 
+ dyn_c_TNS_puppet_SLO:0 "Slovenian Tungus"
+ 
+ dyn_c_TNS_puppet_SLV:0 "Slovak Tungus"
+ 
+ dyn_c_TNS_puppet_SOK:0 "Sokoto Tungus"
+ 
+ dyn_c_TNS_puppet_SPA:0 "Spanish Tungus"
+ 
+ dyn_c_TNS_puppet_SWE:0 "Swedish Tungus"
+ 
+ dyn_c_TNS_puppet_SWI:0 "Swiss Tungus"
+ 
+ dyn_c_TNS_puppet_TEX:0 "Texan Tungus"
+ 
+ dyn_c_TNS_puppet_TGR:0 "Tigray Tungus"
+ 
+ dyn_c_TNS_puppet_TIB:0 "Tibetan Tungus"
+ 
+ dyn_c_TNS_puppet_TPG:0 "Taiping Tungus"
+ 
+ dyn_c_TNS_puppet_TRA:0 "Travancorian Tungus"
+ 
+ dyn_c_TNS_puppet_TRE:0 "Triestian Tungus"
+ 
+ dyn_c_TNS_puppet_TRI:0 "Tripolitanian Tungus"
+ 
+ dyn_c_TNS_puppet_TRN:0 "Transvaali Tungus"
+ 
+ dyn_c_TNS_puppet_TRS:0 "Transylvanian Tungus"
+ 
+ dyn_c_TNS_puppet_TUN:0 "Tunisian Tungus"
+ 
+ dyn_c_TNS_puppet_TUR_turkish_islamic:0 "Turkish-Islamic Tungus"
+ 
+ dyn_c_TNS_puppet_TUR_ottoman:0 "Ottoman Tungus"
+ 
+ dyn_c_TNS_puppet_TUR_turkish:0 "Turkish Tungus"
+ 
+ dyn_c_TNS_puppet_TUS:0 "Tuscan Tungus"
+ 
+ dyn_c_TNS_puppet_UBD:0 "Baltic Tungus"
+ 
+ dyn_c_TNS_puppet_UCA:0 "Central American Tungus"
+ 
+ dyn_c_TNS_puppet_UKR:0 "Ukrainian Tungus"
+ 
+ dyn_c_TNS_puppet_ULS:0 "Ulster Tungus"
+ 
+ dyn_c_TNS_puppet_URU:0 "Uruguayan Tungus"
+ 
+ dyn_c_TNS_puppet_USA:0 "American Tungus"
+ 
+ dyn_c_TNS_puppet_UZH:0 "Uly Tungus"
+ 
+ dyn_c_TNS_puppet_VEN:0 "Venetian Tungus"
+ 
+ dyn_c_TNS_puppet_VIE:0 "Vientiane Tungus"
+ 
+ dyn_c_TNS_puppet_VNZ:0 "Venezuelan Tungus"
+ 
+ dyn_c_TNS_puppet_WAD:0 "Wadai Tungus"
+ 
+ dyn_c_TNS_puppet_WAL:0 "Wallachian Tungus"
+ 
+ dyn_c_TNS_puppet_WEI:0 "Saxon Tungus"
+ 
+ dyn_c_TNS_puppet_WES:0 "Westphalian Tungus"
+ 
+ dyn_c_TNS_puppet_WIN:0 "West Indian Tungus"
+ 
+ dyn_c_TNS_puppet_WLG:0 "Welega Tungus"
+ 
+ dyn_c_TNS_puppet_WLL:0 "Wallonian Tungus"
+ 
+ dyn_c_TNS_puppet_WLO:0 "Wello Tungus"
+ 
+ dyn_c_TNS_puppet_WLS:0 "Welsh Tungus"
+ 
+ dyn_c_TNS_puppet_WSG:0 "Warsangali Tungus"
+ 
+ dyn_c_TNS_puppet_WUR:0 "Wurttembergian Tungus"
+ 
+ dyn_c_TNS_puppet_XIN:0 "Uyghuristani Tungus"
+ 
+ dyn_c_TNS_puppet_YEM:0 "Yemeni Tungus"
+ 
+ dyn_c_TNS_puppet_MAH:0 "Mahra Tungus"
+ 
+ dyn_c_TNS_puppet_KAT:0 "Kathiri Tungus"
+ 
+ dyn_c_TNS_puppet_ZAI:0 "Azali Tungus"
+ 
+ dyn_c_TNS_puppet_LAH:0 "Lahej Tungus"
+ 
+ dyn_c_TNS_puppet_JAB:0 "Shammari Tungus"
+ 
+ dyn_c_TNS_puppet_BHN:0 "Bahraini Tungus"
+ 
+ dyn_c_TNS_puppet_YUG:0 "Yugoslavian Tungus"
+ 
+ dyn_c_TNS_puppet_ZAN:0 "Zanzibari Tungus"
+ 
+ dyn_c_TNS_puppet_ZUL:0 "Zulu Tungus"
+ 
+ dyn_c_TNS_puppet_MAC:0 "Mancunian Tungus"
+ 
+ dyn_c_TNS_puppet_SMI:0 "Sami Tungus"
+ 
+ dyn_c_TNS_puppet_MLT:0 "Maltese Tungus"
+ 
+ dyn_c_TNS_puppet_TWT:0 "Incan Tungus"
+ 
+ dyn_c_TNS_puppet_SUD:0 "Sudanese Tungus"
+ 
+ dyn_c_TNS_puppet_PRM:0 "Permian Tungus"
+ 
+ dyn_c_TNS_puppet_HZJ:0 "Hazara Tungus"
+ 
+ dyn_c_TNS_puppet_TRC:0 "Turkmenistani Tungus"
+ 
+ dyn_c_TNS_puppet_SIB:0 "Siberian Tungus"
+ 
+ dyn_c_TNS_puppet_YAK:0 "Yakut Tungus"
+ 
+ dyn_c_TNS_puppet_ASM:0 "Assamese Tungus"
+ 
+ dyn_c_TNS_puppet_MNP:0 "Manipur Tungus"
+ 
+ dyn_c_TNS_puppet_TOB:0 "Toba Tungus"
+ 
+ dyn_c_TNS_puppet_KLT:0 "Kalimantan Tungus"
+ 
+ dyn_c_TNS_puppet_HTH:0 "Hathawaddy Tungus"
+ 
+ dyn_c_TNS_puppet_KRN:0 "Karen Tungus"
+ 
+ dyn_c_TNS_puppet_KHM:0 "Khmu Tungus"
+ 
+ dyn_c_TNS_puppet_KHN:0 "Kachin Tungus"
+ 
+ dyn_c_TNS_puppet_EZO:0 "Ezo Tungus"
+ 
+ dyn_c_TNS_puppet_QIA:0 "Qian Tungus"
+ 
+ dyn_c_TNS_puppet_FRS:0 "Formosan Tungus"
+ 
+ dyn_c_TNS_puppet_YUN:0 "Yunnan Tungus"
+ 
+ dyn_c_TNS_puppet_YUE:0 "Yue Tungus"
+ 
+ dyn_c_TNS_puppet_OAX:0 "Oaxacan Tungus"
+ 
+ dyn_c_TNS_puppet_AYM:0 "Aymara Tungus"
+ 
+ dyn_c_TNS_puppet_PUE:0 "Puebloan Tungus"
+ 
+ dyn_c_TNS_puppet_NNV:0 "Nunavut Tungus"
+ 
+ dyn_c_TNS_puppet_IRO:0 "Haudenosaunee Tungus"
+ 
+ dyn_c_TNS_puppet_SRB:0 "Sorbian Tungus"
+ 
+ dyn_c_TNS_puppet_YUC:0 "Yucatecan Tungus"
+ 
+ dyn_c_TNS_puppet_RIO:0 "Río Grandean Tungus"
+ 
+ dyn_c_TNS_puppet_PNI:0 "Piratini Tungus"
+ 
+ dyn_c_TNS_puppet_CEY:0 "Sri Lankan Tungus"
+ 
+ dyn_c_TNS_puppet_HBC:0 "Hudson Bay Tungus"
+ 
+ dyn_c_TNS_puppet_ONT:0 "Ontarian Tungus"
+ 
+ dyn_c_TNS_puppet_NBS:0 "New Brunswicker Tungus"
+ 
+ dyn_c_TNS_puppet_NSW:0 "New South Welsh Tungus"
+ 
+ dyn_c_TNS_puppet_WAS:0 "Western Australian Tungus"
+ 
+ dyn_c_TNS_puppet_SAS:0 "South Australian Tungus"
+ 
+ dyn_c_TNS_puppet_UNT:0 "United Tribal Tungus"
+ 
+ dyn_c_TNS_puppet_TAS:0 "Tasmania Tungus"
+ 
+ dyn_c_TNS_puppet_ZIM:0 "Zimbabwean Tungus"
+ 
+ dyn_c_TNS_puppet_BLH:0 "Baluchistani Tungus"
+ 
+ dyn_c_TNS_puppet_MAL:0 "Malian Tungus"
+ 
+ dyn_c_TNS_puppet_OCC:0 "Occitanian Tungus"
+ 
+ dyn_c_TNS_puppet_TUV:0 "Tuvan Tungus"
+ 
+ dyn_c_TNS_puppet_COR:0 "Corsican Tungus"
+ 
+ dyn_c_TNS_puppet_FER:0 "Far Eastern Tungus"
+ 
+ dyn_c_TNS_puppet_IUS:0 "Idel-Ural Tungus"
+ 
+ dyn_c_TNS_puppet_NCA:0 "North Caucasian Tungus"
+ 
+ dyn_c_TNS_puppet_DON:0 "Don Cossacks Tungus"
+ 
+ dyn_c_TNS_puppet_SYR:0 "Syrian Tungus"
+ 
+ dyn_c_TNS_puppet_EOT:0 "Transjordanians Tungus"
+ 
+ dyn_c_TNS_puppet_LEB:0 "Lebanese Tungus"
+ 
+ dyn_c_TNS_puppet_GNG:0 "Da Cheng Tungus"
+ 
+ dyn_c_TNS_puppet_HNA:0 "Hunanese Tungus"
+ 
+ dyn_c_TNS_puppet_AHU:0 "Anhui Tungus"
+ 
+ dyn_c_TNS_puppet_ZHI:0 "Zhili Tungus"
+ 
+ dyn_c_TNS_puppet_SHN:0 "Shanxi Tungus"
+ 
+ dyn_c_TNS_puppet_GUI:0 "Guizhou Tungus"
+ 
+ dyn_c_TNS_puppet_SIH:0 "Sichuan Tungus"
+ 
+ dyn_c_TNS_puppet_SHA:0 "Shandongese Tungus"
+ 
+ dyn_c_TNS_puppet_XIB:0 "Xibei Tungus"
+ 
+ dyn_c_TNS_puppet_ALT:0 "Alteño Tungus"
+ 
+ dyn_c_TNS_puppet_AFS:0 "Free State Tungus"
+ 
+ dyn_c_TNS_puppet_DEI:0 "East Indies Tungus"
+ 
+ dyn_c_TNS_puppet_TRH:0 "Turkestani Tungus"
+ 
+ dyn_c_TNS_puppet_UOM:0 "Michigander Tungus"
+ 
+ dyn_c_TNS_puppet_SAK:0 "Siak Tungus"
+ 
+ dyn_c_TNS_puppet_PON:0 "Pontianak Tungus"
+ 
+ dyn_c_TNS_puppet_SMB:0 "Sambas Tungus"
+ 
+ dyn_c_TNS_puppet_JMB:0 "Jambi Tungus"
+ 
+ dyn_c_TNS_puppet_YOG:0 "Yogyakarta Tungus"
+ 
+ dyn_c_TNS_puppet_BTN:0 "Buton Tungus"
+ 
+ dyn_c_TNS_puppet_SEL:0 "Selangorean Tungus"
+ 
+ dyn_c_TNS_puppet_PRK:0 "Perakian Tungus"
+ 
+ dyn_c_TNS_puppet_SRK:0 "Surakarta Tungus"
+ 
+ dyn_c_TNS_puppet_TID:0 "Tidore Tungus"
+ 
+ dyn_c_TNS_puppet_STG:0 "Sintang Tungus"
+ 
+ dyn_c_TNS_puppet_BNJ:0 "Banjar Tungus"
+ 
+ dyn_c_TNS_puppet_SUL:0 "Sulu Tungus"
+ 
+ dyn_c_TNS_puppet_NVS:0 "Nova Scotian Tungus"
+ 
+ dyn_c_TNS_puppet_SMS:0 "Samian Tungus"
+ 
+ dyn_c_TNS_puppet_CHC:0 "Chechen Tungus"
+ 
+ dyn_c_TNS_puppet_CIR:0 "Circassian Tungus"
+ 
+ dyn_c_TNS_puppet_MGD:0 "Maguindanao Tungus"
+ 
+ dyn_c_TNS_puppet_ASS:0 "Assyrian Tungus"
+ 
+ dyn_c_TNS_puppet_KLM:0 "Kalmykian Tungus"
+ 
+ dyn_c_TNS_puppet_CAU:0 "Transcaucasian Tungus"
+ 
+ dyn_c_TNS_puppet_SAV:0 "Savoyard Tungus"
+ 
+ dyn_c_TNS_puppet_CON:0 "Constantinian Tungus"
+ 
+ dyn_c_TNS_puppet_TUG:0 "Touggourtian Tungus"
+ 
+ dyn_c_TNS_puppet_AIT:0 "Ait Abbas Tungus"
+ 
+ dyn_c_TNS_puppet_MAS:0 "Mascaran Tungus"
+ 
+ dyn_c_TNS_puppet_RHE:0 "Rhenish Tungus"
+ 
+ dyn_c_TNS_puppet_PRC:0 "Communard Tungus"
+ 
+ dyn_c_TNS_puppet_GZA:0 "Gazan Tungus"
+ 
+ dyn_c_TNS_puppet_BRG:0 "Borgu Tungus"
+ 
+ dyn_c_TNS_puppet_KRL:0 "Karelian Tungus"
+ 
+ dyn_c_TNS_puppet_TAR:0 "Tatar Tungus"
+ 
+ dyn_c_TNS_puppet_BKR:0 "Bashkir Tungus"
+ 
+ dyn_c_TNS_puppet_BRY:0 "Buryatian Tungus"
+ 
+ dyn_c_TNS_puppet_KMC:0 "Kamchatkan Tungus"
+ 
+ dyn_c_TNS_puppet_CKC:0 "Chukotkan Tungus"
+ 
+ dyn_c_TNS_puppet_ALI:0 "Altaic Tungus"
+ 
+ dyn_c_TNS_puppet_URL:0 "Uralian Tungus"
+ 
+ dyn_c_TNS_puppet_KNT:0 "Kanty-Mansian Tungus"
+ 
+ dyn_c_TNS_puppet_UDM:0 "Udmurt Tungus"
+ 
+ dyn_c_TNS_puppet_CHV:0 "Chuvash Tungus"
+ 
+ dyn_c_TNS_puppet_MRI:0 "Mari Tungus"
+ 
+ dyn_c_TNS_puppet_MRD:0 "Erzya-Mokshan Tungus"
+ 
+ dyn_c_TNS_puppet_TJI:0 "Tajik Tungus"
+ 
+ dyn_c_TNS_puppet_KYR:0 "Kyrgyz Tungus"
+ 
+ dyn_c_TNS_puppet_UZB:0 "Uzbek Tungus"
+ 
+ dyn_c_TNS_puppet_PAU:0 "Paulistanic Tungus"
+ 
+ dyn_c_TNS_puppet_EQT:0 "Equatorial Tungus"
+ 
+ dyn_c_TNS_puppet_CTR:0 "Catharinense Tungus"
+ 
+ dyn_c_TNS_puppet_MNG:0 "Mineiro Tungus"
+ 
+ dyn_c_TNS_puppet_FND:0 "Andean Tungus"
+ 
+ dyn_c_TNS_puppet_BHI:0 "Baiano Tungus"
+ 
+ dyn_c_TNS_puppet_PBC:0 "Peru-Bolivian Tungus"
+ 
+ dyn_c_TNS_puppet_IQU:0 "Iquichan Tungus"
+ 
+ dyn_c_TNS_puppet_NPU:0 "North Peruvian Tungus"
+ 
+ dyn_c_TNS_puppet_RSM:0 "Venetian Tungus"
+ 
+ dyn_c_TNS_puppet_HRE:0 "Central European Tungus"
+ 
+ dyn_c_TNS_puppet_UNL:0 "Dutch Tungus"
+ 
+ dyn_c_TNS_puppet_RHN:0 "Rhenish Tungus"
+ 
+ dyn_c_TNS_puppet_PLT:0 "Platinean Tungus"
+ 
+ dyn_c_TNS_puppet_SPU:0 "South Peruvian Tungus"
+ 
+ dyn_c_TNS_puppet_NCR:0 "North Carolinian Tungus"
+ 
+ dyn_c_TNS_puppet_SCR:0 "South Carolinian Tungus"
+ 
+ dyn_c_TNS_puppet_CLI:0 "Carolinian Tungus"
+ 
+ dyn_c_TNS_puppet_GRG:0 "Georgian Tungus"
+ 
+ dyn_c_TNS_puppet_FLR:0 "Floridian Tungus"
+ 
+ dyn_c_TNS_puppet_PAK:0 "Pakistani Tungus"
+ 
+ dyn_c_TNS_puppet_MGB:0 "Maghrebi Tungus"
+ 
+ dyn_c_TNS_puppet_TIS:0 "Turtle Islander Tungus"
+ 
+ dyn_c_TNS_puppet_KAB:0 "Kabuli Tungus"
+ 
+ dyn_c_TNS_puppet_KAN:0 "Kandahari Tungus"
+ 
+ dyn_c_TNS_puppet_HER:0 "Herati Tungus"
+ 
+ dyn_c_TNS_puppet_CHT:0 "Chitrali Tungus"
+ 
+ dyn_c_TNS_puppet_MAI:0 "Maimanan Tungus"
+ 
+ dyn_c_TNS_puppet_KUN:0 "Kunduzi Tungus"
+ 
+ dyn_c_TNS_puppet_ARB:0 "Arabistani Tungus"
+ 
+ dyn_c_TNS_puppet_BHW:0 "Bahawalpuri Tungus"
+ 
+ dyn_c_TNS_puppet_LUR:0 "Luristani Tungus"
+ 
+ dyn_c_TNS_puppet_MAZ:0 "Mazandarani Tungus"
+ 
+ dyn_c_TNS_puppet_BEI:0 "Beiyang Tungus"
+ 
+ dyn_c_TNS_puppet_KAF:0 "Kafiri Tungus"
+ 
+ dyn_c_TNS_puppet_LIM:0 "Limburger Tungus"
+ 
+ dyn_c_TNS_puppet_PTA:0 "Patialvi Tungus"
+ 
+ dyn_c_TNS_puppet_GAR:0 "Garhwali Tungus"
+ 
+ dyn_c_TNS_puppet_ALW:0 "Alwari Tungus"
+ 
+ dyn_c_TNS_puppet_COO:0 "Cooch Behari Tungus"
+ 
+ dyn_c_TNS_puppet_NGA:0 "Naga Tungus"
+ 
+ dyn_c_TNS_puppet_SHS:0 "Shan Tungus"
+ 
+ dyn_c_TNS_puppet_JHN:0 "Jhansian Tungus"
+ 
+ dyn_c_TNS_puppet_KOT:0 "Kotahi Tungus"
+ 
+ dyn_c_TNS_puppet_IDA:0 "Idari Tungus"
+ 
+ dyn_c_TNS_puppet_NAW:0 "Nawanagari Tungus"
+ 
+ dyn_c_TNS_puppet_JUN:0 "Junagadhi Tungus"
+ 
+ dyn_c_TNS_puppet_BHV:0 "Bhavnagari Tungus"
+ 
+ dyn_c_TNS_puppet_DHA:0 "Dharampuri Tungus"
+ 
+ dyn_c_TNS_puppet_PUD:0 "Pudukottaian Tungus"
+ 
+ dyn_c_TNS_puppet_SAT:0 "Sataran Tungus"
+ 
+ dyn_c_TNS_puppet_KHP:0 "Kolhapuri Tungus"
+ 
+ dyn_c_TNS_puppet_KNO:0 "Kurnooli Tungus"
+ 
+ dyn_c_TNS_puppet_BAG:0 "Rewaite Tungus"
+ 
+ dyn_c_TNS_puppet_SUR:0 "Surgujian Tungus"
+ 
+ dyn_c_TNS_puppet_PLP:0 "Palanpuri Tungus"
+ 
+ dyn_c_TNS_puppet_MYB:0 "Mayurbhanji Tungus"
+ 
+ dyn_c_TNS_puppet_PTN:0 "Patnavi Tungus"
+ 
+ dyn_c_TNS_puppet_JEY:0 "Jeyporean Tungus"
+ 
+ dyn_c_TNS_puppet_NAR:0 "Narsinghpuri Tungus"
+ 
+ dyn_c_TNS_puppet_LBL:0 "Lasbeli Tungus"
+ 
+ dyn_c_TNS_puppet_KHR:0 "Kharani Tungus"
+ 
+ dyn_c_TNS_puppet_KPR:0 "Khairpuri Tungus"
+ 
+ dyn_c_TNS_puppet_SWT:0 "Swati Tungus"
+ 
+ dyn_c_TNS_puppet_DIR:0 "Dirwali Tungus"
+ 
+ dyn_c_TNS_puppet_CAR:0 "Carnatic Tungus"
+ 
+ dyn_c_TNS_puppet_RAJ:0 "Rajput Tungus"
+ 
+ dyn_c_TNS_puppet_MHR:0 "Maharashtrian Tungus"
+ 
+ dyn_c_TNS_puppet_DRA:0 "Dravidian Tungus"
+ 
+ dyn_c_TNS_puppet_COC:0 "Cochinese Tungus"
+ 
+ dyn_c_TNS_puppet_ALK:0 "Alaskan Tungus"
+ 
+ dyn_c_TNS_puppet_GUJ:0 "Gujarati Tungus"
+ 
+ dyn_c_TNS_puppet_BCE:0 "Ceylonese Tungus"
+ 
+ dyn_c_TNS_puppet_MLD:0 "Maldivian Tungus"
+ 
+ dyn_c_TNS_puppet_BIH:0 "Bihari Tungus"
+ 
+ dyn_c_TNS_puppet_ARK:0 "Arakanese Tungus"
+ 
+ dyn_c_TNS_puppet_IDS:0 "Indusstani Tungus"
+
+ 
+ dyn_c_siberia_absolutist_monarchy:0 "Kingdom of Siberia"
+ 
+ dyn_c_siberia_monarchy:0 "Kingdom of Siberia"
+ 
+ dyn_c_siberia_dictatorship:0 "Loyal Order of Siberia"
+ 
+ dyn_c_siberia_republic:0 "United States of Siberia"
+ 
+ dyn_c_siberia_communist:0 "Siberian Workers Republic"
+ 
+ dyn_c_siberia_communistvote:0 "Congress of Siberian Workers"
+ 
+ dyn_c_siberia_theocratic:0 "Siberian Divine State"
+ 
+ dyn_c_siberia_theocraticvote:0 "Siberian Church Republic"
+ 
+ dyn_c_siberia_anarchy:0 "Tundra Free Union"
+ 
+ dyn_c_SIB_puppet_ABK:0 "Abkhaz Siberia"
+ 
+ dyn_c_SIB_puppet_ABU:0 "Trucial Siberia"
+ 
+ dyn_c_SIB_puppet_ACE:0 "Acehnese Siberia"
+ 
+ dyn_c_SIB_puppet_ACH:0 "Acholi Siberia"
+ 
+ dyn_c_SIB_puppet_AFG:0 "Afghan Siberia"
+ 
+ dyn_c_SIB_puppet_ALB:0 "Albanian Siberia"
+ 
+ dyn_c_SIB_puppet_ALD:0 "Algerian Siberia"
+ 
+ dyn_c_SIB_puppet_AOT:0 "Aotearoan Siberia"
+ 
+ dyn_c_SIB_puppet_ASA:0 "New African Siberia"
+ 
+ dyn_c_SIB_puppet_AUS:0 "Austrian"
+ 
+ dyn_c_SIB_puppet_AWA:0 "Awadhi"
+ 
+ dyn_c_SIB_puppet_AMZ:0 "Amazonian Siberia"
+ 
+ dyn_c_SIB_puppet_ANL:0 "Andalusian Siberia"
+ 
+ dyn_c_SIB_puppet_AGJ:0 "New Angolan Siberia"
+ 
+ dyn_c_SIB_puppet_ANH:0 "Anhaltian Siberia"
+ 
+ dyn_c_SIB_puppet_ANK:0 "Ankole Siberia"
+ 
+ dyn_c_SIB_puppet_ARA:0 "Arab Siberia"
+ 
+ dyn_c_SIB_puppet_ARG:0 "Argentinian Siberia"
+ 
+ dyn_c_SIB_puppet_ARM:0 "Armenian Siberia"
+ 
+ dyn_c_SIB_puppet_ASH:0 "Ashanti Siberia"
+ 
+ dyn_c_SIB_puppet_AWS:0 "Aussan Siberia"
+ 
+ dyn_c_SIB_puppet_AST:0 "Australian Siberia"
+ 
+ dyn_c_SIB_puppet_AZB:0 "Azerbaijani Siberia"
+ 
+ dyn_c_SIB_puppet_BAB:0 "Babylonian Siberia"
+ 
+ dyn_c_SIB_puppet_BAD:0 "Baden Siberia"
+ 
+ dyn_c_SIB_puppet_BAH:0 "Bahamian Siberia"
+ 
+ dyn_c_SIB_puppet_BAL:0 "Balinese Siberia"
+ 
+ dyn_c_SIB_puppet_BAS:0 "Bastar Siberia"
+ 
+ dyn_c_SIB_puppet_BAV:0 "Bavarian Siberia"
+ 
+ dyn_c_SIB_puppet_BEL:0 "Belgian Siberia"
+ 
+ dyn_c_SIB_puppet_BEN:0 "Benin Siberia"
+ 
+ dyn_c_SIB_puppet_BER:0 "Barodan Siberia"
+ 
+ dyn_c_SIB_puppet_BGI:0 "Bagirmi Siberia"
+ 
+ dyn_c_SIB_puppet_BGL:0 "Bengali Siberia"
+ 
+ dyn_c_SIB_puppet_BGM:0 "Begemder Siberia"
+ 
+ dyn_c_SIB_puppet_BHO:0 "Bhopali Siberia"
+ 
+ dyn_c_SIB_puppet_BHU:0 "Bhutanese Siberia"
+ 
+ dyn_c_SIB_puppet_BIC:0 "East India Siberia"
+ 
+ dyn_c_SIB_puppet_BIK:0 "Bikaneri Siberia"
+ 
+ dyn_c_SIB_puppet_BLG:0 "Bulungan Siberia"
+ 
+ dyn_c_SIB_puppet_BNY:0 "Bunyoro Siberia"
+ 
+ dyn_c_SIB_puppet_BOH:0 "Bohemian Siberia"
+ 
+ dyn_c_SIB_puppet_BOL:0 "Bolivian Siberia"
+ 
+ dyn_c_SIB_puppet_BOR:0 "Bornu Siberia"
+ 
+ dyn_c_SIB_puppet_BOS:0 "Bosnian Siberia"
+ 
+ dyn_c_SIB_puppet_BRA:0 "Brunswickian Siberia"
+ 
+ dyn_c_SIB_puppet_BRD:0 "Burundi Siberia"
+ 
+ dyn_c_SIB_puppet_BRE:0 "Bremian Siberia"
+ 
+ dyn_c_SIB_puppet_BRI:0 "Breton Siberia"
+ 
+ dyn_c_SIB_puppet_BRN:0 "Borana Siberia"
+ 
+ dyn_c_SIB_puppet_BRU:0 "Brunei Siberia"
+ 
+ dyn_c_SIB_puppet_BRZ:0 "Brazilian Siberia"
+ 
+ dyn_c_SIB_puppet_BUG:0 "Bugandan Siberia"
+ 
+ dyn_c_SIB_puppet_BUK:0 "Bukharan Siberia"
+ 
+ dyn_c_SIB_puppet_BUL:0 "Bulgarian Siberia"
+ 
+ dyn_c_SIB_puppet_BUN:0 "Orchhan Siberia"
+ 
+ dyn_c_SIB_puppet_BUR:0 "Burmese Siberia"
+ 
+ dyn_c_SIB_puppet_BYE:0 "Byelorussian Siberia"
+ 
+ dyn_c_SIB_puppet_BYZ:0 "Byzantine Siberia"
+ 
+ dyn_c_SIB_puppet_CAL:0 "Californian Siberia"
+ 
+ dyn_c_SIB_puppet_CAM:0 "Cambodian Siberia"
+ 
+ dyn_c_SIB_puppet_CAN:0 "Canadian Siberia"
+ 
+ dyn_c_SIB_puppet_CAS:0 "Castilian Siberia"
+ 
+ dyn_c_SIB_puppet_CAT:0 "Catalonian Siberia"
+ 
+ dyn_c_SIB_puppet_CHE:0 "Cherokee Siberia"
+ 
+ dyn_c_SIB_puppet_CHI:0 "Chinese Siberia"
+ 
+ dyn_c_SIB_puppet_CHL:0 "Chilean Siberia"
+ 
+ dyn_c_SIB_puppet_CHP:0 "Champassakan Siberia"
+ 
+ dyn_c_SIB_puppet_CLM:0 "Colombian Siberia"
+ 
+ dyn_c_SIB_puppet_CMI:0 "Chiang Maian Siberia"
+ 
+ dyn_c_SIB_puppet_CNG:0 "Congolese Siberia"
+ 
+ dyn_c_SIB_puppet_CNW:0 "Cornish Siberia"
+ 
+ dyn_c_SIB_puppet_COB:0 "Saxon Siberia"
+ 
+ dyn_c_SIB_puppet_COL:0 "Columbian Siberia"
+ 
+ dyn_c_SIB_puppet_COS:0 "Costa Rican Siberia"
+ 
+ dyn_c_SIB_puppet_CRE:0 "Cretian Siberia"
+ 
+ dyn_c_SIB_puppet_CRI:0 "Crimean Siberia"
+ 
+ dyn_c_SIB_puppet_CRO:0 "Croatian Siberia"
+ 
+ dyn_c_SIB_puppet_CSA:0 "Confederate Siberia"
+ 
+ dyn_c_SIB_puppet_CUB:0 "Cuban Siberia"
+ 
+ dyn_c_SIB_puppet_CYP:0 "Cypriot Siberia"
+ 
+ dyn_c_SIB_puppet_CZH:0 "Czechoslovakian Siberia"
+ 
+ dyn_c_SIB_puppet_DAG:0 "Dagestani Siberia"
+ 
+ dyn_c_SIB_puppet_DAH:0 "Dahomey Siberia"
+ 
+ dyn_c_SIB_puppet_DAI:0 "Vietnamese Siberia"
+ 
+ dyn_c_SIB_puppet_DEN:0 "Danish Siberia"
+ 
+ dyn_c_SIB_puppet_DES:0 "Mormon Siberia"
+ 
+ dyn_c_SIB_puppet_DFR:0 "Darfuri Siberia"
+ 
+ dyn_c_SIB_puppet_DOM:0 "Dominican Siberia"
+ 
+ dyn_c_SIB_puppet_DZG:0 "Danziger Siberia"
+ 
+ dyn_c_SIB_puppet_ECU:0 "Ecuadorian Siberia"
+ 
+ dyn_c_SIB_puppet_EGY:0 "Egyptian Siberia"
+ 
+ dyn_c_SIB_puppet_ELS:0 "El Salvadorian Siberia"
+ 
+ dyn_c_SIB_puppet_ENG:0 "English Siberia"
+ 
+ dyn_c_SIB_puppet_EST:0 "Estonian Siberia"
+ 
+ dyn_c_SIB_puppet_ETH:0 "Ethiopian Siberia"
+ 
+ dyn_c_SIB_puppet_FIN:0 "Finnish Siberia"
+ 
+ dyn_c_SIB_puppet_FLA:0 "Flemish Siberia"
+ 
+ dyn_c_SIB_puppet_FRA:0 "French Siberia"
+ 
+ dyn_c_SIB_puppet_FRM:0 "Frankfurter Siberia"
+ 
+ dyn_c_SIB_puppet_FSA:0 "Free American Siberia"
+ 
+ dyn_c_SIB_puppet_FTJ:0 "Futa Jallon Siberia"
+ 
+ dyn_c_SIB_puppet_FTR:0 "Futa Toro Siberia"
+ 
+ dyn_c_SIB_puppet_GAL:0 "Galician-Lodomerian Siberia"
+ 
+ dyn_c_SIB_puppet_GAM:0 "Gambian Siberia"
+ 
+ dyn_c_SIB_puppet_GBR:0 "British Siberia"
+ 
+ dyn_c_SIB_puppet_GCO:0 "Gran Colombian Siberia"
+ 
+ dyn_c_SIB_puppet_GEO:0 "Georgian Siberia"
+ 
+ dyn_c_SIB_puppet_GER:0 "German Siberia"
+ 
+ dyn_c_SIB_puppet_GGR:0 "Greater German Siberia"
+ 
+ dyn_c_SIB_puppet_GJM:0 "Gojjam Siberia"
+ 
+ dyn_c_SIB_puppet_GLC:0 "Gold Coast Siberia"
+ 
+ dyn_c_SIB_puppet_GLD:0 "Geledi Siberia"
+ 
+ dyn_c_SIB_puppet_GRE:0 "Greek Siberia"
+ 
+ dyn_c_SIB_puppet_GRI:0 "Guarani Siberia"
+ 
+ dyn_c_SIB_puppet_GRN:0 "Greenlandic Siberia"
+ 
+ dyn_c_SIB_puppet_GUA:0 "Guatemalan Siberia"
+ 
+ dyn_c_SIB_puppet_GWA:0 "Gwaliori Siberia"
+ 
+ dyn_c_SIB_puppet_HAI:0 "Haitian Siberia"
+ 
+ dyn_c_SIB_puppet_HAM:0 "Hamburgian Siberia"
+ 
+ dyn_c_SIB_puppet_HAN:0 "Hanoverian Siberia"
+ 
+ dyn_c_SIB_puppet_HAR:0 "Harari Siberia"
+ 
+ dyn_c_SIB_puppet_HAU:0 "Gobir Siberia"
+ 
+ dyn_c_SIB_puppet_HAW:0 "Hawaiian Siberia"
+ 
+ dyn_c_SIB_puppet_HDJ:0 "Hedjazi Siberia"
+ 
+ dyn_c_SIB_puppet_HEK:0 "Hessian Siberia"
+ 
+ dyn_c_SIB_puppet_HES:0 "Hessian Siberia"
+ 
+ dyn_c_SIB_puppet_HND:0 "Indian Siberia"
+ 
+ dyn_c_SIB_puppet_HOB:0 "Hobyo Siberia"
+ 
+ dyn_c_SIB_puppet_HOL:0 "Holsteinian Siberia"
+ 
+ dyn_c_SIB_puppet_HON:0 "Honduran Siberia"
+ 
+ dyn_c_SIB_puppet_HUN:0 "Hungarian Siberia"
+ 
+ dyn_c_SIB_puppet_HYD:0 "Hyderabadi Siberia"
+ 
+ dyn_c_SIB_puppet_IBE:0 "Iberian Siberia"
+ 
+ dyn_c_SIB_puppet_ICL:0 "Icelandic Siberia"
+ 
+ dyn_c_SIB_puppet_IND:0 "Indori Siberia"
+ 
+ dyn_c_SIB_puppet_ION:0 "Ionian Siberia"
+ 
+ dyn_c_SIB_puppet_IRE:0 "Irish Siberia"
+ 
+ dyn_c_SIB_puppet_IRQ:0 "Iraqi Siberia"
+ 
+ dyn_c_SIB_puppet_ISQ:0 "Isaaqi Siberia"
+ 
+ dyn_c_SIB_puppet_ISR:0 "Israeli Siberia"
+ 
+ dyn_c_SIB_puppet_ITA:0 "Italian Siberia"
+ 
+ dyn_c_SIB_puppet_JAI:0 "Dhundhari Siberia"
+ 
+ dyn_c_SIB_puppet_JAM:0 "Jamaican Siberia"
+ 
+ dyn_c_SIB_puppet_JAN:0 "Jan Mayen Siberia"
+ 
+ dyn_c_SIB_puppet_JAP:0 "Japanese Siberia"
+ 
+ dyn_c_SIB_puppet_JAS:0 "Jaisalmeri Siberia"
+ 
+ dyn_c_SIB_puppet_JAV:0 "Javanese Siberia"
+ 
+ dyn_c_SIB_puppet_JOD:0 "Marwari Siberia"
+ 
+ dyn_c_SIB_puppet_JOH:0 "Johorean Siberia"
+ 
+ dyn_c_SIB_puppet_KAL:0 "Kalati Siberia"
+ 
+ dyn_c_SIB_puppet_KAS:0 "Kashmiri Siberia"
+ 
+ dyn_c_SIB_puppet_KAU:0 "Kaurna Siberia"
+ 
+ dyn_c_SIB_puppet_KAZ:0 "Kazakh Siberia"
+ 
+ dyn_c_SIB_puppet_KFA:0 "Kaffa Siberia"
+ 
+ dyn_c_SIB_puppet_KHI:0 "Khivan Siberia"
+ 
+ dyn_c_SIB_puppet_KOK:0 "Kokandi Siberia"
+ 
+ dyn_c_SIB_puppet_KON:0 "Kongolese Siberia"
+ 
+ dyn_c_SIB_puppet_KOR:0 "Korean Siberia"
+ 
+ dyn_c_SIB_puppet_KRA:0 "Krakowian Siberia"
+ 
+ dyn_c_SIB_puppet_KRG:0 "Karagwe Siberia"
+ 
+ dyn_c_SIB_puppet_KRT:0 "Kaarta Siberia"
+ 
+ dyn_c_SIB_puppet_KTI:0 "Kutai Siberia"
+ 
+ dyn_c_SIB_puppet_KUK:0 "Danubian Siberia"
+ 
+ dyn_c_SIB_puppet_KUT:0 "Kutchi Siberia"
+ 
+ dyn_c_SIB_puppet_KZH:0 "Kishi Siberia"
+ 
+ dyn_c_SIB_puppet_LAD:0 "Ladakhi Siberia"
+ 
+ dyn_c_SIB_puppet_LAN:0 "Lanfangan Siberia"
+ 
+ dyn_c_SIB_puppet_LAO:0 "Laotian Siberia"
+ 
+ dyn_c_SIB_puppet_LAT:0 "Latvian Siberia"
+ 
+ dyn_c_SIB_puppet_LIB:0 "Liberian Siberia"
+ 
+ dyn_c_SIB_puppet_LIP:0 "Lippish Siberia"
+ 
+ dyn_c_SIB_puppet_SCM:0 "Schaumburger Siberia"
+ 
+ dyn_c_SIB_puppet_HOH:0 "Hohenzollern Siberia"
+ 
+ dyn_c_SIB_puppet_SCW:0 "Schwarzburger Siberia"
+ 
+ dyn_c_SIB_puppet_LIT:0 "Lithuanian Siberia"
+ 
+ dyn_c_SIB_puppet_LOM:0 "Lombardian Siberia"
+ 
+ dyn_c_SIB_puppet_LUA:0 "Luang Prabangi Siberia"
+ 
+ dyn_c_SIB_puppet_LUB:0 "Lubeckian Siberia"
+ 
+ dyn_c_SIB_puppet_LUC:0 "Luccan Siberia"
+ 
+ dyn_c_SIB_puppet_LUX:0 "Luxembourgian Siberia"
+ 
+ dyn_c_SIB_puppet_MAD:0 "Madagascarian Siberia"
+ 
+ dyn_c_SIB_puppet_MAK:0 "Makran Siberia"
+ 
+ dyn_c_SIB_puppet_MAN:0 "Manhattanite Siberia"
+ 
+ dyn_c_SIB_puppet_MAY:0 "Maya Siberia"
+ 
+ dyn_c_SIB_puppet_MCH:0 "Manchu Siberia"
+ 
+ dyn_c_SIB_puppet_MEC:0 "Mecklenburgian Siberia"
+ 
+ dyn_c_SIB_puppet_MST:0 "Mecklenburgian Siberia"
+ 
+ dyn_c_SIB_puppet_WLD:0 "Waldeckerd Siberia"
+ 
+ dyn_c_SIB_puppet_MEI:0 "Saxon Siberia"
+ 
+ dyn_c_SIB_puppet_MEW:0 "Mewari Siberia"
+ 
+ dyn_c_SIB_puppet_MEX:0 "Mexican Siberia"
+ 
+ dyn_c_SIB_puppet_MGL:0 "Mongolian Siberia"
+ 
+ dyn_c_SIB_puppet_MJT:0 "Majerteenian Siberia"
+ 
+ dyn_c_SIB_puppet_MKT:0 "Miskito Siberia"
+ 
+ dyn_c_SIB_puppet_MNS:0 "Massinan Siberia"
+ 
+ dyn_c_SIB_puppet_MOD:0 "Modenian Siberia"
+ 
+ dyn_c_SIB_puppet_MOL:0 "Moldavian Siberia"
+ 
+ dyn_c_SIB_puppet_MON:0 "Montenegrin Siberia"
+ 
+ dyn_c_SIB_puppet_MOR:0 "Moroccan Siberia"
+ 
+ dyn_c_SIB_puppet_MSN:0 "Massina Siberia"
+ 
+ dyn_c_SIB_puppet_MTC:0 "Métis Siberia"
+ 
+ dyn_c_SIB_puppet_MUG:0 "Mughal Siberia"
+ 
+ dyn_c_SIB_puppet_MYS:0 "Mysori Siberia"
+ 
+ dyn_c_SIB_puppet_NAG:0 "Nagpuri Siberia"
+ 
+ dyn_c_SIB_puppet_NAH:0 "Anahuacan Siberia"
+ 
+ dyn_c_SIB_puppet_NAL:0 "Natalian Siberia"
+ 
+ dyn_c_SIB_puppet_NAS:0 "Nassauan Siberia"
+ 
+ dyn_c_SIB_puppet_NAV:0 "Navarran Siberia"
+ 
+ dyn_c_SIB_puppet_NEJ:0 "Nejdi Siberia"
+ 
+ dyn_c_SIB_puppet_NEN:0 "New Englander Siberia"
+ 
+ dyn_c_SIB_puppet_NEP:0 "Nepali Siberia"
+ 
+ dyn_c_SIB_puppet_NET:0 "Dutch Siberia"
+ 
+ dyn_c_SIB_puppet_NEW:0 "Newfoundlander Siberia"
+ 
+ dyn_c_SIB_puppet_NGF:0 "North German Siberia"
+ 
+ dyn_c_SIB_puppet_NIC:0 "Nicaraguan Siberia"
+ 
+ dyn_c_SIB_puppet_NOR:0 "Norwegian Siberia"
+ 
+ dyn_c_SIB_puppet_NZL:0 "New Zealand Siberia"
+ 
+ dyn_c_SIB_puppet_OLD:0 "Oldenburgian Siberia"
+ 
+ dyn_c_SIB_puppet_OMA:0 "Omani Siberia"
+ 
+ dyn_c_SIB_puppet_ORA:0 "Oranjean Siberia"
+ 
+ dyn_c_SIB_puppet_ORG:0 "Oregonian Siberia"
+ 
+ dyn_c_SIB_puppet_ORI:0 "Orissan Siberia"
+ 
+ dyn_c_SIB_puppet_OYO:0 "Oyo Siberia"
+ 
+ dyn_c_SIB_puppet_OZH:0 "Orta Siberia"
+ 
+ dyn_c_SIB_puppet_PAN:0 "Punjabi Siberia"
+ 
+ dyn_c_SIB_puppet_PAP:0 "Roman Siberia"
+ 
+ dyn_c_SIB_puppet_PAR:0 "Parmese Siberia"
+ 
+ dyn_c_SIB_puppet_PER:0 "Persian Siberia"
+ 
+ dyn_c_SIB_puppet_PEU:0 "Peruvian Siberia"
+ 
+ dyn_c_SIB_puppet_PHI:0 "Philippine Siberia"
+ 
+ dyn_c_SIB_puppet_PLC:0 "Polish-Lithuanian Siberia"
+ 
+ dyn_c_SIB_puppet_PLY:0 "Tahitian Siberia"
+ 
+ dyn_c_SIB_puppet_PNS:0 "Polynesian Siberia"
+ 
+ dyn_c_SIB_puppet_YUZ:0 "Yuanzhumin Siberia"
+ 
+ dyn_c_SIB_puppet_PNM:0 "Panamanian Siberia"
+ 
+ dyn_c_SIB_puppet_POL:0 "Polish Siberia"
+ 
+ dyn_c_SIB_puppet_POM:0 "Pomeranian Siberia"
+ 
+ dyn_c_SIB_puppet_POR:0 "Portuguese Siberia"
+ 
+ dyn_c_SIB_puppet_PRG:0 "Paraguayan Siberia"
+ 
+ dyn_c_SIB_puppet_PRU:0 "Prussian Siberia"
+ 
+ dyn_c_SIB_puppet_PCO:0 "Puerto Rican Siberia"
+ 
+ dyn_c_SIB_puppet_QUE:0 "Quebec Siberia"
+ 
+ dyn_c_SIB_puppet_REB:0 "Rebel Siberia"
+ 
+ dyn_c_SIB_puppet_ROM:0 "Romanian Siberia"
+ 
+ dyn_c_SIB_puppet_RUS:0 "Russian Siberia"
+ 
+ dyn_c_SIB_puppet_RUT:0 "Ruthenian Siberia"
+ 
+ dyn_c_SIB_puppet_RWD:0 "Rwandan Siberia"
+ 
+ dyn_c_SIB_puppet_SAF:0 "South African Siberia"
+ 
+ dyn_c_SIB_puppet_SAR:0 "Piedmontian Siberia"
+ 
+ dyn_c_SIB_puppet_SAX:0 "Saxon Siberia"
+ 
+ dyn_c_SIB_puppet_SCA:0 "Scandinavian Siberia"
+ 
+ dyn_c_SIB_puppet_SCH:0 "Schleswigian Siberia"
+ 
+ dyn_c_SIB_puppet_SCN:0 "Scanian Siberia"
+ 
+ dyn_c_SIB_puppet_SCO:0 "Scottish Siberia"
+ 
+ dyn_c_SIB_puppet_SDM:0 "Sidama Siberia"
+ 
+ dyn_c_SIB_puppet_SEQ:0 "Indian Siberia"
+ 
+ dyn_c_SIB_puppet_SER:0 "Serb Siberia"
+ 
+ dyn_c_SIB_puppet_SGF:0 "German Siberia"
+ 
+ dyn_c_SIB_puppet_SGU:0 "Segou Siberia"
+ 
+ dyn_c_SIB_puppet_SHI:0 "Shimlan Siberia"
+ 
+ dyn_c_SIB_puppet_SHW:0 "Shewan Siberia"
+ 
+ dyn_c_SIB_puppet_SIA:0 "Siamese Siberia"
+ 
+ dyn_c_SIB_puppet_SIC:0 "Sicilian Siberia"
+ 
+ dyn_c_SIB_puppet_SIK:0 "Sikkim Siberia"
+ 
+ dyn_c_SIB_puppet_SIL:0 "Sierra Leonean Siberia"
+ 
+ dyn_c_SIB_puppet_SIN:0 "Sindi Siberia"
+ 
+ dyn_c_SIB_puppet_SLO:0 "Slovenian Siberia"
+ 
+ dyn_c_SIB_puppet_SLV:0 "Slovak Siberia"
+ 
+ dyn_c_SIB_puppet_SOK:0 "Sokoto Siberia"
+ 
+ dyn_c_SIB_puppet_SPA:0 "Spanish Siberia"
+ 
+ dyn_c_SIB_puppet_SWE:0 "Swedish Siberia"
+ 
+ dyn_c_SIB_puppet_SWI:0 "Swiss Siberia"
+ 
+ dyn_c_SIB_puppet_TEX:0 "Texan Siberia"
+ 
+ dyn_c_SIB_puppet_TGR:0 "Tigray Siberia"
+ 
+ dyn_c_SIB_puppet_TIB:0 "Tibetan Siberia"
+ 
+ dyn_c_SIB_puppet_TPG:0 "Taiping Siberia"
+ 
+ dyn_c_SIB_puppet_TRA:0 "Travancorian Siberia"
+ 
+ dyn_c_SIB_puppet_TRE:0 "Triestian Siberia"
+ 
+ dyn_c_SIB_puppet_TRI:0 "Tripolitanian Siberia"
+ 
+ dyn_c_SIB_puppet_TRN:0 "Transvaali Siberia"
+ 
+ dyn_c_SIB_puppet_TRS:0 "Transylvanian Siberia"
+ 
+ dyn_c_SIB_puppet_TUN:0 "Tunisian Siberia"
+ 
+ dyn_c_SIB_puppet_TUR_turkish_islamic:0 "Turkish-Islamic Siberia"
+ 
+ dyn_c_SIB_puppet_TUR_ottoman:0 "Ottoman Siberia"
+ 
+ dyn_c_SIB_puppet_TUR_turkish:0 "Turkish Siberia"
+ 
+ dyn_c_SIB_puppet_TUS:0 "Tuscan Siberia"
+ 
+ dyn_c_SIB_puppet_UBD:0 "Baltic Siberia"
+ 
+ dyn_c_SIB_puppet_UCA:0 "Central American Siberia"
+ 
+ dyn_c_SIB_puppet_UKR:0 "Ukrainian Siberia"
+ 
+ dyn_c_SIB_puppet_ULS:0 "Ulster Siberia"
+ 
+ dyn_c_SIB_puppet_URU:0 "Uruguayan Siberia"
+ 
+ dyn_c_SIB_puppet_USA:0 "American Siberia"
+ 
+ dyn_c_SIB_puppet_UZH:0 "Uly Siberia"
+ 
+ dyn_c_SIB_puppet_VEN:0 "Venetian Siberia"
+ 
+ dyn_c_SIB_puppet_VIE:0 "Vientiane Siberia"
+ 
+ dyn_c_SIB_puppet_VNZ:0 "Venezuelan Siberia"
+ 
+ dyn_c_SIB_puppet_WAD:0 "Wadai Siberia"
+ 
+ dyn_c_SIB_puppet_WAL:0 "Wallachian Siberia"
+ 
+ dyn_c_SIB_puppet_WEI:0 "Saxon Siberia"
+ 
+ dyn_c_SIB_puppet_WES:0 "Westphalian Siberia"
+ 
+ dyn_c_SIB_puppet_WIN:0 "West Indian Siberia"
+ 
+ dyn_c_SIB_puppet_WLG:0 "Welega Siberia"
+ 
+ dyn_c_SIB_puppet_WLL:0 "Wallonian Siberia"
+ 
+ dyn_c_SIB_puppet_WLO:0 "Wello Siberia"
+ 
+ dyn_c_SIB_puppet_WLS:0 "Welsh Siberia"
+ 
+ dyn_c_SIB_puppet_WSG:0 "Warsangali Siberia"
+ 
+ dyn_c_SIB_puppet_WUR:0 "Wurttembergian Siberia"
+ 
+ dyn_c_SIB_puppet_XIN:0 "Uyghuristani Siberia"
+ 
+ dyn_c_SIB_puppet_YEM:0 "Yemeni Siberia"
+ 
+ dyn_c_SIB_puppet_MAH:0 "Mahra Siberia"
+ 
+ dyn_c_SIB_puppet_KAT:0 "Kathiri Siberia"
+ 
+ dyn_c_SIB_puppet_ZAI:0 "Azali Siberia"
+ 
+ dyn_c_SIB_puppet_LAH:0 "Lahej Siberia"
+ 
+ dyn_c_SIB_puppet_JAB:0 "Shammari Siberia"
+ 
+ dyn_c_SIB_puppet_BHN:0 "Bahraini Siberia"
+ 
+ dyn_c_SIB_puppet_YUG:0 "Yugoslavian Siberia"
+ 
+ dyn_c_SIB_puppet_ZAN:0 "Zanzibari Siberia"
+ 
+ dyn_c_SIB_puppet_ZUL:0 "Zulu Siberia"
+ 
+ dyn_c_SIB_puppet_MAC:0 "Mancunian Siberia"
+ 
+ dyn_c_SIB_puppet_SMI:0 "Sami Siberia"
+ 
+ dyn_c_SIB_puppet_MLT:0 "Maltese Siberia"
+ 
+ dyn_c_SIB_puppet_TWT:0 "Incan Siberia"
+ 
+ dyn_c_SIB_puppet_SUD:0 "Sudanese Siberia"
+ 
+ dyn_c_SIB_puppet_PRM:0 "Permian Siberia"
+ 
+ dyn_c_SIB_puppet_HZJ:0 "Hazara Siberia"
+ 
+ dyn_c_SIB_puppet_TRC:0 "Turkmenistani Siberia"
+ 
+ dyn_c_SIB_puppet_YAK:0 "Yakut Siberia"
+ 
+ dyn_c_SIB_puppet_ASM:0 "Assamese Siberia"
+ 
+ dyn_c_SIB_puppet_MNP:0 "Manipur Siberia"
+ 
+ dyn_c_SIB_puppet_TOB:0 "Toba Siberia"
+ 
+ dyn_c_SIB_puppet_KLT:0 "Kalimantan Siberia"
+ 
+ dyn_c_SIB_puppet_HTH:0 "Hathawaddy Siberia"
+ 
+ dyn_c_SIB_puppet_KRN:0 "Karen Siberia"
+ 
+ dyn_c_SIB_puppet_KHM:0 "Khmu Siberia"
+ 
+ dyn_c_SIB_puppet_KHN:0 "Kachin Siberia"
+ 
+ dyn_c_SIB_puppet_EZO:0 "Ezo Siberia"
+ 
+ dyn_c_SIB_puppet_QIA:0 "Qian Siberia"
+ 
+ dyn_c_SIB_puppet_FRS:0 "Formosan Siberia"
+ 
+ dyn_c_SIB_puppet_YUN:0 "Yunnan Siberia"
+ 
+ dyn_c_SIB_puppet_YUE:0 "Yue Siberia"
+ 
+ dyn_c_SIB_puppet_OAX:0 "Oaxacan Siberia"
+ 
+ dyn_c_SIB_puppet_AYM:0 "Aymara Siberia"
+ 
+ dyn_c_SIB_puppet_PUE:0 "Puebloan Siberia"
+ 
+ dyn_c_SIB_puppet_NNV:0 "Nunavut Siberia"
+ 
+ dyn_c_SIB_puppet_IRO:0 "Haudenosaunee Siberia"
+ 
+ dyn_c_SIB_puppet_SRB:0 "Sorbian Siberia"
+ 
+ dyn_c_SIB_puppet_YUC:0 "Yucatecan Siberia"
+ 
+ dyn_c_SIB_puppet_RIO:0 "Río Grandean Siberia"
+ 
+ dyn_c_SIB_puppet_PNI:0 "Piratini Siberia"
+ 
+ dyn_c_SIB_puppet_CEY:0 "Sri Lankan Siberia"
+ 
+ dyn_c_SIB_puppet_HBC:0 "Hudson Bay Siberia"
+ 
+ dyn_c_SIB_puppet_ONT:0 "Ontarian Siberia"
+ 
+ dyn_c_SIB_puppet_NBS:0 "New Brunswicker Siberia"
+ 
+ dyn_c_SIB_puppet_NSW:0 "New South Welsh Siberia"
+ 
+ dyn_c_SIB_puppet_WAS:0 "Western Australian Siberia"
+ 
+ dyn_c_SIB_puppet_SAS:0 "South Australian Siberia"
+ 
+ dyn_c_SIB_puppet_UNT:0 "United Tribal Siberia"
+ 
+ dyn_c_SIB_puppet_TAS:0 "Tasmania Siberia"
+ 
+ dyn_c_SIB_puppet_ZIM:0 "Zimbabwean Siberia"
+ 
+ dyn_c_SIB_puppet_BLH:0 "Baluchistani Siberia"
+ 
+ dyn_c_SIB_puppet_MAL:0 "Malian Siberia"
+ 
+ dyn_c_SIB_puppet_OCC:0 "Occitanian Siberia"
+ 
+ dyn_c_SIB_puppet_TUV:0 "Tuvan Siberia"
+ 
+ dyn_c_SIB_puppet_COR:0 "Corsican Siberia"
+ 
+ dyn_c_SIB_puppet_TNS:0 "Tungus Siberia"
+ 
+ dyn_c_SIB_puppet_FER:0 "Far Eastern Siberia"
+ 
+ dyn_c_SIB_puppet_IUS:0 "Idel-Ural Siberia"
+ 
+ dyn_c_SIB_puppet_NCA:0 "North Caucasian Siberia"
+ 
+ dyn_c_SIB_puppet_DON:0 "Don Cossacks Siberia"
+ 
+ dyn_c_SIB_puppet_SYR:0 "Syrian Siberia"
+ 
+ dyn_c_SIB_puppet_EOT:0 "Transjordanians Siberia"
+ 
+ dyn_c_SIB_puppet_LEB:0 "Lebanese Siberia"
+ 
+ dyn_c_SIB_puppet_GNG:0 "Da Cheng Siberia"
+ 
+ dyn_c_SIB_puppet_HNA:0 "Hunanese Siberia"
+ 
+ dyn_c_SIB_puppet_AHU:0 "Anhui Siberia"
+ 
+ dyn_c_SIB_puppet_ZHI:0 "Zhili Siberia"
+ 
+ dyn_c_SIB_puppet_SHN:0 "Shanxi Siberia"
+ 
+ dyn_c_SIB_puppet_GUI:0 "Guizhou Siberia"
+ 
+ dyn_c_SIB_puppet_SIH:0 "Sichuan Siberia"
+ 
+ dyn_c_SIB_puppet_SHA:0 "Shandongese Siberia"
+ 
+ dyn_c_SIB_puppet_XIB:0 "Xibei Siberia"
+ 
+ dyn_c_SIB_puppet_ALT:0 "Alteño Siberia"
+ 
+ dyn_c_SIB_puppet_AFS:0 "Free State Siberia"
+ 
+ dyn_c_SIB_puppet_DEI:0 "East Indies Siberia"
+ 
+ dyn_c_SIB_puppet_TRH:0 "Turkestani Siberia"
+ 
+ dyn_c_SIB_puppet_UOM:0 "Michigander Siberia"
+ 
+ dyn_c_SIB_puppet_SAK:0 "Siak Siberia"
+ 
+ dyn_c_SIB_puppet_PON:0 "Pontianak Siberia"
+ 
+ dyn_c_SIB_puppet_SMB:0 "Sambas Siberia"
+ 
+ dyn_c_SIB_puppet_JMB:0 "Jambi Siberia"
+ 
+ dyn_c_SIB_puppet_YOG:0 "Yogyakarta Siberia"
+ 
+ dyn_c_SIB_puppet_BTN:0 "Buton Siberia"
+ 
+ dyn_c_SIB_puppet_SEL:0 "Selangorean Siberia"
+ 
+ dyn_c_SIB_puppet_PRK:0 "Perakian Siberia"
+ 
+ dyn_c_SIB_puppet_SRK:0 "Surakarta Siberia"
+ 
+ dyn_c_SIB_puppet_TID:0 "Tidore Siberia"
+ 
+ dyn_c_SIB_puppet_STG:0 "Sintang Siberia"
+ 
+ dyn_c_SIB_puppet_BNJ:0 "Banjar Siberia"
+ 
+ dyn_c_SIB_puppet_SUL:0 "Sulu Siberia"
+ 
+ dyn_c_SIB_puppet_NVS:0 "Nova Scotian Siberia"
+ 
+ dyn_c_SIB_puppet_SMS:0 "Samian Siberia"
+ 
+ dyn_c_SIB_puppet_CHC:0 "Chechen Siberia"
+ 
+ dyn_c_SIB_puppet_CIR:0 "Circassian Siberia"
+ 
+ dyn_c_SIB_puppet_MGD:0 "Maguindanao Siberia"
+ 
+ dyn_c_SIB_puppet_ASS:0 "Assyrian Siberia"
+ 
+ dyn_c_SIB_puppet_KLM:0 "Kalmykian Siberia"
+ 
+ dyn_c_SIB_puppet_CAU:0 "Transcaucasian Siberia"
+ 
+ dyn_c_SIB_puppet_SAV:0 "Savoyard Siberia"
+ 
+ dyn_c_SIB_puppet_CON:0 "Constantinian Siberia"
+ 
+ dyn_c_SIB_puppet_TUG:0 "Touggourtian Siberia"
+ 
+ dyn_c_SIB_puppet_AIT:0 "Ait Abbas Siberia"
+ 
+ dyn_c_SIB_puppet_MAS:0 "Mascaran Siberia"
+ 
+ dyn_c_SIB_puppet_RHE:0 "Rhenish Siberia"
+ 
+ dyn_c_SIB_puppet_PRC:0 "Communard Siberia"
+ 
+ dyn_c_SIB_puppet_GZA:0 "Gazan Siberia"
+ 
+ dyn_c_SIB_puppet_BRG:0 "Borgu Siberia"
+ 
+ dyn_c_SIB_puppet_KRL:0 "Karelian Siberia"
+ 
+ dyn_c_SIB_puppet_TAR:0 "Tatar Siberia"
+ 
+ dyn_c_SIB_puppet_BKR:0 "Bashkir Siberia"
+ 
+ dyn_c_SIB_puppet_BRY:0 "Buryatian Siberia"
+ 
+ dyn_c_SIB_puppet_KMC:0 "Kamchatkan Siberia"
+ 
+ dyn_c_SIB_puppet_CKC:0 "Chukotkan Siberia"
+ 
+ dyn_c_SIB_puppet_ALI:0 "Altaic Siberia"
+ 
+ dyn_c_SIB_puppet_URL:0 "Uralian Siberia"
+ 
+ dyn_c_SIB_puppet_KNT:0 "Kanty-Mansian Siberia"
+ 
+ dyn_c_SIB_puppet_UDM:0 "Udmurt Siberia"
+ 
+ dyn_c_SIB_puppet_CHV:0 "Chuvash Siberia"
+ 
+ dyn_c_SIB_puppet_MRI:0 "Mari Siberia"
+ 
+ dyn_c_SIB_puppet_MRD:0 "Erzya-Mokshan Siberia"
+ 
+ dyn_c_SIB_puppet_TJI:0 "Tajik Siberia"
+ 
+ dyn_c_SIB_puppet_KYR:0 "Kyrgyz Siberia"
+ 
+ dyn_c_SIB_puppet_UZB:0 "Uzbek Siberia"
+ 
+ dyn_c_SIB_puppet_PAU:0 "Paulistanic Siberia"
+ 
+ dyn_c_SIB_puppet_EQT:0 "Equatorial Siberia"
+ 
+ dyn_c_SIB_puppet_CTR:0 "Catharinense Siberia"
+ 
+ dyn_c_SIB_puppet_MNG:0 "Mineiro Siberia"
+ 
+ dyn_c_SIB_puppet_FND:0 "Andean Siberia"
+ 
+ dyn_c_SIB_puppet_BHI:0 "Baiano Siberia"
+ 
+ dyn_c_SIB_puppet_PBC:0 "Peru-Bolivian Siberia"
+ 
+ dyn_c_SIB_puppet_IQU:0 "Iquichan Siberia"
+ 
+ dyn_c_SIB_puppet_NPU:0 "North Peruvian Siberia"
+ 
+ dyn_c_SIB_puppet_RSM:0 "Venetian Siberia"
+ 
+ dyn_c_SIB_puppet_HRE:0 "Central European Siberia"
+ 
+ dyn_c_SIB_puppet_UNL:0 "Dutch Siberia"
+ 
+ dyn_c_SIB_puppet_RHN:0 "Rhenish Siberia"
+ 
+ dyn_c_SIB_puppet_PLT:0 "Platinean Siberia"
+ 
+ dyn_c_SIB_puppet_SPU:0 "South Peruvian Siberia"
+ 
+ dyn_c_SIB_puppet_NCR:0 "North Carolinian Siberia"
+ 
+ dyn_c_SIB_puppet_SCR:0 "South Carolinian Siberia"
+ 
+ dyn_c_SIB_puppet_CLI:0 "Carolinian Siberia"
+ 
+ dyn_c_SIB_puppet_GRG:0 "Georgian Siberia"
+ 
+ dyn_c_SIB_puppet_FLR:0 "Floridian Siberia"
+ 
+ dyn_c_SIB_puppet_PAK:0 "Pakistani Siberia"
+ 
+ dyn_c_SIB_puppet_MGB:0 "Maghrebi Siberia"
+ 
+ dyn_c_SIB_puppet_TIS:0 "Turtle Islander Siberia"
+ 
+ dyn_c_SIB_puppet_KAB:0 "Kabuli Siberia"
+ 
+ dyn_c_SIB_puppet_KAN:0 "Kandahari Siberia"
+ 
+ dyn_c_SIB_puppet_HER:0 "Herati Siberia"
+ 
+ dyn_c_SIB_puppet_CHT:0 "Chitrali Siberia"
+ 
+ dyn_c_SIB_puppet_MAI:0 "Maimanan Siberia"
+ 
+ dyn_c_SIB_puppet_KUN:0 "Kunduzi Siberia"
+ 
+ dyn_c_SIB_puppet_ARB:0 "Arabistani Siberia"
+ 
+ dyn_c_SIB_puppet_BHW:0 "Bahawalpuri Siberia"
+ 
+ dyn_c_SIB_puppet_LUR:0 "Luristani Siberia"
+ 
+ dyn_c_SIB_puppet_MAZ:0 "Mazandarani Siberia"
+ 
+ dyn_c_SIB_puppet_BEI:0 "Beiyang Siberia"
+ 
+ dyn_c_SIB_puppet_KAF:0 "Kafiri Siberia"
+ 
+ dyn_c_SIB_puppet_LIM:0 "Limburger Siberia"
+ 
+ dyn_c_SIB_puppet_PTA:0 "Patialvi Siberia"
+ 
+ dyn_c_SIB_puppet_GAR:0 "Garhwali Siberia"
+ 
+ dyn_c_SIB_puppet_ALW:0 "Alwari Siberia"
+ 
+ dyn_c_SIB_puppet_COO:0 "Cooch Behari Siberia"
+ 
+ dyn_c_SIB_puppet_NGA:0 "Naga Siberia"
+ 
+ dyn_c_SIB_puppet_SHS:0 "Shan Siberia"
+ 
+ dyn_c_SIB_puppet_JHN:0 "Jhansian Siberia"
+ 
+ dyn_c_SIB_puppet_KOT:0 "Kotahi Siberia"
+ 
+ dyn_c_SIB_puppet_IDA:0 "Idari Siberia"
+ 
+ dyn_c_SIB_puppet_NAW:0 "Nawanagari Siberia"
+ 
+ dyn_c_SIB_puppet_JUN:0 "Junagadhi Siberia"
+ 
+ dyn_c_SIB_puppet_BHV:0 "Bhavnagari Siberia"
+ 
+ dyn_c_SIB_puppet_DHA:0 "Dharampuri Siberia"
+ 
+ dyn_c_SIB_puppet_PUD:0 "Pudukottaian Siberia"
+ 
+ dyn_c_SIB_puppet_SAT:0 "Sataran Siberia"
+ 
+ dyn_c_SIB_puppet_KHP:0 "Kolhapuri Siberia"
+ 
+ dyn_c_SIB_puppet_KNO:0 "Kurnooli Siberia"
+ 
+ dyn_c_SIB_puppet_BAG:0 "Rewaite Siberia"
+ 
+ dyn_c_SIB_puppet_SUR:0 "Surgujian Siberia"
+ 
+ dyn_c_SIB_puppet_PLP:0 "Palanpuri Siberia"
+ 
+ dyn_c_SIB_puppet_MYB:0 "Mayurbhanji Siberia"
+ 
+ dyn_c_SIB_puppet_PTN:0 "Patnavi Siberia"
+ 
+ dyn_c_SIB_puppet_JEY:0 "Jeyporean Siberia"
+ 
+ dyn_c_SIB_puppet_NAR:0 "Narsinghpuri Siberia"
+ 
+ dyn_c_SIB_puppet_LBL:0 "Lasbeli Siberia"
+ 
+ dyn_c_SIB_puppet_KHR:0 "Kharani Siberia"
+ 
+ dyn_c_SIB_puppet_KPR:0 "Khairpuri Siberia"
+ 
+ dyn_c_SIB_puppet_SWT:0 "Swati Siberia"
+ 
+ dyn_c_SIB_puppet_DIR:0 "Dirwali Siberia"
+ 
+ dyn_c_SIB_puppet_CAR:0 "Carnatic Siberia"
+ 
+ dyn_c_SIB_puppet_RAJ:0 "Rajput Siberia"
+ 
+ dyn_c_SIB_puppet_MHR:0 "Maharashtrian Siberia"
+ 
+ dyn_c_SIB_puppet_DRA:0 "Dravidian Siberia"
+ 
+ dyn_c_SIB_puppet_COC:0 "Cochinese Siberia"
+ 
+ dyn_c_SIB_puppet_ALK:0 "Alaskan Siberia"
+ 
+ dyn_c_SIB_puppet_GUJ:0 "Gujarati Siberia"
+ 
+ dyn_c_SIB_puppet_BCE:0 "Ceylonese Siberia"
+ 
+ dyn_c_SIB_puppet_MLD:0 "Maldivian Siberia"
+ 
+ dyn_c_SIB_puppet_BIH:0 "Bihari Siberia"
+ 
+ dyn_c_SIB_puppet_ARK:0 "Arakanese Siberia"
+ 
+ dyn_c_SIB_puppet_IDS:0 "Indusstani Siberia"
+
+
+ dyn_c_kamchatka_absolutist_monarchy:0 "Kingdom of Kamchatka"
+ 
+ dyn_c_kamchatka_monarchy:0 "Kingdom of Kamchatka"
+ 
+ dyn_c_kamchatka_dictatorship:0 "Great State of Kamchatka"
+ 
+ dyn_c_kamchatka_republic:0 "New Kamchatkan Republic"
+ 
+ dyn_c_kamchatka_communist:0 "Red Kamchatka Authority"
+ 
+ dyn_c_kamchatka_communistvote:0 "Kamchatkan Red Repbulic"
+ 
+ dyn_c_kamchatka_theocratic:0 "Blessed Kingdom of the Snow"
+ 
+ dyn_c_kamchatka_theocraticvote:0 "Holy Council of the Tundra"
+ 
+ dyn_c_kamchatka_anarchy:0 "Confederation of the Snow"
+ 
+ dyn_c_KMC_puppet_ABK:0 "Abkhaz Kamchatka"
+ 
+ dyn_c_KMC_puppet_ABU:0 "Trucial Kamchatka"
+ 
+ dyn_c_KMC_puppet_ACE:0 "Acehnese Kamchatka"
+ 
+ dyn_c_KMC_puppet_ACH:0 "Acholi Kamchatka"
+ 
+ dyn_c_KMC_puppet_AFG:0 "Afghan Kamchatka"
+ 
+ dyn_c_KMC_puppet_ALB:0 "Albanian Kamchatka"
+ 
+ dyn_c_KMC_puppet_ALD:0 "Algerian Kamchatka"
+ 
+ dyn_c_KMC_puppet_AOT:0 "Aotearoan Kamchatka"
+ 
+ dyn_c_KMC_puppet_ASA:0 "New African Kamchatka"
+ 
+ dyn_c_KMC_puppet_AUS:0 "Austrian"
+ 
+ dyn_c_KMC_puppet_AWA:0 "Awadhi"
+ 
+ dyn_c_KMC_puppet_AMZ:0 "Amazonian Kamchatka"
+ 
+ dyn_c_KMC_puppet_ANL:0 "Andalusian Kamchatka"
+ 
+ dyn_c_KMC_puppet_AGJ:0 "New Angolan Kamchatka"
+ 
+ dyn_c_KMC_puppet_ANH:0 "Anhaltian Kamchatka"
+ 
+ dyn_c_KMC_puppet_ANK:0 "Ankole Kamchatka"
+ 
+ dyn_c_KMC_puppet_ARA:0 "Arab Kamchatka"
+ 
+ dyn_c_KMC_puppet_ARG:0 "Argentinian Kamchatka"
+ 
+ dyn_c_KMC_puppet_ARM:0 "Armenian Kamchatka"
+ 
+ dyn_c_KMC_puppet_ASH:0 "Ashanti Kamchatka"
+ 
+ dyn_c_KMC_puppet_AWS:0 "Aussan Kamchatka"
+ 
+ dyn_c_KMC_puppet_AST:0 "Australian Kamchatka"
+ 
+ dyn_c_KMC_puppet_AZB:0 "Azerbaijani Kamchatka"
+ 
+ dyn_c_KMC_puppet_BAB:0 "Babylonian Kamchatka"
+ 
+ dyn_c_KMC_puppet_BAD:0 "Baden Kamchatka"
+ 
+ dyn_c_KMC_puppet_BAH:0 "Bahamian Kamchatka"
+ 
+ dyn_c_KMC_puppet_BAL:0 "Balinese Kamchatka"
+ 
+ dyn_c_KMC_puppet_BAS:0 "Bastar Kamchatka"
+ 
+ dyn_c_KMC_puppet_BAV:0 "Bavarian Kamchatka"
+ 
+ dyn_c_KMC_puppet_BEL:0 "Belgian Kamchatka"
+ 
+ dyn_c_KMC_puppet_BEN:0 "Benin Kamchatka"
+ 
+ dyn_c_KMC_puppet_BER:0 "Barodan Kamchatka"
+ 
+ dyn_c_KMC_puppet_BGI:0 "Bagirmi Kamchatka"
+ 
+ dyn_c_KMC_puppet_BGL:0 "Bengali Kamchatka"
+ 
+ dyn_c_KMC_puppet_BGM:0 "Begemder Kamchatka"
+ 
+ dyn_c_KMC_puppet_BHO:0 "Bhopali Kamchatka"
+ 
+ dyn_c_KMC_puppet_BHU:0 "Bhutanese Kamchatka"
+ 
+ dyn_c_KMC_puppet_BIC:0 "East India Kamchatka"
+ 
+ dyn_c_KMC_puppet_BIK:0 "Bikaneri Kamchatka"
+ 
+ dyn_c_KMC_puppet_BLG:0 "Bulungan Kamchatka"
+ 
+ dyn_c_KMC_puppet_BNY:0 "Bunyoro Kamchatka"
+ 
+ dyn_c_KMC_puppet_BOH:0 "Bohemian Kamchatka"
+ 
+ dyn_c_KMC_puppet_BOL:0 "Bolivian Kamchatka"
+ 
+ dyn_c_KMC_puppet_BOR:0 "Bornu Kamchatka"
+ 
+ dyn_c_KMC_puppet_BOS:0 "Bosnian Kamchatka"
+ 
+ dyn_c_KMC_puppet_BRA:0 "Brunswickian Kamchatka"
+ 
+ dyn_c_KMC_puppet_BRD:0 "Burundi Kamchatka"
+ 
+ dyn_c_KMC_puppet_BRE:0 "Bremian Kamchatka"
+ 
+ dyn_c_KMC_puppet_BRI:0 "Breton Kamchatka"
+ 
+ dyn_c_KMC_puppet_BRN:0 "Borana Kamchatka"
+ 
+ dyn_c_KMC_puppet_BRU:0 "Brunei Kamchatka"
+ 
+ dyn_c_KMC_puppet_BRZ:0 "Brazilian Kamchatka"
+ 
+ dyn_c_KMC_puppet_BUG:0 "Bugandan Kamchatka"
+ 
+ dyn_c_KMC_puppet_BUK:0 "Bukharan Kamchatka"
+ 
+ dyn_c_KMC_puppet_BUL:0 "Bulgarian Kamchatka"
+ 
+ dyn_c_KMC_puppet_BUN:0 "Orchhan Kamchatka"
+ 
+ dyn_c_KMC_puppet_BUR:0 "Burmese Kamchatka"
+ 
+ dyn_c_KMC_puppet_BYE:0 "Byelorussian Kamchatka"
+ 
+ dyn_c_KMC_puppet_BYZ:0 "Byzantine Kamchatka"
+ 
+ dyn_c_KMC_puppet_CAL:0 "Californian Kamchatka"
+ 
+ dyn_c_KMC_puppet_CAM:0 "Cambodian Kamchatka"
+ 
+ dyn_c_KMC_puppet_CAN:0 "Canadian Kamchatka"
+ 
+ dyn_c_KMC_puppet_CAS:0 "Castilian Kamchatka"
+ 
+ dyn_c_KMC_puppet_CAT:0 "Catalonian Kamchatka"
+ 
+ dyn_c_KMC_puppet_CHE:0 "Cherokee Kamchatka"
+ 
+ dyn_c_KMC_puppet_CHI:0 "Chinese Kamchatka"
+ 
+ dyn_c_KMC_puppet_CHL:0 "Chilean Kamchatka"
+ 
+ dyn_c_KMC_puppet_CHP:0 "Champassakan Kamchatka"
+ 
+ dyn_c_KMC_puppet_CLM:0 "Colombian Kamchatka"
+ 
+ dyn_c_KMC_puppet_CMI:0 "Chiang Maian Kamchatka"
+ 
+ dyn_c_KMC_puppet_CNG:0 "Congolese Kamchatka"
+ 
+ dyn_c_KMC_puppet_CNW:0 "Cornish Kamchatka"
+ 
+ dyn_c_KMC_puppet_COB:0 "Saxon Kamchatka"
+ 
+ dyn_c_KMC_puppet_COL:0 "Columbian Kamchatka"
+ 
+ dyn_c_KMC_puppet_COS:0 "Costa Rican Kamchatka"
+ 
+ dyn_c_KMC_puppet_CRE:0 "Cretian Kamchatka"
+ 
+ dyn_c_KMC_puppet_CRI:0 "Crimean Kamchatka"
+ 
+ dyn_c_KMC_puppet_CRO:0 "Croatian Kamchatka"
+ 
+ dyn_c_KMC_puppet_CSA:0 "Confederate Kamchatka"
+ 
+ dyn_c_KMC_puppet_CUB:0 "Cuban Kamchatka"
+ 
+ dyn_c_KMC_puppet_CYP:0 "Cypriot Kamchatka"
+ 
+ dyn_c_KMC_puppet_CZH:0 "Czechoslovakian Kamchatka"
+ 
+ dyn_c_KMC_puppet_DAG:0 "Dagestani Kamchatka"
+ 
+ dyn_c_KMC_puppet_DAH:0 "Dahomey Kamchatka"
+ 
+ dyn_c_KMC_puppet_DAI:0 "Vietnamese Kamchatka"
+ 
+ dyn_c_KMC_puppet_DEN:0 "Danish Kamchatka"
+ 
+ dyn_c_KMC_puppet_DES:0 "Mormon Kamchatka"
+ 
+ dyn_c_KMC_puppet_DFR:0 "Darfuri Kamchatka"
+ 
+ dyn_c_KMC_puppet_DOM:0 "Dominican Kamchatka"
+ 
+ dyn_c_KMC_puppet_DZG:0 "Danziger Kamchatka"
+ 
+ dyn_c_KMC_puppet_ECU:0 "Ecuadorian Kamchatka"
+ 
+ dyn_c_KMC_puppet_EGY:0 "Egyptian Kamchatka"
+ 
+ dyn_c_KMC_puppet_ELS:0 "El Salvadorian Kamchatka"
+ 
+ dyn_c_KMC_puppet_ENG:0 "English Kamchatka"
+ 
+ dyn_c_KMC_puppet_EST:0 "Estonian Kamchatka"
+ 
+ dyn_c_KMC_puppet_ETH:0 "Ethiopian Kamchatka"
+ 
+ dyn_c_KMC_puppet_FIN:0 "Finnish Kamchatka"
+ 
+ dyn_c_KMC_puppet_FLA:0 "Flemish Kamchatka"
+ 
+ dyn_c_KMC_puppet_FRA:0 "French Kamchatka"
+ 
+ dyn_c_KMC_puppet_FRM:0 "Frankfurter Kamchatka"
+ 
+ dyn_c_KMC_puppet_FSA:0 "Free American Kamchatka"
+ 
+ dyn_c_KMC_puppet_FTJ:0 "Futa Jallon Kamchatka"
+ 
+ dyn_c_KMC_puppet_FTR:0 "Futa Toro Kamchatka"
+ 
+ dyn_c_KMC_puppet_GAL:0 "Galician-Lodomerian Kamchatka"
+ 
+ dyn_c_KMC_puppet_GAM:0 "Gambian Kamchatka"
+ 
+ dyn_c_KMC_puppet_GBR:0 "British Kamchatka"
+ 
+ dyn_c_KMC_puppet_GCO:0 "Gran Colombian Kamchatka"
+ 
+ dyn_c_KMC_puppet_GEO:0 "Georgian Kamchatka"
+ 
+ dyn_c_KMC_puppet_GER:0 "German Kamchatka"
+ 
+ dyn_c_KMC_puppet_GGR:0 "Greater German Kamchatka"
+ 
+ dyn_c_KMC_puppet_GJM:0 "Gojjam Kamchatka"
+ 
+ dyn_c_KMC_puppet_GLC:0 "Gold Coast Kamchatka"
+ 
+ dyn_c_KMC_puppet_GLD:0 "Geledi Kamchatka"
+ 
+ dyn_c_KMC_puppet_GRE:0 "Greek Kamchatka"
+ 
+ dyn_c_KMC_puppet_GRI:0 "Guarani Kamchatka"
+ 
+ dyn_c_KMC_puppet_GRN:0 "Greenlandic Kamchatka"
+ 
+ dyn_c_KMC_puppet_GUA:0 "Guatemalan Kamchatka"
+ 
+ dyn_c_KMC_puppet_GWA:0 "Gwaliori Kamchatka"
+ 
+ dyn_c_KMC_puppet_HAI:0 "Haitian Kamchatka"
+ 
+ dyn_c_KMC_puppet_HAM:0 "Hamburgian Kamchatka"
+ 
+ dyn_c_KMC_puppet_HAN:0 "Hanoverian Kamchatka"
+ 
+ dyn_c_KMC_puppet_HAR:0 "Harari Kamchatka"
+ 
+ dyn_c_KMC_puppet_HAU:0 "Gobir Kamchatka"
+ 
+ dyn_c_KMC_puppet_HAW:0 "Hawaiian Kamchatka"
+ 
+ dyn_c_KMC_puppet_HDJ:0 "Hedjazi Kamchatka"
+ 
+ dyn_c_KMC_puppet_HEK:0 "Hessian Kamchatka"
+ 
+ dyn_c_KMC_puppet_HES:0 "Hessian Kamchatka"
+ 
+ dyn_c_KMC_puppet_HND:0 "Indian Kamchatka"
+ 
+ dyn_c_KMC_puppet_HOB:0 "Hobyo Kamchatka"
+ 
+ dyn_c_KMC_puppet_HOL:0 "Holsteinian Kamchatka"
+ 
+ dyn_c_KMC_puppet_HON:0 "Honduran Kamchatka"
+ 
+ dyn_c_KMC_puppet_HUN:0 "Hungarian Kamchatka"
+ 
+ dyn_c_KMC_puppet_HYD:0 "Hyderabadi Kamchatka"
+ 
+ dyn_c_KMC_puppet_IBE:0 "Iberian Kamchatka"
+ 
+ dyn_c_KMC_puppet_ICL:0 "Icelandic Kamchatka"
+ 
+ dyn_c_KMC_puppet_IND:0 "Indori Kamchatka"
+ 
+ dyn_c_KMC_puppet_ION:0 "Ionian Kamchatka"
+ 
+ dyn_c_KMC_puppet_IRE:0 "Irish Kamchatka"
+ 
+ dyn_c_KMC_puppet_IRQ:0 "Iraqi Kamchatka"
+ 
+ dyn_c_KMC_puppet_ISQ:0 "Isaaqi Kamchatka"
+ 
+ dyn_c_KMC_puppet_ISR:0 "Israeli Kamchatka"
+ 
+ dyn_c_KMC_puppet_ITA:0 "Italian Kamchatka"
+ 
+ dyn_c_KMC_puppet_JAI:0 "Dhundhari Kamchatka"
+ 
+ dyn_c_KMC_puppet_JAM:0 "Jamaican Kamchatka"
+ 
+ dyn_c_KMC_puppet_JAN:0 "Jan Mayen Kamchatka"
+ 
+ dyn_c_KMC_puppet_JAP:0 "Japanese Kamchatka"
+ 
+ dyn_c_KMC_puppet_JAS:0 "Jaisalmeri Kamchatka"
+ 
+ dyn_c_KMC_puppet_JAV:0 "Javanese Kamchatka"
+ 
+ dyn_c_KMC_puppet_JOD:0 "Marwari Kamchatka"
+ 
+ dyn_c_KMC_puppet_JOH:0 "Johorean Kamchatka"
+ 
+ dyn_c_KMC_puppet_KAL:0 "Kalati Kamchatka"
+ 
+ dyn_c_KMC_puppet_KAS:0 "Kashmiri Kamchatka"
+ 
+ dyn_c_KMC_puppet_KAU:0 "Kaurna Kamchatka"
+ 
+ dyn_c_KMC_puppet_KAZ:0 "Kazakh Kamchatka"
+ 
+ dyn_c_KMC_puppet_KFA:0 "Kaffa Kamchatka"
+ 
+ dyn_c_KMC_puppet_KHI:0 "Khivan Kamchatka"
+ 
+ dyn_c_KMC_puppet_KOK:0 "Kokandi Kamchatka"
+ 
+ dyn_c_KMC_puppet_KON:0 "Kongolese Kamchatka"
+ 
+ dyn_c_KMC_puppet_KOR:0 "Korean Kamchatka"
+ 
+ dyn_c_KMC_puppet_KRA:0 "Krakowian Kamchatka"
+ 
+ dyn_c_KMC_puppet_KRG:0 "Karagwe Kamchatka"
+ 
+ dyn_c_KMC_puppet_KRT:0 "Kaarta Kamchatka"
+ 
+ dyn_c_KMC_puppet_KTI:0 "Kutai Kamchatka"
+ 
+ dyn_c_KMC_puppet_KUK:0 "Danubian Kamchatka"
+ 
+ dyn_c_KMC_puppet_KUT:0 "Kutchi Kamchatka"
+ 
+ dyn_c_KMC_puppet_KZH:0 "Kishi Kamchatka"
+ 
+ dyn_c_KMC_puppet_LAD:0 "Ladakhi Kamchatka"
+ 
+ dyn_c_KMC_puppet_LAN:0 "Lanfangan Kamchatka"
+ 
+ dyn_c_KMC_puppet_LAO:0 "Laotian Kamchatka"
+ 
+ dyn_c_KMC_puppet_LAT:0 "Latvian Kamchatka"
+ 
+ dyn_c_KMC_puppet_LIB:0 "Liberian Kamchatka"
+ 
+ dyn_c_KMC_puppet_LIP:0 "Lippish Kamchatka"
+ 
+ dyn_c_KMC_puppet_SCM:0 "Schaumburger Kamchatka"
+ 
+ dyn_c_KMC_puppet_HOH:0 "Hohenzollern Kamchatka"
+ 
+ dyn_c_KMC_puppet_SCW:0 "Schwarzburger Kamchatka"
+ 
+ dyn_c_KMC_puppet_LIT:0 "Lithuanian Kamchatka"
+ 
+ dyn_c_KMC_puppet_LOM:0 "Lombardian Kamchatka"
+ 
+ dyn_c_KMC_puppet_LUA:0 "Luang Prabangi Kamchatka"
+ 
+ dyn_c_KMC_puppet_LUB:0 "Lubeckian Kamchatka"
+ 
+ dyn_c_KMC_puppet_LUC:0 "Luccan Kamchatka"
+ 
+ dyn_c_KMC_puppet_LUX:0 "Luxembourgian Kamchatka"
+ 
+ dyn_c_KMC_puppet_MAD:0 "Madagascarian Kamchatka"
+ 
+ dyn_c_KMC_puppet_MAK:0 "Makran Kamchatka"
+ 
+ dyn_c_KMC_puppet_MAN:0 "Manhattanite Kamchatka"
+ 
+ dyn_c_KMC_puppet_MAY:0 "Maya Kamchatka"
+ 
+ dyn_c_KMC_puppet_MCH:0 "Manchu Kamchatka"
+ 
+ dyn_c_KMC_puppet_MEC:0 "Mecklenburgian Kamchatka"
+ 
+ dyn_c_KMC_puppet_MST:0 "Mecklenburgian Kamchatka"
+ 
+ dyn_c_KMC_puppet_WLD:0 "Waldeckerd Kamchatka"
+ 
+ dyn_c_KMC_puppet_MEI:0 "Saxon Kamchatka"
+ 
+ dyn_c_KMC_puppet_MEW:0 "Mewari Kamchatka"
+ 
+ dyn_c_KMC_puppet_MEX:0 "Mexican Kamchatka"
+ 
+ dyn_c_KMC_puppet_MGL:0 "Mongolian Kamchatka"
+ 
+ dyn_c_KMC_puppet_MJT:0 "Majerteenian Kamchatka"
+ 
+ dyn_c_KMC_puppet_MKT:0 "Miskito Kamchatka"
+ 
+ dyn_c_KMC_puppet_MNS:0 "Massinan Kamchatka"
+ 
+ dyn_c_KMC_puppet_MOD:0 "Modenian Kamchatka"
+ 
+ dyn_c_KMC_puppet_MOL:0 "Moldavian Kamchatka"
+ 
+ dyn_c_KMC_puppet_MON:0 "Montenegrin Kamchatka"
+ 
+ dyn_c_KMC_puppet_MOR:0 "Moroccan Kamchatka"
+ 
+ dyn_c_KMC_puppet_MSN:0 "Massina Kamchatka"
+ 
+ dyn_c_KMC_puppet_MTC:0 "Métis Kamchatka"
+ 
+ dyn_c_KMC_puppet_MUG:0 "Mughal Kamchatka"
+ 
+ dyn_c_KMC_puppet_MYS:0 "Mysori Kamchatka"
+ 
+ dyn_c_KMC_puppet_NAG:0 "Nagpuri Kamchatka"
+ 
+ dyn_c_KMC_puppet_NAH:0 "Anahuacan Kamchatka"
+ 
+ dyn_c_KMC_puppet_NAL:0 "Natalian Kamchatka"
+ 
+ dyn_c_KMC_puppet_NAS:0 "Nassauan Kamchatka"
+ 
+ dyn_c_KMC_puppet_NAV:0 "Navarran Kamchatka"
+ 
+ dyn_c_KMC_puppet_NEJ:0 "Nejdi Kamchatka"
+ 
+ dyn_c_KMC_puppet_NEN:0 "New Englander Kamchatka"
+ 
+ dyn_c_KMC_puppet_NEP:0 "Nepali Kamchatka"
+ 
+ dyn_c_KMC_puppet_NET:0 "Dutch Kamchatka"
+ 
+ dyn_c_KMC_puppet_NEW:0 "Newfoundlander Kamchatka"
+ 
+ dyn_c_KMC_puppet_NGF:0 "North German Kamchatka"
+ 
+ dyn_c_KMC_puppet_NIC:0 "Nicaraguan Kamchatka"
+ 
+ dyn_c_KMC_puppet_NOR:0 "Norwegian Kamchatka"
+ 
+ dyn_c_KMC_puppet_NZL:0 "New Zealand Kamchatka"
+ 
+ dyn_c_KMC_puppet_OLD:0 "Oldenburgian Kamchatka"
+ 
+ dyn_c_KMC_puppet_OMA:0 "Omani Kamchatka"
+ 
+ dyn_c_KMC_puppet_ORA:0 "Oranjean Kamchatka"
+ 
+ dyn_c_KMC_puppet_ORG:0 "Oregonian Kamchatka"
+ 
+ dyn_c_KMC_puppet_ORI:0 "Orissan Kamchatka"
+ 
+ dyn_c_KMC_puppet_OYO:0 "Oyo Kamchatka"
+ 
+ dyn_c_KMC_puppet_OZH:0 "Orta Kamchatka"
+ 
+ dyn_c_KMC_puppet_PAN:0 "Punjabi Kamchatka"
+ 
+ dyn_c_KMC_puppet_PAP:0 "Roman Kamchatka"
+ 
+ dyn_c_KMC_puppet_PAR:0 "Parmese Kamchatka"
+ 
+ dyn_c_KMC_puppet_PER:0 "Persian Kamchatka"
+ 
+ dyn_c_KMC_puppet_PEU:0 "Peruvian Kamchatka"
+ 
+ dyn_c_KMC_puppet_PHI:0 "Philippine Kamchatka"
+ 
+ dyn_c_KMC_puppet_PLC:0 "Polish-Lithuanian Kamchatka"
+ 
+ dyn_c_KMC_puppet_PLY:0 "Tahitian Kamchatka"
+ 
+ dyn_c_KMC_puppet_PNS:0 "Polynesian Kamchatka"
+ 
+ dyn_c_KMC_puppet_YUZ:0 "Yuanzhumin Kamchatka"
+ 
+ dyn_c_KMC_puppet_PNM:0 "Panamanian Kamchatka"
+ 
+ dyn_c_KMC_puppet_POL:0 "Polish Kamchatka"
+ 
+ dyn_c_KMC_puppet_POM:0 "Pomeranian Kamchatka"
+ 
+ dyn_c_KMC_puppet_POR:0 "Portuguese Kamchatka"
+ 
+ dyn_c_KMC_puppet_PRG:0 "Paraguayan Kamchatka"
+ 
+ dyn_c_KMC_puppet_PRU:0 "Prussian Kamchatka"
+ 
+ dyn_c_KMC_puppet_PCO:0 "Puerto Rican Kamchatka"
+ 
+ dyn_c_KMC_puppet_QUE:0 "Quebec Kamchatka"
+ 
+ dyn_c_KMC_puppet_REB:0 "Rebel Kamchatka"
+ 
+ dyn_c_KMC_puppet_ROM:0 "Romanian Kamchatka"
+ 
+ dyn_c_KMC_puppet_RUS:0 "Russian Kamchatka"
+ 
+ dyn_c_KMC_puppet_RUT:0 "Ruthenian Kamchatka"
+ 
+ dyn_c_KMC_puppet_RWD:0 "Rwandan Kamchatka"
+ 
+ dyn_c_KMC_puppet_SAF:0 "South African Kamchatka"
+ 
+ dyn_c_KMC_puppet_SAR:0 "Piedmontian Kamchatka"
+ 
+ dyn_c_KMC_puppet_SAX:0 "Saxon Kamchatka"
+ 
+ dyn_c_KMC_puppet_SCA:0 "Scandinavian Kamchatka"
+ 
+ dyn_c_KMC_puppet_SCH:0 "Schleswigian Kamchatka"
+ 
+ dyn_c_KMC_puppet_SCN:0 "Scanian Kamchatka"
+ 
+ dyn_c_KMC_puppet_SCO:0 "Scottish Kamchatka"
+ 
+ dyn_c_KMC_puppet_SDM:0 "Sidama Kamchatka"
+ 
+ dyn_c_KMC_puppet_SEQ:0 "Indian Kamchatka"
+ 
+ dyn_c_KMC_puppet_SER:0 "Serb Kamchatka"
+ 
+ dyn_c_KMC_puppet_SGF:0 "German Kamchatka"
+ 
+ dyn_c_KMC_puppet_SGU:0 "Segou Kamchatka"
+ 
+ dyn_c_KMC_puppet_SHI:0 "Shimlan Kamchatka"
+ 
+ dyn_c_KMC_puppet_SHW:0 "Shewan Kamchatka"
+ 
+ dyn_c_KMC_puppet_SIA:0 "Siamese Kamchatka"
+ 
+ dyn_c_KMC_puppet_SIC:0 "Sicilian Kamchatka"
+ 
+ dyn_c_KMC_puppet_SIK:0 "Sikkim Kamchatka"
+ 
+ dyn_c_KMC_puppet_SIL:0 "Sierra Leonean Kamchatka"
+ 
+ dyn_c_KMC_puppet_SIN:0 "Sindi Kamchatka"
+ 
+ dyn_c_KMC_puppet_SLO:0 "Slovenian Kamchatka"
+ 
+ dyn_c_KMC_puppet_SLV:0 "Slovak Kamchatka"
+ 
+ dyn_c_KMC_puppet_SOK:0 "Sokoto Kamchatka"
+ 
+ dyn_c_KMC_puppet_SPA:0 "Spanish Kamchatka"
+ 
+ dyn_c_KMC_puppet_SWE:0 "Swedish Kamchatka"
+ 
+ dyn_c_KMC_puppet_SWI:0 "Swiss Kamchatka"
+ 
+ dyn_c_KMC_puppet_TEX:0 "Texan Kamchatka"
+ 
+ dyn_c_KMC_puppet_TGR:0 "Tigray Kamchatka"
+ 
+ dyn_c_KMC_puppet_TIB:0 "Tibetan Kamchatka"
+ 
+ dyn_c_KMC_puppet_TPG:0 "Taiping Kamchatka"
+ 
+ dyn_c_KMC_puppet_TRA:0 "Travancorian Kamchatka"
+ 
+ dyn_c_KMC_puppet_TRE:0 "Triestian Kamchatka"
+ 
+ dyn_c_KMC_puppet_TRI:0 "Tripolitanian Kamchatka"
+ 
+ dyn_c_KMC_puppet_TRN:0 "Transvaali Kamchatka"
+ 
+ dyn_c_KMC_puppet_TRS:0 "Transylvanian Kamchatka"
+ 
+ dyn_c_KMC_puppet_TUN:0 "Tunisian Kamchatka"
+ 
+ dyn_c_KMC_puppet_TUR_turkish_islamic:0 "Turkish-Islamic Kamchatka"
+ 
+ dyn_c_KMC_puppet_TUR_ottoman:0 "Ottoman Kamchatka"
+ 
+ dyn_c_KMC_puppet_TUR_turkish:0 "Turkish Kamchatka"
+ 
+ dyn_c_KMC_puppet_TUS:0 "Tuscan Kamchatka"
+ 
+ dyn_c_KMC_puppet_UBD:0 "Baltic Kamchatka"
+ 
+ dyn_c_KMC_puppet_UCA:0 "Central American Kamchatka"
+ 
+ dyn_c_KMC_puppet_UKR:0 "Ukrainian Kamchatka"
+ 
+ dyn_c_KMC_puppet_ULS:0 "Ulster Kamchatka"
+ 
+ dyn_c_KMC_puppet_URU:0 "Uruguayan Kamchatka"
+ 
+ dyn_c_KMC_puppet_USA:0 "American Kamchatka"
+ 
+ dyn_c_KMC_puppet_UZH:0 "Uly Kamchatka"
+ 
+ dyn_c_KMC_puppet_VEN:0 "Venetian Kamchatka"
+ 
+ dyn_c_KMC_puppet_VIE:0 "Vientiane Kamchatka"
+ 
+ dyn_c_KMC_puppet_VNZ:0 "Venezuelan Kamchatka"
+ 
+ dyn_c_KMC_puppet_WAD:0 "Wadai Kamchatka"
+ 
+ dyn_c_KMC_puppet_WAL:0 "Wallachian Kamchatka"
+ 
+ dyn_c_KMC_puppet_WEI:0 "Saxon Kamchatka"
+ 
+ dyn_c_KMC_puppet_WES:0 "Westphalian Kamchatka"
+ 
+ dyn_c_KMC_puppet_WIN:0 "West Indian Kamchatka"
+ 
+ dyn_c_KMC_puppet_WLG:0 "Welega Kamchatka"
+ 
+ dyn_c_KMC_puppet_WLL:0 "Wallonian Kamchatka"
+ 
+ dyn_c_KMC_puppet_WLO:0 "Wello Kamchatka"
+ 
+ dyn_c_KMC_puppet_WLS:0 "Welsh Kamchatka"
+ 
+ dyn_c_KMC_puppet_WSG:0 "Warsangali Kamchatka"
+ 
+ dyn_c_KMC_puppet_WUR:0 "Wurttembergian Kamchatka"
+ 
+ dyn_c_KMC_puppet_XIN:0 "Uyghuristani Kamchatka"
+ 
+ dyn_c_KMC_puppet_YEM:0 "Yemeni Kamchatka"
+ 
+ dyn_c_KMC_puppet_MAH:0 "Mahra Kamchatka"
+ 
+ dyn_c_KMC_puppet_KAT:0 "Kathiri Kamchatka"
+ 
+ dyn_c_KMC_puppet_ZAI:0 "Azali Kamchatka"
+ 
+ dyn_c_KMC_puppet_LAH:0 "Lahej Kamchatka"
+ 
+ dyn_c_KMC_puppet_JAB:0 "Shammari Kamchatka"
+ 
+ dyn_c_KMC_puppet_BHN:0 "Bahraini Kamchatka"
+ 
+ dyn_c_KMC_puppet_YUG:0 "Yugoslavian Kamchatka"
+ 
+ dyn_c_KMC_puppet_ZAN:0 "Zanzibari Kamchatka"
+ 
+ dyn_c_KMC_puppet_ZUL:0 "Zulu Kamchatka"
+ 
+ dyn_c_KMC_puppet_MAC:0 "Mancunian Kamchatka"
+ 
+ dyn_c_KMC_puppet_SMI:0 "Sami Kamchatka"
+ 
+ dyn_c_KMC_puppet_MLT:0 "Maltese Kamchatka"
+ 
+ dyn_c_KMC_puppet_TWT:0 "Incan Kamchatka"
+ 
+ dyn_c_KMC_puppet_SUD:0 "Sudanese Kamchatka"
+ 
+ dyn_c_KMC_puppet_PRM:0 "Permian Kamchatka"
+ 
+ dyn_c_KMC_puppet_HZJ:0 "Hazara Kamchatka"
+ 
+ dyn_c_KMC_puppet_TRC:0 "Turkmenistani Kamchatka"
+ 
+ dyn_c_KMC_puppet_SIB:0 "Siberian Kamchatka"
+ 
+ dyn_c_KMC_puppet_YAK:0 "Yakut Kamchatka"
+ 
+ dyn_c_KMC_puppet_ASM:0 "Assamese Kamchatka"
+ 
+ dyn_c_KMC_puppet_MNP:0 "Manipur Kamchatka"
+ 
+ dyn_c_KMC_puppet_TOB:0 "Toba Kamchatka"
+ 
+ dyn_c_KMC_puppet_KLT:0 "Kalimantan Kamchatka"
+ 
+ dyn_c_KMC_puppet_HTH:0 "Hathawaddy Kamchatka"
+ 
+ dyn_c_KMC_puppet_KRN:0 "Karen Kamchatka"
+ 
+ dyn_c_KMC_puppet_KHM:0 "Khmu Kamchatka"
+ 
+ dyn_c_KMC_puppet_KHN:0 "Kachin Kamchatka"
+ 
+ dyn_c_KMC_puppet_EZO:0 "Ezo Kamchatka"
+ 
+ dyn_c_KMC_puppet_QIA:0 "Qian Kamchatka"
+ 
+ dyn_c_KMC_puppet_FRS:0 "Formosan Kamchatka"
+ 
+ dyn_c_KMC_puppet_YUN:0 "Yunnan Kamchatka"
+ 
+ dyn_c_KMC_puppet_YUE:0 "Yue Kamchatka"
+ 
+ dyn_c_KMC_puppet_OAX:0 "Oaxacan Kamchatka"
+ 
+ dyn_c_KMC_puppet_AYM:0 "Aymara Kamchatka"
+ 
+ dyn_c_KMC_puppet_PUE:0 "Puebloan Kamchatka"
+ 
+ dyn_c_KMC_puppet_NNV:0 "Nunavut Kamchatka"
+ 
+ dyn_c_KMC_puppet_IRO:0 "Haudenosaunee Kamchatka"
+ 
+ dyn_c_KMC_puppet_SRB:0 "Sorbian Kamchatka"
+ 
+ dyn_c_KMC_puppet_YUC:0 "Yucatecan Kamchatka"
+ 
+ dyn_c_KMC_puppet_RIO:0 "Río Grandean Kamchatka"
+ 
+ dyn_c_KMC_puppet_PNI:0 "Piratini Kamchatka"
+ 
+ dyn_c_KMC_puppet_CEY:0 "Sri Lankan Kamchatka"
+ 
+ dyn_c_KMC_puppet_HBC:0 "Hudson Bay Kamchatka"
+ 
+ dyn_c_KMC_puppet_ONT:0 "Ontarian Kamchatka"
+ 
+ dyn_c_KMC_puppet_NBS:0 "New Brunswicker Kamchatka"
+ 
+ dyn_c_KMC_puppet_NSW:0 "New South Welsh Kamchatka"
+ 
+ dyn_c_KMC_puppet_WAS:0 "Western Australian Kamchatka"
+ 
+ dyn_c_KMC_puppet_SAS:0 "South Australian Kamchatka"
+ 
+ dyn_c_KMC_puppet_UNT:0 "United Tribal Kamchatka"
+ 
+ dyn_c_KMC_puppet_TAS:0 "Tasmania Kamchatka"
+ 
+ dyn_c_KMC_puppet_ZIM:0 "Zimbabwean Kamchatka"
+ 
+ dyn_c_KMC_puppet_BLH:0 "Baluchistani Kamchatka"
+ 
+ dyn_c_KMC_puppet_MAL:0 "Malian Kamchatka"
+ 
+ dyn_c_KMC_puppet_OCC:0 "Occitanian Kamchatka"
+ 
+ dyn_c_KMC_puppet_TUV:0 "Tuvan Kamchatka"
+ 
+ dyn_c_KMC_puppet_COR:0 "Corsican Kamchatka"
+ 
+ dyn_c_KMC_puppet_TNS:0 "Tungus Kamchatka"
+ 
+ dyn_c_KMC_puppet_FER:0 "Far Eastern Kamchatka"
+ 
+ dyn_c_KMC_puppet_IUS:0 "Idel-Ural Kamchatka"
+ 
+ dyn_c_KMC_puppet_NCA:0 "North Caucasian Kamchatka"
+ 
+ dyn_c_KMC_puppet_DON:0 "Don Cossacks Kamchatka"
+ 
+ dyn_c_KMC_puppet_SYR:0 "Syrian Kamchatka"
+ 
+ dyn_c_KMC_puppet_EOT:0 "Transjordanians Kamchatka"
+ 
+ dyn_c_KMC_puppet_LEB:0 "Lebanese Kamchatka"
+ 
+ dyn_c_KMC_puppet_GNG:0 "Da Cheng Kamchatka"
+ 
+ dyn_c_KMC_puppet_HNA:0 "Hunanese Kamchatka"
+ 
+ dyn_c_KMC_puppet_AHU:0 "Anhui Kamchatka"
+ 
+ dyn_c_KMC_puppet_ZHI:0 "Zhili Kamchatka"
+ 
+ dyn_c_KMC_puppet_SHN:0 "Shanxi Kamchatka"
+ 
+ dyn_c_KMC_puppet_GUI:0 "Guizhou Kamchatka"
+ 
+ dyn_c_KMC_puppet_SIH:0 "Sichuan Kamchatka"
+ 
+ dyn_c_KMC_puppet_SHA:0 "Shandongese Kamchatka"
+ 
+ dyn_c_KMC_puppet_XIB:0 "Xibei Kamchatka"
+ 
+ dyn_c_KMC_puppet_ALT:0 "Alteño Kamchatka"
+ 
+ dyn_c_KMC_puppet_AFS:0 "Free State Kamchatka"
+ 
+ dyn_c_KMC_puppet_DEI:0 "East Indies Kamchatka"
+ 
+ dyn_c_KMC_puppet_TRH:0 "Turkestani Kamchatka"
+ 
+ dyn_c_KMC_puppet_UOM:0 "Michigander Kamchatka"
+ 
+ dyn_c_KMC_puppet_SAK:0 "Siak Kamchatka"
+ 
+ dyn_c_KMC_puppet_PON:0 "Pontianak Kamchatka"
+ 
+ dyn_c_KMC_puppet_SMB:0 "Sambas Kamchatka"
+ 
+ dyn_c_KMC_puppet_JMB:0 "Jambi Kamchatka"
+ 
+ dyn_c_KMC_puppet_YOG:0 "Yogyakarta Kamchatka"
+ 
+ dyn_c_KMC_puppet_BTN:0 "Buton Kamchatka"
+ 
+ dyn_c_KMC_puppet_SEL:0 "Selangorean Kamchatka"
+ 
+ dyn_c_KMC_puppet_PRK:0 "Perakian Kamchatka"
+ 
+ dyn_c_KMC_puppet_SRK:0 "Surakarta Kamchatka"
+ 
+ dyn_c_KMC_puppet_TID:0 "Tidore Kamchatka"
+ 
+ dyn_c_KMC_puppet_STG:0 "Sintang Kamchatka"
+ 
+ dyn_c_KMC_puppet_BNJ:0 "Banjar Kamchatka"
+ 
+ dyn_c_KMC_puppet_SUL:0 "Sulu Kamchatka"
+ 
+ dyn_c_KMC_puppet_NVS:0 "Nova Scotian Kamchatka"
+ 
+ dyn_c_KMC_puppet_SMS:0 "Samian Kamchatka"
+ 
+ dyn_c_KMC_puppet_CHC:0 "Chechen Kamchatka"
+ 
+ dyn_c_KMC_puppet_CIR:0 "Circassian Kamchatka"
+ 
+ dyn_c_KMC_puppet_MGD:0 "Maguindanao Kamchatka"
+ 
+ dyn_c_KMC_puppet_ASS:0 "Assyrian Kamchatka"
+ 
+ dyn_c_KMC_puppet_KLM:0 "Kalmykian Kamchatka"
+ 
+ dyn_c_KMC_puppet_CAU:0 "Transcaucasian Kamchatka"
+ 
+ dyn_c_KMC_puppet_SAV:0 "Savoyard Kamchatka"
+ 
+ dyn_c_KMC_puppet_CON:0 "Constantinian Kamchatka"
+ 
+ dyn_c_KMC_puppet_TUG:0 "Touggourtian Kamchatka"
+ 
+ dyn_c_KMC_puppet_AIT:0 "Ait Abbas Kamchatka"
+ 
+ dyn_c_KMC_puppet_MAS:0 "Mascaran Kamchatka"
+ 
+ dyn_c_KMC_puppet_RHE:0 "Rhenish Kamchatka"
+ 
+ dyn_c_KMC_puppet_PRC:0 "Communard Kamchatka"
+ 
+ dyn_c_KMC_puppet_GZA:0 "Gazan Kamchatka"
+ 
+ dyn_c_KMC_puppet_BRG:0 "Borgu Kamchatka"
+ 
+ dyn_c_KMC_puppet_KRL:0 "Karelian Kamchatka"
+ 
+ dyn_c_KMC_puppet_TAR:0 "Tatar Kamchatka"
+ 
+ dyn_c_KMC_puppet_BKR:0 "Bashkir Kamchatka"
+ 
+ dyn_c_KMC_puppet_BRY:0 "Buryatian Kamchatka"
+ 
+ dyn_c_KMC_puppet_CKC:0 "Chukotkan Kamchatka"
+ 
+ dyn_c_KMC_puppet_ALI:0 "Altaic Kamchatka"
+ 
+ dyn_c_KMC_puppet_URL:0 "Uralian Kamchatka"
+ 
+ dyn_c_KMC_puppet_KNT:0 "Kanty-Mansian Kamchatka"
+ 
+ dyn_c_KMC_puppet_UDM:0 "Udmurt Kamchatka"
+ 
+ dyn_c_KMC_puppet_CHV:0 "Chuvash Kamchatka"
+ 
+ dyn_c_KMC_puppet_MRI:0 "Mari Kamchatka"
+ 
+ dyn_c_KMC_puppet_MRD:0 "Erzya-Mokshan Kamchatka"
+ 
+ dyn_c_KMC_puppet_TJI:0 "Tajik Kamchatka"
+ 
+ dyn_c_KMC_puppet_KYR:0 "Kyrgyz Kamchatka"
+ 
+ dyn_c_KMC_puppet_UZB:0 "Uzbek Kamchatka"
+ 
+ dyn_c_KMC_puppet_PAU:0 "Paulistanic Kamchatka"
+ 
+ dyn_c_KMC_puppet_EQT:0 "Equatorial Kamchatka"
+ 
+ dyn_c_KMC_puppet_CTR:0 "Catharinense Kamchatka"
+ 
+ dyn_c_KMC_puppet_MNG:0 "Mineiro Kamchatka"
+ 
+ dyn_c_KMC_puppet_FND:0 "Andean Kamchatka"
+ 
+ dyn_c_KMC_puppet_BHI:0 "Baiano Kamchatka"
+ 
+ dyn_c_KMC_puppet_PBC:0 "Peru-Bolivian Kamchatka"
+ 
+ dyn_c_KMC_puppet_IQU:0 "Iquichan Kamchatka"
+ 
+ dyn_c_KMC_puppet_NPU:0 "North Peruvian Kamchatka"
+ 
+ dyn_c_KMC_puppet_RSM:0 "Venetian Kamchatka"
+ 
+ dyn_c_KMC_puppet_HRE:0 "Central European Kamchatka"
+ 
+ dyn_c_KMC_puppet_UNL:0 "Dutch Kamchatka"
+ 
+ dyn_c_KMC_puppet_RHN:0 "Rhenish Kamchatka"
+ 
+ dyn_c_KMC_puppet_PLT:0 "Platinean Kamchatka"
+ 
+ dyn_c_KMC_puppet_SPU:0 "South Peruvian Kamchatka"
+ 
+ dyn_c_KMC_puppet_NCR:0 "North Carolinian Kamchatka"
+ 
+ dyn_c_KMC_puppet_SCR:0 "South Carolinian Kamchatka"
+ 
+ dyn_c_KMC_puppet_CLI:0 "Carolinian Kamchatka"
+ 
+ dyn_c_KMC_puppet_GRG:0 "Georgian Kamchatka"
+ 
+ dyn_c_KMC_puppet_FLR:0 "Floridian Kamchatka"
+ 
+ dyn_c_KMC_puppet_PAK:0 "Pakistani Kamchatka"
+ 
+ dyn_c_KMC_puppet_MGB:0 "Maghrebi Kamchatka"
+ 
+ dyn_c_KMC_puppet_TIS:0 "Turtle Islander Kamchatka"
+ 
+ dyn_c_KMC_puppet_KAB:0 "Kabuli Kamchatka"
+ 
+ dyn_c_KMC_puppet_KAN:0 "Kandahari Kamchatka"
+ 
+ dyn_c_KMC_puppet_HER:0 "Herati Kamchatka"
+ 
+ dyn_c_KMC_puppet_CHT:0 "Chitrali Kamchatka"
+ 
+ dyn_c_KMC_puppet_MAI:0 "Maimanan Kamchatka"
+ 
+ dyn_c_KMC_puppet_KUN:0 "Kunduzi Kamchatka"
+ 
+ dyn_c_KMC_puppet_ARB:0 "Arabistani Kamchatka"
+ 
+ dyn_c_KMC_puppet_BHW:0 "Bahawalpuri Kamchatka"
+ 
+ dyn_c_KMC_puppet_LUR:0 "Luristani Kamchatka"
+ 
+ dyn_c_KMC_puppet_MAZ:0 "Mazandarani Kamchatka"
+ 
+ dyn_c_KMC_puppet_BEI:0 "Beiyang Kamchatka"
+ 
+ dyn_c_KMC_puppet_KAF:0 "Kafiri Kamchatka"
+ 
+ dyn_c_KMC_puppet_LIM:0 "Limburger Kamchatka"
+ 
+ dyn_c_KMC_puppet_PTA:0 "Patialvi Kamchatka"
+ 
+ dyn_c_KMC_puppet_GAR:0 "Garhwali Kamchatka"
+ 
+ dyn_c_KMC_puppet_ALW:0 "Alwari Kamchatka"
+ 
+ dyn_c_KMC_puppet_COO:0 "Cooch Behari Kamchatka"
+ 
+ dyn_c_KMC_puppet_NGA:0 "Naga Kamchatka"
+ 
+ dyn_c_KMC_puppet_SHS:0 "Shan Kamchatka"
+ 
+ dyn_c_KMC_puppet_JHN:0 "Jhansian Kamchatka"
+ 
+ dyn_c_KMC_puppet_KOT:0 "Kotahi Kamchatka"
+ 
+ dyn_c_KMC_puppet_IDA:0 "Idari Kamchatka"
+ 
+ dyn_c_KMC_puppet_NAW:0 "Nawanagari Kamchatka"
+ 
+ dyn_c_KMC_puppet_JUN:0 "Junagadhi Kamchatka"
+ 
+ dyn_c_KMC_puppet_BHV:0 "Bhavnagari Kamchatka"
+ 
+ dyn_c_KMC_puppet_DHA:0 "Dharampuri Kamchatka"
+ 
+ dyn_c_KMC_puppet_PUD:0 "Pudukottaian Kamchatka"
+ 
+ dyn_c_KMC_puppet_SAT:0 "Sataran Kamchatka"
+ 
+ dyn_c_KMC_puppet_KHP:0 "Kolhapuri Kamchatka"
+ 
+ dyn_c_KMC_puppet_KNO:0 "Kurnooli Kamchatka"
+ 
+ dyn_c_KMC_puppet_BAG:0 "Rewaite Kamchatka"
+ 
+ dyn_c_KMC_puppet_SUR:0 "Surgujian Kamchatka"
+ 
+ dyn_c_KMC_puppet_PLP:0 "Palanpuri Kamchatka"
+ 
+ dyn_c_KMC_puppet_MYB:0 "Mayurbhanji Kamchatka"
+ 
+ dyn_c_KMC_puppet_PTN:0 "Patnavi Kamchatka"
+ 
+ dyn_c_KMC_puppet_JEY:0 "Jeyporean Kamchatka"
+ 
+ dyn_c_KMC_puppet_NAR:0 "Narsinghpuri Kamchatka"
+ 
+ dyn_c_KMC_puppet_LBL:0 "Lasbeli Kamchatka"
+ 
+ dyn_c_KMC_puppet_KHR:0 "Kharani Kamchatka"
+ 
+ dyn_c_KMC_puppet_KPR:0 "Khairpuri Kamchatka"
+ 
+ dyn_c_KMC_puppet_SWT:0 "Swati Kamchatka"
+ 
+ dyn_c_KMC_puppet_DIR:0 "Dirwali Kamchatka"
+ 
+ dyn_c_KMC_puppet_CAR:0 "Carnatic Kamchatka"
+ 
+ dyn_c_KMC_puppet_RAJ:0 "Rajput Kamchatka"
+ 
+ dyn_c_KMC_puppet_MHR:0 "Maharashtrian Kamchatka"
+ 
+ dyn_c_KMC_puppet_DRA:0 "Dravidian Kamchatka"
+ 
+ dyn_c_KMC_puppet_COC:0 "Cochinese Kamchatka"
+ 
+ dyn_c_KMC_puppet_ALK:0 "Alaskan Kamchatka"
+ 
+ dyn_c_KMC_puppet_GUJ:0 "Gujarati Kamchatka"
+ 
+ dyn_c_KMC_puppet_BCE:0 "Ceylonese Kamchatka"
+ 
+ dyn_c_KMC_puppet_MLD:0 "Maldivian Kamchatka"
+ 
+ dyn_c_KMC_puppet_BIH:0 "Bihari Kamchatka"
+ 
+ dyn_c_KMC_puppet_ARK:0 "Arakanese Kamchatka"
+ 
+ dyn_c_KMC_puppet_IDS:0 "Indusstani Kamchatka"

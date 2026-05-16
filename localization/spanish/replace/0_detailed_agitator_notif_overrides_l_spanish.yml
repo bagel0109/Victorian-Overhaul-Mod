@@ -1,0 +1,6 @@
+﻿l_spanish:
+
+ notification_exile_notification_desc: "[SCOPE.sCountry('exiling_country_scope').GetName] ha enviado a [SCOPE.sCharacter('exile_scope').GetFullName] al [Concept('concept_exile', 'exilio')].\n$DAN_agitator_detail_interest_group$\n$DAN_agitator_detail_ideology$\n$DAN_agitator_detail_traits$"
+ notification_new_ruler_desc: "El periodo de [SCOPE.sCharacter( 'previous' ).GetFullName] como [concept_ruler|l] ha llegado a su fin. [SCOPE.GetRootScope.GetCharacter.GetFullName] es [Concept('concept_ruler', SCOPE.GetRootScope.GetCharacter.GetCustom('ES_ElLa'))] nuev[Concept('concept_ruler', SCOPE.GetRootScope.GetCharacter.GetCustom('ES_OA'))] [Concept('concept_ruler', SCOPE.GetRootScope.GetCharacter.GetPrimaryRoleTitle)|l] de [SCOPE.GetRootScope.GetCharacter.GetCountry.GetName]\n$DAN_ruler_interest_group$\n$DAN_ruler_interest_ideology$\n$DAN_ruler_detail_traits$"
+ notification_heir_born_notification_desc:0 "Ha nacido [SCOPE.GetRootScope.GetCharacter.GetFullName], quien [Concept('concept_heir','heredará')] el trono de [SCOPE.GetRootScope.GetCharacter.GetCountry.GetName]\n$DAN_ruler_interest_group$\n$DAN_ruler_interest_ideology$\n$DAN_ruler_detail_traits$"
+ notification_agitator_spawned_desc:1 "[SCOPE.sCha('character').GetAgitatorSpawnedNotificationText]\n$DAN_spawn_interest_group$\n$DAN_spawn_interest_ideology$\n$DAN_spawn_detail_traits$"

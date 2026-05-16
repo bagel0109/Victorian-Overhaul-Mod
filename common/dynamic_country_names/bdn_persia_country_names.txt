@@ -1,0 +1,1129 @@
+﻿REPLACE_OR_CREATE:MAI = {
+	dynamic_country_name = {
+		name = dyn_c_maimana_absolutist_monarchy
+		adjective = MAI_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_monarchy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_maimana_monarchy
+		adjective = MAI_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+
+	#############republic#############
+
+	dynamic_country_name = {
+		name = dyn_c_maimana_republic
+		adjective = MAI_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_corporate_state
+				}
+			}
+		}
+	}
+
+	#############dictatorship#############
+
+	dynamic_country_name = {
+		name = dyn_c_maimana_dictatorship
+		adjective = MAI_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+				}
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	######theocratic#####
+
+	dynamic_country_name = {
+		name = dyn_c_maimana_theocratic
+		adjective = MAI_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_theocracy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_maimana_theocraticvote
+		adjective = MAI_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_theocracy
+			}
+		}
+	}
+
+	######communist#####
+
+	dynamic_country_name = {
+		name = dyn_c_maimana_communist
+		adjective = MAI_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_maimana_communistvote
+		adjective = MAI_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_maimana_anarchy
+		adjective = MAI_ADJ
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_anarchy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = MAI
+		adjective = MAI_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}
+
+REPLACE_OR_CREATE:KUN = {
+	dynamic_country_name = {
+		name = dyn_c_kunduz_absolutist_monarchy
+		adjective = KUN_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_monarchy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_kunduz_monarchy
+		adjective = KUN_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+
+	#############republic#############
+
+	dynamic_country_name = {
+		name = dyn_c_kunduz_republic
+		adjective = KUN_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_corporate_state
+				}
+			}
+		}
+	}
+
+	#############dictatorship#############
+
+	dynamic_country_name = {
+		name = dyn_c_kunduz_dictatorship
+		adjective = KUN_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+				}
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	######theocratic#####
+
+	dynamic_country_name = {
+		name = dyn_c_kunduz_theocratic
+		adjective = KUN_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_theocracy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_kunduz_theocraticvote
+		adjective = KUN_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_theocracy
+			}
+		}
+	}
+
+	######communist#####
+
+	dynamic_country_name = {
+		name = dyn_c_kunduz_communist
+		adjective = KUN_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_kunduz_communistvote
+		adjective = KUN_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_kunduz_anarchy
+		adjective = KUN_ADJ
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_anarchy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = KUN
+		adjective = KUN_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}
+
+###chitral####
+REPLACE_OR_CREATE:CHT = {
+		
+	dynamic_country_name = {
+		name = dyn_c_chitral_absolutist_monarchy
+		adjective = CHT_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				has_law_or_variant = law_type:law_monarchy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_chitral_monarchy
+		adjective = CHT_ADJ
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+	
+	#############republic#############
+	
+	dynamic_country_name = {
+		name = dyn_c_chitral_republic
+		adjective = CHT_ADJ
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_corporate_state
+				}
+			}
+		}
+	}
+
+	#############dictatorship#############
+	
+	dynamic_country_name = {
+		name = dyn_c_chitral_dictatorship
+		adjective = CHT_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+				}
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+	
+	######theocratic#####
+	
+	dynamic_country_name = {
+		name = dyn_c_chitral_theocratic
+		adjective = CHT_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				has_law_or_variant = law_type:law_theocracy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_chitral_theocraticvote
+		adjective = CHT_ADJ
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				has_law_or_variant = law_type:law_theocracy
+			}
+		}
+	}
+	
+	######communist#####
+	
+	dynamic_country_name = {
+		name = dyn_c_chitral_communist
+		adjective = CHT_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_chitral_communistvote
+		adjective = CHT_ADJ
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_chitral_anarchy
+		adjective = CHT_ADJ
+
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				has_law_or_variant = law_type:law_anarchy
+			}
+		}
+	}
+	
+    dynamic_country_name = {
+        name = CHT
+        adjective = CHT_ADJ
+        use_overlord_prefix = yes
+
+        is_main_tag_only = yes
+        priority = 100
+
+        trigger = {
+            coa_def_lesser_subject_trigger = yes
+        }
+    }
+}
+
+REPLACE_OR_CREATE:KAB = {
+	dynamic_country_name = {
+		name = dyn_c_kabul_absolutist_monarchy
+		adjective = KAB_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_monarchy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_kabul_monarchy
+		adjective = KAB_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+
+	#############republic#############
+
+	dynamic_country_name = {
+		name = dyn_c_kabul_republic
+		adjective = KAB_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_corporate_state
+				}
+			}
+		}
+	}
+
+	#############dictatorship#############
+
+	dynamic_country_name = {
+		name = dyn_c_kabul_dictatorship
+		adjective = KAB_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+				}
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	######theocratic#####
+
+	dynamic_country_name = {
+		name = dyn_c_kabul_theocratic
+		adjective = KAB_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_theocracy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_kabul_theocraticvote
+		adjective = KAB_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_theocracy
+			}
+		}
+	}
+
+	######communist#####
+
+	dynamic_country_name = {
+		name = dyn_c_kabul_communist
+		adjective = KAB_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_kabul_communistvote
+		adjective = KAB_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_kabul_anarchy
+		adjective = KAB_ADJ
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_anarchy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = KAB
+		adjective = KAB_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}
+
+###herat####
+REPLACE_OR_CREATE:HER = {
+
+	dynamic_country_name = {
+		name = dyn_c_herat_absolutist_monarchy
+		adjective = HER_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_monarchy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_herat_monarchy
+		adjective = HER_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+
+	#############republic#############
+
+	dynamic_country_name = {
+		name = dyn_c_herat_republic
+		adjective = HER_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_corporate_state
+				}
+			}
+		}
+	}
+
+	#############dictatorship#############
+
+	dynamic_country_name = {
+		name = dyn_c_herat_dictatorship
+		adjective = HER_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+				}
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	######theocratic#####
+
+	dynamic_country_name = {
+		name = dyn_c_herat_theocratic
+		adjective = HER_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_theocracy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_herat_theocraticvote
+		adjective = HER_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_theocracy
+			}
+		}
+	}
+
+	######communist#####
+
+	dynamic_country_name = {
+		name = dyn_c_herat_communist
+		adjective = HER_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_herat_communistvote
+		adjective = HER_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_herat_anarchy
+		adjective = HER_ADJ
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_anarchy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = HER
+		adjective = HER_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}
+
+###kandahar####
+REPLACE_OR_CREATE:KAN = {
+
+	dynamic_country_name = {
+		name = dyn_c_kandahar_absolutist_monarchy
+		adjective = KAN_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_monarchy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_kandahar_monarchy
+		adjective = KAN_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+
+	#############republic#############
+
+	dynamic_country_name = {
+		name = dyn_c_kandahar_republic
+		adjective = KAN_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_corporate_state
+				}
+			}
+		}
+	}
+
+	#############dictatorship#############
+
+	dynamic_country_name = {
+		name = dyn_c_kandahar_dictatorship
+		adjective = KAN_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+				}
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	######theocratic#####
+
+	dynamic_country_name = {
+		name = dyn_c_kandahar_theocratic
+		adjective = KAN_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_theocracy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_kandahar_theocraticvote
+		adjective = KAN_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_theocracy
+			}
+		}
+	}
+
+	######communist#####
+
+	dynamic_country_name = {
+		name = dyn_c_kandahar_communist
+		adjective = KAN_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_kandahar_communistvote
+		adjective = KAN_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_kandahar_anarchy
+		adjective = KAN_ADJ
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_anarchy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = KAN
+		adjective = KAN_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}
+
+###persia####
+REPLACE_OR_CREATE:PER = {
+
+	dynamic_country_name = {
+		name = dyn_c_persia_absolutist_monarchy
+		adjective = PER_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_monarchy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_persia_monarchy
+		adjective = PER_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+
+	#############republic#############
+
+	dynamic_country_name = {
+		name = dyn_c_persia_republic
+		adjective = PER_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_corporate_state
+				}
+			}
+		}
+	}
+
+	#############dictatorship#############
+
+	dynamic_country_name = {
+		name = dyn_c_persia_dictatorship
+		adjective = PER_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+				}
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	######theocratic######
+
+	dynamic_country_name = {
+		name = dyn_c_persia_theocratic
+		adjective = PER_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_theocracy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_persia_theocraticvote
+		adjective = PER_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_theocracy
+			}
+		}
+	}
+
+	######communist######
+
+	dynamic_country_name = {
+		name = dyn_c_persia_communist
+		adjective = PER_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_persia_communistvote
+		adjective = PER_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_persia_anarchy
+		adjective = PER_ADJ
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_anarchy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = PER
+		adjective = PER_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}

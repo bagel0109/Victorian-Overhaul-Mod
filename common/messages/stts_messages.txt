@@ -1,0 +1,76 @@
+﻿stts_movement_coup = {
+	type = country
+	group = "country_revolution_notification_group"
+	
+	texture = "gfx/interface/icons/notification_icons/revolution.dds"
+
+	notification_type = toast
+	color = bad
+
+}
+
+stts_party_discipline_success = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/interest_group.dds"
+
+	notification_type = toast
+	color = good
+}
+
+stts_party_discipline_failure = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/interest_group_bad.dds"
+
+	notification_type = toast
+	color = bad
+}
+
+stts_paramilitaries_fought_off = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/character.dds"
+
+	notification_type = toast
+	color = neutral
+}
+
+stts_paramilitaries_escaped = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/character.dds"
+
+	notification_type = toast
+	color = neutral
+}
+
+stts_paramilitaries_wounded = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/character.dds"
+
+	notification_type = toast
+	color = neutral
+}
+
+stts_paramilitaries_exiled = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/character.dds"
+
+	notification_type = toast
+	color = neutral
+}
+
+stts_paramilitaries_killed = {
+	type = country
+	texture = "gfx/interface/icons/notification_icons/character.dds"
+
+	notification_type = toast
+	color = neutral
+}
+
+stts_foreign_support_for_revolution = {
+	type = country
+	group = "country_revolution_notification_group"
+	
+	texture = "gfx/interface/icons/notification_icons/revolution.dds"
+
+	notification_type = toast
+	color = bad
+}

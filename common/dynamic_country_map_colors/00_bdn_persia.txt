@@ -1,0 +1,3146 @@
+﻿###maimana###
+
+REPLACE_OR_CREATE:monarchist_maimana = {
+color = "monarchist_maimana"
+    possible = {
+	exists = c:MAI
+	THIS = c:MAI
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_autocracy	
+    }
+} 
+
+
+REPLACE_OR_CREATE:democratic_maimana = {
+color = "democratic_maimana"
+    possible = {
+	exists = c:MAI
+	THIS = c:MAI
+	OR = {
+	    has_law_or_variant = law_type:law_presidential_republic
+	}
+    }
+} 
+
+REPLACE_OR_CREATE:theocratic_maimana = {
+color = "theocratic_maimana"
+    possible = {
+	exists = c:MAI
+	THIS = c:MAI
+	has_law_or_variant = law_type:law_theocracy
+    }
+} 
+
+REPLACE_OR_CREATE:25communist_maimana = {
+color = "communist_maimana"
+	
+	possible = {
+	exists = c:MAI
+	THIS = c:MAI
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+REPLACE_OR_CREATE:26communist_maimana = {
+color = "communist_maimana"
+	
+	possible = {
+	exists = c:MAI
+	THIS = c:MAI
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+REPLACE_OR_CREATE:27communist_maimana = {
+color = "communist_maimana"
+	
+	possible = {
+	exists = c:MAI
+	THIS = c:MAI
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+REPLACE_OR_CREATE:27_27communist_maimana = {
+color = "communist_maimana"
+	
+	possible = {
+	exists = c:MAI
+	THIS = c:MAI
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+REPLACE_OR_CREATE:28communist_maimana = {
+color = "communist_maimana"
+	
+	possible = {
+	exists = c:MAI
+	THIS = c:MAI
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+REPLACE_OR_CREATE:29communist_maimana = {
+color = "communist_maimana"
+	
+	possible = {
+	exists = c:MAI
+	THIS = c:MAI
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+REPLACE_OR_CREATE:30communist_maimana = {
+color = "communist_maimana"
+	
+	possible = {
+	exists = c:MAI
+	THIS = c:MAI
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+REPLACE_OR_CREATE:31technocratic_maimana = {
+color = "technocratic_maimana"
+	
+	possible = {
+	exists = c:MAI
+	THIS = c:MAI
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_monarchy
+			}
+} 
+
+REPLACE_OR_CREATE:32technocratic_maimana = {
+color = "technocratic_maimana"
+	
+	possible = {
+	exists = c:MAI
+	THIS = c:MAI
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_presidential_republic
+			}
+} 
+
+REPLACE_OR_CREATE:33technocratic_maimana = {
+color = "technocratic_maimana"
+	
+	possible = {
+	exists = c:MAI
+	THIS = c:MAI
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_parliamentary_republic
+			}
+} 
+
+REPLACE_OR_CREATE:34technocratic_maimana = {
+color = "technocratic_maimana"
+	
+	possible = {
+	exists = c:MAI
+	THIS = c:MAI
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_theocracy
+			}
+} 
+
+REPLACE_OR_CREATE:35technocratic_maimana = {
+color = "technocratic_maimana"
+	
+	possible = {
+	exists = c:MAI
+	THIS = c:MAI
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_council_republic
+			}
+} 
+
+REPLACE_OR_CREATE:36anarchist_maimana = {
+color = "anarchist_maimana"
+	
+	possible = {
+	exists = c:MAI
+	THIS = c:MAI
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_monarchy
+			}
+} 
+
+REPLACE_OR_CREATE:37anarchist_maimana = {
+color = "anarchist_maimana"
+	
+	possible = {
+	exists = c:MAI
+	THIS = c:MAI
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_presidential_republic
+			}
+} 
+
+REPLACE_OR_CREATE:38anarchist_maimana = {
+color = "anarchist_maimana"
+	
+	possible = {
+	exists = c:MAI
+	THIS = c:MAI
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_parliamentary_republic
+			}
+} 
+
+39anarchist_maimana = {
+color = "anarchist_maimana"
+	
+	possible = {
+	exists = c:MAI
+	THIS = c:MAI
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_theocracy
+			}
+} 
+
+40anarchist_maimana = {
+color = "anarchist_maimana"
+	
+	possible = {
+	exists = c:MAI
+	THIS = c:MAI
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_council_republic
+			}
+} 
+
+###kunduz###
+
+1monarchist_kunduz = {
+color = "monarchist_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+2monarchist_kunduz = {
+color = "monarchist_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+3monarchist_kunduz = {
+color = "monarchist_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+3_3monarchist_kunduz = {
+color = "monarchist_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+4monarchist_kunduz = {
+color = "monarchist_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+5monarchist_kunduz = {
+color = "monarchist_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+6monarchist_kunduz = {
+color = "monarchist_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+7democratic_kunduz = {
+color = "democratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+8democratic_kunduz = {
+color = "democratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+9democratic_kunduz = {
+color = "democratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+9_9democratic_kunduz = {
+color = "democratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+10democratic_kunduz = {
+color = "democratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+11democratic_kunduz = {
+color = "democratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+12democratic_kunduz = {
+color = "democratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+13democratic_kunduz = {
+color = "democratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+14democratic_kunduz = {
+color = "democratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+15democratic_kunduz = {
+color = "democratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_landed_voting
+			}
+}
+
+15_15democratic_kunduz = {
+color = "democratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+}  
+
+16democratic_kunduz = {
+color = "democratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+17democratic_kunduz = {
+color = "democratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+18democratic_kunduz = {
+color = "democratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+19theocratic_kunduz = {
+color = "theocratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+20theocratic_kunduz = {
+color = "theocratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+21theocratic_kunduz = {
+color = "theocratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+21_21theocratic_kunduz = {
+color = "theocratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+22theocratic_kunduz = {
+color = "theocratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+23theocratic_kunduz = {
+color = "theocratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+24theocratic_kunduz = {
+color = "theocratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+25communist_kunduz = {
+color = "communist_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+26communist_kunduz = {
+color = "communist_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+27communist_kunduz = {
+color = "communist_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+27_27communist_kunduz = {
+color = "communist_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+28communist_kunduz = {
+color = "communist_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+29communist_kunduz = {
+color = "communist_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+30communist_kunduz = {
+color = "communist_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+31technocratic_kunduz = {
+color = "technocratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_monarchy
+			}
+} 
+
+32technocratic_kunduz = {
+color = "technocratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_presidential_republic
+			}
+} 
+
+33technocratic_kunduz = {
+color = "technocratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_parliamentary_republic
+			}
+} 
+
+34technocratic_kunduz = {
+color = "technocratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_theocracy
+			}
+} 
+
+35technocratic_kunduz = {
+color = "technocratic_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_council_republic
+			}
+} 
+
+36anarchist_kunduz = {
+color = "anarchist_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_monarchy
+			}
+} 
+
+37anarchist_kunduz = {
+color = "anarchist_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_presidential_republic
+			}
+} 
+
+38anarchist_kunduz = {
+color = "anarchist_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_parliamentary_republic
+			}
+} 
+
+39anarchist_kunduz = {
+color = "anarchist_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_theocracy
+			}
+} 
+
+40anarchist_kunduz = {
+color = "anarchist_kunduz"
+	
+	possible = {
+	exists = c:KUN
+	THIS = c:KUN
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_council_republic
+			}
+} 
+
+###chitral###
+
+1monarchist_chitral = {
+color = "monarchist_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+2monarchist_chitral = {
+color = "monarchist_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+3monarchist_chitral = {
+color = "monarchist_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+3_3monarchist_chitral = {
+color = "monarchist_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+4monarchist_chitral = {
+color = "monarchist_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+5monarchist_chitral = {
+color = "monarchist_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+6monarchist_chitral = {
+color = "monarchist_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+7democratic_chitral = {
+color = "democratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+8democratic_chitral = {
+color = "democratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+9democratic_chitral = {
+color = "democratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+9_9democratic_chitral = {
+color = "democratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+10democratic_chitral = {
+color = "democratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+11democratic_chitral = {
+color = "democratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+12democratic_chitral = {
+color = "democratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+13democratic_chitral = {
+color = "democratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+14democratic_chitral = {
+color = "democratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+15democratic_chitral = {
+color = "democratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_landed_voting
+			}
+}
+
+15_15democratic_chitral = {
+color = "democratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+}  
+
+16democratic_chitral = {
+color = "democratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+17democratic_chitral = {
+color = "democratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+18democratic_chitral = {
+color = "democratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+19theocratic_chitral = {
+color = "theocratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+20theocratic_chitral = {
+color = "theocratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+21theocratic_chitral = {
+color = "theocratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+21_21theocratic_chitral = {
+color = "theocratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+22theocratic_chitral = {
+color = "theocratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+23theocratic_chitral = {
+color = "theocratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+24theocratic_chitral = {
+color = "theocratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+25communist_chitral = {
+color = "communist_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+26communist_chitral = {
+color = "communist_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+27communist_chitral = {
+color = "communist_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+27_27communist_chitral = {
+color = "communist_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+28communist_chitral = {
+color = "communist_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+29communist_chitral = {
+color = "communist_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+30communist_chitral = {
+color = "communist_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+31technocratic_chitral = {
+color = "technocratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_monarchy
+			}
+} 
+
+32technocratic_chitral = {
+color = "technocratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_presidential_republic
+			}
+} 
+
+33technocratic_chitral = {
+color = "technocratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_parliamentary_republic
+			}
+} 
+
+34technocratic_chitral = {
+color = "technocratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_theocracy
+			}
+} 
+
+35technocratic_chitral = {
+color = "technocratic_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_council_republic
+			}
+} 
+
+36anarchist_chitral = {
+color = "anarchist_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_monarchy
+			}
+} 
+
+37anarchist_chitral = {
+color = "anarchist_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_presidential_republic
+			}
+} 
+
+38anarchist_chitral = {
+color = "anarchist_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_parliamentary_republic
+			}
+} 
+
+39anarchist_chitral = {
+color = "anarchist_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_theocracy
+			}
+} 
+
+40anarchist_chitral = {
+color = "anarchist_chitral"
+	
+	possible = {
+	exists = c:CHT
+	THIS = c:CHT
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_council_republic
+			}
+}  
+
+###herat###
+
+1monarchist_herat = {
+color = "monarchist_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+2monarchist_herat = {
+color = "monarchist_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+3monarchist_herat = {
+color = "monarchist_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+3_3monarchist_herat = {
+color = "monarchist_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+4monarchist_herat = {
+color = "monarchist_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+5monarchist_herat = {
+color = "monarchist_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+6monarchist_herat = {
+color = "monarchist_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+7democratic_herat = {
+color = "democratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+8democratic_herat = {
+color = "democratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+9democratic_herat = {
+color = "democratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+9_9democratic_herat = {
+color = "democratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+10democratic_herat = {
+color = "democratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+11democratic_herat = {
+color = "democratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+12democratic_herat = {
+color = "democratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+13democratic_herat = {
+color = "democratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+14democratic_herat = {
+color = "democratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+15democratic_herat = {
+color = "democratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_landed_voting
+			}
+}
+
+15_15democratic_herat = {
+color = "democratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+}  
+
+16democratic_herat = {
+color = "democratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+17democratic_herat = {
+color = "democratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+18democratic_herat = {
+color = "democratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+19theocratic_herat = {
+color = "theocratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+20theocratic_herat = {
+color = "theocratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+21theocratic_herat = {
+color = "theocratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+21_21theocratic_herat = {
+color = "theocratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+22theocratic_herat = {
+color = "theocratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+23theocratic_herat = {
+color = "theocratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+24theocratic_herat = {
+color = "theocratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+25communist_herat = {
+color = "communist_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+26communist_herat = {
+color = "communist_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+27communist_herat = {
+color = "communist_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+27_27communist_herat = {
+color = "communist_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+28communist_herat = {
+color = "communist_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+29communist_herat = {
+color = "communist_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+30communist_herat = {
+color = "communist_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+31technocratic_herat = {
+color = "technocratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_monarchy
+			}
+} 
+
+32technocratic_herat = {
+color = "technocratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_presidential_republic
+			}
+} 
+
+33technocratic_herat = {
+color = "technocratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_parliamentary_republic
+			}
+} 
+
+34technocratic_herat = {
+color = "technocratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_theocracy
+			}
+} 
+
+35technocratic_herat = {
+color = "technocratic_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_council_republic
+			}
+} 
+
+36anarchist_herat = {
+color = "anarchist_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_monarchy
+			}
+} 
+
+37anarchist_herat = {
+color = "anarchist_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_presidential_republic
+			}
+} 
+
+38anarchist_herat = {
+color = "anarchist_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_parliamentary_republic
+			}
+} 
+
+39anarchist_herat = {
+color = "anarchist_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_theocracy
+			}
+} 
+
+40anarchist_herat = {
+color = "anarchist_herat"
+	
+	possible = {
+	exists = c:HER
+	THIS = c:HER
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_council_republic
+			}
+} 
+
+###kabul###
+
+1monarchist_kabul = {
+color = "monarchist_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+2monarchist_kabul = {
+color = "monarchist_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+3monarchist_kabul = {
+color = "monarchist_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+3_3monarchist_kabul = {
+color = "monarchist_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+4monarchist_kabul = {
+color = "monarchist_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+5monarchist_kabul = {
+color = "monarchist_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+6monarchist_kabul = {
+color = "monarchist_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+7democratic_kabul = {
+color = "democratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+8democratic_kabul = {
+color = "democratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+9democratic_kabul = {
+color = "democratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+9_9democratic_kabul = {
+color = "democratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+10democratic_kabul = {
+color = "democratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+11democratic_kabul = {
+color = "democratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+12democratic_kabul = {
+color = "democratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+13democratic_kabul = {
+color = "democratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+14democratic_kabul = {
+color = "democratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+15democratic_kabul = {
+color = "democratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_landed_voting
+			}
+}
+
+15_15democratic_kabul = {
+color = "democratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+}  
+
+16democratic_kabul = {
+color = "democratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+17democratic_kabul = {
+color = "democratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+18democratic_kabul = {
+color = "democratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+19theocratic_kabul = {
+color = "theocratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+20theocratic_kabul = {
+color = "theocratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+21theocratic_kabul = {
+color = "theocratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+21_21theocratic_kabul = {
+color = "theocratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+22theocratic_kabul = {
+color = "theocratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+23theocratic_kabul = {
+color = "theocratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+24theocratic_kabul = {
+color = "theocratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+25communist_kabul = {
+color = "communist_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+26communist_kabul = {
+color = "communist_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+27communist_kabul = {
+color = "communist_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+27_27communist_kabul = {
+color = "communist_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+28communist_kabul = {
+color = "communist_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+29communist_kabul = {
+color = "communist_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+30communist_kabul = {
+color = "communist_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+31technocratic_kabul = {
+color = "technocratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_monarchy
+			}
+} 
+
+32technocratic_kabul = {
+color = "technocratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_presidential_republic
+			}
+} 
+
+33technocratic_kabul = {
+color = "technocratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_parliamentary_republic
+			}
+} 
+
+34technocratic_kabul = {
+color = "technocratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_theocracy
+			}
+} 
+
+35technocratic_kabul = {
+color = "technocratic_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_council_republic
+			}
+} 
+
+36anarchist_kabul = {
+color = "anarchist_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_monarchy
+			}
+} 
+
+37anarchist_kabul = {
+color = "anarchist_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_presidential_republic
+			}
+} 
+
+38anarchist_kabul = {
+color = "anarchist_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_parliamentary_republic
+			}
+} 
+
+39anarchist_kabul = {
+color = "anarchist_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_theocracy
+			}
+} 
+
+40anarchist_kabul = {
+color = "anarchist_kabul"
+	
+	possible = {
+	exists = c:KAB
+	THIS = c:KAB
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_council_republic
+			}
+} 
+
+###kandahar###
+
+1monarchist_kandahar = {
+color = "monarchist_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+2monarchist_kandahar = {
+color = "monarchist_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+3monarchist_kandahar = {
+color = "monarchist_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+3_3monarchist_kandahar = {
+color = "monarchist_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+4monarchist_kandahar = {
+color = "monarchist_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+5monarchist_kandahar = {
+color = "monarchist_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+6monarchist_kandahar = {
+color = "monarchist_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+7democratic_kandahar = {
+color = "democratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+8democratic_kandahar = {
+color = "democratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+9democratic_kandahar = {
+color = "democratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+9_9democratic_kandahar = {
+color = "democratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+10democratic_kandahar = {
+color = "democratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+11democratic_kandahar = {
+color = "democratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+12democratic_kandahar = {
+color = "democratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+13democratic_kandahar = {
+color = "democratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+14democratic_kandahar = {
+color = "democratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+15democratic_kandahar = {
+color = "democratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_landed_voting
+			}
+}
+
+15_15democratic_kandahar = {
+color = "democratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+}  
+
+16democratic_kandahar = {
+color = "democratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+17democratic_kandahar = {
+color = "democratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+18democratic_kandahar = {
+color = "democratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+19theocratic_kandahar = {
+color = "theocratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+20theocratic_kandahar = {
+color = "theocratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+21theocratic_kandahar = {
+color = "theocratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+21_21theocratic_kandahar = {
+color = "theocratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+22theocratic_kandahar = {
+color = "theocratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+23theocratic_kandahar = {
+color = "theocratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+24theocratic_kandahar = {
+color = "theocratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+25communist_kandahar = {
+color = "communist_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+26communist_kandahar = {
+color = "communist_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+27communist_kandahar = {
+color = "communist_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+27_27communist_kandahar = {
+color = "communist_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_wealth_voting
+			}
+} 
+
+28communist_kandahar = {
+color = "communist_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+29communist_kandahar = {
+color = "communist_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+30communist_kandahar = {
+color = "communist_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+31technocratic_kandahar = {
+color = "technocratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_monarchy
+			}
+} 
+
+32technocratic_kandahar = {
+color = "technocratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_presidential_republic
+			}
+} 
+
+33technocratic_kandahar = {
+color = "technocratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_parliamentary_republic
+			}
+} 
+
+34technocratic_kandahar = {
+color = "technocratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_theocracy
+			}
+} 
+
+35technocratic_kandahar = {
+color = "technocratic_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_council_republic
+			}
+} 
+
+36anarchist_kandahar = {
+color = "anarchist_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_monarchy
+			}
+} 
+
+37anarchist_kandahar = {
+color = "anarchist_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_presidential_republic
+			}
+} 
+
+38anarchist_kandahar = {
+color = "anarchist_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_parliamentary_republic
+			}
+} 
+
+39anarchist_kandahar = {
+color = "anarchist_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_theocracy
+			}
+} 
+
+40anarchist_kandahar = {
+color = "anarchist_kandahar"
+	
+	possible = {
+	exists = c:KAN
+	THIS = c:KAN
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_council_republic
+			}
+} 
+
+###persia###
+
+1monarchist_persia = {
+color = "monarchist_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+2monarchist_persia = {
+color = "monarchist_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+3monarchist_persia = {
+color = "monarchist_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+4monarchist_persia = {
+color = "monarchist_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+5monarchist_persia = {
+color = "monarchist_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+6monarchist_persia = {
+color = "monarchist_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_monarchy
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+7democratic_persia = {
+color = "democratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+8democratic_persia = {
+color = "democratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+9democratic_persia = {
+color = "democratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+10democratic_persia = {
+color = "democratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+11democratic_persia = {
+color = "democratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+12democratic_persia = {
+color = "democratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_parliamentary_republic
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+13democratic_persia = {
+color = "democratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+14democratic_persia = {
+color = "democratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+15democratic_persia = {
+color = "democratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+16democratic_persia = {
+color = "democratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+17democratic_persia = {
+color = "democratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+18democratic_persia = {
+color = "democratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_presidential_republic
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+19theocratic_persia = {
+color = "theocratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+20theocratic_persia = {
+color = "theocratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+21theocratic_persia = {
+color = "theocratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+22theocratic_persia = {
+color = "theocratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+23theocratic_persia = {
+color = "theocratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+24theocratic_persia = {
+color = "theocratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_theocracy
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+25communist_persia = {
+color = "communist_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_autocracy
+			}
+} 
+
+26communist_persia = {
+color = "communist_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_oligarchy
+			}
+} 
+
+27communist_persia = {
+color = "communist_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_landed_voting
+			}
+} 
+
+28communist_persia = {
+color = "communist_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_census_voting
+			}
+} 
+
+29communist_persia = {
+color = "communist_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_universal_suffrage
+			}
+} 
+
+30communist_persia = {
+color = "communist_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_council_republic
+	has_law_or_variant = law_type:law_single_party_state
+			}
+} 
+
+31technocratic_persia = {
+color = "technocratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_monarchy
+			}
+} 
+
+32technocratic_persia = {
+color = "technocratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_presidential_republic
+			}
+} 
+
+33technocratic_persia = {
+color = "technocratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_parliamentary_republic
+			}
+} 
+
+34technocratic_persia = {
+color = "technocratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_theocracy
+			}
+} 
+
+35technocratic_persia = {
+color = "technocratic_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_technocracy
+	has_law_or_variant = law_type:law_council_republic
+			}
+} 
+
+36anarchist_persia = {
+color = "anarchist_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_monarchy
+			}
+} 
+
+37anarchist_persia = {
+color = "anarchist_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_presidential_republic
+			}
+} 
+
+38anarchist_persia = {
+color = "anarchist_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_parliamentary_republic
+			}
+} 
+
+39anarchist_persia = {
+color = "anarchist_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_theocracy
+			}
+} 
+
+40anarchist_persia = {
+color = "anarchist_persia"
+	
+	possible = {
+	exists = c:PER
+	THIS = c:PER
+	has_law_or_variant = law_type:law_anarchy
+	has_law_or_variant = law_type:law_council_republic
+			}
+} 

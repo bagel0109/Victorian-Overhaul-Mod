@@ -1,0 +1,6 @@
+﻿l_simp_chinese:
+
+ notification_exile_notification_desc: "[SCOPE.sCharacter('exile_scope').GetFullName]遭到[SCOPE.sCountry('exiling_country_scope').GetName]的[concept_exile]\n$DAN_agitator_detail_interest_group$\n$DAN_agitator_detail_ideology$\n$DAN_agitator_detail_traits$"
+ notification_new_ruler_desc: "[SCOPE.sCharacter( 'previous' ).GetFullName]当[concept_ruler]的时代已经结束了。[SCOPE.GetRootScope.GetCharacter.GetFullName]如今已经[SCOPE.GetRootScope.GetCharacter.GetCountry.GetName]的新[Concept('concept_ruler', SCOPE.GetRootScope.GetCharacter.GetPrimaryRoleTitle)]。\n$DAN_ruler_interest_group$\n$DAN_ruler_interest_ideology$\n$DAN_ruler_detail_traits$"
+ notification_heir_born_notification_desc:0 "[SCOPE.GetRootScope.GetCharacter.GetFullName]，[SCOPE.GetRootScope.GetCharacter.GetCountry.GetName]尊位的[concept_heir]已出生\n$DAN_ruler_interest_group$\n$DAN_ruler_interest_ideology$\n$DAN_ruler_detail_traits$"
+ notification_agitator_spawned_desc:1 "[SCOPE.sCha('character').GetAgitatorSpawnedNotificationText]\n$DAN_spawn_interest_group$\n$DAN_spawn_interest_ideology$\n$DAN_spawn_detail_traits$"

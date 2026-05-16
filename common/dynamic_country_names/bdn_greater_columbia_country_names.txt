@@ -1,0 +1,323 @@
+﻿###venezuela####
+REPLACE_OR_CREATE:VNZ = {
+
+	dynamic_country_name = {
+		name = dyn_c_venezuela_absolutist_monarchy
+		adjective = VNZ_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_monarchy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_venezuela_monarchy
+		adjective = VNZ_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+
+	#############republic#############
+
+	dynamic_country_name = {
+		name = dyn_c_venezuela_republic
+		adjective = VNZ_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_corporate_state
+				}
+			}
+		}
+	}
+
+	#############dictatorship#############
+
+	dynamic_country_name = {
+		name = dyn_c_venezuela_dictatorship
+		adjective = VNZ_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+				}
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	######theocratic#####
+
+	dynamic_country_name = {
+		name = dyn_c_venezuela_theocratic
+		adjective = VNZ_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_theocracy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_venezuela_theocraticvote
+		adjective = VNZ_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_theocracy
+			}
+		}
+	}
+
+	######communist#####
+
+	dynamic_country_name = {
+		name = dyn_c_venezuela_communist
+		adjective = VNZ_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_venezuela_communistvote
+		adjective = VNZ_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_venezuela_anarchy
+		adjective = VNZ_ADJ
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_anarchy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = VNZ
+		adjective = VNZ_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}
+
+###columbia####
+REPLACE_OR_CREATE:CLM = {
+
+	dynamic_country_name = {
+		name = dyn_c_columbia_absolutist_monarchy
+		adjective = CLM_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_monarchy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_columbia_monarchy
+		adjective = CLM_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+
+	#############republic#############
+
+	dynamic_country_name = {
+		name = dyn_c_columbia_republic
+		adjective = CLM_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_corporate_state
+				}
+			}
+		}
+	}
+
+	#############dictatorship#############
+
+	dynamic_country_name = {
+		name = dyn_c_columbia_dictatorship
+		adjective = CLM_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_corporate_state
+				}
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	######theocratic#####
+
+	dynamic_country_name = {
+		name = dyn_c_columbia_theocratic
+		adjective = CLM_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_theocracy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_columbia_theocraticvote
+		adjective = CLM_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_theocracy
+			}
+		}
+	}
+
+	######communist#####
+
+	dynamic_country_name = {
+		name = dyn_c_columbia_communist
+		adjective = CLM_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_columbia_communistvote
+		adjective = CLM_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_columbia_anarchy
+		adjective = CLM_ADJ
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_anarchy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = CLM
+		adjective = CLM_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}
+

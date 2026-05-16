@@ -1,0 +1,206 @@
+﻿###bavaria####
+REPLACE_OR_CREATE:BAV = {
+
+	dynamic_country_name = {
+		name = dyn_c_bavaria_absolutist_monarchy
+		adjective = BAV_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_monarchy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_bavaria_monarchy
+		adjective = BAV_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+
+	############# republic #############
+
+	dynamic_country_name = {
+		name = dyn_c_bavaria_republic
+		adjective = BAV_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_corporate_state
+				}
+			}
+		}
+	}
+
+	############# dictatorship #############
+
+	dynamic_country_name = {
+		name = dyn_c_bavaria_dictatorship
+		adjective = BAV_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+				}
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	###### theocratic #####
+
+	dynamic_country_name = {
+		name = dyn_c_bavaria_theocratic
+		adjective = BAV_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_theocracy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_bavaria_theocraticvote
+		adjective = BAV_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_theocracy
+			}
+		}
+	}
+
+	###### communist #####
+
+	dynamic_country_name = {
+		name = dyn_c_bavaria_communist
+		adjective = BAV_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_bavaria_communistvote
+		adjective = BAV_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_bavaria_anarchy
+		adjective = BAV_ADJ
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_anarchy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = BAV
+		adjective = BAV_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+
+	###### corporatist #####
+
+	dynamic_country_name = {
+		name = dyn_c_bavaria_corporate_state_authoritarian
+		adjective = BAV_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				AND = {
+					has_law_or_variant = law_type:law_corporate_state
+					OR = {
+						has_law_or_variant = law_type:law_autocracy
+						has_law_or_variant = law_type:law_oligarchy
+						has_law_or_variant = law_type:law_single_party_state
+					}
+				}
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_bavaria_corporate_state_democratic
+		adjective = BAV_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				AND = {
+					has_law_or_variant = law_type:law_corporate_state
+					OR = {
+						has_law_or_variant = law_type:law_landed_voting
+						has_law_or_variant = law_type:law_wealth_voting
+						has_law_or_variant = law_type:law_census_voting
+						has_law_or_variant = law_type:law_universal_suffrage
+						has_law_or_variant = law_type:law_technocracy
+					}
+				}
+			}
+		}
+	}
+}

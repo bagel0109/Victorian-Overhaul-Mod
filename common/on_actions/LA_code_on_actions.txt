@@ -1,0 +1,84 @@
+﻿on_game_started = {
+	on_actions = {
+		LA_on_game_started
+	}
+}
+
+LA_on_game_started = {
+	effect = {
+		every_country = {
+			refresh_LA_modifiers = yes
+		}
+	}
+}
+
+on_law_activated = {
+	on_actions = {
+		LA_on_law_activated
+	}
+}
+
+LA_on_law_activated = {
+	effect = {
+		refresh_LA_modifiers = yes
+	}
+}
+
+# Root = Institution
+on_investment_increased = {
+	on_actions = {
+		LA_on_investment_change
+	}
+}
+on_investment_decreased = {
+	on_actions = {
+		LA_on_investment_change
+	}
+}
+
+LA_on_investment_change = {
+	effect = {
+		switch = {
+			trigger = THIS
+			owner.institution:institution_home_affairs     = { refresh_LA_home_affairs_modifier = yes }
+			owner.institution:institution_police           = { refresh_LA_police_modifier = yes }
+			owner.institution:institution_workplace_safety = { refresh_LA_workplace_safety_modifier = yes }
+			owner.institution:institution_social_security  = { refresh_LA_social_security_modifier = yes }
+		}
+	}
+}
+
+# To refresh modifiers when institution levels are reset on bankruptcy
+on_country_no_longer_default = {
+	on_actions = {
+		MoG_LA_no_longer_default
+	}
+}
+MoG_LA_no_longer_default = {
+	effect = {
+		refresh_LA_modifiers = yes
+	}
+}
+
+#######################################################################
+#for activating institution modifiers on countries not existing on start
+
+# Root = Releasing Country
+# scope:target = Released Country
+on_country_released_as_independent = {
+	on_actions = {
+		LA_on_country_released
+	}
+}
+on_country_released_as_own_subject = {
+	on_actions = {
+		LA_on_country_released
+	}
+}
+LA_on_country_released = {
+	effect = {
+		scope:target = {
+			refresh_LA_modifiers = yes
+		}
+	}
+}

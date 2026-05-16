@@ -1,0 +1,497 @@
+﻿###occitania####
+REPLACE_OR_CREATE:OCC = {
+
+    dynamic_country_name = {
+        name = dyn_c_occitania_absolutist_monarchy
+        adjective = OCC_ADJ
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            exists = scope:actor
+            scope:actor = {
+                has_law_or_variant = law_type:law_monarchy
+                has_law_or_variant = law_type:law_autocracy
+            }
+        }
+    }
+
+    dynamic_country_name = {
+        name = dyn_c_occitania_monarchy
+        adjective = OCC_ADJ
+        is_main_tag_only = yes
+        priority = 0
+
+        trigger = {
+            exists = scope:actor
+            scope:actor = {
+                has_law_or_variant = law_type:law_monarchy
+            }
+        }
+    }
+
+    #############republic#############
+
+    dynamic_country_name = {
+        name = dyn_c_occitania_republic
+        adjective = OCC_ADJ
+        is_main_tag_only = yes
+        priority = 0
+
+        trigger = {
+            exists = scope:actor
+            scope:actor = {
+                OR = {
+                    has_law_or_variant = law_type:law_presidential_republic
+                    has_law_or_variant = law_type:law_parliamentary_republic
+                    has_law_or_variant = law_type:law_corporate_state
+                }
+            }
+        }
+    }
+
+    #############dictatorship#############
+
+    dynamic_country_name = {
+        name = dyn_c_occitania_dictatorship
+        adjective = OCC_ADJ
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            exists = scope:actor
+            scope:actor = {
+                OR = {
+                    has_law_or_variant = law_type:law_presidential_republic
+                    has_law_or_variant = law_type:law_parliamentary_republic
+                }
+                has_law_or_variant = law_type:law_autocracy
+            }
+        }
+    }
+
+    ######theocratic#####
+
+    dynamic_country_name = {
+        name = dyn_c_occitania_theocratic
+        adjective = OCC_ADJ
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            exists = scope:actor
+            scope:actor = {
+                has_law_or_variant = law_type:law_theocracy
+                has_law_or_variant = law_type:law_autocracy
+            }
+        }
+    }
+
+    dynamic_country_name = {
+        name = dyn_c_occitania_theocraticvote
+        adjective = OCC_ADJ
+        is_main_tag_only = yes
+        priority = 0
+
+        trigger = {
+            exists = scope:actor
+            scope:actor = {
+                has_law_or_variant = law_type:law_theocracy
+            }
+        }
+    }
+
+    ######communist#####
+
+    dynamic_country_name = {
+        name = dyn_c_occitania_communist
+        adjective = OCC_ADJ
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            exists = scope:actor
+            scope:actor = {
+                has_law_or_variant = law_type:law_council_republic
+                has_law_or_variant = law_type:law_autocracy
+            }
+        }
+    }
+
+    dynamic_country_name = {
+        name = dyn_c_occitania_communistvote
+        adjective = OCC_ADJ
+        is_main_tag_only = yes
+        priority = 0
+
+        trigger = {
+            exists = scope:actor
+            scope:actor = {
+                has_law_or_variant = law_type:law_council_republic
+            }
+        }
+    }
+
+    dynamic_country_name = {
+        name = dyn_c_occitania_anarchy
+        adjective = OCC_ADJ
+        is_main_tag_only = yes
+        priority = 50
+
+        trigger = {
+            exists = scope:actor
+            scope:actor = {
+                has_law_or_variant = law_type:law_anarchy
+            }
+        }
+    }
+
+    dynamic_country_name = {
+        name = OCC
+        adjective = OCC_ADJ
+        use_overlord_prefix = yes
+        is_main_tag_only = yes
+        priority = 100
+
+        trigger = {
+            coa_def_lesser_subject_trigger = yes
+        }
+    }
+}
+
+###brittany####
+REPLACE_OR_CREATE:BRI = {
+
+    dynamic_country_name = {
+        name = dyn_c_brittany_absolutist_monarchy
+        adjective = BRI_ADJ
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            exists = scope:actor
+            scope:actor = {
+                has_law_or_variant = law_type:law_monarchy
+                has_law_or_variant = law_type:law_autocracy
+            }
+        }
+    }
+
+    dynamic_country_name = {
+        name = dyn_c_brittany_monarchy
+        adjective = BRI_ADJ
+        is_main_tag_only = yes
+        priority = 0
+
+        trigger = {
+            exists = scope:actor
+            scope:actor = {
+                has_law_or_variant = law_type:law_monarchy
+            }
+        }
+    }
+
+    ############# republic #############
+
+    dynamic_country_name = {
+        name = dyn_c_brittany_republic
+        adjective = BRI_ADJ
+        is_main_tag_only = yes
+        priority = 0
+
+        trigger = {
+            exists = scope:actor
+            scope:actor = {
+                OR = {
+                    has_law_or_variant = law_type:law_presidential_republic
+                    has_law_or_variant = law_type:law_parliamentary_republic
+                    has_law_or_variant = law_type:law_corporate_state
+                }
+            }
+        }
+    }
+
+    ############# dictatorship #############
+
+    dynamic_country_name = {
+        name = dyn_c_brittany_dictatorship
+        adjective = BRI_ADJ
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            exists = scope:actor
+            scope:actor = {
+                OR = {
+                    has_law_or_variant = law_type:law_presidential_republic
+                    has_law_or_variant = law_type:law_parliamentary_republic
+                }
+                has_law_or_variant = law_type:law_autocracy
+            }
+        }
+    }
+
+    ###### theocratic #####
+
+    dynamic_country_name = {
+        name = dyn_c_brittany_theocratic
+        adjective = BRI_ADJ
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            exists = scope:actor
+            scope:actor = {
+                has_law_or_variant = law_type:law_theocracy
+                has_law_or_variant = law_type:law_autocracy
+            }
+        }
+    }
+
+    dynamic_country_name = {
+        name = dyn_c_brittany_theocraticvote
+        adjective = BRI_ADJ
+        is_main_tag_only = yes
+        priority = 0
+
+        trigger = {
+            exists = scope:actor
+            scope:actor = {
+                has_law_or_variant = law_type:law_theocracy
+            }
+        }
+    }
+
+    ###### communist #####
+
+    dynamic_country_name = {
+        name = dyn_c_brittany_communist
+        adjective = BRI_ADJ
+        is_main_tag_only = yes
+        priority = 10
+
+        trigger = {
+            exists = scope:actor
+            scope:actor = {
+                has_law_or_variant = law_type:law_council_republic
+                has_law_or_variant = law_type:law_autocracy
+            }
+        }
+    }
+
+    dynamic_country_name = {
+        name = dyn_c_brittany_communistvote
+        adjective = BRI_ADJ
+        is_main_tag_only = yes
+        priority = 0
+
+        trigger = {
+            exists = scope:actor
+            scope:actor = {
+                has_law_or_variant = law_type:law_council_republic
+            }
+        }
+    }
+
+    dynamic_country_name = {
+        name = dyn_c_brittany_anarchy
+        adjective = BRI_ADJ
+        is_main_tag_only = yes
+        priority = 50
+
+        trigger = {
+            exists = scope:actor
+            scope:actor = {
+                has_law_or_variant = law_type:law_anarchy
+            }
+        }
+    }
+
+    dynamic_country_name = {
+        name = BRI
+        adjective = BRI_ADJ
+        use_overlord_prefix = yes
+        is_main_tag_only = yes
+        priority = 100
+
+        trigger = {
+            coa_def_lesser_subject_trigger = yes
+        }
+    }
+}
+
+###france####
+REPLACE_OR_CREATE:FRA = {
+
+	dynamic_country_name = {
+		name = dyn_c_france_bonapartiste
+		adjective = FRA_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				has_law_or_variant = law_type:law_monarchy
+				has_variable = bonapartist_restoration_var
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_france_absolutist_monarchy
+		adjective = FRA_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_monarchy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_france_monarchy
+		adjective = FRA_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+
+	#############republic#############
+
+	dynamic_country_name = {
+		name = dyn_c_france_republic
+		adjective = FRA_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_corporate_state
+				}
+			}
+		}
+	}
+
+	#############dictatorship#############
+
+	dynamic_country_name = {
+		name = dyn_c_france_dictatorship
+		adjective = FRA_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+				}
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	######theocratic#####
+
+	dynamic_country_name = {
+		name = dyn_c_france_theocratic
+		adjective = FRA_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_theocracy
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_france_theocraticvote
+		adjective = FRA_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_theocracy
+			}
+		}
+	}
+
+	######communist#####
+
+	dynamic_country_name = {
+		name = dyn_c_france_communist
+		adjective = FRA_ADJ
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_autocracy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_france_communistvote
+		adjective = FRA_ADJ
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_france_anarchy
+		adjective = FRA_ADJ
+		is_main_tag_only = yes
+		priority = 50
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law_or_variant = law_type:law_anarchy
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = FRA
+		adjective = FRA_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}

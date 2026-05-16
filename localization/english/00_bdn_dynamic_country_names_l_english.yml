@@ -1,0 +1,5776 @@
+﻿l_english:
+ 
+ dyn_c_kunduz_absolutist_monarchy:0 "Khanate of Kunduz"
+ 
+ dyn_c_kunduz_monarchy:0 "Khanate of Kunduz"
+ 
+ dyn_c_kunduz_dictatorship:0 "Supreme State of Kunduz"
+ 
+ dyn_c_kunduz_republic:0 "Republic of Kunduz"
+ 
+ dyn_c_kunduz_communist:0 "Kunduz Soviet Republic"
+ 
+ dyn_c_kunduz_communistvote:0 "Democratic Peoples Republic of Kunduz"
+ 
+ dyn_c_kunduz_theocratic:0 "Islamic State of Kunduz"
+ 
+ dyn_c_kunduz_theocraticvote:0 "Islamic Republic of Kunduz"
+ 
+ dyn_c_kunduz_anarchy:0 "United Communes of Kunduz"
+ 
+ dyn_c_KUN_puppet_EGY:0 "Egyptian Kunduz"
+ 
+ dyn_c_KUN_puppet_SOK:0 "Sokoto Kunduz"
+ 
+ dyn_c_KUN_puppet_SIA:0 "Siamese Kunduz"
+ 
+ dyn_c_KUN_puppet_GBR:0 "British Kunduz"
+ 
+ dyn_c_KUN_puppet_FRA:0 "French Kunduz"
+ 
+ dyn_c_KUN_puppet_NET:0 "Dutch Kunduz"
+ 
+ dyn_c_KUN_puppet_POR:0 "Portugese Kunduz"
+ 
+ dyn_c_KUN_puppet_SPA:0 "Spanish Kunduz"
+ 
+ dyn_c_KUN_puppet_GER:0 "German Kunduz"
+ 
+ dyn_c_KUN_puppet_PRU:0 "Prussian Kunduz"
+ 
+ dyn_c_KUN_puppet_AUS:0 "Austrian Kunduz"
+ 
+ dyn_c_KUN_puppet_RUS:0 "Russian Kunduz"
+ 
+ dyn_c_KUN_puppet_TUR:0 "Turkish Kunduz"
+ 
+ dyn_c_KUN_puppet_USA:0 "American Kunduz"
+ 
+ dyn_c_KUN_puppet_ITA:0 "Italian Kunduz"
+ 
+ dyn_c_KUN_puppet_JAP:0 "Japanese Kunduz"
+ 
+ dyn_c_KUN_puppet_CHI:0 "Chinese Kunduz"
+ 
+ dyn_c_KUN_puppet_BRZ:0 "Brazilian Kunduz"
+ 
+ dyn_c_chitral_absolutist_monarchy:0 "Princely State of Chitral"
+ 
+ dyn_c_chitral_monarchy:0 "Princely State of Chitral"
+ 
+ dyn_c_chitral_dictatorship:0 "Sovereign Authority of Chitral"
+ 
+ dyn_c_chitral_republic:0 "Republic of Chitral"
+ 
+ dyn_c_chitral_communist:0 "Socialist State of Chitral"
+ 
+ dyn_c_chitral_communistvote:0 "Socialist Republic of Chitral"
+ 
+ dyn_c_chitral_theocratic:0 "Islamic State of Chitral"
+ 
+ dyn_c_chitral_theocraticvote:0 "Islamic Republic of Chitral"
+ 
+ dyn_c_chitral_anarchy:0 "Communes of Chitral"
+ 
+ dyn_c_CHT_puppet_EGY:0 "Egyptian Chitral"
+ 
+ dyn_c_CHT_puppet_SOK:0 "Sokoto Chitral"
+ 
+ dyn_c_CHT_puppet_SIA:0 "Siamese Chitral"
+ 
+ dyn_c_CHT_puppet_GBR:0 "British Chitral"
+ 
+ dyn_c_CHT_puppet_FRA:0 "French Chitral"
+ 
+ dyn_c_CHT_puppet_NET:0 "Dutch Chitral"
+ 
+ dyn_c_CHT_puppet_POR:0 "Portugese Chitral"
+ 
+ dyn_c_CHT_puppet_SPA:0 "Spanish Chitral"
+ 
+ dyn_c_CHT_puppet_GER:0 "German Chitral"
+ 
+ dyn_c_CHT_puppet_PRU:0 "Prussian Chitral"
+ 
+ dyn_c_CHT_puppet_AUS:0 "Austrian Chitral"
+ 
+ dyn_c_CHT_puppet_RUS:0 "Russian Chitral"
+ 
+ dyn_c_CHT_puppet_TUR:0 "Turkish Chitral"
+ 
+ dyn_c_CHT_puppet_USA:0 "American Chitral"
+ 
+ dyn_c_CHT_puppet_ITA:0 "Italian Chitral"
+ 
+ dyn_c_CHT_puppet_JAP:0 "Japanese Chitral"
+ 
+ dyn_c_CHT_puppet_CHI:0 "Chinese Chitral"
+ 
+ dyn_c_CHT_puppet_BRZ:0 "Brazilian Chitral"
+ 
+ dyn_c_maimana_absolutist_monarchy:0 "Khanate of Maimana"
+ 
+ dyn_c_maimana_monarchy:0 "Khanate of Maimana"
+ 
+ dyn_c_maimana_dictatorship:0 "Great Republic of Maimana"
+ 
+ dyn_c_maimana_republic:0 "Republic of Maimana"
+ 
+ dyn_c_maimana_communist:0 "Workers Council of Maimana"
+ 
+ dyn_c_maimana_communistvote:0 "Workers Republic of Maimana"
+ 
+ dyn_c_maimana_theocratic:0 "Sacred Emirate of Maimana"
+ 
+ dyn_c_maimana_theocraticvote:0 "Sacred Republic of Maimana"
+ 
+ dyn_c_maimana_anarchy:0 "Great Commune of Maimana"
+ 
+ dyn_c_MAI_puppet_EGY:0 "Egyptian Maimana"
+ 
+ dyn_c_MAI_puppet_SOK:0 "Sokoto Maimana"
+ 
+ dyn_c_MAI_puppet_SIA:0 "Siamese Maimana"
+ 
+ dyn_c_MAI_puppet_GBR:0 "British Maimana"
+ 
+ dyn_c_MAI_puppet_FRA:0 "French Maimana"
+ 
+ dyn_c_MAI_puppet_NET:0 "Dutch Maimana"
+ 
+ dyn_c_MAI_puppet_POR:0 "Portugese Maimana"
+ 
+ dyn_c_MAI_puppet_SPA:0 "Spanish Maimana"
+ 
+ dyn_c_MAI_puppet_GER:0 "German Maimana"
+ 
+ dyn_c_MAI_puppet_PRU:0 "Prussian Maimana"
+ 
+ dyn_c_MAI_puppet_AUS:0 "Austrian Maimana"
+ 
+ dyn_c_MAI_puppet_RUS:0 "Russian Maimana"
+ 
+ dyn_c_MAI_puppet_TUR:0 "Turkish Maimana"
+ 
+ dyn_c_MAI_puppet_USA:0 "American Maimana"
+ 
+ dyn_c_MAI_puppet_ITA:0 "Italian Maimana"
+ 
+ dyn_c_MAI_puppet_JAP:0 "Japanese Maimana"
+ 
+ dyn_c_MAI_puppet_CHI:0 "Chinese Maimana"
+ 
+ dyn_c_MAI_puppet_BRZ:0 "Brazilian Maimana"
+ 
+ dyn_c_kabul_absolutist_monarchy:0 "Emirate of Kabul"
+ 
+ dyn_c_kabul_monarchy:0 "Emirate of Kabul"
+ 
+ dyn_c_kabul_dictatorship:0 "Kabulistan"
+ 
+ dyn_c_kabul_republic:0 "Kabuli Republic"
+ 
+ dyn_c_kabul_communist:0 "Socialist Union of Kabul"
+ 
+ dyn_c_kabul_communistvote:0 "Socialist Republic of Kabul"
+ 
+ dyn_c_kabul_theocratic:0 "Greater Islamic Empire of Kabul"
+ 
+ dyn_c_kabul_theocraticvote:0 "Islamic Republic of Kabul"
+ 
+ dyn_c_kabul_anarchy:0 "Free Communes of Kabul"
+ 
+ dyn_c_KAB_puppet_EGY:0 "Egyptian Kabul"
+ 
+ dyn_c_KAB_puppet_SOK:0 "Sokoto Kabul"
+ 
+ dyn_c_KAB_puppet_SIA:0 "Siamese Kabul"
+ 
+ dyn_c_KAB_puppet_GBR:0 "British Kabul"
+ 
+ dyn_c_KAB_puppet_FRA:0 "French Kabul"
+ 
+ dyn_c_KAB_puppet_NET:0 "Dutch Kabul"
+ 
+ dyn_c_KAB_puppet_POR:0 "Portugese Kabul"
+ 
+ dyn_c_KAB_puppet_SPA:0 "Spanish Kabul"
+ 
+ dyn_c_KAB_puppet_GER:0 "German Kabul"
+ 
+ dyn_c_KAB_puppet_PRU:0 "Prussian Kabul"
+ 
+ dyn_c_KAB_puppet_AUS:0 "Austrian Kabul"
+ 
+ dyn_c_KAB_puppet_RUS:0 "Russian Kabul"
+ 
+ dyn_c_KAB_puppet_TUR:0 "Turkish Kabul"
+ 
+ dyn_c_KAB_puppet_USA:0 "American Kabul"
+ 
+ dyn_c_KAB_puppet_ITA:0 "Italian Kabul"
+ 
+ dyn_c_KAB_puppet_JAP:0 "Japanese Kabul"
+ 
+ dyn_c_KAB_puppet_CHI:0 "Chinese Kabul"
+ 
+ dyn_c_KAB_puppet_BRZ:0 "Brazilian Kabul"
+ 
+ dyn_c_herat_absolutist_monarchy:0 "Emirate of Herat"
+ 
+ dyn_c_herat_monarchy:0 "Emirate of Herat"
+ 
+ dyn_c_herat_dictatorship:0 "National Republic of Herat"
+ 
+ dyn_c_herat_republic:0 "Herati Republic"
+ 
+ dyn_c_herat_communist:0 "Workers Union of Herat"
+ 
+ dyn_c_herat_communistvote:0 "Workers Republic of Herat"
+ 
+ dyn_c_herat_theocratic:0 "Islamic Union of Herat"
+ 
+ dyn_c_herat_theocraticvote:0 "Islamic Republic of Herat"
+ 
+ dyn_c_herat_anarchy:0 "Herat Communal Federation"
+ 
+ dyn_c_HER_puppet_EGY:0 "Egyptian Herat"
+ 
+ dyn_c_HER_puppet_SOK:0 "Sokoto Herat"
+ 
+ dyn_c_HER_puppet_SIA:0 "Siamese Herat"
+ 
+ dyn_c_HER_puppet_GBR:0 "British Herat"
+ 
+ dyn_c_HER_puppet_FRA:0 "French Herat"
+ 
+ dyn_c_HER_puppet_NET:0 "Dutch Herat"
+ 
+ dyn_c_HER_puppet_POR:0 "Portugese Herat"
+ 
+ dyn_c_HER_puppet_SPA:0 "Spanish Herat"
+ 
+ dyn_c_HER_puppet_GER:0 "German Herat"
+ 
+ dyn_c_HER_puppet_PRU:0 "Prussian Herat"
+ 
+ dyn_c_HER_puppet_AUS:0 "Austrian Herat"
+ 
+ dyn_c_HER_puppet_RUS:0 "Russian Herat"
+ 
+ dyn_c_HER_puppet_TUR:0 "Turkish Herat"
+ 
+ dyn_c_HER_puppet_USA:0 "American Herat"
+ 
+ dyn_c_HER_puppet_ITA:0 "Italian Herat"
+ 
+ dyn_c_HER_puppet_JAP:0 "Japanese Herat"
+ 
+ dyn_c_HER_puppet_CHI:0 "Chinese Herat"
+ 
+ dyn_c_HER_puppet_BRZ:0 "Brazilian Herat"
+
+ dyn_c_usa_absolutist_monarchy:0 "Kingdom of America"
+ 
+ dyn_c_usa_monarchy:0 "Kingdom of America"
+ 
+ dyn_c_usa_dictatorship:0 "American National Directorate"
+ 
+ dyn_c_usa_republic:0 "United States of America"
+ 
+ dyn_c_usa_communist:0 "Communist States of America"
+ 
+ dyn_c_usa_communistvote:0 "Socialist States of America"
+ 
+ dyn_c_usa_theocratic:0 "Christian Empire of America"
+ 
+ dyn_c_usa_theocraticvote:0 "Christian Republic of America"
+ 
+ dyn_c_usa_anarchy:0 "Free States of America"
+ 
+ dyn_c_usa_technocracy:0 "North American Technate"
+ 
+ dyn_c_usa_puppet_MEX:0 "Mexican States"
+ 
+ dyn_c_kandahar_absolutist_monarchy:0 "Emirate of Kandahar"
+ 
+ dyn_c_kandahar_monarchy:0 "Emirate of Kandahar"
+ 
+ dyn_c_kandahar_dictatorship:0 "Independent Republic of Kandahar"
+ 
+ dyn_c_kandahar_republic:0 "Kandahari Republic"
+ 
+ dyn_c_kandahar_communist:0 "Socialist State of Kandahar"
+ 
+ dyn_c_kandahar_communistvote:0 "Socialist Republic of Kandahar"
+ 
+ dyn_c_kandahar_theocratic:0 "Islamic Union of Kandahar"
+ 
+ dyn_c_kandahar_theocraticvote:0 "Islamic Republic of Kandahar"
+ 
+ dyn_c_kandahar_anarchy:0 "United Communes of Kandahar"
+ 
+ dyn_c_KAN_puppet_EGY:0 "Egyptian Kandahar"
+ 
+ dyn_c_KAN_puppet_SOK:0 "Sokoto Kandahar"
+ 
+ dyn_c_KAN_puppet_SIA:0 "Siamese Kandahar"
+ 
+ dyn_c_KAN_puppet_GBR:0 "British Kandahar"
+ 
+ dyn_c_KAN_puppet_FRA:0 "French Kandahar"
+ 
+ dyn_c_KAN_puppet_NET:0 "Dutch Kandahar"
+ 
+ dyn_c_KAN_puppet_POR:0 "Portugese Kandahar"
+ 
+ dyn_c_KAN_puppet_SPA:0 "Spanish Kandahar"
+ 
+ dyn_c_KAN_puppet_GER:0 "German Kandahar"
+ 
+ dyn_c_KAN_puppet_PRU:0 "Prussian Kandahar"
+ 
+ dyn_c_KAN_puppet_AUS:0 "Austrian Kandahar"
+ 
+ dyn_c_KAN_puppet_RUS:0 "Russian Kandahar"
+ 
+ dyn_c_KAN_puppet_TUR:0 "Turkish Kandahar"
+ 
+ dyn_c_KAN_puppet_USA:0 "American Kandahar"
+ 
+ dyn_c_KAN_puppet_ITA:0 "Italian Kandahar"
+ 
+ dyn_c_KAN_puppet_JAP:0 "Japanese Kandahar"
+ 
+ dyn_c_KAN_puppet_CHI:0 "Chinese Kandahar"
+ 
+ dyn_c_KAN_puppet_BRZ:0 "Brazilian Kandahar"
+ 
+ dyn_c_persia_absolutist_monarchy:0 "Qajar Empire"
+ 
+ dyn_c_persia_monarchy:0 "Qajar Empire"
+ 
+ dyn_c_persia_dictatorship:0 "Persian Empire"
+ 
+ dyn_c_persia_republic:0 "Republic of Persia"
+
+ dyn_c_persia_communist:0 "Socialist State of Iran"
+ 
+ dyn_c_persia_communistvote:0 "Socialist Republic of Iran"
+ 
+ dyn_c_persia_theocratic:0 "Islamic State of Iran"
+ 
+ dyn_c_persia_theocraticvote:0 "Islamic Republic of Iran"
+ 
+ dyn_c_persia_anarchy:0 "Free Persian Territories"
+ 
+ dyn_c_PER_puppet_EGY:0 "Egyptian Persia"
+ 
+ dyn_c_PER_puppet_SOK:0 "Sokoto Persia"
+ 
+ dyn_c_PER_puppet_SIA:0 "Siamese Persia"
+ 
+ dyn_c_PER_puppet_GBR:0 "British Persia"
+ 
+ dyn_c_PER_puppet_FRA:0 "French Persia"
+ 
+ dyn_c_PER_puppet_NET:0 "Dutch Persia"
+ 
+ dyn_c_PER_puppet_POR:0 "Portugese Persia"
+ 
+ dyn_c_PER_puppet_SPA:0 "Spanish Persia"
+ 
+ dyn_c_PER_puppet_GER:0 "German Persia"
+ 
+ dyn_c_PER_puppet_PRU:0 "Prussian Persia"
+ 
+ dyn_c_PER_puppet_AUS:0 "Austrian Persia"
+ 
+ dyn_c_PER_puppet_RUS:0 "Russian Persia"
+ 
+ dyn_c_PER_puppet_TUR:0 "Turkish Persia"
+ 
+ dyn_c_PER_puppet_USA:0 "American Persia"
+ 
+ dyn_c_PER_puppet_ITA:0 "Italian Persia"
+ 
+ dyn_c_PER_puppet_JAP:0 "Japanese Persia"
+ 
+ dyn_c_PER_puppet_CHI:0 "Chinese Persia"
+ 
+ dyn_c_PER_puppet_BRZ:0 "Brazilian Persia"
+ 
+ dyn_c_luxembourg_absolutist_monarchy:0 "Grand Duchy of Luxembourg"
+ 
+ dyn_c_luxembourg_monarchy:0 "Grand Duchy of Luxembourg"
+ 
+ dyn_c_luxembourg_dictatorship:0 "Greater Luxembourg"
+ 
+ dyn_c_luxembourg_republic:0 "Republic of Luxembourg"
+ 
+ dyn_c_luxembourg_communist:0 "Peoples Republic of Luxembourg"
+ 
+ dyn_c_luxembourg_communistvote:0 "Socialist Republic of Luxembourg"
+ 
+ dyn_c_luxembourg_theocratic:0 "Archbishopric of Luxembourg"
+ 
+ dyn_c_luxembourg_theocraticvote:0 "Archbishopric of Luxembourg"
+ 
+ dyn_c_luxembourg_anarchy:0 "Free Communes of Luxembourg"
+ 
+ dyn_c_LUX_puppet_EGY:0 "Egyptian Luxembourg"
+ 
+ dyn_c_LUX_puppet_SOK:0 "Sokoto Luxembourg"
+ 
+ dyn_c_LUX_puppet_SIA:0 "Siamese Luxembourg"
+ 
+ dyn_c_LUX_puppet_GBR:0 "British Luxembourg"
+ 
+ dyn_c_LUX_puppet_FRA:0 "French Luxembourg"
+ 
+ dyn_c_LUX_puppet_NET:0 "Dutch Luxembourg"
+ 
+ dyn_c_LUX_puppet_POR:0 "Portugese Luxembourg"
+ 
+ dyn_c_LUX_puppet_SPA:0 "Spanish Luxembourg"
+ 
+ dyn_c_LUX_puppet_GER:0 "German Luxembourg"
+ 
+ dyn_c_LUX_puppet_PRU:0 "Prussian Luxembourg"
+ 
+ dyn_c_LUX_puppet_AUS:0 "Austrian Luxembourg"
+ 
+ dyn_c_LUX_puppet_RUS:0 "Russian Luxembourg"
+ 
+ dyn_c_LUX_puppet_TUR:0 "Turkish Luxembourg"
+ 
+ dyn_c_LUX_puppet_USA:0 "American Luxembourg"
+ 
+ dyn_c_LUX_puppet_ITA:0 "Italian Luxembourg"
+ 
+ dyn_c_LUX_puppet_JAP:0 "Japanese Luxembourg"
+ 
+ dyn_c_LUX_puppet_CHI:0 "Chinese Luxembourg"
+ 
+ dyn_c_LUX_puppet_BRZ:0 "Brazilian Luxembourg"
+ 
+ dyn_c_belarus_absolutist_monarchy:0 "Kingdom of Belarus"
+ 
+ dyn_c_belarus_monarchy:0 "Kingdom of Belarus"
+ 
+ dyn_c_belarus_dictatorship:0 "Greater Republic of Belarus"
+ 
+ dyn_c_belarus_republic:0 "Republic of Belarus"
+ 
+ dyn_c_belarus_communist:0 "Belarusian Socialist Republic"
+ 
+ dyn_c_belarus_communistvote:0 "Belarusian Democratic Republic"
+ 
+ dyn_c_belarus_theocratic:0 "Holy State of Belarus"
+ 
+ dyn_c_belarus_theocraticvote:0 "Orthodox Republic of Belarus"
+ 
+ dyn_c_belarus_anarchy:0 "United Communes of Belarus"
+ 
+ dyn_c_BYE_puppet_EGY:0 "Egyptian Belarus"
+ 
+ dyn_c_BYE_puppet_SOK:0 "Sokoto Belarus"
+ 
+ dyn_c_BYE_puppet_SIA:0 "Siamese Belarus"
+ 
+ dyn_c_BYE_puppet_GBR:0 "British Belarus"
+ 
+ dyn_c_BYE_puppet_FRA:0 "French Belarus"
+ 
+ dyn_c_BYE_puppet_NET:0 "Dutch Belarus"
+ 
+ dyn_c_BYE_puppet_POR:0 "Portugese Belarus"
+ 
+ dyn_c_BYE_puppet_SPA:0 "Spanish Belarus"
+ 
+ dyn_c_BYE_puppet_GER:0 "German Belarus"
+ 
+ dyn_c_BYE_puppet_PRU:0 "Prussian Belarus"
+ 
+ dyn_c_BYE_puppet_AUS:0 "Austrian Belarus"
+ 
+ dyn_c_BYE_puppet_RUS:0 "Russian Belarus"
+ 
+ dyn_c_BYE_puppet_TUR:0 "Turkish Belarus"
+ 
+ dyn_c_BYE_puppet_USA:0 "American Belarus"
+ 
+ dyn_c_BYE_puppet_ITA:0 "Italian Belarus"
+ 
+ dyn_c_BYE_puppet_JAP:0 "Japanese Belarus"
+ 
+ dyn_c_BYE_puppet_CHI:0 "Chinese Belarus"
+ 
+ dyn_c_BYE_puppet_BRZ:0 "Brazilian Belarus"
+
+ dyn_c_ukraine_absolutist_monarchy:0 "Kingdom of Ukraine"
+ 
+ dyn_c_ukraine_monarchy:0 "Kingdom of Ukraine"
+ 
+ dyn_c_ukraine_dictatorship:0 "Supreme State of Ukraine"
+ 
+ dyn_c_ukraine_republic:0 "Ukrainian Republic"
+ 
+ dyn_c_ukraine_communist:0 "Ukrainian Socialist Republic"
+ 
+ dyn_c_ukraine_communistvote:0 "Socialist Peoples Republic of Ukraine"
+ 
+ dyn_c_ukraine_theocratic:0 "Patriarchate of Kyiv"
+ 
+ dyn_c_ukraine_theocraticvote:0 "Orthodox Republic of Ukraine"
+ 
+ dyn_c_ukraine_anarchy:0 "Communes of Ukraine"
+ 
+ dyn_c_UKR_puppet_EGY:0 "Egyptian Ukraine"
+ 
+ dyn_c_UKR_puppet_SOK:0 "Sokoto Ukraine"
+ 
+ dyn_c_UKR_puppet_SIA:0 "Siamese Ukraine"
+ 
+ dyn_c_UKR_puppet_GBR:0 "British Ukraine"
+ 
+ dyn_c_UKR_puppet_FRA:0 "French Ukraine"
+ 
+ dyn_c_UKR_puppet_NET:0 "Dutch Ukraine"
+ 
+ dyn_c_UKR_puppet_POR:0 "Portugese Ukraine"
+ 
+ dyn_c_UKR_puppet_SPA:0 "Spanish Ukraine"
+ 
+ dyn_c_UKR_puppet_GER:0 "German Ukraine"
+ 
+ dyn_c_UKR_puppet_PRU:0 "Prussian Ukraine"
+ 
+ dyn_c_UKR_puppet_AUS:0 "Austrian Ukraine"
+ 
+ dyn_c_UKR_puppet_RUS:0 "Russian Ukraine"
+ 
+ dyn_c_UKR_puppet_TUR:0 "Turkish Ukraine"
+ 
+ dyn_c_UKR_puppet_USA:0 "American Ukraine"
+ 
+ dyn_c_UKR_puppet_ITA:0 "Italian Ukraine"
+ 
+ dyn_c_UKR_puppet_JAP:0 "Japanese Ukraine"
+ 
+ dyn_c_UKR_puppet_CHI:0 "Chinese Ukraine"
+ 
+ dyn_c_UKR_puppet_BRZ:0 "Brazilian Ukraine"
+
+ dyn_c_balticprovinces_absolutist_monarchy:0 "United Baltic Kingdom"
+ 
+ dyn_c_balticprovinces_monarchy:0 "United Baltic Kingdom"
+ 
+ dyn_c_balticprovinces_dictatorship:0 "United Baltic Empire"
+ 
+ dyn_c_balticprovinces_republic:0 "Republic of the Baltic States"
+ 
+ dyn_c_balticprovinces_communist:0 "Socialist State of the Baltic"
+ 
+ dyn_c_balticprovinces_communistvote:0 "Socialist Republic of the Baltic"
+ 
+ dyn_c_balticprovinces_theocratic:0 "United Crusader States"
+ 
+ dyn_c_balticprovinces_theocraticvote:0 "Christian Republics of the Baltic States"
+ 
+ dyn_c_balticprovinces_anarchy:0 "United Syndicate"
+ 
+ dyn_c_UBD_puppet_EGY:0 "Egyptian Baltic Provinces"
+ 
+ dyn_c_UBD_puppet_SOK:0 "Sokoto Baltic Provinces"
+ 
+ dyn_c_UBD_puppet_SIA:0 "Siamese Baltic Provinces"
+ 
+ dyn_c_UBD_puppet_GBR:0 "British Baltic Provinces"
+ 
+ dyn_c_UBD_puppet_FRA:0 "French Baltic Provinces"
+ 
+ dyn_c_UBD_puppet_NET:0 "Dutch Baltic Provinces"
+ 
+ dyn_c_UBD_puppet_POR:0 "Portugese Baltic Provinces"
+ 
+ dyn_c_UBD_puppet_SPA:0 "Spanish Baltic Provinces"
+ 
+ dyn_c_UBD_puppet_GER:0 "German Baltic Provinces"
+ 
+ dyn_c_UBD_puppet_PRU:0 "Prussian Baltic Provinces"
+ 
+ dyn_c_UBD_puppet_AUS:0 "Austrian Baltic Provinces"
+ 
+ dyn_c_UBD_puppet_RUS:0 "Baltic Governorates"
+ 
+ dyn_c_UBD_puppet_TUR:0 "Turkish Baltic Provinces"
+ 
+ dyn_c_UBD_puppet_USA:0 "American Baltic Provinces"
+ 
+ dyn_c_UBD_puppet_ITA:0 "Italian Baltic Provinces"
+ 
+ dyn_c_UBD_puppet_JAP:0 "Japanese Baltic Provinces"
+ 
+ dyn_c_UBD_puppet_CHI:0 "Chinese Baltic Provinces"
+ 
+ dyn_c_UBD_puppet_BRZ:0 "Brazilian Baltic Provinces"
+
+ dyn_c_lithuania_absolutist_monarchy:0 "Duchy of Lithuania"
+ 
+ dyn_c_lithuania_monarchy:0 "Duchy of Lithuania"
+ 
+ dyn_c_lithuania_dictatorship:0 "Greater Lithuania"
+ 
+ dyn_c_lithuania_republic:0 "Lithuania"
+ 
+ dyn_c_lithuania_communist:0 "Workers State of Lithuania"
+ 
+ dyn_c_lithuania_communistvote:0 "Workers Republic of Lithuania"
+ 
+ dyn_c_lithuania_theocratic:0 "Christian State of Lithuania"
+ 
+ dyn_c_lithuania_theocraticvote:0 "Christian Republic of Lithuania"
+ 
+ dyn_c_lithuania_anarchy:0 "Free Communes of Lithuania"
+ 
+ dyn_c_LIT_puppet_EGY:0 "Egyptian Lithuania"
+ 
+ dyn_c_LIT_puppet_SOK:0 "Sokoto Lithuania"
+ 
+ dyn_c_LIT_puppet_SIA:0 "Siamese Lithuania"
+ 
+ dyn_c_LIT_puppet_GBR:0 "British Lithuania"
+ 
+ dyn_c_LIT_puppet_FRA:0 "French Lithuania"
+ 
+ dyn_c_LIT_puppet_NET:0 "Dutch Lithuania"
+ 
+ dyn_c_LIT_puppet_POR:0 "Portugese Lithuania"
+ 
+ dyn_c_LIT_puppet_SPA:0 "Spanish Lithuania"
+ 
+ dyn_c_LIT_puppet_GER:0 "German Lithuania"
+ 
+ dyn_c_LIT_puppet_PRU:0 "Prussian Lithuania"
+ 
+ dyn_c_LIT_puppet_AUS:0 "Austrian Lithuania"
+ 
+ dyn_c_LIT_puppet_RUS:0 "Russian Lithuania"
+ 
+ dyn_c_LIT_puppet_TUR:0 "Turkish Lithuania"
+ 
+ dyn_c_LIT_puppet_USA:0 "American Lithuania"
+ 
+ dyn_c_LIT_puppet_ITA:0 "Italian Lithuania"
+ 
+ dyn_c_LIT_puppet_JAP:0 "Japanese Lithuania"
+ 
+ dyn_c_LIT_puppet_CHI:0 "Chinese Lithuania"
+ 
+ dyn_c_LIT_puppet_BRZ:0 "Brazilian Lithuania"
+
+ dyn_c_ubp_absolutist_monarchy:0 "United Baltic Kingdom"
+
+ dyn_c_ubp_monarchy:0 "United Baltic Kingdom"
+
+ dyn_c_ubp_dictatorship:0 "Baltic Empire"
+
+ dyn_c_ubp_republic:0 "United Baltic Republic"
+
+ dyn_c_ubp_communist:0 "People's State of the Baltics"
+
+ dyn_c_ubp_communistvote:0 "People's Republic of the Baltics"
+
+ dyn_c_ubp_theocratic:0 "Holy Baltic State"
+
+ dyn_c_ubp_theocraticvote:0 "Baltic Christian Republic"
+
+ dyn_c_ubp_anarchy:0 "Free Communes of the Baltics"
+
+ dyn_c_latvia_absolutist_monarchy:0 "Duchy of Latvia"
+ 
+ dyn_c_latvia_monarchy:0 "Duchy of Latvia"
+ 
+ dyn_c_latvia_dictatorship:0 "Greater Latvia"
+ 
+ dyn_c_latvia_republic:0 "Latvia"
+ 
+ dyn_c_latvia_communist:0 "Peoples Republic of Latvia"
+ 
+ dyn_c_latvia_communistvote:0 "Socialist Republic of Latvia"
+ 
+ dyn_c_latvia_theocratic:0 "Holy Order of Latvia"
+ 
+ dyn_c_latvia_theocraticvote:0 "Holy Republic of Latvia"
+ 
+ dyn_c_latvia_anarchy:0 "United Communes of Latvia"
+ 
+ dyn_c_LAT_puppet_EGY:0 "Egyptian Latvia"
+ 
+ dyn_c_LAT_puppet_SOK:0 "Sokoto Latvia"
+ 
+ dyn_c_LAT_puppet_SIA:0 "Siamese Latvia"
+ 
+ dyn_c_LAT_puppet_GBR:0 "British Latvia"
+ 
+ dyn_c_LAT_puppet_FRA:0 "French Latvia"
+ 
+ dyn_c_LAT_puppet_NET:0 "Dutch Latvia"
+ 
+ dyn_c_LAT_puppet_POR:0 "Portugese Latvia"
+ 
+ dyn_c_LAT_puppet_SPA:0 "Spanish Latvia"
+ 
+ dyn_c_LAT_puppet_GER:0 "German Latvia"
+ 
+ dyn_c_LAT_puppet_PRU:0 "Prussian Latvia"
+ 
+ dyn_c_LAT_puppet_AUS:0 "Austrian Latvia"
+ 
+ dyn_c_LAT_puppet_RUS:0 "Russian Latvia"
+ 
+ dyn_c_LAT_puppet_TUR:0 "Turkish Latvia"
+ 
+ dyn_c_LAT_puppet_USA:0 "American Latvia"
+ 
+ dyn_c_LAT_puppet_ITA:0 "Italian Latvia"
+ 
+ dyn_c_LAT_puppet_JAP:0 "Japanese Latvia"
+ 
+ dyn_c_LAT_puppet_CHI:0 "Chinese Latvia"
+ 
+ dyn_c_LAT_puppet_BRZ:0 "Brazilian Latvia"
+
+ dyn_c_estonia_absolutist_monarchy:0 "Duchy of Estonia"
+ 
+ dyn_c_estonia_monarchy:0 "Duchy of Estonia"
+ 
+ dyn_c_estonia_dictatorship:0 "Independent Republic of Estonia"
+ 
+ dyn_c_estonia_republic:0 "Estonia"
+ 
+ dyn_c_estonia_communist:0 "Autonomous State of Estonia"
+ 
+ dyn_c_estonia_communistvote:0 "Socialist Republic of Estonia"
+ 
+ dyn_c_estonia_theocratic:0 "Protestant State of Estonia"
+ 
+ dyn_c_estonia_theocraticvote:0 "Protestant Republic of Estonia"
+ 
+ dyn_c_estonia_anarchy:0 "Estonian Workers Commune"
+ 
+ dyn_c_EST_puppet_EGY:0 "Egyptian Estonia"
+ 
+ dyn_c_EST_puppet_SOK:0 "Sokoto Estonia"
+ 
+ dyn_c_EST_puppet_SIA:0 "Siamese Estonia"
+ 
+ dyn_c_EST_puppet_GBR:0 "British Estonia"
+ 
+ dyn_c_EST_puppet_FRA:0 "French Estonia"
+ 
+ dyn_c_EST_puppet_NET:0 "Dutch Estonia"
+ 
+ dyn_c_EST_puppet_POR:0 "Portugese Estonia"
+ 
+ dyn_c_EST_puppet_SPA:0 "Spanish Estonia"
+ 
+ dyn_c_EST_puppet_GER:0 "German Estonia"
+ 
+ dyn_c_EST_puppet_PRU:0 "Prussian Estonia"
+ 
+ dyn_c_EST_puppet_AUS:0 "Austrian Estonia"
+ 
+ dyn_c_EST_puppet_RUS:0 "Russian Estonia"
+ 
+ dyn_c_EST_puppet_TUR:0 "Turkish Estonia"
+ 
+ dyn_c_EST_puppet_USA:0 "American Estonia"
+ 
+ dyn_c_EST_puppet_ITA:0 "Italian Estonia"
+ 
+ dyn_c_EST_puppet_JAP:0 "Japanese Estonia"
+ 
+ dyn_c_EST_puppet_CHI:0 "Chinese Estonia"
+ 
+ dyn_c_EST_puppet_BRZ:0 "Brazilian Estonia"
+
+ dyn_c_occitania_absolutist_monarchy:0 "Kingdom of Occitania"
+ 
+ dyn_c_occitania_monarchy:0 "Kingdom of Occitania"
+ 
+ dyn_c_occitania_dictatorship:0 "Occitan National Authority"
+ 
+ dyn_c_occitania_republic:0 "Republic of Occitania"
+ 
+ dyn_c_occitania_communist:0 "Occitan Peoples Federation"
+ 
+ dyn_c_occitania_communistvote:0 "Social Republic of Occitania"
+ 
+ dyn_c_occitania_theocratic:0 "Holy Kingdom of Occitania"
+ 
+ dyn_c_occitania_theocraticvote:0 "Holy Republic of Occitania"
+ 
+ dyn_c_occitania_anarchy:0 "Aquitan United Communes"
+ 
+ dyn_c_OCC_puppet_EGY:0 "Egyptian Occitania"
+ 
+ dyn_c_OCC_puppet_SIA:0 "Siamese Occitania"
+ 
+ dyn_c_OCC_puppet_GBR:0 "British Occitania"
+ 
+ dyn_c_OCC_puppet_FRA:0 "French Occitania"
+ 
+ dyn_c_OCC_puppet_NET:0 "Dutch Occitania"
+ 
+ dyn_c_OCC_puppet_POR:0 "Portugese Occitania"
+ 
+ dyn_c_OCC_puppet_SPA:0 "Spanish Occitania"
+ 
+ dyn_c_OCC_puppet_GER:0 "German Occitania"
+ 
+ dyn_c_OCC_puppet_PRU:0 "Prussian Occitania"
+ 
+ dyn_c_OCC_puppet_AUS:0 "Austrian Occitania"
+ 
+ dyn_c_OCC_puppet_RUS:0 "Russian Occitania"
+ 
+ dyn_c_OCC_puppet_TUR:0 "Turkish Occitania"
+ 
+ dyn_c_OCC_puppet_USA:0 "American Occitania"
+ 
+ dyn_c_OCC_puppet_ITA:0 "Italian Occitania"
+ 
+ dyn_c_OCC_puppet_JAP:0 "Japanese Occitania"
+ 
+ dyn_c_OCC_puppet_CHI:0 "Chinese Occitania"
+ 
+ dyn_c_OCC_puppet_BRZ:0 "Brazilian Occitania"
+
+ dyn_c_brittany_absolutist_monarchy:0 "Kingdom of Brittany"
+ 
+ dyn_c_brittany_monarchy:0 "Kingdom of Brittany"
+ 
+ dyn_c_brittany_dictatorship:0 "United Brittany"
+ 
+ dyn_c_brittany_republic:0 "Republic of Brittany"
+ 
+ dyn_c_brittany_communist:0 "Breton Workers’ Union"
+ 
+ dyn_c_brittany_communistvote:0 "Peoples Republic of Brittany"
+ 
+ dyn_c_brittany_theocratic:0 "Catholic Protectorate of Brittany"
+ 
+ dyn_c_brittany_theocraticvote:0 "Catholic Republic of Brittany"
+ 
+ dyn_c_brittany_anarchy:0 "Free Breton Communes"
+ 
+ dyn_c_BRI_puppet_EGY:0 "Egyptian Brittany"
+ 
+ dyn_c_BRI_puppet_SIA:0 "Siamese Brittany"
+ 
+ dyn_c_BRI_puppet_GBR:0 "British Brittany"
+ 
+ dyn_c_BRI_puppet_FRA:0 "French Brittany"
+ 
+ dyn_c_BRI_puppet_NET:0 "Dutch Brittany"
+ 
+ dyn_c_BRI_puppet_POR:0 "Portugese Brittany"
+ 
+ dyn_c_BRI_puppet_SPA:0 "Spanish Brittany"
+ 
+ dyn_c_BRI_puppet_GER:0 "German Brittany"
+ 
+ dyn_c_BRI_puppet_PRU:0 "Prussian Brittany"
+ 
+ dyn_c_BRI_puppet_AUS:0 "Austrian Brittany"
+ 
+ dyn_c_BRI_puppet_RUS:0 "Russian Brittany"
+ 
+ dyn_c_BRI_puppet_TUR:0 "Turkish Brittany"
+ 
+ dyn_c_BRI_puppet_USA:0 "American Brittany"
+ 
+ dyn_c_BRI_puppet_ITA:0 "Italian Brittany"
+ 
+ dyn_c_BRI_puppet_JAP:0 "Japanese Brittany"
+ 
+ dyn_c_BRI_puppet_CHI:0 "Chinese Brittany"
+ 
+ dyn_c_BRI_puppet_BRZ:0 "Brazilian Brittany"
+
+ dyn_c_GZA_puppet_EGY:0 "Egyptian Gaza"
+ 
+ dyn_c_GZA_puppet_SOK:0 "Sokoto Gaza"
+ 
+ dyn_c_GZA_puppet_SIA:0 "Siamese Gaza"
+ 
+ dyn_c_GZA_puppet_GBR:0 "British Gaza"
+ 
+ dyn_c_GZA_puppet_FRA:0 "French Gaza"
+ 
+ dyn_c_GZA_puppet_NET:0 "Dutch Gaza"
+ 
+ dyn_c_GZA_puppet_POR:0 "Portugese Gaza"
+ 
+ dyn_c_GZA_puppet_SPA:0 "Spanish Gaza"
+ 
+ dyn_c_GZA_puppet_GER:0 "German Gaza"
+ 
+ dyn_c_GZA_puppet_PRU:0 "Prussian Gaza"
+ 
+ dyn_c_GZA_puppet_AUS:0 "Austrian Gaza"
+ 
+ dyn_c_GZA_puppet_RUS:0 "Russian Gaza"
+ 
+ dyn_c_GZA_puppet_TUR:0 "Turkish Gaza"
+ 
+ dyn_c_GZA_puppet_USA:0 "American Gaza"
+ 
+ dyn_c_GZA_puppet_ITA:0 "Italian Gaza"
+ 
+ dyn_c_GZA_puppet_JAP:0 "Japanese Gaza"
+ 
+ dyn_c_GZA_puppet_CHI:0 "Chinese Gaza"
+ 
+ dyn_c_GZA_puppet_BRZ:0 "Brazilian Gaza"
+
+ dyn_c_ZUL_puppet_EGY:0 "Egyptian Zululand"
+ 
+ dyn_c_ZUL_puppet_SOK:0 "Sokoto Zululand"
+ 
+ dyn_c_ZUL_puppet_SIA:0 "Siamese Zululand"
+ 
+ dyn_c_ZUL_puppet_GBR:0 "British Zululand"
+ 
+ dyn_c_ZUL_puppet_FRA:0 "French Zululand"
+ 
+ dyn_c_ZUL_puppet_NET:0 "Dutch Zululand"
+ 
+ dyn_c_ZUL_puppet_POR:0 "Portugese Zululand"
+ 
+ dyn_c_ZUL_puppet_SPA:0 "Spanish Zululand"
+ 
+ dyn_c_ZUL_puppet_GER:0 "German Zululand"
+ 
+ dyn_c_ZUL_puppet_PRU:0 "Prussian Zululand"
+ 
+ dyn_c_ZUL_puppet_AUS:0 "Austrian Zululand"
+ 
+ dyn_c_ZUL_puppet_RUS:0 "Russian Zululand"
+ 
+ dyn_c_ZUL_puppet_TUR:0 "Turkish Zululand"
+ 
+ dyn_c_ZUL_puppet_USA:0 "American Zululand"
+ 
+ dyn_c_ZUL_puppet_ITA:0 "Italian Zululand"
+ 
+ dyn_c_ZUL_puppet_JAP:0 "Japanese Zululand"
+ 
+ dyn_c_ZUL_puppet_CHI:0 "Chinese Zululand"
+ 
+ dyn_c_ZUL_puppet_BRZ:0 "Brazilian Zululand"
+
+ dyn_c_TRN_republic:0 "South African Republic"
+ 
+ dyn_c_TRN_puppet_EGY:0 "Egyptian Transvaal"
+ 
+ dyn_c_TRN_puppet_SOK:0 "Sokoto Transvaal"
+ 
+ dyn_c_TRN_puppet_SIA:0 "Siamese Transvaal"
+ 
+ dyn_c_TRN_puppet_GBR:0 "British Transvaal"
+ 
+ dyn_c_TRN_puppet_FRA:0 "French Transvaal"
+ 
+ dyn_c_TRN_puppet_NET:0 "Dutch Transvaal"
+ 
+ dyn_c_TRN_puppet_POR:0 "Portugese Transvaal"
+ 
+ dyn_c_TRN_puppet_SPA:0 "Spanish Transvaal"
+ 
+ dyn_c_TRN_puppet_GER:0 "German Transvaal"
+ 
+ dyn_c_TRN_puppet_PRU:0 "Prussian Transvaal"
+ 
+ dyn_c_TRN_puppet_AUS:0 "Austrian Transvaal"
+ 
+ dyn_c_TRN_puppet_RUS:0 "Russian Transvaal"
+ 
+ dyn_c_TRN_puppet_TUR:0 "Turkish Transvaal"
+ 
+ dyn_c_TRN_puppet_USA:0 "American Transvaal"
+ 
+ dyn_c_TRN_puppet_ITA:0 "Italian Transvaal"
+ 
+ dyn_c_TRN_puppet_JAP:0 "Japanese Transvaal"
+ 
+ dyn_c_TRN_puppet_CHI:0 "Chinese Transvaal"
+ 
+ dyn_c_TRN_puppet_BRZ:0 "Brazilian Transvaal"
+ 
+ dyn_c_ORA_republic:0 "Oranje Free State"
+ 
+ dyn_c_ORA_puppet_EGY:0 "Egyptian Oranje"
+ 
+ dyn_c_ORA_puppet_SOK:0 "Sokoto Oranje"
+ 
+ dyn_c_ORA_puppet_SIA:0 "Siamese Oranje"
+ 
+ dyn_c_ORA_puppet_GBR:0 "British Oranje"
+ 
+ dyn_c_ORA_puppet_FRA:0 "French Oranje"
+ 
+ dyn_c_ORA_puppet_NET:0 "Dutch Oranje"
+ 
+ dyn_c_ORA_puppet_POR:0 "Portugese Oranje"
+ 
+ dyn_c_ORA_puppet_SPA:0 "Spanish Oranje"
+ 
+ dyn_c_ORA_puppet_GER:0 "German Oranje"
+ 
+ dyn_c_ORA_puppet_PRU:0 "Prussian Oranje"
+ 
+ dyn_c_ORA_puppet_AUS:0 "Austrian Oranje"
+ 
+ dyn_c_ORA_puppet_RUS:0 "Russian Oranje"
+ 
+ dyn_c_ORA_puppet_TUR:0 "Turkish Oranje"
+ 
+ dyn_c_ORA_puppet_USA:0 "American Oranje"
+ 
+ dyn_c_ORA_puppet_ITA:0 "Italian Oranje"
+ 
+ dyn_c_ORA_puppet_JAP:0 "Japanese Oranje"
+ 
+ dyn_c_ORA_puppet_CHI:0 "Chinese Oranje"
+ 
+ dyn_c_ORA_puppet_BRZ:0 "Brazilian Oranje"
+
+ dyn_c_DFR_puppet_EGY:0 "Egyptian Darfur"
+ 
+ dyn_c_DFR_puppet_SOK:0 "Sokoto Darfur"
+ 
+ dyn_c_DFR_puppet_SIA:0 "Siamese Darfur"
+ 
+ dyn_c_DFR_puppet_GBR:0 "British Darfur"
+ 
+ dyn_c_DFR_puppet_FRA:0 "French Darfur"
+ 
+ dyn_c_DFR_puppet_NET:0 "Dutch Darfur"
+ 
+ dyn_c_DFR_puppet_POR:0 "Portugese Darfur"
+ 
+ dyn_c_DFR_puppet_SPA:0 "Spanish Darfur"
+ 
+ dyn_c_DFR_puppet_GER:0 "German Darfur"
+ 
+ dyn_c_DFR_puppet_PRU:0 "Prussian Darfur"
+ 
+ dyn_c_DFR_puppet_AUS:0 "Austrian Darfur"
+ 
+ dyn_c_DFR_puppet_RUS:0 "Russian Darfur"
+ 
+ dyn_c_DFR_puppet_TUR:0 "Turkish Darfur"
+ 
+ dyn_c_DFR_puppet_USA:0 "American Darfur"
+ 
+ dyn_c_DFR_puppet_ITA:0 "Italian Darfur"
+ 
+ dyn_c_DFR_puppet_JAP:0 "Japanese Darfur"
+ 
+ dyn_c_DFR_puppet_CHI:0 "Chinese Darfur"
+ 
+ dyn_c_DFR_puppet_BRZ:0 "Brazilian Darfur"
+
+ dyn_c_WAD_puppet_EGY:0 "Egyptian Wadai"
+ 
+ dyn_c_WAD_puppet_SOK:0 "Sokoto Wadai"
+ 
+ dyn_c_WAD_puppet_SIA:0 "Siamese Wadai"
+ 
+ dyn_c_WAD_puppet_GBR:0 "British Wadai"
+ 
+ dyn_c_WAD_puppet_FRA:0 "French Wadai"
+ 
+ dyn_c_WAD_puppet_NET:0 "Dutch Wadai"
+ 
+ dyn_c_WAD_puppet_POR:0 "Portugese Wadai"
+ 
+ dyn_c_WAD_puppet_SPA:0 "Spanish Wadai"
+ 
+ dyn_c_WAD_puppet_GER:0 "German Wadai"
+ 
+ dyn_c_WAD_puppet_PRU:0 "Prussian Wadai"
+ 
+ dyn_c_WAD_puppet_AUS:0 "Austrian Wadai"
+ 
+ dyn_c_WAD_puppet_RUS:0 "Russian Wadai"
+ 
+ dyn_c_WAD_puppet_TUR:0 "Turkish Wadai"
+ 
+ dyn_c_WAD_puppet_USA:0 "American Wadai"
+ 
+ dyn_c_WAD_puppet_ITA:0 "Italian Wadai"
+ 
+ dyn_c_WAD_puppet_JAP:0 "Japanese Wadai"
+ 
+ dyn_c_WAD_puppet_CHI:0 "Chinese Wadai"
+ 
+ dyn_c_WAD_puppet_BRZ:0 "Brazilian Wadai"
+
+ dyn_c_BGI_puppet_EGY:0 "Egyptian Bagirmi"
+ 
+ dyn_c_BGI_puppet_SOK:0 "Sokoto Bagirmi"
+ 
+ dyn_c_BGI_puppet_SIA:0 "Siamese Bagirmi"
+ 
+ dyn_c_BGI_puppet_GBR:0 "British Bagirmi"
+ 
+ dyn_c_BGI_puppet_FRA:0 "French Bagirmi"
+ 
+ dyn_c_BGI_puppet_NET:0 "Dutch Bagirmi"
+ 
+ dyn_c_BGI_puppet_POR:0 "Portugese Bagirmi"
+ 
+ dyn_c_BGI_puppet_SPA:0 "Spanish Bagirmi"
+ 
+ dyn_c_BGI_puppet_GER:0 "German Bagirmi"
+ 
+ dyn_c_BGI_puppet_PRU:0 "Prussian Bagirmi"
+ 
+ dyn_c_BGI_puppet_AUS:0 "Austrian Bagirmi"
+ 
+ dyn_c_BGI_puppet_RUS:0 "Russian Bagirmi"
+ 
+ dyn_c_BGI_puppet_TUR:0 "Turkish Bagirmi"
+ 
+ dyn_c_BGI_puppet_USA:0 "American Bagirmi"
+ 
+ dyn_c_BGI_puppet_ITA:0 "Italian Bagirmi"
+ 
+ dyn_c_BGI_puppet_JAP:0 "Japanese Bagirmi"
+ 
+ dyn_c_BGI_puppet_CHI:0 "Chinese Bagirmi"
+ 
+ dyn_c_BGI_puppet_BRZ:0 "Brazilian Bagirmi"
+
+ dyn_c_BOR_puppet_EGY:0 "Egyptian Bornu"
+ 
+ dyn_c_BOR_puppet_SOK:0 "Sokoto Bornu"
+ 
+ dyn_c_BOR_puppet_SIA:0 "Siamese Bornu"
+ 
+ dyn_c_BOR_puppet_GBR:0 "British Bornu"
+ 
+ dyn_c_BOR_puppet_FRA:0 "French Bornu"
+ 
+ dyn_c_BOR_puppet_NET:0 "Dutch Bornu"
+ 
+ dyn_c_BOR_puppet_POR:0 "Portugese Bornu"
+ 
+ dyn_c_BOR_puppet_SPA:0 "Spanish Bornu"
+ 
+ dyn_c_BOR_puppet_GER:0 "German Bornu"
+ 
+ dyn_c_BOR_puppet_PRU:0 "Prussian Bornu"
+ 
+ dyn_c_BOR_puppet_AUS:0 "Austrian Bornu"
+ 
+ dyn_c_BOR_puppet_RUS:0 "Russian Bornu"
+ 
+ dyn_c_BOR_puppet_TUR:0 "Turkish Bornu"
+ 
+ dyn_c_BOR_puppet_USA:0 "American Bornu"
+ 
+ dyn_c_BOR_puppet_ITA:0 "Italian Bornu"
+ 
+ dyn_c_BOR_puppet_JAP:0 "Japanese Bornu"
+ 
+ dyn_c_BOR_puppet_CHI:0 "Chinese Bornu"
+ 
+ dyn_c_BOR_puppet_BRZ:0 "Brazilian Bornu"
+
+ dyn_c_HAU_puppet_EGY:0 "Egyptian Gobir"
+ 
+ dyn_c_HAU_puppet_SOK:0 "Sokoto Gobir"
+ 
+ dyn_c_HAU_puppet_SIA:0 "Siamese Gobir"
+ 
+ dyn_c_HAU_puppet_GBR:0 "British Gobir"
+ 
+ dyn_c_HAU_puppet_FRA:0 "French Gobir"
+ 
+ dyn_c_HAU_puppet_NET:0 "Dutch Gobir"
+ 
+ dyn_c_HAU_puppet_POR:0 "Portugese Gobir"
+ 
+ dyn_c_HAU_puppet_SPA:0 "Spanish Gobir"
+ 
+ dyn_c_HAU_puppet_GER:0 "German Gobir"
+ 
+ dyn_c_HAU_puppet_PRU:0 "Prussian Gobir"
+ 
+ dyn_c_HAU_puppet_AUS:0 "Austrian Gobir"
+ 
+ dyn_c_HAU_puppet_RUS:0 "Russian Gobir"
+ 
+ dyn_c_HAU_puppet_TUR:0 "Turkish Gobir"
+ 
+ dyn_c_HAU_puppet_USA:0 "American Gobir"
+ 
+ dyn_c_HAU_puppet_ITA:0 "Italian Gobir"
+ 
+ dyn_c_HAU_puppet_JAP:0 "Japanese Gobir"
+ 
+ dyn_c_HAU_puppet_CHI:0 "Chinese Gobir"
+ 
+ dyn_c_HAU_puppet_BRZ:0 "Brazilian Gobir"
+
+ dyn_c_BRG_puppet_EGY:0 "Egyptian Borgu"
+ 
+ dyn_c_BRG_puppet_SOK:0 "Sokoto Borgu"
+ 
+ dyn_c_BRG_puppet_SIA:0 "Siamese Borgu"
+ 
+ dyn_c_BRG_puppet_GBR:0 "British Borgu"
+ 
+ dyn_c_BRG_puppet_FRA:0 "French Borgu"
+ 
+ dyn_c_BRG_puppet_NET:0 "Dutch Borgu"
+ 
+ dyn_c_BRG_puppet_POR:0 "Portugese Borgu"
+ 
+ dyn_c_BRG_puppet_SPA:0 "Spanish Borgu"
+ 
+ dyn_c_BRG_puppet_GER:0 "German Borgu"
+ 
+ dyn_c_BRG_puppet_PRU:0 "Prussian Borgu"
+ 
+ dyn_c_BRG_puppet_AUS:0 "Austrian Borgu"
+ 
+ dyn_c_BRG_puppet_RUS:0 "Russian Borgu"
+ 
+ dyn_c_BRG_puppet_TUR:0 "Turkish Borgu"
+ 
+ dyn_c_BRG_puppet_USA:0 "American Borgu"
+ 
+ dyn_c_BRG_puppet_ITA:0 "Italian Borgu"
+ 
+ dyn_c_BRG_puppet_JAP:0 "Japanese Borgu"
+ 
+ dyn_c_BRG_puppet_CHI:0 "Chinese Borgu"
+ 
+ dyn_c_BRG_puppet_BRZ:0 "Brazilian Borgu"
+
+ dyn_c_sokoto_caliphate:0 "Caliphate of Sokoto"
+
+ dyn_c_SOK_puppet_EGY:0 "Egyptian Sokoto"
+ 
+ dyn_c_SOK_puppet_SIA:0 "Siamese Sokoto"
+ 
+ dyn_c_SOK_puppet_GBR:0 "British Sokoto"
+ 
+ dyn_c_SOK_puppet_FRA:0 "French Sokoto"
+ 
+ dyn_c_SOK_puppet_NET:0 "Dutch Sokoto"
+ 
+ dyn_c_SOK_puppet_POR:0 "Portugese Sokoto"
+ 
+ dyn_c_SOK_puppet_SPA:0 "Spanish Sokoto"
+ 
+ dyn_c_SOK_puppet_GER:0 "German Sokoto"
+ 
+ dyn_c_SOK_puppet_PRU:0 "Prussian Sokoto"
+ 
+ dyn_c_SOK_puppet_AUS:0 "Austrian Sokoto"
+ 
+ dyn_c_SOK_puppet_RUS:0 "Russian Sokoto"
+ 
+ dyn_c_SOK_puppet_TUR:0 "Turkish Sokoto"
+ 
+ dyn_c_SOK_puppet_USA:0 "American Sokoto"
+ 
+ dyn_c_SOK_puppet_ITA:0 "Italian Sokoto"
+ 
+ dyn_c_SOK_puppet_JAP:0 "Japanese Sokoto"
+ 
+ dyn_c_SOK_puppet_CHI:0 "Chinese Sokoto"
+ 
+ dyn_c_SOK_puppet_BRZ:0 "Brazilian Sokoto"
+
+ dyn_c_darfur_caliphate:0 "Sultanate of Darfur"
+
+ dyn_c_DFR_puppet_EGY:0 "Egyptian Darfur"
+ 
+ dyn_c_DFR_puppet_SOK:0 "Sokoto Darfur"
+ 
+ dyn_c_DFR_puppet_SIA:0 "Siamese Darfur"
+ 
+ dyn_c_DFR_puppet_GBR:0 "British Darfur"
+ 
+ dyn_c_DFR_puppet_FRA:0 "French Darfur"
+ 
+ dyn_c_DFR_puppet_NET:0 "Dutch Darfur"
+ 
+ dyn_c_DFR_puppet_POR:0 "Portugese Darfur"
+ 
+ dyn_c_DFR_puppet_SPA:0 "Spanish Darfur"
+ 
+ dyn_c_DFR_puppet_GER:0 "German Darfur"
+ 
+ dyn_c_DFR_puppet_PRU:0 "Prussian Darfur"
+ 
+ dyn_c_DFR_puppet_AUS:0 "Austrian Darfur"
+ 
+ dyn_c_DFR_puppet_RUS:0 "Russian Darfur"
+ 
+ dyn_c_DFR_puppet_TUR:0 "Turkish Darfur"
+ 
+ dyn_c_DFR_puppet_USA:0 "American Darfur"
+ 
+ dyn_c_DFR_puppet_ITA:0 "Italian Darfur"
+ 
+ dyn_c_DFR_puppet_JAP:0 "Japanese Darfur"
+ 
+ dyn_c_DFR_puppet_CHI:0 "Chinese Darfur"
+ 
+ dyn_c_DFR_puppet_BRZ:0 "Brazilian Darfur"
+
+ dyn_c_wadai_caliphate:0 "Emirate of Wadai"
+
+ dyn_c_WAD_puppet_EGY:0 "Egyptian Wadai"
+ 
+ dyn_c_WAD_puppet_SOK:0 "Sokoto Wadai"
+ 
+ dyn_c_WAD_puppet_SIA:0 "Siamese Wadai"
+ 
+ dyn_c_WAD_puppet_GBR:0 "British Wadai"
+ 
+ dyn_c_WAD_puppet_FRA:0 "French Wadai"
+ 
+ dyn_c_WAD_puppet_NET:0 "Dutch Wadai"
+ 
+ dyn_c_WAD_puppet_POR:0 "Portugese Wadai"
+ 
+ dyn_c_WAD_puppet_SPA:0 "Spanish Wadai"
+ 
+ dyn_c_WAD_puppet_GER:0 "German Wadai"
+ 
+ dyn_c_WAD_puppet_PRU:0 "Prussian Wadai"
+ 
+ dyn_c_WAD_puppet_AUS:0 "Austrian Wadai"
+ 
+ dyn_c_WAD_puppet_RUS:0 "Russian Wadai"
+ 
+ dyn_c_WAD_puppet_TUR:0 "Turkish Wadai"
+ 
+ dyn_c_WAD_puppet_USA:0 "American Wadai"
+ 
+ dyn_c_WAD_puppet_ITA:0 "Italian Wadai"
+ 
+ dyn_c_WAD_puppet_JAP:0 "Japanese Wadai"
+ 
+ dyn_c_WAD_puppet_CHI:0 "Chinese Wadai"
+ 
+ dyn_c_WAD_puppet_BRZ:0 "Brazilian Wadai"
+
+ dyn_c_gobir_caliphate:0 "Emirate of Bogir"
+
+ dyn_c_HAU_puppet_EGY:0 "Egyptian Gobir"
+ 
+ dyn_c_HAU_puppet_SOK:0 "Sokoto Gobir"
+ 
+ dyn_c_HAU_puppet_SIA:0 "Siamese Gobir"
+ 
+ dyn_c_HAU_puppet_GBR:0 "British Gobir"
+ 
+ dyn_c_HAU_puppet_FRA:0 "French Gobir"
+ 
+ dyn_c_HAU_puppet_NET:0 "Dutch Gobir"
+ 
+ dyn_c_HAU_puppet_POR:0 "Portugese Gobir"
+ 
+ dyn_c_HAU_puppet_SPA:0 "Spanish Gobir"
+ 
+ dyn_c_HAU_puppet_GER:0 "German Gobir"
+ 
+ dyn_c_HAU_puppet_PRU:0 "Prussian Gobir"
+ 
+ dyn_c_HAU_puppet_AUS:0 "Austrian Gobir"
+ 
+ dyn_c_HAU_puppet_RUS:0 "Russian Gobir"
+ 
+ dyn_c_HAU_puppet_TUR:0 "Turkish Gobir"
+ 
+ dyn_c_HAU_puppet_USA:0 "American Gobir"
+ 
+ dyn_c_HAU_puppet_ITA:0 "Italian Gobir"
+ 
+ dyn_c_HAU_puppet_JAP:0 "Japanese Gobir"
+ 
+ dyn_c_HAU_puppet_CHI:0 "Chinese Gobir"
+ 
+ dyn_c_HAU_puppet_BRZ:0 "Brazilian Gobir"
+
+ dyn_c_borgu_caliphate:0 "Emirate of Borgu"
+
+ dyn_c_BRG_puppet_EGY:0 "Egyptian Borgu"
+ 
+ dyn_c_BRG_puppet_SOK:0 "Sokoto Borgu"
+ 
+ dyn_c_BRG_puppet_SIA:0 "Siamese Borgu"
+ 
+ dyn_c_BRG_puppet_GBR:0 "British Borgu"
+ 
+ dyn_c_BRG_puppet_FRA:0 "French Borgu"
+ 
+ dyn_c_BRG_puppet_NET:0 "Dutch Borgu"
+ 
+ dyn_c_BRG_puppet_POR:0 "Portugese Borgu"
+ 
+ dyn_c_BRG_puppet_SPA:0 "Spanish Borgu"
+ 
+ dyn_c_BRG_puppet_GER:0 "German Borgu"
+ 
+ dyn_c_BRG_puppet_PRU:0 "Prussian Borgu"
+ 
+ dyn_c_BRG_puppet_AUS:0 "Austrian Borgu"
+ 
+ dyn_c_BRG_puppet_RUS:0 "Russian Borgu"
+ 
+ dyn_c_BRG_puppet_TUR:0 "Turkish Borgu"
+ 
+ dyn_c_BRG_puppet_USA:0 "American Borgu"
+ 
+ dyn_c_BRG_puppet_ITA:0 "Italian Borgu"
+ 
+ dyn_c_BRG_puppet_JAP:0 "Japanese Borgu"
+ 
+ dyn_c_BRG_puppet_CHI:0 "Chinese Borgu"
+ 
+ dyn_c_BRG_puppet_BRZ:0 "Brazilian Borgu"
+
+ dyn_c_bagirmi_caliphate:0 "Emirate of Bagirmi"
+
+ dyn_c_BGI_puppet_EGY:0 "Egyptian Bagirmi"
+ 
+ dyn_c_BGI_puppet_SOK:0 "Sokoto Bagirmi"
+ 
+ dyn_c_BGI_puppet_SIA:0 "Siamese Bagirmi"
+ 
+ dyn_c_BGI_puppet_GBR:0 "British Bagirmi"
+ 
+ dyn_c_BGI_puppet_FRA:0 "French Bagirmi"
+ 
+ dyn_c_BGI_puppet_NET:0 "Dutch Bagirmi"
+ 
+ dyn_c_BGI_puppet_POR:0 "Portugese Bagirmi"
+ 
+ dyn_c_BGI_puppet_SPA:0 "Spanish Bagirmi"
+ 
+ dyn_c_BGI_puppet_GER:0 "German Bagirmi"
+ 
+ dyn_c_BGI_puppet_PRU:0 "Prussian Bagirmi"
+ 
+ dyn_c_BGI_puppet_AUS:0 "Austrian Bagirmi"
+ 
+ dyn_c_BGI_puppet_RUS:0 "Russian Bagirmi"
+ 
+ dyn_c_BGI_puppet_TUR:0 "Turkish Bagirmi"
+ 
+ dyn_c_BGI_puppet_USA:0 "American Bagirmi"
+ 
+ dyn_c_BGI_puppet_ITA:0 "Italian Bagirmi"
+ 
+ dyn_c_BGI_puppet_JAP:0 "Japanese Bagirmi"
+ 
+ dyn_c_BGI_puppet_CHI:0 "Chinese Bagirmi"
+ 
+ dyn_c_BGI_puppet_BRZ:0 "Brazilian Bagirmi"
+
+ dyn_c_bornu_caliphate:0 "Emirate of Bornu"
+
+ dyn_c_BOR_puppet_EGY:0 "Egyptian Bornu"
+ 
+ dyn_c_BOR_puppet_SOK:0 "Sokoto Bornu"
+ 
+ dyn_c_BOR_puppet_SIA:0 "Siamese Bornu"
+ 
+ dyn_c_BOR_puppet_GBR:0 "British Bornu"
+ 
+ dyn_c_BOR_puppet_FRA:0 "French Bornu"
+ 
+ dyn_c_BOR_puppet_NET:0 "Dutch Bornu"
+ 
+ dyn_c_BOR_puppet_POR:0 "Portugese Bornu"
+ 
+ dyn_c_BOR_puppet_SPA:0 "Spanish Bornu"
+ 
+ dyn_c_BOR_puppet_GER:0 "German Bornu"
+ 
+ dyn_c_BOR_puppet_PRU:0 "Prussian Bornu"
+ 
+ dyn_c_BOR_puppet_AUS:0 "Austrian Bornu"
+ 
+ dyn_c_BOR_puppet_RUS:0 "Russian Bornu"
+ 
+ dyn_c_BOR_puppet_TUR:0 "Turkish Bornu"
+ 
+ dyn_c_BOR_puppet_USA:0 "American Bornu"
+ 
+ dyn_c_BOR_puppet_ITA:0 "Italian Bornu"
+ 
+ dyn_c_BOR_puppet_JAP:0 "Japanese Bornu"
+ 
+ dyn_c_BOR_puppet_CHI:0 "Chinese Bornu"
+ 
+ dyn_c_BOR_puppet_BRZ:0 "Brazilian Bornu"
+
+ dyn_c_OYO_puppet_EGY:0 "Egyptian Oyo"
+ 
+ dyn_c_OYO_puppet_SOK:0 "Sokoto Oyo"
+ 
+ dyn_c_OYO_puppet_SIA:0 "Siamese Oyo"
+ 
+ dyn_c_OYO_puppet_GBR:0 "British Oyo"
+ 
+ dyn_c_OYO_puppet_FRA:0 "French Oyo"
+ 
+ dyn_c_OYO_puppet_NET:0 "Dutch Oyo"
+ 
+ dyn_c_OYO_puppet_POR:0 "Portugese Oyo"
+ 
+ dyn_c_OYO_puppet_SPA:0 "Spanish Oyo"
+ 
+ dyn_c_OYO_puppet_GER:0 "German Oyo"
+ 
+ dyn_c_OYO_puppet_PRU:0 "Prussian Oyo"
+ 
+ dyn_c_OYO_puppet_AUS:0 "Austrian Oyo"
+ 
+ dyn_c_OYO_puppet_RUS:0 "Russian Oyo"
+ 
+ dyn_c_OYO_puppet_TUR:0 "Turkish Oyo"
+ 
+ dyn_c_OYO_puppet_USA:0 "American Oyo"
+ 
+ dyn_c_OYO_puppet_ITA:0 "Italian Oyo"
+ 
+ dyn_c_OYO_puppet_JAP:0 "Japanese Oyo"
+ 
+ dyn_c_OYO_puppet_CHI:0 "Chinese Oyo"
+ 
+ dyn_c_OYO_puppet_BRZ:0 "Brazilian Oyo"
+
+ dyn_c_BEN_puppet_EGY:0 "Egyptian Benin"
+ 
+ dyn_c_BEN_puppet_SOK:0 "Sokoto Benin"
+ 
+ dyn_c_BEN_puppet_SIA:0 "Siamese Benin"
+ 
+ dyn_c_BEN_puppet_GBR:0 "British Benin"
+ 
+ dyn_c_BEN_puppet_FRA:0 "French Benin"
+ 
+ dyn_c_BEN_puppet_NET:0 "Dutch Benin"
+ 
+ dyn_c_BEN_puppet_POR:0 "Portugese Benin"
+ 
+ dyn_c_BEN_puppet_SPA:0 "Spanish Benin"
+ 
+ dyn_c_BEN_puppet_GER:0 "German Benin"
+ 
+ dyn_c_BEN_puppet_PRU:0 "Prussian Benin"
+ 
+ dyn_c_BEN_puppet_AUS:0 "Austrian Benin"
+ 
+ dyn_c_BEN_puppet_RUS:0 "Russian Benin"
+ 
+ dyn_c_BEN_puppet_TUR:0 "Turkish Benin"
+ 
+ dyn_c_BEN_puppet_USA:0 "American Benin"
+ 
+ dyn_c_BEN_puppet_ITA:0 "Italian Benin"
+ 
+ dyn_c_BEN_puppet_JAP:0 "Japanese Benin"
+ 
+ dyn_c_BEN_puppet_CHI:0 "Chinese Benin"
+ 
+ dyn_c_BEN_puppet_BRZ:0 "Brazilian Benin"
+
+ dyn_c_DAH_puppet_EGY:0 "Egyptian Dahomey"
+ 
+ dyn_c_DAH_puppet_SOK:0 "Sokoto Dahomey"
+ 
+ dyn_c_DAH_puppet_SIA:0 "Siamese Dahomey"
+ 
+ dyn_c_DAH_puppet_GBR:0 "British Dahomey"
+ 
+ dyn_c_DAH_puppet_FRA:0 "French Dahomey"
+ 
+ dyn_c_DAH_puppet_NET:0 "Dutch Dahomey"
+ 
+ dyn_c_DAH_puppet_POR:0 "Portugese Dahomey"
+ 
+ dyn_c_DAH_puppet_SPA:0 "Spanish Dahomey"
+ 
+ dyn_c_DAH_puppet_GER:0 "German Dahomey"
+ 
+ dyn_c_DAH_puppet_PRU:0 "Prussian Dahomey"
+ 
+ dyn_c_DAH_puppet_AUS:0 "Austrian Dahomey"
+ 
+ dyn_c_DAH_puppet_RUS:0 "Russian Dahomey"
+ 
+ dyn_c_DAH_puppet_TUR:0 "Turkish Dahomey"
+ 
+ dyn_c_DAH_puppet_USA:0 "American Dahomey"
+ 
+ dyn_c_DAH_puppet_ITA:0 "Italian Dahomey"
+ 
+ dyn_c_DAH_puppet_JAP:0 "Japanese Dahomey"
+ 
+ dyn_c_DAH_puppet_CHI:0 "Chinese Dahomey"
+ 
+ dyn_c_DAH_puppet_BRZ:0 "Brazilian Dahomey"
+
+ dyn_c_unitednetherlands_absolutist_monarchy:0 "Kingdom of the United Netherlands"
+ 
+ dyn_c_unitednetherlands_monarchy:0 "Kingdom of the United Netherlands"
+ 
+ dyn_c_unitednetherlands_dictatorship:0 "United Empire of the Netherlands"
+ 
+ dyn_c_unitednetherlands_republic:0 "Republic of the United Netherlands"
+ 
+ dyn_c_unitednetherlands_communist:0 "Socialist Union of the Netherlands"
+ 
+ dyn_c_unitednetherlands_communistvote:0 "Socialist Republic of the United Netherlands"
+ 
+ dyn_c_unitednetherlands_theocratic:0 "Calvinist Commonwealth of the United Netherlands"
+ 
+ dyn_c_unitednetherlands_theocraticvote:0 "Calvinist Republic of the United Netherlands"
+ 
+ dyn_c_unitednetherlands_anarchy:0 "Federated Communes of the Netherlands"
+ 
+ dyn_c_UNL_puppet_SIA:0 "Siamese Netherlands"
+ 
+ dyn_c_UNL_puppet_GBR:0 "British Netherlands"
+ 
+ dyn_c_UNL_puppet_FRA:0 "French Netherlands"
+ 
+ dyn_c_UNL_puppet_NET:0 "Dutch Netherlands"
+ 
+ dyn_c_UNL_puppet_POR:0 "Portugese Netherlands"
+ 
+ dyn_c_UNL_puppet_SPA:0 "Spanish Netherlands"
+ 
+ dyn_c_UNL_puppet_GER:0 "German Netherlands"
+ 
+ dyn_c_UNL_puppet_PRU:0 "Prussian Netherlands"
+ 
+ dyn_c_UNL_puppet_AUS:0 "Austrian Netherlands"
+ 
+ dyn_c_UNL_puppet_RUS:0 "Russian Netherlands"
+ 
+ dyn_c_UNL_puppet_TUR:0 "Turkish Netherlands"
+ 
+ dyn_c_UNL_puppet_USA:0 "American Netherlands"
+ 
+ dyn_c_UNL_puppet_ITA:0 "Italian Netherlands"
+ 
+ dyn_c_UNL_puppet_JAP:0 "Japanese Netherlands"
+ 
+ dyn_c_UNL_puppet_CHI:0 "Chinese Netherlands"
+ 
+ dyn_c_UNL_puppet_BRZ:0 "Brazilian Netherlands"
+
+ dyn_c_aceh_absolutist_monarchy:0 "Sultanate of Aceh"
+ 
+ dyn_c_aceh_monarchy:0 "Sultanate of Aceh"
+ 
+ dyn_c_aceh_dictatorship:0 "Order State of Aceh"
+ 
+ dyn_c_aceh_republic:0 "Republic of Aceh"
+ 
+ dyn_c_aceh_communist:0 "Workers Union of Aceh"
+ 
+ dyn_c_aceh_communistvote:0 "Workers Republic of Aceh"
+ 
+ dyn_c_aceh_theocratic:0 "Imamate of Aceh"
+ 
+ dyn_c_aceh_theocraticvote:0 "Islamic Union of Aceh"
+ 
+ dyn_c_aceh_anarchy:0 "Communes of Aceh"
+ 
+ dyn_c_ACE_puppet_SIA:0 "Siamese Aceh"
+ 
+ dyn_c_ACE_puppet_GBR:0 "British Aceh"
+ 
+ dyn_c_ACE_puppet_FRA:0 "French Aceh"
+ 
+ dyn_c_ACE_puppet_NET:0 "Dutch Aceh"
+ 
+ dyn_c_ACE_puppet_POR:0 "Portugese Aceh"
+ 
+ dyn_c_ACE_puppet_SPA:0 "Spanish Aceh"
+ 
+ dyn_c_ACE_puppet_GER:0 "German Aceh"
+ 
+ dyn_c_ACE_puppet_PRU:0 "Prussian Aceh"
+ 
+ dyn_c_ACE_puppet_AUS:0 "Austrian Aceh"
+ 
+ dyn_c_ACE_puppet_RUS:0 "Russian Aceh"
+ 
+ dyn_c_ACE_puppet_TUR:0 "Turkish Aceh"
+ 
+ dyn_c_ACE_puppet_USA:0 "American Aceh"
+ 
+ dyn_c_ACE_puppet_ITA:0 "Italian Aceh"
+ 
+ dyn_c_ACE_puppet_JAP:0 "Japanese Aceh"
+ 
+ dyn_c_ACE_puppet_CHI:0 "Chinese Aceh"
+ 
+ dyn_c_ACE_puppet_BRZ:0 "Brazilian Aceh"
+ 
+ dyn_c_siak_absolutist_monarchy:0 "Sultanate of Siak"
+ 
+ dyn_c_siak_monarchy:0 "Sultanate of Siak"
+ 
+ dyn_c_siak_dictatorship:0 "National State Siak"
+ 
+ dyn_c_siak_republic:0 "Siaki Republic"
+ 
+ dyn_c_siak_communist:0 "Socialist Union of Siak"
+ 
+ dyn_c_siak_communistvote:0 "Socialist Republic of Siak"
+ 
+ dyn_c_siak_theocratic:0 "Imamate of Siak"
+ 
+ dyn_c_siak_theocraticvote:0 "Islamic Republic of Siak"
+ 
+ dyn_c_siak_anarchy:0 "Decentralized Republic of Siak"
+ 
+ dyn_c_SAK_puppet_SIA:0 "Siamese Siak"
+ 
+ dyn_c_SAK_puppet_GBR:0 "British Siak"
+ 
+ dyn_c_SAK_puppet_FRA:0 "French Siak"
+ 
+ dyn_c_SAK_puppet_NET:0 "Dutch Siak"
+ 
+ dyn_c_SAK_puppet_POR:0 "Portugese Siak"
+ 
+ dyn_c_SAK_puppet_SPA:0 "Spanish Siak"
+ 
+ dyn_c_SAK_puppet_GER:0 "German Siak"
+ 
+ dyn_c_SAK_puppet_PRU:0 "Prussian Siak"
+ 
+ dyn_c_SAK_puppet_AUS:0 "Austrian Siak"
+ 
+ dyn_c_SAK_puppet_RUS:0 "Russian Siak"
+ 
+ dyn_c_SAK_puppet_TUR:0 "Turkish Siak"
+ 
+ dyn_c_SAK_puppet_USA:0 "American Siak"
+ 
+ dyn_c_SAK_puppet_ITA:0 "Italian Siak"
+ 
+ dyn_c_SAK_puppet_JAP:0 "Japanese Siak"
+ 
+ dyn_c_SAK_puppet_CHI:0 "Chinese Siak"
+ 
+ dyn_c_SAK_puppet_BRZ:0 "Brazilian Siak"
+
+ dyn_c_jambi_absolutist_monarchy:0 "Sultanate of Jambi"
+ 
+ dyn_c_jambi_monarchy:0 "Sultanate of Jambi"
+ 
+ dyn_c_jambi_dictatorship:0 "Great Empire of Jambi"
+ 
+ dyn_c_jambi_republic:0 "Republic of Jambi"
+ 
+ dyn_c_jambi_communist:0 "Socialist State of Jambi"
+ 
+ dyn_c_jambi_communistvote:0 "Socialist Republic of Jambi"
+ 
+ dyn_c_jambi_theocratic:0 "Imamate of Jambi"
+ 
+ dyn_c_jambi_theocraticvote:0 "Islamic Republic of Jambi"
+ 
+ dyn_c_jambi_anarchy:0 "Federated Communes of Jambi"
+ 
+ dyn_c_JMB_puppet_SIA:0 "Siamese Jambi"
+ 
+ dyn_c_JMB_puppet_GBR:0 "British Jambi"
+ 
+ dyn_c_JMB_puppet_FRA:0 "French Jambi"
+ 
+ dyn_c_JMB_puppet_NET:0 "Dutch Jambi"
+ 
+ dyn_c_JMB_puppet_POR:0 "Portugese Jambi"
+ 
+ dyn_c_JMB_puppet_SPA:0 "Spanish Jambi"
+ 
+ dyn_c_JMB_puppet_GER:0 "German Jambi"
+ 
+ dyn_c_JMB_puppet_PRU:0 "Prussian Jambi"
+ 
+ dyn_c_JMB_puppet_AUS:0 "Austrian Jambi"
+ 
+ dyn_c_JMB_puppet_RUS:0 "Russian Jambi"
+ 
+ dyn_c_JMB_puppet_TUR:0 "Turkish Jambi"
+ 
+ dyn_c_JMB_puppet_USA:0 "American Jambi"
+ 
+ dyn_c_JMB_puppet_ITA:0 "Italian Jambi"
+ 
+ dyn_c_JMB_puppet_JAP:0 "Japanese Jambi"
+ 
+ dyn_c_JMB_puppet_CHI:0 "Chinese Jambi"
+ 
+ dyn_c_JMB_puppet_BRZ:0 "Brazilian Jambi"
+
+ dyn_c_rhine_absolutist_monarchy:0 "Confederation of the Rhine"
+ 
+ dyn_c_rhine_monarchy:0 "Confederation of the Rhine"
+ 
+ dyn_c_rhine_dictatorship:0 "Confederation of the Great Rhine"
+ 
+ dyn_c_rhine_republic:0 "Confederation of the Rhine Republics"
+ 
+ dyn_c_rhine_communist:0 "Rhenish Workers’ Confederation"
+ 
+ dyn_c_rhine_communistvote:0 "Rhenish Workers’ Confederation"
+ 
+ dyn_c_rhine_theocratic:0 "Christian Empire on the Rhine"
+ 
+ dyn_c_rhine_theocraticvote:0 "Christian Republics on the Rhine"
+ 
+ dyn_c_rhine_anarchy:0 "Autonomous Republics on the Rhine"
+
+ dyn_c_romanempire_absolutist_monarchy:0 "Holy Roman Empire"
+ 
+ dyn_c_romanempire_monarchy:0 "Holy Roman Empire"
+ 
+ dyn_c_romanempire_dictatorship:0 "Holy Roman Empire"
+ 
+ dyn_c_romanempire_republic:0 "Roman Federal Republic"
+ 
+ dyn_c_romanempire_communist:0 "European Communist Republics"
+ 
+ dyn_c_romanempire_communistvote:0 "European Communist Republics"
+ 
+ dyn_c_romanempire_theocratic:0 "Holy Roman Empire of God"
+ 
+ dyn_c_romanempire_theocraticvote:0 "Holy Roman Empire"
+ 
+ dyn_c_romanempire_technocracy:0 "European Union of Progress"
+ 
+ dyn_c_romanempire_anarchy:0 "Federated European Communes"
+
+ dyn_c_andes_absolutist_monarchy:0 "United Kingdom of the Andes"
+ 
+ dyn_c_andes_monarchy:0 "United Kingdom of the Andes"
+ 
+ dyn_c_andes_dictatorship:0 "Centralist State of the Andes"
+ 
+ dyn_c_andes_republic:0 "United Federation of the Andes"
+ 
+ dyn_c_andes_communist:0 "Andean Workers’ Confederation"
+ 
+ dyn_c_andes_communistvote:0 "Socialist Confederation of Andean Republics"
+ 
+ dyn_c_andes_theocratic:0 "Christian Empire of the Andes"
+ 
+ dyn_c_andes_theocraticvote:0 "Christian Republic of the Andes"
+ 
+ dyn_c_andes_anarchy:0 "Communes of the Andes Federation"
+ 
+ dyn_c_FND_puppet_SIA:0 "Siamese Andes"
+ 
+ dyn_c_FND_puppet_GBR:0 "British Andes"
+ 
+ dyn_c_FND_puppet_FRA:0 "French Andes"
+ 
+ dyn_c_FND_puppet_NET:0 "Dutch Andes"
+ 
+ dyn_c_FND_puppet_POR:0 "Portugese Andes"
+ 
+ dyn_c_FND_puppet_SPA:0 "Spanish Andes"
+ 
+ dyn_c_FND_puppet_GER:0 "German Andes"
+ 
+ dyn_c_FND_puppet_PRU:0 "Prussian Andes"
+ 
+ dyn_c_FND_puppet_AUS:0 "Austrian Andes"
+ 
+ dyn_c_FND_puppet_RUS:0 "Russian Andes"
+ 
+ dyn_c_FND_puppet_TUR:0 "Turkish Andes"
+ 
+ dyn_c_FND_puppet_USA:0 "American Andes"
+ 
+ dyn_c_FND_puppet_ITA:0 "Italian Andes"
+ 
+ dyn_c_FND_puppet_JAP:0 "Japanese Andes"
+ 
+ dyn_c_FND_puppet_CHI:0 "Chinese Andes"
+ 
+ dyn_c_FND_puppet_BRZ:0 "Brazilian Andes"
+
+ dyn_c_puertorico_absolutist_monarchy:0 "Kingdom of Puerto Rico"
+ 
+ dyn_c_puertorico_monarchy:0 "Kingdom of Puerto Rico"
+ 
+ dyn_c_puertorico_dictatorship:0 "Great State of Puerto Rico"
+ 
+ dyn_c_puertorico_republic:0 "Republic of Puerto Rico"
+ 
+ dyn_c_puertorico_communist:0 "People’s State of Puerto Rico"
+ 
+ dyn_c_puertorico_communistvote:0 "People’s Republic of Puerto Rico"
+ 
+ dyn_c_puertorico_theocratic:0 "Theocratic State of Puerto Rico"
+ 
+ dyn_c_puertorico_theocraticvote:0 "Theocratic Republic of Puerto Rico"
+ 
+ dyn_c_puertorico_anarchy:0 "Autonomous Communes of Puerto Rico"
+ 
+ dyn_c_PCO_puppet_SIA:0 "Siamese Puerto Rico"
+ 
+ dyn_c_PCO_puppet_GBR:0 "British Puerto Rico"
+ 
+ dyn_c_PCO_puppet_FRA:0 "French Puerto Rico"
+ 
+ dyn_c_PCO_puppet_NET:0 "Dutch Puerto Rico"
+ 
+ dyn_c_PCO_puppet_POR:0 "Portugese Puerto Rico"
+ 
+ dyn_c_PCO_puppet_SPA:0 "Spanish Puerto Rico"
+ 
+ dyn_c_PCO_puppet_GER:0 "German Puerto Rico"
+ 
+ dyn_c_PCO_puppet_PRU:0 "Prussian Puerto Rico"
+ 
+ dyn_c_PCO_puppet_AUS:0 "Austrian Puerto Rico"
+ 
+ dyn_c_PCO_puppet_RUS:0 "Russian Puerto Rico"
+ 
+ dyn_c_PCO_puppet_TUR:0 "Turkish Puerto Rico"
+ 
+ dyn_c_PCO_puppet_USA:0 "American Puerto Rico"
+ 
+ dyn_c_PCO_puppet_ITA:0 "Italian Puerto Rico"
+ 
+ dyn_c_PCO_puppet_JAP:0 "Japanese Puerto Rico"
+ 
+ dyn_c_PCO_puppet_CHI:0 "Chinese Puerto Rico"
+ 
+ dyn_c_andalusia_absolutist_monarchy:0 "Kingdom of Andalusia"
+ 
+ dyn_c_andalusia_monarchy:0 "Kingdom of Andalusia"
+ 
+ dyn_c_andalusia_dictatorship:0 "Republican State of Andalusia"
+ 
+ dyn_c_andalusia_republic:0 "Andalusian Republic"
+ 
+ dyn_c_andalusia_communist:0 "Andalusian People’s Union"
+ 
+ dyn_c_andalusia_communistvote:0 "Andalusian People’s Union"
+ 
+ dyn_c_andalusia_theocratic:0 "Catholic State of Andalusia"
+ 
+ dyn_c_andalusia_theocraticvote:0 "Catholic Republic of Andalusia"
+ 
+ dyn_c_andalusia_anarchy:0 "United Communes of Andalusia"
+ 
+ dyn_c_ANL_puppet_SIA:0 "Siamese Andalusia"
+ 
+ dyn_c_ANL_puppet_GBR:0 "British Andalusia"
+ 
+ dyn_c_ANL_puppet_FRA:0 "French Andalusia"
+ 
+ dyn_c_ANL_puppet_NET:0 "Dutch Andalusia"
+ 
+ dyn_c_ANL_puppet_POR:0 "Portugese Andalusia"
+ 
+ dyn_c_ANL_puppet_SPA:0 "Spanish Andalusia"
+ 
+ dyn_c_ANL_puppet_GER:0 "German Andalusia"
+ 
+ dyn_c_ANL_puppet_PRU:0 "Prussian Andalusia"
+ 
+ dyn_c_ANL_puppet_AUS:0 "Austrian Andalusia"
+ 
+ dyn_c_ANL_puppet_RUS:0 "Russian Andalusia"
+ 
+ dyn_c_ANL_puppet_TUR:0 "Turkish Andalusia"
+ 
+ dyn_c_ANL_puppet_USA:0 "American Andalusia"
+ 
+ dyn_c_ANL_puppet_ITA:0 "Italian Andalusia"
+ 
+ dyn_c_ANL_puppet_JAP:0 "Japanese Andalusia"
+ 
+ dyn_c_ANL_puppet_CHI:0 "Chinese Andalusia"
+ 
+ dyn_c_catalonia_absolutist_monarchy:0 "Kingdom of Catalonia"
+ 
+ dyn_c_catalonia_monarchy:0 "Kingdom of Catalonia"
+ 
+ dyn_c_catalonia_dictatorship:0 "Greater Catalonia"
+ 
+ dyn_c_catalonia_republic:0 "Catalonia"
+ 
+ dyn_c_catalonia_communist:0 "Workers Union of Catalonia"
+ 
+ dyn_c_catalonia_communistvote:0 "Catalan Socialist Republic"
+ 
+ dyn_c_catalonia_theocratic:0 "Theocratic State of Catalonia"
+ 
+ dyn_c_catalonia_theocraticvote:0 "Christian Republic of Catalonia"
+ 
+ dyn_c_catalonia_anarchy:0 "Autonomous Communes of Catalonia"
+ 
+ dyn_c_CAT_puppet_SIA:0 "Siamese Catalonia"
+ 
+ dyn_c_CAT_puppet_GBR:0 "British Catalonia"
+ 
+ dyn_c_CAT_puppet_FRA:0 "French Catalonia"
+ 
+ dyn_c_CAT_puppet_NET:0 "Dutch Catalonia"
+ 
+ dyn_c_CAT_puppet_POR:0 "Portugese Catalonia"
+ 
+ dyn_c_CAT_puppet_SPA:0 "Spanish Catalonia"
+ 
+ dyn_c_CAT_puppet_GER:0 "German Catalonia"
+ 
+ dyn_c_CAT_puppet_PRU:0 "Prussian Catalonia"
+ 
+ dyn_c_CAT_puppet_AUS:0 "Austrian Catalonia"
+ 
+ dyn_c_CAT_puppet_RUS:0 "Russian Catalonia"
+ 
+ dyn_c_CAT_puppet_TUR:0 "Turkish Catalonia"
+ 
+ dyn_c_CAT_puppet_USA:0 "American Catalonia"
+ 
+ dyn_c_CAT_puppet_ITA:0 "Italian Catalonia"
+ 
+ dyn_c_CAT_puppet_JAP:0 "Japanese Catalonia"
+ 
+ dyn_c_CAT_puppet_CHI:0 "Chinese Catalonia"
+ 
+ dyn_c_navarra_absolutist_monarchy:0 "Kingdom of Navarre"
+ 
+ dyn_c_navarra_monarchy:0 "Kingdom of Navarre"
+ 
+ dyn_c_navarra_dictatorship:0 "Great Nation of Navarre"
+ 
+ dyn_c_navarra_republic:0 "Republic of Navarre"
+ 
+ dyn_c_navarra_communist:0 "Socialist State of Navarre"
+ 
+ dyn_c_navarra_communistvote:0 "Socialist Republic of Navarre"
+ 
+ dyn_c_navarra_theocratic:0 "Catholic State of Navarre"
+ 
+ dyn_c_navarra_theocraticvote:0 "Catholic Republic of Navarre"
+ 
+ dyn_c_navarra_anarchy:0 "Free Communes of Navarre"
+ 
+ dyn_c_NAV_puppet_SIA:0 "Siamese Navarre"
+ 
+ dyn_c_NAV_puppet_GBR:0 "British Navarre"
+ 
+ dyn_c_NAV_puppet_FRA:0 "French Navarre"
+ 
+ dyn_c_NAV_puppet_NET:0 "Dutch Navarre"
+ 
+ dyn_c_NAV_puppet_POR:0 "Portugese Navarre"
+ 
+ dyn_c_NAV_puppet_SPA:0 "Spanish Navarre"
+ 
+ dyn_c_NAV_puppet_GER:0 "German Navarre"
+ 
+ dyn_c_NAV_puppet_PRU:0 "Prussian Navarre"
+ 
+ dyn_c_NAV_puppet_AUS:0 "Austrian Navarre"
+ 
+ dyn_c_NAV_puppet_RUS:0 "Russian Navarre"
+ 
+ dyn_c_NAV_puppet_TUR:0 "Turkish Navarre"
+ 
+ dyn_c_NAV_puppet_USA:0 "American Navarre"
+ 
+ dyn_c_NAV_puppet_ITA:0 "Italian Navarre"
+ 
+ dyn_c_NAV_puppet_JAP:0 "Japanese Navarre"
+ 
+ dyn_c_NAV_puppet_CHI:0 "Chinese Navarre"
+ 
+ dyn_c_castille_absolutist_monarchy:0 "Kingdom of Castile"
+ 
+ dyn_c_castille_monarchy:0 "Kingdom of Castile"
+ 
+ dyn_c_castille_dictatorship:0 "United Republic of Castile"
+ 
+ dyn_c_castille_republic:0 "Castilian Republic"
+ 
+ dyn_c_castille_communist:0 "Peoples State of Castile"
+ 
+ dyn_c_castille_communistvote:0 "Peoples Republic of Castile"
+ 
+ dyn_c_castille_theocratic:0 "Theocratic State of Castile"
+ 
+ dyn_c_castille_theocraticvote:0 "Theocratic Republic of Castile"
+ 
+ dyn_c_castille_anarchy:0 "Free Communes of Castile"
+ 
+ dyn_c_CAS_puppet_SIA:0 "Siamese Castile"
+ 
+ dyn_c_CAS_puppet_GBR:0 "British Castile"
+ 
+ dyn_c_CAS_puppet_FRA:0 "French Castile"
+ 
+ dyn_c_CAS_puppet_NET:0 "Dutch Castile"
+ 
+ dyn_c_CAS_puppet_POR:0 "Portugese Castile"
+ 
+ dyn_c_CAS_puppet_SPA:0 "Spanish Castile"
+ 
+ dyn_c_CAS_puppet_GER:0 "German Castile"
+ 
+ dyn_c_CAS_puppet_PRU:0 "Prussian Castile"
+ 
+ dyn_c_CAS_puppet_AUS:0 "Austrian Castile"
+ 
+ dyn_c_CAS_puppet_RUS:0 "Russian Castile"
+ 
+ dyn_c_CAS_puppet_TUR:0 "Turkish Castile"
+ 
+ dyn_c_CAS_puppet_USA:0 "American Castille"
+ 
+ dyn_c_CAS_puppet_ITA:0 "Italian Castile"
+ 
+ dyn_c_CAS_puppet_JAP:0 "Japanese Castile"
+ 
+ dyn_c_CAS_puppet_CHI:0 "Chinese Castile"
+ 
+ dyn_c_galicia_absolutist_monarchy:0 "Kingdom of Galicia"
+ 
+ dyn_c_galicia_monarchy:0 "Kingdom of Galicia"
+ 
+ dyn_c_galicia_dictatorship:0 "National State of Galicia"
+ 
+ dyn_c_galicia_republic:0 "Republic of Galicia"
+ 
+ dyn_c_galicia_communist:0 "Peoples Republic of Galicia"
+ 
+ dyn_c_galicia_communistvote:0 "Workers Republic of Galicia"
+ 
+ dyn_c_galicia_theocratic:0 "Catholic State of Galicia"
+ 
+ dyn_c_galicia_theocraticvote:0 "Catholic Republic of Galicia"
+ 
+ dyn_c_galicia_anarchy:0 "United Communes of Galicia"
+ 
+ dyn_c_GLI_puppet_SIA:0 "Siamese Galicia"
+ 
+ dyn_c_GLI_puppet_GBR:0 "British Galicia"
+ 
+ dyn_c_GLI_puppet_FRA:0 "French Galicia"
+ 
+ dyn_c_GLI_puppet_NET:0 "Dutch Galicia"
+ 
+ dyn_c_GLI_puppet_POR:0 "Portugese Galicia"
+ 
+ dyn_c_GLI_puppet_SPA:0 "Spanish Galicia"
+ 
+ dyn_c_GLI_puppet_GER:0 "German Galicia"
+ 
+ dyn_c_GLI_puppet_PRU:0 "Prussian Galicia"
+ 
+ dyn_c_GLI_puppet_AUS:0 "Austrian Galicia"
+ 
+ dyn_c_GLI_puppet_RUS:0 "Russian Galicia"
+ 
+ dyn_c_GLI_puppet_TUR:0 "Turkish Galicia"
+ 
+ dyn_c_GLI_puppet_USA:0 "American Galicia"
+ 
+ dyn_c_GLI_puppet_ITA:0 "Italian Galicia"
+ 
+ dyn_c_GLI_puppet_JAP:0 "Japanese Galicia"
+ 
+ dyn_c_GLI_puppet_CHI:0 "Chinese Galicia"
+
+ dyn_c_perak_absolutist_monarchy:0 "Sultanate of Perak"
+ 
+ dyn_c_perak_monarchy:0 "Sultanate of Perak"
+ 
+ dyn_c_perak_dictatorship:0 "United Empire of Perak"
+ 
+ dyn_c_perak_republic:0 "Perak"
+ 
+ dyn_c_perak_communist:0 "Workers Union of Perak"
+ 
+ dyn_c_perak_communistvote:0 "Workers Republic of Perak"
+ 
+ dyn_c_perak_theocratic:0 "Islamic State of Perak"
+ 
+ dyn_c_perak_theocraticvote:0 "Islamic Republic of Perak"
+ 
+ dyn_c_perak_anarchy:0 "United Communes of Perak"
+ 
+ dyn_c_PRK_puppet_SIA:0 "Siamese Perak"
+ 
+ dyn_c_PRK_puppet_GBR:0 "British Perak"
+ 
+ dyn_c_PRK_puppet_FRA:0 "French Perak"
+ 
+ dyn_c_PRK_puppet_NET:0 "Dutch Perak"
+ 
+ dyn_c_PRK_puppet_POR:0 "Portugese Perak"
+ 
+ dyn_c_PRK_puppet_SPA:0 "Spanish Perak"
+ 
+ dyn_c_PRK_puppet_GER:0 "German Perak"
+ 
+ dyn_c_PRK_puppet_PRU:0 "Prussian Perak"
+ 
+ dyn_c_PRK_puppet_AUS:0 "Austrian Perak"
+ 
+ dyn_c_PRK_puppet_RUS:0 "Russian Perak"
+ 
+ dyn_c_PRK_puppet_TUR:0 "Turkish Perak"
+ 
+ dyn_c_PRK_puppet_USA:0 "American Perak"
+ 
+ dyn_c_PRK_puppet_ITA:0 "Italian Perak"
+ 
+ dyn_c_PRK_puppet_JAP:0 "Japanese Perak"
+ 
+ dyn_c_PRK_puppet_CHI:0 "Chinese Perak"
+ 
+ dyn_c_selangor_absolutist_monarchy:0 "Sultanate of Selangor"
+ 
+ dyn_c_selangor_monarchy:0 "Sultanate of Selangor"
+ 
+ dyn_c_selangor_dictatorship:0 "Free State of Selangor"
+ 
+ dyn_c_selangor_republic:0 "Selangor"
+ 
+ dyn_c_selangor_communist:0 "Socialist State of Selangor"
+ 
+ dyn_c_selangor_communistvote:0 "Peoples Republic of Johor"
+ 
+ dyn_c_selangor_theocratic:0 "Islamic Union of Selangor"
+ 
+ dyn_c_selangor_theocraticvote:0 "United Islamic Republic of Selangor"
+ 
+ dyn_c_selangor_anarchy:0 "Autonomous Communes of Selangor"
+ 
+ dyn_c_SEL_puppet_SIA:0 "Siamese Selangor"
+ 
+ dyn_c_SEL_puppet_GBR:0 "British Selangor"
+ 
+ dyn_c_SEL_puppet_FRA:0 "French Selangor"
+ 
+ dyn_c_SEL_puppet_NET:0 "Dutch Selangor"
+ 
+ dyn_c_SEL_puppet_POR:0 "Portugese Selangor"
+ 
+ dyn_c_SEL_puppet_SPA:0 "Spanish Selangor"
+ 
+ dyn_c_SEL_puppet_GER:0 "German Selangor"
+ 
+ dyn_c_SEL_puppet_PRU:0 "Prussian Selangor"
+ 
+ dyn_c_SEL_puppet_AUS:0 "Austrian Selangor"
+ 
+ dyn_c_SEL_puppet_RUS:0 "Russian Selangor"
+ 
+ dyn_c_SEL_puppet_TUR:0 "Turkish Selangor"
+ 
+ dyn_c_SEL_puppet_USA:0 "American Selangor"
+ 
+ dyn_c_SEL_puppet_ITA:0 "Italian Selangor"
+ 
+ dyn_c_SEL_puppet_JAP:0 "Japanese Selangor"
+ 
+ dyn_c_SEL_puppet_CHI:0 "Chinese Selangor"
+ 
+ dyn_c_johor_absolutist_monarchy:0 "Sultanate of Johore"
+ 
+ dyn_c_johor_monarchy:0 "Sultanate of Johore"
+ 
+ dyn_c_johor_dictatorship:0 "Johore Empire"
+ 
+ dyn_c_johor_republic:0 "Johore"
+ 
+ dyn_c_johor_communist:0 "Socialist Union of Johore"
+ 
+ dyn_c_johor_communistvote:0 "Socialist Federal Republic of Johore"
+ 
+ dyn_c_johor_theocratic:0 "Islamic State of Johore"
+ 
+ dyn_c_johor_theocraticvote:0 "Islamic Republic of Johore"
+ 
+ dyn_c_johor_anarchy:0 "Communes of Johore"
+ 
+ dyn_c_JOH_puppet_SIA:0 "Siamese Johore"
+ 
+ dyn_c_JOH_puppet_GBR:0 "British Johore"
+ 
+ dyn_c_JOH_puppet_FRA:0 "French Johore"
+ 
+ dyn_c_JOH_puppet_NET:0 "Dutch Johore"
+ 
+ dyn_c_JOH_puppet_POR:0 "Portugese Johore"
+ 
+ dyn_c_JOH_puppet_SPA:0 "Spanish Johore"
+ 
+ dyn_c_JOH_puppet_GER:0 "German Johore"
+ 
+ dyn_c_JOH_puppet_PRU:0 "Prussian Johore"
+ 
+ dyn_c_JOH_puppet_AUS:0 "Austrian Johore"
+ 
+ dyn_c_JOH_puppet_RUS:0 "Russian Johore"
+ 
+ dyn_c_JOH_puppet_TUR:0 "Turkish Johore"
+ 
+ dyn_c_JOH_puppet_USA:0 "American Johore"
+ 
+ dyn_c_JOH_puppet_ITA:0 "Italian Johore"
+ 
+ dyn_c_JOH_puppet_JAP:0 "Japanese Johore"
+ 
+ dyn_c_JOH_puppet_CHI:0 "Chinese Johore"
+
+ dyn_c_italy_absolutist_monarchy:0 "Kingdom of Italy"
+ 
+ dyn_c_italy_monarchy:0 "Kingdom of Italy"
+ 
+ dyn_c_italy_dictatorship:0 "Italian Empire"
+ 
+ dyn_c_italy_republic:0 "Republic of Italy"
+ 
+ dyn_c_italy_communist:0 "Socialist State of Italy"
+ 
+ dyn_c_italy_communistvote:0 "Socialist Republic of Italy"
+ 
+ dyn_c_italy_theocratic:0 "Kingdom of Heaven"
+ 
+ dyn_c_italy_theocraticvote:0 "Roman Catholic Republic of Italy"
+ 
+ dyn_c_italy_anarchy:0 "Italian Anarchist Communes"
+ 
+ dyn_c_italy_technocracy:0 "Technocratic Union of Italy"
+
+ dyn_c_algeria_absolutist_monarchy:0 "New Kingdom of Tlemcen"
+ 
+ dyn_c_algeria_monarchy:0 "New Kingdom of Tlemcen"
+ 
+ dyn_c_algeria_dictatorship:0 "Independent State of Algeria"
+ 
+ dyn_c_algeria_republic:0 "Algeria"
+ 
+ dyn_c_algeria_communist:0 "Algerian Peoples Republic"
+ 
+ dyn_c_algeria_communistvote:0 "Republic of Algier"
+ 
+ dyn_c_algeria_theocratic:0 "Imamate of Algeria"
+ 
+ dyn_c_algeria_theocraticvote:0 "Democratic Imamate of Algeria"
+ 
+ dyn_c_algeria_anarchy:0 "Anarchist Communes of Algeria"
+ 
+ dyn_c_algeria_puppet_FRA:0 "French Algeria"
+ 
+ dyn_c_algeria_puppet_TUR:0 "Turkish Algeria"
+
+ dyn_c_sweden_puppet_DEN:0 "Danish Sweden"
+ 
+ dyn_c_denmark_puppet_SWE:0 "Swedish Denmark"
+ 
+ dyn_c_norway_puppet_DEN:0 "Danish Norway"
+ 
+ dyn_c_norway_puppet_SWE:0 "Swedish Norway"
+
+ dyn_c_schleswig_absolutist_monarchy:0 "Duchy of Schleswig"
+ 
+ dyn_c_schleswig_monarchy:0 "Duchy of Schleswig"
+ 
+ dyn_c_schleswig_dictatorship:0 "Independent Schleswig"
+ 
+ dyn_c_schleswig_republic:0 "Schleswig"
+ 
+ dyn_c_schleswig_communist:0 "Flensburg Workers Cooperative"
+ 
+ dyn_c_schleswig_communistvote:0 "Peoples Republic of Schleswig"
+ 
+ dyn_c_schleswig_theocratic:0 "Order of Schleswig"
+ 
+ dyn_c_schleswig_theocraticvote:0 "Protestant Republic of Schleswig"
+ 
+ dyn_c_schleswig_puppet_DEN:0 "Danish Schleswig"
+ 
+ dyn_c_schleswig_puppet_PRU:0 "Prussian Schleswig"
+ 
+ dyn_c_schleswig_anarchy:0 "Schleswig Commune"
+ 
+ dyn_c_schleswig_puppet_FRA:0 "French Schleswig"
+ 
+ dyn_c_schleswig_puppet_PRU:0 "Prussian Schleswig"
+ 
+ dyn_c_schleswig_puppet_AUS:0 "Austrian Schleswig"
+ 
+ dyn_c_schleswig_puppet_GER:0 "German Schleswig"
+ 
+ dyn_c_schleswig_puppet_NGF:0 "North German Schleswig"
+ 
+ dyn_c_schleswig_puppet_SGF:0 "South German Schleswig"
+ 
+ dyn_c_schleswig_puppet_DEN:0 "Danish Schleswig"
+ 
+ dyn_c_holstein_absolutist_monarchy:0 "Duchy of Holstein"
+ 
+ dyn_c_holstein_monarchy:0 "Duchy of Holstein"
+ 
+ dyn_c_holstein_dictatorship:0 "Independent Unitary State of Holstein"
+ 
+ dyn_c_holstein_republic:0 "Holstein"
+ 
+ dyn_c_holstein_communist:0 "Peoples Republic of Holstein"
+ 
+ dyn_c_holstein_communistvote:0 "Free Peoples Republic of Holstein"
+ 
+ dyn_c_holstein_theocratic:0 "Holy Holstein"
+ 
+ dyn_c_holstein_theocraticvote:0 "Protestant Union of Holstein"
+ 
+ dyn_c_holstein_puppet_DEN:0 "Danish Holstein"
+ 
+ dyn_c_holstein_puppet_PRU:0 "Prussian Holstein"
+ 
+ dyn_c_holstein_anarchy:0 "Holstein Commune"
+ 
+ dyn_c_holstein_puppet_FRA:0 "French Holstein"
+ 
+ dyn_c_holstein_puppet_PRU:0 "Prussian Holstein"
+ 
+ dyn_c_holstein_puppet_AUS:0 "Austrian Holstein"
+ 
+ dyn_c_holstein_puppet_GER:0 "German Holstein"
+ 
+ dyn_c_holstein_puppet_NGF:0 "North German Holstein"
+ 
+ dyn_c_holstein_puppet_SGF:0 "South German Holstein"
+ 
+ dyn_c_holstein_puppet_DEN:0 "Danish Holstein"
+
+ dyn_c_mecklenburg_absolutist_monarchy:0 "Grand Principality of Mecklenburg-Schwerin"
+ 
+ dyn_c_mecklenburg_monarchy:0 "Grand Principality of Mecklenburg-Schwerin"
+ 
+ dyn_c_mecklenburg_dictatorship:0 "Free Republic of Mecklenburg"
+ 
+ dyn_c_mecklenburg_republic:0 "Mecklenburg"
+ 
+ dyn_c_mecklenburg_communist:0 "Workers Cooperative of Mecklenburg"
+ 
+ dyn_c_mecklenburg_communistvote:0 "Socialist Peoples Republic of Mecklenburg"
+ 
+ dyn_c_mecklenburg_theocratic:0 "Holy City of Schwerin"
+ 
+ dyn_c_mecklenburg_theocraticvote:0 "Protestant Republic of Mecklenburg"
+ 
+ dyn_c_mecklenburg_anarchy:0 "United Communes of Mecklenburg"
+ 
+ dyn_c_mecklenburg_puppet_FRA:0 "French Mecklenburg"
+ 
+ dyn_c_mecklenburg_puppet_PRU:0 "Prussian Mecklenburg"
+ 
+ dyn_c_mecklenburg_puppet_AUS:0 "Austrian Mecklenburg"
+ 
+ dyn_c_mecklenburg_puppet_GER:0 "German Mecklenburg"
+ 
+ dyn_c_mecklenburg_puppet_NGF:0 "North German Mecklenburg"
+ 
+ dyn_c_mecklenburg_puppet_SGF:0 "South German Mecklenburg"
+ 
+ dyn_c_strelitz_absolutist_monarchy:0 "Grand Principality od Mecklenburg-Strelitz"
+ 
+ dyn_c_strelitz_monarchy:0 "Grand Principality of Mecklenburg-Strelitz"
+ 
+ dyn_c_strelitz_dictatorship:0 "Free City of Mecklenburg-Strelitz"
+ 
+ dyn_c_strelitz_republic:0 "Neustrelitz and Neubrandenburg"
+ 
+ dyn_c_strelitz_communist:0 "Workers Union of Neustrelitz"
+ 
+ dyn_c_strelitz_communistvote:0 "Free Peoples Republic of Neustrelitz"
+ 
+ dyn_c_strelitz_theocratic:0 "Free Lutheran City of Neustrelitz"
+ 
+ dyn_c_strelitz_theocraticvote:0 "Protestant Republic of Neustrelitz"
+ 
+ dyn_c_strelitz_anarchy:0 "Free Communes of Strelitz"
+ 
+ dyn_c_strelitz_puppet_FRA:0 "French Strelitz"
+ 
+ dyn_c_strelitz_puppet_PRU:0 "Prussian Strelitz"
+ 
+ dyn_c_strelitz_puppet_AUS:0 "Austrian Strelitz"
+ 
+ dyn_c_strelitz_puppet_GER:0 "German Strelitz"
+ 
+ dyn_c_strelitz_puppet_NGF:0 "North German Strelitz"
+ 
+ dyn_c_strelitz_puppet_SGF:0 "South German Strelitz"
+ 
+ dyn_c_lubeck_absolutist_monarchy:0 "Free City of Lübeck"
+ 
+ dyn_c_lubeck_monarchy:0 "Free City of Lübeck"
+ 
+ dyn_c_lubeck_dictatorship:0 "Free City of Lübeck"
+ 
+ dyn_c_lubeck_republic:0 "Free City of Lübeck"
+ 
+ dyn_c_lubeck_communist:0 "Lübecker Arbeiterrat"
+ 
+ dyn_c_lubeck_communistvote:0 "Democratic Peoples Republic of Lübeck"
+ 
+ dyn_c_lubeck_theocratic:0 "Unitary Protestant City of Lübeck"
+ 
+ dyn_c_lubeck_theocraticvote:0 "Free Protestant City of Lübeck"
+ 
+ dyn_c_lubeck_anarchy:0 "Free Communes of Lübeck"
+ 
+ dyn_c_lubeck_puppet_FRA:0 "French Lübeck"
+ 
+ dyn_c_lubeck_puppet_PRU:0 "Prussian Lübeck"
+ 
+ dyn_c_lubeck_puppet_AUS:0 "Austrian Lübeck"
+ 
+ dyn_c_lubeck_puppet_GER:0 "German Lübeck"
+ 
+ dyn_c_lubeck_puppet_NGF:0 "North German Lübeck"
+ 
+ dyn_c_lubeck_puppet_SGF:0 "South German Lübeck"
+
+ dyn_c_hamburg_absolutist_monarchy:0 "Free City of Hamburg"
+ 
+ dyn_c_hamburg_monarchy:0 "Free City of Hamburg"
+ 
+ dyn_c_hamburg_dictatorship:0 "Free City of Hamburg"
+ 
+ dyn_c_hamburg_republic:0 "Free City of Hamburg"
+ 
+ dyn_c_hamburg_communist:0 "Hamburg Workers Union"
+ 
+ dyn_c_hamburg_communistvote:0 "Peoples Republic of Hamburg"
+ 
+ dyn_c_hamburg_theocratic:0 "Unitary Protestant City of Hamburg"
+ 
+ dyn_c_hamburg_theocraticvote:0 "Free Christian City of Hamburg"
+ 
+ dyn_c_hamburg_anarchy:0 "Free Communes of Hamburg"
+ 
+ dyn_c_hamburg_puppet_FRA:0 "French Hamburg"
+ 
+ dyn_c_hamburg_puppet_PRU:0 "Prussian Hamburg"
+ 
+ dyn_c_hamburg_puppet_AUS:0 "Austrian Hamburg"
+ 
+ dyn_c_hamburg_puppet_GER:0 "German Hamburg"
+ 
+ dyn_c_hamburg_puppet_NGF:0 "North German Hamburg"
+ 
+ dyn_c_hamburg_puppet_SGF:0 "South German Hamburg"
+ 
+ dyn_c_bremen_absolutist_monarchy:0 "Free City of Bremen"
+ 
+ dyn_c_bremen_monarchy:0 "Free City of Bremen"
+ 
+ dyn_c_bremen_dictatorship:0 "Free City of Bremen"
+ 
+ dyn_c_bremen_republic:0 "Free City of Bremen"
+ 
+ dyn_c_bremen_communist:0 "Bremen Workers Cooperative"
+ 
+ dyn_c_bremen_communistvote:0 "Free Peoples Republic of Bremen"
+ 
+ dyn_c_bremen_theocratic:0 "Unitary Protestant City of Bremen"
+ 
+ dyn_c_bremen_theocraticvote:0 "Free Christian City of Bremen"
+ 
+ dyn_c_bremen_anarchy:0 "Free Bremen Communes"
+ 
+ dyn_c_bremen_puppet_FRA:0 "French Bremen"
+ 
+ dyn_c_bremen_puppet_PRU:0 "Prussian Bremen"
+ 
+ dyn_c_bremen_puppet_AUS:0 "Austrian Bremen"
+ 
+ dyn_c_bremen_puppet_GER:0 "German Bremen"
+ 
+ dyn_c_bremen_puppet_NGF:0 "North German Bremen"
+ 
+ dyn_c_bremen_puppet_SGF:0 "South German Bremen"
+ 
+ dyn_c_oldenburg_absolutist_monarchy:0 "Grand Principality of Oldenburg"
+ 
+ dyn_c_oldenburg_monarchy:0 "Grand Principality of Oldenburg"
+ 
+ dyn_c_oldenburg_dictatorship:0 "Greater Oldenburg"
+ 
+ dyn_c_oldenburg_republic:0 "Oldenburg"
+ 
+ dyn_c_oldenburg_communist:0 "Socialist Republic of Oldenburg"
+ 
+ dyn_c_oldenburg_communistvote:0 "Democratic Peoples Republic of Oldenburg"
+ 
+ dyn_c_oldenburg_theocratic:0 "Protestant Federation"
+ 
+ dyn_c_oldenburg_theocraticvote:0 "Free Christian City of Oldenburg"
+ 
+ dyn_c_oldenburg_anarchy:0 "Red Oldenburg"
+ 
+ dyn_c_oldenburg_puppet_FRA:0 "French Oldenburg"
+ 
+ dyn_c_oldenburg_puppet_PRU:0 "Prussian Oldenburg"
+ 
+ dyn_c_oldenburg_puppet_AUS:0 "Austrian Oldenburg"
+ 
+ dyn_c_oldenburg_puppet_GER:0 "German Oldenburg"
+ 
+ dyn_c_oldenburg_puppet_NGF:0 "North German Oldenburg"
+ 
+ dyn_c_oldenburg_puppet_SGF:0 "South German Oldenburg"
+
+ dyn_c_hanover_absolutist_monarchy:0 "Kingdom of Hanover"
+ 
+ dyn_c_hanover_monarchy:0 "Kingdom of Hanover"
+ 
+ dyn_c_hanover_dictatorship:0 "Free Republic of Hanover"
+ 
+ dyn_c_hanover_republic:0 "Hanover"
+ 
+ dyn_c_hanover_communist:0 "Elbe Workers Union"
+ 
+ dyn_c_hanover_communistvote:0 "Democratic Peoples Republic of Hanover"
+ 
+ dyn_c_hanover_theocratic:0 "Lutheran Federation"
+ 
+ dyn_c_hanover_theocraticvote:0 "Blessed Northern Republic"
+ 
+ dyn_c_hanover_anarchy:0 "Red Hanover"
+ 
+ dyn_c_hanover_puppet_FRA:0 "French Hanover"
+ 
+ dyn_c_hanover_puppet_PRU:0 "Prussian Hanover"
+ 
+ dyn_c_hanover_puppet_AUS:0 "Austrian Hanover"
+ 
+ dyn_c_hanover_puppet_GER:0 "German Hanover"
+ 
+ dyn_c_hanover_puppet_NGF:0 "North German Hanover"
+ 
+ dyn_c_hanover_puppet_SGF:0 "South German Hanover"
+
+ dyn_c_lippe_absolutist_monarchy:0 "Principality of Lippe-Detmold"
+ 
+ dyn_c_lippe_monarchy:0 "Principality of Lippe-Detmold"
+ 
+ dyn_c_lippe_dictatorship:0 "Independent Reichsstadt Detmold"
+ 
+ dyn_c_lippe_republic:0 "Detmoldan Republic"
+ 
+ dyn_c_lippe_communist:0 "Detmold Workers Cooperative"
+ 
+ dyn_c_lippe_communistvote:0 "Peoples Republic of Detmold"
+ 
+ dyn_c_lippe_theocratic:0 "Lutherstadt Detmold"
+ 
+ dyn_c_lippe_theocraticvote:0 "Protestant Republic of Detmold"
+ 
+ dyn_c_lippe_anarchy:0 "Free Communes of Detmold"
+ 
+ dyn_c_lippe_puppet_FRA:0 "French Lippe"
+ 
+ dyn_c_lippe_puppet_PRU:0 "Prussian Lippe"
+ 
+ dyn_c_lippe_puppet_AUS:0 "Austrian Lippe"
+ 
+ dyn_c_lippe_puppet_GER:0 "German Lippe"
+ 
+ dyn_c_lippe_puppet_NGF:0 "North German Lippe"
+ 
+ dyn_c_lippe_puppet_SGF:0 "South German Lippe"
+ 
+ dyn_c_schaumburg_absolutist_monarchy:0 "Principality of Schaumburg-Lippe"
+ 
+ dyn_c_schaumburg_monarchy:0 "Principality of Schaumburg-Lippe"
+ 
+ dyn_c_schaumburg_dictatorship:0 "Independent Reichsstadt Bückeberg"
+ 
+ dyn_c_schaumburg_republic:0 "Bückeberg"
+ 
+ dyn_c_schaumburg_communist:0 "Arbeiterstadt Bückeberg"
+ 
+ dyn_c_schaumburg_communistvote:0 "Peoples Republic of Bückeberg"
+ 
+ dyn_c_schaumburg_theocratic:0 "Lutherstadt Bückeberg"
+ 
+ dyn_c_schaumburg_theocraticvote:0 "Protestant Union of Bückeberg"
+ 
+ dyn_c_schaumburg_anarchy:0 "Independent Communes of Schaumburg"
+ 
+ dyn_c_schaumburg_puppet_FRA:0 "French Schaumburg"
+ 
+ dyn_c_schaumburg_puppet_PRU:0 "Prussian Schaumburg"
+ 
+ dyn_c_schaumburg_puppet_AUS:0 "Austrian Schaumburg"
+ 
+ dyn_c_schaumburg_puppet_GER:0 "German Schaumburg"
+ 
+ dyn_c_schaumburg_puppet_NGF:0 "North German Schaumburg"
+ 
+ dyn_c_schaumburg_puppet_SGF:0 "South German Schaumburg"
+
+ dyn_c_saxony_absolutist_monarchy:0 "Kingdom of Saxony"
+ 
+ dyn_c_saxony_monarchy:0 "Kingdom of Saxony"
+ 
+ dyn_c_saxony_dictatorship:0 "Empire of Saxony"
+ 
+ dyn_c_saxony_republic:0 "Republic of Saxony"
+ 
+ dyn_c_saxony_communist:0 "Workers Republic of Saxony"
+ 
+ dyn_c_saxony_communistvote:0 "Socialist Republic of Saxony"
+ 
+ dyn_c_saxony_theocratic:0 "Protestant Patriarchy of Saxony"
+ 
+ dyn_c_saxony_theocraticvote:0 "Lutheran Republic of Saxony"
+ 
+ dyn_c_saxony_anarchy:0 "Free Communes of Saxony"
+ 
+ dyn_c_saxony_puppet_FRA:0 "French Saxony"
+ 
+ dyn_c_saxony_puppet_PRU:0 "Prussian Saxony"
+ 
+ dyn_c_saxony_puppet_AUS:0 "Austrian Saxony"
+ 
+ dyn_c_saxony_puppet_GER:0 "German Saxony"
+ 
+ dyn_c_saxony_puppet_NGF:0 "North German Saxony"
+ 
+ dyn_c_saxony_puppet_SGF:0 "South German Saxony"
+
+ dyn_c_anhalt_absolutist_monarchy:0 "Principality of Anhalt"
+ 
+ dyn_c_anhalt_monarchy:0 "Principality of Anhalt"
+ 
+ dyn_c_anhalt_dictatorship:0 "Independent Republic of Anhalt"
+ 
+ dyn_c_anhalt_republic:0 "Anhalt"
+ 
+ dyn_c_anhalt_communist:0 "Dessau Workers Cooperative"
+ 
+ dyn_c_anhalt_communistvote:0 "Social Democratic Republic of Anhalt"
+ 
+ dyn_c_anhalt_theocratic:0 "Lutherstadt Dessau"
+ 
+ dyn_c_anhalt_theocraticvote:0 "Protestant Republic of Anhalt"
+ 
+ dyn_c_anhalt_anarchy:0 "Red Communes of Anhalt"
+ 
+ dyn_c_anhalt_puppet_FRA:0 "French Anhalt"
+ 
+ dyn_c_anhalt_puppet_PRU:0 "Prussian Anhalt"
+ 
+ dyn_c_anhalt_puppet_AUS:0 "Austrian Anhalt"
+ 
+ dyn_c_anhalt_puppet_GER:0 "German Anhalt"
+ 
+ dyn_c_anhalt_puppet_NGF:0 "North German Anhalt"
+ 
+ dyn_c_anhalt_puppet_SGF:0 "South German Anhalt"
+ 
+ dyn_c_brunswick_absolutist_monarchy:0 "Principality of Brunswick"
+ 
+ dyn_c_brunswick_monarchy:0 "Principality of Brunswick"
+ 
+ dyn_c_brunswick_dictatorship:0 "Independent City of Brunswick"
+ 
+ dyn_c_brunswick_republic:0 "Brunswick"
+ 
+ dyn_c_brunswick_communist:0 "Brunswick Workers Cooperative"
+ 
+ dyn_c_brunswick_communistvote:0 "Socialist Peoples Republic of Brunswick"
+ 
+ dyn_c_brunswick_theocratic:0 "Heilig-Braunschweig"
+ 
+ dyn_c_brunswick_theocraticvote:0 "Protestant Republic of Brunswick"
+ 
+ dyn_c_brunswick_anarchy:0 "Communes of Brunswick"
+ 
+ dyn_c_brunswick_puppet_FRA:0 "French Brunswick"
+ 
+ dyn_c_brunswick_puppet_PRU:0 "Prussian Brunswick"
+ 
+ dyn_c_brunswick_puppet_AUS:0 "Austrian Brunswick"
+ 
+ dyn_c_brunswick_puppet_GER:0 "German Brunswick"
+ 
+ dyn_c_brunswick_puppet_NGF:0 "North German Brunswick"
+ 
+ dyn_c_brunswick_puppet_SGF:0 "South German Brunswick"
+
+ dyn_c_schwarzburg_absolutist_monarchy:0 "Principality of Schwarzburg"
+ 
+ dyn_c_schwarzburg_monarchy:0 "Principality of Schwarzburg"
+ 
+ dyn_c_schwarzburg_dictatorship:0 "Independent State of Schwarzburg"
+ 
+ dyn_c_schwarzburg_republic:0 "Rudolstadt"
+ 
+ dyn_c_schwarzburg_communist:0 "Workers Council of Rudolstadt"
+ 
+ dyn_c_schwarzburg_communistvote:0 "Peoples Republic of Rudolstadt"
+ 
+ dyn_c_schwarzburg_theocratic:0 "Lutherstadt Rudolstadt"
+ 
+ dyn_c_schwarzburg_theocraticvote:0 "Protestant Republic of Rudolstadt"
+ 
+ dyn_c_schwarzburg_anarchy:0 "Free Communes of Schwarzburg"
+ 
+ dyn_c_schwarzburg_puppet_FRA:0 "French Schwarzburg"
+ 
+ dyn_c_schwarzburg_puppet_PRU:0 "Prussian Schwarzburg"
+ 
+ dyn_c_schwarzburg_puppet_AUS:0 "Austrian Schwarzburg"
+ 
+ dyn_c_schwarzburg_puppet_GER:0 "German Schwarzburg"
+ 
+ dyn_c_schwarzburg_puppet_NGF:0 "North German Schwarzburg"
+ 
+ dyn_c_schwarzburg_puppet_SGF:0 "South German Schwarzburg"
+ 
+ dyn_c_weimar_absolutist_monarchy:0 "Grand Principality of Saxe-Weimar"
+ 
+ dyn_c_weimar_monarchy:0 "Grand Principality of Saxe-Weimar"
+ 
+ dyn_c_weimar_dictatorship:0 "Independent State of Saxe-Weimar"
+ 
+ dyn_c_weimar_republic:0 "Weimar"
+ 
+ dyn_c_weimar_communist:0 "Weimar Workers Council"
+ 
+ dyn_c_weimar_communistvote:0 "Peoples Republic of Weimar"
+ 
+ dyn_c_weimar_theocratic:0 "Lutherstadt Weimar"
+ 
+ dyn_c_weimar_theocraticvote:0 "Freie Lutherstadt Weimar"
+ 
+ dyn_c_weimar_anarchy:0 "Weimar Commune"
+ 
+ dyn_c_weimar_puppet_FRA:0 "French Weimar"
+ 
+ dyn_c_weimar_puppet_PRU:0 "Prussian Weimar"
+ 
+ dyn_c_weimar_puppet_AUS:0 "Austrian Weimar"
+ 
+ dyn_c_weimar_puppet_GER:0 "German Weimar"
+ 
+ dyn_c_weimar_puppet_NGF:0 "North German Weimar"
+ 
+ dyn_c_weimar_puppet_SGF:0 "South German Weimar"
+ 
+ dyn_c_coburg_absolutist_monarchy:0 "Principality of Saxe-Coburg-Gotha"
+ 
+ dyn_c_coburg_monarchy:0 "Principality of Saxe-Coburg-Gotha"
+ 
+ dyn_c_coburg_dictatorship:0 "Independent State of Saxe-Coburg-Gotha"
+ 
+ dyn_c_coburg_republic:0 "Coburg"
+ 
+ dyn_c_coburg_communist:0 "Coburg Workers Council"
+ 
+ dyn_c_coburg_communistvote:0 "Democratic Republic of Coburg"
+ 
+ dyn_c_coburg_theocratic:0 "Lutherstadt Coburg"
+ 
+ dyn_c_coburg_theocraticvote:0 "Freie Lutherstadt Coburg"
+ 
+ dyn_c_coburg_anarchy:0 "Coburg Commune"
+ 
+ dyn_c_coburg_puppet_FRA:0 "French Coburg"
+ 
+ dyn_c_coburg_puppet_PRU:0 "Prussian Coburg"
+ 
+ dyn_c_coburg_puppet_AUS:0 "Austrian Coburg"
+ 
+ dyn_c_coburg_puppet_GER:0 "German Coburg"
+ 
+ dyn_c_coburg_puppet_NGF:0 "North German Coburg"
+ 
+ dyn_c_coburg_puppet_SGF:0 "South German Coburg"
+
+ dyn_c_meiningen_absolutist_monarchy:0 "Principality of Saxe-Meiningen"
+ 
+ dyn_c_meiningen_monarchy:0 "Principality of Saxe-Meiningen"
+ 
+ dyn_c_meiningen_dictatorship:0 "Independent State of Saxe-Meiningen"
+ 
+ dyn_c_meiningen_republic:0 "Meiningen"
+ 
+ dyn_c_meiningen_communist:0 "Meiningen Workers Council"
+ 
+ dyn_c_meiningen_communistvote:0 "Peoples Republic of Meiningen"
+ 
+ dyn_c_meiningen_theocratic:0 "Lutherstadt Meiningen"
+ 
+ dyn_c_meiningen_theocraticvote:0 "Freie Lutherstadt Meiningen"
+ 
+ dyn_c_meiningen_anarchy:0 "Free Communes of Meiningen"
+ 
+ dyn_c_meiningen_puppet_FRA:0 "French Meiningen"
+ 
+ dyn_c_meiningen_puppet_PRU:0 "Prussian Meiningen"
+ 
+ dyn_c_meiningen_puppet_AUS:0 "Austrian Meiningen"
+ 
+ dyn_c_meiningen_puppet_GER:0 "German Meiningen"
+ 
+ dyn_c_meiningen_puppet_NGF:0 "North German Meiningen"
+ 
+ dyn_c_meiningen_puppet_SGF:0 "South German Meiningen"
+ 
+ dyn_c_waldeck_absolutist_monarchy:0 "Principality of Waldeck"
+ 
+ dyn_c_waldeck_monarchy:0 "Principality of Waldeck"
+ 
+ dyn_c_waldeck_dictatorship:0 "Independent State of Waldeck"
+ 
+ dyn_c_waldeck_republic:0 "Arolsen"
+ 
+ dyn_c_waldeck_communist:0 "Workers Council of Arolsen"
+ 
+ dyn_c_waldeck_communistvote:0 "Peoples Republic of Arolsen"
+ 
+ dyn_c_waldeck_theocratic:0 "Lutherstadt Arolsen"
+ 
+ dyn_c_waldeck_theocraticvote:0 "Holy Republic of Arolsen"
+ 
+ dyn_c_waldeck_anarchy:0 "Free Communes of Waldeck"
+ 
+ dyn_c_waldeck_puppet_FRA:0 "French Waldeck"
+ 
+ dyn_c_waldeck_puppet_PRU:0 "Prussian Waldeck"
+ 
+ dyn_c_waldeck_puppet_AUS:0 "Austrian Waldeck"
+ 
+ dyn_c_waldeck_puppet_GER:0 "German Waldeck"
+ 
+ dyn_c_waldeck_puppet_NGF:0 "North German Waldeck"
+ 
+ dyn_c_waldeck_puppet_SGF:0 "South German Waldeck"
+ 
+ dyn_c_hessenkassel_absolutist_monarchy:0 "Principality of Hesse-Kassel"
+ 
+ dyn_c_hessenkassel_monarchy:0 "Principality of Hesse-Kassel"
+ 
+ dyn_c_hessenkassel_dictatorship:0 "Free State of Hesse-Kassel"
+ 
+ dyn_c_hessenkassel_republic:0 "Hesse-Kassel"
+ 
+ dyn_c_hessenkassel_communist:0 "Kassel's Workers Republic"
+ 
+ dyn_c_hessenkassel_communistvote:0 "Socialist Republic of Kassel"
+ 
+ dyn_c_hessenkassel_theocratic:0 "Christian State of Hesse-Kassel"
+ 
+ dyn_c_hessenkassel_theocraticvote:0 "Free Lutheran Republic of Hesse-Kassel"
+ 
+ dyn_c_hessenkassel_anarchy:0 "Anarchist Communes of Hesse-Kassel"
+ 
+ dyn_c_hessenkassel_puppet_FRA:0 "French Hesse-Kassel"
+ 
+ dyn_c_hessenkassel_puppet_PRU:0 "Prussian Hesse-Kassel"
+ 
+ dyn_c_hessenkassel_puppet_AUS:0 "Austrian Hesse-Kassel"
+ 
+ dyn_c_hessenkassel_puppet_GER:0 "German Hesse-Kassel"
+ 
+ dyn_c_hessenkassel_puppet_NGF:0 "North German Hesse-Kassel"
+ 
+ dyn_c_hessenkassel_puppet_SGF:0 "South German Hesse-Kassel"
+
+ dyn_c_nassau_absolutist_monarchy:0 "Principality of Nassau"
+ 
+ dyn_c_nassau_monarchy:0 "Principality of Nassau"
+ 
+ dyn_c_nassau_dictatorship:0 "Independent Nassau"
+ 
+ dyn_c_nassau_republic:0 "Nassau"
+ 
+ dyn_c_nassau_communist:0 "Workers State of Nassau"
+ 
+ dyn_c_nassau_communistvote:0 "Peoples Republic of Nassau"
+ 
+ dyn_c_nassau_theocratic:0 "Diocese of Nassau"
+ 
+ dyn_c_nassau_theocraticvote:0 "Democratic Diocese of Nassau"
+ 
+ dyn_c_nassau_anarchy:0 "Anarchist Communes of Nassau"
+ 
+ dyn_c_nassau_puppet_FRA:0 "French Nassau"
+ 
+ dyn_c_nassau_puppet_PRU:0 "Prussian Nassau"
+ 
+ dyn_c_nassau_puppet_AUS:0 "Austrian Nassau"
+ 
+ dyn_c_nassau_puppet_GER:0 "German Nassau"
+ 
+ dyn_c_nassau_puppet_NGF:0 "North German Nassau"
+ 
+ dyn_c_nassau_puppet_SGF:0 "South German Nassau"
+
+ dyn_c_hesse_absolutist_monarchy:0 "Grand Principality of Hesse"
+ 
+ dyn_c_hesse_monarchy:0 "Grand Principality of Hesse"
+ 
+ dyn_c_hesse_dictatorship:0 "Indepentent Republic of Hesse"
+ 
+ dyn_c_hesse_republic:0 "Hesse"
+ 
+ dyn_c_hesse_communist:0 "People's Republic of Hesse"
+ 
+ dyn_c_hesse_communistvote:0 "Socialist Republic of Hesse"
+ 
+ dyn_c_hesse_theocratic:0 "Holy See of Hesse"
+ 
+ dyn_c_hesse_theocraticvote:0 "Presbetarian Republic of Hesse"
+ 
+ dyn_c_hesse_anarchy:0 "Anarchist Communes of Hesse"
+ 
+ dyn_c_hesse_puppet_FRA:0 "French Hesse"
+ 
+ dyn_c_hesse_puppet_PRU:0 "Prussian Hesse"
+ 
+ dyn_c_hesse_puppet_AUS:0 "Austrian Hesse"
+ 
+ dyn_c_hesse_puppet_GER:0 "German Hesse"
+ 
+ dyn_c_hesse_puppet_NGF:0 "North German Hesse"
+ 
+ dyn_c_hesse_puppet_SGF:0 "South German Hesse"
+
+ dyn_c_frankfurt_absolutist_monarchy:0 "Imperial City of Frankfurt"
+ 
+ dyn_c_frankfurt_monarchy:0 "Imperial City of Frankfurt"
+ 
+ dyn_c_frankfurt_dictatorship:0 "Free Imperial City of Frankfurt"
+ 
+ dyn_c_frankfurt_republic:0 "Free City of Frankfurt"
+ 
+ dyn_c_frankfurt_communist:0 "Red Frankfurt"
+ 
+ dyn_c_frankfurt_communistvote:0 "Workers Council of Frankfurt"
+ 
+ dyn_c_frankfurt_theocratic:0 "St. Paul's Holy City of Frankfurt"
+ 
+ dyn_c_frankfurt_theocraticvote:0 "Christian Union of Frankfurt"
+ 
+ dyn_c_frankfurt_anarchy:0 "Independent Commune of Frankfurt"
+ 
+ dyn_c_frankfurt_puppet_FRA:0 "French Frankfurt"
+ 
+ dyn_c_frankfurt_puppet_PRU:0 "Prussian Frankfurt"
+ 
+ dyn_c_frankfurt_puppet_AUS:0 "Austrian Frankfurt"
+ 
+ dyn_c_frankfurt_puppet_GER:0 "German Frankfurt"
+ 
+ dyn_c_frankfurt_puppet_NGF:0 "North German Frankfurt"
+ 
+ dyn_c_frankfurt_puppet_SGF:0 "South German Frankfurt"
+
+ dyn_c_hohenzollern_puppet_FRA:0 "French Hohenzollern"
+ 
+ dyn_c_hohenzollern_puppet_PRU:0 "Prussian Hohenzollern"
+ 
+ dyn_c_hohenzollern_puppet_AUS:0 "Austrian Hohenzollern"
+ 
+ dyn_c_hohenzollern_puppet_GER:0 "German Hohenzollern"
+ 
+ dyn_c_hohenzollern_puppet_NGF:0 "North German Hohenzollern"
+ 
+ dyn_c_hohenzollern_puppet_SGF:0 "South German Hohenzollern"
+
+ dyn_c_baden_absolutist_monarchy:0 "Grand Principality of Baden"
+ 
+ dyn_c_baden_monarchy:0 "Grand Principality of Baden"
+ 
+ dyn_c_baden_dictatorship:0 "Greater Baden"
+ 
+ dyn_c_baden_republic:0 "Republic of Baden"
+ 
+ dyn_c_baden_communist:0 "Peoples Republic of Baden"
+ 
+ dyn_c_baden_communistvote:0 "Socialist Union of Baden"
+ 
+ dyn_c_baden_theocratic:0 "Holy Principality of Baden"
+ 
+ dyn_c_baden_theocraticvote:0 "Free Spiritual Republic of Baden"
+ 
+ dyn_c_baden_puppet_AUS:0 "Austrian Baden"
+ 
+ dyn_c_baden_puppet_FRA:0 "French Baden"
+ 
+ dyn_c_baden_puppet_PRU:0 "Prussian Baden"
+ 
+ dyn_c_baden_anarchy:0 "Badish Red Communes"
+ 
+ dyn_c_baden_puppet_GER:0 "German Baden "
+ 
+ dyn_c_baden_puppet_NGF:0 "North German Baden "
+ 
+ dyn_c_baden_puppet_SGF:0 "South German Baden"
+
+ dyn_c_wurttemberg_absolutist_monarchy:0 "Kingdom of Württemberg"
+ 
+ dyn_c_wurttemberg_monarchy:0 "Kingdom of Württemberg"
+ 
+ dyn_c_wurttemberg_dictatorship:0 "Independent Union of Württemberg"
+ 
+ dyn_c_wurttemberg_republic:0 "Württemberg"
+ 
+ dyn_c_wurttemberg_communist:0 "Socialist Union of Württemberg"
+ 
+ dyn_c_wurttemberg_communistvote:0 "Socialist Republic of Württemberg"
+ 
+ dyn_c_wurttemberg_theocratic:0 "Holy State of Württemberg"
+ 
+ dyn_c_wurttemberg_theocraticvote:0 "Catholic Republic of Württemberg"
+ 
+ dyn_c_wurttemberg_puppet_AUS:0 "Austrian Württemberg"
+ 
+ dyn_c_wurttemberg_puppet_PRU:0 "Prussian Württemberg"
+ 
+ dyn_c_wurttemberg_puppet_FRA:0 "French Württemberg"
+ 
+ dyn_c_wurttemberg_anarchy:0 "Free Communes of Württemberg"
+ 
+ dyn_c_wurttemberg_puppet_GER:0 "German Württemberg "
+ 
+ dyn_c_wurttemberg_puppet_NGF:0 "North German Württemberg "
+ 
+ dyn_c_wurttemberg_puppet_SGF:0 "South German Württemberg"
+ 
+ WUR:0 "Kingdom of Württemberg"
+
+
+
+ dyn_c_malta_puppet_GBR:0 "British Malta"
+
+ dyn_c_zanzibar_puppet_GBR:0 "British Zanzibar"
+
+ dyn_c_westindies_puppet_GBR:0 "British West Indies"
+
+ dyn_c_jordan_puppet_GBR:0 "British Transjordan"
+
+ dyn_c_palestine_puppet_GBR:0 "British Palestine"
+ 
+ dyn_c_israel_puppet_GBR:0 "British Palestine"
+
+ dyn_c_newzealand_puppet_GBR:0 "British New Zealand"
+
+ dyn_c_newfoundland_puppet_GBR:0 "British Newfoundland"
+
+ dyn_c_natal_puppet_GBR:0 "British Natal"
+
+ dyn_c_jamaica_puppet_GBR:0 "British Jamaica"
+
+ dyn_c_brunei_absolutist_monarchy:0 "Sultanate of Brunei"
+ 
+ dyn_c_brunei_monarchy:0 "Sultanate of Brunei"
+ 
+ dyn_c_brunei_puppet_GBR:0 "British Brunei"
+
+ dyn_c_ceylon_puppet_GBR:0 "British Ceylon"
+
+ dyn_c_bahamas_puppet_GBR:0 "British Bahamas"
+
+ dyn_c_newsouthwales_puppet_GBR:0 "British New South Wales"
+ 
+ dyn_c_tasmania_puppet_GBR:0 "British Tasmania"
+ 
+ dyn_c_southernaustralia_puppet_GBR:0 "British Southern Australia"
+ 
+ dyn_c_westernaustralia_puppet_GBR:0 "British Western Australia"
+
+ dyn_c_yemen_absolutist_monarchy:0 "Kingdom of Yemen"
+ 
+ dyn_c_yemen_monarchy:0 "Kingdom of Yemen"
+ 
+ dyn_c_yemen_dictatorship:0 "Unitary State of Yemen"
+ 
+ dyn_c_yemen_republic:0 "Yemen"
+ 
+ dyn_c_yemen_communist:0 "Workers Commune of Yemen "
+ 
+ dyn_c_yemen_communistvote:0 "Socialist Republic of Yemen"
+ 
+ dyn_c_yemen_theocratic:0 "Islamic State of Yemen"
+ 
+ dyn_c_yemen_theocraticvote:0 "Islamic Republic of Yemen"
+ 
+ dyn_c_yemen_anarchy:0 "Free Communes of Yemen"
+ 
+ dyn_c_yemen_puppet_GBR:0 "British Aden"
+
+ dyn_c_eastindies_absolutist_monarchy:0 "Kingdom of the East Indies"
+ 
+ dyn_c_eastindies_monarchy:0 "Kingdom of the East Indies"
+ 
+ dyn_c_eastindies_dictatorship:0 "East Indian Empire"
+ 
+ dyn_c_eastindies_republic:0 "Republic of Indonesia"
+ 
+ dyn_c_eastindies_communist:0 "Indonesian Workers Assembly"
+ 
+ dyn_c_eastindies_communistvote:0 "Peoples Republic of Indonesia"
+ 
+ dyn_c_eastindies_theocratic:0 "Islamic Empire of Indonesia"
+ 
+ dyn_c_eastindies_theocraticvote:0 "Islamic Republic of Indonesia"
+ 
+ dyn_c_eastindies_anarchy:0 "Free Indian Territory"
+ 
+ dyn_c_DEI_puppet_NET:0 "Dutch East Indies"
+
+ dyn_c_indiacompany_absolutist_monarchy:0 "Kingdom of New India"
+ 
+ dyn_c_indiacompany_monarchy:0 "Kingdom of New India"
+ 
+ dyn_c_indiacompany_dictatorship:0 "Great State of East India"
+ 
+ dyn_c_indiacompany_republic:0 "Federal Republic of New India"
+ 
+ dyn_c_indiacompany_communist:0 "Socialist Union of New India"
+ 
+ dyn_c_indiacompany_communistvote:0 "Socialist Republic of New India"
+ 
+ dyn_c_indiacompany_theocratic:0 "Holy State in New India"
+ 
+ dyn_c_indiacompany_theocraticvote:0 "Christian Republic in New India"
+ 
+ dyn_c_indiacompany_anarchy:0 "Free Indian Territories"
+ 
+ dyn_c_indiacompany_puppet_GBR:0 "British East India Company"
+
+ dyn_c_indiacompany_puppet_GBR_raj:0 "British Raj"
+
+ dyn_c_pakistan_absolutist_monarchy:0 "Kingdom of Pakistan"
+
+ dyn_c_pakistan_monarchy:0 "Kingdom of Pakistan"
+
+ dyn_c_pakistan_republic:0 "Republic of Pakistan"
+  
+ dyn_c_pakistan_dictatorship:0 "Great Pakistani State"
+
+ dyn_c_pakistan_theocratic:0 "Islamic Emirate of Pakistan"
+  
+ dyn_c_pakistan_theocraticvote:0 "Islamic Republic of Pakistan"
+
+ dyn_c_pakistan_communist:0 "People's Republic of Pakistan"
+
+ dyn_c_pakistan_communistvote:0 "Democratic Republic of Pakistan"
+
+ dyn_c_pakistan_anarchy:0 "Pakistani Free Territories"
+
+ dyn_c_pakistan_dominion:0 "Dominion of Pakistan"
+
+ dyn_c_lanfang_puppet_CHI:0 "Lanfang Company"
+
+ dyn_c_korea_absolutist_monarchy:0 "Kingdom of Joseon"
+ 
+ dyn_c_korea_monarchy:0 "Kingdom of Joseon"
+
+ dyn_c_KOR_puppet_JAP:0 "Japanese Autority of Korea"
+
+ dyn_c_japan_absolutist_monarchy_mj:0 "Empire of Japan"
+ 
+ dyn_c_japan_monarchy_mj:0 "Empire of Japan"
+ 
+ dyn_c_armenia_absolutist_monarchy:0 "Kingdom of Armenia"
+ 
+ dyn_c_armenia_monarchy:0 "Kingdom of Armenia"
+ 
+ dyn_c_armenia_dictatorship:0 "Independent State of Armenia"
+ 
+ dyn_c_armenia_republic:0 "Armenia"
+ 
+ dyn_c_armenia_communist:0 "Socialist Union of Armenia"
+ 
+ dyn_c_armenia_communistvote:0 "Peoples Republic of Armenia"
+ 
+ dyn_c_armenia_theocratic:0 "Holy Kingdom of Armenia"
+ 
+ dyn_c_armenia_theocraticvote:0 "Holy Republic of Armenia"
+ 
+ dyn_c_armenia_anarchy:0 "United Communes of Armenia"
+ 
+ dyn_c_armenia_puppet_GBR:0 "British Armenia"
+ 
+ dyn_c_armenia_puppet_RUS:0 "Russian Armenia"
+ 
+ dyn_c_armenia_puppet_FRA:0 "French Armenia"
+ 
+ dyn_c_armenia_puppet_TUR:0 "Turkish Armenia"
+ 
+ dyn_c_romania_absolutist_monarchy:0 "Kingdom of Romania"
+ 
+ dyn_c_romania_monarchy:0 "Kingdom of Romania"
+ 
+ dyn_c_romania_dictatorship:0 "United Empire of Romania"
+ 
+ dyn_c_romania_republic:0 "Romania"
+ 
+ dyn_c_romania_communist:0 "Socialist State of Romania"
+ 
+ dyn_c_romania_communistvote:0 "Peoples Republic of Romania"
+ 
+ dyn_c_romania_theocratic:0 "Orthodox Union of Romania"
+ 
+ dyn_c_romania_theocraticvote:0 "Orthodox Republic of Romania"
+ 
+ dyn_c_romania_anarchy:0 "United Communes of Romania"
+ 
+ dyn_c_romania_puppet_GBR:0 "British Romania"
+ 
+ dyn_c_romania_puppet_RUS:0 "Russian Romania"
+ 
+ dyn_c_romania_puppet_FRA:0 "French Romania"
+ 
+ dyn_c_romania_puppet_TUR:0 "Turkish Romania"
+ 
+ dyn_c_bosnia_absolutist_monarchy:0 "Kingdom of Bosnia"
+ 
+ dyn_c_bosnia_monarchy:0 "Kingdom of Bosnia"
+ 
+ dyn_c_bosnia_dictatorship:0 "Free State of Bosnia"
+ 
+ dyn_c_bosnia_republic:0 "Bosnia-Herzegovina"
+ 
+ dyn_c_bosnia_communist:0 "Socialist Union of Bosnia"
+ 
+ dyn_c_bosnia_communistvote:0 "Peoples Republic of Bosnia"
+ 
+ dyn_c_bosnia_theocratic:0 "Bosnian Theocratic Union"
+ 
+ dyn_c_bosnia_theocraticvote:0 "Bosnian Theocratic Republic"
+ 
+ dyn_c_bosnia_anarchy:0 "Bosnian Autonomous Communes"
+ 
+ dyn_c_bosnia_puppet_GBR:0 "British Bosnia"
+ 
+ dyn_c_bosnia_puppet_RUS:0 "Russian Bosnia"
+ 
+ dyn_c_bosnia_puppet_FRA:0 "French Bosnia"
+ 
+ dyn_c_bosnia_puppet_TUR:0 "Turkish Bosnia"
+ 
+ dyn_c_bulgaria_absolutist_monarchy:0 "Kingdom of Bulgaria"
+ 
+ dyn_c_bulgaria_monarchy:0 "Kingdom of Bulgaria"
+ 
+ dyn_c_bulgaria_dictatorship:0 "Greater Empire of Bulgaria"
+ 
+ dyn_c_bulgaria_republic:0 "Bulgaria"
+ 
+ dyn_c_bulgaria_communist:0 "Autonomous Union of Bulgaria"
+ 
+ dyn_c_bulgaria_communistvote:0 "Autonomous Republic of Bulgaria"
+ 
+ dyn_c_bulgaria_theocratic:0 "Orthodox Kingdom of Bulgaria"
+ 
+ dyn_c_bulgaria_theocraticvote:0 "Orthodox Republic of Bulgaria"
+ 
+ dyn_c_bulgaria_anarchy:0 "Free Communes of Bulgaria"
+ 
+ dyn_c_bulgaria_puppet_GBR:0 "British Bulgaria"
+ 
+ dyn_c_bulgaria_puppet_RUS:0 "Russian Bulgaria"
+ 
+ dyn_c_bulgaria_puppet_FRA:0 "French Bulgaria"
+ 
+ dyn_c_bulgaria_puppet_TUR:0 "Turkish Bulgaria"
+ 
+ dyn_c_iraq_absolutist_monarchy:0 "Kingdom of Iraq"
+ 
+ dyn_c_iraq_monarchy:0 "Kingdom of Iraq"
+ 
+ dyn_c_iraq_dictatorship:0 "Greater Empire of Iraq"
+ 
+ dyn_c_iraq_republic:0 "Iraq"
+ 
+ dyn_c_iraq_communist:0 "Socialist Union of Iraq"
+ 
+ dyn_c_iraq_communistvote:0 "Peoples Republic of Iraq"
+ 
+ dyn_c_iraq_theocratic:0 "Islamic State of in Iraq"
+ 
+ dyn_c_iraq_theocraticvote:0 "Free Islamic Republic of Iraq"
+ 
+ dyn_c_iraq_anarchy:0 "Iraqi Autonomous Communes"
+ 
+ dyn_c_iraq_puppet_GBR:0 "British Iraq"
+ 
+ dyn_c_iraq_puppet_RUS:0 "Russian Iraq"
+ 
+ dyn_c_iraq_puppet_FRA:0 "French Iraq"
+ 
+ dyn_c_iraq_puppet_TUR:0 "Turkish Iraq"
+ 
+ dyn_c_cyprus_absolutist_monarchy:0 "Kingdom of Cyprus"
+ 
+ dyn_c_cyprus_monarchy:0 "Kingdom of Cyprus"
+ 
+ dyn_c_cyprus_dictatorship:0 "Independent State of Cyprus"
+ 
+ dyn_c_cyprus_republic:0 "Cyprus"
+ 
+ dyn_c_cyprus_communist:0 "Socialist State of Cyprus"
+ 
+ dyn_c_cyprus_communistvote:0 "Autonomous Republic of Cyprus"
+ 
+ dyn_c_cyprus_theocratic:0 "Theocratic Union of Cyprus"
+ 
+ dyn_c_cyprus_theocraticvote:0 "Theocratic Republic of Cyprus"
+ 
+ dyn_c_cyprus_anarchy:0 "Free Communes of Cyprus"
+ 
+ dyn_c_cyprus_puppet_GBR:0 "British Cyprus"
+ 
+ dyn_c_cyprus_puppet_RUS:0 "Russian Cyprus"
+ 
+ dyn_c_cyprus_puppet_FRA:0 "French Cyprus"
+ 
+ dyn_c_cyprus_puppet_TUR:0 "Turkish Cyprus"
+ 
+ dyn_c_syria_absolutist_monarchy:0 "Kingdom of Syria"
+ 
+ dyn_c_syria_monarchy:0 "Kingdom of Syria"
+ 
+ dyn_c_syria_dictatorship:0 "Syrian Empire"
+ 
+ dyn_c_syria_republic:0 "Syria"
+ 
+ dyn_c_syria_communist:0 "Socialist Republic of Syria"
+ 
+ dyn_c_syria_communistvote:0 "Autonomous Republic of Syria"
+ 
+ dyn_c_syria_theocratic:0 "Islamic League of Syria"
+ 
+ dyn_c_syria_theocraticvote:0 "Islamic Republic of Syria"
+ 
+ dyn_c_syria_anarchy:0 "Independent Communes of Syria"
+ 
+ dyn_c_syria_puppet_GBR:0 "British Syria"
+ 
+ dyn_c_syria_puppet_RUS:0 "Russian Syria"
+ 
+ dyn_c_syria_puppet_FRA:0 "French Syria"
+ 
+ dyn_c_syria_puppet_TUR:0 "Turkish Syria"
+ 
+ dyn_c_yugoslavia_absolutist_monarchy:0 "Kingdom of Yugoslavia"
+ 
+ dyn_c_yugoslavia_monarchy:0 "Kingdom of Yugoslavia"
+ 
+ dyn_c_yugoslavia_dictatorship:0 "Independent State of Yugoslavia"
+ 
+ dyn_c_yugoslavia_republic:0 "Yugoslavia"
+ 
+ dyn_c_yugoslavia_communist:0 "Socialist Republic of Yugoslavia"
+ 
+ dyn_c_yugoslavia_communistvote:0 "Socialist Federal Republic of Yugoslavia"
+ 
+ dyn_c_yugoslavia_theocratic:0 "Orthodox State of Yugoslavia"
+ 
+ dyn_c_yugoslavia_theocraticvote:0 "Orthodox Republic of Yugoslavia"
+ 
+ dyn_c_yugoslavia_anarchy:0 "Autonomous Communes of Yugoslavia"
+ 
+ dyn_c_yugoslavia_puppet_GBR:0 "British Yugoslavia"
+ 
+ dyn_c_yugoslavia_puppet_RUS:0 "Russian Yugoslavia"
+ 
+ dyn_c_yugoslavia_puppet_FRA:0 "French Yugoslavia"
+ 
+ dyn_c_yugoslavia_puppet_TUR:0 "Turkish Yugoslavia"
+ 
+ dyn_c_albania_absolutist_monarchy:0 "Kingdom of Albania"
+ 
+ dyn_c_albania_monarchy:0 "Kingdom of Albania"
+ 
+ dyn_c_albania_dictatorship:0 "Greater Albania"
+ 
+ dyn_c_albania_republic:0 "Albania"
+ 
+ dyn_c_albania_communist:0 "Socialist State of Albania"
+ 
+ dyn_c_albania_communistvote:0 "Democratic Socialist Republic of Albania"
+ 
+ dyn_c_albania_theocratic:0 "Orthodox Union of Albania"
+ 
+ dyn_c_albania_theocraticvote:0 "Orthodox Republic of Albania"
+ 
+ dyn_c_albania_anarchy:0 "Independent Communes of Albania"
+ 
+ dyn_c_albania_puppet_GBR:0 "British Albania"
+ 
+ dyn_c_albania_puppet_RUS:0 "Russian Albania"
+ 
+ dyn_c_albania_puppet_FRA:0 "French Albania"
+ 
+ dyn_c_albania_puppet_TUR:0 "Turkish Albania"
+ 
+ dyn_c_kurdistan_absolutist_monarchy:0 "Kingdom of Kurdistan"
+ 
+ dyn_c_kurdistan_monarchy:0 "Kingdom of Kurdistan"
+ 
+ dyn_c_kurdistan_dictatorship:0 "Free State of Kurdistan"
+ 
+ dyn_c_kurdistan_republic:0 "Kurdistan"
+ 
+ dyn_c_kurdistan_communist:0 "Workers Council of Kurdistan"
+ 
+ dyn_c_kurdistan_communistvote:0 "Democratic Socialist Republic of Kurdistan"
+ 
+ dyn_c_kurdistan_theocratic:0 "Islamic State of Kurdistan"
+ 
+ dyn_c_kurdistan_theocraticvote:0 "Islamic Republic of Kurdistan"
+ 
+ dyn_c_kurdistan_anarchy:0 "Autonomous Communes of Kurdistan"
+ 
+ dyn_c_kurdistan_puppet_GBR:0 "British Kurdistan"
+ 
+ dyn_c_kurdistan_puppet_RUS:0 "Russian Kurdistan"
+ 
+ dyn_c_kurdistan_puppet_FRA:0 "French Kurdistan"
+ 
+ dyn_c_kurdistan_puppet_TUR:0 "Turkish Kurdistan"
+ 
+ dyn_c_assyria_absolutist_monarchy:0 "Kingdom of Assyria"
+ 
+ dyn_c_assyria_monarchy:0 "Kingdom of Assyria"
+ 
+ dyn_c_assyria_dictatorship:0 "Independent Republic of Assyria"
+ 
+ dyn_c_assyria_republic:0 "Assyria"
+ 
+ dyn_c_assyria_communist:0 "Socialist State of Assyria"
+ 
+ dyn_c_assyria_communistvote:0 "Workers Republic of Assyria"
+ 
+ dyn_c_assyria_theocratic:0 "Islamic Union of Assyria"
+ 
+ dyn_c_assyria_theocraticvote:0 "Islamic Republic of Assyria"
+ 
+ dyn_c_assyria_anarchy:0 "United Communes of Assyria"
+ 
+ dyn_c_assyria_puppet_GBR:0 "British Assyria"
+ 
+ dyn_c_assyria_puppet_RUS:0 "Russian Assyria"
+ 
+ dyn_c_assyria_puppet_FRA:0 "French Assyria"
+ 
+ dyn_c_assyria_puppet_TUR:0 "Turkish Assyria"
+ 
+ dyn_c_transcaucasia_absolutist_monarchy:0 "Kingdom of Transcaucasia"
+ 
+ dyn_c_transcaucasia_monarchy:0 "Kingdom of Transcaucasia"
+ 
+ dyn_c_transcaucasia_dictatorship:0 "Independent Republic of Transcaucasia"
+ 
+ dyn_c_transcaucasia_republic:0 "Transcaucasia"
+ 
+ dyn_c_transcaucasia_communist:0 "Workers Council of Transcaucasia"
+ 
+ dyn_c_transcaucasia_communistvote:0 "Workers Republic of Transcaucasia"
+ 
+ dyn_c_transcaucasia_theocratic:0 "Free Islamic Republic of Transcaucasia"
+ 
+ dyn_c_transcaucasia_theocraticvote:0 "Democratic Islamic Republic of Transcaucasia"
+ 
+ dyn_c_transcaucasia_anarchy:0 "United Communes of Transcaucasia"
+ 
+ dyn_c_transcaucasia_puppet_GBR:0 "British Transcaucasia"
+ 
+ dyn_c_transcaucasia_puppet_RUS:0 "Russian Transcaucasia"
+ 
+ dyn_c_transcaucasia_puppet_FRA:0 "French Transcaucasia"
+ 
+ dyn_c_transcaucasia_puppet_TUR:0 "Turkish Transcaucasia"
+ 
+ dyn_c_ZAI_puppet_GBR:0 "British Quasimid State"
+
+ dyn_c_ZAI_puppet_FRA:0 "French Quasimid State"
+ 
+ dyn_c_LAH_puppet_GBR:0 "British Lahej"
+
+ dyn_c_LAH_puppet_FRA:0 "French Lahej"
+ 
+ dyn_c_KAT_puppet_GBR:0 "British Kathiri"
+ 
+ dyn_c_KAT_puppet_FRA:0 "French Kathiri"
+ 
+ dyn_c_MAH_puppet_GBR:0 "British Mahra"
+ 
+ dyn_c_MAH_puppet_FRA:0 "French Mahra"
+
+ dyn_c_OMA_puppet_GBR:0 "British Oman"
+ 
+ dyn_c_OMA_puppet_FRA:0 "French Oman"
+ 
+ dyn_c_ABU_puppet_GBR:0 "British Trucial States"
+ 
+ dyn_c_ABU_puppet_FRA:0 "French Trucial States"
+ 
+ dyn_c_BHN_puppet_GBR:0 "British Bahrain"
+ 
+ dyn_c_BHN_puppet_FRA:0 "French Bahrain"
+ 
+ dyn_c_bahrain_monarchy:0 "Hakimate of Bahrain"
+ 
+ dyn_c_trucial_states_monarchy:0 "Sheikdom of Abu Dhaibi"
+ 
+ dyn_c_mahra_monarchy:0 "Sultanate of Mahra"
+ 
+ dyn_c_oman_monarchy:0 "Sultanate of Oman"
+ 
+ dyn_c_kathiri_monarchy:0 "Sultanate of Kathiri"
+ 
+ dyn_c_lahej_monarchy:0 "Sultanate of Lahej"
+ 
+ dyn_c_quasimid_theocratic:0 "Quasimide Imamate"
+ 
+ dyn_c_TIB_puppet_CHI:0 "Chinese Tibet"
+
+ dyn_c_BUR_puppet_GBR:0 "British Burma"
+
+ dyn_c_BUR_puppet_FRA:0 "French Burma"
+ 
+ dyn_c_SIA_puppet_GBR:0 "British Siam"
+
+ dyn_c_SIA_puppet_FRA:0 "French Siam"
+ 
+ dyn_c_CAM_puppet_GBR:0 "British Cambodia"
+ 
+ dyn_c_CAM_puppet_FRA:0 "French Cambodia"
+ 
+ dyn_c_DEI_puppet_GBR:0 "British East Indies"
+ 
+ dyn_c_DEI_puppet_FRA:0 "French East Indies"
+ 
+ dyn_c_DAI_puppet_GBR:0 "British Indochina"
+ 
+ dyn_c_DAI_puppet_FRA:0 "French Indochina"
+ 
+ dyn_c_CHI_puppet_GBR:0 "British China"
+ 
+ dyn_c_CHI_puppet_FRA:0 "French China"
+ 
+ dyn_c_KOR_puppet_GBR:0 "British Korea"
+ 
+ dyn_c_KOR_puppet_FRA:0 "French Korea"
+ 
+ dyn_c_JAP_puppet_GBR:0 "British Japan"
+
+ dyn_c_JAP_puppet_FRA:0 "French Japan"
+
+ dyn_c_LUA_puppet_SIA:0 "Siamese Luang Prabang"
+ 
+ dyn_c_CMI_puppet_SIA:0 "Siamese Chiang Mai"
+ 
+ dyn_c_CAM_puppet_SIA:0 "Siamese Cambodia"
+ 
+ dyn_c_CHP_puppet_SIA:0 "Siamese Champassak"
+
+ dyn_c_AFG_puppet_RUS:0 "Russian Afghanistan"
+ 
+ dyn_c_AFG_puppet_FRA:0 "French Afghanistan"
+ 
+ dyn_c_AFG_puppet_GBR:0 "British Afghanistan"
+ 
+ dyn_c_KOK_puppet_RUS:0 "Russian Kokand"
+ 
+ dyn_c_KOK_puppet_FRA:0 "French Kokand"
+
+ dyn_c_KOK_puppet_GBR:0 "British Kokand"
+ 
+ dyn_c_KHI_puppet_RUS:0 "Russian Khiva"
+ 
+ dyn_c_KHI_puppet_FRA:0 "French Khiva"
+ 
+ dyn_c_KHI_puppet_GBR:0 "British Khiva"
+ 
+ dyn_c_SIN_puppet_RUS:0 "Russian Sindh"
+ 
+ dyn_c_SIN_puppet_FRA:0 "French Sindh"
+ 
+ dyn_c_SIN_puppet_GBR:0 "British Sindh"
+ 
+ dyn_c_PAN_puppet_RUS:0 "Russian Punjab"
+ 
+ dyn_c_PAN_puppet_FRA:0 "French Punjab"
+ 
+ dyn_c_PAN_puppet_GBR:0 "British Punjab"
+ 
+ dyn_c_BUK_puppet_RUS:0 "Russian Bukhara"
+ 
+ dyn_c_BUK_puppet_FRA:0 "French Bukhara"
+ 
+ dyn_c_BUK_puppet_GBR:0 "British Bukhara"
+ 
+ dyn_c_KAL_puppet_RUS:0 "Russian Kalat"
+ 
+ dyn_c_KAL_puppet_FRA:0 "French Kalat"
+ 
+ dyn_c_KAL_puppet_GBR:0 "British Kalat"
+ 
+ dyn_c_MAK_puppet_RUS:0 "Russian Makran"
+ 
+ dyn_c_MAK_puppet_FRA:0 "French Makran"
+ 
+ dyn_c_MAK_puppet_GBR:0 "British Makran"
+
+ dyn_c_bukhara_absolutist_monarchy:0 "Emirate of Bukhara"
+
+ dyn_c_bukhara_monarchy:0 "Emirate of Bukhara"
+
+ dyn_c_bukhara_dictatorship:0 "Empire of Bukhara"
+ 
+ dyn_c_bukhara_republic:0 "Bukhara"
+ 
+ dyn_c_bukhara_communist:0 "Socialist Union of Bukhara"
+ 
+ dyn_c_bukhara_communistvote:0 "Socialist Republic of Bukhara"
+ 
+ dyn_c_bukhara_theocratic:0 "Islamic State of Bukhara"
+ 
+ dyn_c_bukhara_theocraticvote:0 "Islamic Republic of Bukhara"
+ 
+ dyn_c_bukhara_anarchy:0 "Communes of Bukhara"
+ 
+ dyn_c_khiva_absolutist_monarchy:0 "Khanate of Khiva"
+ 
+ dyn_c_khiva_monarchy:0 "Khanate of Khiva"
+ 
+ dyn_c_khiva_dictatorship:0 "Free State of Khiva"
+ 
+ dyn_c_khiva_republic:0 "Khiva"
+ 
+ dyn_c_khiva_communist:0 "Workers Union of Khiva"
+ 
+ dyn_c_khiva_communistvote:0 "Workers Republic of Khiva"
+ 
+ dyn_c_khiva_theocratic:0 "Islamic League of Khiva"
+ 
+ dyn_c_khiva_theocraticvote:0 "Free Islamic Republic of Khiva"
+ 
+ dyn_c_khiva_anarchy:0 "Free Communes of Khiva"
+ 
+ dyn_c_kokand_absolutist_monarchy:0 "Khanate of Kokand"
+ 
+ dyn_c_kokand_monarchy:0 "Khanate of Kokand"
+ 
+ dyn_c_kokand_dictatorship:0 "Greater Kokand"
+ 
+ dyn_c_kokand_republic:0 "Kokand"
+ 
+ dyn_c_kokand_communist:0 "Socialist State of Kokand"
+ 
+ dyn_c_kokand_communistvote:0 "Democratic Socialist Republic of Kokand"
+ 
+ dyn_c_kokand_theocratic:0 "Islamic State of Kokand"
+ 
+ dyn_c_kokand_theocraticvote:0 "Islamic Republic of Kokand"
+ 
+ dyn_c_kokand_anarchy:0 "Free Unified Communes of Kokand"
+ 
+ dyn_c_afghanistan_absolutist_monarchy:0 "Emirate of Aghanistan"
+ 
+ dyn_c_afghanistan_monarchy:0 "Emirate of Aghanistan"
+ 
+ dyn_c_afghanistan_dictatorship:0 "Free State of Afghanistan"
+ 
+ dyn_c_afghanistan_republic:0 "Republic of Afghanistan"
+ 
+ dyn_c_afghanistan_communist:0 "Socialist Union of Afghanistan"
+ 
+ dyn_c_afghanistan_communistvote:0 "Socialist Republic of Afghanistan"
+ 
+ dyn_c_afghanistan_theocratic:0 "Islamic Emirate of Afghanistan"
+ 
+ dyn_c_afghanistan_theocraticvote:0 "Free Islamic Republic of Afghanistan"
+ 
+ dyn_c_afghanistan_anarchy:0 "Communes of Afghanistan"
+ 
+ dyn_c_sindh_absolutist_monarchy:0 "Emirate of Sindh"
+ 
+ dyn_c_sindh_monarchy:0 "Emirate of Sindh"
+ 
+ dyn_c_sindh_dictatorship:0 "Empire of Sindh"
+ 
+ dyn_c_sindh_republic:0 "Sindh"
+ 
+ dyn_c_sindh_communist:0 "Socialist Republic of Sindh"
+ 
+ dyn_c_sindh_communistvote:0 "Free Socialist Republic of Sindh"
+ 
+ dyn_c_sindh_theocratic:0 "Islamic Union of Sindh"
+
+ dyn_c_sindh_theocraticvote:0 "Free Islamic Republic of Sindh"
+ 
+ dyn_c_sindh_anarchy:0 "Autonomous Communes of Sindh"
+ 
+ dyn_c_makran_absolutist_monarchy:0 "Emirate of Makran"
+ 
+ dyn_c_makran_monarchy:0 "Emirate of Makran"
+ 
+ dyn_c_makran_dictatorship:0 "United Empire of Makran"
+ 
+ dyn_c_makran_republic:0 "Makran"
+ 
+ dyn_c_makran_communist:0 "Socialist Union of Makran"
+ 
+ dyn_c_makran_communistvote:0 "Socialist Republic of Makran"
+ 
+ dyn_c_makran_theocratic:0 "Free Islamic State of Makran"
+ 
+ dyn_c_makran_theocraticvote:0 "Islamic Republic of Makran"
+ 
+ dyn_c_makran_anarchy:0 "Independent Communes of Makran"
+ 
+ dyn_c_kalat_absolutist_monarchy:0 "Khanate of Kalat"
+ 
+ dyn_c_kalat_monarchy:0 "Khanate of Kalat"
+ 
+ dyn_c_kalat_dictatorship:0 "Independent State of Kalat"
+ 
+ dyn_c_kalat_republic:0 "Kalat"
+ 
+ dyn_c_kalat_communist:0 "Socialist Republic of Kalat"
+ 
+ dyn_c_kalat_communistvote:0 "Free Socialist Republic of Kalat"
+ 
+ dyn_c_kalat_theocratic:0 "Islamic Union of Kalat"
+ 
+ dyn_c_kalat_theocraticvote:0 "United Islamic People of Kalat"
+
+ dyn_c_kalat_anarchy:0 "Communes of Kalat"
+ 
+ dyn_c_sikh_absolutist_monarchy:0 "Khalsa Raj"
+ 
+ dyn_c_sikh_monarchy:0 "Khalsa Raj"
+ 
+ dyn_c_sikh_dictatorship:0 "Independent Republic of the Sikhs"
+ 
+ dyn_c_sikh_republic:0 "Sikh Republic"
+ 
+ dyn_c_sikh_communist:0 "Autonomous Union of the Sikhs"
+ 
+ dyn_c_sikh_communistvote:0 "Autonomous Republic of the Sikhs"
+ 
+ dyn_c_sikh_theocratic:0 "Theocratic Empire of the Sikhs"
+ 
+ dyn_c_sikh_theocraticvote:0 "Theocratic Republic of the Sikhs"
+ 
+ dyn_c_sikh_anarchy:0 "United Communes of the Sikhs"
+
+ dyn_c_grancolombia_absolutist_monarchy:0 "Kingdom of Gran Colombia"
+ 
+ dyn_c_grancolombia_monarchy:0 "Kingdom of Gran Colombia"
+ 
+ dyn_c_grancolombia_dictatorship:0 "Greater Empire of Gran Colombia"
+ 
+ dyn_c_grancolombia_republic:0 "Gran Colombia"
+ 
+ dyn_c_grancolombia_communist:0 "Peoples Union of Gran Colombia"
+ 
+ dyn_c_grancolombia_communistvote:0 "Socialist Union of Gran Colombia"
+ 
+ dyn_c_grancolombia_theocratic:0 "Catholic Union of Gran Colombia"
+ 
+ dyn_c_grancolombia_theocraticvote:0 "Catholic Republic of Gran Colombia"
+ 
+ dyn_c_grancolombia_anarchy:0 "Anarchistic Communes of Gran Colombia"
+ 
+ dyn_c_GCO_puppet_FRA:0 "French Gran Colombia"
+ 
+ dyn_c_GCO_puppet_SPA:0 "Spanish Gran Colombia"
+ 
+ dyn_c_GCO_puppet_GBR:0 "British Gran Colombia"
+ 
+ dyn_c_GCO_puppet_USA:0 "American Gran Colombia"
+ 
+ dyn_c_GCO_puppet_BRZ:0 "Brazilian Gran Colombia"
+
+ dyn_c_uruguay_absolutist_monarchy:0 "Kingdom of Uruguay"
+ 
+ dyn_c_uruguay_monarchy:0 "Kingdom of Uruguay"
+ 
+ dyn_c_uruguay_dictatorship:0 "Uruguay"
+ 
+ dyn_c_uruguay_republic:0 "Uruguay"
+ 
+ dyn_c_uruguay_communist:0 "Socialist Republic of Uruguay"
+ 
+ dyn_c_uruguay_communistvote:0 "Socialist Democratic Republic of Uruguay"
+ 
+ dyn_c_uruguay_theocratic:0 "Theocratic Order of Uruguay"
+ 
+ dyn_c_uruguay_theocraticvote:0 "Theocratic Republic of Uruguay"
+ 
+ dyn_c_uruguay_anarchy:0 "Anarchistic Communes of Uruguay"
+ 
+ dyn_c_URU_puppet_FRA:0 "French Uruguay"
+ 
+ dyn_c_URU_puppet_SPA:0 "Spanish Uruguay"
+ 
+ dyn_c_URU_puppet_GBR:0 "British Uruguay"
+ 
+ dyn_c_URU_puppet_USA:0 "American Uruguay"
+ 
+ dyn_c_URU_puppet_BRZ:0 "Brazilian Uruguay"
+
+ dyn_c_ARG_puppet_FRA:0 "French Argentina"
+ 
+ dyn_c_BOL_puppet_FRA:0 "French Bolivia"
+ 
+ dyn_c_BRZ_puppet_FRA:0 "French Brazil"
+ 
+ dyn_c_CHL_puppet_FRA:0 "French Chile"
+ 
+ dyn_c_CLM_puppet_FRA:0 "French Colombia"
+ 
+ dyn_c_COS_puppet_FRA:0 "French Costa Rica"
+ 
+ dyn_c_ECU_puppet_FRA:0 "French Ecuador"
+ 
+ dyn_c_ELS_puppet_FRA:0 "French El Salvador"
+ 
+ dyn_c_GUA_puppet_FRA:0 "French Guatemala"
+ 
+ dyn_c_HON_puppet_FRA:0 "French Honduras"
+ 
+ dyn_c_MKT_puppet_FRA:0 "French Miskito"
+ 
+ dyn_c_NIC_puppet_FRA:0 "French Nicaragua"
+ 
+ dyn_c_PEU_puppet_FRA:0 "French Peru"
+ 
+ dyn_c_PRG_puppet_FRA:0 "French Paraguay"
+ 
+ dyn_c_UCA_puppet_FRA:0 "French Central America"
+ 
+ dyn_c_VNZ_puppet_FRA:0 "French Venezuela"
+ 
+ dyn_c_ARG_puppet_GBR:0 "British Argentina"
+ 
+ dyn_c_BOL_puppet_GBR:0 "British Bolivia"
+ 
+ dyn_c_BRZ_puppet_GBR:0 "British Brazil"
+ 
+ dyn_c_CHL_puppet_GBR:0 "British Chile"
+ 
+ dyn_c_CLM_puppet_GBR:0 "British Colombia"
+ 
+ dyn_c_COS_puppet_GBR:0 "British Costa Rica"
+ 
+ dyn_c_ECU_puppet_GBR:0 "British Ecuador"
+ 
+ dyn_c_ELS_puppet_GBR:0 "British El Salvador"
+ 
+ dyn_c_GUA_puppet_GBR:0 "British Guatemala"
+ 
+ dyn_c_HON_puppet_GBR:0 "British Honduras"
+ 
+ dyn_c_MKT_puppet_GBR:0 "British Miskito"
+ 
+ dyn_c_NIC_puppet_GBR:0 "British Nicaragua"
+ 
+ dyn_c_PEU_puppet_GBR:0 "British Peru"
+ 
+ dyn_c_PRG_puppet_GBR:0 "British Paraguay"
+ 
+ dyn_c_UCA_puppet_GBR:0 "British Central America"
+ 
+ dyn_c_VNZ_puppet_GBR:0 "British Venezuela"
+ 
+ dyn_c_ARG_puppet_BRZ:0 "Brazilian Argentina"
+ 
+ dyn_c_BOL_puppet_BRZ:0 "Brazilian Bolivia"
+ 
+ dyn_c_CHL_puppet_BRZ:0 "Brazilian Chile"
+ 
+ dyn_c_CLM_puppet_BRZ:0 "Brazilian Colombia"
+ 
+ dyn_c_COS_puppet_BRZ:0 "Brazilian Costa Rica"
+ 
+ dyn_c_ECU_puppet_BRZ:0 "Brazilian Ecuador"
+ 
+ dyn_c_ELS_puppet_BRZ:0 "Brazilian El Salvador"
+ 
+ dyn_c_GUA_puppet_BRZ:0 "Brazilian Guatemala"
+ 
+ dyn_c_HON_puppet_BRZ:0 "Brazilian Honduras"
+ 
+ dyn_c_MKT_puppet_BRZ:0 "Brazilian Miskito"
+ 
+ dyn_c_NIC_puppet_BRZ:0 "Brazilian Nicaragua"
+ 
+ dyn_c_PEU_puppet_BRZ:0 "Brazilian Peru"
+ 
+ dyn_c_PRG_puppet_BRZ:0 "Brazilian Paraguay"
+ 
+ dyn_c_UCA_puppet_BRZ:0 "Brazilian Central America"
+
+ dyn_c_VNZ_puppet_BRZ:0 "Brazilian Venezuela"
+ 
+ dyn_c_ARG_puppet_USA:0 "American Argentina"
+ 
+ dyn_c_BOL_puppet_USA:0 "American Bolivia"
+ 
+ dyn_c_BRZ_puppet_USA:0 "American Brazil"
+ 
+ dyn_c_CHL_puppet_USA:0 "American Chile"
+ 
+ dyn_c_CLM_puppet_USA:0 "American Colombia"
+ 
+ dyn_c_COS_puppet_USA:0 "American Costa Rica"
+ 
+ dyn_c_ECU_puppet_USA:0 "American Ecuador"
+ 
+ dyn_c_ELS_puppet_USA:0 "American El Salvador"
+ 
+ dyn_c_GUA_puppet_USA:0 "American Guatemala"
+ 
+ dyn_c_HON_puppet_USA:0 "American Honduras"
+ 
+ dyn_c_MKT_puppet_USA:0 "American Miskito"
+ 
+ dyn_c_NIC_puppet_USA:0 "American Nicaragua"
+ 
+ dyn_c_PEU_puppet_USA:0 "American Peru"
+ 
+ dyn_c_PRG_puppet_USA:0 "American Paraguay"
+ 
+ dyn_c_UCA_puppet_USA:0 "American Central America"
+ 
+ dyn_c_VNZ_puppet_USA:0 "American Venezuela"
+ 
+ dyn_c_ARG_puppet_SPA:0 "Spanish Argentina"
+ 
+ dyn_c_BOL_puppet_SPA:0 "Spanish Bolivia"
+ 
+ dyn_c_BRZ_puppet_SPA:0 "Spanish Brazil"
+ 
+ dyn_c_CHL_puppet_SPA:0 "Spanish Chile"
+ 
+ dyn_c_CLM_puppet_SPA:0 "Spanish Colombia"
+ 
+ dyn_c_COS_puppet_SPA:0 "Spanish Costa Rica"
+ 
+ dyn_c_ECU_puppet_SPA:0 "Spanish Ecuador"
+ 
+ dyn_c_ELS_puppet_SPA:0 "Spanish El Salvador"
+ 
+ dyn_c_GUA_puppet_SPA:0 "Spanish Guatemala"
+ 
+ dyn_c_HON_puppet_SPA:0 "Spanish Honduras"
+ 
+ dyn_c_MKT_puppet_SPA:0 "Spanish Miskito"
+ 
+ dyn_c_NIC_puppet_SPA:0 "Spanish Nicaragua"
+ 
+ dyn_c_PEU_puppet_SPA:0 "Spanish Peru"
+ 
+ dyn_c_PRG_puppet_SPA:0 "Spanish Paraguay"
+ 
+ dyn_c_UCA_puppet_SPA:0 "Spanish Central America"
+ 
+ dyn_c_VNZ_puppet_SPA:0 "Spanish Venezuela"
+
+ dyn_c_paraguay_absolutist_monarchy:0 "Kindom of Paraguay"
+
+ dyn_c_paraguay_monarchy:0 "Kindom of Paraguay"
+
+ dyn_c_paraguay_dictatorship:0 "State of Paraguay"
+
+ dyn_c_paraguay_republic:0 "Republic of Paraguay"
+
+ dyn_c_paraguay_communist:0 "Socialist State  of Paraguay"
+
+ dyn_c_paraguay_communistvote:0 "Socialist Republic  of Paraguay"
+ 
+ dyn_c_peru_absolutist_monarchy:0 "Kingdom of Peru"
+ 
+ dyn_c_peru_monarchy:0 "Kingdom of Peru"
+ 
+ dyn_c_peru_dictatorship:0 "Peru"
+ 
+ dyn_c_peru_republic:0 "Peru"
+ 
+ dyn_c_peru_communist:0 "Democratic Socialist Republic of Peru"
+ 
+ dyn_c_peru_communistvote:0 "Peoples Republic of Peru"
+ 
+ dyn_c_peru_theocratic:0 "Theocratic Empire of Peru"
+ 
+ dyn_c_peru_theocraticvote:0 "Theocratic Republic of Peru"
+ 
+ dyn_c_peru_anarchy:0 "Independent Communes of Peru"
+
+ dyn_c_miskito_absolutist_monarchy:0 "Miskito Kingdom"
+ 
+ dyn_c_miskito_monarchy:0 "Miskito Kingdom"
+ 
+ dyn_c_miskito_dictatorship:0 "Miskito Empire"
+ 
+ dyn_c_miskito_republic:0 "Miskito"
+ 
+ dyn_c_miskito_communist:0 "Socialist Union of Miskito"
+ 
+ dyn_c_miskito_communistvote:0 "Autonomous State of Miskito"
+ 
+ dyn_c_miskito_theocratic:0 "Theocratic Kingdom of Miskito"
+ 
+ dyn_c_miskito_theocraticvote:0 "Theocratic Empire of Miskito"
+ 
+ dyn_c_miskito_anarchy:0 "Autonomous Communes of Miskito"
+ 
+ dyn_c_elsalvador_absolutist_monarchy:0 "Kingdom of El Salvador"
+ 
+ dyn_c_elsalvador_monarchy:0 "Kingdom of El Salvador"
+ 
+ dyn_c_elsalvador_dictatorship:0 "Independent El Salvador"
+ 
+ dyn_c_elsalvador_republic:0 "El Salvador"
+ 
+ dyn_c_elsalvador_communist:0 "Socialist Union of El Salvador"
+ 
+ dyn_c_elsalvador_communistvote:0 "Peoples Republic of El Salvador"
+ 
+ dyn_c_elsalvador_theocratic:0 "Catholic Republic of El Salvador"
+ 
+ dyn_c_elsalvador_theocraticvote:0 "Catholic Order of El Salvador"
+ 
+ dyn_c_elsalvador_anarchy:0 "Free Communes of El Salvador"
+ 
+ dyn_c_costarica_absolutist_monarchy:0 "Kingdom of Costa Rica"
+ 
+ dyn_c_costarica_monarchy:0 "Kingdom of Costa Rica"
+ 
+ dyn_c_costarica_dictatorship:0 "Empire of Costa Rica"
+ 
+ dyn_c_costarica_republic:0 "Costa Rica"
+ 
+ dyn_c_costarica_communist:0 "Autonomous Union of Costa Rica"
+ 
+ dyn_c_costarica_communistvote:0 "Socialist Republic of Costa Rica"
+ 
+ dyn_c_costarica_theocratic:0 "Catholic Union of Costa Rica"
+ 
+ dyn_c_costarica_theocraticvote:0 "Catholic Republic of Costa Rica"
+ 
+ dyn_c_costarica_anarchy:0 "Commune of Costa Rica"
+ 
+ dyn_c_honduras_absolutist_monarchy:0 "Kingdom of Honduras"
+ 
+ dyn_c_honduras_monarchy:0 "Kingdom of Honduras"
+ 
+ dyn_c_honduras_dictatorship:0 "Empire of Honduras"
+ 
+ dyn_c_honduras_republic:0 "Republic of Honduras"
+ 
+ dyn_c_honduras_communist:0 "Socialist State of Honduras"
+ 
+ dyn_c_honduras_communistvote:0 "Autonomous Republic of Honduras"
+ 
+ dyn_c_honduras_theocratic:0 "Holy Order of Honduras"
+ 
+ dyn_c_honduras_theocraticvote:0 "Holy Republic of Honduras"
+ 
+ dyn_c_honduras_anarchy:0 "Autonomous Territories of Honduras"
+ 
+ dyn_c_guatemala_absolutist_monarchy:0 "Kingdom of Guatemala"
+ 
+ dyn_c_guatemala_monarchy:0 "Kingdom of Guatemala"
+ 
+ dyn_c_guatemala_dictatorship:0 "Empire of Guatemala"
+ 
+ dyn_c_guatemala_republic:0 "Guatemalan Republic"
+ 
+ dyn_c_guatemala_communist:0 "Socialist Union of Guatemala"
+ 
+ dyn_c_guatemala_communistvote:0 "Socialist Republic of Guatemala"
+ 
+ dyn_c_guatemala_theocratic:0 "Catholic Union of Guatemala"
+ 
+ dyn_c_guatemala_theocraticvote:0 "Catholic Republic of Guatemala"
+ 
+ dyn_c_guatemala_anarchy:0 "Communes of Guatemala"
+ 
+ dyn_c_nicaragua_absolutist_monarchy:0 "Kingdom of Nicaragua"
+ 
+ dyn_c_nicaragua_monarchy:0 "Kingdom of Nicaragua""
+ 
+ dyn_c_nicaragua_dictatorship:0 "Free State of Nicaragua"
+ 
+ dyn_c_nicaragua_republic:0 "Nicaraguan Republic"
+ 
+ dyn_c_nicaragua_communist:0 "Socialist State of Nicaragua"
+ 
+ dyn_c_nicaragua_communistvote:0 "Free Socialist Republic of Nicaragua"
+ 
+ dyn_c_nicaragua_theocratic:0 "Holy Order of Nicaragua"
+ 
+ dyn_c_nicaragua_theocraticvote:0 "Church Republic of Nicaragua"
+ 
+ dyn_c_nicaragua_anarchy:0 "Autonomous Territories of Nicaragua"
+ 
+ dyn_c_newgranada_absolutist_monarchy:0 "Kingdom of Great-Colombia"
+ 
+ dyn_c_newgranada_monarchy:0 "Kingdom of Great-Colombia"
+ 
+ dyn_c_newgranada_dictatorship:0 "Empire of Great-Colombia"
+ 
+ dyn_c_newgranada_republic:0 "Federal Republic of New Granada"
+ 
+ dyn_c_newgranada_communist:0 "Peoples Union of Colombia"
+ 
+ dyn_c_newgranada_communistvote:0 "Socialist Federal Republic of Colombia"
+ 
+ dyn_c_newgranada_theocratic:0 "Catholic Union of Colombia"
+ 
+ dyn_c_newgranada_theocraticvote:0 "Catholic Republic of Colombia"
+ 
+ dyn_c_newgranada_anarchy:0 "Free New Granada"
+
+ dyn_c_ION_puppet_GRE:0 "Greek Ionian Islands"
+ 
+ dyn_c_ION_puppet_TUR:0 "Turkish Ionian Islands"
+ 
+ dyn_c_ION_puppet_GBR:0 "British Ionian Islands"
+
+ dyn_c_philippines_absolutist_monarchy:0 "Kingdom of the Philippines"
+ 
+ dyn_c_philippines_monarchy:0 "Kingdom of the Philippines"
+ 
+ dyn_c_philippines_dictatorship:0 "Empire of the Philippines"
+ 
+ dyn_c_philippines_republic:0 "Republic ofPhilippines"
+ 
+ dyn_c_philippines_communist:0 "Workers State of the Philippines"
+ 
+ dyn_c_philippines_communistvote:0 "Socialist Peoples Republic of the Philippines"
+ 
+ dyn_c_philippines_theocratic:0 "Catholic Order of the Philippines"
+ 
+ dyn_c_philippines_theocraticvote:0 "Catholic Republic of the Philippines"
+ 
+ dyn_c_philippines_anarchy:0 "Free Philippines"
+ 
+ dyn_c_PHI_puppet_SPA:0 "Spanish Philippines"
+ 
+ dyn_c_PHI_puppet_USA:0 "American Philippines"
+ 
+ dyn_c_PHI_puppet_FRA:0 "French Philippines"
+ 
+ dyn_c_PHI_puppet_GBR:0 "British Philippines"
+ 
+ dyn_c_EGY_puppet_TUR:0 "Turkish Egypt"
+ 
+ dyn_c_EGY_puppet_GBR:0 "British Egypt"
+ 
+ dyn_c_EGY_puppet_FRA:0 "French Egypt"
+ 
+ dyn_c_ethiopia_absolutist_monarchy:0 "Kingdom of Ethiopia"
+ 
+ dyn_c_ethiopia_monarchy:0 "Kingdom of Ethiopia"
+ 
+ dyn_c_ethiopia_dictatorship:0 "Ethiopian Empire"
+ 
+ dyn_c_ethiopia_republic:0 "Ethiopia"
+ 
+ dyn_c_ethiopia_communist:0 "Ethiopian Peoples Republic"
+ 
+ dyn_c_ethiopia_communistvote:0 "Democratic Peoples Republic of Ethiopia"
+ 
+ dyn_c_ethiopia_theocratic:0 "Orthodox Empire of Ethiopia"
+ 
+ dyn_c_ethiopia_theocraticvote:0 "Orthodox Republic of Ethiopia"
+ 
+ dyn_c_ethiopia_anarchy:0 "Ethiopian Communes"
+ 
+ dyn_c_ETH_puppet_GBR:0 "British Ethiopia"
+ 
+ dyn_c_nejd_absolutist_monarchy:0 "Emirate of Nejd"
+ 
+ dyn_c_nejd_monarchy:0 "Emirate of Nejd"
+ 
+ dyn_c_nejd_dictatorship:0 "Empire of Nejd"
+ 
+ dyn_c_nejd_republic:0 "Nejd"
+ 
+ dyn_c_nejd_communist:0 "Socialist State of Nejd"
+ 
+ dyn_c_nejd_communistvote:0 "Peoples Republic of Nejd"
+ 
+ dyn_c_nejd_theocratic:0 "Islamic State of Nejd"
+ 
+ dyn_c_nejd_theocraticvote:0 "Islamic Republic of Nejd"
+ 
+ dyn_c_nejd_anarchy:0 "Independent Communes of Nejd"
+ 
+ dyn_c_NEJ_puppet_GBR:0 "British Nejd"
+ 
+ dyn_c_jabal_absolutist_monarchy:0 "Emirate of Jabal Shammar"
+ 
+ dyn_c_jabal_monarchy:0 "Emirate of Jabal Shammar"
+ 
+ dyn_c_jabal_dictatorship:0 "Empire of Jabal Shammar"
+ 
+ dyn_c_jabal_republic:0 "Jabal Shammar"
+ 
+ dyn_c_jabal_communist:0 "Peoples Republic of Jabal Shammar"
+ 
+ dyn_c_jabal_communistvote:0 "Socialist Union of Jabal Shammar"
+ 
+ dyn_c_jabal_theocratic:0 "Islamic State of Jabal Shammar"
+ 
+ dyn_c_jabal_theocraticvote:0 "Islamic Republic of Jabal Shammar"
+ 
+ dyn_c_jabal_anarchy:0 "Communes of Jabal Shammar"
+
+ dyn_c_hedjaz_absolutist_monarchy:0 "Sharifate of Hedjaz"
+ 
+ dyn_c_hedjaz_monarchy:0 "Sharifate of Hedjaz"
+ 
+ dyn_c_hedjaz_dictatorship:0 "Empire of Hedjaz"
+ 
+ dyn_c_hedjaz_republic:0 "Republic of Hedjaz"
+ 
+ dyn_c_hedjaz_communist:0 "Peoples Republic of Hedjaz"
+ 
+ dyn_c_hedjaz_communistvote:0 "Peoples Republic of Hedjaz"
+ 
+ dyn_c_hedjaz_theocratic:0 "Islamic State of Hedjaz"
+ 
+ dyn_c_hedjaz_theocraticvote:0 "Islamic Republic of Hedjaz"
+ 
+ dyn_c_hedjaz_anarchy:0 "Free Communes of Hedjaz"
+
+ dyn_c_morocco_absolutist_monarchy:0 "Sultanate of Morocco"
+ 
+ dyn_c_morocco_monarchy:0 "Sultanate of Morocco"
+ 
+ dyn_c_morocco_dictatorship:0 "Empire of Morocco"
+ 
+ dyn_c_morocco_republic:0 "Republic of Morocco"
+ 
+ dyn_c_morocco_communist:0 "Moroccan Social Republic"
+ 
+ dyn_c_morocco_communistvote:0 "Moroccan Social Republic"
+ 
+ dyn_c_morocco_theocratic:0 "Islamic State of Morocco"
+ 
+ dyn_c_morocco_theocraticvote:0 "Islamic Republic of Morocco"
+ 
+ dyn_c_morocco_anarchy:0 "Independent Communes of Morocco"
+
+ dyn_c_tunis_absolutist_monarchy:0 "Beylik of Tunis"
+ 
+ dyn_c_tunis_monarchy:0 "Beylik of Tunis"
+ 
+ dyn_c_tunis_dictatorship:0 "National State of Tunis"
+ 
+ dyn_c_tunis_republic:0 "Tunisian Republic"
+ 
+ dyn_c_tunis_communist:0 "Workers Republic of Tunis"
+ 
+ dyn_c_tunis_communistvote:0 "Workkers Republic of Tunis"
+ 
+ dyn_c_tunis_theocratic:0 "Islamic State of Tunis"
+ 
+ dyn_c_tunis_theocraticvote:0 "Islamic Republic of Tunis"
+ 
+ dyn_c_tunis_anarchy:0 "Free Communes of Tunis"
+ 
+ dyn_c_TUN_puppet_TUR:0 "Turkish Tunis"
+
+ dyn_c_tripolitania_absolutist_monarchy:0 "Emirate of Tripolitania"
+ 
+ dyn_c_tripolitania_monarchy:0 "Emirate of Tripolitania"
+ 
+ dyn_c_tripolitania_dictatorship:0 "Tripolitanian Empire"
+ 
+ dyn_c_tripolitania_republic:0 "Republic of Tripolitania"
+ 
+ dyn_c_tripolitania_communist:0 "Workers Union of Tripolitania"
+ 
+ dyn_c_tripolitania_communistvote:0 "Tripolitanian Socialist Republic"
+ 
+ dyn_c_tripolitania_theocratic:0 "Islamic State of Tripolitania"
+ 
+ dyn_c_tripolitania_theocraticvote:0 "Islamic Republic of Tripolitania"
+ 
+ dyn_c_tripolitania_anarchy:0 "Free Tripolitania"
+
+ dyn_c_constantine_absolutist_monarchy:0 "Beylik of Constantine"
+ 
+ dyn_c_constantine_monarchy:0 "Beylik of Constantine"
+ 
+ dyn_c_constantine_dictatorship:0 "National State of Constantine"
+ 
+ dyn_c_constantine_republic:0 "Republic of Constantine"
+ 
+ dyn_c_constantine_communist:0 "Constantine Socialist Union"
+ 
+ dyn_c_constantine_communistvote:0 "Constantine Socialist Republic"
+ 
+ dyn_c_constantine_theocratic:0 "Islamic State of Constantine"
+ 
+ dyn_c_constantine_theocraticvote:0 "Islamic Republic of Constantine"
+ 
+ dyn_c_constantine_anarchy:0 "Free Communes of Constantine"
+
+ dyn_c_abbas_absolutist_monarchy:0 "Sultanate of the Ait Abbas"
+ 
+ dyn_c_abbas_monarchy:0 "Constitutional Sultanate of the Ait Abbas"
+ 
+ dyn_c_abbas_dictatorship:0 "Empire of the Ait Abbas"
+ 
+ dyn_c_abbas_republic:0 "Republic of the Ait Abbas"
+ 
+ dyn_c_abbas_communist:0 "Ait Abbas Workers Union"
+ 
+ dyn_c_abbas_communistvote:0 "Ait Abbas Workers Republic"
+ 
+ dyn_c_abbas_theocratic:0 "Islamic State of the Ait Abbas"
+ 
+ dyn_c_abbas_theocraticvote:0 "Islamic Republic of the Ait Abbas"
+ 
+ dyn_c_abbas_anarchy:0 "Communes of the Ait Abbas"
+
+ dyn_c_touggourt_absolutist_monarchy:0 "Sultanate of Touggourt"
+ 
+ dyn_c_touggourt_monarchy:0 "Constitutional Sultanate of Touggourt"
+ 
+ dyn_c_touggourt_dictatorship:0 "Touggourt Free Republic"
+ 
+ dyn_c_touggourt_republic:0 "Republic ofTouggourt"
+ 
+ dyn_c_touggourt_communist:0 "Touggourt Workers State"
+ 
+ dyn_c_touggourt_communistvote:0 "Socialist Republic of Touggourt"
+ 
+ dyn_c_touggourt_theocratic:0 "Islamic State of Touggourt"
+ 
+ dyn_c_touggourt_theocraticvote:0 "Islamic Republic of Touggourt"
+ 
+ dyn_c_touggourt_anarchy:0 "Free Touggourt"
+
+ dyn_c_mascara_absolutist_monarchy:0 "Emirate of Mascara"
+ 
+ dyn_c_mascara_monarchy:0 "Emirate of Mascara"
+ 
+ dyn_c_mascara_dictatorship:0 "Mascaran Empire"
+ 
+ dyn_c_mascara_republic:0 "Republic of Mascara"
+ 
+ dyn_c_mascara_communist:0 "Mascaran Socialist Union"
+ 
+ dyn_c_mascara_communistvote:0 "Mascaran Socialist Republic"
+ 
+ dyn_c_mascara_theocratic:0 "Islamic Empire of Mascara"
+ 
+ dyn_c_mascara_theocraticvote:0 "Islamic Republic of Mascara"
+ 
+ dyn_c_mascara_anarchy:0 "Independent Communes of Mascara""
+
+ dyn_c_romania_absolutist_monarchy:0 "Kingdom of Romania"
+ 
+ dyn_c_romania_monarchy:0 "Kingdom of Romania"
+ 
+ dyn_c_romania_dictatorship:0 "Legionary State of Romania"
+ 
+ dyn_c_romania_republic:0 "Romanian Republic"
+ 
+ dyn_c_romania_communist:0 "Socialist State of Romania"
+ 
+ dyn_c_romania_communistvote:0 "Socialist Republic of Romania"
+ 
+ dyn_c_romania_theocratic:0 "Romanian Orthodox Empire"
+ 
+ dyn_c_romania_theocraticvote:0 "Orthodox Republic of Romania"
+ 
+ dyn_c_romania_anarchy:0 "Free Romanian Communes"
+ 
+ dyn_c_india_absolutist_monarchy:0 "Empire of India"
+
+ dyn_c_india_monarchy:0 "Empire of India"
+
+ dyn_c_india_dictatorship:0 "Great Empire of India"
+
+ dyn_c_india_republic:0 "Republic of India"
+
+ dyn_c_india_communist:0 "Indian Commune State"
+
+ dyn_c_india_communistvote:0 "Socialist Republic of India"
+
+ dyn_c_india_theocratic:0 "Hindu Empire"
+
+ dyn_c_india_theocraticvote:0 "Hindu Republic"
+
+ dyn_c_india_anarchy:0 "Free Communes of India"
+
+ BHT_ADJ:0 "Indian"
+
+ dyn_c_iberia_absolutist_monarchy:0 "Iberian Empire"
+
+ dyn_c_iberia_monarchy:0 "Iberian Empire"
+
+ dyn_c_iberia_dictatorship:0 "Independent Iberian Federation"
+
+ dyn_c_iberia_republic:0 "Iberian Federation"
+
+ dyn_c_iberia_communist:0 "Communist Union of Iberia"
+
+ dyn_c_iberia_communistvote:0 "Socialist Republic of Iberia"
+
+ dyn_c_iberia_theocratic:0 "Holy State of Iberia"
+
+ dyn_c_iberia_theocraticvote:0 "Holy Iberian Republic"
+
+ dyn_c_iberia_anarchy:0 "Free Iberian Peoples"
+ 
+ dyn_c_australia_absolutist_monarchy:0 "Kingdom of Australia"
+
+ dyn_c_australia_monarchy:0 "Kingdom of Australia"
+
+ dyn_c_australia_dictatorship:0 "Great Australian State"
+
+ dyn_c_australia_republic:0 "Australian Republic"
+
+ dyn_c_australia_communist:0 "Workers Union of Australia"
+
+ dyn_c_australia_communistvote:0 "Peoples Republic of Australia"
+
+ dyn_c_australia_theocratic:0 "Theocratic Realm of Australia"
+
+ dyn_c_australia_theocraticvote:0 "Theocratic Republic of Australia"
+
+ dyn_c_australia_anarchy:0 "Free Australian Territories"
+
+ dyn_c_australia_puppet_GBR:0 "British Australia"
+
+ dyn_c_arabia_absolutist_monarchy:0 "Kingdom of Arabia"
+ 
+ dyn_c_arabia_monarchy:0 "Kingdom of Arabia"
+ 
+ dyn_c_arabia_dictatorship:0 "Arabian Empire"
+ 
+ dyn_c_arabia_republic:0 "United Arab States"
+ 
+ dyn_c_arabia_communist:0 "United Arab Peoples State"
+ 
+ dyn_c_arabia_communistvote:0 "Socialist Arab Republic"
+ 
+ dyn_c_arabia_theocratic:0 "Imamate of Arabia"
+ 
+ dyn_c_arabia_theocraticvote:0 "Islamic Republic of Arabia"
+ 
+ dyn_c_arabia_anarchy:0 "Free Arab Commune"
+
+ dyn_c_slovakia_absolutist_monarchy:0 "Kingdom of Slovakia"
+
+ dyn_c_slovakia_monarchy:0 "Kingdom of Slovakia"
+
+ dyn_c_slovakia_dictatorship:0 "Great Slovakian State"
+
+ dyn_c_slovakia_republic:0 "Republic of Slovakia"
+
+ dyn_c_slovakia_communist:0 "Workers State of Slovakia"
+
+ dyn_c_slovakia_communistvote:0 "Peoples Republic of Slovakia"
+
+ dyn_c_slovakia_theocratic:0 "Holy State of Slovakia"
+
+ dyn_c_slovakia_theocraticvote:0 "Holy Republic of Slovakia"
+
+ dyn_c_slovakia_anarchy:0 "Free Slovakian Territories"
+
+ dyn_c_czechoslovakia_absolutist_monarchy:0 "Kingdom of Czechoslovakia"
+
+ dyn_c_czechoslovakia_monarchy:0 "Kingdom of Czechoslovakia"
+
+ dyn_c_czechoslovakia_dictatorship:0 "Czechoslovak Iron State"
+
+ dyn_c_czechoslovakia_republic:0 "Republic of Czechoslovakia"
+
+ dyn_c_czechoslovakia_communist:0 "Czechoslovak Sociaist Republic"
+
+ dyn_c_czechoslovakia_communistvote:0 "Czechoslovak Sociaist Republic"
+
+ dyn_c_czechoslovakia_theocratic:0 "Divine State of Czechoslovakia"
+
+ dyn_c_czechoslovakia_theocraticvote:0 "Divine Republic of Czechoslovakia"
+
+ dyn_c_czechoslovakia_anarchy:0 "Free Czechoslovakian Territories"
+
+ dyn_c_bohemia_absolutist_monarchy:0 "Kingdom of Bohemia"
+
+ dyn_c_bohemia_monarchy:0 "Kingdom of Bohemia"
+
+ dyn_c_bohemia_dictatorship:0 "Bohemian State"
+
+ dyn_c_bohemia_republic:0 "Republic of Bohemia"
+
+ dyn_c_bohemia_communist:0 "People's State of Bohemia"
+
+ dyn_c_bohemia_communistvote:0 "People's Republic of Bohemia"
+
+ dyn_c_bohemia_theocratic:0 "Holy Realm of Bohemia"
+
+ dyn_c_bohemia_theocraticvote:0 "Bohemian Christian Republic"
+
+ dyn_c_bohemia_anarchy:0 "Free Communes of Bohemia"
+
+ dyn_c_AUH_hungary_absolutist_monarchy:0 "Austria-Hungary"
+ 
+ dyn_c_AUH_hungary_monarchy:0 "Austria-Hungary"
+ 
+ dyn_c_AUH_hungary_dictatorship:0 "Austro-Hungarian Unitary State"
+ 
+ dyn_c_AUH_hungary_republic:0 "Republic of Austria-Hungary"
+ 
+ dyn_c_AUH_hungary_communist:0 "Austro-Hungarian Workers State"
+ 
+ dyn_c_AUH_hungary_communistvote:0 "Danubian Social Republics"
+ 
+ dyn_c_AUH_hungary_theocratic:0 "Holy Order of the Danube"
+ 
+ dyn_c_AUH_hungary_theocraticvote:0 "Divine Danube Republics"
+ 
+ dyn_c_AUH_hungary_anarchy:0 "Confederated Danube States"
+ 
+ AUSH_ADJ:0 "Austro-Hungarian"
+
+ dyn_c_austria_absolutist_monarchy:0 "Empire of Austria"
+ 
+ dyn_c_austria_monarchy:0 "Empire of Austria"
+ 
+ dyn_c_austria_dictatorship:0 "Austrian Empire"
+ 
+ dyn_c_austria_republic:0 "Republic of Austria"
+ 
+ dyn_c_austria_communist:0 "Austrian Workers State"
+ 
+ dyn_c_austria_communistvote:0 "Austrian Socialist Republic"
+ 
+ dyn_c_austria_theocratic:0 "Austrian Dominion of the Sacred Heart"
+ 
+ dyn_c_austria_theocraticvote:0 "Catholic Republic of Austria"
+ 
+ dyn_c_austria_anarchy:0 "Independent Austrian Territories"
+
+ dyn_c_krakow_absolutist_monarchy:0 "Free City of Krakow"
+ 
+ dyn_c_krakow_monarchy:0 "Free City of Krakow"
+ 
+ dyn_c_krakow_dictatorship:0 "Independent City of Krakow"
+ 
+ dyn_c_krakow_republic:0 "Krakow"
+ 
+ dyn_c_krakow_communist:0 "Krakowian Workers Union"
+ 
+ dyn_c_krakow_communistvote:0 "Krakowian Socialist Republic"
+ 
+ dyn_c_krakow_theocratic:0 "Theocratic Empire of Krakow"
+ 
+ dyn_c_krakow_theocraticvote:0 "Theocratic Republic of Krakow"
+ 
+ dyn_c_krakow_anarchy:0 "Free Krakow"
+ 
+ dyn_c_greece_absolutist_monarchy:0 "Kingdom of Greece"
+ 
+ dyn_c_greece_monarchy:0 "Kingdom of Greece"
+ 
+ dyn_c_greece_dictatorship:0 "Hellenic Empire"
+ 
+ dyn_c_greece_republic:0 "Republic of Greece"
+ 
+ dyn_c_greece_communist:0 "Union Republic of Greece"
+ 
+ dyn_c_greece_communistvote:0 "Socialist Republic of Greece"
+ 
+ dyn_c_greece_theocratic:0 "Holy State of Greece"
+ 
+ dyn_c_greece_theocraticvote:0 "Holy Republic of Greece"
+ 
+ dyn_c_greece_anarchy:0 "Free Greece"
+ 
+ dyn_c_greece_puppet_TUR:0 "Turkish Greece"
+ 
+ dyn_c_moldavia_absolutist_monarchy:0 "Principality of Moldavia"
+ 
+ dyn_c_moldavia_monarchy:0 "Principality of Moldavia"
+ 
+ dyn_c_moldavia_dictatorship:0 "Moldavian Empire"
+ 
+ dyn_c_moldavia_republic:0 "Republic of Moldavia"
+ 
+ dyn_c_moldavia_communist:0 "Moldavian Workers Union"
+ 
+ dyn_c_moldavia_communistvote:0 "Moldavian Socialist Republic"
+ 
+ dyn_c_moldavia_theocratic:0 "Moldavian Orthodox Empire"
+ 
+ dyn_c_moldavia_theocraticvote:0 "Orthodox Republic of Moldavia"
+ 
+ dyn_c_moldavia_anarchy:0 "Free Moldavia"
+ 
+ dyn_c_moldavia_puppet_TUR:0 "Turkish Moldavia"
+ 
+ dyn_c_moldavia_puppet_AUS:0 "Austrian Moldavia"
+ 
+ dyn_c_serbia_absolutist_monarchy:0 "Principality of Serbia"
+ 
+ dyn_c_serbia_monarchy:0 "Principality of Serbia"
+ 
+ dyn_c_serbia_dictatorship:0 "Empire of the Balkans"
+ 
+ dyn_c_serbia_republic:0 "Republic of Serbia"
+ 
+ dyn_c_serbia_communist:0 "Serbian Commune"
+ 
+ dyn_c_serbia_communistvote:0 "Serbian Peoples Republic"
+ 
+ dyn_c_serbia_theocratic:0 "Serbian Orthodox Empire"
+ 
+ dyn_c_serbia_theocraticvote:0 "Serbian Orthodox Republic"
+ 
+ dyn_c_serbia_anarchy:0 "Anarchist Serbia"
+ 
+ dyn_c_serbia_puppet_TUR:0 "Turkish Serbia"
+ 
+ dyn_c_serbia_puppet_AUS:0 "Austrian Serbia"
+ 
+ dyn_c_wallachia_absolutist_monarchy:0 "Principality of Wallachia"
+
+ dyn_c_wallachia_monarchy:0 "Principality of Wallachia"
+
+ dyn_c_wallachia_dictatorship:0 "Independent Wallachia"
+
+ dyn_c_wallachia_republic:0 "Republic of Wallachia"
+
+ dyn_c_wallachia_communist:0 "Wallachian Peoples State"
+
+ dyn_c_wallachia_communistvote:0 "Democratic Republic of Wallachia"
+
+ dyn_c_wallachia_theocratic:0 "Wallachian Orthodox Empire"
+
+ dyn_c_wallachia_theocraticvote:0 "Orthodox Republic of Wallachian"
+
+ dyn_c_wallachia_anarchy:0 "Free Wallachia"
+ 
+ dyn_c_wallachia_puppet_TUR:0 "Turkish Wallachia"
+ 
+ dyn_c_wallachia_puppet_AUS:0 "Austrian Wallachia"
+ 
+ dyn_c_haiti_absolutist_monarchy:0 "Kingdom of Haiti"
+ 
+ dyn_c_haiti_monarchy:0 "Kingdom of Haiti"
+ 
+ dyn_c_haiti_dictatorship:0 "Empire of Haiti"
+ 
+ dyn_c_haiti_republic:0 "Haitian Republic"
+ 
+ dyn_c_haiti_communist:0 "Commune of Port-au-Prince"
+ 
+ dyn_c_haiti_communistvote:0 "Socialist Union of Haiti"
+ 
+ dyn_c_haiti_theocratic:0 "Holy Haiti"
+ 
+ dyn_c_haiti_theocraticvote:0 "Holy Union of Haiti"
+ 
+ dyn_c_haiti_anarchy:0 "Free Haiti"
+ 
+ dyn_c_haiti_puppet_SPA:0 "Spanish Haiti"
+ 
+ dyn_c_haiti_puppet_FRA:0 "French Haiti"
+ 
+ dyn_c_haiti_puppet_GBR:0 "British Haiti"
+ 
+ dyn_c_haiti_puppet_MEX:0 "Mexican Haiti"
+ 
+ dyn_c_haiti_puppet_USA:0 "American Haiti"
+ 
+ dyn_c_cuba_absolutist_monarchy:0 "Kingdom of Cuba"
+ 
+ dyn_c_cuba_monarchy:0 "Kingdom of Cuba"
+ 
+ dyn_c_cuba_dictatorship:0 "Cuban Empire"
+ 
+ dyn_c_cuba_republic:0 "Cuban Federation"
+ 
+ dyn_c_cuba_communist:0 "Cuban Workers Union"
+ 
+ dyn_c_cuba_communistvote:0 "Social Republic of Cuba"
+ 
+ dyn_c_cuba_theocratic:0 "Christian Empire of Cuba"
+ 
+ dyn_c_cuba_theocraticvote:0 "Theocratic Republic of Cuba"
+ 
+ dyn_c_cuba_anarchy:0 "Free Cuba"
+ 
+ dyn_c_cuba_puppet_USA:0 "American Cuba"
+ 
+ dyn_c_cuba_puppet_SPA:0 "Spanish Cuba"
+ 
+ dyn_c_cuba_puppet_MEX:0 "Mexican Cuba"
+ 
+ dyn_c_cuba_puppet_FRA:0 "French Cuba"
+ 
+ dyn_c_ucamerica_absolutist_monarchy:0 "Kingdom of Central America"
+ 
+ dyn_c_ucamerica_monarchy:0 "Kingdom of Central America"
+ 
+ dyn_c_ucamerica_dictatorship:0 "Central American Empire"
+ 
+ dyn_c_ucamerica_republic:0 "Central American Federation"
+ 
+ dyn_c_ucamerica_communist:0 "Peoples State of Central America"
+ 
+ dyn_c_ucamerica_communistvote:0 "Socialist Republic of Central America"
+ 
+ dyn_c_ucamerica_theocratic:0 "Catholic Empire of Central America"
+ 
+ dyn_c_ucamerica_theocraticvote:0 "Central American Catholic Republic"
+ 
+ dyn_c_ucamerica_anarchy:0 "Free Central America"
+ 
+ dyn_c_brazil_absolutist_monarchy:0 "Empire of Brazil"
+ 
+ dyn_c_brazil_monarchy:0 "Empire of Brazil"
+ 
+ dyn_c_brazil_dictatorship:0 "Greater Brazilian Empire"
+ 
+ dyn_c_brazil_republic:0 "Republic of Brazil"
+ 
+ dyn_c_brazil_communist:0 "Workers State of Brazil"
+ 
+ dyn_c_brazil_communistvote:0 "Peoples Republic of Brazil"
+ 
+ dyn_c_brazil_theocratic:0 "Holy Realm of Brazil"
+ 
+ dyn_c_brazil_theocraticvote:0 "Catholic Republic of Brazil"
+ 
+ dyn_c_brazil_anarchy:0 "Territórios Livres"
+ 
+ dyn_c_novascotia_absolutist_monarchy:0 "Kingdom of Nova Scotia"
+ 
+ dyn_c_novascotia_monarchy:0 "Kingdom of Nova Scotia"
+ 
+ dyn_c_novascotia_dictatorship:0 "Nova Scotian Empire"
+ 
+ dyn_c_novascotia_republic:0 "Republic of Nova Scotia"
+ 
+ dyn_c_novascotia_communist:0 "Red Republic of Nova Scotia"
+ 
+ dyn_c_novascotia_communistvote:0 "Peoples Republic of Scotia"
+ 
+ dyn_c_novascotia_theocratic:0 "Scotian Theocratic Union"
+ 
+ dyn_c_novascotia_theocraticvote:0 "Theocratic Republic of Scotia"
+ 
+ dyn_c_novascotia_anarchy:0 "Independent Scotian Territories"
+ 
+ dyn_c_novascotia_puppet:0 "British Nova Scotia"
+ 
+ dyn_c_newbrunswick_absolutist_monarchy:0 "Kingdom of New Brunswick"
+ 
+ dyn_c_newbrunswick_monarchy:0 "Kingdom of New Brunswick"
+ 
+ dyn_c_newbrunswick_dictatorship:0 "Empire of New Brunswick"
+ 
+ dyn_c_newbrunswick_republic:0 "Republic of New Brunswick"
+ 
+ dyn_c_newbrunswick_communist:0 "Workers State of Brunswick"
+ 
+ dyn_c_newbrunswick_communistvote:0 "Brunswick Peoples Republic"
+ 
+ dyn_c_newbrunswick_theocratic:0 "Christian Empire of New Brunswick"
+ 
+ dyn_c_newbrunswick_theocraticvote:0 "Christian Republic of New Brunswick"
+ 
+ dyn_c_newbrunswick_anarchy:0 "Brunswick Territories"
+ 
+ dyn_c_newbrunswick_puppet:0 "British New Brunswick"
+ 
+ dyn_c_canada_absolutist_monarchy:0 "Kingdom of Canada"
+ 
+ dyn_c_canada_monarchy:0 "Kingdom of Canada"
+ 
+ dyn_c_canada_dictatorship:0 "Canadian Empire"
+ 
+ dyn_c_canada_republic:0 "Canadian Republic"
+ 
+ dyn_c_canada_communist:0 "Canadian Peoples Council"
+ 
+ dyn_c_canada_communistvote:0 "Canadian Socialist Union"
+ 
+ dyn_c_canada_theocratic:0 "Canadian Kingdom of God"
+ 
+ dyn_c_canada_theocraticvote:0 "Holy Republic of Canada"
+ 
+ dyn_c_canada_anarchy:0 "Free Canadian Territories"
+ 
+ dyn_c_CAN_puppet:0 "British Canada"
+ 
+ dyn_c_canada_puppet_USA:0 "Northern Territories"
+ 
+ dyn_c_quebec_absolutist_monarchy:0 "Kingdom of Quebec"
+ 
+ dyn_c_quebec_monarchy:0 "Kingdom of Quebec"
+ 
+ dyn_c_quebec_dictatorship:0 "Empire of Quebec"
+ 
+ dyn_c_quebec_republic:0 "Republic of Quebec"
+ 
+ dyn_c_quebec_communist:0 "Quebec Workers Union"
+ 
+ dyn_c_quebec_communistvote:0 "Peoples Republic of Quebec"
+ 
+ dyn_c_quebec_theocratic:0 "Protestant Empire of Quebec"
+ 
+ dyn_c_quebec_theocraticvote:0 "Holy Republic of Quebec"
+ 
+ dyn_c_quebec_anarchy:0 "Anarchist Communes of Quebec"
+ 
+ dyn_c_QUE_puppet:0 "British Lower Canada"
+ 
+ dyn_c_hudsonbay_absolutist_monarchy:0 "Kingdom of the Hudson Bay"
+ 
+ dyn_c_hudsonbay_monarchy:0 "Kingdom of the Hudson Bay"
+ 
+ dyn_c_hudsonbay_dictatorship:0 "Empire of the Hudson Bay"
+ 
+ dyn_c_hudsonbay_republic:0 "Republic of the Hudson Bay"
+ 
+ dyn_c_hudsonbay_communist:0 "Hudson Bay Workers Council"
+ 
+ dyn_c_hudsonbay_communistvote:0 "Socialist State of the Hudson Bay"
+ 
+ dyn_c_hudsonbay_theocratic:0 "All-Holy Hudson Bay"
+ 
+ dyn_c_hudsonbay_theocraticvote:0 "Holy Republic of the Hudson Bay"
+ 
+ dyn_c_hudsonbay_anarchy:0 "Decentralized Territories of the Hudson Bay"
+ 
+ dyn_c_HBC_puppet:0 "Hudson Bay Company"
+ 
+ dyn_c_ontario_absolutist_monarchy:0 "Kingdom of Ontario"
+ 
+ dyn_c_ontario_monarchy:0 "Kingdom of Ontario"
+ 
+ dyn_c_ontario_dictatorship:0 "Empire of Ontario"
+ 
+ dyn_c_ontario_republic:0 "Ontarian Republic"
+ 
+ dyn_c_ontario_communist:0 "Ontario Workers State"
+ 
+ dyn_c_ontario_communistvote:0 "Peoples Republic of Ontario"
+ 
+ dyn_c_ontario_theocratic:0 "Faithful State of Ontario"
+ 
+ dyn_c_ontario_theocraticvote:0 "Protestant Republic of Ontario"
+ 
+ dyn_c_ontario_anarchy:0 "Confederated Ontario Territories"
+ 
+ dyn_c_ONT_puppet:0 "British Upper Canada"
+ 
+ dyn_c_oregon_absolutist_monarchy:0 "Kingdom of Oregon"
+ 
+ dyn_c_oregon_monarchy:0 "Kingdom of Oregon"
+ 
+ dyn_c_oregon_dictatorship:0 "Empire of Oregon"
+ 
+ dyn_c_oregon_republic:0 "Republic of Oregon"
+ 
+ dyn_c_oregon_communist:0 "Red State of Oregon"
+ 
+ dyn_c_oregon_communistvote:0 "Peoples Republic of Oregon"
+ 
+ dyn_c_oregon_theocratic:0 "Clerical State of Oregon"
+ 
+ dyn_c_oregon_theocraticvote:0 "Holy Republic of Oregon"
+ 
+ dyn_c_oregon_anarchy:0 "Free Oregon Territories"
+ 
+ dyn_c_ORG_puppet:0 "British Oregon"
+
+ dyn_c_texas_absolutist_monarchy:0 "Kingdom of Texas"
+ 
+ dyn_c_texas_monarchy:0 "Kingdom of Texas"
+ 
+ dyn_c_texas_dictatorship:0 "Empire of the South"
+ 
+ dyn_c_texas_republic:0 "Republic of Texas"
+ 
+ dyn_c_texas_communist:0 "United Texan Workers"
+ 
+ dyn_c_texas_communistvote:0 "Texan Socialist Republic"
+ 
+ dyn_c_texas_theocratic:0 "Kingdom of Guns and God"
+ 
+ dyn_c_texas_theocraticvote:0 "Republic of Guns and God"
+ 
+ dyn_c_texas_anarchy:0 "Free Texas"
+ 
+ dyn_c_texas_puppet_mexico:0 "Mexican Texas"
+ 
+ dyn_c_texas_puppet_usa:0 "American Texas"
+
+ dyn_c_mexico_absolutist_monarchy:0 "Empire of Mexico"
+ 
+ dyn_c_mexico_monarchy:0 "Empire of Mexico"
+ 
+ dyn_c_mexico_dictatorship:0 "Mexican National State"
+ 
+ dyn_c_mexico_republic:0 "Centralist Republic of Mexico"
+ 
+ dyn_c_mexico_communist:0 "Mexican Workers Union"
+ 
+ dyn_c_mexico_communistvote:0 "Communist Republic of Mexico"
+ 
+ dyn_c_mexico_theocratic:0 "Mexican Holy Empire"
+ 
+ dyn_c_mexico_theocraticvote:0 "Catholic Republic of Mexico"
+ 
+ dyn_c_mexico_anarchy:0 "Estados Libre"
+ 
+ dyn_c_mexico_puppet_USA:0 "Southern Territories"
+ 
+ dyn_c_siam_absolutist_monarchy:0 "Kingdom of Siam"
+ 
+ dyn_c_siam_monarchy:0 "Kingdom of Siam"
+ 
+ dyn_c_siam_dictatorship:0 "Siamese Empire"
+ 
+ dyn_c_siam_republic:0 "Republic of Thailand"
+ 
+ dyn_c_siam_communist:0 "United Siamese Social Republic"
+ 
+ dyn_c_siam_communistvote:0 "Peoples Republic of Thailand"
+ 
+ dyn_c_siam_theocratic:0 "Buddhist Empire of Siam"
+ 
+ dyn_c_siam_theocraticvote:0 "Buddhist Republic of Thailand"
+ 
+ dyn_c_siam_anarchy:0 "Independent Territories of Siam"
+ 
+ dyn_c_burma_absolutist_monarchy:0 "Kingdom of Burma"
+ 
+ dyn_c_burma_monarchy:0 "Kingdom of Burma"
+ 
+ dyn_c_burma_dictatorship:0 "Burmese Empire"
+ 
+ dyn_c_burma_republic:0 "Republic of Burma"
+ 
+ dyn_c_burma_communist:0 "Burmese Commune"
+ 
+ dyn_c_burma_communistvote:0 "Socialist Republic of Burma"
+ 
+ dyn_c_burma_theocratic:0 "United Buddhist Empire"
+ 
+ dyn_c_burma_theocraticvote:0 "Buddhist Republic of Burma"
+ 
+ dyn_c_burma_anarchy:0 "Free Burma"
+ 
+ dyn_c_dainam_absolutist_monarchy:0 "Kingdom of Dai Nam"
+ 
+ dyn_c_dainam_monarchy:0 "Kingdom of Dai Nam"
+ 
+ dyn_c_dainam_dictatorship:0 "Vietnamese Empire"
+ 
+ dyn_c_dainam_republic:0 "Vietnamese Republic"
+ 
+ dyn_c_dainam_communist:0 "Socialist Republic of Vietnam"
+ 
+ dyn_c_dainam_communistvote:0 "Socialist Republic of Vietnam"
+ 
+ dyn_c_dainam_theocratic:0 "Vietnamese Mahayana Empire"
+ 
+ dyn_c_dainam_theocraticvote:0 "Blessed Republic of Vietnam"
+ 
+ dyn_c_dainam_anarchy:0 "Free Vietnamese Authorities"
+ 
+ dyn_c_eastindies_absolutist_monarchy:0 "Kingdom of the East Indies"
+ 
+ dyn_c_eastindies_monarchy:0 "Kingdom of the East Indies"
+ 
+ dyn_c_eastindies_dictatorship:0 "East Indian Empire"
+ 
+ dyn_c_eastindies_republic:0 "Republic of Indonesia"
+ 
+ dyn_c_eastindies_communist:0 "Indonesian Workers Assembly"
+ 
+ dyn_c_eastindies_communistvote:0 "Peoples Republic of Indonesia"
+ 
+ dyn_c_eastindies_theocratic:0 "Islamic Empire of Indonesia"
+ 
+ dyn_c_eastindies_theocraticvote:0 "Islamic Republic of Indonesia"
+ 
+ dyn_c_eastindies_anarchy:0 "Confederated Indonesian Territory"
+ 
+ dyn_c_DEI_puppet_NET:0 "Dutch East Indies"
+ 
+ dyn_c_china_absolutist_monarchy:0 "Great Qing"
+ 
+ dyn_c_china_monarchy:0 "Great Qing"
+ 
+ dyn_c_china_dictatorship:0 "Chinese Empire"
+ 
+ dyn_c_china_republic:0 "Republic of China"
+ 
+ dyn_c_china_communist:0 "Peoples Republic of China"
+ 
+ dyn_c_china_communistvote:0 "Peoples Republic of China"
+ 
+ dyn_c_china_theocratic:0 "Faithful Chinese Empire"
+ 
+ dyn_c_china_theocraticvote:0 "Faithful Republic of China"
+ 
+ dyn_c_china_anarchy:0 "Free Chinese Authorities"
+ 
+ dyn_c_japan_absolutist_monarchy:0 "Tokugawa Shogunate"
+ 
+ dyn_c_japan_monarchy:0 "Tokugawa Shogunate"
+ 
+ dyn_c_japan_dictatorship:0 "Japanese Empire"
+ 
+ dyn_c_japan_republic:0 "State of Japan"
+ 
+ dyn_c_japan_communist:0 "Japanese Workers Council"
+ 
+ dyn_c_japan_communistvote:0 "Japanese Socialist Republic"
+ 
+ dyn_c_japan_theocratic:0 "Holy Japanese Empire"
+ 
+ dyn_c_japan_theocraticvote:0 "Mahayana Republic of Japan"
+ 
+ dyn_c_japan_anarchy:0 "Decentralized Territories of Japan"
+
+ dyn_c_korea_absolutist_monarchy:0 "Kingdom of Joseon"
+ 
+ dyn_c_korea_monarchy:0 "Kingdom of Joseon"
+ 
+ dyn_c_korea_dictatorship:0 "Korean Empire"
+ 
+ dyn_c_korea_republic:0 "Republic of Korea"
+ 
+ dyn_c_korea_communist:0 "Democratic Peoples Republic of Korea"
+ 
+ dyn_c_korea_communistvote:0 "Democratic Peoples Republic of Korea"
+ 
+ dyn_c_korea_theocratic:0 "Theocratic Empire of Korea"
+ 
+ dyn_c_korea_theocraticvote:0 "Theocratic Republic of Korea"
+ 
+ dyn_c_korea_anarchy:0 "Confederated Korean Territories"
+ 
+ dyn_c_britain_absolutist_monarchy:0 "United Kingdom"
+ 
+ dyn_c_britain_monarchy:0 "United Kingdom"
+ 
+ dyn_c_britain_dictatorship:0 "British Empire"
+ 
+ dyn_c_britain_republic:0 "British Republic"
+ 
+ dyn_c_britain_communist:0 "British Workers State"
+ 
+ dyn_c_britain_communistvote:0 "Socialist Republic of Britain"
+ 
+ dyn_c_britain_theocratic:0 "Holy Anglican Empire"
+ 
+ dyn_c_britain_theocraticvote:0 "Clerical Republic of Britain"
+ 
+ dyn_c_britain_anarchy:0 "Free Britannia"
+ 
+ dyn_c_switzerland_absolutist_monarchy:0 "Kingdom of Switzerland"
+ 
+ dyn_c_switzerland_monarchy:0 "Kingdom of Switzerland"
+ 
+ dyn_c_switzerland_dictatorship:0 "Swiss Empire"
+ 
+ dyn_c_switzerland_republic:0 "Republic of Switzerland"
+ 
+ dyn_c_switzerland_communist:0 "Workers Cantons of Switzerland"
+ 
+ dyn_c_switzerland_communistvote:0 "United Socialist Cantons"
+ 
+ dyn_c_switzerland_theocratic:0 "Holy Cantons"
+ 
+ dyn_c_switzerland_theocraticvote:0 "Protestant Republic of Switzerland"
+ 
+ dyn_c_switzerland_anarchy:0 "Anarchist Cantons"
+ 
+ dyn_c_portugal_absolutist_monarchy:0 "Kingdom of Portugal"
+ 
+ dyn_c_portugal_monarchy:0 "Kingdom of Portugal"
+ 
+ dyn_c_portugal_dictatorship:0 "Portugese Empire"
+ 
+ dyn_c_portugal_republic:0 "Portugese Republic"
+ 
+ dyn_c_portugal_communist:0 "Workers State of Portugal"
+ 
+ dyn_c_portugal_communistvote:0 "Portugese Socialist Republic"
+ 
+ dyn_c_portugal_theocratic:0 "Holy Kingdom of Portugal"
+ 
+ dyn_c_portugal_theocraticvote:0 "Catholic Union of Portugal"
+ 
+ dyn_c_portugal_anarchy:0 "Portugese Anarchist Confederation"
+ 
+ dyn_c_venice_absolutist_monarchy:0 "Duchy of Venice"
+
+ dyn_c_venice_monarchy:0 "Duchy of Venice"
+ 
+ dyn_c_venice_dictatorship:0 "Greater Venice"
+ 
+ dyn_c_venice_republic:0 "Venitian Republic"
+ 
+ dyn_c_venice_communist:0 "Venice Workers Congress"
+ 
+ dyn_c_venice_communistvote:0 "Socialist Republic of Venice"
+ 
+ dyn_c_venice_theocratic:0 "Venetian Crusader Republic"
+ 
+ dyn_c_venice_theocraticvote:0 "Catholic Republic of Venice"
+ 
+ dyn_c_venice_anarchy:0 "Venitian Commune"
+ 
+ dyn_c_lombardy_absolutist_monarchy:0 "Duchy of Lombardy"
+ 
+ dyn_c_lombardy_monarchy:0 "Duchy of Lombardy"
+ 
+ dyn_c_lombardy_dictatorship:0 "Lombardian Empire"
+ 
+ dyn_c_lombardy_republic:0 "Republic of Lombardia"
+ 
+ dyn_c_lombardy_communist:0 "Commune of Milan"
+ 
+ dyn_c_lombardy_communistvote:0 "Socialist Republic of Lombardy"
+ 
+ dyn_c_lombardy_theocratic:0 "Archidiocesis Mediolanensis"
+ 
+ dyn_c_lombardy_theocraticvote:0 "Catholic Republic of Lombardy"
+ 
+ dyn_c_lombardy_anarchy:0 "Milan Commune"
+ 
+ dyn_c_modena_absolutist_monarchy:0 "Duchy of Modena and Reggio"
+
+ dyn_c_modena_monarchy:0 "Duchy of Modena and Reggio"
+ 
+ dyn_c_modena_dictatorship:0 "State of Modena"
+ 
+ dyn_c_modena_republic:0 "Modenan Republic"
+ 
+ dyn_c_modena_communist:0 "Modena Workers State"
+ 
+ dyn_c_modena_communistvote:0 "Socialist Republic of Modena"
+ 
+ dyn_c_modena_theocratic:0 "Holy Realm of Modena-Nonantola"
+ 
+ dyn_c_modena_theocraticvote:0 "Catholic Republic of Modena"
+ 
+ dyn_c_modena_anarchy:0 "Communes of Modena"
+ 
+ dyn_c_parma_absolutist_monarchy:0 "Duchy of Parma and Piacenza"
+ 
+ dyn_c_parma_monarchy:0 "Duchy of Parma and Piacenza"
+ 
+ dyn_c_parma_dictatorship:0 "Grand State of Parma"
+ 
+ dyn_c_parma_republic:0 "Republic of Parma"
+ 
+ dyn_c_parma_communist:0 "Workers Union of Parma"
+ 
+ dyn_c_parma_communistvote:0 "Socialist Republic of Parma"
+ 
+ dyn_c_parma_theocratic:0 "Roman Catholic Diocese of Parma"
+ 
+ dyn_c_parma_theocraticvote:0 "Free Catholic Union of Parma"
+ 
+ dyn_c_parma_anarchy:0 "Communes of Parma"
+
+ dyn_c_sardinia_absolutist_monarchy:0 "Kingdom of Sardinia-Piedmont"
+ 
+ dyn_c_sardinia_monarchy:0 "Kingdom of Sardinia-Piedmont"
+ 
+ dyn_c_sardinia_dictatorship:0 "Empire of Sardinia-Piedmont"
+ 
+ dyn_c_sardinia_republic:0 "Republic of Sardinia-Piedmont"
+ 
+ dyn_c_sardinia_communist:0 "Union State of Sardinia-Piedmont"
+ 
+ dyn_c_sardinia_communistvote:0 "Democratic Republic of Sardinia-Piedmont"
+ 
+ dyn_c_sardinia_theocratic:0 "Catholic State of Sardinia-Piedmont"
+ 
+ dyn_c_sardinia_theocraticvote:0 "Catholic Republic of Sardinia-Piedmont"
+ 
+ dyn_c_sardinia_anarchy:0 "Turin Commune"
+ 
+ dyn_c_lucca_absolutist_monarchy:0 "Duchy of Lucca"
+ 
+ dyn_c_lucca_monarchy:0 "Duchy of Lucca"
+ 
+ dyn_c_lucca_dictatorship:0 "State of Lucca"
+ 
+ dyn_c_lucca_republic:0 "Luccan Republic"
+ 
+ dyn_c_lucca_communist:0 "Workers Congress of Lucca"
+ 
+ dyn_c_lucca_communistvote:0 "Socialist Republic of Lucca"
+ 
+ dyn_c_lucca_theocratic:0 "Luccan Council of Priests"
+ 
+ dyn_c_lucca_theocraticvote:0 "Catholic Republic of Lucca"
+ 
+ dyn_c_lucca_anarchy:0 "Free Communes of Lucca"
+ 
+ dyn_c_tuscany_absolutist_monarchy:0 "Grand Duchy of Tuscany"
+ 
+ dyn_c_tuscany_monarchy:0 "Grand Duchy of Tuscany"
+ 
+ dyn_c_tuscany_dictatorship:0 "State of Tuscany"
+ 
+ dyn_c_tuscany_republic:0 "Tuscan Republic"
+ 
+ dyn_c_tuscany_communist:0 "Tuscan Workers Union"
+ 
+ dyn_c_tuscany_communistvote:0 "Tuscan Socialist Republic"
+ 
+ dyn_c_tuscany_theocratic:0 "Diocese of Florence"
+ 
+ dyn_c_tuscany_theocraticvote:0 "Catholic Republic of Tuscany"
+ 
+ dyn_c_tuscany_anarchy:0 "Confederated Communes of Tuscany"
+ 
+ dyn_c_papalstates_absolutist_monarchy:0 "Kingdom of the Vatican States"
+ 
+ dyn_c_papalstates_monarchy:0 "Kingdom of the Vatican States"
+ 
+ dyn_c_papalstates_dictatorship:0 "Great Roman Federation"
+ 
+ dyn_c_papalstates_republic:0 "Vatican Republic"
+ 
+ dyn_c_papalstates_communist:0 "Roman Workers Union"
+ 
+ dyn_c_papalstates_communistvote:0 "Socialist Republic of Rome"
+ 
+ dyn_c_papalstates_theocratic:0 "The Papal States"
+ 
+ dyn_c_papalstates_theocraticvote:0 "The Papal States"
+ 
+ dyn_c_papalstates_anarchy:0 "Roman Commune"
+ 
+ dyn_c_germany_absolutist_monarchy:0 "German Empire"
+ 
+ dyn_c_germany_monarchy:0 "German Empire"
+ 
+ dyn_c_germany_dictatorship:0 "Great German State"
+ 
+ dyn_c_germany_republic:0 "Federal Republic of Germany"
+ 
+ dyn_c_germany_communist:0 "Communist State of Germany"
+ 
+ dyn_c_germany_communistvote:0 "German Democratic Republic"
+ 
+ dyn_c_germany_theocratic:0 "Holy German Order"
+ 
+ dyn_c_germany_theocraticvote:0 "Christian Republic of Germany"
+ 
+ dyn_c_germany_anarchy:0 "Free German Communes"
+ 
+ dyn_c_german_fascist:0 "German Reich"
+ 
+ dyn_c_twosicilies_absolutist_monarchy:0 "Kingdom of the Two Sicilies"
+ 
+ dyn_c_twosicilies_monarchy:0 "Kingdom of the Two Sicilies"
+ 
+ dyn_c_twosicilies_dictatorship:0 "Empire of Sicily"
+ 
+ dyn_c_twosicilies_republic:0 "Republic of Sicily"
+ 
+ dyn_c_twosicilies_communist:0 "Peoples State of Sicily"
+ 
+ dyn_c_twosicilies_communistvote:0 "Peoples Republic of Sicily"
+ 
+ dyn_c_twosicilies_theocratic:0 "Holy State of Sicily"
+ 
+ dyn_c_twosicilies_theocraticvote:0 "Catholic Republic of Sicily"
+ 
+ dyn_c_twosicilies_anarchy:0 "Confederated Communes of Sicily"
+ 
+ dyn_c_scania_absolutist_monarchy:0 "Kingdom of Scania"
+ 
+ dyn_c_scania_monarchy:0 "Kingdom of Scania"
+ 
+ dyn_c_scania_dictatorship:0 "Independent Nation of Scania"
+ 
+ dyn_c_scania_republic:0 "Scania"
+ 
+ dyn_c_scania_communist:0 "Scania Workers Cooperative"
+ 
+ dyn_c_scania_communistvote:0 "Peoples Republic of Scania"
+ 
+ dyn_c_scania_theocratic:0 "Holy Scania"
+ 
+ dyn_c_scania_theocraticvote:0 "Holy Republic of Scania"
+ 
+ dyn_c_scania_anarchy:0 "Communes of Scania"
+
+ dyn_c_sapmi_absolutist_monarchy:0 "Kingdom of Sapmi"
+ 
+ dyn_c_sapmi_monarchy:0 "Kingdom of Sapmi"
+ 
+ dyn_c_sapmi_dictatorship:0 "Independent Sapmi"
+ 
+ dyn_c_sapmi_republic:0 "Sapmi"
+ 
+ dyn_c_sapmi_communist:0 "Sapmi Workers Union"
+ 
+ dyn_c_sapmi_communistvote:0 "Socialist Republic of Sapmi"
+ 
+ dyn_c_sapmi_theocratic:0 "Holy Sapmi"
+ 
+ dyn_c_sapmi_theocraticvote:0 "Holy Republic of Sapmi"
+ 
+ dyn_c_sapmi_anarchy:0 "Communes of Sapmi"
+ 
+ dyn_c_iceland_absolutist_monarchy:0 "Kingdom of Iceland"
+ 
+ dyn_c_iceland_monarchy:0 "Kingdom of Iceland"
+ 
+ dyn_c_iceland_dictatorship:0 "Great State of Iceland"
+ 
+ dyn_c_iceland_republic:0 "Iceland"
+ 
+ dyn_c_iceland_communist:0 "Union of Iceland"
+ 
+ dyn_c_iceland_communistvote:0 "Socialist Republic of Iceland"
+ 
+ dyn_c_iceland_theocratic:0 "Icelandic Crusader State"
+ 
+ dyn_c_iceland_theocraticvote:0 "Holy Republic of Iceland"
+ 
+ dyn_c_iceland_anarchy:0 "Communes of Iceland"
+ 
+ dyn_c_greenland_absolutist_monarchy:0 "Kingdom of Greenland"
+ 
+ dyn_c_greenland_monarchy:0 "Kingdom of Greenland"
+ 
+ dyn_c_greenland_dictatorship:0 "Independent Greenland"
+ 
+ dyn_c_greenland_republic:0 "Greenland"
+ 
+ dyn_c_greenland_communist:0 "Workers State of Greenland"
+ 
+ dyn_c_greenland_communistvote:0 "Peoples Republic of Greenland"
+ 
+ dyn_c_greenland_theocratic:0 "Christian State of Greenland"
+ 
+ dyn_c_greenland_theocraticvote:0 "Christian Republic of Greenland"
+ 
+ dyn_c_greenland_anarchy:0 "Communes of Greenland"
+ 
+ dyn_c_scandinavia_absolutist_monarchy:0 "Empire of Scandinavia"
+ 
+ dyn_c_scandinavia_monarchy:0 "Empire of Scandinavia"
+ 
+ dyn_c_scandinavia_dictatorship:0 "Great Nordic Empire"
+ 
+ dyn_c_scandinavia_republic:0 "Republic of Scandinavia"
+ 
+ dyn_c_scandinavia_communist:0 "United Socialist Scandinavian Republic"
+ 
+ dyn_c_scandinavia_communistvote:0 "People's Republic of Scandinavia"
+ 
+ dyn_c_scandinavia_theocratic:0 "Christian Empire of Scandinavia"
+ 
+ dyn_c_scandinavia_theocraticvote:0 "Scandinavian Christian Republic"
+ 
+ dyn_c_scandinavia_anarchy:0 "Free Communes of Scandinavia"
+ 
+ dyn_c_denmark_absolutist_monarchy:0 "Kingdom of Denmark"
+ 
+ dyn_c_denmark_monarchy:0 "Kingdom of Denmark"
+ 
+ dyn_c_denmark_dictatorship:0 "Great Union of Denmark"
+ 
+ dyn_c_denmark_republic:0 "Republic of Denmark"
+ 
+ dyn_c_denmark_communist:0 "Danish People's State"
+ 
+ dyn_c_denmark_communistvote:0 "Socialist Republic of Denmark"
+ 
+ dyn_c_denmark_theocratic:0 "Christian State of Denmark"
+ 
+ dyn_c_denmark_theocraticvote:0 "Holy Republic of Denmark"
+ 
+ dyn_c_denmark_anarchy:0 "Free Communes of Denmark"
+
+ dyn_c_norway_absolutist_monarchy:0 "Kingdom of Norway"
+ 
+ dyn_c_norway_monarchy:0 "Kingdom of Norway"
+ 
+ dyn_c_norway_dictatorship:0 "Norwegian Empire"
+ 
+ dyn_c_norway_republic:0 "Republic of Norway"
+ 
+ dyn_c_norway_communist:0 "Communist Union of Norway"
+ 
+ dyn_c_norway_communistvote:0 "Worker's Republic of Norway"
+ 
+ dyn_c_norway_theocratic:0 "Holy State of Norway"
+ 
+ dyn_c_norway_theocraticvote:0 "Holy Republic of Norway"
+ 
+ dyn_c_norway_anarchy:0 "Oslo Commune"
+
+ dyn_c_sweden_absolutist_monarchy:0 "Kingdom of Sweden"
+ 
+ dyn_c_sweden_monarchy:0 "Kingdom of Sweden"
+ 
+ dyn_c_sweden_dictatorship:0 "Swedish Empire"
+ 
+ dyn_c_sweden_republic:0 "Republic of Sweden"
+ 
+ dyn_c_sweden_communist:0 "Communist State of Sweden"
+ 
+ dyn_c_sweden_communistvote:0 "Socialist Republic of Sweden "
+
+ dyn_c_sweden_theocratic:0 "Holy Kingdom of Sweden"
+
+ dyn_c_sweden_theocraticvote:0 "Christian Republic of Sweden"
+ 
+ dyn_c_sweden_anarchy:0 "Swedish Confederated Communes"
+
+ dyn_c_finland_absolutist_monarchy:0 "Grand Duchy of Finland"
+ 
+ dyn_c_finland_monarchy:0 "Grand Duchy of Finland"
+ 
+ dyn_c_finland_dictatorship:0 "White Finnish Empire"
+ 
+ dyn_c_finland_republic:0 "Republic of Finland"
+ 
+ dyn_c_finland_communist:0 "Finnish Worker's State"
+ 
+ dyn_c_finland_communistvote:0 "Socialist Republic of Finland"
+ 
+ dyn_c_finland_theocratic:0 "Holy Evangelical State of Finland"
+ 
+ dyn_c_finland_theocraticvote:0 "Christian Republic of Finland"
+ 
+ dyn_c_finland_anarchy:0 "Finnish Communes"
+ 
+ dyn_c_netherlands_absolutist_monarchy:0 "Kingdom of the Netherlands"
+ 
+ dyn_c_netherlands_monarchy:0 "Kingdom of the Netherlands"
+ 
+ dyn_c_netherlands_dictatorship:0 "Greater Dutch Empire"
+ 
+ dyn_c_netherlands_republic:0 "Republic of the Netherlands"
+ 
+ dyn_c_netherlands_communist:0 "Socialist Workers Union"
+ 
+ dyn_c_netherlands_communistvote:0 "United Socialist Provinces"
+ 
+ dyn_c_netherlands_theocratic:0 "Holy State of the Netherlands"
+ 
+ dyn_c_netherlands_theocraticvote:0 "Catholic Republic of the Netherlands"
+ 
+ dyn_c_netherlands_anarchy:0 "United Communes"
+ 
+ dyn_c_belgium_absolutist_monarchy:0 "Kingdom of Belgium"
+ 
+ dyn_c_belgium_monarchy:0 "Kingdom of Belgium"
+ 
+ dyn_c_belgium_dictatorship:0 "Belgian Empire"
+ 
+ dyn_c_belgium_republic:0 "Republic of Belgium"
+ 
+ dyn_c_belgium_communist:0 "Belgian Workers Cooperative"
+ 
+ dyn_c_belgium_communistvote:0 "Socialist Republic of Belgium"
+ 
+ dyn_c_belgium_theocratic:0 "Belgian Crusader State"
+ 
+ dyn_c_belgium_theocraticvote:0 "Catholic Republic of Belgium"
+ 
+ dyn_c_belgium_anarchy:0 "Confederated Communes of Belgium"
+ 
+ dyn_c_egypt_absolutist_monarchy:0 "Khedivate of Egypt"
+ 
+ dyn_c_egypt_monarchy:0 "Khedivate of Egypt"
+ 
+ dyn_c_egypt_dictatorship:0 "Restored Egyptian Empire"
+ 
+ dyn_c_egypt_republic:0 "Republic of Egypt"
+ 
+ dyn_c_egypt_communist:0 "Free Socialist State of Egypt"
+ 
+ dyn_c_egypt_communistvote:0 "Peoples Republic of Egypt"
+ 
+ dyn_c_egypt_theocratic:0 "Islamic State of Egypt"
+ 
+ dyn_c_egypt_theocraticvote:0 "Islamic Republic of Egypt"
+ 
+ dyn_c_egypt_puppet_TUR:0 "Turkish Egypt"
+ 
+ dyn_c_egypt_anarchy:0 "Communes of Egypt"
+
+ dyn_c_prussia_absolutist_monarchy:0 "Kingdom of Prussia"
+ 
+ dyn_c_prussia_monarchy:0 "Kingdom of Prussia"
+ 
+ dyn_c_prussia_dictatorship:0 "Prussian Empire"
+ 
+ dyn_c_prussia_republic:0 "Prussian Republic"
+ 
+ dyn_c_prussia_communist:0 "Socialist Republics in Prussia"
+ 
+ dyn_c_prussia_communistvote:0 "Prussian Peoples Republic"
+ 
+ dyn_c_prussia_theocratic:0 "Christian Order of Prussia"
+ 
+ dyn_c_prussia_theocraticvote:0 "Christian Republic of Prussia"
+ 
+ dyn_c_prussia_anarchy:0 "Confederated Prussian Communes"
+ 
+ dyn_c_northgerman_absolutist_monarchy:0 "North German Federation"
+ 
+ dyn_c_northgerman_monarchy:0 "North German Federation"
+ 
+ dyn_c_northgerman_dictatorship:0 "North German Empire"
+ 
+ dyn_c_northgerman_republic:0 "North German Republic"
+ 
+ dyn_c_northgerman_communist:0 "North German Peoples State"
+ 
+ dyn_c_northgerman_communistvote:0 "North German Socialist Republic"
+ 
+ dyn_c_northgerman_theocratic:0 "Holy State of Northern Germany"
+ 
+ dyn_c_northgerman_theocraticvote:0 "Christian Union of Northern Germany"
+ 
+ dyn_c_northgerman_anarchy:0 "North German Communes"
+ 
+ dyn_c_france_bonapartiste:0 "Second French Empire"
+
+ dyn_c_france_absolutist_monarchy:0 "Kingdom of France"
+ 
+ dyn_c_france_monarchy:0 "Kingdom of France"
+ 
+ dyn_c_france_dictatorship:0 "French Empire"
+ 
+ dyn_c_france_republic:0 "French Republic"
+ 
+ dyn_c_france_communist:0 "French Workers State"
+ 
+ dyn_c_france_communistvote:0 "French Socialist Republic"
+ 
+ dyn_c_france_theocratic:0 "Catholic Union of France"
+ 
+ dyn_c_france_theocraticvote:0 "Catholic Republic of France" 
+
+ dyn_c_france_anarchy:0 "Paris Commune"
+ 
+ dyn_c_spain_monarchy:0 "Kingdom of Spain"
+ 
+ dyn_c_spain_absolutist_monarchy:0 "Kingdom of Spain"
+ 
+ dyn_c_spain_dictatorship:0 "Spanish Empire"
+ 
+ dyn_c_spain_republic:0 "Republic of Spain"
+ 
+ dyn_c_spain_communist:0 "Socialist State of Spain"
+ 
+ dyn_c_spain_communistvote:0 "Workers Republic of Spain"
+ 
+ dyn_c_spain_theocratic:0 "Catholic Unitary State"
+ 
+ dyn_c_spain_theocraticvote:0 "Catholic Republic of Spain"
+ 
+ dyn_c_spain_anarchy:0 "Madrid Commune"
+ 
+ dyn_c_turkey_monarchy:0 "Ottoman Empire"
+ 
+ dyn_c_turkey_absolutist_monarchy:0 "Ottoman Sultanate"
+ 
+ dyn_c_turkey_dictatorship:0 "New Turkish Empire"
+ 
+ dyn_c_turkey_republic:0 "Republic of Turkey"
+ 
+ dyn_c_turkey_communist:0 "Anatolian Workers Commune"
+ 
+ dyn_c_turkey_communistvote:0 "Turkish Socialist Republic"
+ 
+ dyn_c_turkey_theocratic:0 "Holy Caliphate of Turkey"
+ 
+ dyn_c_turkey_theocraticvote:0 "Turkish Islamic Republic"
+ 
+ dyn_c_turkey_anarchy:0 "Free Anatolian Confederation"
+
+ dyn_c_TRI_puppet_TUR_ottoman:0 "Turkish Mandate of Tripolitania"
+ 
+ dyn_c_russia_monarchy:0 "Russian Empire"
+ 
+ dyn_c_russia_absolutist_monarchy:0 "Russian Tsardom"
+ 
+ dyn_c_russia_dictatorship:0 "Greater Russian Empire"
+ 
+ dyn_c_russia_republic:0 "Russian Republic"
+ 
+ dyn_c_russia_communist:0 "Soviet Union"
+ 
+ dyn_c_russia_communistvote:0 "Soviet Union"
+ 
+ dyn_c_russia_theocratic:0 "Russian Orthodox Patriarchy"
+ 
+ dyn_c_russia_theocraticvote:0 "Russian Orthodox Republic"
+ 
+ dyn_c_russia_anarchy:0 "Russian Confederation of Communes"
+ 

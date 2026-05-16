@@ -1,0 +1,6 @@
+﻿l_japanese:
+
+ notification_exile_notification_desc: "[SCOPE.sCharacter('exile_scope').GetFullName]が[SCOPE.sCountry('exiling_country_scope').GetName]によって[concept_exile]とされました。\n$DAN_agitator_detail_interest_group$\n$DAN_agitator_detail_ideology$\n$DAN_agitator_detail_traits$"
+ notification_new_ruler_desc: "[SCOPE.sCharacter( 'previous' ).GetFullName]が[concept_ruler]であった時代は終わりを告げました。[SCOPE.GetRootScope.GetCharacter.GetFullName]が[SCOPE.GetRootScope.GetCharacter.GetCountry.GetName]の新たな[Concept('concept_ruler', SCOPE.GetRootScope.GetCharacter.GetPrimaryRoleTitle)]です\n$DAN_ruler_interest_group$\n$DAN_ruler_interest_ideology$\n$DAN_ruler_detail_traits$"
+ notification_heir_born_notification_desc:0 "[SCOPE.GetRootScope.GetCharacter.GetCountry.GetName]の王位[concept_heir]となる[SCOPE.GetRootScope.GetCharacter.GetFullName]が誕生しました\n$DAN_ruler_interest_group$\n$DAN_ruler_interest_ideology$\n$DAN_ruler_detail_traits$"
+ notification_agitator_spawned_desc:1 "[SCOPE.sCha('character').GetAgitatorSpawnedNotificationText]\n$DAN_spawn_interest_group$\n$DAN_spawn_interest_ideology$\n$DAN_spawn_detail_traits$"

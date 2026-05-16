@@ -1,0 +1,6 @@
+﻿l_german:
+
+ notification_exile_notification_desc: "[SCOPE.sCharacter('exile_scope').GetFullName] wurde [SCOPE.sCountry('exiling_country_scope').GetAltName('VON')] ins [Concept('concept_exile', 'Exil')] geschickt.\n$DAN_agitator_detail_interest_group$\n$DAN_agitator_detail_ideology$\n$DAN_agitator_detail_traits$"
+ notification_new_ruler_desc: "Die Zeit von [SCOPE.sCharacter( 'previous' ).GetFullName] als [concept_ruler] ist abgelaufen. [SCOPE.GetRootScope.GetCharacter.GetFullName] ist [SCOPE.GetRootScope.GetCharacter.GetCustom('DE_ART_DEF_S_N')] neue [SCOPE.GetRootScope.GetCharacter.GetPrimaryRoleTitle] [SCOPE.GetRootScope.GetCharacter.GetCountry.GetAltName('VON')]\n$DAN_ruler_interest_group$\n$DAN_ruler_interest_ideology$\n$DAN_ruler_detail_traits$"
+ notification_heir_born_notification_desc:0 "[SCOPE.GetRootScope.GetCharacter.GetFullName], [concept_heir] des Throns [SCOPE.GetRootScope.GetCharacter.GetCountry.GetAltName('VON')], wurde geboren\n$DAN_ruler_interest_group$\n$DAN_ruler_interest_ideology$\n$DAN_ruler_detail_traits$"
+ notification_agitator_spawned_desc:1 "[SCOPE.sCha('character').GetAgitatorSpawnedNotificationText]\n$DAN_spawn_interest_group$\n$DAN_spawn_interest_ideology$\n$DAN_spawn_detail_traits$"

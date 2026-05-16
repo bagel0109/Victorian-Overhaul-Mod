@@ -1,0 +1,171 @@
+﻿###OTHER DOMINIONS###
+
+### Ceylon ###
+REPLACE_OR_CREATE:BCE = {
+	dynamic_country_name = {
+	name = dyn_c_ceylon_dominion
+	adjective = CEY_ADJ
+	is_main_tag_only = yes
+	priority = 10000
+	trigger = {
+		exists = c:GBR
+		scope:actor ?= {
+			is_subject_of = c:GBR
+			is_subject_type = subject_type_dominion
+			}
+		}
+	}
+}
+
+### Sierra Leone ###
+REPLACE_OR_CREATE:SIL	= {
+	dynamic_country_name = {
+	name = dyn_c_sierraleone_dominion
+	adjective = SIE_ADJ
+	is_main_tag_only = yes
+	priority = 10000
+	trigger = {
+		exists = c:GBR
+		scope:actor ?= {
+			is_subject_of = c:GBR
+			is_subject_type = subject_type_dominion
+			}
+		}
+	}	
+}
+
+### Malta ###
+REPLACE_OR_CREATE:MLT = {
+	dynamic_country_name = {
+	name = dyn_c_malta_dominion
+	adjective = MLT_ADJ
+	is_main_tag_only = yes
+	priority = 10000
+	trigger = {
+		exists = c:GBR
+		scope:actor ?= {
+			is_subject_of = c:GBR
+			is_subject_type = subject_type_dominion
+			}
+		}
+	}
+}
+
+### Fiji ###
+REPLACE_OR_CREATE:FJI = {
+	dynamic_country_name = {
+	name = dyn_c_fiji_dominion
+	adjective = FIJ_ADJ
+	is_main_tag_only = yes
+	priority = 10000
+	trigger = {
+		exists = c:GBR
+		scope:actor ?= {
+			is_subject_of = c:GBR
+			is_subject_type = subject_type_dominion
+			}
+		}
+	}
+}
+
+### Papua New Guinea ###
+REPLACE_OR_CREATE:PPU = { 
+	dynamic_country_name = {
+	name = dyn_c_papuanewguinea_dominion
+	adjective = PNG_ADJ
+	is_main_tag_only = yes
+	priority = 10000
+	trigger = {
+		exists = c:GBR
+		scope:actor ?= {
+			is_subject_of = c:GBR
+			is_subject_type = subject_type_dominion
+			}
+		}
+	}
+}
+
+### Solomon Islands ###
+REPLACE_OR_CREATE:BLA = {
+	dynamic_country_name = {
+	name = dyn_c_solomonislands_dominion
+	adjective = SOL_ADJ
+	is_main_tag_only = yes
+	priority = 10000
+	trigger = {
+		exists = c:GBR
+		scope:actor ?= {
+			is_subject_of = c:GBR
+			is_subject_type = subject_type_dominion
+			}
+		}
+	}
+}
+
+### Jamaica ###
+REPLACE_OR_CREATE:JAM = {
+	dynamic_country_name = {
+	name = dyn_c_jamaica_dominion
+	adjective = JAM_ADJ
+	is_main_tag_only = yes
+	priority = 10000
+	trigger = {
+		exists = c:GBR
+		scope:actor ?= {
+			is_subject_of = c:GBR
+			is_subject_type = subject_type_dominion
+			}
+		}
+	}
+}
+
+### The Bahamas ###
+REPLACE_OR_CREATE:BAH	= {
+	dynamic_country_name = {
+	name = dyn_c_bahamas_dominion
+	adjective = BAH_ADJ
+	is_main_tag_only = yes
+	priority = 10000
+	trigger = {
+		exists = c:GBR
+		scope:actor ?= {
+			is_subject_of = c:GBR
+			is_subject_type = subject_type_dominion
+			}
+		}
+	}
+}
+
+### Ghana ###
+REPLACE_OR_CREATE:ASH = {
+	dynamic_country_name = {
+	name = dyn_c_ghana_dominion
+	adjective = GHA_ADJ
+	is_main_tag_only = yes
+	priority = 10000
+	trigger = {
+		exists = c:GBR
+		scope:actor ?= {
+			is_subject_of = c:GBR
+			is_subject_type = subject_type_dominion
+			}
+		}
+	}
+}
+
+### Nigeria ###
+REPLACE_OR_CREATE:sSOK = {
+	dynamic_country_name = {
+	name = dyn_c_nigeria_dominion
+	adjective = NGA_ADJ
+	is_main_tag_only = yes
+	priority = 10000
+	trigger = {
+		exists = c:GBR
+		scope:actor ?= {
+			is_subject_of = c:GBR
+			is_subject_type = subject_type_dominion
+			}
+		}
+	}
+}

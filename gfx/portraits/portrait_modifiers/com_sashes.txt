@@ -1,0 +1,123 @@
+﻿
+    #############
+    # By Lord R #
+    #############
+
+    COM_sashes = {
+        usage = game
+        selection_behavior = weighted_random
+    
+        #SCA Cultural Sashes: Sweden
+        COM_SCA_sash_swedish = {
+            dna_modifiers = {
+                accessory = {
+                    mode = add
+                    gene = com_sashes
+                    template = com_SWE_sashes_military
+                    range = { 0 1 } # For the randomness to work correctly
+                }
+            }
+            weight = {
+                base = 0
+                modifier = {
+                    add = 500
+                    COM_is_swedish_SCA = yes
+                }
+            }
+        }
+    
+        #SCA Cultural Sashes: Denmark
+        COM_SCA_sash_danish = {
+            dna_modifiers = {
+                accessory = {
+                    mode = add
+                    gene = com_sashes
+                    template = com_SCA_DEN_military_sashes
+                    range = { 0 1 } # For the randomness to work correctly
+                }
+            }
+            weight = {
+                base = 0
+                modifier = {
+                    add = 500
+                    COM_is_danish_SCA = yes
+                }
+            }
+        }
+    
+        #SCA Cultural Sashes: Norway
+        COM_SCA_sash_norwegian = {
+            dna_modifiers = {
+                accessory = {
+                    mode = add
+                    gene = com_sashes
+                    template = com_NOR_sashes_military
+                    range = { 0 1 } # For the randomness to work correctly
+                }
+            }
+            weight = {
+                base = 0
+                modifier = {
+                    add = 500
+                    COM_is_norwegian_SCA = yes
+                }
+            }
+        }
+    
+        #SCA Cultural Sashes: Finland
+        COM_SCA_sash_finnish = {
+            dna_modifiers = {
+                accessory = {
+                    mode = add
+                    gene = com_sashes
+                    template = com_FIN_sashes
+                    range = { 0.2 1 } # For the randomness to work correctly
+                }
+            }
+            weight = {
+                base = 0
+                modifier = {
+                    add = 500
+                    COM_is_finnish_SCA = yes
+                }
+            }
+        }
+    
+        #SCA Cultural Sashes: Iceland
+        COM_SCA_sash_icelandic = {
+            dna_modifiers = {
+                accessory = {
+                    mode = add
+                    gene = com_sashes
+                    template = com_ICL_sashes
+                    range = { 0 1 } # For the randomness to work correctly
+                }
+            }
+            weight = {
+                base = 0
+                modifier = {
+                    add = 500
+                    COM_is_icelandic_SCA = yes
+                }
+            }
+        }
+    
+        #SCA Cultural Sashes: other
+        COM_SCA_sash_other = {
+            dna_modifiers = {
+                accessory = {
+                    mode = add
+                    gene = com_sashes
+                    template = com_SCA_military_sashes
+                    range = { 0 1 } # For the randomness to work correctly
+                }
+            }
+            weight = {
+                base = 0
+                modifier = {
+                    add = 200
+                    COM_is_other_SCA = yes
+                }
+            }
+        }
+    }

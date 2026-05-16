@@ -1,0 +1,56 @@
+﻿on_revolution_end = {
+	on_actions = {
+		stts_civil_war_won
+	}
+}
+
+stts_civil_war_won = {
+	effect = {
+		root ?= {
+			add_modifier = {
+				name = stts_revolutionary_reform
+				years = 1
+			}
+		}
+		scope:target ?= {
+			add_modifier = {
+				name = stts_revolutionary_reform
+				years = 1
+			}
+		}
+	}
+}
+
+on_monthly_pulse_country = {
+	on_actions = {
+		stts_events_pulse
+	}
+}
+
+stts_events_pulse = {
+	events = {
+		stts_movement.1 #Agitator takes IG leadership
+		stts_movement.2 #Movement Coup
+	}
+	random_events = {
+		chance_of_no_event = 50
+		100 = stts_movement.3 #Socialist Infighting
+		100 = stts_movement.4 #Popular Front Against Fascism
+		100 = stts_movement.5 #Brownshirt Violence
+		200 = stts_movement.6 #Good Tsar
+		50 = stts_movement.7 #Bank Robbery
+		100 = stts_movement.8 #Liberal Nationalism
+		50 = stts_movement.9 #Movement Assassination
+		100 = stts_movement.10 #Anarchists vs Secret Police
+		100 = stts_movement.11 #Social Democrats ally with Fascists
+		100 = stts_movement.12 #Religious Majority boosts Devout
+		100 = stts_movement.13 #Nationalist Internationalism
+		100 = stts_movement.14 #Peasant Tax Strike
+		100 = stts_movement.15 #Industrialists use Racist movement
+		100 = stts_movement.16 #Rival-Influenced Movement
+		100 = stts_movement.18 #Support foreign revolution
+		100 = stts_movement.19 #Authoritarian spawns in revolution
+		
+		1 = stts_easter_egg.1 #Kingdom of Conscience
+	}
+}

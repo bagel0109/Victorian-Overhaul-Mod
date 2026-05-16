@@ -1,0 +1,58 @@
+﻿l_russian:
+    # PART 1: GAME CONCEPTS
+    concept_gdp_growth_rate:0 "Темп роста ВВП"
+    concept_gdp_growth_rate_short:0 "Рост ВВП"
+    concept_gdp_growth_rate_desc:0 "Годовое изменение [concept_gdp] вашей [concept_country]. Оно отражает изменения в общем объеме произведенной продукции [Concept('concept_pop','$concept_pops$')], занятыми во всех [Concept('concept_building','$concept_buildings$')], на что влияют [concept_pop_growth], инвестиции через [concept_construction] и передовые [Concept('concept_production_method','$concept_production_methods$')]. Стабильный [Concept('concept_gdp_growth_rate','$concept_gdp_growth_rate_short$')] может влиять на количество [Concept('concept_loyalist','$concept_loyalists$')] и [Concept('concept_radical','$concept_radicals$')]."
+
+    # MAGIC VARIABLE (Package for the engine to call smoothly)
+    GDPGR_CONCEPT_CALL:0 "[Concept('concept_gdp_growth_rate', '$concept_gdp_growth_rate_short$')]"
+
+    # PART 2: INTERFACE
+    GDPGR_growth_text:0 "@money! Ср. за год $GDPGR_tt_avg_growth_rate_abs$ ($GDPGR_tt_avg_growth_rate_per$) $GDPGR_CONCEPT_CALL$ $GDPGR_leaderboard_text$"
+    
+    GDPGR_tt_avg_growth_rate_per:0 "#tooltippable;tooltip:[Country.GetTooltipTag],GDPGR_GDP_tooltip [Multiply_CFixedPoint('(CFixedPoint)12',Country.MakeScope.Var('GDPGR_past_year_avg_rate').GetValue)|1+=%]#!"
+    
+    GDPGR_tt_avg_growth_rate_abs:0 "#tooltippable;tooltip:[Country.GetTooltipTag],GDPGR_GDP_tooltip [Multiply_CFixedPoint('(CFixedPoint)12',Country.MakeScope.Var('GDPGR_past_year_avg_diff').GetValue)|D+=]#!"
+    
+    GDPGR_GDP_tooltip:0 "$GDPGR_GDP_tooltip_h$\n$TOOLTIP_DELIMITER$\n$GDPGR_GDP_tooltip_mp_h$\n#weak $GDPGR_GDP_tooltip_mp_d$#!\n$GDPGR_GDP_tooltip_mp_abs$ ($GDPGR_GDP_tooltip_mp_per$)\n\n$GDPGR_GDP_tooltip_mr_h$\n#weak $GDPGR_GDP_tooltip_mr_d$#!\n$GDPGR_GDP_tooltip_mr_abs$ ($GDPGR_GDP_tooltip_mr_per$)\n\n$GDPGR_GDP_tooltip_r_h$\n#weak $GDPGR_GDP_tooltip_r_d$#!\n$GDPGR_GDP_tooltip_r_abs$ ($GDPGR_GDP_tooltip_r_per$)\n\n$GDPGR_GDP_tooltip_y_h$\n#weak $GDPGR_GDP_tooltip_y_d$#!\n$GDPGR_GDP_tooltip_y_abs$ ($GDPGR_GDP_tooltip_y_per$)"
+    
+    GDPGR_GDP_tooltip_h:0 "#header @money! Тенденции $GDPGR_CONCEPT_CALL$#!"
+    
+    GDPGR_GDP_tooltip_r_h:0   "#T Последние 12 месяцев:#!"
+    GDPGR_GDP_tooltip_r_d:0   "Чистое изменение ВВП за последние 12 учтенных ежемесячных снимков."
+    GDPGR_GDP_tooltip_r_per:0 "[Country.MakeScope.Var('GDPGR_rolling_gdp_growth_rate').GetValue|1+=%]"
+    GDPGR_GDP_tooltip_r_abs:0 "@money![Country.MakeScope.Var('GDPGR_rolling_difference').GetValue|D+=]"
+    
+    GDPGR_GDP_tooltip_y_h:0   "#T Между началом [Subtract_CFixedPoint(GetGlobalVariable('GDPGR_year').GetValue,'(CFixedPoint)1')|0] и [GetGlobalVariable('GDPGR_year').GetValue|0]:#!"
+    GDPGR_GDP_tooltip_y_d:0   "Сравнивает ВВП на начало предыдущего года с ВВП на начало текущего года."
+    GDPGR_GDP_tooltip_y_per:0 "[Country.MakeScope.Var('gdp_growth_rate').GetValue|1+=%]"
+    GDPGR_GDP_tooltip_y_abs:0 "@money![Subtract_CFixedPoint(Country.MakeScope.Var('current_gdp').GetValue,Country.MakeScope.Var('before_gdp').GetValue)|D+=]"
+    
+    GDPGR_GDP_tooltip_mr_h:0   "#T Среднемесячное за прошлый год:#!"
+    GDPGR_GDP_tooltip_mr_d:0   "Среднемесячный прирост или потеря ВВП за последние 12 месяцев."
+    GDPGR_GDP_tooltip_mr_per:0 "[Country.MakeScope.Var('GDPGR_past_year_avg_rate').GetValue|1+=%]"
+    GDPGR_GDP_tooltip_mr_abs:0 "@money![Country.MakeScope.Var('GDPGR_past_year_avg_diff').GetValue|D+=]"
+    
+    GDPGR_GDP_tooltip_mp_h:0   "#T Прошлый месяц:#!"
+    GDPGR_GDP_tooltip_mp_d:0   "Изменение между двумя самыми последними ежемесячными записями ВВП."
+    GDPGR_GDP_tooltip_mp_per:0 "[Country.MakeScope.Var('GDPGR_past_month_rate').GetValue|1+=%]"
+    GDPGR_GDP_tooltip_mp_abs:0 "@money![Country.MakeScope.Var('GDPGR_past_month_diff').GetValue|D+=]"
+    
+    GDPGR_leaderboard_text:0 "(#tooltippable;tooltip:[Country.GetTooltipTag],GDPGR_leaderboard_tooltip #v $GDPGR_leaderboard_pos$#!#!)"
+    
+    GDPGR_leaderboard_norm:0 "##[Country.MakeScope.Var('GDPGR_annl_growth_leaderboard_pos').GetValue|0]"
+    GDPGR_leaderboard_excl:0 "Н/Д"
+    GDPGR_leaderboard_pos:0  "[SelectLocalization(GreaterThan_CFixedPoint(Country.MakeScope.Var('GDPGR_annl_growth_leaderboard_pos').GetValue,'(CFixedPoint)0'),'GDPGR_leaderboard_norm','GDPGR_leaderboard_excl')]"
+    
+    GDPGR_leaderboard_tooltip:0 "$GDPGR_leaderboard_tooltip_h$\n[GetScriptedGui('GDPGR_sg_annl_growth_leaderboard').ExecuteTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End)]\n$TOOLTIP_DELIMITER$\n$GDPGR_leaderboard_tooltip_h2$\n[GetScriptedGui('GDPGR_sg_annl_growth_leaderboard_top_gdps').ExecuteTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End)][AddLocalizationIf(EqualTo_CFixedPoint(Country.MakeScope.Var('GDPGR_annl_growth_leaderboard_pos').GetValue,'(CFixedPoint)0'),'GDPGR_leaderboard_rev_warning')]"
+    
+    GDPGR_leaderboard_rev_warning:0 "\n$TOOLTIP_DELIMITER$\n@warning! $GDPGR_leaderboard_rev_warning_text$"
+    
+    GDPGR_leaderboard_tooltip_h:0  "#header @prestige! Таблица лидеров (Ср. годовой $GDPGR_CONCEPT_CALL$)#!"
+    GDPGR_leaderboard_tooltip_h2:0 "#header @gdp! $GDPGR_CONCEPT_CALL$ среди 10 крупнейших экономик#!"
+    
+    GDPGR_leaderboard_rev_warning_text:0 "В стране [Country.GetName] в настоящее время идет гражданская война, или это недавно образованная страна. Данные все еще стабилизируются."
+    
+    GDPGR_tt_leaderboard_line:0 "#v ##[THIS.Var('GDPGR_annl_growth_leaderboard_pos').GetValue]:#! #bold [THIS.GetCountry.GetName]#! - [Multiply_CFixedPoint('(CFixedPoint)12',THIS.Var('GDPGR_past_year_avg_rate').GetValue)|1+=%] (@money![Multiply_CFixedPoint('(CFixedPoint)12',THIS.Var('GDPGR_past_year_avg_diff').GetValue)|D+=])"
+    
+    GDPGR_tt_leaderboard_line_top_gdps:0 "#bold [THIS.GetCountry.GetName]#! (@money![THIS.GetCountry.GetGDP|Dv]) - [Multiply_CFixedPoint('(CFixedPoint)12',THIS.Var('GDPGR_past_year_avg_rate').GetValue)|1+=%] (@money![Multiply_CFixedPoint('(CFixedPoint)12',THIS.Var('GDPGR_past_year_avg_diff').GetValue)|D+=])"

@@ -1,0 +1,60 @@
+﻿# Yeni kurulan ülkeleri anında başlatır (Decision'a gerek kalmaz)
+on_country_created = {
+    effect = {
+        GDPGR_initialize_country = yes
+    }
+}
+
+# Fires every Jan. 1
+GDPGR_on_yearly = {
+    effect = {
+        set_global_variable = {
+            name  = GDPGR_year
+            value = year
+        }
+        if = {
+            limit = {
+                has_global_variable = GDPGR_year
+            }
+        }
+        every_country = {
+            # Performans: Sadece tanınmış ve tanınmayan ülkeleri hesapla, merkezi olmayan (decentralized) kabileleri atla
+            limit = { NOT = { is_country_type = decentralized } } 
+            trigger_event = { id = gdp.1 }
+        }
+    }
+}
+
+on_yearly_pulse = {
+    on_actions = { # `on_actions` blocks append, `effect` overwrites; do it this way for compatibility & future-proofing
+        GDPGR_on_yearly
+    }
+}
+
+GDPGR_on_monthly = {
+    effect = {
+        every_country = {
+            limit = { NOT = { is_country_type = decentralized } }
+            trigger_event = { id = gdp.3 }
+        }
+        GDPGR_calculate_annl_growth_leaderboard = yes
+    }
+}
+
+on_monthly_pulse = {
+    on_actions = {
+        GDPGR_on_monthly
+    }
+}
+
+on_game_started = {
+    on_actions = {
+        GDPGR_on_start
+    }
+}
+
+GDPGR_on_start = {
+    effect = {
+        GDPGR_initialize_all = yes
+    }
+}

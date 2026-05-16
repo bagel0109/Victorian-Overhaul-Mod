@@ -1,0 +1,1039 @@
+﻿l_english:
+
+ dyn_c_bavaria_absolutist_monarchy:0 "Kingdom of Bavaria"
+ 
+ dyn_c_bavaria_monarchy:0 "Kingdom of Bavaria"
+ 
+ dyn_c_bavaria_dictatorship:0 "Bavarian National Directorate"
+ 
+ dyn_c_bavaria_republic:0 "Bavaria"
+ 
+ dyn_c_bavaria_communist:0 "Bavarian Proletarian State"
+ 
+ dyn_c_bavaria_communistvote:0 "Bavarian Socialist Assembly"
+ 
+ dyn_c_bavaria_theocratic:0 "Sacred Order of Bavaria"
+ 
+ dyn_c_bavaria_theocraticvote:0 "Democratic Church State of Bavaria"
+ 
+ dyn_c_bavaria_anarchy:0 "Federation of Autonomous Bavaria"
+ 
+ dyn_c_BAV_puppet_ABK:0 "Abkhaz Bavaria"
+ 
+ dyn_c_BAV_puppet_ABU:0 "Trucial Bavaria"
+ 
+ dyn_c_BAV_puppet_ACE:0 "Acehnese Bavaria"
+ 
+ dyn_c_BAV_puppet_ACH:0 "Acholi Bavaria"
+ 
+ dyn_c_BAV_puppet_AFG:0 "Afghan Bavaria"
+ 
+ dyn_c_BAV_puppet_ALB:0 "Albanian Bavaria"
+ 
+ dyn_c_BAV_puppet_ALD:0 "Algerian Bavaria"
+ 
+ dyn_c_BAV_puppet_AOT:0 "Aotearoan Bavaria"
+ 
+ dyn_c_BAV_puppet_ASA:0 "New African Bavaria"
+ 
+ dyn_c_BAV_puppet_AUS:0 "Austrian"
+ 
+ dyn_c_BAV_puppet_AWA:0 "Awadhi"
+ 
+ dyn_c_BAV_puppet_AMZ:0 "Amazonian Bavaria"
+ 
+ dyn_c_BAV_puppet_ANL:0 "Andalusian Bavaria"
+ 
+ dyn_c_BAV_puppet_AGJ:0 "New Angolan Bavaria"
+ 
+ dyn_c_BAV_puppet_ANH:0 "Anhaltian Bavaria"
+ 
+ dyn_c_BAV_puppet_ANK:0 "Ankole Bavaria"
+ 
+ dyn_c_BAV_puppet_ARA:0 "Arab Bavaria"
+ 
+ dyn_c_BAV_puppet_ARG:0 "Argentinian Bavaria"
+ 
+ dyn_c_BAV_puppet_ARM:0 "Armenian Bavaria"
+ 
+ dyn_c_BAV_puppet_ASH:0 "Ashanti Bavaria"
+ 
+ dyn_c_BAV_puppet_AWS:0 "Aussan Bavaria"
+ 
+ dyn_c_BAV_puppet_AST:0 "Australian Bavaria"
+ 
+ dyn_c_BAV_puppet_AZB:0 "Azerbaijani Bavaria"
+ 
+ dyn_c_BAV_puppet_BAB:0 "Babylonian Bavaria"
+ 
+ dyn_c_BAV_puppet_BAD:0 "Baden Bavaria"
+ 
+ dyn_c_BAV_puppet_BAH:0 "Bahamian Bavaria"
+ 
+ dyn_c_BAV_puppet_BAL:0 "Balinese Bavaria"
+ 
+ dyn_c_BAV_puppet_BAS:0 "Bastar Bavaria"
+ 
+ dyn_c_BAV_puppet_BEL:0 "Belgian Bavaria"
+ 
+ dyn_c_BAV_puppet_BEN:0 "Benin Bavaria"
+ 
+ dyn_c_BAV_puppet_BER:0 "Barodan Bavaria"
+ 
+ dyn_c_BAV_puppet_BGI:0 "Bagirmi Bavaria"
+ 
+ dyn_c_BAV_puppet_BGL:0 "Bengali Bavaria"
+ 
+ dyn_c_BAV_puppet_BGM:0 "Begemder Bavaria"
+ 
+ dyn_c_BAV_puppet_BHO:0 "Bhopali Bavaria"
+ 
+ dyn_c_BAV_puppet_BHU:0 "Bhutanese Bavaria"
+ 
+ dyn_c_BAV_puppet_BIC:0 "East India Bavaria"
+ 
+ dyn_c_BAV_puppet_BIK:0 "Bikaneri Bavaria"
+ 
+ dyn_c_BAV_puppet_BLG:0 "Bulungan Bavaria"
+ 
+ dyn_c_BAV_puppet_BNY:0 "Bunyoro Bavaria"
+ 
+ dyn_c_BAV_puppet_BOH:0 "Bohemian Bavaria"
+ 
+ dyn_c_BAV_puppet_BOL:0 "Bolivian Bavaria"
+ 
+ dyn_c_BAV_puppet_BOR:0 "Bornu Bavaria"
+ 
+ dyn_c_BAV_puppet_BOS:0 "Bosnian Bavaria"
+ 
+ dyn_c_BAV_puppet_BRA:0 "Brunswickian Bavaria"
+ 
+ dyn_c_BAV_puppet_BRD:0 "Burundi Bavaria"
+ 
+ dyn_c_BAV_puppet_BRE:0 "Bremian Bavaria"
+ 
+ dyn_c_BAV_puppet_BRI:0 "Breton Bavaria"
+ 
+ dyn_c_BAV_puppet_BRN:0 "Borana Bavaria"
+ 
+ dyn_c_BAV_puppet_BRU:0 "Brunei Bavaria"
+ 
+ dyn_c_BAV_puppet_BRZ:0 "Brazilian Bavaria"
+ 
+ dyn_c_BAV_puppet_BUG:0 "Bugandan Bavaria"
+ 
+ dyn_c_BAV_puppet_BUK:0 "Bukharan Bavaria"
+ 
+ dyn_c_BAV_puppet_BUL:0 "Bulgarian Bavaria"
+ 
+ dyn_c_BAV_puppet_BUN:0 "Orchhan Bavaria"
+ 
+ dyn_c_BAV_puppet_BUR:0 "Burmese Bavaria"
+ 
+ dyn_c_BAV_puppet_BYE:0 "Byelorussian Bavaria"
+ 
+ dyn_c_BAV_puppet_BYZ:0 "Byzantine Bavaria"
+ 
+ dyn_c_BAV_puppet_CAL:0 "Californian Bavaria"
+ 
+ dyn_c_BAV_puppet_CAM:0 "Cambodian Bavaria"
+ 
+ dyn_c_BAV_puppet_CAN:0 "Canadian Bavaria"
+ 
+ dyn_c_BAV_puppet_CAS:0 "Castilian Bavaria"
+ 
+ dyn_c_BAV_puppet_CAT:0 "Catalonian Bavaria"
+ 
+ dyn_c_BAV_puppet_CHE:0 "Cherokee Bavaria"
+ 
+ dyn_c_BAV_puppet_CHI:0 "Chinese Bavaria"
+ 
+ dyn_c_BAV_puppet_CHL:0 "Chilean Bavaria"
+ 
+ dyn_c_BAV_puppet_CHP:0 "Champassakan Bavaria"
+ 
+ dyn_c_BAV_puppet_CLM:0 "Colombian Bavaria"
+ 
+ dyn_c_BAV_puppet_CMI:0 "Chiang Maian Bavaria"
+ 
+ dyn_c_BAV_puppet_CNG:0 "Congolese Bavaria"
+ 
+ dyn_c_BAV_puppet_CNW:0 "Cornish Bavaria"
+ 
+ dyn_c_BAV_puppet_COB:0 "Saxon Bavaria"
+ 
+ dyn_c_BAV_puppet_COL:0 "Columbian Bavaria"
+ 
+ dyn_c_BAV_puppet_COS:0 "Costa Rican Bavaria"
+ 
+ dyn_c_BAV_puppet_CRE:0 "Cretian Bavaria"
+ 
+ dyn_c_BAV_puppet_CRI:0 "Crimean Bavaria"
+ 
+ dyn_c_BAV_puppet_CRO:0 "Croatian Bavaria"
+ 
+ dyn_c_BAV_puppet_CSA:0 "Confederate Bavaria"
+ 
+ dyn_c_BAV_puppet_CUB:0 "Cuban Bavaria"
+ 
+ dyn_c_BAV_puppet_CYP:0 "Cypriot Bavaria"
+ 
+ dyn_c_BAV_puppet_CZH:0 "Czechoslovakian Bavaria"
+ 
+ dyn_c_BAV_puppet_DAG:0 "Dagestani Bavaria"
+ 
+ dyn_c_BAV_puppet_DAH:0 "Dahomey Bavaria"
+ 
+ dyn_c_BAV_puppet_DAI:0 "Vietnamese Bavaria"
+ 
+ dyn_c_BAV_puppet_DEN:0 "Danish Bavaria"
+ 
+ dyn_c_BAV_puppet_DES:0 "Mormon Bavaria"
+ 
+ dyn_c_BAV_puppet_DFR:0 "Darfuri Bavaria"
+ 
+ dyn_c_BAV_puppet_DOM:0 "Dominican Bavaria"
+ 
+ dyn_c_BAV_puppet_DZG:0 "Danziger Bavaria"
+ 
+ dyn_c_BAV_puppet_ECU:0 "Ecuadorian Bavaria"
+ 
+ dyn_c_BAV_puppet_EGY:0 "Egyptian Bavaria"
+ 
+ dyn_c_BAV_puppet_ELS:0 "El Salvadorian Bavaria"
+ 
+ dyn_c_BAV_puppet_ENG:0 "English Bavaria"
+ 
+ dyn_c_BAV_puppet_EST:0 "Estonian Bavaria"
+ 
+ dyn_c_BAV_puppet_ETH:0 "Ethiopian Bavaria"
+ 
+ dyn_c_BAV_puppet_FIN:0 "Finnish Bavaria"
+ 
+ dyn_c_BAV_puppet_FLA:0 "Flemish Bavaria"
+ 
+ dyn_c_BAV_puppet_FRA:0 "French Bavaria"
+ 
+ dyn_c_BAV_puppet_FRM:0 "Frankfurter Bavaria"
+ 
+ dyn_c_BAV_puppet_FSA:0 "Free American Bavaria"
+ 
+ dyn_c_BAV_puppet_FTJ:0 "Futa Jallon Bavaria"
+ 
+ dyn_c_BAV_puppet_FTR:0 "Futa Toro Bavaria"
+ 
+ dyn_c_BAV_puppet_GAL:0 "Galician-Lodomerian Bavaria"
+ 
+ dyn_c_BAV_puppet_GAM:0 "Gambian Bavaria"
+ 
+ dyn_c_BAV_puppet_GBR:0 "British Bavaria"
+ 
+ dyn_c_BAV_puppet_GCO:0 "Gran Colombian Bavaria"
+ 
+ dyn_c_BAV_puppet_GEO:0 "Georgian Bavaria"
+ 
+ dyn_c_BAV_puppet_GER:0 "German Bavaria"
+ 
+ dyn_c_BAV_puppet_GGR:0 "Greater German Bavaria"
+ 
+ dyn_c_BAV_puppet_GJM:0 "Gojjam Bavaria"
+ 
+ dyn_c_BAV_puppet_GLC:0 "Gold Coast Bavaria"
+ 
+ dyn_c_BAV_puppet_GLD:0 "Geledi Bavaria"
+ 
+ dyn_c_BAV_puppet_GRE:0 "Greek Bavaria"
+ 
+ dyn_c_BAV_puppet_GRI:0 "Guarani Bavaria"
+ 
+ dyn_c_BAV_puppet_GRN:0 "Greenlandic Bavaria"
+ 
+ dyn_c_BAV_puppet_GUA:0 "Guatemalan Bavaria"
+ 
+ dyn_c_BAV_puppet_GWA:0 "Gwaliori Bavaria"
+ 
+ dyn_c_BAV_puppet_HAI:0 "Haitian Bavaria"
+ 
+ dyn_c_BAV_puppet_HAM:0 "Hamburgian Bavaria"
+ 
+ dyn_c_BAV_puppet_HAN:0 "Hanoverian Bavaria"
+ 
+ dyn_c_BAV_puppet_HAR:0 "Harari Bavaria"
+ 
+ dyn_c_BAV_puppet_HAU:0 "Gobir Bavaria"
+ 
+ dyn_c_BAV_puppet_HAW:0 "Hawaiian Bavaria"
+ 
+ dyn_c_BAV_puppet_HDJ:0 "Hedjazi Bavaria"
+ 
+ dyn_c_BAV_puppet_HEK:0 "Hessian Bavaria"
+ 
+ dyn_c_BAV_puppet_HES:0 "Hessian Bavaria"
+ 
+ dyn_c_BAV_puppet_HND:0 "Indian Bavaria"
+ 
+ dyn_c_BAV_puppet_HOB:0 "Hobyo Bavaria"
+ 
+ dyn_c_BAV_puppet_HOL:0 "Holsteinian Bavaria"
+ 
+ dyn_c_BAV_puppet_HON:0 "Honduran Bavaria"
+ 
+ dyn_c_BAV_puppet_HUN:0 "Hungarian Bavaria"
+ 
+ dyn_c_BAV_puppet_HYD:0 "Hyderabadi Bavaria"
+ 
+ dyn_c_BAV_puppet_IBE:0 "Iberian Bavaria"
+ 
+ dyn_c_BAV_puppet_ICL:0 "Icelandic Bavaria"
+ 
+ dyn_c_BAV_puppet_IND:0 "Indori Bavaria"
+ 
+ dyn_c_BAV_puppet_ION:0 "Ionian Bavaria"
+ 
+ dyn_c_BAV_puppet_IRE:0 "Irish Bavaria"
+ 
+ dyn_c_BAV_puppet_IRQ:0 "Iraqi Bavaria"
+ 
+ dyn_c_BAV_puppet_ISQ:0 "Isaaqi Bavaria"
+ 
+ dyn_c_BAV_puppet_ISR:0 "Israeli Bavaria"
+ 
+ dyn_c_BAV_puppet_ITA:0 "Italian Bavaria"
+ 
+ dyn_c_BAV_puppet_JAI:0 "Dhundhari Bavaria"
+ 
+ dyn_c_BAV_puppet_JAM:0 "Jamaican Bavaria"
+ 
+ dyn_c_BAV_puppet_JAN:0 "Jan Mayen Bavaria"
+ 
+ dyn_c_BAV_puppet_JAP:0 "Japanese Bavaria"
+ 
+ dyn_c_BAV_puppet_JAS:0 "Jaisalmeri Bavaria"
+ 
+ dyn_c_BAV_puppet_JAV:0 "Javanese Bavaria"
+ 
+ dyn_c_BAV_puppet_JOD:0 "Marwari Bavaria"
+ 
+ dyn_c_BAV_puppet_JOH:0 "Johorean Bavaria"
+ 
+ dyn_c_BAV_puppet_KAL:0 "Kalati Bavaria"
+ 
+ dyn_c_BAV_puppet_KAS:0 "Kashmiri Bavaria"
+ 
+ dyn_c_BAV_puppet_KAU:0 "Kaurna Bavaria"
+ 
+ dyn_c_BAV_puppet_KAZ:0 "Kazakh Bavaria"
+ 
+ dyn_c_BAV_puppet_KFA:0 "Kaffa Bavaria"
+ 
+ dyn_c_BAV_puppet_KHI:0 "Khivan Bavaria"
+ 
+ dyn_c_BAV_puppet_KOK:0 "Kokandi Bavaria"
+ 
+ dyn_c_BAV_puppet_KON:0 "Kongolese Bavaria"
+ 
+ dyn_c_BAV_puppet_KOR:0 "Korean Bavaria"
+ 
+ dyn_c_BAV_puppet_KRA:0 "Krakowian Bavaria"
+ 
+ dyn_c_BAV_puppet_KRG:0 "Karagwe Bavaria"
+ 
+ dyn_c_BAV_puppet_KRT:0 "Kaarta Bavaria"
+ 
+ dyn_c_BAV_puppet_KTI:0 "Kutai Bavaria"
+ 
+ dyn_c_BAV_puppet_KUK:0 "Danubian Bavaria"
+ 
+ dyn_c_BAV_puppet_KUT:0 "Kutchi Bavaria"
+ 
+ dyn_c_BAV_puppet_KZH:0 "Kishi Bavaria"
+ 
+ dyn_c_BAV_puppet_LAD:0 "Ladakhi Bavaria"
+ 
+ dyn_c_BAV_puppet_LAN:0 "Lanfangan Bavaria"
+ 
+ dyn_c_BAV_puppet_LAO:0 "Laotian Bavaria"
+ 
+ dyn_c_BAV_puppet_LAT:0 "Latvian Bavaria"
+ 
+ dyn_c_BAV_puppet_LIB:0 "Liberian Bavaria"
+ 
+ dyn_c_BAV_puppet_LIP:0 "Lippish Bavaria"
+ 
+ dyn_c_BAV_puppet_SCM:0 "Schaumburger Bavaria"
+ 
+ dyn_c_BAV_puppet_HOH:0 "Hohenzollern Bavaria"
+ 
+ dyn_c_BAV_puppet_SCW:0 "Schwarzburger Bavaria"
+ 
+ dyn_c_BAV_puppet_LIT:0 "Lithuanian Bavaria"
+ 
+ dyn_c_BAV_puppet_LOM:0 "Lombardian Bavaria"
+ 
+ dyn_c_BAV_puppet_LUA:0 "Luang Prabangi Bavaria"
+ 
+ dyn_c_BAV_puppet_LUB:0 "Lubeckian Bavaria"
+ 
+ dyn_c_BAV_puppet_LUC:0 "Luccan Bavaria"
+ 
+ dyn_c_BAV_puppet_LUX:0 "Luxembourgian Bavaria"
+ 
+ dyn_c_BAV_puppet_MAD:0 "Madagascarian Bavaria"
+ 
+ dyn_c_BAV_puppet_MAK:0 "Makran Bavaria"
+ 
+ dyn_c_BAV_puppet_MAN:0 "Manhattanite Bavaria"
+ 
+ dyn_c_BAV_puppet_MAY:0 "Maya Bavaria"
+ 
+ dyn_c_BAV_puppet_MCH:0 "Manchu Bavaria"
+ 
+ dyn_c_BAV_puppet_MEC:0 "Mecklenburgian Bavaria"
+ 
+ dyn_c_BAV_puppet_MST:0 "Mecklenburgian Bavaria"
+ 
+ dyn_c_BAV_puppet_WLD:0 "Waldeckerd Bavaria"
+ 
+ dyn_c_BAV_puppet_MEI:0 "Saxon Bavaria"
+ 
+ dyn_c_BAV_puppet_MEW:0 "Mewari Bavaria"
+ 
+ dyn_c_BAV_puppet_MEX:0 "Mexican Bavaria"
+ 
+ dyn_c_BAV_puppet_MGL:0 "Mongolian Bavaria"
+ 
+ dyn_c_BAV_puppet_MJT:0 "Majerteenian Bavaria"
+ 
+ dyn_c_BAV_puppet_MKT:0 "Miskito Bavaria"
+ 
+ dyn_c_BAV_puppet_MNS:0 "Massinan Bavaria"
+ 
+ dyn_c_BAV_puppet_MOD:0 "Modenian Bavaria"
+ 
+ dyn_c_BAV_puppet_MOL:0 "Moldavian Bavaria"
+ 
+ dyn_c_BAV_puppet_MON:0 "Montenegrin Bavaria"
+ 
+ dyn_c_BAV_puppet_MOR:0 "Moroccan Bavaria"
+ 
+ dyn_c_BAV_puppet_MSN:0 "Massina Bavaria"
+ 
+ dyn_c_BAV_puppet_MTC:0 "Métis Bavaria"
+ 
+ dyn_c_BAV_puppet_MUG:0 "Mughal Bavaria"
+ 
+ dyn_c_BAV_puppet_MYS:0 "Mysori Bavaria"
+ 
+ dyn_c_BAV_puppet_NAG:0 "Nagpuri Bavaria"
+ 
+ dyn_c_BAV_puppet_NAH:0 "Anahuacan Bavaria"
+ 
+ dyn_c_BAV_puppet_NAL:0 "Natalian Bavaria"
+ 
+ dyn_c_BAV_puppet_NAS:0 "Nassauan Bavaria"
+ 
+ dyn_c_BAV_puppet_NAV:0 "Navarran Bavaria"
+ 
+ dyn_c_BAV_puppet_NEJ:0 "Nejdi Bavaria"
+ 
+ dyn_c_BAV_puppet_NEN:0 "New Englander Bavaria"
+ 
+ dyn_c_BAV_puppet_NEP:0 "Nepali Bavaria"
+ 
+ dyn_c_BAV_puppet_NET:0 "Dutch Bavaria"
+ 
+ dyn_c_BAV_puppet_NEW:0 "Newfoundlander Bavaria"
+ 
+ dyn_c_BAV_puppet_NGF:0 "North German Bavaria"
+ 
+ dyn_c_BAV_puppet_NIC:0 "Nicaraguan Bavaria"
+ 
+ dyn_c_BAV_puppet_NOR:0 "Norwegian Bavaria"
+ 
+ dyn_c_BAV_puppet_NZL:0 "New Zealand Bavaria"
+ 
+ dyn_c_BAV_puppet_OLD:0 "Oldenburgian Bavaria"
+ 
+ dyn_c_BAV_puppet_OMA:0 "Omani Bavaria"
+ 
+ dyn_c_BAV_puppet_ORA:0 "Oranjean Bavaria"
+ 
+ dyn_c_BAV_puppet_ORG:0 "Oregonian Bavaria"
+ 
+ dyn_c_BAV_puppet_ORI:0 "Orissan Bavaria"
+ 
+ dyn_c_BAV_puppet_OYO:0 "Oyo Bavaria"
+ 
+ dyn_c_BAV_puppet_OZH:0 "Orta Bavaria"
+ 
+ dyn_c_BAV_puppet_PAN:0 "Punjabi Bavaria"
+ 
+ dyn_c_BAV_puppet_PAP:0 "Roman Bavaria"
+ 
+ dyn_c_BAV_puppet_PAR:0 "Parmese Bavaria"
+ 
+ dyn_c_BAV_puppet_PER:0 "Persian Bavaria"
+ 
+ dyn_c_BAV_puppet_PEU:0 "Peruvian Bavaria"
+ 
+ dyn_c_BAV_puppet_PHI:0 "Philippine Bavaria"
+ 
+ dyn_c_BAV_puppet_PLC:0 "Polish-Lithuanian Bavaria"
+ 
+ dyn_c_BAV_puppet_PLY:0 "Tahitian Bavaria"
+ 
+ dyn_c_BAV_puppet_PNS:0 "Polynesian Bavaria"
+ 
+ dyn_c_BAV_puppet_YUZ:0 "Yuanzhumin Bavaria"
+ 
+ dyn_c_BAV_puppet_PNM:0 "Panamanian Bavaria"
+ 
+ dyn_c_BAV_puppet_POL:0 "Polish Bavaria"
+ 
+ dyn_c_BAV_puppet_POM:0 "Pomeranian Bavaria"
+ 
+ dyn_c_BAV_puppet_POR:0 "Portuguese Bavaria"
+ 
+ dyn_c_BAV_puppet_PRG:0 "Paraguayan Bavaria"
+ 
+ dyn_c_BAV_puppet_PRU:0 "Prussian Bavaria"
+ 
+ dyn_c_BAV_puppet_PCO:0 "Puerto Rican Bavaria"
+ 
+ dyn_c_BAV_puppet_QUE:0 "Quebec Bavaria"
+ 
+ dyn_c_BAV_puppet_REB:0 "Rebel Bavaria"
+ 
+ dyn_c_BAV_puppet_ROM:0 "Romanian Bavaria"
+ 
+ dyn_c_BAV_puppet_RUS:0 "Russian Bavaria"
+ 
+ dyn_c_BAV_puppet_RUT:0 "Ruthenian Bavaria"
+ 
+ dyn_c_BAV_puppet_RWD:0 "Rwandan Bavaria"
+ 
+ dyn_c_BAV_puppet_SAF:0 "South African Bavaria"
+ 
+ dyn_c_BAV_puppet_SAR:0 "Piedmontian Bavaria"
+ 
+ dyn_c_BAV_puppet_SAX:0 "Saxon Bavaria"
+ 
+ dyn_c_BAV_puppet_SCA:0 "Scandinavian Bavaria"
+ 
+ dyn_c_BAV_puppet_SCH:0 "Schleswigian Bavaria"
+ 
+ dyn_c_BAV_puppet_SCN:0 "Scanian Bavaria"
+ 
+ dyn_c_BAV_puppet_SCO:0 "Scottish Bavaria"
+ 
+ dyn_c_BAV_puppet_SDM:0 "Sidama Bavaria"
+ 
+ dyn_c_BAV_puppet_SEQ:0 "Indian Bavaria"
+ 
+ dyn_c_BAV_puppet_SER:0 "Serb Bavaria"
+ 
+ dyn_c_BAV_puppet_SGF:0 "German Bavaria"
+ 
+ dyn_c_BAV_puppet_SGU:0 "Segou Bavaria"
+ 
+ dyn_c_BAV_puppet_SHI:0 "Shimlan Bavaria"
+ 
+ dyn_c_BAV_puppet_SHW:0 "Shewan Bavaria"
+ 
+ dyn_c_BAV_puppet_SIA:0 "Siamese Bavaria"
+ 
+ dyn_c_BAV_puppet_SIC:0 "Sicilian Bavaria"
+ 
+ dyn_c_BAV_puppet_SIK:0 "Sikkim Bavaria"
+ 
+ dyn_c_BAV_puppet_SIL:0 "Sierra Leonean Bavaria"
+ 
+ dyn_c_BAV_puppet_SIN:0 "Sindi Bavaria"
+ 
+ dyn_c_BAV_puppet_SLO:0 "Slovenian Bavaria"
+ 
+ dyn_c_BAV_puppet_SLV:0 "Slovak Bavaria"
+ 
+ dyn_c_BAV_puppet_SOK:0 "Sokoto Bavaria"
+ 
+ dyn_c_BAV_puppet_SPA:0 "Spanish Bavaria"
+ 
+ dyn_c_BAV_puppet_SWE:0 "Swedish Bavaria"
+ 
+ dyn_c_BAV_puppet_SWI:0 "Swiss Bavaria"
+ 
+ dyn_c_BAV_puppet_TEX:0 "Texan Bavaria"
+ 
+ dyn_c_BAV_puppet_TGR:0 "Tigray Bavaria"
+ 
+ dyn_c_BAV_puppet_TIB:0 "Tibetan Bavaria"
+ 
+ dyn_c_BAV_puppet_TPG:0 "Taiping Bavaria"
+ 
+ dyn_c_BAV_puppet_TRA:0 "Travancorian Bavaria"
+ 
+ dyn_c_BAV_puppet_TRE:0 "Triestian Bavaria"
+ 
+ dyn_c_BAV_puppet_TRI:0 "Tripolitanian Bavaria"
+ 
+ dyn_c_BAV_puppet_TRN:0 "Transvaali Bavaria"
+ 
+ dyn_c_BAV_puppet_TRS:0 "Transylvanian Bavaria"
+ 
+ dyn_c_BAV_puppet_TUN:0 "Tunisian Bavaria"
+ 
+ dyn_c_BAV_puppet_TUR_turkish_islamic:0 "Turkish-Islamic Bavaria"
+ 
+ dyn_c_BAV_puppet_TUR_ottoman:0 "Ottoman Bavaria"
+ 
+ dyn_c_BAV_puppet_TUR_turkish:0 "Turkish Bavaria"
+ 
+ dyn_c_BAV_puppet_TUS:0 "Tuscan Bavaria"
+ 
+ dyn_c_BAV_puppet_UBD:0 "Baltic Bavaria"
+ 
+ dyn_c_BAV_puppet_UCA:0 "Central American Bavaria"
+ 
+ dyn_c_BAV_puppet_UKR:0 "Ukrainian Bavaria"
+ 
+ dyn_c_BAV_puppet_ULS:0 "Ulster Bavaria"
+ 
+ dyn_c_BAV_puppet_URU:0 "Uruguayan Bavaria"
+ 
+ dyn_c_BAV_puppet_USA:0 "American Bavaria"
+ 
+ dyn_c_BAV_puppet_UZH:0 "Uly Bavaria"
+ 
+ dyn_c_BAV_puppet_VEN:0 "Venetian Bavaria"
+ 
+ dyn_c_BAV_puppet_VIE:0 "Vientiane Bavaria"
+ 
+ dyn_c_BAV_puppet_VNZ:0 "Venezuelan Bavaria"
+ 
+ dyn_c_BAV_puppet_WAD:0 "Wadai Bavaria"
+ 
+ dyn_c_BAV_puppet_WAL:0 "Wallachian Bavaria"
+ 
+ dyn_c_BAV_puppet_WEI:0 "Saxon Bavaria"
+ 
+ dyn_c_BAV_puppet_WES:0 "Westphalian Bavaria"
+ 
+ dyn_c_BAV_puppet_WIN:0 "West Indian Bavaria"
+ 
+ dyn_c_BAV_puppet_WLG:0 "Welega Bavaria"
+ 
+ dyn_c_BAV_puppet_WLL:0 "Wallonian Bavaria"
+ 
+ dyn_c_BAV_puppet_WLO:0 "Wello Bavaria"
+ 
+ dyn_c_BAV_puppet_WLS:0 "Welsh Bavaria"
+ 
+ dyn_c_BAV_puppet_WSG:0 "Warsangali Bavaria"
+ 
+ dyn_c_BAV_puppet_WUR:0 "Wurttembergian Bavaria"
+ 
+ dyn_c_BAV_puppet_XIN:0 "Uyghuristani Bavaria"
+ 
+ dyn_c_BAV_puppet_YEM:0 "Yemeni Bavaria"
+ 
+ dyn_c_BAV_puppet_MAH:0 "Mahra Bavaria"
+ 
+ dyn_c_BAV_puppet_KAT:0 "Kathiri Bavaria"
+ 
+ dyn_c_BAV_puppet_ZAI:0 "Azali Bavaria"
+ 
+ dyn_c_BAV_puppet_LAH:0 "Lahej Bavaria"
+ 
+ dyn_c_BAV_puppet_JAB:0 "Shammari Bavaria"
+ 
+ dyn_c_BAV_puppet_BHN:0 "Bahraini Bavaria"
+ 
+ dyn_c_BAV_puppet_YUG:0 "Yugoslavian Bavaria"
+ 
+ dyn_c_BAV_puppet_ZAN:0 "Zanzibari Bavaria"
+ 
+ dyn_c_BAV_puppet_ZUL:0 "Zulu Bavaria"
+ 
+ dyn_c_BAV_puppet_MAC:0 "Mancunian Bavaria"
+ 
+ dyn_c_BAV_puppet_SMI:0 "Sami Bavaria"
+ 
+ dyn_c_BAV_puppet_MLT:0 "Maltese Bavaria"
+ 
+ dyn_c_BAV_puppet_TWT:0 "Incan Bavaria"
+ 
+ dyn_c_BAV_puppet_SUD:0 "Sudanese Bavaria"
+ 
+ dyn_c_BAV_puppet_PRM:0 "Permian Bavaria"
+ 
+ dyn_c_BAV_puppet_HZJ:0 "Hazara Bavaria"
+ 
+ dyn_c_BAV_puppet_TRC:0 "Turkmenistani Bavaria"
+ 
+ dyn_c_BAV_puppet_SIB:0 "Siberian Bavaria"
+ 
+ dyn_c_BAV_puppet_YAK:0 "Yakut Bavaria"
+ 
+ dyn_c_BAV_puppet_ASM:0 "Assamese Bavaria"
+ 
+ dyn_c_BAV_puppet_MNP:0 "Manipur Bavaria"
+ 
+ dyn_c_BAV_puppet_TOB:0 "Toba Bavaria"
+ 
+ dyn_c_BAV_puppet_KLT:0 "Kalimantan Bavaria"
+ 
+ dyn_c_BAV_puppet_HTH:0 "Hathawaddy Bavaria"
+ 
+ dyn_c_BAV_puppet_KRN:0 "Karen Bavaria"
+ 
+ dyn_c_BAV_puppet_KHM:0 "Khmu Bavaria"
+ 
+ dyn_c_BAV_puppet_KHN:0 "Kachin Bavaria"
+ 
+ dyn_c_BAV_puppet_EZO:0 "Ezo Bavaria"
+ 
+ dyn_c_BAV_puppet_QIA:0 "Qian Bavaria"
+ 
+ dyn_c_BAV_puppet_FRS:0 "Formosan Bavaria"
+ 
+ dyn_c_BAV_puppet_YUN:0 "Yunnan Bavaria"
+ 
+ dyn_c_BAV_puppet_YUE:0 "Yue Bavaria"
+ 
+ dyn_c_BAV_puppet_OAX:0 "Oaxacan Bavaria"
+ 
+ dyn_c_BAV_puppet_AYM:0 "Aymara Bavaria"
+ 
+ dyn_c_BAV_puppet_PUE:0 "Puebloan Bavaria"
+ 
+ dyn_c_BAV_puppet_NNV:0 "Nunavut Bavaria"
+ 
+ dyn_c_BAV_puppet_IRO:0 "Haudenosaunee Bavaria"
+ 
+ dyn_c_BAV_puppet_SRB:0 "Sorbian Bavaria"
+ 
+ dyn_c_BAV_puppet_YUC:0 "Yucatecan Bavaria"
+ 
+ dyn_c_BAV_puppet_RIO:0 "Río Grandean Bavaria"
+ 
+ dyn_c_BAV_puppet_PNI:0 "Piratini Bavaria"
+ 
+ dyn_c_BAV_puppet_CEY:0 "Sri Lankan Bavaria"
+ 
+ dyn_c_BAV_puppet_HBC:0 "Hudson Bay Bavaria"
+ 
+ dyn_c_BAV_puppet_ONT:0 "Ontarian Bavaria"
+ 
+ dyn_c_BAV_puppet_NBS:0 "New Brunswicker Bavaria"
+ 
+ dyn_c_BAV_puppet_NSW:0 "New South Welsh Bavaria"
+ 
+ dyn_c_BAV_puppet_WAS:0 "Western Australian Bavaria"
+ 
+ dyn_c_BAV_puppet_SAS:0 "South Australian Bavaria"
+ 
+ dyn_c_BAV_puppet_UNT:0 "United Tribal Bavaria"
+ 
+ dyn_c_BAV_puppet_TAS:0 "Tasmania Bavaria"
+ 
+ dyn_c_BAV_puppet_ZIM:0 "Zimbabwean Bavaria"
+ 
+ dyn_c_BAV_puppet_BLH:0 "Baluchistani Bavaria"
+ 
+ dyn_c_BAV_puppet_MAL:0 "Malian Bavaria"
+ 
+ dyn_c_BAV_puppet_OCC:0 "Occitanian Bavaria"
+ 
+ dyn_c_BAV_puppet_TUV:0 "Tuvan Bavaria"
+ 
+ dyn_c_BAV_puppet_COR:0 "Corsican Bavaria"
+ 
+ dyn_c_BAV_puppet_TNS:0 "Tungus Bavaria"
+ 
+ dyn_c_BAV_puppet_FER:0 "Far Eastern Bavaria"
+ 
+ dyn_c_BAV_puppet_IUS:0 "Idel-Ural Bavaria"
+ 
+ dyn_c_BAV_puppet_NCA:0 "North Caucasian Bavaria"
+ 
+ dyn_c_BAV_puppet_DON:0 "Don Cossacks Bavaria"
+ 
+ dyn_c_BAV_puppet_SYR:0 "Syrian Bavaria"
+ 
+ dyn_c_BAV_puppet_EOT:0 "Transjordanians Bavaria"
+ 
+ dyn_c_BAV_puppet_LEB:0 "Lebanese Bavaria"
+ 
+ dyn_c_BAV_puppet_GNG:0 "Da Cheng Bavaria"
+ 
+ dyn_c_BAV_puppet_HNA:0 "Hunanese Bavaria"
+ 
+ dyn_c_BAV_puppet_AHU:0 "Anhui Bavaria"
+ 
+ dyn_c_BAV_puppet_ZHI:0 "Zhili Bavaria"
+ 
+ dyn_c_BAV_puppet_SHN:0 "Shanxi Bavaria"
+ 
+ dyn_c_BAV_puppet_GUI:0 "Guizhou Bavaria"
+ 
+ dyn_c_BAV_puppet_SIH:0 "Sichuan Bavaria"
+ 
+ dyn_c_BAV_puppet_SHA:0 "Shandongese Bavaria"
+ 
+ dyn_c_BAV_puppet_XIB:0 "Xibei Bavaria"
+ 
+ dyn_c_BAV_puppet_ALT:0 "Alteño Bavaria"
+ 
+ dyn_c_BAV_puppet_AFS:0 "Free State Bavaria"
+ 
+ dyn_c_BAV_puppet_DEI:0 "East Indies Bavaria"
+ 
+ dyn_c_BAV_puppet_TRH:0 "Turkestani Bavaria"
+ 
+ dyn_c_BAV_puppet_UOM:0 "Michigander Bavaria"
+ 
+ dyn_c_BAV_puppet_SAK:0 "Siak Bavaria"
+ 
+ dyn_c_BAV_puppet_PON:0 "Pontianak Bavaria"
+ 
+ dyn_c_BAV_puppet_SMB:0 "Sambas Bavaria"
+ 
+ dyn_c_BAV_puppet_JMB:0 "Jambi Bavaria"
+ 
+ dyn_c_BAV_puppet_YOG:0 "Yogyakarta Bavaria"
+ 
+ dyn_c_BAV_puppet_BTN:0 "Buton Bavaria"
+ 
+ dyn_c_BAV_puppet_SEL:0 "Selangorean Bavaria"
+ 
+ dyn_c_BAV_puppet_PRK:0 "Perakian Bavaria"
+ 
+ dyn_c_BAV_puppet_SRK:0 "Surakarta Bavaria"
+ 
+ dyn_c_BAV_puppet_TID:0 "Tidore Bavaria"
+ 
+ dyn_c_BAV_puppet_STG:0 "Sintang Bavaria"
+ 
+ dyn_c_BAV_puppet_BNJ:0 "Banjar Bavaria"
+ 
+ dyn_c_BAV_puppet_SUL:0 "Sulu Bavaria"
+ 
+ dyn_c_BAV_puppet_NVS:0 "Nova Scotian Bavaria"
+ 
+ dyn_c_BAV_puppet_SMS:0 "Samian Bavaria"
+ 
+ dyn_c_BAV_puppet_CHC:0 "Chechen Bavaria"
+ 
+ dyn_c_BAV_puppet_CIR:0 "Circassian Bavaria"
+ 
+ dyn_c_BAV_puppet_MGD:0 "Maguindanao Bavaria"
+ 
+ dyn_c_BAV_puppet_ASS:0 "Assyrian Bavaria"
+ 
+ dyn_c_BAV_puppet_KLM:0 "Kalmykian Bavaria"
+ 
+ dyn_c_BAV_puppet_CAU:0 "Transcaucasian Bavaria"
+ 
+ dyn_c_BAV_puppet_SAV:0 "Savoyard Bavaria"
+ 
+ dyn_c_BAV_puppet_CON:0 "Constantinian Bavaria"
+ 
+ dyn_c_BAV_puppet_TUG:0 "Touggourtian Bavaria"
+ 
+ dyn_c_BAV_puppet_AIT:0 "Ait Abbas Bavaria"
+ 
+ dyn_c_BAV_puppet_MAS:0 "Mascaran Bavaria"
+ 
+ dyn_c_BAV_puppet_RHE:0 "Rhenish Bavaria"
+ 
+ dyn_c_BAV_puppet_PRC:0 "Communard Bavaria"
+ 
+ dyn_c_BAV_puppet_GZA:0 "Gazan Bavaria"
+ 
+ dyn_c_BAV_puppet_BRG:0 "Borgu Bavaria"
+ 
+ dyn_c_BAV_puppet_KRL:0 "Karelian Bavaria"
+ 
+ dyn_c_BAV_puppet_TAR:0 "Tatar Bavaria"
+ 
+ dyn_c_BAV_puppet_BKR:0 "Bashkir Bavaria"
+ 
+ dyn_c_BAV_puppet_BRY:0 "Buryatian Bavaria"
+ 
+ dyn_c_BAV_puppet_KMC:0 "Kamchatkan Bavaria"
+ 
+ dyn_c_BAV_puppet_CKC:0 "Chukotkan Bavaria"
+ 
+ dyn_c_BAV_puppet_ALI:0 "Altaic Bavaria"
+ 
+ dyn_c_BAV_puppet_URL:0 "Uralian Bavaria"
+ 
+ dyn_c_BAV_puppet_KNT:0 "Kanty-Mansian Bavaria"
+ 
+ dyn_c_BAV_puppet_UDM:0 "Udmurt Bavaria"
+ 
+ dyn_c_BAV_puppet_CHV:0 "Chuvash Bavaria"
+ 
+ dyn_c_BAV_puppet_MRI:0 "Mari Bavaria"
+ 
+ dyn_c_BAV_puppet_MRD:0 "Erzya-Mokshan Bavaria"
+ 
+ dyn_c_BAV_puppet_TJI:0 "Tajik Bavaria"
+ 
+ dyn_c_BAV_puppet_KYR:0 "Kyrgyz Bavaria"
+ 
+ dyn_c_BAV_puppet_UZB:0 "Uzbek Bavaria"
+ 
+ dyn_c_BAV_puppet_PAU:0 "Paulistanic Bavaria"
+ 
+ dyn_c_BAV_puppet_EQT:0 "Equatorial Bavaria"
+ 
+ dyn_c_BAV_puppet_CTR:0 "Catharinense Bavaria"
+ 
+ dyn_c_BAV_puppet_MNG:0 "Mineiro Bavaria"
+ 
+ dyn_c_BAV_puppet_FND:0 "Andean Bavaria"
+ 
+ dyn_c_BAV_puppet_BHI:0 "Baiano Bavaria"
+ 
+ dyn_c_BAV_puppet_PBC:0 "Peru-Bolivian Bavaria"
+ 
+ dyn_c_BAV_puppet_IQU:0 "Iquichan Bavaria"
+ 
+ dyn_c_BAV_puppet_NPU:0 "North Peruvian Bavaria"
+ 
+ dyn_c_BAV_puppet_RSM:0 "Venetian Bavaria"
+ 
+ dyn_c_BAV_puppet_HRE:0 "Central European Bavaria"
+ 
+ dyn_c_BAV_puppet_UNL:0 "Dutch Bavaria"
+ 
+ dyn_c_BAV_puppet_RHN:0 "Rhenish Bavaria"
+ 
+ dyn_c_BAV_puppet_PLT:0 "Platinean Bavaria"
+ 
+ dyn_c_BAV_puppet_SPU:0 "South Peruvian Bavaria"
+ 
+ dyn_c_BAV_puppet_NCR:0 "North Carolinian Bavaria"
+ 
+ dyn_c_BAV_puppet_SCR:0 "South Carolinian Bavaria"
+ 
+ dyn_c_BAV_puppet_CLI:0 "Carolinian Bavaria"
+ 
+ dyn_c_BAV_puppet_GRG:0 "Georgian Bavaria"
+ 
+ dyn_c_BAV_puppet_FLR:0 "Floridian Bavaria"
+ 
+ dyn_c_BAV_puppet_PAK:0 "Pakistani Bavaria"
+ 
+ dyn_c_BAV_puppet_MGB:0 "Maghrebi Bavaria"
+ 
+ dyn_c_BAV_puppet_TIS:0 "Turtle Islander Bavaria"
+ 
+ dyn_c_BAV_puppet_KAB:0 "Kabuli Bavaria"
+ 
+ dyn_c_BAV_puppet_KAN:0 "Kandahari Bavaria"
+ 
+ dyn_c_BAV_puppet_HER:0 "Herati Bavaria"
+ 
+ dyn_c_BAV_puppet_CHT:0 "Chitrali Bavaria"
+ 
+ dyn_c_BAV_puppet_MAI:0 "Maimanan Bavaria"
+ 
+ dyn_c_BAV_puppet_KUN:0 "Kunduzi Bavaria"
+ 
+ dyn_c_BAV_puppet_ARB:0 "Arabistani Bavaria"
+ 
+ dyn_c_BAV_puppet_BHW:0 "Bahawalpuri Bavaria"
+ 
+ dyn_c_BAV_puppet_LUR:0 "Luristani Bavaria"
+ 
+ dyn_c_BAV_puppet_MAZ:0 "Mazandarani Bavaria"
+ 
+ dyn_c_BAV_puppet_BEI:0 "Beiyang Bavaria"
+ 
+ dyn_c_BAV_puppet_KAF:0 "Kafiri Bavaria"
+ 
+ dyn_c_BAV_puppet_LIM:0 "Limburger Bavaria"
+ 
+ dyn_c_BAV_puppet_PTA:0 "Patialvi Bavaria"
+ 
+ dyn_c_BAV_puppet_GAR:0 "Garhwali Bavaria"
+ 
+ dyn_c_BAV_puppet_ALW:0 "Alwari Bavaria"
+ 
+ dyn_c_BAV_puppet_COO:0 "Cooch Behari Bavaria"
+ 
+ dyn_c_BAV_puppet_NGA:0 "Naga Bavaria"
+ 
+ dyn_c_BAV_puppet_SHS:0 "Shan Bavaria"
+ 
+ dyn_c_BAV_puppet_JHN:0 "Jhansian Bavaria"
+ 
+ dyn_c_BAV_puppet_KOT:0 "Kotahi Bavaria"
+ 
+ dyn_c_BAV_puppet_IDA:0 "Idari Bavaria"
+ 
+ dyn_c_BAV_puppet_NAW:0 "Nawanagari Bavaria"
+ 
+ dyn_c_BAV_puppet_JUN:0 "Junagadhi Bavaria"
+ 
+ dyn_c_BAV_puppet_BHV:0 "Bhavnagari Bavaria"
+ 
+ dyn_c_BAV_puppet_DHA:0 "Dharampuri Bavaria"
+ 
+ dyn_c_BAV_puppet_PUD:0 "Pudukottaian Bavaria"
+ 
+ dyn_c_BAV_puppet_SAT:0 "Sataran Bavaria"
+ 
+ dyn_c_BAV_puppet_KHP:0 "Kolhapuri Bavaria"
+ 
+ dyn_c_BAV_puppet_KNO:0 "Kurnooli Bavaria"
+ 
+ dyn_c_BAV_puppet_BAG:0 "Rewaite Bavaria"
+ 
+ dyn_c_BAV_puppet_SUR:0 "Surgujian Bavaria"
+ 
+ dyn_c_BAV_puppet_PLP:0 "Palanpuri Bavaria"
+ 
+ dyn_c_BAV_puppet_MYB:0 "Mayurbhanji Bavaria"
+ 
+ dyn_c_BAV_puppet_PTN:0 "Patnavi Bavaria"
+ 
+ dyn_c_BAV_puppet_JEY:0 "Jeyporean Bavaria"
+ 
+ dyn_c_BAV_puppet_NAR:0 "Narsinghpuri Bavaria"
+ 
+ dyn_c_BAV_puppet_LBL:0 "Lasbeli Bavaria"
+ 
+ dyn_c_BAV_puppet_KHR:0 "Kharani Bavaria"
+ 
+ dyn_c_BAV_puppet_KPR:0 "Khairpuri Bavaria"
+ 
+ dyn_c_BAV_puppet_SWT:0 "Swati Bavaria"
+ 
+ dyn_c_BAV_puppet_DIR:0 "Dirwali Bavaria"
+ 
+ dyn_c_BAV_puppet_CAR:0 "Carnatic Bavaria"
+ 
+ dyn_c_BAV_puppet_RAJ:0 "Rajput Bavaria"
+ 
+ dyn_c_BAV_puppet_MHR:0 "Maharashtrian Bavaria"
+ 
+ dyn_c_BAV_puppet_DRA:0 "Dravidian Bavaria"
+ 
+ dyn_c_BAV_puppet_COC:0 "Cochinese Bavaria"
+ 
+ dyn_c_BAV_puppet_ALK:0 "Alaskan Bavaria"
+ 
+ dyn_c_BAV_puppet_GUJ:0 "Gujarati Bavaria"
+ 
+ dyn_c_BAV_puppet_BCE:0 "Ceylonese Bavaria"
+ 
+ dyn_c_BAV_puppet_MLD:0 "Maldivian Bavaria"
+ 
+ dyn_c_BAV_puppet_BIH:0 "Bihari Bavaria"
+ 
+ dyn_c_BAV_puppet_ARK:0 "Arakanese Bavaria"
+ 
+ dyn_c_BAV_puppet_IDS:0 "Indusstani Bavaria"

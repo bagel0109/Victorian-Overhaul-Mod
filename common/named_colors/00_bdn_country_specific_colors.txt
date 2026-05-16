@@ -1,0 +1,173 @@
+colors = {
+
+jambired = rgb { 205 20 38 }
+jambired2 = rgb { 216 20 48 }
+jambiblue = rgb { 19 123 192 }
+jambiblue2 = rgb { 93 159 215 }
+jambigreen = rgb { 25 121 68 }
+jambigold = rgb { 254 207 47 }
+jambigray = rgb { 35 35 35 }
+
+siakblack = rgb { 3 3 4 }
+siakyellow = rgb { 243 224 26 }
+siakgreen = rgb { 13 138 56 }
+siakred = rgb { 214 19 37 }
+
+acehred = rgb { 205 20 23 }
+acehwhite = rgb { 255 255 255 }
+acehgreen = rgb { 23 91 42 }
+acehred2 = rgb { 192 28 47 }
+acehyellow = rgb { 251 222 23 }
+
+unlred = rgb { 188 23 23 }
+unlyellow = rgb { 249 235 39 }
+
+britishred = rgb { 201 19 48 }
+britishblue = rgb { 35 47 93 }
+britishred2 = rgb { 229 27 32 }
+britishgreen = rgb { 12 134 54 }
+britishgold = rgb { 204 163 43 }
+britishred3 = rgb { 140 24 23 }
+britishblue2 = rgb { 39 52 128 }
+britishblue3 = rgb { 23 19 43 }
+britishred4 = rgb { 153 27 52 }
+
+###nigerdelta###
+airgreen = rgb { 46 68 55 }
+airyellow = rgb { 254 202 22 }
+bmmgreen = rgb { 108 189 140 }
+bmmyellow = rgb { 252 233 97 }
+tbigreen = rgb { 58 136 93 }
+tbiyellow = rgb { 253 214 24 }
+ewegreen = rgb { 17 147 63 }
+ewered = rgb { 218 35 29 }
+ibored = rgb { 218 35 29 }
+darfurgreen = rgb { 4 123 62 }
+wadaigreen = rgb { 24 140 55 }
+bagirmiyellow = rgb { 241 230 19 }
+bornubrown = rgb { 149 89 20 }
+gobirgreen = rgb { 71 163 123 }
+sokotogreen = rgb { 10 135 83 }
+borguyellow = rgb { 250 209 27 }
+beninred = rgb { 229 27 32 }
+dahomeyred = rgb { 229 22 30 }
+
+###southafrica###
+hererored = rgb { 127 41 41 }
+namablue = rgb { 121 160 183 }
+tswanablue = rgb { 96 138 188 }
+griquagreen = rgb { 70 99 67 }
+basutogreen = rgb { 97 182 101 }
+mashonagreen = rgb { 68 109 69 }
+matabeleyellow = rgb { 229 179 77 }
+zulured = rgb { 176 25 23 }
+gazagreen = rgb { 62 175 103 }
+gazayellow = rgb { 206 208 55 }
+saforange = rgb { 241 131 19 }
+safyellow = rgb { 250 183 36 }
+transvaalgreen = rgb { 4 123 78 }
+
+###middleeast###
+
+###westerneurope###
+franceblue = rgb { 38 55 125 }
+francered = rgb { 235 45 59 }
+brittanycomred = rgb { 205 20 38 }
+brittanycomgold = rgb { 250 182 20 }
+brittanyteored = rgb { 206 18 49 }
+brittanyteogold = rgb { 250 187 115 }
+occitaniared = rgb { 212 15 33 }
+occitaniagold = rgb { 249 221 21 }
+occitaniared2 = rgb { 144 34 55 }
+occitaniared3 = rgb { 212 15 33 }
+occitaniablue = rgb { 20 25 38 }
+
+###baltic###
+estoniablue = rgb { 22 111 182 }
+estoniared = rgb { 204 20 23 }
+estoniayellow = rgb { 254 202 24 }
+latviared = rgb { 119 54 62 }
+latviared2 = rgb { 160 45 55 }
+latviayellow = rgb { 251 210 23 }
+latviagreen = rgb { 24 79 36 }
+lithuaniared = rgb { 193 40 47 }
+lithuaniagreen = rgb { 13 107 70 }
+lithuaniayellow = rgb { 251 184 29 }
+ubdblue = rgb { 76 143 204 }
+ubdred = rgb { 216 15 35 }
+ubdblue2 = rgb { 58 70 119 }
+ubdyellow = rgb { 255 217 123 }
+
+###dnieper###
+belarusred = rgb { 204 20 23 }
+belarusgreen = rgb { 20 81 38 }
+ukraineblue = rgb { 29 88 165 }
+ukraineyellow = rgb { 253 215 22 }
+ukraineblue2 = rgb { 163 218 248 }
+ukrainered = rgb { 191 23 24 }
+
+###rhine###
+luxembourgred = rgb {232 52 66 }
+luxembourgblue = rgb { 19 162 221 }
+
+##northernamerica##
+technocraticusa = rgb { 38 37 107 }
+nortonsusablue = rgb { 25 38 66 }
+nortonsusagold = rgb { 254 202 21 }
+
+###persia###
+maimanablue = rgb { 85 149 174 }
+maimanared = rgb { 161 41 40 }
+maimanagreen = rgb { 18 100 61 }
+kunduzgreen = rgb { 54 121 74 }
+kunduzgreen2 = rgb { 18 89 54 }
+chitralgreen = rgb { 14 65 31 }
+kabulred = rgb { 174 30 36 }
+kabulgreen = rgb { 46 82 49 }
+heratgreen = rgb { 16 108 70 }
+
+###fareast###
+kamchatkademocratic = rgb { 88 170 223 }
+kamchatkamonarchist = rgb { 61 107 122 }
+kamchatkacommunist = rgb { 225 23 37 }
+kamchatkatheocratic = rgb { 37 96 152 }
+kamchatkaanarchist = rgb { 142 15 26 }
+siberiademocratic = rgb { 144 182 174 }
+siberiamonarchist = rgb { 63 84 72 }
+siberiacommunist = rgb { 135 33 33 }
+siberiatheocratic = rgb { 99 29 37 }
+siberiaanarchist = rgb { 63 15 15 }
+tungusdemocratic = rgb { 25 169 84 }
+tungusmonarchist = rgb { 40 75 91 }
+tunguscommunist = rgb { 182 16 18 }
+tungustheocratic = rgb { 197 175 127 }
+tungusanarchist = rgb { 117 10 12 }
+
+###southgerman###
+
+bavariademocratic = rgb { 118 171 232 }
+bavariamonarchist = rgb { 57 83 112 }
+bavariacommunist = rgb { 204 0 31 }
+bavariatheocratic = rgb { 7 18 51 }
+bavariaanarchist = rgb { 77 23 31 }
+
+###andes###
+ecuador = rgb { 43  141  172 }
+peru = rgb { 124  140  162 }
+bolivia = rgb { 219  182  182 }
+iq = rgb { 245 210 80 }
+
+###laplata###
+argentina = rgb { 101  102  163 }
+chile = rgb { 236  159  89 }
+laplata = { 203 74 50 }
+elnorte = { 228 65 36 }
+pampeana = { 43 74 86 }
+patagonia = { 240 2 37 }
+mapuche = { 113 99 58 }
+tehuelche = { 167 37 58 }
+selknam = { 240 100 80 }
+
+
+
+}

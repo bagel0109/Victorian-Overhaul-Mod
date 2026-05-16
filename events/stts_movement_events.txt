@@ -1,0 +1,2949 @@
+﻿namespace = stts_movement
+### Shocks to the System by CaelReader ###
+
+
+# Movement forces Agitator into IG Leadership
+stts_movement.1 = {
+	type = country_event
+	cooldown = {
+		years = 3
+	}
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	gui_window = event_window_2char
+
+	left_icon = scope:movement_agitator
+	right_icon = scope:existing_ig_leader
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	placement = root
+
+	title = stts_movement.1.t
+	desc = stts_movement.1.d
+	flavor = stts_movement.1.f
+	duration = 1
+
+	trigger = {
+		has_dlc_feature = voice_of_the_people_content #overlaps with agitator promote feature
+		any_political_movement = {
+			political_movement_support > 0.15
+			political_movement_radicalism > 0.30
+			any_supporting_character = {
+				has_role_of_type = agitator
+				popularity > 0
+				agitator_can_be_made_leader = yes
+				save_temporary_scope_as = movement_agitator
+			}
+			any_influenced_interest_group = {
+				is_marginal = no
+				leader = {
+					NOT = {
+						ideology = scope:movement_agitator.ideology
+					}
+				}
+				this = scope:movement_agitator.interest_group
+			}
+			NOT = {
+				has_variable = recently_forced_leadership
+			}
+		}
+		in_election_campaign = no
+	}
+
+	immediate = {
+		random_political_movement = {
+			limit = {
+				political_movement_support > 0.15
+				political_movement_radicalism > 0.30
+				any_supporting_character = {
+					has_role_of_type = agitator
+					popularity > 0
+					agitator_can_be_made_leader = yes
+					save_temporary_scope_as = movement_agitator
+				}
+				any_influenced_interest_group = {
+					is_marginal = no
+					leader = {
+						NOT = {
+							ideology = scope:movement_agitator.ideology
+						}
+					}
+					this = scope:movement_agitator.interest_group
+				}
+			}
+			save_scope_as = relevant_movement
+			set_variable = {
+				name = recently_forced_leadership
+				years = 10
+			}
+			random_supporting_character = {
+				limit = {
+					has_role_of_type = agitator
+					popularity > 0
+					agitator_can_be_made_leader = yes
+				}
+				save_scope_as = movement_agitator
+			}
+			random_influenced_interest_group = {
+				limit = {
+					is_marginal = no
+					leader = {
+						NOT = {
+							ideology = scope:movement_agitator.ideology
+						}
+					}
+					this = scope:movement_agitator.interest_group
+				}
+				save_scope_as = movement_influenced_ig
+			}
+			scope:movement_influenced_ig = {
+				leader = {
+					save_scope_as = existing_ig_leader
+				}
+			}
+		}
+	}
+
+	#Agitator becomes IG Leader
+    option = {
+        name = stts_movement.1.a
+		scope:existing_ig_leader = {
+			remove_character_role = politician
+			add_character_role = agitator
+		}
+		scope:movement_agitator = {
+			set_as_interest_group_leader = yes
+			add_modifier = {
+				name = stts_character_limelight_modifier
+				years = 5
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+    }
+
+	#IG Leader stays
+	option = {
+		name = stts_movement.1.b
+		default_option = yes
+		trigger = {
+			custom_tooltip = {
+				text = existing_leader_over_15_popularity
+				scope:existing_ig_leader = {
+					popularity >= 15
+				}
+			}
+			custom_tooltip = {
+				text = movement_support_less_than_33
+				scope:relevant_movement = {
+					political_movement_support < 0.33
+				}
+			}
+			custom_tooltip = {
+				text = movement_agitator_less_than_100_popularity
+				scope:movement_agitator = {
+					popularity < 100
+				}
+			}
+		}
+		highlighted_option = yes
+		show_as_unavailable = {always = yes}
+		scope:movement_agitator = {
+			add_modifier = {
+				name = stts_character_limelight_modifier
+				years = 5
+			}
+		}
+		scope:movement_influenced_ig = {
+			add_modifier = {
+				name = stts_internal_divisions
+				years = 3
+			}
+		}
+		scope:relevant_movement = {
+			add_modifier = {
+				name = stts_denied_institutional_representation
+				years = 3
+			}
+		}
+		add_radicals = {
+			value = small_radicals
+			interest_group = scope:movement_influenced_ig
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	#IG Leader changes ideology
+	option = {
+		name = stts_movement.1.c
+		trigger = {
+			scope:existing_ig_leader = {
+				is_historical = no
+				popularity > 25
+				OR = {
+					ideology = ideology:ideology_moderate
+					ideology = ideology:ideology_social_democrat
+					ideology = ideology:ideology_liberal_leader 
+					ideology = ideology:ideology_reformer
+					ideology = ideology:ideology_traditionalist
+				}
+			}
+		}
+		scope:movement_agitator = {
+			ideology = {
+				save_scope_as = movement_ideology
+			}
+		}
+		scope:existing_ig_leader = {
+			set_ideology = scope:movement_ideology
+			add_modifier = {
+				name = stts_character_limelight_modifier
+				years = 5
+			}
+		}
+		ai_chance = {
+			base = 25
+		}
+	}
+}
+# Movement coups the government
+stts_movement.2 = {
+	type = country_event
+	cooldown = {
+		years = 5
+	}
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	event_image = {
+		video = "votp_barricade"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	title = stts_movement.2.t
+	desc = stts_movement.2.d
+	flavor = stts_movement.2.f
+	placement = root
+	duration = 1
+
+	trigger = {
+		NOT = {
+			has_journal_entry = je_springtime_of_the_peoples
+		}
+		any_civil_war = {
+			civil_war_progress >= 0.75
+			is_civil_war_type = revolution
+			political_movement ?= {
+				any_influenced_interest_group = {
+					count >= 1
+				}
+				OR = {
+					political_movement_support > 0.25
+					owner = {
+						any_scope_state = {
+							count = 1
+						}
+					}
+				}
+				political_movement_radicalism >= 0.85
+			}
+		}
+		NOR = {
+			has_journal_entry = je_acw_countdown
+			has_journal_entry = je_divided_monarchists
+		}
+	}
+
+	immediate = {
+		random_civil_war = {
+			limit = {
+				civil_war_progress >= 0.75
+				is_civil_war_type = revolution
+				political_movement ?= {
+					any_influenced_interest_group = {
+						count >= 1
+					}
+					OR = {
+						political_movement_support > 0.25
+						owner = {
+							any_scope_state = {
+								count = 1
+							}
+						}
+					}
+					political_movement_radicalism >= 0.85
+				}
+			}
+			political_movement ?= {
+				save_scope_as = coup_movement
+				save_scope_as = ongoing_revolution_movement
+			}
+			save_scope_as = impending_civil_war
+		}
+		#New ruler: agitator priority
+		scope:coup_movement = {
+			if = {
+				limit = { 
+					any_supporting_character = {
+						has_role_of_type = agitator
+					}
+				}
+				random_supporting_character = {
+					save_scope_as = coup_leader
+				}
+			}
+			else = {
+				owner = {
+					ordered_interest_group = {
+						order_by = ig_clout
+						leader = {
+							save_scope_as = coup_leader
+						}
+					}
+				}
+			}
+		}
+	}
+
+	cancellation_trigger = {
+		OR = {
+			is_in_civil_war = yes
+			scope:coup_movement = {
+				political_movement_radicalism < 0.60
+			}
+		}
+	}
+
+	#hold the line!
+	option = {
+		name = stts_movement.2.a
+		default_option = yes
+		trigger = {
+			is_subject = no
+		}
+		ai_chance = {
+			base = 100
+		}
+		scope:impending_civil_war = {
+			add_civil_war_progress = 0.25
+		}
+		capital = {
+			state_region = {
+				add_devastation = 10
+			}
+		}
+	}
+	#capitulate
+	option = {
+		name = stts_movement.2.b
+		highlighted_option = yes
+		show_as_unavailable = {
+			always = yes
+		}
+		trigger = {
+			NOT = {
+				has_journal_entry = je_divided_monarchists
+			}
+			NOT = {
+				AND = {
+					country_has_monarchy_law = yes
+					scope:coup_leader = {
+						OR = {
+                            law_enactment_stance = {
+                                law = law_type:law_monarchy
+                                value > disapprove
+                            }
+                            law_enactment_stance = {
+                                law = law_type:law_social_monarchy
+                                value > disapprove
+                            }
+                        }
+					}
+				}
+			}
+			NOT = {
+				country_rank = rank_value:great_power
+			}
+		}
+		scope:coup_leader = {
+			set_character_as_ruler = yes
+		}
+		if = {
+			limit = { 
+				OR = {
+					country_has_monarchy_law = yes
+					has_law_or_variant = law_type:law_theocracy
+				}
+			}
+			activate_law = law_type:law_presidential_republic
+		}
+		stts_movement_government_effect = yes
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					any_scope_state = {
+						count = 1
+					}
+				}
+				add = 1000
+			}
+			modifier = {
+				trigger = {
+					is_subject = yes
+				}
+				add = -1000
+			}
+		}
+	}
+	#good tsar
+	option = {
+		name = stts_movement.2.c
+		highlighted_option = yes
+		trigger = {
+			NOT = {
+				has_journal_entry = je_divided_monarchists
+			}
+			OR = {
+				AND = {
+					country_has_monarchy_law = yes
+					scope:coup_movement = {
+                        OR = {
+                            law_enactment_stance = {
+                                law = law_type:law_monarchy
+                                value > disapprove
+                            }
+                            law_enactment_stance = {
+                                law = law_type:law_social_monarchy
+                                value > disapprove
+                            }
+                        }
+					}
+				}
+				AND = {
+					has_law_or_variant = law_type:law_theocracy
+					scope:coup_movement = {
+						law_enactment_stance = {
+							law = law_type:law_theocracy
+							value > disapprove
+						}
+					}
+				}
+			}
+		}
+		stts_movement_government_effect = yes
+		ai_chance = {
+			base = 50
+			modifier = {
+				trigger = {
+					any_scope_state = {
+						count = 1
+					}
+				}
+				add = 1000
+			}
+			modifier = {
+				trigger = {
+					is_subject = yes
+				}
+				add = -1000
+			}
+		}
+	}
+	#overlord will bail us out
+	option = {
+		name = stts_movement.2.e
+		highlighted_option = yes
+		trigger = {
+			is_subject = yes
+		}
+		scope:impending_civil_war = {
+			add_civil_war_progress = 0.25
+		}
+		capital = {
+			state_region = {
+				add_devastation = 10
+			}
+		}
+		add_liberty_desire = -25
+		ai_chance = {
+			base = 500
+			modifier = {
+				trigger = {
+					overlord = {
+						is_ai = yes
+					}
+				}
+				add = 500
+			}
+		}
+	}
+}
+# Leftist infighting
+stts_movement.3 = {
+	type = country_event
+	cooldown = {
+		years = 10
+	}
+	icon = "gfx/interface/icons/invention_icons/socialism.dds"
+	event_image = {
+		video = "votp_conspiring"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	title = stts_movement.3.t
+	desc = stts_movement.3.d
+	flavor = stts_movement.3.f
+	placement = root
+	duration = 3
+
+	trigger = {
+		any_political_movement = {
+			count >= 2
+			stts_movement_is_socialist = yes
+			political_movement_support > 0.10
+			political_movement_radicalism > 0.15
+			NOR = {
+				has_modifier = stts_movement_united_front_leader_modifier
+				has_modifier = stts_movement_united_front_supporter_modifier
+			}
+		}
+	}
+
+	immediate = {
+		random_political_movement = {
+			limit = {
+				stts_movement_is_socialist = yes
+				political_movement_support > 0.10
+				political_movement_radicalism > 0.15
+				NOR = {
+					has_modifier = stts_movement_united_front_leader_modifier
+					has_modifier = stts_movement_united_front_supporter_modifier
+				}
+			}
+			save_scope_as = socialist_movement_1
+		}
+		random_political_movement = {
+			limit = {
+				stts_movement_is_socialist = yes
+				political_movement_support > 0.10
+				political_movement_radicalism > 0.15
+				NOT = {
+					this = scope:socialist_movement_1
+				}
+				NOR = {
+					has_modifier = stts_movement_united_front_leader_modifier
+					has_modifier = stts_movement_united_front_supporter_modifier
+				}
+			}
+			save_scope_as = socialist_movement_2
+		}
+	}
+
+	#favor movement A
+	option = {
+		name = stts_movement.3.a
+		random_list = {
+			80 = {
+				scope:socialist_movement_1 = {
+					add_modifier = {
+						name = stts_movement_gained_prominence_modifier
+						years = 3
+					}
+				}
+				scope:socialist_movement_2 = {
+					add_modifier = {
+						name = stts_movement_lost_prominence_modifier
+						years = 3
+					}
+				}
+			}
+			20 = {
+				scope:socialist_movement_1 = {
+					add_modifier = {
+						name = stts_movement_infighting_modifier
+						years = 3
+					}
+				}
+				scope:socialist_movement_2 = {
+					add_modifier = {
+						name = stts_movement_infighting_modifier
+						years = 3
+					}
+				}
+			}
+		}
+	}
+	#favor movement B
+	option = {
+		name = stts_movement.3.b
+		random_list = {
+			80 = {
+				scope:socialist_movement_2 = {
+					add_modifier = {
+						name = stts_movement_gained_prominence_modifier
+						years = 3
+					}
+				}
+				scope:socialist_movement_1 = {
+					add_modifier = {
+						name = stts_movement_lost_prominence_modifier
+						years = 3
+					}
+				}
+			}
+			20 = {
+				scope:socialist_movement_1 = {
+					add_modifier = {
+						name = stts_movement_infighting_modifier
+						years = 3
+					}
+				}
+				scope:socialist_movement_2 = {
+					add_modifier = {
+						name = stts_movement_infighting_modifier
+						years = 3
+					}
+				}
+			}
+		}
+	}
+	#let them fight
+	option = {
+		name = stts_movement.3.c
+		default_option = yes
+		random_list = {
+			30 = {
+				scope:socialist_movement_1 = {
+					add_modifier = {
+						name = stts_movement_gained_prominence_modifier
+						years = 3
+					}
+				}
+				scope:socialist_movement_2 = {
+					add_modifier = {
+						name = stts_movement_lost_prominence_modifier
+						years = 3
+					}
+				}
+			}
+			30 = {
+				scope:socialist_movement_2 = {
+					add_modifier = {
+						name = stts_movement_gained_prominence_modifier
+						years = 3
+					}
+				}
+				scope:socialist_movement_1 = {
+					add_modifier = {
+						name = stts_movement_lost_prominence_modifier
+						years = 3
+					}
+				}
+			}
+			30 = {
+				scope:socialist_movement_1 = {
+					add_modifier = {
+						name = stts_movement_infighting_modifier
+						years = 3
+					}
+				}
+				scope:socialist_movement_2 = {
+					add_modifier = {
+						name = stts_movement_infighting_modifier
+						years = 3
+					}
+				}
+			}
+			10 = {
+				scope:socialist_movement_1 = {
+					add_modifier = {
+						name = stts_movement_dialectal_synthesis_modifier
+						years = 3
+					}
+				}
+				scope:socialist_movement_2 = {
+					add_modifier = {
+						name = stts_movement_dialectal_synthesis_modifier
+						years = 3
+					}
+				}
+			}
+		}
+	}
+
+}
+# Popular Front against Fascism
+stts_movement.4 = {
+	type = country_event
+	cooldown = {
+		years = 10
+	}
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	title = stts_movement.4.t
+	desc = stts_movement.4.d
+	flavor = stts_movement.4.f
+	placement = root
+	duration = 3
+
+	trigger = {
+		OR = {
+			any_political_movement = {
+				is_political_movement_type = movement_fascist
+				political_movement_support > 0.10
+				political_movement_radicalism > 0.20
+			}
+			any_interest_group = {
+				is_in_government = yes
+				leader = {
+					has_ideology = ideology:ideology_fascist
+				}
+			}
+		}
+		any_political_movement = {
+			count >= 2
+			political_movement_support > 0.10
+			political_movement_radicalism > 0.10
+			OR = {
+				stts_movement_is_leftist = yes
+				stts_movement_is_liberal = yes
+			}
+			NOR = {
+				has_modifier = stts_movement_gained_prominence_modifier
+				has_modifier = stts_movement_lost_prominence_modifier
+				has_modifier = stts_movement_infighting_modifier
+			}
+		}
+	}
+
+	immediate = {
+		random_political_movement = {
+			limit = {
+				political_movement_support > 0.10
+				political_movement_radicalism > 0.10
+				OR = {
+					stts_movement_is_leftist = yes
+					stts_movement_is_liberal = yes
+				}
+				NOR = {
+					has_modifier = stts_movement_gained_prominence_modifier
+					has_modifier = stts_movement_lost_prominence_modifier
+					has_modifier = stts_movement_infighting_modifier
+				}
+			}
+			save_scope_as = popular_front_movement_1
+		}
+		random_political_movement = {
+			limit = {
+				political_movement_support > 0.10
+				political_movement_radicalism > 0.10
+				OR = {
+					stts_movement_is_leftist = yes
+					stts_movement_is_liberal = yes
+				}
+				NOR = {
+					has_modifier = stts_movement_gained_prominence_modifier
+					has_modifier = stts_movement_lost_prominence_modifier
+					has_modifier = stts_movement_infighting_modifier
+				}
+				NOT = {
+					this = scope:popular_front_movement_1
+				}
+			}
+			save_scope_as = popular_front_movement_2
+		}
+	}
+
+	#favor movement A
+	option = {
+		name = stts_movement.4.a
+		default_option = yes
+		scope:popular_front_movement_1 = {
+			add_modifier = {
+				name = stts_movement_united_front_leader_modifier
+				years = 3
+			}
+		}
+		every_political_movement = {
+			limit = {
+				NOT = {
+					this = scope:popular_front_movement_1
+				}
+				OR = {
+					stts_movement_is_leftist = yes
+					stts_movement_is_liberal = yes
+				}
+			}
+			add_modifier = {
+				name = stts_movement_united_front_supporter_modifier
+				years = 3
+			}
+		}
+	}
+	#favor movement B
+	option = {
+		name = stts_movement.4.b
+		scope:popular_front_movement_2 = {
+			add_modifier = {
+				name = stts_movement_united_front_leader_modifier
+				years = 3
+			}
+		}
+		every_political_movement = {
+			limit = {
+				NOT = {
+					this = scope:popular_front_movement_2
+				}
+				OR = {
+					stts_movement_is_leftist = yes
+					stts_movement_is_liberal = yes
+				}
+			}
+			add_modifier = {
+				name = stts_movement_united_front_supporter_modifier
+				years = 3
+			}
+		}
+	}
+
+}
+# Brownshirt violence
+stts_movement.5 = {
+	type = country_event
+	cooldown = {
+		years = 10
+	}
+	icon = "gfx/interface/icons/invention_icons/stormtroopers.dds"
+	event_image = {
+		video = "unspecific_vandalized_storefront"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	title = stts_movement.5.t
+	desc = stts_movement.5.d
+	flavor = stts_movement.5.f
+	placement = root
+	duration = 3
+
+	trigger = {
+		any_political_movement = {
+			is_political_movement_type = movement_fascist
+			political_movement_support > 0.10
+			political_movement_radicalism > 0.30		
+		}
+		any_political_movement = {
+			OR = {
+				stts_movement_is_liberal = yes
+				stts_movement_is_leftist = yes
+			}
+			political_movement_support > 0.10
+		}
+	}
+
+	immediate = {
+		random_political_movement = {
+			limit = {
+				is_political_movement_type = movement_fascist
+			}
+			save_scope_as = fascist_movement
+		}
+	}
+
+	#allow
+	option = {
+		name = stts_movement.5.a
+		every_interest_group = {
+			limit = {
+				leader = {
+					OR = {
+						has_ideology = ideology:ideology_fascist
+						has_ideology = ideology:ideology_integralist
+						has_ideology = ideology:ideology_ethno_nationalist
+					}
+				}
+			}
+			add_modifier = {
+				name = stts_ig_allowed_brownshirts_modifier
+				years = 3
+			}
+		}
+		scope:fascist_movement = {
+			add_modifier = {
+				name = stts_movement_brownshirt_violence_positive_modifier
+				years = 3
+			}
+		}
+		every_political_movement = {
+			limit = {
+				OR = {
+					stts_movement_is_liberal = yes
+					stts_movement_is_leftist = yes
+					is_political_movement_type = movement_cultural_minority
+					is_political_movement_type = movement_religious_minority
+				}
+			}
+			add_modifier = {
+				name = stts_movement_brownshirt_violence_negative_modifier
+				years = 3
+			}
+		}
+	}
+	#stop
+	option = {
+		name = stts_movement.5.b
+		default_option = yes
+		highlighted_option = yes
+		show_as_unavailable = {
+			always = yes
+		}
+		trigger = {
+			institution_investment_level = {
+				institution = institution_police
+				value >= 1
+			}
+		}
+		every_interest_group = {
+			limit = {
+				leader = {
+					OR = {
+						has_ideology = ideology:ideology_fascist
+						has_ideology = ideology:ideology_integralist
+						has_ideology = ideology:ideology_ethno_nationalist
+					}
+				}
+			}
+			add_modifier = {
+				name = stts_ig_stopped_brownshirts_modifier
+				years = 3
+			}
+		}
+		scope:fascist_movement = {
+			add_modifier = {
+				name = stts_movement_brownshirts_suppressed_modifier
+				years = 3
+			}
+		}
+	}
+
+
+
+}
+# Good Tsar, Bad Boyars
+stts_movement.6 = {
+	type = country_event
+	cooldown = {
+		years = 20
+	}
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	event_image = {
+		video = "votp_monarch_holding_court"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	title = stts_movement.6.t
+	desc = stts_movement.6.d
+	flavor = stts_movement.6.f
+	placement = root
+	duration = 3
+
+	trigger = {
+		country_has_monarchy_law = yes
+		ruler = {
+			popularity >= 0
+		}
+		any_political_movement = {
+			is_political_movement_type = movement_land_reform
+			political_movement_support > 0.10
+			political_movement_radicalism > 0.15
+			political_movement_radicalism < 0.75	
+		}
+	}
+
+	immediate = {
+		random_political_movement = {
+			limit = {
+				is_political_movement_type = movement_land_reform
+			}
+			save_scope_as = peasant_movement
+		}
+	}
+
+	#the king is the father of the people
+	option = {
+		name = stts_movement.6.a
+		default_option = yes
+		trigger = {
+			ruler = {
+				NOR = {
+					has_trait = imperious
+					has_trait = wrathful
+					has_trait = psychological_affliction
+				}
+			}
+		}
+		highlighted_option = yes
+		show_as_unavailable = {
+			always = yes
+		}
+		ruler = {
+			add_modifier = {
+				name = stts_character_peasant_father_modifier
+				years = 10
+			}
+		}
+		scope:peasant_movement = {
+			add_modifier = {
+				name = stts_movement_kings_approval_modifier
+				years = 5
+			}
+		}
+		ig:ig_rural_folk = {
+			if = {
+				limit = {
+                    OR = {
+                        law_stance = {
+                            law = law_type:law_monarchy
+                            value > strongly_disapprove
+                        }
+                        law_stance = {
+                            law = law_type:law_social_monarchy
+                            value > strongly_disapprove
+                        }
+                    }
+				}
+				add_modifier = {
+					name = stts_ig_kings_approval_modifier
+					years = 5
+				}
+			}
+		}
+		add_radicals = {
+			value = medium_radicals
+			pop_type = aristocrats
+		}
+	}
+	#disperse this rabble
+	option = {
+		name = stts_movement.6.b
+		add_loyalists = {
+			value = medium_radicals
+			pop_type = aristocrats
+		}
+		capital = {
+			add_loyalists_in_state = {
+				value = medium_radicals
+				pop_type = officers
+			}
+			add_radicals_in_state = {
+				value = large_radicals
+				pop_type = peasants
+			}
+		}
+		scope:peasant_movement = {
+			add_modifier = {
+				name = stts_movement_royal_spurned_modifier
+				years = 5
+			}
+		}
+	}
+	#spawn royalist agitator
+	option = {
+		name = stts_movement.6.c
+		trigger = {
+			empty_agitator_slots >= 1
+			ig:ig_rural_folk = {
+				leader = {
+					NOR = {
+						has_ideology = ideology:ideology_royalist
+						has_ideology = ideology:ideology_humanitarian_royalist
+					}
+				}
+			}
+		}
+		ruler = {
+			add_modifier = {
+				name = stts_character_peasant_father_modifier
+				years = 10
+			}
+		}
+		add_radicals = {
+			value = small_radicals
+			pop_type = aristocrats
+		}
+		if = {
+			limit = { has_technology_researched = human_rights }
+			random_list = {
+				80 = {
+					custom_tooltip = {
+						text = stts_movement.6.c.tt
+						create_character = {
+							is_agitator = yes
+							ideology = ideology_royalist
+							interest_group = ig:ig_rural_folk
+							on_created = {
+								add_modifier = {
+									name = stts_character_peasant_father_modifier
+									years = 10
+								}
+							}
+						}
+					}
+				}
+				20 = {
+					custom_tooltip = {
+						text = stts_movement.6.c.tt_humanitarian
+						create_character = {
+							is_agitator = yes
+							ideology = ideology_humanitarian_royalist
+							interest_group = ig:ig_rural_folk
+							on_created = {
+								add_modifier = {
+									name = stts_character_peasant_father_modifier
+									years = 10
+								}
+							}
+						}
+					}
+				}
+			}
+
+		} else = {
+			custom_tooltip = {
+				text = stts_movement.6.c.tt
+				create_character = {
+					is_agitator = yes
+					ideology = ideology_royalist
+					interest_group = ig:ig_rural_folk
+					on_created = {
+						add_modifier = {
+							name = stts_character_peasant_father_modifier
+							years = 10
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+# Bank Robbery
+stts_movement.7 = {
+	type = country_event
+	cooldown = {
+		years = 50
+	}
+	icon = "gfx/interface/icons/invention_icons/central_banking.dds"
+	event_image = {
+		video = "votp_agitators_sneaking"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	title = stts_movement.7.t
+	desc = stts_movement.7.d
+	flavor = stts_movement.7.f
+	placement = scope:bank_robbery_state
+	duration = 3
+
+	trigger = {
+		has_technology_researched = central_banking
+		any_political_movement = {
+			OR = {
+				is_political_movement_type = movement_communist
+				is_political_movement_type = movement_anarchist
+				is_political_movement_type = movement_fascist
+				is_political_movement_type = movement_radical
+			}
+			political_movement_support > 0.10
+			political_movement_radicalism > 0.40
+		}
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_urban_center
+				level >= 10
+			}
+		}
+	}
+
+	immediate = {
+		random_political_movement = {
+			limit = {
+				OR = {
+					is_political_movement_type = movement_communist
+					is_political_movement_type = movement_anarchist
+					is_political_movement_type = movement_fascist
+					is_political_movement_type = movement_radical
+				}
+				political_movement_support > 0.10
+				political_movement_radicalism > 0.40
+			}
+			save_scope_as = bank_robber_movement
+		}
+		random_scope_state = {
+			limit = {
+				any_scope_building = {
+					is_building_type = building_urban_center
+					level >= 10
+				}
+			}
+			save_scope_as = bank_robbery_state
+		}
+	}
+
+	#oh dear
+	option = {
+		name = stts_movement.7.a
+		default_option = yes
+		add_treasury = -100000
+		scope:bank_robbery_state = {
+			state_region = {
+				add_devastation = 5
+			}
+			add_radicals_in_state = {
+				value = small_radicals
+				pop_type = shopkeepers
+			}
+		}
+		scope:bank_robber_movement = {
+			add_modifier = {
+				name = stts_movement_ill_gotten_gains_modifier
+				years = 3
+			}
+		}
+	}
+	#send the police
+	option = {
+		name = stts_movement.7.b
+		trigger = {
+			OR = {
+				institution_investment_level = {
+					institution = institution_police
+					value >= 3
+				}
+				institution_investment_level = {
+					institution = institution_home_affairs
+					value >= 3
+				}
+			}
+		}
+		highlighted_option = yes
+		add_treasury = -50000
+		scope:bank_robbery_state = {
+			state_region = {
+				add_devastation = 2
+			}
+			add_loyalists_in_state = {
+				value = small_radicals
+				pop_type = shopkeepers
+			}
+		}
+		scope:bank_robber_movement = {
+			add_modifier = {
+				name = stts_movement_police_heat_modifier
+				years = 3
+			}
+		}
+	}
+
+
+}
+# Liberal Nationalists
+stts_movement.8 = {
+	type = country_event
+	cooldown = {
+		years = 50
+	}
+	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
+	event_image = {
+		video = "europenorthamerica_springtime_of_nations"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	title = stts_movement.8.t
+	desc = stts_movement.8.d
+	flavor = stts_movement.8.f
+	placement = root
+	duration = 3
+
+	trigger = {
+		has_technology_researched = nationalism
+		NOT = {
+			has_technology_researched = political_agitation
+		}
+		any_political_movement = {
+			OR = {
+				is_political_movement_type = movement_cultural_majority
+				is_political_movement_type = movement_cultural_minority
+				stts_movement_is_pan_national = yes
+			}
+			political_movement_support > 0.10
+		}
+		any_political_movement = {
+			OR = {
+				is_political_movement_type = movement_liberal
+				is_political_movement_type = movement_radical
+				is_political_movement_type = movement_orleanist
+			}
+			political_movement_support > 0.10
+		}
+		NOT = {
+			has_law_or_variant = law_type:law_multicultural
+		}
+		has_law_or_variant = law_type:law_subjecthood
+	}
+
+	immediate = {
+		random_political_movement = {
+			limit = {
+				OR = {
+					is_political_movement_type = movement_cultural_majority
+					is_political_movement_type = movement_cultural_minority
+					stts_movement_is_pan_national = yes
+				}
+				political_movement_support > 0.10
+			}
+			save_scope_as = cultural_movement
+		}
+		random_political_movement = {
+			limit = {
+				OR = {
+					is_political_movement_type = movement_liberal
+					is_political_movement_type = movement_radical
+					is_political_movement_type = movement_orleanist
+				}
+				political_movement_support > 0.10
+			}
+			save_scope_as = liberal_movement
+		}
+	}
+
+	#alright
+	option = {
+		name = stts_movement.8.a
+		default_option = yes
+		scope:cultural_movement = {
+			add_modifier = {
+				name = stts_movement_liberal_nationalism_modifier
+				years = 5
+			}
+		}
+		scope:liberal_movement = {
+			add_modifier = {
+				name = stts_movement_liberal_nationalism_modifier
+				years = 5
+			}
+		}
+		ig:ig_intelligentsia = {
+			add_modifier = {
+				name = stts_ig_liberal_nationalism_modifier
+				years = 5
+			}
+		}
+	}
+	#promote
+	option = {
+		name = stts_movement.8.b
+		trigger = {
+			NOT = {
+				has_technology_researched = pan-nationalism
+			}
+		}
+		scope:cultural_movement = {
+			add_modifier = {
+				name = stts_movement_liberal_nationalism_modifier
+				years = 5
+			}
+		}
+		scope:liberal_movement = {
+			add_modifier = {
+				name = stts_movement_liberal_nationalism_modifier
+				years = 5
+			}
+		}
+		ig:ig_intelligentsia = {
+			add_modifier = {
+				name = stts_ig_liberal_nationalism_modifier
+				years = 5
+				multiplier = 2
+			}
+		}
+		every_interest_group = {
+			limit = {
+				NOT = {
+					is_interest_group_type = ig_intelligentsia
+				}
+				leader = {
+					OR = {
+						has_ideology = ideology:ideology_republican
+						has_ideology = ideology:ideology_radical
+						has_ideology = ideology:ideology_humanitarian
+						has_ideology = ideology:ideology_sovereignist_leader
+					}
+				}
+			}
+			add_modifier = {
+				name = stts_ig_liberal_nationalism_modifier
+				years = 5
+			}
+		}
+		add_technology_progress = {
+			technology = pan-nationalism
+			progress = 3000
+		}
+	}
+
+}
+# Movement assassination
+stts_movement.9 = {
+	type = country_event
+	cooldown = {
+		years = 20
+	}
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	event_image = {
+		video = "southamerica_public_figure_assassination"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	title = stts_movement.9.t
+	desc = stts_movement.9.d
+	flavor = stts_movement.9.f
+	placement = root
+	duration = 3
+
+	trigger = {
+		any_political_movement = {
+			OR = {
+				stts_movement_is_socialist = yes
+				is_political_movement_type = movement_fascist
+				is_political_movement_type = movement_radical
+			}
+			political_movement_support > 0.10
+			political_movement_radicalism > 0.60
+			any_influenced_interest_group = {
+				count = all
+				is_in_government = no
+			}
+			save_temporary_scope_as = maybe_assassin_movement
+		}
+		any_scope_character = {
+			OR = {
+				character_supports_political_movement = no
+				NOT = {
+					political_movement ?= {
+						this = scope:maybe_assassin_movement
+					}	
+				}
+			}
+			save_temporary_scope_as = maybe_assassin_target
+			scope:maybe_assassin_movement = {
+				NOT	= {
+					any_influenced_interest_group = {
+						this = scope:maybe_assassin_target.interest_group
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		random_political_movement = {
+			limit = {
+				OR = {
+					stts_movement_is_socialist = yes
+					is_political_movement_type = movement_fascist
+					is_political_movement_type = movement_radical
+				}
+				political_movement_support > 0.10
+				political_movement_radicalism > 0.60
+				any_influenced_interest_group = {
+					count = all
+					is_in_government = no
+				}
+			}
+			save_scope_as = assassin_movement
+		}
+		ordered_scope_character = {
+			order_by = {
+				value =	{
+					add = popularity
+					multiply = -1 #least popular character
+				}
+			}
+			limit = {
+				OR = {
+					character_supports_political_movement = no
+					NOT = {
+						political_movement ?= {
+							this = scope:assassin_movement
+						}	
+					}
+				}
+				save_temporary_scope_as = maybe_assassin_target
+				scope:assassin_movement = {
+					NOT	= {
+						any_influenced_interest_group = {
+							this = scope:maybe_assassin_target.interest_group
+						}
+					}
+				}
+			}
+			save_scope_as = assassin_target
+		}
+	}
+
+	#damn!
+	option = {
+		name = stts_movement.9.a
+		scope:assassin_target = {
+			random_list = {
+				50 = {
+					kill_character = yes
+				}
+				50 = {
+					add_trait = wounded
+				}
+			}
+		}
+		add_radicals = {
+			value = small_radicals
+			interest_group = scope:assassin_target.interest_group
+		}
+		add_modifier = {
+			name = stts_political_terrorism_modifier
+			years = 5
+		}
+	}
+	#crack down
+	option = {
+		name = stts_movement.9.b
+		default_option = yes
+		trigger = {
+			OR = {
+				institution_investment_level = {
+					institution = institution_police
+					value >= 3
+				}
+				institution_investment_level = {
+					institution = institution_home_affairs
+					value >= 3
+				}
+			}
+		}
+		highlighted_option = yes
+		scope:assassin_target = {
+			random_list = {
+				50 = {
+					kill_character = yes
+				}
+				50 = {
+					add_trait = wounded
+				}
+			}
+		}
+		scope:assassin_movement = {
+			add_modifier = {
+				name = stts_movement_crackdown_modifier
+				years = 2
+			}
+		}
+	}
+	#this is good actually
+	option = {
+		name = stts_movement.9.c
+		scope:assassin_target = {
+			random_list = {
+				70 = {
+					kill_character = yes
+				}
+				30 = {
+					add_trait = wounded
+				}
+			}
+		}
+		add_radicals = {
+			value = medium_radicals
+			interest_group = scope:assassin_target.interest_group
+		}
+		scope:assassin_movement = {
+			add_modifier = {
+				name = stts_movement_propaganda_of_the_deed_modifier
+				years = 5
+			}
+		}
+		add_modifier = {
+			name = stts_political_terrorism_modifier
+			years = 5
+		}
+	}
+
+}
+# Anarchists vs Secret Police
+stts_movement.10 = {
+	type = country_event
+	cooldown = {
+		years = 20
+	}
+	icon = "gfx/interface/icons/invention_icons/anarchy.dds"
+	event_image = {
+		video = "votp_agitators_sneaking"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	title = stts_movement.10.t
+	desc = stts_movement.10.d
+	flavor = stts_movement.10.f
+	placement = root
+	duration = 3
+
+	trigger = {
+		has_law_or_variant = law_type:law_secret_police
+		institution_investment_level = {
+			institution = institution_home_affairs
+			value >= 1
+		}
+		any_political_movement = {
+			is_political_movement_type = movement_anarchist
+			OR = {
+				political_movement_support > 0.10
+				is_being_suppressed = yes
+			}
+		}
+	}
+
+	immediate = {
+		random_political_movement = {
+			limit = {
+				is_political_movement_type = movement_anarchist
+			}
+			save_scope_as = anarchist_movement
+		}
+	}
+
+	#damn
+	option = {
+		name = stts_movement.10.a
+		default_option = yes
+		scope:anarchist_movement = {
+			add_modifier = {
+				name = stts_movement_ad_hoc_movement_modifier
+				years = 5
+				multiplier = stts_home_affairs_value
+			}
+		}
+	}
+	#collective punishments
+	option = {
+		name = stts_movement.10.b
+		scope:anarchist_movement = {
+			add_modifier = {
+				name = stts_movement_ad_hoc_movement_modifier
+				years = 5
+				multiplier = {
+					value = stts_home_affairs_value
+					divide = 2
+				}
+			}
+		}
+		add_radicals = {
+			value = small_radicals
+			strata = lower
+		}
+	}
+	#clearly the secret police aren't worth the money
+	option = {
+		name = stts_movement.10.c
+		scope:anarchist_movement = {
+			add_modifier = {
+				name = stts_movement_ad_hoc_movement_modifier
+				years = 5
+				multiplier = stts_home_affairs_value
+			}
+		}
+		change_institution_investment_level = {
+			institution = institution_home_affairs
+			investment = -1
+		}
+	}
+	#spawn agitator
+	option = {
+		name = stts_movement.10.e
+		trigger = {
+			scope:anarchist_movement = {
+				any_influenced_interest_group = {
+					count >= 1
+				}
+			}
+		}
+		scope:anarchist_movement = {
+			add_modifier = {
+				name = stts_movement_ad_hoc_movement_modifier
+				years = 5
+				multiplier = stts_home_affairs_value
+			}
+		}
+		scope:anarchist_movement = {
+			random_influenced_interest_group = {
+				limit = {
+					is_marginal = no
+				}
+				save_scope_as = anarchist_ig
+			}
+		}
+		create_character = {
+			is_agitator = yes
+			ideology = ideology_anarchist
+			interest_group = scope:anarchist_ig
+		}
+	}
+
+
+}
+# Liberals/Social Democrats ally with Fascists
+stts_movement.11 = {
+	type = country_event
+	cooldown = {
+		years = 10
+	}
+	icon = "gfx/interface/icons/invention_icons/stormtroopers.dds"
+	event_image = {
+		video = "votp_cops_march"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	title = stts_movement.11.t
+	desc = stts_movement.11.d
+	flavor = stts_movement.11.f
+	placement = root
+	duration = 3
+
+	trigger = {
+		has_technology_researched = political_agitation
+		any_interest_group = {
+			is_in_government = yes
+			OR = {
+				leader = {
+					OR = {
+						has_ideology = ideology:ideology_social_democrat
+						has_ideology = ideology:ideology_republican
+					}
+				}
+				party ?= {
+					OR = {
+						is_party_type = liberal_party
+						is_party_type = social_democrat_party
+					}
+				}
+			}
+			NOT = {
+				leader = {
+					OR = {
+						has_ideology = ideology:ideology_humanitarian
+						has_ideology = ideology:ideology_radical
+						has_ideology = ideology:ideology_communist
+						has_ideology = ideology:ideology_utopian
+						has_ideology = ideology:ideology_anarchist
+					}
+				}
+			}
+		}
+		any_political_movement = {
+			OR = {
+				is_political_movement_type = movement_reactionary
+				is_political_movement_type = movement_fascist
+			}
+			political_movement_support > 0.10
+		}
+		any_political_movement = {
+			stts_movement_is_socialist = yes
+			political_movement_support > 0.10
+			political_movement_radicalism > 0.50
+		}
+	}
+
+	immediate = {
+		random_interest_group = {
+			limit = {
+				is_in_government = yes
+				OR = {
+					leader = {
+						OR = {
+							has_ideology = ideology:ideology_social_democrat
+							has_ideology = ideology:ideology_republican
+						}
+					}
+					party ?= {
+						OR = {
+							is_party_type = liberal_party
+							is_party_type = social_democrat_party
+						}
+					}
+				}
+				NOT = {
+					leader = {
+						OR = {
+							has_ideology = ideology:ideology_humanitarian
+							has_ideology = ideology:ideology_radical
+							has_ideology = ideology:ideology_communist
+							has_ideology = ideology:ideology_utopian
+							has_ideology = ideology:ideology_anarchist
+						}
+					}
+				}
+			}
+			save_scope_as = betrayer_ig
+		}
+		random_political_movement = {
+			limit = {
+				OR = {
+					is_political_movement_type = movement_reactionary
+					is_political_movement_type = movement_fascist
+				}
+				political_movement_support > 0.10
+			}
+			save_scope_as = freikorps_movement
+		}
+		random_political_movement = {
+			limit = {
+				stts_movement_is_socialist = yes
+				political_movement_support > 0.10
+				political_movement_radicalism > 0.50
+			}
+			save_scope_as = target_socialist_movement
+		}
+	}
+
+	#go with it
+	option = {
+		name = stts_movement.11.a
+		default_option = yes
+		scope:freikorps_movement = {
+			add_modifier = {
+				name = stts_movement_brownshirt_violence_positive_modifier
+				years = 5
+			}
+		}
+		every_interest_group = {
+			limit = {
+				leader = {
+					OR = {
+						has_ideology = ideology:ideology_fascist
+						has_ideology = ideology:ideology_integralist
+						has_ideology = ideology:ideology_ethno_nationalist
+					}
+				}
+			}
+			add_modifier = {
+				name = stts_ig_allowed_brownshirts_modifier
+				years = 3
+			}
+		}
+		every_political_movement = {
+			limit = {
+				OR = {
+					stts_movement_is_leftist = yes
+				}
+			}
+			add_modifier = {
+				name = stts_movement_brownshirt_violence_negative_modifier
+				years = 3
+			}
+		}
+		if = {
+			limit = {
+				any_scope_character = {
+					has_role_of_type = agitator
+					OR = {
+						has_ideology = ideology:ideology_anarchist
+						has_ideology = ideology:ideology_communist
+						has_ideology = ideology:ideology_vanguardist
+					}
+				}
+			}
+			random_scope_character = {
+				limit = {
+					has_role_of_type = agitator
+					OR = {
+						has_ideology = ideology:ideology_anarchist
+						has_ideology = ideology:ideology_communist
+						has_ideology = ideology:ideology_vanguardist
+					}
+				}
+				kill_character = yes
+			}
+		}
+		add_modifier = {
+			name = stts_political_terrorism_modifier
+			years = 3
+		}
+	}
+	#don't
+	option = {
+		name = stts_movement.11.b
+		scope:betrayer_ig = {
+			add_modifier = {
+				name = stts_ig_stopped_brownshirts_modifier
+				years = 3
+			}
+		}
+		every_interest_group = {
+			limit = {
+				leader = {
+					OR = {
+						has_ideology = ideology:ideology_fascist
+						has_ideology = ideology:ideology_integralist
+						has_ideology = ideology:ideology_ethno_nationalist
+					}
+				}
+			}
+			add_modifier = {
+				name = stts_ig_stopped_brownshirts_modifier
+				years = 3
+			}
+		}
+	}
+}
+# Religious Majority Movement boosts Devout
+stts_movement.12 = {
+	type = country_event
+	cooldown = {
+		years = 10
+	}
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+event_image = {
+		trigger = {
+			religion = rel:jewish
+		}
+		video = "europenorthamerica_judaism"
+	}
+	event_image = {
+		trigger = {
+			OR = {
+				religion = rel:protestant
+				religion = rel:catholic
+				religion = rel:orthodox
+				religion = rel:oriental_orthodox
+			}
+		}
+		video = "southamerica_christianity"
+	}
+	event_image = {
+		trigger = {
+			OR = {
+				religion = rel:hindu
+				religion = rel:sikh
+			}
+		}
+		video = "asia_hinduism_sikhism"
+	}
+	event_image = {
+		trigger = {		
+			OR = {
+				religion = rel:shinto
+				religion = rel:confucian
+			}
+		}
+		video = "asia_confucianism_shinto"
+	}
+	event_image = {
+		trigger = {
+			OR = {
+				religion = rel:mahayana
+				religion = rel:gelugpa
+				religion = rel:theravada
+			}
+		}
+		video = "asia_buddhism"
+	}
+	event_image = {
+		trigger = {
+			OR = {
+				religion = rel:sunni
+				religion = rel:shiite
+			}
+		}
+		video = "middleeast_islam"
+	}
+	event_image = {
+		trigger = {
+			NOR = {
+				religion = rel:jewish
+				religion = rel:protestant
+				religion = rel:catholic
+				religion = rel:orthodox
+				religion = rel:oriental_orthodox
+				religion = rel:mahayana
+				religion = rel:gelugpa
+				religion = rel:theravada
+				religion = rel:shinto
+				religion = rel:hindu
+				religion = rel:sikh
+				religion = rel:sunni
+				religion = rel:shiite
+			}
+		}
+		video = "africa_animism"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	title = stts_movement.12.t
+	desc = stts_movement.12.d
+	flavor = stts_movement.12.f
+	placement = root
+	duration = 3
+
+	trigger = {
+		any_political_movement = {
+			is_political_movement_type = movement_religious_majority
+			political_movement_support > 0.20
+		}
+		NOT = {
+			has_law_or_variant = law_type:law_state_atheism
+		}
+	}
+
+	immediate = {
+		random_political_movement = {
+			limit = {
+				is_political_movement_type = movement_religious_majority
+			}
+			save_scope_as = religious_movement
+		}
+		ig:ig_devout = {
+			save_scope_as = devout_ig
+		}
+	}
+
+	#okay
+	option = {
+		name = stts_movement.12.a
+		default_option = yes
+		ig:ig_devout = {
+			add_modifier = {
+				name = stts_ig_religious_support_modifier
+				multiplier = scope:religious_movement.political_movement_support
+				years = 5
+			}
+		}
+	}
+	#suppress
+	option = {
+		name = stts_movement.12.b
+		trigger = {
+			NOT = {
+				has_law_or_variant = law_type:law_protected_speech
+			}
+		}
+		ig:ig_devout = {
+			add_modifier = {
+				name = stts_ig_stifled_support_modifier
+				years = 5
+			}
+		}
+	}
+	#state religion / devout in government
+	option = {
+		name = stts_movement.12.c
+		trigger = {
+			OR = {
+				has_law_or_variant = law_type:law_state_religion
+				ig:ig_devout = {
+					is_in_government = yes
+				}
+				ruler.interest_group = ig:ig_devout
+			}
+		}
+		ig:ig_devout = {
+			add_modifier = {
+				name = stts_ig_religious_support_modifier
+				multiplier = scope:religious_movement.political_movement_support
+				years = 10
+			}
+		}
+		scope:religious_movement = {
+			add_modifier = {
+				name = stts_movement_official_support_modifier
+				years = 5
+			}
+		}
+	}
+
+}
+# International Alliance of Nationalists
+stts_movement.13 = {
+	type = country_event
+	cooldown = {
+		years = 20
+	}
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	event_image = {
+		video = "ep1_clandestine_meeting"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	title = stts_movement.13.t
+	desc = stts_movement.13.d
+	flavor = stts_movement.13.f
+	placement = root
+	duration = 3
+
+	trigger = {
+		has_technology_researched = pan-nationalism
+		any_political_movement = {
+			OR = {
+				is_political_movement_type = movement_cultural_majority
+				stts_movement_is_pan_national = yes
+			}
+			political_movement_support > 0.10
+			political_movement_radicalism > 0.10
+		}
+		any_diplomatically_relevant_country = {
+			country_rank >= rank_value:minor_power
+			any_political_movement = {
+				OR = {
+					is_political_movement_type = movement_cultural_majority
+					stts_movement_is_pan_national = yes
+					culture ?= {
+						is_primary_culture_of = root
+					}
+				}
+				political_movement_support > 0.15
+				political_movement_radicalism > 0.10
+			}
+			NOT = {
+				has_diplomatic_pact = {
+					who = root
+					type = rivalry
+				}
+			}
+			any_primary_culture = {
+				OR = {
+					shares_heritage_trait_group_with_any_primary_culture = root
+					shares_language_trait_group_with_any_primary_culture = root
+				}
+			}
+		}
+	}
+
+	immediate = {
+		random_political_movement = {
+			limit = {
+				OR = {
+					is_political_movement_type = movement_cultural_majority
+					stts_movement_is_pan_national = yes
+				}
+				political_movement_support > 0.10
+				political_movement_radicalism > 0.10
+			}
+			save_scope_as = nationalist_movement
+		}
+		random_diplomatically_relevant_country = {
+			limit = {
+				country_rank >= rank_value:minor_power
+				any_political_movement = {
+					OR = {
+						is_political_movement_type = movement_cultural_majority
+						stts_movement_is_pan_national = yes
+						culture ?= {
+							is_primary_culture_of = root
+						}
+					}
+					political_movement_support > 0.15
+					political_movement_radicalism > 0.10
+				}
+				NOT = {
+					has_diplomatic_pact = {
+						who = root
+						type = rivalry
+					}
+				}
+				any_primary_culture = {
+					OR = {
+						shares_heritage_trait_group_with_any_primary_culture = root
+						shares_language_trait_group_with_any_primary_culture = root
+					}
+				}
+			}
+			save_scope_as = foreign_nationalist_country
+			random_political_movement = {
+				limit = {
+					OR = {
+						is_political_movement_type = movement_cultural_majority
+						stts_movement_is_pan_national = yes
+						culture ?= {
+							is_primary_culture_of = root
+						}
+					}
+					political_movement_support > 0.15
+					political_movement_radicalism > 0.10
+				}
+				save_scope_as = foreign_nationalist_movement
+			}
+		}
+	}
+
+	#nationalists stick together
+	option = {
+		name = stts_movement.13.a
+		default_option = yes
+		scope:nationalist_movement = {
+			add_modifier = {
+				name = stts_movement_nationalist_movement_modifier
+				years = 5
+			}
+		}
+		if = {
+			limit = { 
+				scope:foreign_nationalist_movement = {
+					is_political_movement_type = movement_cultural_majority
+				}
+			}
+			change_relations = {
+				country = scope:foreign_nationalist_country
+				value = 15
+			}
+		}
+	}
+	#reject foreign influence
+	option = {
+		name = stts_movement.13.b
+		change_relations = {
+			country = scope:foreign_nationalist_country
+			value = -15
+		}
+		scope:nationalist_movement = {
+			add_modifier = {
+				name = stts_movement_insular_modifier
+				years = 5
+			}
+		}
+	}
+
+
+}
+# Peasant Tax Strike
+stts_movement.14 = {
+	type = country_event
+	cooldown = {
+		years = 10
+	}
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	event_image = {
+		video = "africa_public_protest"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	title = stts_movement.14.t
+	desc = stts_movement.14.d
+	flavor = stts_movement.14.f
+	placement = root
+	duration = 3
+
+	trigger = {
+		OR = {
+			enacting_any_law = no
+			OR = {
+				is_enacting_law = law_type:law_consumption_based_taxation
+				is_enacting_law = law_type:law_proportional_taxation
+				is_enacting_law = law_type:law_graduated_taxation
+				AND = {
+					has_law_or_variant = law_type:law_land_based_taxation
+					is_enacting_law = law_type:law_per_capita_based_taxation
+				}
+			}	
+		}
+		
+		OR = {
+			has_law_or_variant = law_type:law_land_based_taxation
+			has_law_or_variant = law_type:law_per_capita_based_taxation
+		}
+		any_political_movement = {
+			is_political_movement_type = movement_land_reform
+			political_movement_support > 0.20
+			political_movement_radicalism > 0.40
+		}
+	}
+
+	immediate = {
+		random_political_movement = {
+			limit = {
+				is_political_movement_type = movement_land_reform
+			}
+			save_scope_as = peasant_movement
+		}
+	}
+
+	#appease
+	option = {
+		name = stts_movement.14.a
+		trigger = {
+			custom_tooltip = {
+				text = stts_movement.14.a_trigger
+				OR = {
+				is_enacting_law = law_type:law_consumption_based_taxation
+				is_enacting_law = law_type:law_proportional_taxation
+				is_enacting_law = law_type:law_graduated_taxation
+				AND = {
+					has_law_or_variant = law_type:law_land_based_taxation
+					is_enacting_law = law_type:law_per_capita_based_taxation
+				}
+				}
+			}
+	
+		}
+		highlighted_option = yes
+		show_as_unavailable = { always = yes }
+		add_modifier = {
+			name = stts_peasant_tax_revolt_modifier
+			years = 3
+			multiplier = 0.5
+		}
+		scope:peasant_movement = {
+			add_modifier = {
+				name = stts_movement_official_support_modifier
+				years = 3
+			}
+		}
+		add_enactment_modifier = {
+			name = stts_peasant_tax_reform_modifier
+		}
+		add_radicals = {
+			value = medium_radicals
+			pop_type = aristocrats
+		}
+	}
+	#reject
+	option = {
+		name = stts_movement.14.b
+		default_option = yes
+		add_modifier = {
+			name = stts_peasant_tax_revolt_modifier
+			years = 3
+		}
+		add_radicals = {
+			value = medium_radicals
+			pop_type = peasants
+		}
+		add_loyalists = {
+			value = small_radicals
+			pop_type = aristocrats
+		}
+	}
+
+}
+# Industrialists use Racist Movement
+stts_movement.15 = {
+	type = country_event
+	cooldown = {
+		years = 10
+	}
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+	event_image = {
+		video = "votp_cops_march"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	title = stts_movement.15.t
+	desc = stts_movement.15.d
+	flavor = stts_movement.15.f
+	placement = root
+	duration = 3
+
+	trigger = {
+		any_political_movement = {
+			is_political_movement_type = movement_cultural_majority
+			political_movement_support > 0.10
+			political_movement_radicalism > 0.20
+		}
+		any_political_movement = {
+			stts_movement_is_leftist = yes
+			political_movement_support > 0.10
+		}
+		has_technology_researched = labor_movement
+		OR = {
+			has_law_or_variant = law_type:law_laissez_faire
+			has_law_or_variant = law_type:law_interventionism
+		}
+		NOT = {
+			has_law_or_variant = law_type:law_council_republic
+		}
+		ig:ig_industrialists = {
+			is_marginal = no
+		}
+	}
+
+	immediate = {
+		random_political_movement = {
+			limit = {
+				is_political_movement_type = movement_cultural_majority
+			}
+			save_scope_as = racist_movement
+		}
+		ig:ig_industrialists = {
+			save_scope_as = industrialists_ig
+		}
+		random_primary_culture = {
+			save_scope_as = primary_culture_scope
+		}
+	}
+
+	#good
+	option = {
+		name = stts_movement.15.a
+		default_option = yes
+		scope:racist_movement = {
+			add_modifier = {
+				name = stts_movement_bribery_modifier
+				years = 4
+			}
+		}
+		every_political_movement = {
+			limit = {
+				stts_movement_is_leftist = yes
+			}
+			add_modifier = {
+				name = stts_movement_racist_splitting_modifier
+				years = 4
+			}
+		}
+		add_modifier = {
+			name = stts_racist_unions_modifier
+			years = 4
+		}
+	}
+	#bad
+	option = {
+		name = stts_movement.15.b
+		ig:ig_industrialists = {
+			add_modifier = {
+				name = stts_ig_disapproval_modifier
+				years = 4
+			}
+		}
+		scope:racist_movement = {
+			add_modifier = {
+				name = stts_movement_stirred_up_modifier
+				years = 4
+			}
+		}
+	}
+
+}
+
+# Rival Foreign Influence
+stts_movement.16 = {
+	type = country_event
+	cooldown = {
+		years = 10
+	}
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	event_image = {
+		video = "ep1_clandestine_meeting"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	title = stts_movement.16.t
+	desc = stts_movement.16.d
+	flavor = stts_movement.16.f
+	placement = root
+	duration = 3
+	
+	trigger = {
+		any_diplomatically_relevant_country = {
+			stts_is_funding_movements = yes
+			has_diplomatic_pact = {
+				who = root
+				type = rivalry
+			}
+		}
+	}
+
+	immediate = {
+		random_diplomatically_relevant_country = {
+			limit = {
+				stts_is_funding_movements = yes
+				has_diplomatic_pact = {
+					who = root
+					type = rivalry
+				}
+			}
+			save_scope_as = foreign_funder
+		}
+		if = {
+			limit = {
+				scope:foreign_funder = {
+					has_diplomatic_pact = {
+						who = root
+						type = stts_fund_leftists
+					}
+				}
+				any_political_movement = {
+					stts_movement_is_leftist = yes
+				}
+			 }
+			 random_political_movement = {
+				limit = {
+					stts_movement_is_leftist = yes
+				}
+				save_scope_as = influenced_movement
+			 }
+		} else_if = {
+			limit = {
+				scope:foreign_funder = {
+					has_diplomatic_pact = { who = root type = support_separatism }
+					any_primary_culture = {
+						save_temporary_scope_as = check_culture
+						root = {
+							any_political_movement = {
+								is_political_movement_type = movement_cultural_minority
+								culture ?= scope:check_culture
+							}	
+						}
+					}
+				}
+			 }
+			 random_political_movement = {
+				limit = {
+					save_temporary_scope_as = check_movement
+					scope:foreign_funder = {
+						any_primary_culture = {
+							save_temporary_scope_as = check_culture
+							scope:check_movement = {
+								is_political_movement_type = movement_cultural_minority
+								culture ?= scope:check_culture	
+							}
+						}
+					}
+				}
+				save_scope_as = influenced_movement
+			 }
+		} else_if = {
+			limit = {
+				scope:foreign_funder = {
+					has_diplomatic_pact = {
+						who = root
+						type = stts_fund_liberals
+					}
+				}
+				any_political_movement = {
+					stts_movement_is_liberal = yes
+				}
+			 }
+			 random_political_movement = {
+				limit = {
+					stts_movement_is_liberal = yes
+				}
+				save_scope_as = influenced_movement
+			 }
+		} else_if = {
+			limit = {
+				scope:foreign_funder = {
+					has_diplomatic_pact = {
+						who = root
+						type = stts_fund_reactionaries
+					}
+				}
+				any_political_movement = {
+					stts_movement_is_reactionary = yes
+				}
+			 }
+			 random_political_movement = {
+				limit = {
+					stts_movement_is_reactionary = yes
+				}
+				save_scope_as = influenced_movement
+			 }
+		} else_if = {
+			limit = {
+				scope:foreign_funder = {
+					has_diplomatic_pact = {
+						who = root
+						type = stts_fund_nationalists
+					}
+				}
+				any_political_movement = {
+					stts_movement_is_pan_national = yes
+				}
+			 }
+			 random_political_movement = {
+				limit = {
+					stts_movement_is_pan_national = yes
+				}
+				save_scope_as = influenced_movement
+			 }
+		}
+		random_political_movement = {
+			limit = {
+				NOR = {
+					is_political_movement_type = movement_cultural_minority
+					is_political_movement_type = movement_religious_minority
+				}
+				NOT = {
+					scope:influenced_movement = this
+				}
+			}
+			save_scope_as = anti_rival_movement
+		}
+	}
+
+	#yes
+	option = {
+		name = stts_movement.16.a
+		default_option = yes
+		scope:influenced_movement = {
+			add_modifier = {
+				name = stts_movement_foreign_stooges_modifier
+				years = 3
+			}
+		}
+		scope:anti_rival_movement = {
+			add_modifier = {
+				name = stts_movement_rally_against_rival_modifier
+				years = 3
+			}
+		}
+		change_relations = {
+			country = scope:foreign_funder
+			value = -10
+		}
+	}
+	#no
+	option = {
+		name = stts_movement.16.b
+		scope:influenced_movement = {
+			add_modifier = {
+				name = stts_movement_foreign_support_revolution_modifier
+				years = 3
+			}
+		}
+		scope:anti_rival_movement = {
+			add_modifier = {
+				name = stts_movement_rally_against_rival_modifier
+				years = 3
+			}
+		}
+	}
+
+
+}
+
+#hidden event to un-fuck post-putsch governments
+stts_movement.17 = {
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		every_interest_group_in_government = {
+			remove_ruling_interest_group = yes
+		}
+		every_interest_group = {
+			limit = {
+				has_variable = revolutionary_ig
+			}
+			add_ruling_interest_group = yes
+		}
+	}
+}
+
+#support brewing revolution
+stts_movement.18 = {
+	type = country_event
+	cooldown = {
+		years = 10
+	}
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	event_image = {
+		video = "votp_agitators_sneaking"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	title = stts_movement.18.t
+	desc = stts_movement.18.d
+	flavor = stts_movement.18.f
+	placement = scope:relevant_country.capital
+	duration = 3
+	
+	trigger = {
+		any_diplomatically_relevant_country = {
+			stts_country_has_brewing_funded_revolution = yes
+			NOT = {
+				any_political_movement = {
+					has_modifier = stts_foreign_support_for_revolution
+				}
+			}
+			country_rank < root.country_rank
+		}
+	}
+
+	immediate = {
+		random_diplomatically_relevant_country = {
+			limit = {
+				stts_country_has_brewing_funded_revolution = yes
+				NOT = {
+					any_political_movement = {
+						has_modifier = stts_foreign_support_for_revolution
+					}
+				}
+				country_rank < root.country_rank
+			}
+			save_scope_as = relevant_country
+		}
+		scope:relevant_country = {
+			if = { #leftist revolution
+				limit = {
+					root = {
+						has_diplomatic_pact = {
+							who = scope:relevant_country
+							type = stts_fund_leftists
+						}
+					}
+				}
+				ordered_political_movement = {
+					order_by = political_movement_radicalism
+					limit = {
+						stts_movement_is_leftist = yes
+					}
+					save_scope_as = relevant_movement
+				}
+			} else_if = { #liberal revolution
+				limit = {
+					root = {
+						has_diplomatic_pact = {
+							who = scope:relevant_country
+							type = stts_fund_liberals
+						}
+					}
+				}
+				ordered_political_movement = {
+					order_by = political_movement_radicalism
+					limit = {
+						stts_movement_is_liberal = yes
+					}
+					save_scope_as = relevant_movement
+				}
+			} else_if = { #reactionary revolution
+				limit = {
+					root = {
+						has_diplomatic_pact = {
+							who = scope:relevant_country
+							type = stts_fund_reactionaries
+						}
+					}
+				}
+				ordered_political_movement = {
+					order_by = political_movement_radicalism
+					limit = {
+						stts_movement_is_reactionary = yes
+					}
+					save_scope_as = relevant_movement
+				}
+			} else_if = { #nationalist uprising
+				limit = {
+					root = {
+						has_diplomatic_pact = {
+							who = scope:relevant_country
+							type = stts_fund_nationalists
+						}
+					}
+				}
+				ordered_political_movement = {
+					order_by = political_movement_radicalism
+					limit = {
+						stts_movement_is_pan_national = yes
+					}
+					save_scope_as = relevant_movement
+				}
+			} else_if = { #seperatism
+				limit = {
+					root = {
+						has_diplomatic_pact = {
+							who = scope:relevant_country
+							type = support_separatism
+						}
+					}
+				}
+				ordered_political_movement = {
+					order_by = political_movement_radicalism
+					limit = {
+						is_political_movement_type = movement_cultural_minority
+						culture ?= {
+							is_primary_culture_of = root
+						}
+					}
+					save_scope_as = relevant_movement
+				}
+			}
+		}
+	}
+
+	#do it
+	option = {
+		name = stts_movement.18.a
+		default_option = yes
+		scope:relevant_movement = {
+			add_modifier = {
+				name = stts_foreign_support_for_revolution
+				years = 2
+			}
+		}
+		scope:relevant_country = {
+			post_notification = stts_foreign_support_for_revolution
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	#don't
+	option = {
+		name = stts_movement.18.b
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	cancellation_trigger = {
+		OR = {
+			scope:relevant_country ?= {
+				is_in_civil_war = yes
+			}
+			scope:relevant_country ?= {
+				any_political_movement = {
+					has_modifier = stts_foreign_support_for_revolution
+				}
+			}
+		}
+	}
+
+}
+
+#authoritarian spawns to save the revolution
+stts_movement.19 = {
+	type = country_event
+	cooldown = {
+		days = never_fire_again_modifier_time #once
+	}
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	event_image = {
+		video = "votp_barricade"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	title = stts_movement.19.t
+	desc = stts_movement.19.d
+	flavor = stts_movement.19.f
+	placement = root
+	duration = 3
+	
+	trigger = {
+		is_revolutionary = yes
+		trigger_if = {
+			limit = {
+				has_law_or_variant = law_type:law_council_republic
+			}
+			has_technology_researched = political_agitation
+		}
+		NOT = {
+			any_scope_character = {
+				OR = {
+					has_ideology = ideology:ideology_vanguardist
+					has_ideology = ideology:ideology_carlist
+					has_ideology = ideology:ideology_miguelist
+					has_ideology = ideology:ideology_fascist
+					has_ideology = ideology:ideology_authoritarian
+					has_ideology = ideology:ideology_integralist
+				}
+			}
+		}
+		any_scope_war = {
+			has_war_support = {
+				target = root
+				value < 10
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = { 
+				has_law_or_variant = law_type:law_council_republic
+			}
+			create_character = {
+				interest_group = ruler.interest_group
+				ideology = ideology_vanguardist
+				is_agitator = yes
+				save_scope_as = new_agitator
+			}
+		} else_if = {
+			limit = {
+				has_variable = civil_war_type_var
+				var:civil_war_type_var ?= movement_type:movement_cultural_majority
+				has_technology_researched = political_agitation
+			}
+			create_character = {
+				interest_group = ruler.interest_group
+				ideology = ideology_fascist
+				is_agitator = yes
+				save_scope_as = new_agitator
+			}
+		} else = {
+			create_character = {
+				interest_group = ruler.interest_group
+				ideology = ideology_authoritarian
+				is_agitator = yes
+				save_scope_as = new_agitator
+			}
+		}
+	}
+
+	#put him in charge
+	option = {
+		name = stts_movement.19.a
+		scope:new_agitator = {
+			interest_group = {
+				leader = {
+					exile_character = yes
+				}
+			}
+			set_as_interest_group_leader = yes
+			set_character_as_ruler = yes
+		}
+		add_modifier = {
+			name = stts_decisive_revolution
+			years = 2
+		}
+		add_radicals = {
+			value = medium_radicals
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					has_technology_researched = political_agitation
+				}
+				add = 25
+			}
+			modifier = {
+				trigger = {
+					var:civil_war_type_var ?= movement_type:movement_communist
+				}
+				add = 50
+			}
+		}
+	}
+
+	#don't
+	option = {
+		name = stts_movement.19.b
+		default_option = yes
+		ai_chance = {
+			base = 50
+		}
+	}
+}

@@ -1,0 +1,53 @@
+# COPY-PASTED FOR NOW
+@panel_width_minus_10 = 530			# used to be 450
+@panel_width = 540  				# used to be 460
+@panel_width_half = 270				# used to be 230
+@panel_width_plus_10 = 550  		# used to be 470
+@panel_width_plus_14 = 554			# used to be 474
+@panel_width_plus_14_half = 277		# used to be 237
+@panel_width_plus_20 = 560			# used to be 480
+@panel_width_plus_30 = 570			# used to be 490
+@panel_width_plus_70 = 610			# used to be 530
+
+types information_panels_types
+{
+	type v3_plotline_gdp = v3_plotline {
+		using = default_list_position
+		blockoverride "header" {
+			text = "GDP"
+		}
+		blockoverride "size" {
+			size = { 280 100 } # { 840 200 } # Returned to normal size
+		}
+		blockoverride "line_color" {
+			color = { .2 .9 .2 .9 }
+		}
+		blockoverride "line_plotpoints" {
+			visible = "[Not(IsEmpty(Country.GetGDPTrend))]"
+			plotpoints = "[GetTrendPlotPointsNormalized(Country.GetGDPTrend, GetMin(Country.GetGDPTrend), GetMax(Country.GetGDPTrend))]"
+		}
+		blockoverride "maxvalue" {
+			text = "[GetMax(Country.GetGDPTrend)|K]"
+		}
+		blockoverride "minvalue" {
+			raw_text = "[GetMin(Country.GetGDPTrend)|K]"
+		}
+		blockoverride "startdate" {
+			text = "[GetOldestDate(Country.GetGDPTrend)]"
+		}
+		blockoverride "enddate" {
+			text = "[GetLatestDate(Country.GetGDPTrend)]"
+		}
+		blockoverride "multiitem" {}
+
+		blockoverride "empty_state_visibility" {
+			visible = "[EqualTo_string(GetOldestDate(Country.GetGDPTrend), GetLatestDate(Country.GetGDPTrend))]"
+		}
+		blockoverride "everything_that_is_not_empty_state_visibility" {
+			visible = "[Not(EqualTo_string(GetOldestDate(Country.GetGDPTrend), GetLatestDate(Country.GetGDPTrend)))]"
+		}
+		blockoverride "empty_state_text" {
+			text = "GRAPH_NOT_INITIALIZED"
+		}
+	}
+}

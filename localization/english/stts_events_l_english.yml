@@ -1,0 +1,132 @@
+﻿l_english:
+
+stts_movement.1.t: "[SCOPE.sPoliticalMovement('relevant_movement').GetName] Vies for Leadership"
+stts_movement.1.d: "The influence of the [SCOPE.sPoliticalMovement('relevant_movement').GetName] has propelled the career of [SCOPE.sCharacter('movement_agitator').GetFullName] to new heights within the [SCOPE.gsInterestGroup('movement_influenced_ig').GetName], to the point where it is questionable whether [SCOPE.sCharacter('existing_ig_leader').GetFullName] can maintain [SCOPE.sCharacter('existing_ig_leader').GetHerHis] position of leadership."
+stts_movement.1.f: ""I'm sticking with [SCOPE.sCharacter('existing_ig_leader').GetLastNameNoFormatting], [SCOPE.sCharacter('existing_ig_leader').GetSheHe] has always seen us through."\n\n"I don't think [SCOPE.sCharacter('existing_ig_leader').GetSheHe] will last a month in [SCOPE.sCharacter('existing_ig_leader').GetHerHis] position, I give it two, tops. [SCOPE.sCharacter('movement_agitator').GetLastNameNoFormatting]'s crowds grow by the day, no way [SCOPE.sCharacter('movement_agitator').GetSheHe] will remain satisfied with mere speaking engagements.""
+stts_movement.1.a: "[SCOPE.sCharacter('movement_agitator').GetFullName] will take charge."
+stts_movement.1.b: "The [SCOPE.gsInterestGroup('movement_influenced_ig').GetName] will not be swayed so easily."
+stts_movement.1.c: "If you can't beat them, join them."
+existing_leader_over_15_popularity: "[SCOPE.sCharacter('existing_ig_leader').GetFullName]'s [concept_popularity] is 15 or more"
+movement_support_less_than_33: "[SCOPE.sPoliticalMovement('relevant_movement').GetName] [Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] is less than 33%"
+movement_agitator_less_than_100_popularity: "[SCOPE.sCharacter('movement_agitator').GetFullName]'s [concept_popularity] is less than 100"
+
+stts_movement.2.t: "[SCOPE.sPoliticalMovement('coup_movement').GetName] Putsch!"
+stts_movement.2.d: "A mob of armed [SCOPE.sPoliticalMovement('coup_movement').GetName] supporters led by [SCOPE.sCharacter('coup_leader').GetFullName] has descended on [ROOT.GetCountry.GetCapital.GetName] intent on decapitating the government and seizing control before a full-scale civil war breaks out."
+stts_movement.2.f: ""Gunshots and explosions in the central square. Guard forces falling back. Revolutionaries have barricaded all streets and are gathering strength for a final push. Please advise.""
+stts_movement.2.a: "Hold the line!"
+stts_movement.2.b: "It is a fait accompli."
+stts_movement.2.c: "The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] will be saved from the corrupt government!"
+stts_movement.2.e: "[ROOT.GetCountry.GetOverlord.GetName] will surely come to our aid"
+10_days_until_government: "After 10 days of confusion, all [Concept('concept_interest_group', '$concept_interest_groups$')] [concept_in_government] will be replaced with the [Concept('concept_revolution', '$concept_revolutionary$')] [Concept('concept_interest_group', '$concept_interest_groups$')]"
+
+stts_movement.3.t: "Socialist Infighting"
+stts_movement.3.d: "Differences between the [SCOPE.sPoliticalMovement('socialist_movement_1').GetName] and the [SCOPE.sPoliticalMovement('socialist_movement_2').GetName] have erupted into heated disagreements over which is the correct path for the workers' cause. Collaboration between the two sides has collapsed, with each group now attempting to poach support from the other."
+stts_movement.3.f: ""They are splitters! Lifestylists! Agents of dissolution! They would prefer to sit around all day and write endless critical pamphlets, while we do the real work progressing the workers' revolution! With fools like these taking up space in the movement, how can we possibly overcome our real foes?""
+stts_movement.3.a: "The [SCOPE.sPoliticalMovement('socialist_movement_1').GetName] is the real movement."
+stts_movement.3.b: "The [SCOPE.sPoliticalMovement('socialist_movement_2').GetName] has the better ideas."
+stts_movement.3.c: "Let them fight."
+
+stts_movement.4.t: "Popular Front against Fascism"
+stts_movement.4.d: "Leaders of both the [SCOPE.sPoliticalMovement('popular_front_movement_1').GetName] and the [SCOPE.sPoliticalMovement('popular_front_movement_2').GetName] have agreed to set aside their differences in order to jointly oppose the rising [GetIdeology('ideology_fascist').GetName] menace. United by a common foe, left-wing and liberal activists are coalescing around the larger movements as the most effective counter-force against the right."
+stts_movement.4.f: ""The workers' class enemy quickly sensed and understood what a tremendous danger the People's Front, the unity of all anti-fascist forces, constitutes for him. As long as the proletariat is disunited, as long as it has not established proper relationships and collaboration with the other democratic forces in the country, it is not so difficult, for the handful of financial and industrial magnates, for the fascist bourgeoisie, to crush the working class movement, to defeat the various strata of the people one by one, and destroy democracy. The fascists have successfully applied the well-known crafty motto -- "divide and rule.""" #Georgi Dimitrov The People's Front
+stts_movement.4.a: "The [SCOPE.sPoliticalMovement('popular_front_movement_1').GetName] will take charge."
+stts_movement.4.b: "Rally to the [SCOPE.sPoliticalMovement('popular_front_movement_2').GetName]!"
+
+stts_movement.5.t: "Conquest of the Street"
+stts_movement.5.d: "Paramilitary thugs associated with the [SCOPE.sPoliticalMovement('fascist_movement').GetName] have unleashed a campaign of terror and street violence against their political opponents."
+stts_movement.5.f: "The rally was interrupted by a gang of uniformed men wielding clubs. Anyone in their path were stomped and beaten down. Some in the crowd resisted, but most ran. In the aftermath, pamphlets and discarded signs stained with blood littered the street."
+stts_movement.5.a: "They are defenders of the nation!"
+stts_movement.5.b: "Stop them at once!"
+
+stts_movement.6.t: "The Good [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]"
+stts_movement.6.d: "A procession of poor [SCOPE.sPoliticalMovement('peasant_movement').GetName] supporters have marched to the royal palace bearing icons of [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName]. A delegation has asked to meet with the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] and ask for [ROOT.GetCountry.GetRuler.GetHerHis] intervention against the abuses of the rural landowners."
+stts_movement.6.f: ""You have been sent to lead the people to happiness; but happiness is snatched from us by the officials, who leave us only sorrow and humiliation. Consider our demands attentively and without anger. They have been uttered not for evil, but for good; for our good, Sire, and yours. It is not insolence that speaks in us, but the consciousness of the general necessity of escaping from the present intolerable state of things."" #The St. Petersburg workmen's petition to the Tsar
+stts_movement.6.a: "The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] is as a parent to [ROOT.GetCountry.GetRuler.GetHerHis] children."
+stts_movement.6.b: "Disperse this rabble before they sully the grounds."
+stts_movement.6.c: "A friendly representative could prove useful to the crown."
+stts_movement.6.c.tt: "A [GetIdeology('ideology_royalist').GetName] [concept_agitator] will apppear"
+stts_movement.6.c.tt_humanitarian: "An [GetIdeology('ideology_humanitarian_royalist').GetName] [concept_agitator] will appear"
+
+stts_movement.7.t: "Bank Robbery"
+stts_movement.7.d: "Agents of the [SCOPE.sPoliticalMovement('bank_robber_movement').GetName] have staged a daring bank robbery in [SCOPE.sState('bank_robbery_state').GetName], killing several dozen bystanders in the process and quickly escaping with their ill-gotten gains."
+stts_movement.7.f: ""BOMB KILLS MANY; £100,000 CAPTURED\n\nA bomb was thrown in the centre of the town, which was thronged with people. The missile exploded with terrifice force. Many persons were killed or injured and windows and doors were shattered over a large area.\n\nThe bags containing the money disappeared and no trace of them has been found. Up to a late hour the police had not succeeded in making any arrests, but they continued their search on a large scale."" #new York Times, Tiflis Bank Robbery
+stts_movement.7.a: "What a mess."
+stts_movement.7.b: "Track down these criminals!"
+
+stts_movement.8.t: "Liberal Nationalism"
+stts_movement.8.d: "The ideas of a liberal nation-state put forth by the [SCOPE.sPoliticalMovement('liberal_movement').GetName] have proven valuable to the development of the [SCOPE.sPoliticalMovement('cultural_movement').GetName]."
+stts_movement.8.f: ""A Country is not a mere territory; the particular territory is only its foundation. The Country is the idea which rises upon that foundation; it is the sentiment of love, the sense of fellowship which binds together all the sons of that territory."" #Giuseppe Mazzini
+stts_movement.8.a: "Nationalism and Liberalism go hand in hand."
+stts_movement.8.b: "To the progress of the nation and its people!"
+
+stts_movement.9.t: "[SCOPE.sCharacter('assassin_target').GetFullName] Attacked!"
+stts_movement.9.d: "[SCOPE.sCharacter('assassin_target').GetFullName] has been targeted by an assassin associated with the [SCOPE.sPoliticalMovement('assassin_movement').GetName]! The assassin was quickly captured, and [SCOPE.sCharacter('assassin_target').GetFullName] has been rushed into intensive care."
+stts_movement.9.f: ""There was a flash and a cloud of smoke. [SCOPE.sCharacter('assassin_target').GetFullNameNoFormatting] went down, and I saw a man running away. He tried to jump into the canal, but the water was too shallow. That is where the police grabbed him.""
+stts_movement.9.a: "This is an outrage!"
+stts_movement.9.b: "Crack down on the [SCOPE.sPoliticalMovement('assassin_movement').GetName]!"
+stts_movement.9.c: "We didn't much like [SCOPE.sCharacter('assassin_target').GetFullName] anyway."
+
+stts_movement.10.t: "Leaderless Resistance"
+stts_movement.10.d: "The [GetLawType('law_secret_police').GetName] is having considerable difficulty suppressing the [SCOPE.sPoliticalMovement('anarchist_movement').GetName]. The movement's decentralized structure and ideological character have flummoxed most traditional infiltration methods."
+stts_movement.10.f: ""Report: Infiltration of the anarchists is made difficult by the communal nature of their  lifestyle (under constant observation and scrutiny) and the extensive knowledge held by many anarchists, which require a considerable amount of study and time for any prospective agent to acquire. Other strategies for infiltration have been explored, but so far have not been successful."" #Anarchist Direct Actions: A Challenge for Law Enforcement
+stts_movement.10.a: "Well, keep at it."
+stts_movement.10.b: "Collective punishments will draw out these agitators."
+stts_movement.10.c: "Clearly these resources can be spent elsewhere."
+stts_movement.10.e: "The voice of the oppressed cannot be silenced."
+
+
+stts_movement.11.t: "Law and Order"
+stts_movement.11.d: "With the increasing agitation of the [SCOPE.sPoliticalMovement('target_socialist_movement').GetName], the leadership of the [SCOPE.gsInterestGroup('betrayer_ig').GetName] has suggested a temporary alliance with the [SCOPE.sPoliticalMovement('freikorps_movement').GetName]. They suggest a lightning campaign of street violence to disrupt the [SCOPE.sPoliticalMovement('target_socialist_movement').GetName], afterwards the government can restore law and order."
+stts_movement.11.f: ""The Fatherland is close to ruin. Save it! It is not threatened from outside, but from within! Strike their leaders dead! Then you will have peace, work and bread."" #Anti-Bolshevist League Pamphlet
+stts_movement.11.a: "Do it."
+stts_movement.11.b: "This would be a terrible mistake."
+
+stts_movement.12.t: "For the Faith"
+stts_movement.12.d: "The rising influence of the [SCOPE.sPoliticalMovement('religious_movement').GetName] is visible in a nation-wide increase in religious attendance and donations, much to the benefit of the [SCOPE.gsInterestGroup('devout_ig').GetName]."
+stts_movement.12.f: ""It is impossible to govern the world without God. It is the duty of all nations to acknowledge the Providence of Almighty God, to obey his will, to be grateful for his benefits and humbly implore his protection and favor."" #George Washington
+stts_movement.12.a: "Politics is downstream of faith."
+stts_movement.12.b: "The [SCOPE.gsInterestGroup('devout_ig').GetName] does not need more institutional power."
+stts_movement.12.c: "The [SCOPE.gsInterestGroup('devout_ig').GetName] is the moral center of our nation."
+
+stts_movement.13.t: "Nationalist Internationalism"
+stts_movement.13.d: "Crossing political and national boundaries, members of the [SCOPE.sPoliticalMovement('nationalist_movement').GetName] have begun adopting tactics and rhetoric from the influential [SCOPE.sPoliticalMovement('foreign_nationalist_movement').GetName] in [SCOPE.sCountry('foreign_nationalist_country').GetName]. "
+stts_movement.13.f: "The marching, the way they arranged their meetings, the talking points they spouted on the street. All were very familiar. If you switched one flag for the other and translated the language, the [ROOT.GetCountry.GetAdjectiveNoFormatting] nationalists were almost indistinguishable from those in [SCOPE.sCountry('foreign_nationalist_country').GetNameNoFormatting]."
+stts_movement.13.a: "Us nationalists had best stick together."
+stts_movement.13.b: "Do not become imitators of uncultured foreigners!"
+
+stts_movement.14.t: "Tax Strike"
+stts_movement.14.d: "Decrying [concept_budget_land_taxes] as a policy of starvation, the [SCOPE.sPoliticalMovement('peasant_movement').GetName] has organized a widespread tax strike by [GetPopType('peasants').GetName] across [ROOT.GetCountry.GetName]."
+stts_movement.14.f: ""We shall not pay the onerous tax and tithe any longer. How can a man let his children go hungry while the landlord takes and takes? We will hide our harvests. We will seize the tax collectors. We will fight if we must, for we are men.""
+stts_movement.14.a: "We must grant relief to the peasantry."
+stts_movement.14.a_trigger: "Must be [Concept('concept_enactment_of_laws', '$concept_enactment_of_laws_enacting$')] a Tax Law that would reduce or remove [concept_budget_land_taxes]"
+stts_movement.14.b: "Any peasants who withold their taxes are traitors!"
+
+stts_movement.15.t: "Race over Class"
+stts_movement.15.d: "The growing voice of the [SCOPE.sPoliticalMovement('racist_movement').GetName] has created an opportunity that the [SCOPE.gsInterestGroup('industrialists_ig').GetName] have been quick to exploit. They have begun to disrupt labor organizing efforts by stirring up racial resentments among [SCOPE.sCulture('primary_culture_scope').GetName] workers."
+stts_movement.15.f: ""But this is not alone a race, labor, and political question. It is one which involves our civilization and interests the people of the world. The benefactors, scholars, soldiers, and statesmen — the patriots and martyrs of mankind — have builded our modern fabric firmly upon the foundation of religion, law, science, and art. It has been rescued from barbarism and protected against the incursions of barbarians."" #Samuel Gompers
+stts_movement.15.a: "Anything to break up the labor agitators."
+stts_movement.15.b: "The workers cannot be so easily misled."
+
+stts_movement.16.t: "Outside Agitators"
+stts_movement.16.d: "With [SCOPE.sCountry('foreign_funder').GetAdjective] funding flowing into the [SCOPE.sPoliticalMovement('influenced_movement').GetName], the [SCOPE.sPoliticalMovement('anti_rival_movement').GetName] has jumped on the opportunity to brand them as stooges of a foreign power."
+stts_movement.16.f: ""This is [ROOT.GetCountry.GetNameNoFormatting], not [SCOPE.sCountry('foreign_funder').GetNameNoFormatting]! Any traitors to our country, those who hate our core values, should pack up and leave! I'm sure your foreign masters will finance your emigration, just how they're financing you now!""
+stts_movement.16.a: "The [SCOPE.sPoliticalMovement('influenced_movement').GetName] are nothing but puppets."
+stts_movement.16.b: "There are no strings on us!"
+
+stts_movement.18.t: "Lighting the Fire"
+stts_movement.18.d: "The [SCOPE.sPoliticalMovement('relevant_movement').GetName] in [SCOPE.sCountry('relevant_country').GetName], which we have been funding, is on the brink of outright [concept_revolution]. With our support, we could give the movement the last push of support needed."
+stts_movement.18.f: "The agent checked over the arrayed weapons. Rifles, grenades, some assorted explosives. None of it was in particularly good condition, but they would work.\n\n"And you can get these across the border within the week, yes?"\n\n"Oh certainly, I've driven this route dozens of times, I know all the guards by name and they know me. I can assure your man on the other side will have his delivery.""
+stts_movement.18.a: "See to it, discretely."
+stts_movement.18.b: "We do not wish to see the [SCOPE.sPoliticalMovement('relevant_movement').GetName] take power."
+
+stts_movement.19.t: "To Save the Revolution"
+stts_movement.19.d: "With the outcome of the [concept_revolution] seemingly in doubt, [SCOPE.sCharacter('new_agitator').GetFullName] has rapidly built support for decisive measures against internal enemies and saboteurs."
+stts_movement.19.f: ""We must smother the internal and external enemies of the revolution or perish with it; now in this situation, the first maxim of your policy ought to be to lead the people by reason and the people's enemies by terror.\n\n— Maximilien Robespierre""
+stts_movement.19.a: "[SCOPE.sCharacter('new_agitator').GetLastName] will lead us to victory!"
+stts_movement.19.b: "[SCOPE.sCharacter('new_agitator').GetLastName] will not seize control of our revolution!"
+
+stts_easter_egg.1.t: "The Kingdom of Conscience"
+stts_easter_egg.1.d: "The domination of [GetIdeology('ideology_moderate').GetName] voices in government has heralded a new appreciation for the status quo and the merits of enlightened centrism."
+stts_easter_egg.1.f: ""The Kingdom of Conscience will be exactly as it is now. Centrists don't really *have* beliefs. Sometimes they stumble on one, like on a child's toy left on the carpet. The toy must be put away immediately. And the child reprimanded. Centrism isn't change - not even incremental change. It is *control*. Over yourself and the world. Exercise it. Look up at the horizon, at the dark shapes of [ROOT.GetCountry.GetAdjectiveNoFormatting] gunships floating there. Ask yourself: is there something sinister in centrism? And then answer: no. God is in his heaven. Everything is normal on Earth.""
+stts_easter_egg.1.a: "We have reached the end of history."
+stts_easter_egg.1.b: "Something beautiful is going to happen."

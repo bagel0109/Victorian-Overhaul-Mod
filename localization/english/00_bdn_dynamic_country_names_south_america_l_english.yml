@@ -1,0 +1,199 @@
+﻿ l_english:
+ 
+ dyn_c_argentina_absolutist_monarchy:0 "Kingdom of the Igauzu Falls"
+
+ dyn_c_argentina_monarchy:0 "Kingdom of the Igauzu Falls"
+
+ dyn_c_argentina_dictatorship:0 "Argentine Confederation"
+
+ dyn_c_argentina_republic:0 "Republic of Argentina"
+
+ dyn_c_argentina_communist:0 "Argentine State for the Worker"
+
+ dyn_c_argentina_communistvote:0 "Socialist Republic of Argentina"
+
+ dyn_c_argentina_theocratic:0 "Catholic Union of Argentina"
+
+ dyn_c_argentina_theocraticvote:0 "Catholic Republic of Argentina"
+
+ dyn_c_argentina_anarchy:0 "Territorios Libres"
+ 
+ dyn_c_chile_absolutist_monarchy:0 "Kingdom of Chile"
+ 
+ dyn_c_chile_monarchy:0 "Kingdom of Chile"
+ 
+ dyn_c_chile_dictatorship:0 "Greater Chilean Empire"
+ 
+ dyn_c_chile_republic:0 "Republic of Chile"
+ 
+ dyn_c_chile_communist:0 "Peoples State of Chile"
+ 
+ dyn_c_chile_communistvote:0 "Socialist Republic of Chile"
+ 
+ dyn_c_chile_theocratic:0 "Holy Empire of Chile"
+ 
+ dyn_c_chile_theocraticvote:0 "Holy Republic of Chile"
+ 
+ dyn_c_chile_anarchy:0 "Free Chilean Communes"
+ 
+ PLT:0 "Confederation of La Plata"
+ 
+ dyn_c_laplata_absolutist_monarchy:0 "Royal Confederation of La Plata"
+ 
+ dyn_c_laplata_monarchy:0 "Royal Confederation of La Plata"
+ 
+ dyn_c_laplata_dictatorship:0 "Federal State of La Plata"
+ 
+ dyn_c_laplata_republic:0 "Republic of La Plata"
+ 
+ dyn_c_laplata_communist:0 "Socialist Federation of La Plata"
+ 
+ dyn_c_laplata_communistvote:0 "United Socialist States of La Plata"
+ 
+ dyn_c_laplata_theocratic:0 "Holy States of La Plata"
+ 
+ dyn_c_laplata_theocraticvote:0 "Holy Confederation of La Plata"
+ 
+ dyn_c_laplata_anarchy:0 "Independent States of La Plata"
+
+ dyn_c_ecuador_absolutist_monarchy:0 "Kingdom of Ecuador"
+ 
+ dyn_c_ecuador_monarchy:0 "Kingdom of Ecuador"
+ 
+ dyn_c_ecuador_dictatorship:0 "Free Republic of Ecuador"
+ 
+ dyn_c_ecuador_republic:0 "Republic of Ecuador"
+ 
+ dyn_c_ecuador_communist:0 "Proletarian Union of Ecuador"
+ 
+ dyn_c_ecuador_communistvote:0 "Peoples Republic of Ecuador"
+ 
+ dyn_c_ecuador_theocratic:0 "Theocratic Order of Ecuador"
+ 
+ dyn_c_ecuador_theocraticvote:0 "Theocratic Republic of Ecuador"
+ 
+ dyn_c_ecuador_anarchy:0 "Communes of Ecuador"
+ 
+ dyn_c_peru_absolutist_monarchy:0 "Kingdom of Peru"
+ 
+ dyn_c_peru_monarchy:0 "Kingdom of Peru"
+ 
+ dyn_c_peru_dictatorship:0 "Peruvian State of Honor"
+ 
+ dyn_c_peru_republic:0 "Federal State of Peru"
+ 
+ dyn_c_peru_communist:0 "Democratic Socialist Republic of Peru"
+ 
+ dyn_c_peru_communistvote:0 "Peoples Republic of Peru"
+ 
+ dyn_c_peru_theocratic:0 "Theocratic Empire of Peru"
+ 
+ dyn_c_peru_theocraticvote:0 "Theocratic Republic of Peru"
+ 
+ dyn_c_peru_anarchy:0 "Independent Communes of Peru"
+ 
+ dyn_c_northperu_absolutist_monarchy:0 "Kingdom of Northern Peru"
+ 
+ dyn_c_northperu_monarchy:0 "Kingdom of Northern Peru"
+ 
+ dyn_c_northperu_dictatorship:0 "National Republic of North Peru"
+ 
+ dyn_c_northperu_republic:0 "Republic of North Peru"
+ 
+ dyn_c_northperu_communist:0 "Northern Peruvian Socialist State"
+ 
+ dyn_c_northperu_communistvote:0 "People’s Republic of North Peru"
+ 
+ dyn_c_northperu_theocratic:0 "Blessed Kingdom of North Peru"
+ 
+ dyn_c_northperu_theocraticvote:0 "North Peruvian Clerical Union"
+ 
+ dyn_c_northperu_anarchy:0 "Free Confederation of North Peru"
+ 
+ dyn_c_southperu_absolutist_monarchy:0 "Kingdom of South Peru"
+ 
+ dyn_c_southperu_monarchy:0 "Kingdom of South Peru"
+ 
+ dyn_c_southperu_dictatorship:0 "Iron State of Southern Peru"
+ 
+ dyn_c_southperu_republic:0 "South Peruvian Constitutional Republic"
+ 
+ dyn_c_southperu_communist:0 "People’s Republic of South Peru"
+ 
+ dyn_c_southperu_communistvote:0 "Socialist Republic of South Peru"
+ 
+ dyn_c_southperu_theocratic:0 "Sanctified State of Southern Peru"
+ 
+ dyn_c_southperu_theocraticvote:0 "Divine Republic  of South Peru"
+ 
+ dyn_c_southperu_anarchy:0 "South Peru Communes"
+ 
+ dyn_c_bolivia_absolutist_monarchy:0 "Kingdom of Bolivia"
+ 
+ dyn_c_bolivia_monarchy:0 "Kingdom of Bolivia"
+ 
+ dyn_c_bolivia_dictatorship:0 "State of Bolivia"
+ 
+ dyn_c_bolivia_republic:0 "Republic of Bolivia"
+ 
+ dyn_c_bolivia_communist:0 "Socialist State of Bolivia"
+ 
+ dyn_c_bolivia_communistvote:0 "Socialist Republic of Bolivia"
+ 
+ dyn_c_bolivia_theocratic:0 "Catholic Empire of Bolivia"
+ 
+ dyn_c_bolivia_theocraticvote:0 "Catholic Republic of Bolivia"
+ 
+ dyn_c_iquicha_absolutist_monarchy:0 "Kingdom of the Iquichan Valleys"
+ 
+ dyn_c_iquicha_monarchy:0 "Kingdom of the Iquichan Valleys"
+ 
+ dyn_c_iquicha_dictatorship:0 "State of Iquicha"
+ 
+ dyn_c_iquicha_republic:0 "Iquicha"
+ 
+ dyn_c_iquicha_communist:0 "People’s Republic of Iquicha"
+ 
+ dyn_c_iquicha_communistvote:0 "People’s Iquichan Socialist Union"
+ 
+ dyn_c_iquicha_theocratic:0 "Temple-State of Iquicha"
+ 
+ dyn_c_iquicha_theocraticvote:0 "Holy State of the Highlands"
+ 
+ dyn_c_iquicha_anarchy:0 "Confederation of the Highlands"
+ 
+ dyn_c_venezuela_absolutist_monarchy:0 "Kingdom of Venezuela"
+ 
+ dyn_c_venezuela_monarchy:0 "Kingdom of Venezuela"
+ 
+ dyn_c_venezuela_dictatorship:0 "National Republic of Venezuela"
+ 
+ dyn_c_venezuela_republic:0 "Republic of Venezuela"
+ 
+ dyn_c_venezuela_communist:0 "Venezuelan Revolutionary State"
+ 
+ dyn_c_venezuela_communistvote:0 "Venezuelan Popular Federation"
+ 
+ dyn_c_venezuela_theocratic:0 "Sovereign Temple-State of Venezuela"
+ 
+ dyn_c_venezuela_theocraticvote:0 "Holy Federation of Venezuela"
+ 
+ dyn_c_venezuela_anarchy:0 "Autonomous People’s Union of Venezuela"
+ 
+ dyn_c_columbia_absolutist_monarchy:0 "Kingdom of New Granada"
+ 
+ dyn_c_columbia_monarchy:0 "Kingdom of New Granada"
+ 
+ dyn_c_columbia_dictatorship:0 "National Republic of New Granada"
+ 
+ dyn_c_columbia_republic:0 "Republic of New Granada"
+ 
+ dyn_c_columbia_communist:0 "Socialist Republic of New Granada"
+ 
+ dyn_c_columbia_communistvote:0 "Socialist Council Republic of New Granada"
+ 
+ dyn_c_columbia_theocratic:0 "Divine Kingdom of New Granada"
+ 
+ dyn_c_columbia_theocraticvote:0 "Clerical Republic of New Granada"
+ 
+ dyn_c_columbia_anarchy:0 "Free Territory of New Granada"

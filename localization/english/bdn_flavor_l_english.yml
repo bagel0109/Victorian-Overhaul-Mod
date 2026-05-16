@@ -1,0 +1,11 @@
+﻿l_english:
+
+  nortons_empire.1.t: "The Proclamation of Norton's Empire"
+  nortons_empire.1.d: "The Proclamation of Norton's Empire"
+  nortons_empire.1.a: "Long live the Empire of Norton!"
+  nortons_empire.1.b: "Has he gone completely crazy now?"
+  odf_tooltipp_1.tt: "Joshua Norton is the reigning Monarch of the United States"
+  nortons_empire.1.a.tt: "The Kingdom of America will now be called Empire of Norton and change its flag."
+  nortons_empire.1.b.tt: "Nothing will change."
+  nortons_empire.1.flavor: ""At the peremptory request and desire of a large majority of the citizens of these United States, I, [SCOPE.sCharacter('historic_agitator_scope').GetFullNameNoFormatting], formerly of Algoa Bay, Cape of Good Hope, and now for the last 9 years and 10 months past of San Francisco, California, declare and proclaim myself Emperor of these United States...which shall bear my name from now on, and shall be formed by my deeds""
+  

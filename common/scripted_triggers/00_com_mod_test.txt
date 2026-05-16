@@ -1,0 +1,478 @@
+﻿
+#############
+# By Lord R #
+#############
+
+###############################
+# COM CHECK SCRPITED TRIGGERS #
+###############################
+
+mr_com_special_character_blocker = {
+    NOR = {
+        has_variable = mr_is_engineer_var
+        has_variable = mr_is_astronomer_var
+        has_variable = mr_is_chemist_var
+        has_variable = mr_is_physicist_var
+        has_variable = mr_is_geologist_var
+        has_variable = mr_is_naturalist_var
+        has_variable = mr_is_paleontologist_var
+        has_variable = mr_is_biologist_var
+        has_variable = mr_is_archaeologist_var
+        has_variable = mr_is_anthropologist_var
+        has_variable = mr_is_physician_var
+        has_variable = mr_is_racer_var
+        has_variable = mr_is_composer_var
+        has_variable = mr_is_travelling_composer_var
+        has_variable = mr_is_writer_var
+        has_variable = mr_is_local_writer_var
+        has_variable = mr_is_painter_var
+        has_variable = mr_is_independent_painter
+    }
+}
+
+
+###############################
+#       GENERAL TRIGGERS      #
+###############################
+
+### Military Age Triggers
+
+COM_is_early_military = {
+    OR = {
+        AND = {
+            exists = scope:character
+            scope:character ?= {
+                owner ?= {
+                    NOT = {
+                        has_technology_researched = bolt_action_rifles
+                    }
+                }
+            }
+        }
+        AND = {
+            exists = scope:pop
+            scope:pop ?= {
+                owner ?= {
+                    NOT = {
+                        has_technology_researched = bolt_action_rifles
+                    }
+                }
+            }
+        }
+    }
+}
+
+COM_is_mid_military = {
+    OR = {
+        scope:character ?= {
+            owner ?= {
+                has_technology_researched = general_staff
+                OR = {
+                    has_technology_researched = rifling
+                    has_technology_researched = breech_loading_artillery
+                }
+            }
+        }
+        scope:pop ?= {
+            owner ?= {
+                has_technology_researched = general_staff
+                OR = {
+                    has_technology_researched = rifling
+                    has_technology_researched = breech_loading_artillery
+                }
+            }
+        }
+    }
+}
+
+COM_is_late_military = {
+    OR = {
+        scope:character ?= {
+            owner ?= {
+                OR = {
+                    has_technology_researched = bolt_action_rifles
+                    has_technology_researched = trench_works
+                }
+            }
+        }
+        scope:pop ?= {
+            owner ?= {
+                OR = {
+                    has_technology_researched = bolt_action_rifles
+                    has_technology_researched = trench_works
+                }
+            }
+        }
+    }
+}
+
+COM_is_interwar_military = {
+    OR = {
+        scope:character ?= {
+            owner ?= {
+                OR = {
+                    has_technology_researched = stormtroopers
+                    has_technology_researched = nco_training
+                }
+            }
+        }
+        scope:pop ?= {
+            owner ?= {
+                OR = {
+                    has_technology_researched = stormtroopers
+                    has_technology_researched = nco_training
+                }
+            }
+        }
+    }
+}
+
+### Leader Triggers
+
+COM_is_monarch_leader = {
+    exists = scope:character
+    scope:character ?= {
+        monarchy_clothes_trigger = yes
+        is_female = no
+        age >= define:NCharacters|ADULT_AGE
+    }
+}
+
+COM_is_republic_leader = {
+    exists = scope:character
+    scope:character ?= {
+        owner ?= {
+            coa_republic_trigger = yes
+        }
+        is_ruler_of_own_country = yes
+        age >= define:NCharacters|ADULT_AGE
+    }
+}
+
+COM_is_general_leader = {
+    exists = scope:character
+    scope:character ?= {
+        OR = {
+            AND = {
+                has_role_of_type = politician
+                is_ruler_of_own_country = no
+                is_heir_of_own_country = no
+                is_interest_group_type = ig_armed_forces
+                mr_com_special_character_blocker = yes
+            }
+            has_role_of_type = general
+        }
+    }
+}
+
+COM_is_admiral_leader = {
+    exists = scope:character
+    scope:character ?= {
+        OR = {
+            AND = {
+                has_role_of_type = politician
+                is_ruler_of_own_country = no
+                is_heir_of_own_country = no
+                is_interest_group_type = ig_armed_forces
+                mr_com_special_character_blocker = yes
+            }
+            has_role_of_type = admiral
+        }
+    }
+}
+
+### Continent Triggers
+
+COM_is_european = {     # taken from the vanilla europe triggers with some adjustments
+    OR = {
+        scope:character ?= {
+            AND = {
+                culture = {
+                    has_discrimination_trait_group = heritage_group_european
+                }
+                NOT = {
+                    culture = cu:circassian
+                }
+                NOT = {
+                    AND = { # Albanian characters serving either the Ottomans or Egyptians should wear that country's clothing.
+                        culture = cu:albanian
+                        exists = home_country
+                        OR = {
+                            home_country = {
+                                exists = c:TUR
+                                c:TUR = this
+                            }
+                            home_country = {
+                                exists = c:EGY
+                                c:EGY = this
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        scope:pop ?= {
+            culture = {
+                has_discrimination_trait_group = heritage_group_european
+            }
+            NOT = {
+                culture = cu:circassian
+            }
+        }
+    }
+}
+
+### TAG triggers
+
+    # checks whether your tag is, was formed from or is a vassal of the tag in curly brackets like "COM_is_or_was_tag = { TAG = AUS}" for Austria
+COM_is_or_was_tag = {
+    OR = {
+        scope:character ?= {
+            home_country ?= {
+                OR = {
+                    AND = {
+                        c:$TAG$ ?= this
+                        is_subject = no # preventing uniform conflicts if TAG becomes a subject of another country with puppet uniforms
+                    }
+                    AND = {
+                        was_formed_from = $TAG$
+                        is_subject = no # preventing uniform conflicts if TAG becomes a subject of another country with puppet uniforms
+                    }
+                    top_overlord = {
+                        was_formed_from = $TAG$
+                        NOT = {
+					        is_diplomatic_play_enemy_of = overlord
+                        }
+                    }
+                    AND = {
+                        exists = c:$TAG$
+                        is_subject_of = c:$TAG$
+                        NOT = {
+					        is_diplomatic_play_enemy_of = overlord
+                        }
+                    }
+                }
+            }
+        }
+        scope:pop ?= {
+            home_country ?= {
+                OR = {
+                    AND = {
+                        c:$TAG$ ?= this
+                        is_subject = no # preventing uniform conflicts if TAG becomes a subject of another country with puppet uniforms
+                    }
+                    AND = {
+                        was_formed_from = $TAG$
+                        is_subject = no # preventing uniform conflicts if TAG becomes a subject of another country with puppet uniforms
+                    }
+                    top_overlord = {
+                        was_formed_from = $TAG$
+                        NOT = {
+					        is_diplomatic_play_enemy_of = overlord
+                        }
+                    }
+                    AND = {
+                        exists = c:$TAG$
+                        is_subject_of = c:$TAG$
+                        NOT = {
+					        is_diplomatic_play_enemy_of = overlord
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+    # checks whether your tag is or was formed from the tag in curly brackets like "COM_is_or_was_tag = { TAG = AUS}" for Austria
+    # this one excludes vassals
+COM_is_or_was_tag_strict = {  ### doesn't include vassals
+    OR = {
+        scope:character ?= {
+            home_country ?= {
+                OR = {
+                    c:$TAG$ ?= this
+                    was_formed_from = $TAG$
+                }
+                is_subject = no # preventing uniform conflicts if TAG becomes a subject of another country with puppet uniforms
+            }
+        }
+        scope:pop ?= {
+            home_country ?= {
+                OR = {
+                    c:$TAG$ ?= this
+                    was_formed_from = $TAG$
+                }
+                is_subject = no # preventing uniform conflicts if TAG becomes a subject of another country with puppet uniforms
+            }
+        }
+    }
+}
+
+COM_is_culture_tag = {
+    OR = {
+        scope:character ?= {
+            home_country ?= {
+			    country_has_primary_culture = cu:$culture$
+                is_subject = no # preventing uniform conflicts if TAG becomes a subject of another country with puppet uniforms
+            }
+        }
+        scope:pop ?= {
+            home_country ?= {
+			    country_has_primary_culture = cu:$culture$
+                is_subject = no # preventing uniform conflicts if TAG becomes a subject of another country with puppet uniforms
+            }
+        }
+    }
+}
+
+# SASHES SCA TRIGGERS
+
+COM_is_swedish_SCA = {
+    exists = scope:character
+    scope:character ?= {
+        has_culture = cu:swedish
+        OR = {
+            AND = {
+                has_role_of_type = politician
+                is_ruler_of_own_country = no
+                is_interest_group_type = ig_armed_forces
+            }
+            has_role_of_type = general
+            has_role_of_type = admiral
+        }
+        owner ?= {
+            NOT = {
+                has_technology_researched = bolt_action_rifles
+            }
+            OR = {
+                c:SCA ?= this
+                was_formed_from = SCA
+            }
+        }
+    }
+}
+
+COM_is_danish_SCA = {
+    exists = scope:character
+    scope:character ?= {
+        has_culture = cu:danish
+        OR = {
+            AND = {
+                has_role_of_type = politician
+                is_ruler_of_own_country = no
+                is_interest_group_type = ig_armed_forces
+            }
+            has_role_of_type = general
+            has_role_of_type = admiral
+        }
+        owner ?= {
+            NOT = {
+                has_technology_researched = bolt_action_rifles
+            }
+            OR = {
+                c:SCA ?= this
+                was_formed_from = SCA
+            }
+        }
+    }
+}
+
+COM_is_norwegian_SCA = {
+    exists = scope:character
+    scope:character ?= {
+        has_culture = cu:norwegian
+        OR = {
+            AND = {
+                has_role_of_type = politician
+                is_ruler_of_own_country = no
+                is_interest_group_type = ig_armed_forces
+            }
+            has_role_of_type = general
+            has_role_of_type = admiral
+        }
+        owner ?= {
+            NOT = {
+                has_technology_researched = bolt_action_rifles
+            }
+            OR = {
+                c:SCA ?= this
+                was_formed_from = SCA
+            }
+        }
+    }
+}
+
+COM_is_finnish_SCA = {
+    exists = scope:character
+    scope:character ?= {
+        has_culture = cu:finnish
+        OR = {
+            AND = {
+                has_role_of_type = politician
+                is_ruler_of_own_country = no
+                is_interest_group_type = ig_armed_forces
+            }
+            has_role_of_type = general
+            has_role_of_type = admiral
+        }
+        owner ?= {
+            NOT = {
+                has_technology_researched = bolt_action_rifles
+            }
+            OR = {
+                c:SCA ?= this
+                was_formed_from = SCA
+            }
+        }
+    }
+}
+
+COM_is_icelandic_SCA = {
+    exists = scope:character
+    scope:character ?= {
+        has_culture = cu:icelandic
+        OR = {
+            AND = {
+                has_role_of_type = politician
+                is_ruler_of_own_country = no
+                is_interest_group_type = ig_armed_forces
+            }
+            has_role_of_type = general
+            has_role_of_type = admiral
+        }
+        owner ?= {
+            NOT = {
+                has_technology_researched = bolt_action_rifles
+            }
+            OR = {
+                c:SCA ?= this
+                was_formed_from = SCA
+            }
+        }
+    }
+}
+
+COM_is_other_SCA = {
+    exists = scope:character
+    scope:character ?= {
+        OR = {
+            AND = {
+                has_role_of_type = politician
+                is_ruler_of_own_country = no
+                is_interest_group_type = ig_armed_forces
+            }
+            has_role_of_type = general
+            has_role_of_type = admiral
+        }
+        owner ?= {
+            NOT = {
+                has_technology_researched = bolt_action_rifles
+            }
+            OR = {
+                c:SCA ?= this
+                was_formed_from = SCA
+            }
+        }
+    }
+}

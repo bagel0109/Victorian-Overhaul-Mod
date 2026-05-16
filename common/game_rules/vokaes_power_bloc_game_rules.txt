@@ -1,0 +1,143 @@
+﻿vokaes_power_bloc_rule_enable_new_principles = {
+	default = vokaes_power_bloc_rule_enable_new_principles_enabled
+
+	vokaes_power_bloc_rule_enable_new_principles_enabled = {}
+
+	vokaes_power_bloc_rule_enable_new_principles_disabled = {}
+}
+
+vokaes_power_bloc_rule_enable_new_cohesion = {
+	default = vokaes_power_bloc_rule_enable_new_cohesion_enabled
+
+	vokaes_power_bloc_rule_enable_new_cohesion_enabled = {}
+
+	vokaes_power_bloc_rule_enable_new_cohesion_disabled = {}
+}
+
+vokaes_power_bloc_rule_enable_mandate_progress = {
+	default = vokaes_power_bloc_rule_enable_mandate_progress_enabled
+
+	vokaes_power_bloc_rule_enable_mandate_progress_enabled = {}
+
+	vokaes_power_bloc_rule_enable_mandate_progress_disabled = {}
+}
+
+vokaes_power_bloc_rule_enable_identity_switch = {
+	default = vokaes_power_bloc_rule_enable_identity_switch_enabled
+
+	vokaes_power_bloc_rule_enable_identity_switch_enabled = {}
+
+	vokaes_power_bloc_rule_enable_identity_switch_disabled = {}
+}
+
+vokaes_power_bloc_rule_diplo_action_changes = {
+	default = vokaes_power_bloc_rule_diplo_action_changes_enabled
+
+	vokaes_power_bloc_rule_diplo_action_changes_enabled = {}
+
+	vokaes_power_bloc_rule_diplo_action_changes_disabled = {}
+}
+
+vokaes_power_bloc_rule_holy_wars_gp = {
+	default = vokaes_power_bloc_rule_holy_wars_gp_disabled
+
+	vokaes_power_bloc_rule_holy_wars_gp_enabled = {}
+
+	vokaes_power_bloc_rule_holy_wars_gp_disabled = {}
+}
+
+vokaes_power_bloc_rule_mandate_cost_growth = {
+	default = vokaes_power_bloc_rule_mandate_cost_growth_6
+
+	vokaes_power_bloc_rule_mandate_cost_growth_0 = {}
+
+	vokaes_power_bloc_rule_mandate_cost_growth_3 = {}
+
+	vokaes_power_bloc_rule_mandate_cost_growth_6 = {}
+
+	vokaes_power_bloc_rule_mandate_cost_growth_9 = {}
+
+	vokaes_power_bloc_rule_mandate_cost_growth_12 = {}
+}
+
+vokaes_power_bloc_rule_mandate_progress_speed = {
+	default = vokaes_power_bloc_rule_mandate_progress_speed_50
+
+	vokaes_power_bloc_rule_mandate_progress_speed_50 = {}
+
+	vokaes_power_bloc_rule_mandate_progress_speed_75 = {}
+
+	vokaes_power_bloc_rule_mandate_progress_speed_100 = {}
+
+	vokaes_power_bloc_rule_mandate_progress_speed_150 = {}
+
+	vokaes_power_bloc_rule_mandate_progress_speed_200 = {}
+}
+
+vokaes_power_bloc_rule_principle_slots = {
+	default = vokaes_power_bloc_rule_principle_slots_6
+
+	vokaes_power_bloc_rule_principle_slots_4 = {}
+
+	vokaes_power_bloc_rule_principle_slots_6 = {}
+
+	vokaes_power_bloc_rule_principle_slots_8 = {}
+
+	vokaes_power_bloc_rule_principle_slots_10 = {}
+
+	vokaes_power_bloc_rule_principle_slots_12 = {}
+}
+
+vokaes_power_bloc_rule_max_saved_mandates = {
+	default = vokaes_power_bloc_rule_max_saved_mandates_9
+
+	vokaes_power_bloc_rule_max_saved_mandates_3 = {}
+
+	vokaes_power_bloc_rule_max_saved_mandates_6 = {}
+
+	vokaes_power_bloc_rule_max_saved_mandates_9 = {}
+
+	vokaes_power_bloc_rule_max_saved_mandates_12 = {}
+
+	vokaes_power_bloc_rule_max_saved_mandates_15 = {}
+}
+
+vokaes_power_bloc_rule_free_founding_mandates = {
+	default = vokaes_power_bloc_rule_free_founding_mandates_1
+
+	vokaes_power_bloc_rule_free_founding_mandates_0 = {}
+
+	vokaes_power_bloc_rule_free_founding_mandates_1 = {}
+
+	vokaes_power_bloc_rule_free_founding_mandates_2 = {}
+}
+
+vokaes_power_bloc_rule_low_member_penalty = {
+	default = vokaes_power_bloc_rule_low_member_penalty_8
+
+	vokaes_power_bloc_rule_low_member_penalty_0 = {}
+
+	vokaes_power_bloc_rule_low_member_penalty_6 = {}
+
+	vokaes_power_bloc_rule_low_member_penalty_8 = {}
+
+	vokaes_power_bloc_rule_low_member_penalty_10 = {}
+
+	vokaes_power_bloc_rule_low_member_penalty_12 = {}
+}
+
+vokaes_power_bloc_rule_late_founding_mandates = {
+	default = vokaes_power_bloc_rule_late_founding_mandates_enabled
+
+	vokaes_power_bloc_rule_late_founding_mandates_enabled = {}
+
+	vokaes_power_bloc_rule_late_founding_mandates_disabled = {}
+}
+
+vokaes_power_bloc_rule_principle_restrictions = {
+	default = vokaes_power_bloc_rule_principle_restrictions_enabled
+	
+	vokaes_power_bloc_rule_principle_restrictions_enabled = {}
+	
+	vokaes_power_bloc_rule_principle_restrictions_disabled = {}
+}

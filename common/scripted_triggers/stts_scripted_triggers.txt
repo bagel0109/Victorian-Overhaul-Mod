@@ -1,0 +1,507 @@
+﻿stts_ai_will_fund_movement = {
+	scaled_debt <= 0
+			is_at_war = no
+			net_fixed_income > 0	
+			scope:target_country.relations:root < relations_threshold:cordial
+			#only care about funding movements in major countries
+			scope:target_country.country_rank > rank_value:minor_power
+			OR = {
+				num_income_transfer_pacts < 1
+				AND = {
+					num_income_transfer_pacts < 2
+					income >= 200000
+				}
+				AND = {
+					num_income_transfer_pacts < 3
+					income >= 400000
+				}				
+			}
+			
+			OR = {
+				root = {
+					owes_obligation_to = scope:target_country			
+				}	
+				NOT = { 
+					scope:target_country = {
+						owes_obligation_to = root			
+					}						
+				}
+				AND = {
+					is_at_war = no
+					scope:target_country = { is_at_war = yes }
+				}			
+			}		
+			# We want to have at least five times their income, and at least 50k income in general
+			OR = {
+				AND = {
+					income >= 50000
+					net_fixed_income >= 4000
+					scope:target_country.income <= 10000
+				}
+				AND = {
+					income >= 75000
+					net_fixed_income >= 6000
+					scope:target_country.income <= 15000
+				}				
+				AND = {
+					income >= 100000
+					net_fixed_income >= 8000
+					scope:target_country.income <= 20000
+				}
+				AND = {
+					income >= 125000
+					net_fixed_income >= 10000
+					scope:target_country.income <= 25000
+				}
+				AND = {
+					income >= 150000
+					net_fixed_income >= 12000
+					scope:target_country.income <= 30000
+				}	
+				AND = {
+					income >= 175000
+					net_fixed_income >= 14000
+					scope:target_country.income <= 35000
+				}
+				AND = {
+					income >= 200000
+					net_fixed_income >= 16000
+					scope:target_country.income <= 40000
+				}
+				AND = {
+					income >= 225000
+					net_fixed_income >= 18000
+					scope:target_country.income <= 45000
+				}	
+				AND = {
+					income >= 250000
+					net_fixed_income >= 20000
+					scope:target_country.income <= 50000
+				}					
+			}			
+}
+
+stts_ai_will_break_funding_movement = {
+	OR = {
+		scope:target_country.relations:root >= relations_threshold:amicable
+		#only care about funding movements in major countries
+		scope:target_country.country_rank <= rank_value:minor_power		
+		scaled_debt > 0.25
+		AND = {
+			scaled_debt > 0
+			OR = {
+				net_fixed_income < 0	
+				is_at_war = yes
+			}				
+		}				
+		NOT = {
+			has_attitude = {
+				who = scope:target_country
+				attitude = protective
+			}				
+		}
+		num_income_transfer_pacts > 3
+		AND = {
+			num_income_transfer_pacts > 1
+			OR = {
+				net_fixed_income < -10000	
+				income < 300000
+			}			
+		}
+		AND = {
+			num_income_transfer_pacts > 2
+			OR = {
+				net_fixed_income < -5000					
+				income < 500000
+			}
+		}				
+		NOR = {
+			root = {
+				owes_obligation_to = scope:target_country			
+			}	
+			NOT = { 
+				scope:target_country = {
+					owes_obligation_to = root			
+				}						
+			}
+			AND = {
+				is_at_war = no
+				scope:target_country = { is_at_war = yes }
+			}			
+		}							
+		# Threshold for breaking off a bankroll is higher than for starting it
+		# We also don't look at net_fixed_income here since starting a bankroll changes it
+		NOR = {
+			AND = {
+				income >= 40000
+				scope:target_country.income <= 12500
+			}				
+			AND = {
+				income >= 50000
+				scope:target_country.income <= 15000
+			}
+			AND = {
+				income >= 75000
+				scope:target_country.income <= 20000
+			}				
+			AND = {
+				income >= 100000
+				scope:target_country.income <= 25000
+			}
+			AND = {
+				income >= 125000
+				scope:target_country.income <= 30000
+			}
+			AND = {
+				income >= 150000
+				scope:target_country.income <= 35000
+			}	
+			AND = {
+				income >= 175000
+				scope:target_country.income <= 40000
+			}
+			AND = {
+				income >= 200000
+				scope:target_country.income <= 45000
+			}
+			AND = {
+				income >= 225000
+				scope:target_country.income <= 50000
+			}
+			AND = {
+				income >= 250000
+				scope:target_country.income <= 55000
+			}					
+		}						
+	}
+}
+
+stts_leftist_government = {
+	OR = {
+		has_law_or_variant = law_type:law_council_republic
+		any_interest_group = {
+			is_in_government = yes
+			OR = {
+				interest_group_has_socialist_ideology = yes
+				has_ideology = ideology:ideology_socialist
+			}
+		}
+	}
+}
+
+stts_liberal_government = {
+	OR = {
+		any_interest_group = {
+			is_in_government = yes
+			OR = {
+				interest_group_has_liberal_ideology = yes
+				has_ideology = ideology:ideology_liberal
+				has_ideology = ideology:ideology_liberal_modern
+			}
+		}
+	}
+}
+
+stts_reactionary_government = {
+	OR = {
+		has_law_or_variant = law_type:law_corporate_state
+		any_interest_group = {
+			is_in_government = yes
+			OR = {
+				interest_group_has_reactionary_ideology = yes
+			}
+		}
+	}
+}
+
+stts_valid_nationalist_movement_target = {
+	OR = {
+		custom_tooltip = {
+			text = stts_nationalist_movement
+			any_political_movement = {
+				is_political_movement_type = movement_cultural_minority
+				culture ?=  {
+					AND = {
+						shares_heritage_trait_group_with_any_primary_culture = root
+						shares_language_trait_group_with_any_primary_culture = root
+					}
+				}
+
+			}
+		}
+		AND = {
+			root = {
+				has_technology_researched = pan-nationalism
+			}
+			custom_tooltip = {
+				text = stts_pan_national_movement
+				any_political_movement = {
+					is_political_movement_type = movement_cultural_minority
+					culture ?= {
+						OR = {
+							shares_heritage_trait_group_with_any_primary_culture = root
+							shares_language_trait_group_with_any_primary_culture = root
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+stts_not_humiliated = {
+	custom_tooltip = {
+		text = stts_not_humiliated
+		NOT = {
+			has_diplomatic_pact = {
+				who = root
+				type = humiliation
+			}
+		}
+	}
+}
+
+stts_movement_is_leftist = {
+	OR = {
+		is_political_movement_type = movement_labor
+		is_political_movement_type = movement_socialist
+		is_political_movement_type = movement_communist
+		is_political_movement_type = movement_anarchist
+	}
+}
+
+stts_movement_is_socialist = {
+	OR = {
+		is_political_movement_type = movement_socialist
+		is_political_movement_type = movement_communist
+		is_political_movement_type = movement_anarchist
+	}
+}
+
+stts_movement_is_liberal = {
+	OR = {
+		is_political_movement_type = movement_liberal
+		is_political_movement_type = movement_radical
+		is_political_movement_type = movement_anti_slavery
+		is_political_movement_type = movement_orleanist
+	}
+}
+
+stts_movement_is_reactionary = {
+	OR = {
+		is_political_movement_type = movement_reactionary
+		is_political_movement_type = movement_fascist
+		is_political_movement_type = movement_corporatist
+		is_political_movement_type = movement_legitimist
+	}
+}
+
+stts_is_funding_movements = {
+	OR = {
+		has_diplomatic_pact = {
+			who = root
+			type = stts_fund_leftists
+		}
+		has_diplomatic_pact = {
+			who = root
+			type = stts_fund_liberals
+		}	
+		has_diplomatic_pact = {
+			who = root
+			type = stts_fund_reactionaries
+		}
+		has_diplomatic_pact = {
+			who = root
+			type = stts_fund_nationalists
+		}
+		AND ={
+			has_diplomatic_pact = { who = root type = support_separatism }
+			any_primary_culture = {
+				save_temporary_scope_as = check_culture
+				root = {
+					any_political_movement = {
+						is_political_movement_type = movement_cultural_minority
+						culture ?= scope:check_culture
+					}	
+				}
+			}
+		}
+	}
+}
+
+stts_movement_is_pan_national = {
+	OR = {
+		is_political_movement_type = movement_india_pan_national
+		is_political_movement_type = movement_german_national
+		is_political_movement_type = movement_italian_national
+		is_political_movement_type = movement_yugoslav_national
+	}
+
+}
+
+agitator_can_be_made_leader = {
+		trigger_if = {
+			limit = {
+				owner ?= {
+					AND = {
+						has_law_or_variant = law_type:law_multicultural
+						has_law_or_variant = law_type:law_total_separation
+					}
+				}
+			}
+			character_acceptance = { # In light of the Multiculturalism nerf
+				target = owner
+				value >= acceptance_status_3
+			}
+		}
+		trigger_else_if = {
+			limit = { owner ?= { has_law_or_variant = law_type:law_state_atheism } }
+			character_acceptance = {
+				target = owner
+				value >= acceptance_status_4
+			}
+			NOR = {
+				has_ideology = ideology:ideology_theocrat
+				has_ideology = ideology:ideology_integralist
+				has_ideology = ideology:ideology_traditionalist
+				has_ideology = ideology:ideology_traditionalist_minoritarian
+			}
+		}
+		trigger_else = {
+			character_acceptance = {
+				target = owner
+				value >= acceptance_status_4
+			}
+		}
+		OR = {
+			is_female = no
+			owner ?= { has_law_or_variant = law_type:law_womens_suffrage }
+		}
+}
+
+stts_country_has_brewing_funded_revolution = {
+	save_temporary_scope_as = check_country
+	root = {
+		OR = {
+			has_diplomatic_pact = {
+				who = scope:check_country
+				type = stts_fund_leftists
+			}
+			has_diplomatic_pact = {
+				who = scope:check_country
+				type = stts_fund_liberals
+			}	
+			has_diplomatic_pact = {
+				who = scope:check_country
+				type = stts_fund_reactionaries
+			}
+			has_diplomatic_pact = {
+				who = scope:check_country
+				type = stts_fund_nationalists
+			}
+			AND ={
+				has_diplomatic_pact = { who = scope:check_country type = support_separatism }
+				any_primary_culture = {
+					save_temporary_scope_as = check_culture
+					scope:check_country = {
+						any_political_movement = {
+							is_political_movement_type = movement_cultural_minority
+							culture ?= scope:check_culture
+						}	
+					}
+				}
+			}
+		}
+	}
+	any_political_movement = {
+		political_movement_radicalism >= 0.75
+	}
+	#leftist revolution
+	trigger_if = {
+		limit = {
+			root = {
+				has_diplomatic_pact = {
+					who = scope:check_country
+					type = stts_fund_leftists
+				}
+			}
+		}
+		any_political_movement = {
+			political_movement_radicalism >= 0.75
+			stts_movement_is_leftist = yes
+		}
+	}
+	#liberal revolution
+	trigger_if = {
+		limit = {
+			root = {
+				has_diplomatic_pact = {
+					who = scope:check_country
+					type = stts_fund_liberals
+				}
+			}
+		}
+		any_political_movement = {
+			political_movement_radicalism >= 0.75
+			stts_movement_is_liberal = yes
+		}
+	}
+	#reactionary revolution
+	trigger_if = {
+		limit = {
+			root = {
+				has_diplomatic_pact = {
+					who = scope:check_country
+					type = stts_fund_reactionaries
+				}
+			}
+		}
+		any_political_movement = {
+			political_movement_radicalism >= 0.75
+			stts_movement_is_reactionary = yes
+		}
+	}
+	#nationalist uprising
+	trigger_if = {
+		limit = {
+			root = {
+				has_diplomatic_pact = {
+					who = scope:check_country
+					type = stts_fund_nationalists
+				}
+			}
+		}
+		any_political_movement = {
+			political_movement_radicalism >= 0.75
+			stts_movement_is_pan_national = yes
+		}
+	}
+	#same-culture uprising
+	trigger_if = {
+		limit = {
+			root = {
+				AND ={
+					has_diplomatic_pact = { who = scope:check_country type = support_separatism }
+					scope:check_country = {
+						any_political_movement = {
+							is_political_movement_type = movement_cultural_minority
+							culture ?= {
+								is_primary_culture_of = root
+							}
+						}	
+					}
+				}
+			}
+		}
+		scope:check_country = {
+			any_political_movement = {
+				political_movement_radicalism >= 0.75
+				is_political_movement_type = movement_cultural_minority
+				culture ?= {
+					is_primary_culture_of = root
+				}
+			}	
+		}
+	}
+}

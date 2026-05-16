@@ -1,0 +1,271 @@
+﻿###darfur####
+REPLACE_OR_CREATE:DFR = {
+	
+	dynamic_country_name = {
+		name = dyn_c_darfur_caliphate
+		adjective = DFR_ADJ
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				has_law_or_variant = law_type:law_monarchy
+				has_law_or_variant = law_type:law_state_religion
+			}
+		}
+	}
+	
+	dynamic_country_name = {
+		name = DFR
+		adjective = DFR_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}
+
+###wadai####
+REPLACE_OR_CREATE:WAD = {
+	
+	dynamic_country_name = {
+		name = dyn_c_wadai_caliphate
+		adjective = WAD_ADJ
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				has_law_or_variant = law_type:law_monarchy
+				has_law_or_variant = law_type:law_state_religion
+			}
+		}
+	}
+	
+	dynamic_country_name = {
+		name = WAD
+		adjective = WAD_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}
+
+###bagirmi####
+REPLACE_OR_CREATE:BGI = {
+	
+	dynamic_country_name = {
+		name = dyn_c_bagirmi_caliphate
+		adjective = BGI_ADJ
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				has_law_or_variant = law_type:law_monarchy
+				has_law_or_variant = law_type:law_state_religion
+			}
+		}
+	}
+	
+	dynamic_country_name = {
+		name = BGI
+		adjective = BGI_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}
+
+###bornu####
+REPLACE_OR_CREATE:BOR = {
+	
+	dynamic_country_name = {
+		name = dyn_c_bornu_caliphate
+		adjective = BOR_ADJ
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				has_law_or_variant = law_type:law_monarchy
+				has_law_or_variant = law_type:law_state_religion
+			}
+		}
+	}
+	
+	dynamic_country_name = {
+		name = BOR
+		adjective = BOR_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}
+
+###gobir####
+REPLACE_OR_CREATE:HAU = {
+	
+	dynamic_country_name = {
+		name = dyn_c_gobir_caliphate
+		adjective = HAU_ADJ
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				has_law_or_variant = law_type:law_monarchy
+				has_law_or_variant = law_type:law_state_religion
+			}
+		}
+	}
+	
+	dynamic_country_name = {
+		name = HAU
+		adjective = HAU_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}
+
+###borgu####
+REPLACE_OR_CREATE:BRG = {
+	
+	dynamic_country_name = {
+		name = dyn_c_borgu_caliphate
+		adjective = BRG_ADJ
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				has_law_or_variant = law_type:law_monarchy
+				has_law_or_variant = law_type:law_state_religion
+			}
+		}
+	}
+	
+	dynamic_country_name = {
+		name = BRG
+		adjective = BRG_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}
+
+###benin####
+REPLACE_OR_CREATE:BEN = {
+	
+	dynamic_country_name = {
+		name = BEN
+		adjective = BEN_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}
+
+###oyo####
+REPLACE_OR_CREATE:OYO = {
+	
+	dynamic_country_name = {
+		name = OYO
+		adjective = OYO_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}
+
+###dahomey####
+REPLACE_OR_CREATE:DAH = {
+	
+	dynamic_country_name = {
+		name = DAH
+		adjective = DAH_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}
+
+###sokoto####
+REPLACE_OR_CREATE:SOK = {
+	
+	dynamic_country_name = {
+		name = dyn_c_sokoto_caliphate
+		adjective = SOK_ADJ
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				has_law_or_variant = law_type:law_monarchy
+				has_law_or_variant = law_type:law_state_religion
+			}
+		}
+	}
+	
+	dynamic_country_name = {
+		name = SOK
+		adjective = SOK_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}

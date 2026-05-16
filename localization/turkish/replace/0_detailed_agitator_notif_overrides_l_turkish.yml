@@ -1,0 +1,6 @@
+﻿l_turkish:
+
+ notification_exile_notification_desc: "[SCOPE.sCharacter('exile_scope').GetFullName], [SCOPE.sCountry('exiling_country_scope').GetName] tarafından [Concept('concept_exile', 'Sürgüne')] gönderildi.\n$DAN_agitator_detail_interest_group$\n$DAN_agitator_detail_ideology$\n$DAN_agitator_detail_traits$"
+ notification_new_ruler_desc: "[SCOPE.sCharacter( 'previous' ).GetFullName] için [Concept('concept_ruler', 'Hükümdarlık')] günleri sona erdi. [SCOPE.GetRootScope.GetCharacter.GetCountry.GetName] topraklarında yeni [Concept('concept_ruler', SCOPE.GetRootScope.GetCharacter.GetPrimaryRoleTitle)] [SCOPE.GetRootScope.GetCharacter.GetFullName] oldu.\n$DAN_ruler_interest_group$\n$DAN_ruler_interest_ideology$\n$DAN_ruler_detail_traits$"
+ notification_heir_born_notification_desc:0 "[SCOPE.GetRootScope.GetCharacter.GetCountry.GetName] tahtının [Concept('concept_heir', 'Vârisi')] [SCOPE.GetRootScope.GetCharacter.GetFullName] doğdu\n$DAN_ruler_interest_group$\n$DAN_ruler_interest_ideology$\n$DAN_ruler_detail_traits$"
+ notification_agitator_spawned_desc:1 "[SCOPE.sCha('character').GetAgitatorSpawnedNotificationText]\n$DAN_spawn_interest_group$\n$DAN_spawn_interest_ideology$\n$DAN_spawn_detail_traits$"

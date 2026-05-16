@@ -1,0 +1,146 @@
+﻿###southafrica####
+REPLACE_OR_CREATE:SAF = {
+
+	dynamic_country_name = {
+		name = dyn_c_saf_dominion
+		adjective = SAF_ADJ
+		is_main_tag_only = yes
+		priority = 10000
+		trigger = {
+    		exists = c:GBR
+   		    scope:actor ?= {
+        		is_subject_of = c:GBR
+        		is_subject_type = subject_type_dominion
+    		}
+		}
+	}	
+
+	dynamic_country_name = {
+		name = dyn_c_saf_colony
+		adjective = SAF_ADJ
+		is_main_tag_only = yes
+		priority = 10000
+		trigger = {
+    		exists = c:GBR
+   		    scope:actor ?= {
+        		is_subject_of = c:GBR
+        		NOR = { 
+					is_subject_type = subject_type_dominion 
+					is_subject_type = subject_type_protectorate
+				}
+    		}
+		}
+	}
+	
+	dynamic_country_name = {
+		name = SAF
+		adjective = SAF_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}
+
+###zulu####
+REPLACE_OR_CREATE:ZUL = {
+	
+	dynamic_country_name = {
+		name = ZUL
+		adjective = ZUL_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}
+
+###transvaal####
+REPLACE_OR_CREATE:TRN = {
+
+	dynamic_country_name = {
+	name = dyn_c_TRN_republic
+	adjective = TRN_ADJ
+	is_main_tag_only = yes
+	priority = 100
+
+	trigger = {
+		scope:actor = {
+			NOT = {
+				has_law_or_variant = law_type:law_ethnostate
+				has_law_or_variant = law_type:law_national_supremacy
+				has_law_or_variant = law_type:law_racial_segregation
+				is_subject = yes
+			        }
+		        }
+	        }
+        }
+
+	
+	dynamic_country_name = {
+		name = TRN
+		adjective = TRN_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}
+
+###orange####
+REPLACE_OR_CREATE:ORA = {
+
+	dynamic_country_name = {
+		name = dyn_c_ORA_republic
+		adjective = ORA_ADJ
+
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			scope:actor = {
+			NOT = { 
+			has_law_or_variant = law_type:law_ethnostate
+			has_law_or_variant = law_type:law_national_supremacy
+			has_law_or_variant = law_type:law_racial_segregation
+			is_subject = yes }}
+		}
+	}
+	
+	dynamic_country_name = {
+		name = ORA
+		adjective = ORA_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}
+
+###gaza####
+REPLACE_OR_CREATE:GZA = {
+	
+	dynamic_country_name = {
+		name = GZA
+		adjective = GZA_ADJ
+		use_overlord_prefix = yes
+		is_main_tag_only = yes
+		priority = 100
+
+		trigger = {
+			coa_def_lesser_subject_trigger = yes
+		}
+	}
+}

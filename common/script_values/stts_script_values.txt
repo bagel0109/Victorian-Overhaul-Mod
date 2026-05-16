@@ -1,0 +1,54 @@
+﻿stts_home_affairs_value = {
+	value = 0
+	if = {
+		limit = {
+			root = {
+				institution_investment_level = {
+					institution = institution_home_affairs
+					value = 1
+				}
+			}
+		}
+		value = 1
+	} else_if = {
+		limit = {
+			root = {
+				institution_investment_level = {
+					institution = institution_home_affairs
+					value = 2
+				}
+			}
+		}
+		value = 2
+	} else_if = {
+		limit = {
+			root = {
+				institution_investment_level = {
+					institution = institution_home_affairs
+					value = 3
+				}
+			}
+		}
+		value = 3
+	} else_if = {
+		limit = {
+			root = {
+				institution_investment_level = {
+					institution = institution_home_affairs
+					value = 4
+				}
+			}
+		}
+		value = 4
+	} else_if = {
+		limit = {
+			root = {
+				institution_investment_level = {
+					institution = institution_home_affairs
+					value >= 5
+				}
+			}
+		}
+		value = 5
+	}
+}

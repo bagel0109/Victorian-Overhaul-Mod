@@ -1,0 +1,198 @@
+# COPY-PASTED FOR NOW
+@panel_width_minus_20 = 520			# used to be 440
+@panel_width_minus_20_half = 260	# used to be 220
+@panel_width_minus_10 = 530			# used to be 450
+@panel_width = 540  				# used to be 460
+@panel_width_half = 270				# used to be 230
+@panel_width_half_minus_20 = 250
+@panel_width_plus_10 = 550  		# used to be 470
+@panel_width_plus_14 = 554			# used to be 474
+@panel_width_plus_14_half = 277		# used to be 237
+@panel_width_plus_20 = 560			# used to be 480
+@panel_width_plus_30 = 570			# used to be 490
+@panel_width_plus_70 = 610			# used to be 530
+
+types war_panel
+{
+	type war_present_countries_side = flowcontainer {
+		minimumsize = { @panel_width_half -1 }
+		maximumsize = { @panel_width_half -1 }
+		margin_bottom = 20
+		margin_left = 10
+		direction = vertical
+		spacing = 2
+		
+		divider_clean = {
+			size = { 90% 2 }
+			parentanchor = hcenter
+		}
+
+		flowcontainer = {
+			direction = vertical
+			spacing = 8	
+			datacontext = "[WarPanel.GetWar]"
+			margin_top = 8
+
+			block "parentanchor"
+			{
+				parentanchor = left
+			}
+			flowcontainer = {
+				margin = { 0 0 }
+				block "parentanchor_war_leader_header" {
+					parentanchor = left
+				}
+				spacing = 5
+				
+				textbox = {
+					autoresize = yes
+					block "header_text" {
+						text = "WAR_LEADER"
+					}
+					align = nobaseline
+					using = fontsize_large
+					default_format = "#title"
+				}
+
+				textbox = {
+					block "visibility_you_tag" {
+						visible = "[WarPanel.GetLeftLeader.IsLocalPlayer]"
+					}
+					autoresize = yes
+					using = fontsize_large
+					text = "YOU"
+					align = nobaseline
+					parentanchor = vcenter
+				}
+			}
+
+			flowcontainer = {
+				spacing = 8
+
+				block "parentanchor_flag_and_text" {}
+
+				block "datacontext" {
+					datacontext = "[WarPanel.GetLeftLeader]"
+				}
+
+				block "left_info" {}
+
+				widget = {
+					size = { 96 64 }
+					icon = {
+						parentanchor = center
+						visible = "[Country.IsLocalPlayer]"
+						using = rotate_glow_animation_02
+						size = { 200 200 }
+						position = { 0 0 }
+					}
+					large_flag = {
+
+						block "parentanchor_large_flag" {}
+
+						blockoverride "mobilized_visibility" {
+							visible = "[Country.IsMobilized]"
+						}
+					}
+				}
+
+				block "right_info" {}
+			}
+
+			### VISUAL LEADERS
+			flowcontainer = {
+				direction = vertical
+				parentanchor = top|hcenter
+
+				block "datacontext" {}
+
+				character_portrait_large_torso = {
+					parentanchor = hcenter
+
+					datacontext = "[Country.AccessRuler]"
+					blockoverride "show_hat" {}
+					blockoverride "highlight" {}
+					blockoverride "portrait_icons" {}
+				}
+
+				textbox = {
+					raw_text = "#title [Country.AccessRuler.GetPrimaryRoleTitle]#!"
+					maximumsize = { 240 22 }
+					minimumsize = { 240 22 }
+					autoresize = yes
+					elide = right
+					align = nobaseline|center
+					fontsize_min = 14
+				}
+
+				textbox = {
+					parentanchor = hcenter
+
+					text = "[Country.AccessRuler.GetCustom('GetUniversalFullNameNoFormatting')]"
+					maximumsize = { 240 44 }
+					minimumsize = { 240 44 }
+					autoresize = yes
+					elide = right
+					align = nobaseline|center
+					fontsize_min = 14
+					background = {
+						using = default_header_bg_faded
+					}
+				}
+			}
+
+			widget = { size = { 2 2 }}
+
+			divider_clean = {
+				size = { 100% 2 }
+				parentanchor = hcenter
+			}
+
+			block "header" {
+			}
+
+			fixedgridbox = {
+				block "datamodel" {}
+				datamodel_wrap = 7
+				addcolumn = 35
+				addrow = 27
+				flipdirection = yes
+			
+				block "parentanchor_allies" {
+					layoutanchor = topleft
+					parentanchor = left
+				}
+			
+				item = {
+					tiny_flag = {
+						datacontext = "[WarParticipant.GetCountry]"
+			
+						visible = "[Not(WarParticipant.IsWarLeader)]"
+			
+						blockoverride "mobilized_visibility" {
+							visible = "[Country.IsMobilized]"
+						}
+						icon = {
+							parentanchor = center
+							visible = "[Country.IsLocalPlayer]"
+							using = rotate_glow_animation_02
+							size = { 85 85 }
+							position = { 0 0 }
+						}
+					}
+				}
+			}
+			
+			textbox = {
+				block "visibility_allies_empty_state" {}
+				text = "NO_ALLIES"
+				block "parentanchor_allies_empty_state" {
+					parentanchor = left
+				}
+				using = empty_state_text_properties
+				autoresize = yes
+				align = nobaseline
+			}
+		}
+	}
+}

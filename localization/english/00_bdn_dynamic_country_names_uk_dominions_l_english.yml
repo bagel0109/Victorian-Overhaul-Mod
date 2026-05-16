@@ -1,0 +1,51 @@
+﻿l_english:
+
+ ###"CORE DOMINIONS"###
+
+ dyn_c_australia_dominion:0 "Commonwealth of Australia"
+
+ dyn_c_canada_dominion:0 "Dominion of Canada"
+
+ dyn_c_newzealand_dominion:0 "Dominion of New Zealand"
+
+ dyn_c_newfoundland_dominion:0 "Dominion of Newfoundland"
+
+ dyn_c_saf_dominion:0 "Union of South Africa"
+
+ dyn_c_ireland_dominion:0 "Irish Free State"
+
+ dyn_c_india_dominion:0 "Dominion of India"
+
+ l_english:
+
+ ### OTHER DOMINIONS ###
+
+ ## Ceylon ##
+ dyn_c_ceylon_dominion:0 "Dominion of Ceylon"
+
+ ## Sierra Leone ##
+ dyn_c_sierraleone_dominion:0 "Dominion of Sierra Leone"
+
+ ## Malta ##
+ dyn_c_malta_dominion:0 "Dominion of Malta"
+
+ ## Fiji ##
+ dyn_c_fiji_dominion:0 "Dominion of Fiji"
+
+ ## Papua New Guinea ##
+ dyn_c_papuanewguinea_dominion:0 "Dominion of Papua New Guinea"
+
+ ## Solomon Islands ##
+ dyn_c_solomonislands_dominion:0 "Dominion of the Solomon Islands"
+
+ ## Jamaica ##
+ dyn_c_jamaica_dominion:0 "Dominion of Jamaica"
+
+ ## The Bahamas ##
+ dyn_c_bahamas_dominion:0 "Dominion of the Bahamas"
+
+ ## Ghana ##
+ dyn_c_ghana_dominion:0 "Dominion of Ghana"
+
+ ## Nigeria ##
+ dyn_c_nigeria_dominion:0 "Dominion of Nigeria"

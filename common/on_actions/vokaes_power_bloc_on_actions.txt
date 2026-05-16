@@ -1,0 +1,59 @@
+﻿on_diplomatic_play_started = {
+	on_actions = {
+		vokaes_power_bloc_revolution_on_action
+	}
+}
+
+vokaes_power_bloc_revolution_on_action = {
+	effect = {
+		vokaes_power_bloc_revolution_effect = yes
+	}
+}
+
+on_wargoal_enforced = {
+	on_actions = {
+		vokaes_power_bloc_holy_war_enforced_on_action
+	}
+}
+
+vokaes_power_bloc_holy_war_enforced_on_action = {
+	effect = {
+		vokaes_power_bloc_holy_war_enforced_effect = yes
+	}
+}
+
+on_monthly_pulse_country = {
+	on_actions = {
+		vokaes_dynamic_modifier_on_action
+		delay = { days = 7 }
+		vokaes_dynamic_modifier_on_action
+		delay = { days = 14 }
+		vokaes_dynamic_modifier_on_action
+		delay = { days = 21 }
+		vokaes_dynamic_modifier_on_action
+	}
+}
+
+vokaes_dynamic_modifier_on_action = {
+	effect = {
+		vokaes_dynamic_modifier_handler = yes
+	}
+}
+
+on_monthly_pulse = {
+	on_actions = {
+		vokaes_weekly_global_on_action
+		delay = { days = 7 }
+		vokaes_weekly_global_on_action
+		delay = { days = 14 }
+		vokaes_weekly_global_on_action
+		delay = { days = 21 }
+		vokaes_weekly_global_on_action
+	}
+}
+
+vokaes_weekly_global_on_action = {
+	effect = {
+		vokaes_weekly_global_handler = yes
+	}
+}

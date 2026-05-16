@@ -1,0 +1,336 @@
+﻿stts_revolutionary_reform = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_legitimacy_min_add = 30
+	country_legitimacy_base_add = 10
+	country_law_enactment_time_mult = -0.50
+	country_law_enactment_stall_mult = -0.50
+}
+
+stts_internal_divisions = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	interest_group_pol_str_mult = -0.10
+}
+
+stts_denied_institutional_representation = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	political_movement_radicalism_add = 0.05
+}
+
+stts_recent_coup_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	political_movement_radicalism_add = -0.5
+}
+
+stts_movement_infighting_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	political_movement_radicalism_add = -0.10
+	political_movement_pop_attraction_mult = -0.10
+}
+
+stts_movement_lost_prominence_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	political_movement_pop_attraction_mult = -0.15
+}
+
+stts_movement_gained_prominence_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	political_movement_pop_attraction_mult = 0.15
+}
+
+stts_movement_dialectal_synthesis_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	political_movement_pop_attraction_mult = 0.10
+}
+
+stts_movement_united_front_leader_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	political_movement_pop_attraction_mult = 0.20
+	political_movement_radicalism_add = 0.10
+}
+
+stts_movement_united_front_supporter_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	political_movement_pop_attraction_mult = 0.10
+	political_movement_radicalism_add = -0.20
+}
+
+stts_movement_brownshirt_violence_positive_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds
+	political_movement_pop_attraction_mult = 0.05
+	political_movement_radicalism_add = -0.05
+}
+
+stts_movement_brownshirt_violence_negative_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	political_movement_pop_attraction_mult = -0.10
+	political_movement_radicalism_add = -0.10
+}
+
+stts_ig_stopped_brownshirts_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	interest_group_approval_add = -2
+}
+
+stts_ig_allowed_brownshirts_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds
+	interest_group_approval_add = 2
+}
+
+stts_movement_brownshirts_suppressed_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	political_movement_pop_attraction_mult = -0.10
+	political_movement_radicalism_add = 0.10
+}
+
+stts_character_peasant_father_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	character_popularity_add = 20
+	state_pop_support_movement_land_reform_mult = 0.10
+	state_loyalists_from_political_movements_mult = 0.1
+}
+
+stts_movement_kings_approval_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	political_movement_pop_attraction_mult = 0.15
+	political_movement_radicalism_add = -0.10
+}
+
+stts_ig_kings_approval_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_approval_add = 2
+	interest_group_pol_str_mult = 0.10
+}
+
+stts_movement_royal_spurned_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	political_movement_pop_attraction_mult = -0.05
+	political_movement_radicalism_add = 0.20
+}
+
+stts_movement_ill_gotten_gains_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	political_movement_pop_attraction_mult = 0.10
+	political_movement_radicalism_add = 0.10
+}
+
+stts_movement_police_heat_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	political_movement_pop_attraction_mult = -0.10
+	political_movement_radicalism_add = -0.10
+}
+
+stts_movement_liberal_nationalism_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	political_movement_pop_attraction_mult = 0.10
+}
+
+stts_ig_liberal_nationalism_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	interest_group_pop_attraction_mult = 0.10
+}
+
+stts_movement_crackdown_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	political_movement_radicalism_add = -0.20
+}
+
+stts_movement_propaganda_of_the_deed_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds
+	political_movement_pop_attraction_mult = 0.10
+}
+
+stts_political_terrorism_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	state_radicals_from_political_movements_mult = 0.15
+}
+
+stts_movement_ad_hoc_movement_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	political_movement_pop_attraction_mult = 0.05
+	political_movement_radicalism_add = 0.025
+}
+
+stts_ig_religious_support_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	interest_group_pol_str_mult = 1
+	interest_group_pop_attraction_mult = 1
+}
+
+stts_ig_stifled_support_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	interest_group_pop_attraction_mult = -0.10
+	interest_group_approval_add = -3
+}
+
+stts_movement_official_support_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	political_movement_pop_attraction_mult = 0.10
+}
+
+stts_movement_nationalist_movement_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	political_movement_pop_attraction_mult = 0.15
+}
+
+stts_movement_insular_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	political_movement_pop_attraction_mult = -0.10
+}
+
+stts_peasant_tax_revolt_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	tax_land_add = -0.20
+}
+
+stts_peasant_tax_reform_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_law_enactment_success_add = 0.1
+}
+
+stts_movement_bribery_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	political_movement_pop_attraction_mult = 0.20
+}
+
+stts_movement_racist_splitting_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	political_movement_pop_attraction_mult = -0.10
+	political_movement_radicalism_add = -0.05
+}
+
+stts_ig_disapproval_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	interest_group_approval_add = -3
+}
+
+stts_racist_unions_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	interest_group_ig_industrialists_pol_str_mult = 0.15
+	interest_group_ig_trade_unions_pol_str_mult = -0.15
+	state_radicalism_increases_second_rate_citizen_mult = 0.05
+	state_radicalism_increases_cultural_erasure_mult = 0.10
+	state_radicalism_increases_open_prejudice_mult = 0.10
+	state_radicalism_increases_violent_hostility_mult = 0.10
+}
+
+stts_movement_stirred_up_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	political_movement_radicalism_add = 0.10
+}
+
+stts_character_press_tour_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	character_popularity_add = 20
+}
+
+stts_character_smear_campaign_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	character_popularity_add = -20
+}
+
+stts_press_authority_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	country_authority_add = -25
+}
+
+stts_movement_foreign_stooges_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	political_movement_pop_attraction_mult = -0.10
+}
+
+stts_movement_rally_against_rival_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	political_movement_pop_attraction_mult = 0.15
+}
+
+stts_movement_foreign_support_revolution_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	political_movement_radicalism_add = 0.10
+}
+
+stts_ig_press_tour_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	interest_group_approval_add = 1
+}
+
+stts_ig_smear_campaign_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	interest_group_approval_add = -2
+}
+
+stts_character_limelight_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	character_popularity_add = 10
+}
+
+stts_movement_couped_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	political_movement_pop_attraction_mult = 0.15
+	political_movement_radicalism_add = -1.00
+}
+
+stts_ig_coup_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	interest_group_pol_str_mult = 0.50
+}
+
+stts_enforcing_party_ideology_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	country_legitimacy_base_add = -10
+	political_movement_pop_attraction_mult = 0.15
+	country_law_enactment_time_mult = 0.15
+}
+
+stts_ig_resisting_party_discipline_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	interest_group_approval_add = -5
+	interest_group_amenability_add = -100
+	interest_group_pop_attraction_mult = 0.25
+}
+
+stts_climate_of_political_violence = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	country_legitimacy_base_add = -5
+	political_movement_pop_attraction_mult = 0.15
+	state_radicals_from_political_movements_mult = 0.25
+	state_turmoil_effects_mult = 0.20
+}
+
+stts_fought_off_attackers = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	character_popularity_add = 25
+}
+
+stts_galvanized_by_paramilitaries = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	interest_group_pop_attraction_mult = 0.25
+}
+
+stts_ze_price_stabilite = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	state_shopkeepers_investment_pool_efficiency_mult = 0.10
+	state_capitalists_investment_pool_efficiency_mult = 0.10
+	country_law_enactment_time_mult = 1.00
+	political_movement_pop_attraction_mult = -0.20
+	political_movement_radicalism_add = -0.15
+}
+
+stts_the_return = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	state_pop_support_movement_communist_mult = 1.00
+	state_pop_support_movement_anarchist_mult = 1.00
+	state_pop_support_movement_socialist_mult = 1.00
+	state_education_access_add = 0.05
+}
+
+stts_foreign_support_for_revolution = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	political_movement_radicalism_add = 0.15
+	political_movement_pop_attraction_mult = 0.10
+}
+
+stts_decisive_revolution = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_positive.dds
+	state_turmoil_effects_mult = 0.10
+	unit_offense_mult = 0.10
+}
