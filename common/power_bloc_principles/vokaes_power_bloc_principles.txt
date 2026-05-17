@@ -1030,6 +1030,7 @@ principle_pax_imperia_3 = {
 	leader_modifier = {
 		country_improve_relations_speed_mult = 0.25
 		country_legitimacy_per_power_bloc_member_add = 1
+		country_authority_mult = 0.25
 	}
 
 	member_modifier = {

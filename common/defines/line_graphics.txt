@@ -1,0 +1,12 @@
+﻿NGraphics = {
+	FLATMAP_FOLDS_COLOR = { 1.0 1.0 1.0 0.2 }		# Color and Alpha of Folds [ Red channel ]
+	FLATMAP_LINES_COLOR = { 0.0 0.0 0.0 0.4 }		# Color and Alpha of Lines [ Green channel ]
+	FLATMAP_DETAILS_COLOR = { 0.0 0.0 0.0 1.0 }		# Opacity of flatmap details on land
+	FLATMAP_OVERLAY_LAND_OPACITY = 0.45
+
+# Tweaks the papermap shoreline stripes
+	SHORELINE_MASK_BLUR = 3.0		# Recommended Range [1.0 - 10.0]			| The terrain/sea mask, blurrier mask can make the lines extend more
+	SHORELINE_EXTENT_STR = 8.0		# Recommended Range [0.0 - 10.0]			| Simple strength of the lines
+	SHORELINE_ALPHA = 0.3			# Recommended Range [0.0 - 5.0]				| Simple alpha tweaking
+	SHORELINE_UV_SCALE = 40			# Recommended Range [10 - 100] (integer)	| Larger UV scale gives tighter lines
+}
