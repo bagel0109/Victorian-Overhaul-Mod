@@ -1,0 +1,25 @@
+﻿INJECT:base_values = {
+	country_weekly_innovation_add = -25
+	state_expected_sol_from_literacy = -5
+}
+
+# Scales with country literacy rate
+INJECT:country_literacy_rate = {
+	country_tech_spread_add = 25
+	country_weekly_innovation_add = 75
+
+	unit_offense_mult = 0.25
+	unit_defense_mult = 0.25
+
+	state_farmers_investment_pool_efficiency_mult = 0.1 # pure bonus
+	state_shopkeepers_investment_pool_efficiency_mult = 0.1 # pure bonus
+	state_capitalists_investment_pool_efficiency_mult = 0.1 # pure bonus
+	state_aristocrats_investment_pool_efficiency_mult = 0.1 # pure bonus
+	state_clergymen_investment_pool_efficiency_mult = 0.1 # pure bonus
+	country_government_dividends_efficiency_add = 0.1 # pure bonus
+}
+
+# Scales with number of excess innovation points
+INJECT:excess_innovation = {
+	country_tech_spread_add = -0.1 #was 0.2
+}

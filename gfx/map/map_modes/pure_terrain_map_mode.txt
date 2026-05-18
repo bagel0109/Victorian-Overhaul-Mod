@@ -1,0 +1,12 @@
+mm_pure_terrain = {
+	map_painting_mode = countries
+	map_markers = { }
+
+	is_visible = yes
+
+	gradient_border_settings = default
+	has_fog_of_war = no
+
+    icon = "gfx/interface/icons/map_mode_icons/states.dds"
+	soundeffect = "snapshot:/Dynamic/low_pass_world"
+}

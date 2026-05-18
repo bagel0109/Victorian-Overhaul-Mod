@@ -1,0 +1,40 @@
+﻿# group = this is the law_group a law belongs to
+# icon = graphical icon shown in-game
+# modifier = {} modifier on country for having adopted this law
+
+INJECT:law_child_labor_allowed = {
+	modifier = {
+		state_laborers_mortality_mult = 0.05
+		state_machinists_mortality_mult = 0.05
+		state_farmers_mortality_mult = 0.05
+		state_peasants_mortality_mult = 0.05
+
+		state_birth_rate_mult = 0.05 #Was none # Incentive for families to get more kids
+	}
+}
+
+INJECT:law_restricted_child_labor = {
+	disallowing_laws = {
+		law_no_schools
+	}
+	
+	modifier = {
+		state_laborers_mortality_mult = 0.03
+		state_farmers_mortality_mult = 0.03
+		state_peasants_mortality_mult = 0.03
+
+		state_birth_rate_mult = 0.025 #Was none # Incentive for families to get more kids
+	}
+
+    institution = institution_schools
+	institution_modifier = {
+		state_education_access_add = 0.025
+	}
+}
+
+INJECT:law_compulsory_primary_school = {
+    institution = institution_schools
+	institution_modifier = {
+		state_education_access_add = 0.05
+	}
+}

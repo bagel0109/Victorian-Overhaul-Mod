@@ -1,0 +1,11 @@
+﻿INJECT:bessemer_process = {
+	era = era_3 # was 2
+}
+
+INJECT:open_hearth_process = {
+	era = era_4 #was 3
+}
+
+INJECT:electric_arc_process = {
+	era = era_5 #was 4
+}

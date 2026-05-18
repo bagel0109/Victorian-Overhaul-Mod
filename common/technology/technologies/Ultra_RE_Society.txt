@@ -1,0 +1,164 @@
+﻿enlightenment = {
+	# Cheatcodes for historically literate European Countries
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/human_rights.dds"
+	category = society
+	can_research = no
+	
+	modifier = {
+		#country_institution_schools_max_investment_add = 2
+        state_education_access_wealth_add = 0.005
+		state_education_access_add = 0.05
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+early_nationalism = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/nationalism.dds"
+	category = society
+	
+	modifier = {
+		country_authority_mult = 0.05
+		#state_radicals_from_discrimination_mult = 0.1
+	}
+	
+	unlocking_technologies = {
+		mass_communication
+		international_relations
+	}
+
+	ai_weight = {
+		value = 2 # Important in general
+		
+		# Extra-important for major unifications
+		if = {
+			limit = { 
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+					country_has_primary_culture = cu:north_italian
+					country_has_primary_culture = cu:south_italian
+				}				
+			}
+			add = 2
+		}	
+		
+		if = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:north_italian
+					country_has_primary_culture = cu:south_italian
+				}
+				any_country = {
+					has_journal_entry = je_risorgimento
+				}
+			}
+			multiply = 2
+		}
+	}
+}
+
+INJECT:rationalism = {
+	modifier = {
+		state_education_access_wealth_add = -0.0075
+	}
+}
+
+INJECT:academia = {
+	modifier = {
+		state_education_access_wealth_add = -0.0025
+	}
+}
+
+INJECT:empiricism = {
+	modifier = {
+		state_education_access_wealth_add = -0.0025 #was 0.005
+	}
+}
+
+INJECT:egalitarianism = {
+	modifier = {
+		state_expected_sol_from_literacy = 1
+	}
+}
+
+INJECT:modern_sewerage = {
+	modifier = {
+		state_building_construction_sector_max_level_add = 5
+	}
+}
+
+INJECT:quinine = {
+	era = era_3
+}
+
+INJECT:dialectics = {
+	modifier = {
+		country_institution_schools_max_investment_add = -1 #moved to private or public school institutions
+		state_education_access_wealth_add = 0.0025
+	}
+}
+
+INJECT:nationalism = {
+	unlocking_technologies = {
+		early_nationalism
+	}
+}
+
+INJECT:labor_movement = {
+	modifier = {
+		state_expected_sol_from_literacy = 1
+	}
+}
+
+INJECT:postal_savings = {
+	modifier = {
+		state_clergymen_investment_pool_efficiency_mult = 0.15
+	}
+}
+
+INJECT:socialism = {
+	modifier = {
+		state_expected_sol_from_literacy = 1
+	}
+}
+
+INJECT:philosophical_pragmatism = {
+	modifier = {
+		state_education_access_wealth_add = 0.0025
+	}
+}
+
+INJECT:political_agitation = {
+	modifier = {
+		state_expected_sol_from_literacy = 1
+	}
+}
+
+INJECT:mass_propaganda = {
+	modifier = {
+		state_expected_sol_from_literacy = 1
+	}
+}
+
+INJECT:analytical_philosophy = {
+	modifier = {
+		state_education_access_wealth_add = 0.0025 #was none
+	}
+}
+
+INJECT:steel_frame_buildings = {
+	modifier = {
+		state_building_construction_sector_max_level_add = 10
+	}
+}
+
+INJECT:elevator = {
+	modifier = {
+		state_building_construction_sector_max_level_add = 145
+	}
+}

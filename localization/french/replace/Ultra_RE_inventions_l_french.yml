@@ -1,0 +1,13 @@
+﻿l_french:
+ enlightenment:0 "Pensée des Lumières"
+ enlightenment_desc:1 "Les Lumières c’est la sortie de l’homme hors de l’état de tutelle dont il est lui-même responsable. L’état de tutelle est l’incapacité de se servir de son entendement sans la conduite d’un autre."
+ terakoya:0 "Terakoya"
+ terakoya_desc:1 "Les gouvernants ne communiquant que part écrit, l'école est devenue indispensable pour tous, même dans les villages les plus reculés."
+ early_nationalism:0 "Identité Nationale"
+ early_nationalism_desc:0 ""Nation: mot collectif dont on fait usage pour exprimer une quantité considérable de peuple, qui habite une certaine étendue de pays, renfermée dans de certaines limites, et qui obéit au même gouvernement" - L'Encyclopédie". A Chaque nation a son caractere particulier"
+
+## Repeaters tech name changed to represent breech-loading rifles instead
+
+ pm_repeaters:0 "Fusils à chargement par la culasse"
+ repeaters:0 "Fusils à chargement par la culasse"
+ repeaters_desc:0 "En changeant le design pour un chargement par la culasse plutôt que par la bouche, il est possible d'aboutir à des armes bien plus efficaces."

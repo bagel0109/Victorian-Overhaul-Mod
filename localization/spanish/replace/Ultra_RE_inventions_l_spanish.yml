@@ -1,0 +1,13 @@
+﻿l_spanish:
+enlightenment:0 "Pensamiento Ilustrado"
+dialectics_desc:1 "La Ilustración es la emergencia del hombre de su minoría de edad autoimpuesta. La minoría de edad es la incapacidad de usar su propia comprensión sin la guía de otro."
+terakoya:0 "Terakoya"
+terakoya_desc:1 "Con el gobierno comunicándose solo a distancia por escrito, la educación se vuelve aún más importante, incluso para aquellos en las aldeas."
+early_nationalism:0 "National Identity"
+early_nationalism_desc:0 ""Nation: word to describe a large quantity of people, who inhabit a defined part of one or many coutries, defined by certain limits and who obey the same government" - L'Encyclopédie of Diderot"
+
+## Cambio de nombre de la tecnología de repetidores para representar rifles de carga por la culata en su lugar
+
+pm_repeaters:0 "Rifles de Carga por la Culata"
+repeaters:0 "Rifles de Carga por la Culata"
+repeaters_desc:0 "Al cambiar el diseño para cargar el cartucho por la culata en lugar de por el cañón, es posible fabricar armas mucho más eficientes."

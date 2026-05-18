@@ -1,0 +1,21 @@
+on_game_started = {
+	on_actions = {
+		vb_on_game_start
+	}
+}
+
+vb_on_game_start = {
+	effect = {
+		c:RUS = {
+			activate_law = law_type:law_early_industrialization
+		}
+		c:GBR = {
+			active_law:lawgroup_distribution_of_power ?= { # wealth voting
+				add_amendment = {
+					type = amendment_reform_act_1832
+					sponsor = PREV.ig:ig_landowners
+				}
+			}
+		}
+	}
+}

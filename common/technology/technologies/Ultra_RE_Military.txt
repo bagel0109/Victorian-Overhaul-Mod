@@ -1,0 +1,15 @@
+﻿INJECT:napoleonic_warfare = {
+	era = era_2
+}
+
+INJECT:army_reserves = {
+	era = era_2
+}
+
+INJECT:line_infantry = {
+	era = era_2
+}
+
+INJECT:general_staff = {
+	era = era_3
+}

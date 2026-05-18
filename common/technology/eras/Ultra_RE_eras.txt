@@ -1,0 +1,12 @@
+﻿
+REPLACE:era_3 = {
+	technology_cost = 13500
+}
+
+REPLACE:era_4 = {
+	technology_cost = 17000
+}
+
+REPLACE:era_5 = {
+	technology_cost = 20500
+}

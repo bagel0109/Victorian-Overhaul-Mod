@@ -1,0 +1,13 @@
+﻿l_braz_por:
+enlightenment:0 "Pensamento Iluminista"
+dialectics_desc:1 "O Iluminismo é a emergência do homem de sua não idade autoimposta. Não idade é a incapacidade de usar sua própria compreensão sem a orientação de outro ou da igreja ou religião."
+terakoya:0 "Terakoya"
+terakoya_desc:1 "Com o governo se comunicando apenas à distância por escrito, a educação se torna mais importante, mesmo para aqueles nas aldeias."
+early_nationalism:0 "National Identity"
+early_nationalism_desc:0 ""Nation: word to describe a large quantity of people, who inhabit a defined part of one or many coutries, defined by certain limits and who obey the same government" - L'Encyclopédie of Diderot"
+
+## Repeaters tech name changed to represent breech-loading rifles instead
+
+pm_repeaters:0 "Rifles de Carregamento pela Culatra"
+repeaters:0 "Rifles de Carregamento pela Culatra"
+repeaters_desc:0 "Ao mudar o design para carregar o cartucho pela culatra, em vez de pelo cano, é possível criar armas muito mais eficientes."
