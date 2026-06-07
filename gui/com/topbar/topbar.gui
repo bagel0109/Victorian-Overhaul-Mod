@@ -225,5 +225,4 @@ types com_topbar_types {
             fontsize_min = 16
         }
     }
-
 }

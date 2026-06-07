@@ -1,0 +1,6 @@
+﻿l_english:
+ pm_partial_rail_transport: "Partial Rail Transport"
+ pm_partial_rail_transport_mine: "$pm_partial_rail_transport$"
+ pm_partial_steam_rail_transport: "$pm_partial_rail_transport$"
+ pm_partial_rail_transport_building_logging_camp: "$pm_partial_rail_transport$"
+ pm_partial_rail_transport_building_oil_rig: "$pm_partial_rail_transport$"

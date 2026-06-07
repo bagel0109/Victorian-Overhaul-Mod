@@ -1,0 +1,5 @@
+﻿l_english: 
+
+ TAKE_ON_SCALED_DEBT:1 "Takes on [TARGET_COUNTRY.GetAdjective] [Concept('concept_credit','$concept_credit_debt$')]"
+ TAKE_ON_SCALED_DEBT_FIRST:0 "[COUNTRY.GetNameNoFlag] takes on [TARGET_COUNTRY.GetAdjective] [Concept('concept_credit','$concept_credit_debt$')]"
+ TAKE_ON_SCALED_DEBT_THIRD:0 "[COUNTRY.GetName] takes on [TARGET_COUNTRY.GetAdjective] [Concept('concept_credit','$concept_credit_debt$')]"

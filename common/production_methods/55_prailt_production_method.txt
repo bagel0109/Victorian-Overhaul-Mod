@@ -1,0 +1,95 @@
+pm_partial_rail_transport_mine = {
+	texture = "gfx/interface/icons/production_method_icons/partial_rail_transport.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+
+	unlocking_technologies = {
+		railways
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_transportation_add = 3
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -500
+		}
+	}
+}
+
+pm_partial_steam_rail_transport = {
+	texture = "gfx/interface/icons/production_method_icons/partial_rail_transport.dds"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+		
+	unlocking_technologies = {
+		railways
+	}
+		
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_transportation_add = 3
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -500
+		}
+	}
+}
+
+pm_partial_rail_transport_building_logging_camp = {
+	texture = "gfx/interface/icons/production_method_icons/partial_rail_transport.dds"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 8
+		}
+	}
+
+	unlocking_technologies = {
+		railways
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_transportation_add = 3
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -500
+		}
+	}
+}
+
+pm_partial_rail_transport_building_oil_rig = {
+	texture = "gfx/interface/icons/production_method_icons/partial_rail_transport.dds"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 3
+		}
+	}
+
+	unlocking_technologies = {
+		railways
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_transportation_add = 3
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -500
+		}
+	}
+}
