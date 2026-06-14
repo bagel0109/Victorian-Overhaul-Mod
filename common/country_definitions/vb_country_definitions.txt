@@ -1,0 +1,79 @@
+#Color Changes
+INJECT:USA = {
+	color = { 77 113 222 }
+}
+
+INJECT:TEX = {
+	color = { 70 92 130 }
+}
+
+INJECT:PRU = {
+	color = { 44 45 46 }
+}
+
+INJECT:AUS = {
+	color = { 211  220  240 }
+}
+
+INJECT:HUN = {
+	color = { 152  85  92 }
+}
+
+INJECT:GER = {
+	color = { 68 70 74 }
+}
+
+INJECT:NGF = {
+	color = { 31 32 33 }
+}
+
+INJECT:SAR = {
+	color = { 75 91 119 }
+}
+
+INJECT:SIC = {
+	color = { 56 114 58 }
+}
+
+INJECT:PAP = {
+	color = { 226 206 113 }
+}
+
+INJECT:TUS = {
+	color = { 216 30 5 }
+}
+
+INJECT:SPC = {
+	color = { 255 128 0 }
+}
+
+INJECT:BRZ = {
+	color = { 45 109 43 }
+}
+
+INJECT:GBR = {
+	color = { 153  0 0 }
+}
+
+INJECT:RUS = {
+	color = { 65 82 55 }
+}
+
+INJECT:DEN = {
+	color = rgb { 160 13 0 }
+}
+
+INJECT:HAI = {
+	color = { 135  206  250 }
+}
+
+INJECT:SWE = {
+	color = { 34 77 145 }
+}
+INJECT:TUR = {
+	color = { 128 50 50 }
+}
+
+INJECT:EGY = {
+	color = { 245 222 179 } 
+}
