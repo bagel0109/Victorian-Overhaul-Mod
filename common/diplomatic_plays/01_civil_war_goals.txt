@@ -1,0 +1,14 @@
+﻿INJECT:dp_revolution = {
+	initiator_can_add_war_goals = yes #these are changed
+	target_can_add_war_goals = yes #these are changed
+}
+
+INJECT:dp_secession = {
+	initiator_can_add_war_goals = yes #changed
+	target_can_add_war_goals = yes #changed
+}
+
+INJECT:dp_contain_threat = {
+	initiator_can_add_war_goals = yes
+	target_can_add_war_goals = yes
+}

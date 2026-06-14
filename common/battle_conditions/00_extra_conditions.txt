@@ -1,0 +1,658 @@
+﻿battle_condition_miscommunication = {
+	icon = "gfx/interface/icons/goods_icons/telephones.dds"
+
+	modifier = {
+		unit_morale_loss_mult = 0.1
+	}
+
+	possible = {
+		exists = scope:character
+		scope:character = {
+			has_role_of_type = general
+		}
+		scope:character ?= {
+			owner ?= {
+				is_in_guerilla_war = no
+			}
+		}
+	}
+
+	weight = {
+		value = 2
+		if = {
+			limit = {
+				has_battle_condition = battle_condition_broken_supply_line
+			}
+			add = 2
+		}
+		if = {
+			limit = {
+				scope:character ?= { experience_level > 5 }
+			}
+			multiply = 0.5
+		}
+		else_if = {
+			limit = {
+				scope:character ?= { experience_level > 4 }
+			}
+			multiply = 0.5
+		}
+	}
+}
+
+battle_condition_good_communication = {
+	icon = "gfx/interface/icons/goods_icons/telephones.dds"
+
+	modifier = {
+		unit_morale_damage_mult = 0.10
+	}
+
+	possible = {
+		exists = scope:character
+		scope:character = {
+			has_role_of_type = general
+		}
+		scope:character ?= {
+			owner ?= {
+				is_in_guerilla_war = no
+			}
+		}
+	}
+
+	weight = {
+		value = 2
+		if = {
+			limit = {
+				has_battle_condition = battle_condition_logistics_secured
+			}
+			add = 2
+		}
+		if = {
+			limit = {
+				scope:character ?= { experience_level < 5 }
+			}
+			multiply = 0.5
+		}
+		else_if = {
+			limit = {
+				scope:character ?= { experience_level < 4 }
+			}
+			multiply = 0.5
+		}
+	}
+}
+
+battle_condition_artillery_barrage = {
+    icon = "gfx/interface/icons/goods_icons/artillery.dds"
+
+	modifier = {
+		unit_kill_rate_add = 0.2
+	}
+
+	possible = {
+		scope:is_advancing_side = yes
+		exists = scope:character
+		scope:character ?= {
+			owner ?= {
+				is_in_guerilla_war = no
+			}
+		}
+
+		scope:character = {
+			has_role_of_type = general
+			OR = {
+                commander_military_formation ?= {
+                    formation_army_unit_type_fraction = {
+                        target = unit_type:combat_unit_type_cannon_artillery
+                        value >= 0.05
+                    }
+                }
+                commander_military_formation ?= {
+                    formation_army_unit_type_fraction = {
+                        target = unit_type:combat_unit_type_mobile_artillery
+                        value >= 0.05
+                    }
+                }
+                commander_military_formation ?= {
+                    formation_army_unit_type_fraction = {
+                        target = unit_type:combat_unit_type_shrapnel_artillery
+                        value >= 0.05
+                    }
+                }
+                commander_military_formation ?= {
+                    formation_army_unit_type_fraction = {
+                        target = unit_type:combat_unit_type_siege_artillery
+                        value >= 0.05
+                    }
+                }
+                commander_military_formation ?= {
+                   formation_army_unit_type_fraction = {
+                      target = unit_type:combat_unit_type_heavy_tank
+                      value >= 0.05
+                   }
+                }
+            }
+		}
+	}
+
+	weight = {
+		value = 1
+		
+		if = {
+			limit = {
+				has_battle_condition = battle_condition_logistics_secured
+			}
+			add = 2
+		}
+		if = {
+			limit = {
+				has_battle_condition = battle_condition_mud
+			}
+			add = 2
+		}
+		if = {
+			limit = {
+				has_battle_condition = battle_condition_artillery_barrage
+				current_manpower > opposite_battle_side.current_manpower
+			}
+			add = 5
+		}
+		if = {
+			limit = {
+				exists = scope:character
+				scope:character = {
+					OR = {
+						has_trait = basic_artillery_commander
+						has_trait = experienced_artillery_commander
+						has_trait = expert_artillery_commander
+					}
+				}
+			}
+			multiply = 5
+		}
+	}
+}
+
+battle_condition_delaying = { #defender only
+	icon = "gfx/interface/icons/battle_conditions/battle_condition_delay.dds"
+
+	modifier = {
+		unit_morale_loss_mult = -0.1
+		unit_morale_damage_mult = -0.1
+	}
+
+	possible = {
+		scope:is_advancing_side = no
+		exists = scope:character
+		scope:character = {
+			has_role_of_type = general
+		}
+		scope:character ?= {
+			owner ?= {
+				is_in_guerilla_war = no
+			}
+		}
+	}
+
+
+	weight = {
+		value = 1
+		if = {
+			limit = {
+				scope:character ?= { experience_level > 5 }
+			}
+			add = 2
+		}
+		else_if = {
+			limit = {
+				scope:character ?= { experience_level > 4 }
+			}
+			add = 2
+		}
+
+		if = {
+			limit = {
+				current_manpower < opposite_battle_side.current_manpower
+			}
+			multiply = 2
+		}
+	}
+}
+
+battle_condition_chemical_weapons = {
+	icon = "gfx/interface/icons/battle_conditions/battle_condition_chemical_weapons.dds"
+
+	modifier = {
+		unit_kill_rate_add = 0.15
+		unit_morale_damage_mult = 0.35
+		# unit_provinces_captured_mult = -0.25
+	}
+
+	possible = {
+		exists = scope:character
+		scope:character = {
+			has_role_of_type = general
+			commander_military_formation ?= {
+                has_mobilization_option = mobilization_option:mobilization_option_chemical_weapons
+            }
+		}
+		scope:character ?= {
+			owner ?= {
+				is_in_guerilla_war = no
+			}
+		}
+	}
+
+	weight = {
+		value = 0
+		
+		if = {
+			limit = {
+				scope:character = {
+					has_trait = cruel
+				}
+			}
+			add = 5
+		}
+		if = {
+			limit = {
+				scope:character = {
+					has_trait = trench_rat
+				}
+			}
+			add = 5
+		}
+		if = {
+			limit = {
+				scope:character = {
+					has_trait = pillager
+				}
+			}
+			add = 5
+		}
+		if = {
+			limit = {
+				scope:character = {
+					has_trait = ruthless
+				}
+			}
+			add = 5
+		}
+		if = {
+			limit = {
+				scope:opposite_battle_side ?= {
+					has_battle_condition = battle_condition_chemical_defence
+				}
+			}
+			multiply = 0.01
+		}
+	}
+}
+
+battle_condition_chemical_defence = {
+	icon = "gfx/interface/icons/battle_conditions/battle_condition_chemical_defence.dds"
+
+	modifier = {
+		unit_morale_loss_mult = -0.35
+	}
+
+	possible = {
+		# NOR = {
+		# 	has_battle_condition = battle_condition_panicked_retreat
+		# 	has_battle_condition = battle_condition_controlled_retreat
+		# }
+		opposite_battle_side = {
+			has_battle_condition = battle_condition_chemical_weapons
+		}
+		exists = scope:character
+		scope:character = {
+			owner = {
+				has_technology_researched = chemical_warfare
+			}
+		}
+		scope:character ?= {
+			owner ?= {
+				is_in_guerilla_war = no
+			}
+		}
+	}
+
+	weight = {
+		value = 1
+		if = {
+			limit = {
+				opposite_battle_side = {
+					has_battle_condition = battle_condition_chemical_weapons
+				}
+			}
+			multiply = 100
+		}
+	}
+}
+
+battle_condition_interlocking_fire = {
+    icon = "gfx/interface/icons/battle_conditions/battle_condition_interlocking_fire.dds"
+    modifier = {
+        unit_kill_rate_add = 0.15
+        unit_morale_damage_mult = 0.15
+    }
+    possible = {
+        scope:is_advancing_side = no
+        exists = scope:character
+        scope:character = {
+            has_role_of_type = general
+            commander_military_formation ?= {
+                has_mobilization_option = mobilization_option:mobilization_option_machinegunners
+            }
+        }
+        scope:character ?= { owner ?= { is_in_guerilla_war = no } }
+    }
+    weight = {
+        value = 1
+        if = { limit = { opposite_battle_side = { OR = { has_battle_condition = battle_condition_rapid_advance has_battle_condition = battle_condition_aggressive_maneuver } } } multiply = 3 }
+        if = { limit = { province = { has_label = label_flat } } multiply = 2.5 }
+        if = { limit = { OR = { province = { has_label = label_forested } province = { has_label = label_elevated } } } multiply = 0.4 }
+        if = { limit = { scope:character = { OR = { has_trait = basic_defensive_strategist has_trait = experienced_defensive_strategist has_trait = expert_defensive_strategist } } } multiply = 2 }
+        if = { limit = { scope:character = { OR = { has_trait = plains_commander has_trait = forest_commander has_trait = mountain_commander } } } multiply = 1.5 }
+        if = { limit = { scope:character ?= { experience_level > 5 } } add = 2 }
+        else_if = { limit = { scope:character ?= { experience_level > 4 } } add = 1 }
+    }
+}
+
+battle_condition_suppressing_fire = {
+    icon = "gfx/interface/icons/battle_conditions/battle_condition_suppressing_fire.dds"
+    modifier = {
+        unit_kill_rate_add = 0.10
+        unit_morale_loss_mult = -0.15
+    }
+    possible = {
+        exists = scope:character
+        scope:character = {
+            has_role_of_type = general
+            commander_military_formation ?= {
+                has_mobilization_option = mobilization_option:mobilization_option_machinegunners
+            }
+        }
+        scope:character ?= { owner ?= { is_in_guerilla_war = no } }
+        NOR = { has_battle_condition = battle_condition_interlocking_fire }
+    }
+    weight = {
+        value = 1
+        if = { limit = { opposite_battle_side = { OR = { has_battle_condition = battle_condition_dug_in has_battle_condition = battle_condition_trench_lock } } } multiply = 3 }
+        if = { limit = { scope:character = { OR = { has_trait = trench_rat has_trait = defense_in_depth_specialist } } } multiply = 2 }
+        if = { limit = { scope:character = { OR = { has_trait = basic_offensive_planner has_trait = experienced_offensive_planner has_trait = expert_offensive_planner } } } multiply = 1.5 }
+        if = { limit = { province = { has_label = label_flat } } multiply = 0.7 }
+        if = { limit = { OR = { province = { has_label = label_forested } province = { has_label = label_elevated } } } multiply = 1.3 }
+    }
+}
+
+battle_condition_clearing_assault = {
+    icon = "gfx/interface/icons/battle_conditions/battle_condition_clearing_assault.dds"
+    modifier = {
+        unit_morale_damage_mult = 0.25
+    }
+    possible = {
+        scope:is_advancing_side = yes
+        exists = scope:character
+        scope:character = {
+            has_role_of_type = general
+            commander_military_formation ?= {
+                has_mobilization_option = mobilization_option:mobilization_option_flamethrowers
+            }
+        }
+        scope:character ?= { owner ?= { is_in_guerilla_war = no } }
+        NOR = { province = { has_terrain = forest } province = { has_terrain = jungle } }
+    }
+    weight = {
+        value = 1
+        if = { limit = { opposite_battle_side = { OR = { has_battle_condition = battle_condition_dug_in has_battle_condition = battle_condition_trench_lock } } } multiply = 4 }
+        if = { limit = { OR = { province = { has_terrain = urban } } } multiply = 2.5 }
+        if = { limit = { scope:character = { OR = { has_trait = brave has_trait = ruthless has_trait = pillager has_trait = reckless } } } multiply = 2 }
+        if = { limit = { scope:character = { OR = { has_trait = experienced_offensive_planner has_trait = expert_offensive_planner } } } multiply = 1.5 }
+        if = { limit = { NOR = { province = { has_terrain = urban } province = { has_terrain = forest } province = { has_terrain = jungle } } } add = 1 }
+    }
+}
+
+battle_condition_favorable_winds = {
+    icon = "gfx/interface/icons/battle_conditions/battle_condition_chemical_weapons.dds"
+    modifier = {
+        unit_kill_rate_add = 0.2
+        unit_morale_damage_mult = 0.35
+    }
+    possible = {
+        has_battle_condition = battle_condition_chemical_weapons
+        exists = scope:character
+        scope:character = { has_role_of_type = general }
+    }
+    weight = {
+        value = 5
+        if = { limit = { OR = { province = { has_terrain = plains } } } multiply = 1.8 }
+        if = { limit = { OR = { province = { has_terrain = river } province = { has_terrain = wetland } } } multiply = 1.5 }
+        if = { limit = { OR = { province = { has_terrain = forest } province = { has_terrain = urban } province = { has_terrain = mountain } } } multiply = 0.3 }
+        if = { limit = { has_battle_condition = battle_condition_chemical_weapons } multiply = 100 }
+		if = { limit = { scope:opposite_battle_side ?= { has_battle_condition = battle_condition_chemical_defence } } multiply = 0.01 }
+    }
+}
+
+battle_condition_backdraft = {
+    icon = "gfx/interface/icons/battle_conditions/battle_condition_chemical_defence.dds"
+    modifier = {
+        unit_morale_loss_mult = 0.2
+        unit_offense_mult = -0.15
+        unit_kill_rate_add = -0.05
+    }
+    possible = {
+        has_battle_condition = battle_condition_chemical_weapons
+        exists = scope:character
+        scope:character = { has_role_of_type = general }
+        NOT = { has_battle_condition = battle_condition_favorable_winds }
+    }
+    weight = {
+        value = 5
+        if = { limit = { OR = { province = { has_terrain = river } province = { has_terrain = wetland } } } multiply = 2.5 }
+        if = { limit = { province = { has_terrain = hills } } multiply = 1.8 }
+        if = { limit = { OR = { province = { has_terrain = plains } province = { has_terrain = desert } } } multiply = 0.7 }
+        if = { limit = { has_battle_condition = battle_condition_chemical_weapons NOT = { has_battle_condition = battle_condition_favorable_winds } } multiply = 100 }
+		if = { limit = { scope:opposite_battle_side ?= { has_battle_condition = battle_condition_chemical_defence } } multiply = 0.01 }
+    }
+}
+
+battle_condition_trench_lock = {
+    icon = "gfx/interface/icons/battle_conditions/battle_condition_trench_lock.dds"
+    modifier = {
+        unit_army_defense_mult = 0.2
+        unit_morale_loss_mult = -0.2
+		unit_morale_damage_mult = -0.2
+    }
+    possible = {
+        scope:is_advancing_side = no
+        exists = scope:character
+        scope:character = {
+            has_role_of_type = general
+            commander_military_formation ?= {
+                formation_army_unit_type_fraction = {
+                    target = unit_type:combat_unit_type_trench_infantry
+                    value >= 0.25
+                }
+            }
+        }
+        scope:character ?= { owner ?= { is_in_guerilla_war = no } }
+        NOR = { has_battle_condition = battle_condition_panicked_retreat }
+    }
+    weight = {
+        value = 1
+        if = { limit = { scope:character = { OR = { has_trait = trench_rat has_trait = defense_in_depth_specialist } } } multiply = 3 }
+        if = { limit = { has_battle_condition = battle_condition_dug_in } add = 2 }
+        if = { limit = { scope:character ?= { experience_level > 4 } } add = 2 }
+    }
+}
+
+battle_condition_flanking_maneuver = {
+    icon = "gfx/interface/icons/battle_conditions/battle_condition_flanking_maneuver.dds"
+    modifier = {
+        unit_morale_damage_mult = 0.1
+        unit_kill_rate_add = 0.1
+    }
+    possible = {
+        scope:is_advancing_side = yes
+        exists = scope:character
+        scope:character = { has_role_of_type = general }
+        scope:character ?= { owner ?= { is_in_guerilla_war = no } }
+        NOR = {
+            province = { has_terrain = mountain }
+            province = { has_terrain = urban }
+            has_battle_condition = battle_condition_mud
+        }
+    }
+    weight = {
+        value = 1
+        if = {
+            limit = {
+                scope:character = {
+                    commander_military_formation ?= {
+                        OR = {
+                            formation_army_unit_type_fraction = {
+                                target = unit_type:combat_unit_type_hussars
+                                value >= 0.2
+                            }
+                            formation_army_unit_type_fraction = {
+                                target = unit_type:combat_unit_type_dragoons
+                                value >= 0.2
+                            }
+							formation_army_unit_type_fraction = {
+                                target = unit_type:combat_unit_type_cuirassiers
+                                value >= 0.2
+                            }
+							formation_army_unit_type_fraction = {
+                                target = unit_type:combat_unit_type_lancers
+                                value >= 0.2
+                            }
+                        }
+                    }
+                }
+            }
+            multiply = 3
+        }
+        if = {
+            limit = {
+                scope:character = {
+                    OR = {
+                        has_trait = experienced_offensive_planner
+                        has_trait = expert_offensive_planner
+                    }
+                }
+            }
+            multiply = 2
+        }
+        if = { limit = { province = { has_label = label_flat } } multiply = 2 }
+        if = { limit = { province = { has_label = label_forested } } multiply = 0.6 }
+        if = { limit = { opposite_battle_side = { has_battle_condition = battle_condition_scouting_advantage } } multiply = 0.3 }
+    }
+}
+
+battle_condition_scouting_advantage = {
+    icon = "gfx/interface/icons/battle_conditions/battle_condition_scouting_advantage.dds"
+    modifier = {
+        unit_morale_loss_mult = -0.1
+        unit_offense_mult = 0.1
+    }
+    possible = {
+        exists = scope:character
+        scope:is_advancing_side = yes
+        scope:character = { has_role_of_type = general }
+        scope:character ?= { owner ?= { is_in_guerilla_war = no } }
+        NOR = {
+            has_battle_condition = battle_condition_lost
+            has_battle_condition = battle_condition_poor_visibility
+        }
+    }
+    weight = {
+        value = 1
+        if = {
+            limit = {
+                scope:character = {
+                    commander_military_formation ?= {
+                        OR = {
+                            formation_army_unit_type_fraction = {
+                                target = unit_type:combat_unit_type_hussars
+                                value >= 0.2
+                            }
+                            formation_army_unit_type_fraction = {
+                                target = unit_type:combat_unit_type_dragoons
+                                value >= 0.2
+                            }
+							formation_army_unit_type_fraction = {
+                                target = unit_type:combat_unit_type_cuirassiers
+                                value >= 0.2
+                            }
+							formation_army_unit_type_fraction = {
+                                target = unit_type:combat_unit_type_lancers
+                                value >= 0.2
+                            }
+                        }
+                    }
+                }
+            }
+            multiply = 3
+        }
+        if = { limit = { scope:character = { has_trait = surveyor } } multiply = 2.5 }
+        if = {
+            limit = {
+                scope:character = {
+                    OR = {
+                        has_trait = forest_commander
+                        has_trait = plains_commander
+                        has_trait = mountain_commander
+                    }
+                }
+            }
+            multiply = 1.5
+        }
+        if = { limit = { opposite_battle_side = { has_battle_condition = battle_condition_camouflaged } } multiply = 0.01 }
+    }
+}
+
+battle_condition_local_counterattack = {
+    icon = "gfx/interface/icons/battle_conditions/battle_condition_local_counterattack.dds"
+    modifier = {
+        unit_morale_damage_mult = 0.1
+        unit_defense_mult = 0.1
+    }
+    possible = {
+        scope:is_advancing_side = no
+        exists = scope:character
+        scope:character = { has_role_of_type = general }
+        scope:character ?= { owner ?= { is_in_guerilla_war = no } }
+        NOR = {
+            has_battle_condition = battle_condition_panicked_retreat
+            has_battle_condition = battle_condition_controlled_retreat
+        }
+		current_manpower > {
+			value = opposite_battle_side.current_manpower
+			multiply = 0.8
+			if = {
+				limit = {
+					scope:character ?= { experience_level > 5 }
+				}
+				multiply = 0.8
+			}
+			if = {
+				limit = {
+					scope:character ?= { experience_level > 4 }
+				}
+				multiply = 0.8
+			}
+		}
+    }
+    weight = {
+        value = 0
+        if = { limit = { scope:character ?= { experience_level > 5 } } add = 2 }
+        if = { limit = { scope:character = { has_trait = brave } } multiply = 2.5 }
+        if = { limit = { scope:character = { has_trait = reckless } } multiply = 2 }
+        if = { limit = { scope:character = { has_trait = experienced_offensive_planner } } multiply = 2 }
+        if = { limit = { opposite_battle_side = { has_battle_condition = battle_condition_exhausted } } multiply = 3 }
+        if = { limit = { opposite_battle_side = { has_battle_condition = battle_condition_broken_supply_line } } multiply = 2.5 }
+        if = { limit = { has_battle_condition = battle_condition_dug_in } multiply = 1.8 }
+        if = { limit = { province = { has_terrain = forest } } multiply = 1.5 }
+    }
+}

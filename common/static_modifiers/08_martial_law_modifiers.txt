@@ -1,0 +1,47 @@
+﻿REPLACE_OR_CREATE:base_martial_law_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	country_prestige_mult = -0.1
+	interest_group_in_government_attraction_mult = 0.1
+	state_migration_pull_mult = -0.2
+	state_migration_quota_mult = -0.1
+	building_construction_sector_throughput_add = -0.2
+	building_group_bg_military_industry_construction_efficiency_add = 0.2
+	building_group_bg_military_construction_efficiency_add = 0.2
+	state_radicals_and_loyalists_from_sol_change_mult = 0.1
+	country_block_government_reform_bool = yes
+}
+
+REPLACE_OR_CREATE:base_martial_law_modifier_scaled_half = { #at 100 control
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	state_turmoil_effects_mult = -0.3
+	country_radicals_from_legitimacy_mult = -0.4
+	state_radicals_from_political_movements_mult = -0.4
+	state_tax_capacity_mult = 0.1
+	unit_morale_loss_mult = -0.1
+	country_revolution_progress_mult = -0.2
+	country_secession_progress_mult = -0.2
+}
+
+REPLACE_OR_CREATE:base_martial_law_modifier_scaled_full = { #at 100 control
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+	country_tech_spread_mult = -0.25
+	country_weekly_innovation_mult = -0.25
+	state_migration_pull_mult = -0.3
+	political_movement_pop_attraction_mult = -0.5
+	political_movement_radicalism_from_enactment_disapproval_mult = 0.2
+	interest_group_ig_armed_forces_pol_str_mult = 0.1
+	country_officers_pol_str_mult = 0.2
+	state_radicals_and_loyalists_from_sol_change_mult = 0.2
+	country_law_enactment_stall_mult = -0.5
+	country_revolution_progress_mult = -0.5
+	country_secession_progress_mult = -0.5
+}
+
+REPLACE_OR_CREATE:base_martial_law_modifier_scaled_time = { #at 1 month
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	country_tech_spread_mult = -0.01
+	country_weekly_innovation_mult = -0.01
+	country_electoral_confidence_impact_mult = -0.005
+	country_legitimacy_base_add = -0.2
+	interest_group_in_opposition_approval_add = -0.2
+}

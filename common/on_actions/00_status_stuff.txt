@@ -1,0 +1,37 @@
+on_diplo_play_start = {
+    on_actions = {
+		status_quo_stuff
+	}
+}
+
+status_quo_stuff = {
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    NOT = {
+                        root.initiator = {
+                            is_subject_of = root.target
+                        }
+                    }
+                    root.target = {
+                        any_scope_state = {
+                            any_neighbouring_state = {
+                                is_incorporated = yes
+                                owner = {
+                                    root.initiator ?= this
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            add_war_goal = {
+                holder = target
+                type = humiliation
+                target_country = initiator
+                primary_demand = yes
+            }
+        }
+    }
+}

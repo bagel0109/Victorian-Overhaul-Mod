@@ -1,0 +1,309 @@
+﻿REPLACE_OR_CREATE:waddle_war_support = {
+	value = 0
+
+	add = {
+		value = legitimacy
+		divide = 2
+		desc = "WADDLE_LEGITIMACY"
+	}
+
+	add = {
+		value = ruler.popularity
+		divide = 5
+		desc = "WADDLE_LEADER"
+	}
+
+	add = {
+		value = average_sol
+		desc = "[concept_sol]"
+	}
+
+	if = {
+		limit = { is_diplomatic_play_target = yes }
+		add = {
+			add = 10
+			desc = "WADDLE_PRO_WAR_TARGET"
+		}
+	}
+
+	if = {
+		limit = {
+			NOT = {
+				any_scope_war = {
+					any_scope_front = {
+						any_scope_state = {
+							is_incorporated = yes
+							owner = root
+						}
+					}
+				}
+				any_diplomatic_play = {
+					OR = {
+						target_is = root
+						initiator_is = root
+					}
+					OR = {
+						is_diplomatic_play_type = dp_revolution
+						is_diplomatic_play_type = dp_secession
+					}
+				}
+			}
+		}
+		subtract = {
+			value = 20
+			desc = "WADDLE_NO_ONE_CARES"
+		}
+	}
+
+	if = {
+		limit = {
+			any_enemy_in_diplo_play = {
+				root = {
+					play_participant_has_war_goal_of_type_against = {
+						type = return_state
+						target = prev
+					}
+				}
+			}
+		}
+		add = {
+			value = 20
+			desc = "WADDLE_LAND_RECLAMATION"
+		}
+	}
+
+	if = {
+		limit = {
+			has_law_or_variant = law_type:law_isolationism
+		}
+		subtract = {
+			value = 20
+			desc = "[GetLawType('law_isolationism').GetName]"
+		}
+	}
+
+	if = {
+		limit = {
+			has_law_or_variant = law_type:law_peasant_levies
+		}
+		subtract = {
+			value = 10
+			desc = "[GetLawType('law_peasant_levies').GetName]"
+		}
+	}
+
+	if = {
+		limit = {
+			has_law_or_variant = law_type:law_extraction_economy
+		}
+		subtract = {
+			value = 10
+			desc = "[GetLawType('law_extraction_economy').GetName]"
+		}
+	}
+
+	if = {
+		limit = {
+			has_law_or_variant = law_type:law_serfdom
+		}
+		subtract = {
+			value = 10
+			desc = "[GetLawType('law_serfdom').GetName]"
+		}
+	}
+
+	add = {
+		value = {
+			every_interest_group = {
+				limit = {
+					pro_war_ig_trigger = yes
+				}
+				add = {
+					add = ig_clout
+					multiply = 50
+				}
+				if = {
+					limit = { ig_approval < unhappy }
+					multiply = 0.5
+				}
+				if = {
+					limit = { ig_approval < angry }
+					multiply = 0.5
+				}
+			}
+		}
+		desc = "WADDLE_PRO_WAR_INTERERST_GROUPS"
+	}
+
+	subtract = {
+		value = {
+			every_interest_group = {
+				limit = {
+					anti_war_ig_trigger = yes
+				}
+				add = {
+					add = ig_clout
+					multiply = 15
+				}
+				if = {
+					limit = { ig_approval > happy }
+					multiply = 0.5
+				}
+				if = {
+					limit = { ig_approval > loyal }
+					multiply = 0.5
+				}
+			}
+		}
+		desc = "WADDLE_ANTI_WAR_INTERERST_GROUPS"
+	}
+
+	add = {
+		value = {
+			every_political_movement = {
+				limit = {
+					pro_war_pm_trigger = yes
+				}
+				add = {
+					add = political_movement_support
+					# multiply = 2
+				}
+				multiply = {
+					add = 1
+					subtract = political_movement_radicalism
+					min = 0
+				}
+				# multiply = political_movement_military_support
+			}
+			multiply = 100
+		}
+		desc = "WADDLE_PRO_WAR_MOVEMENTS"
+	}
+
+	subtract = {
+		value = {
+			every_political_movement = {
+				limit = {
+					anti_war_pm_trigger = yes
+				}
+				add = {
+					add = political_movement_support
+					add = political_movement_radicalism
+					max = {
+						add = political_movement_support
+						multiply = 2
+					}
+				}
+				# multiply = {
+				# 	add = political_movement_radicalism
+				# }
+			}
+			multiply = 100
+		}
+		desc = "WADDLE_ANTI_WAR_MOVEMENTS"
+	}
+
+	add = {
+		value = loyalist_fraction
+		multiply = 100
+		desc = "WADDLE_PRO_WAR_LOYALISTS"
+	}
+
+	subtract = {
+		value = radical_fraction
+		multiply = 100
+		desc = "WADDLE_PRO_WAR_RADICALS"
+	}
+
+	add = {
+		value = {
+			every_political_lobby = {
+				limit = {
+					target = {
+						is_diplomatic_play_enemy_of = root
+					}
+					OR = {
+						is_political_lobby_type = lobby_anti_country
+						is_political_lobby_type = lobby_anti_overlord
+					}
+				}
+				add = lobby_clout
+			}
+			multiply = 20
+		}
+		desc = "WADDLE_PRO_WAR_LOBBIES"
+	}
+
+	subtract = {
+		value = {
+			every_political_lobby = {
+				limit = {
+					target = {
+						is_diplomatic_play_enemy_of = root
+					}
+					OR = {
+						is_political_lobby_type = lobby_pro_country
+						is_political_lobby_type = lobby_pro_overlord
+					}
+				}
+				add = lobby_clout
+			}
+			multiply = 20
+		}
+		desc = "WADDLE_ANTI_WAR_LOBBIES"
+	}
+
+	add = {
+		subtract = country_fervor_primary_culture
+		divide = 100
+		desc = "WAR_SUPPORT_FROM_FERVOR"
+	}
+
+	min = 0
+	max = 100
+}
+
+REPLACE_OR_CREATE:waddle_war_progress = {
+	value = 0
+	every_war_participant = {
+	  	limit = { OR = { is_in_war_together = prev.diplomatic_play.initiator } }
+		add = {
+			add = prestige
+			multiply = {
+				add = 1
+				subtract = enemy_occupation
+			}
+		}
+	}
+	divide = {
+		every_war_participant = {
+			limit = { OR = { is_in_war_together = prev.diplomatic_play.initiator } }
+			add = prestige
+		}
+	}
+	save_temporary_value_as = guh
+	divide = {
+		every_war_participant = {
+			limit = { OR = { is_in_war_together = prev.diplomatic_play.target } }
+			add = {
+				add = prestige
+				multiply = {
+					add = 1
+					subtract = enemy_occupation
+				}
+			}
+		}
+		divide = {
+			every_war_participant = {
+				limit = { OR = { is_in_war_together = prev.diplomatic_play.target } }
+				add = prestige
+			}
+		}
+		add = scope:guh
+	}
+}
+
+REPLACE_OR_CREATE:waddle_war_progress_other_way = {
+	value = 1
+	subtract = waddle_war_progress
+}

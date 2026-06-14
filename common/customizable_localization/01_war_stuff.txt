@@ -1,0 +1,688 @@
+﻿target_adjective_loc = {
+	type = country
+	random_valid = no
+	text = {
+		trigger = {
+			c:ABK ?= this
+		}
+		localization_key = waddle_abkhazia_adjective
+	}
+	text = {
+		trigger = {
+			c:AFG ?= this
+		}
+		localization_key = waddle_afghanistan_adjective
+	}
+	text = {
+		trigger = {
+			c:ALB ?= this
+		}
+		localization_key = waddle_albania_adjective
+	}
+	text = {
+		trigger = {
+			c:ANL ?= this
+		}
+		localization_key = waddle_andalusia_adjective
+	}
+	text = {
+		trigger = {
+			c:ARA ?= this
+		}
+		localization_key = waddle_arabia_adjective
+	}
+	text = {
+		trigger = {
+			c:ARN ?= this
+		}
+		localization_key = waddle_aragon_adjective
+	}
+	text = {
+		trigger = {
+			c:ARM ?= this
+		}
+		localization_key = waddle_armenia_adjective
+	}
+	text = {
+		trigger = {
+			c:ASU ?= this
+		}
+		localization_key = waddle_asturias_adjective
+	}
+	text = {
+		trigger = {
+			c:AST ?= this
+		}
+		localization_key = waddle_australia_adjective
+	}
+	text = {
+		trigger = {
+			c:AUS ?= this
+		}
+		localization_key = waddle_austria_adjective
+	}
+	text = {
+		trigger = {
+			c:AZB ?= this
+		}
+		localization_key = waddle_azerbaijan_adjective
+	}
+	text = {
+		trigger = {
+			c:BAD ?= this
+		}
+		localization_key = waddle_baden_adjective
+	}
+	text = {
+		trigger = {
+			c:BAV ?= this
+		}
+		localization_key = waddle_bavaria_adjective
+	}
+	text = {
+		trigger = {
+			c:BEL ?= this
+		}
+		localization_key = waddle_belgium_adjective
+	}
+	text = {
+		trigger = {
+			c:BHT ?= this
+		}
+		localization_key = waddle_india_adjective
+	}
+	text = {
+		trigger = {
+			c:BOS ?= this
+		}
+		localization_key = waddle_bosnia_adjective
+	}
+	text = {
+		trigger = {
+			c:BUL ?= this
+		}
+		localization_key = waddle_bulgaria_adjective
+	}
+	text = {
+		trigger = {
+			c:BUR ?= this
+		}
+		localization_key = waddle_burma_adjective
+	}
+	text = {
+		trigger = {
+			c:BYE ?= this
+		}
+		localization_key = waddle_belarus_adjective
+	}
+	text = {
+		trigger = {
+			c:CAM ?= this
+		}
+		localization_key = waddle_cambodia_adjective
+	}
+	text = {
+		trigger = {
+			c:CAN ?= this
+		}
+		localization_key = waddle_canada_adjective
+	}
+	text = {
+		trigger = {
+			c:CAT ?= this
+		}
+		localization_key = waddle_catalonia_adjective
+	}
+	text = {
+		trigger = {
+			c:CHC ?= this
+		}
+		localization_key = waddle_chechnya_adjective
+	}
+	text = {
+		trigger = {
+			c:CHI ?= this
+		}
+		localization_key = waddle_china_adjective
+	}
+	text = {
+		trigger = {
+			c:CLM ?= this
+		}
+		localization_key = waddle_colombia_adjective
+	}
+	text = {
+		trigger = {
+			c:COR ?= this
+		}
+		localization_key = waddle_corsica_adjective
+	}
+	text = {
+		trigger = {
+			c:CRI ?= this
+		}
+		localization_key = waddle_crimea_adjective
+	}
+	text = {
+		trigger = {
+			c:CRO ?= this
+		}
+		localization_key = waddle_croatia_adjective
+	}
+	text = {
+		trigger = {
+			c:CUB ?= this
+		}
+		localization_key = waddle_cuba_adjective
+	}
+	text = {
+		trigger = {
+			c:CYP ?= this
+		}
+		localization_key = waddle_cyprus_adjective
+	}
+	text = {
+		trigger = {
+			c:CZH ?= this
+		}
+		localization_key = waddle_czechoslovakia_adjective
+	}
+	text = {
+		trigger = {
+			c:DEN ?= this
+		}
+		localization_key = waddle_denmark_adjective
+	}
+	text = {
+		trigger = {
+			c:EGY ?= this
+		}
+		localization_key = waddle_egypt_adjective
+	}
+	text = {
+		trigger = {
+			c:ENG ?= this
+		}
+		localization_key = waddle_england_adjective
+	}
+	text = {
+		trigger = {
+			c:EST ?= this
+		}
+		localization_key = waddle_estonia_adjective
+	}
+	text = {
+		trigger = {
+			c:ETH ?= this
+		}
+		localization_key = waddle_ethiopia_adjective
+	}
+	text = {
+		trigger = {
+			c:FIN ?= this
+		}
+		localization_key = waddle_finland_adjective
+	}
+	text = {
+		trigger = {
+			c:FRA ?= this
+		}
+		localization_key = waddle_france_adjective
+	}
+	text = {
+		trigger = {
+			c:GBR ?= this
+		}
+		localization_key = waddle_great_britain_adjective
+	}
+	text = {
+		trigger = {
+			c:GEO ?= this
+		}
+		localization_key = waddle_georgia_caucasus_adjective
+	}
+	text = {
+		trigger = {
+			c:GER ?= this
+		}
+		localization_key = waddle_germany_adjective
+	}
+	text = {
+		trigger = {
+			c:GRE ?= this
+		}
+		localization_key = waddle_greece_adjective
+	}
+	text = {
+		trigger = {
+			c:GUA ?= this
+		}
+		localization_key = waddle_guatemala_adjective
+	}
+	text = {
+		trigger = {
+			c:HAN ?= this
+		}
+		localization_key = waddle_hanover_adjective
+	}
+	text = {
+		trigger = {
+			c:HES ?= this
+		}
+		localization_key = waddle_hesse_adjective
+	}
+	text = {
+		trigger = {
+			c:HND ?= this
+		}
+		localization_key = waddle_india_adjective
+	}
+	text = {
+		trigger = {
+			c:HOL ?= this
+		}
+		localization_key = waddle_holstein_adjective
+	}
+	text = {
+		trigger = {
+			c:HON ?= this
+		}
+		localization_key = waddle_honduras_adjective
+	}
+	text = {
+		trigger = {
+			c:HUN ?= this
+		}
+		localization_key = waddle_hungary_adjective
+	}
+	text = {
+		trigger = {
+			c:IBE ?= this
+		}
+		localization_key = waddle_iberia_adjective
+	}
+	text = {
+		trigger = {
+			c:IRE ?= this
+		}
+		localization_key = waddle_ireland_adjective
+	}
+	text = {
+		trigger = {
+			c:ITA ?= this
+		}
+		localization_key = waddle_italy_adjective
+	}
+	text = {
+		trigger = {
+			c:JAP ?= this
+		}
+		localization_key = waddle_japan_adjective
+	}
+	text = {
+		trigger = {
+			c:KAZ ?= this
+		}
+		localization_key = waddle_kazakhstan_adjective
+	}
+	text = {
+		trigger = {
+			c:KOR ?= this
+		}
+		localization_key = waddle_korea_adjective
+	}
+	text = {
+		trigger = {
+			c:KUR ?= this
+		}
+		localization_key = waddle_kurdistan_adjective
+	}
+	text = {
+		trigger = {
+			c:KYR ?= this
+		}
+		localization_key = waddle_kyrgyzstan_adjective
+	}
+	text = {
+		trigger = {
+			c:LAT ?= this
+		}
+		localization_key = waddle_latvia_adjective
+	}
+	text = {
+		trigger = {
+			c:LEB ?= this
+		}
+		localization_key = waddle_lebanon_adjective
+	}
+	text = {
+		trigger = {
+			c:LIT ?= this
+		}
+		localization_key = waddle_lithuania_adjective
+	}
+	text = {
+		trigger = {
+			c:LUX ?= this
+		}
+		localization_key = waddle_luxembourg_adjective
+	}
+	text = {
+		trigger = {
+			c:MAL ?= this
+		}
+		localization_key = waddle_mali_adjective
+	}
+	text = {
+		trigger = {
+			c:MCH ?= this
+		}
+		localization_key = waddle_manchuria_adjective
+	}
+	text = {
+		trigger = {
+			c:MEX ?= this
+		}
+		localization_key = waddle_mexico_adjective
+	}
+	text = {
+		trigger = {
+			c:MGL ?= this
+		}
+		localization_key = waddle_mongolia_adjective
+	}
+	text = {
+		trigger = {
+			c:MOL ?= this
+		}
+		localization_key = waddle_moldavia_adjective
+	}
+	text = {
+		trigger = {
+			c:MOR ?= this
+		}
+		localization_key = waddle_morocco_adjective
+	}
+	text = {
+		trigger = {
+			c:NAV ?= this
+		}
+		localization_key = waddle_navarra_adjective
+	}
+	text = {
+		trigger = {
+			c:NEP ?= this
+		}
+		localization_key = waddle_nepal_adjective
+	}
+	text = {
+		trigger = {
+			c:NET ?= this
+		}
+		localization_key = waddle_netherlands_adjective
+	}
+	text = {
+		trigger = {
+			c:NOR ?= this
+		}
+		localization_key = waddle_norway_adjective
+	}
+	text = {
+		trigger = {
+			c:NZL ?= this
+		}
+		localization_key = waddle_new_zealand_adjective
+	}
+	text = {
+		trigger = {
+			c:OCC ?= this
+		}
+		localization_key = waddle_occitania_adjective
+	}
+	text = {
+		trigger = {
+			c:OMA ?= this
+		}
+		localization_key = waddle_oman_adjective
+	}
+	text = {
+		trigger = {
+			c:PAK ?= this
+		}
+		localization_key = waddle_pakistan_adjective
+	}
+	text = {
+		trigger = {
+			c:PAL ?= this
+		}
+		localization_key = waddle_palestine_adjective
+	}
+	text = {
+		trigger = {
+			c:PCO ?= this
+		}
+		localization_key = waddle_puerto_rico_adjective
+	}
+	text = {
+		trigger = {
+			c:PER ?= this
+		}
+		localization_key = waddle_persia_iran_adjective
+	}
+	text = {
+		trigger = {
+			c:PHI ?= this
+		}
+		localization_key = waddle_philippines_adjective
+	}
+	text = {
+		trigger = {
+			c:PNM ?= this
+		}
+		localization_key = waddle_panama_adjective
+	}
+	text = {
+		trigger = {
+			c:POL ?= this
+		}
+		localization_key = waddle_poland_adjective
+	}
+	text = {
+		trigger = {
+			c:POR ?= this
+		}
+		localization_key = waddle_portugal_adjective
+	}
+	text = {
+		trigger = {
+			c:PRU ?= this
+		}
+		localization_key = waddle_prussia_adjective
+	}
+	text = {
+		trigger = {
+			c:ROM ?= this
+		}
+		localization_key = waddle_romania_adjective
+	}
+	text = {
+		trigger = {
+			c:RUS ?= this
+		}
+		localization_key = waddle_russia_adjective
+	}
+	text = {
+		trigger = {
+			c:RWD ?= this
+		}
+		localization_key = waddle_rwanda_adjective
+	}
+	text = {
+		trigger = {
+			c:SAR ?= this
+		}
+		localization_key = waddle_sardinia_piedmont_adjective
+	}
+	text = {
+		trigger = {
+			c:SAX ?= this
+		}
+		localization_key = waddle_saxony_adjective
+	}
+	text = {
+		trigger = {
+			c:SCA ?= this
+		}
+		localization_key = waddle_scandinavia_adjective
+	}
+	text = {
+		trigger = {
+			c:SCO ?= this
+		}
+		localization_key = waddle_scotland_adjective
+	}
+	text = {
+		trigger = {
+			c:SER ?= this
+		}
+		localization_key = waddle_serbia_adjective
+	}
+	text = {
+		trigger = {
+			c:SIC ?= this
+		}
+		localization_key = waddle_two_sicilies_adjective
+	}
+	text = {
+		trigger = {
+			c:SLO ?= this
+		}
+		localization_key = waddle_slovenia_adjective
+	}
+	text = {
+		trigger = {
+			c:SLV ?= this
+		}
+		localization_key = waddle_slovakia_adjective
+	}
+	text = {
+		trigger = {
+			c:SOM ?= this
+		}
+		localization_key = waddle_somalia_adjective
+	}
+	text = {
+		trigger = {
+			c:SPA ?= this
+		}
+		localization_key = waddle_spain_adjective
+	}
+	text = {
+		trigger = {
+			c:SUD ?= this
+		}
+		localization_key = waddle_sudan_adjective
+	}
+	text = {
+		trigger = {
+			c:SWE ?= this
+		}
+		localization_key = waddle_sweden_adjective
+	}
+	text = {
+		trigger = {
+			c:SWI ?= this
+		}
+		localization_key = waddle_switzerland_adjective
+	}
+	text = {
+		trigger = {
+			c:SYR ?= this
+		}
+		localization_key = waddle_syria_adjective
+	}
+	text = {
+		trigger = {
+			c:TIB ?= this
+		}
+		localization_key = waddle_tibet_adjective
+	}
+	text = {
+		trigger = {
+			c:TJI ?= this
+		}
+		localization_key = waddle_tajikistan_adjective
+	}
+	text = {
+		trigger = {
+			c:TUN ?= this
+		}
+		localization_key = waddle_tunis_adjective
+	}
+	text = {
+		trigger = {
+			c:TUR ?= this
+		}
+		localization_key = waddle_turkey_adjective
+	}
+	text = {
+		trigger = {
+			c:TUS ?= this
+		}
+		localization_key = waddle_tuscany_adjective
+	}
+	text = {
+		trigger = {
+			c:UKR ?= this
+		}
+		localization_key = waddle_ukraine_adjective
+	}
+	text = {
+		trigger = {
+			c:USA ?= this
+		}
+		localization_key = waddle_united_states_adjective
+	}
+	text = {
+		trigger = {
+			c:UZB ?= this
+		}
+		localization_key = waddle_uzbekistan_adjective
+	}
+	text = {
+		trigger = {
+			c:VNZ ?= this
+		}
+		localization_key = waddle_venezuela_adjective
+	}
+	text = {
+		trigger = {
+			c:WAL ?= this
+		}
+		localization_key = waddle_wallachia_adjective
+	}
+	text = {
+		trigger = {
+			c:WLL ?= this
+		}
+		localization_key = waddle_wallonia_adjective
+	}
+	text = {
+		trigger = {
+			c:WLS ?= this
+		}
+		localization_key = waddle_wales_adjective
+	}
+	text = {
+		trigger = {
+			c:YUG ?= this
+		}
+		localization_key = waddle_yugoslavia_adjective
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = waddle_else_adjective
+	}
+}

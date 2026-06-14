@@ -1,0 +1,18 @@
+INJECT:combat_unit_type_irregular_infantry = { battle_modifier = { unit_kill_rate_add = 0.02 } }
+INJECT:combat_unit_type_line_infantry = { battle_modifier = { unit_kill_rate_add = 0.05 } }
+INJECT:combat_unit_type_skirmish_infantry = { battle_modifier = { unit_kill_rate_add = 0.10 } }
+INJECT:combat_unit_type_trench_infantry = { battle_modifier = { unit_kill_rate_add = 0.14 } }
+INJECT:combat_unit_type_squad_infantry = { battle_modifier = { unit_kill_rate_add = 0.17 } }
+INJECT:combat_unit_type_mechanized_infantry = { battle_modifier = { unit_kill_rate_add = 0.20 } }
+
+INJECT:combat_unit_type_cannon_artillery = { battle_modifier = { unit_kill_rate_add = 0.08 } }
+INJECT:combat_unit_type_mobile_artillery = { battle_modifier = { unit_kill_rate_add = 0.05 } }
+INJECT:combat_unit_type_shrapnel_artillery = { battle_modifier = { unit_kill_rate_add = 0.10 } }
+INJECT:combat_unit_type_siege_artillery = { battle_modifier = { unit_kill_rate_add = 0.13 } }
+INJECT:combat_unit_type_heavy_tank = { battle_modifier = { unit_kill_rate_add = 0.20 } }
+
+INJECT:combat_unit_type_hussars = { battle_modifier = { unit_kill_rate_add = 0.03 } }
+INJECT:combat_unit_type_dragoons = { battle_modifier = { unit_kill_rate_add = 0.06 } }
+INJECT:combat_unit_type_cuirassiers = { battle_modifier = { unit_kill_rate_add = 0.06 } }
+INJECT:combat_unit_type_lancers = { battle_modifier = { unit_kill_rate_add = 0.03 } }
+INJECT:combat_unit_type_light_tanks = { battle_modifier = { unit_kill_rate_add = 0.16 } }

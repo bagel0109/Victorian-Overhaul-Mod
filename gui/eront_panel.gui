@@ -1,0 +1,147 @@
+# COPY-PASTED FOR NOW
+@panel_width_minus_20 = 520			# used to be 440
+@panel_width_minus_20_half = 260	# used to be 220
+@panel_width_minus_10 = 530			# used to be 450
+@panel_width = 540  				# used to be 460
+@panel_width_half = 270				# used to be 230
+@panel_width_plus_10 = 550  		# used to be 470
+@panel_width_plus_14 = 554			# used to be 474
+@panel_width_plus_14_half = 277		# used to be 237
+@panel_width_plus_20 = 560			# used to be 480
+@panel_width_plus_30 = 570			# used to be 490
+@panel_width_plus_70 = 610			# used to be 530
+
+types front_panel_types
+{
+### BATTLE ITEM
+	type battle_item = button {
+		using = default_button
+		size = { @panel_width 55 }
+		onclick = "[InformationPanelBar.OpenBattlePanelTab(Battle.AccessSelf, 'default')]"
+		onmousehierarchyenter = "[AccessHighlightManager.HighlightBattle(Battle.Self)]"
+		onmousehierarchyleave = "[AccessHighlightManager.RemoveHighlight]"
+		alwaystransparent = no
+		tooltip = "[Battle.GetStatusString]"
+
+		icon = {
+			using = highlighted_square_selection
+
+			block "highlight_visibility" {
+				visible = "[Battle.IsBeingHighlighted]"
+			}
+		}
+			
+		small_flag = {
+			datacontext = "[Battle.GetAttacker]"
+			parentanchor = left|vcenter
+			position = { 10 0 }
+		}
+		
+		flowcontainer = {
+			parentanchor = center
+			spacing = 15
+			
+			textbox = {
+				margin_left = 0
+				raw_text = "[Battle.GetUnitIcon] #v [Battle.CalcCurrentAttackerManpower|Dv]#!"
+				size = { 100 50 }
+				align = right|nobaseline
+				parentanchor = vcenter
+				using = fontsize_large
+			}
+
+			flowcontainer = {
+				spacing = 7
+				parentanchor = vcenter
+				datacontext = "[Battle.AccessAttackerBattleParticipant]"
+
+				manpower_bar = {
+					size = { 8 30 }
+					parentanchor = vcenter
+
+					blockoverride "manpower_values" {
+						max = "[Battle.GetStartingAttackerManpower]"
+						value = "[Battle.CalcCurrentAttackerManpower]"
+					}
+
+					blockoverride "manpower_tooltip" {
+						tooltip = "BATTLE_MANPOWER_ATTACKER_TOOLTIP"
+					}
+				}
+
+				white_progressbar_vertical = {
+					size = { 8 30 }
+					tooltip = "BATTLE_MORALE_TOOLTIP"
+					parentanchor = vcenter
+					
+					blockoverride "values" {
+						min = 0
+						max = 1
+						value = "[FixedPointToFloat( BattleParticipant.GetMorale )]"
+					}
+					blockoverride "color" {
+						color = "[GetMoraleColorVec( BattleParticipant.GetMorale )]"
+					}
+				}
+			}
+			
+			button = {
+				size = { 45 45 }
+				texture = "[Battle.GetBattleIcon]"
+				alwaystransparent = yes
+				parentanchor = vcenter
+			}
+
+			flowcontainer = {
+				spacing = 7
+				parentanchor = vcenter
+				datacontext = "[Battle.AccessDefenderBattleParticipant]"
+
+				white_progressbar_vertical = {
+					size = { 8 30 }
+					tooltip = "BATTLE_MORALE_TOOLTIP"
+					parentanchor = vcenter
+					
+					blockoverride "values" {
+						min = 0
+						max = 1
+						value = "[FixedPointToFloat( BattleParticipant.GetMorale )]"
+					}
+					blockoverride "color" {
+						color = "[GetMoraleColorVec( BattleParticipant.GetMorale )]"
+					}
+				}
+
+				manpower_bar = {
+					size = { 8 30 }
+					parentanchor = vcenter
+
+					blockoverride "manpower_values" {
+						max = "[Battle.GetStartingDefenderManpower]"
+						value = "[Battle.CalcCurrentDefenderManpower]"
+					}
+
+					blockoverride "manpower_tooltip" {
+						tooltip = "BATTLE_MANPOWER_DEFENDER_TOOLTIP"
+					}
+				}
+			}
+			
+			textbox = {
+				margin_left = 0
+				raw_text = "[Battle.GetUnitIcon] #v [Battle.CalcCurrentDefenderManpower|Dv]#!"
+				size = { 100 50 }
+				align = left|nobaseline
+				parentanchor = vcenter
+				using = fontsize_large
+			}
+			
+		}
+			
+		small_flag = {
+			datacontext = "[Battle.GetDefender]"
+			parentanchor = right|vcenter
+			position = { -10 0 }
+		}
+	}
+}

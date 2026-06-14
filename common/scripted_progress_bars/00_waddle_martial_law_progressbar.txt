@@ -1,0 +1,20 @@
+﻿je_martial_law_progress_bar = {
+	name = "je_martial_law_progress_bar"
+	desc = "je_martial_law_progress_bar_desc"
+
+	double_sided_bad = yes
+
+	start_value = 0
+    min_value = 0
+    max_value = 100
+
+	weekly_progress = {
+		owner = {
+			add = waddle_martial_law_control_target
+			scope:journal_entry = {
+				subtract = "scripted_bar_progress(je_martial_law_progress_bar)"
+			}
+			divide = 3
+		}
+	}
+}

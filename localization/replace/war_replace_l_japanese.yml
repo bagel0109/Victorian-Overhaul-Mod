@@ -1,0 +1,23 @@
+﻿l_japanese:
+ WAR_EXHAUSTION_FROM_CASUALTIES: "最大軍事規模#v [Multiply_int32(SCOPE.GetRootScope.GetCountry.GetNumBattalions,'(int32)1000')|kv]#!に対して[SCOPE.sWar('war').GetCasualties(SCOPE.GetRootScope.GetCountry.Self)|Dv]の[SCOPE.GetRootScope.GetCountry.GetAdjective][concept_casualties]を被り、[SCOPE.GetRootScope.GetCountry.GetName]は戦闘の[SCOPE.sWar('war').GetSizeWeightedLostBattlesFraction(SCOPE.GetRootScope.GetCountry.Self)|%1v]に敗北しています"
+ WAR_EXHAUSTION_FROM_TURMOIL: "[SCOPE.GetRootScope.GetCountry.GetName]の[concept_radical]人口（[SCOPE.GetRootScope.GetCountry.CalcTurmoil|%1v]）"
+ WAR_EXHAUSTION_FROM_EVENTS: "その他"
+
+ MARKER_COMBAT_UNITS_TYPE_AND_NUM: "[SelectLocalization(GreaterThan_int64(FormationMarker.CalcCurrentManpower, '(int64)100000'), 'MARKER_ARMY_BIG', 'MARKER_ARMY_SMALL')]"
+ MARKER_ARMY_SMALL: "[FormationMarker.CalcCurrentManpower|0*v]"
+ MARKER_ARMY_BIG: "[FormationMarker.CalcCurrentManpower|Dv]"
+ ARTICLE_COUNTRY_WILL_NOT_COLONIZE: "[Country.GetName][ConcatIfNeitherEmpty(' ', AddLocalizationIf(Country.IsLocalPlayer, 'YOU'))][ConcatIfNeitherEmpty(' ', SelectLocalization(EqualTo_string(ArticleDraft.GetArticleType.GetNameNoFormatting, Localize('transfer_claims')), 'ARTICLE_COUNTRY_WILL_NOT_COLONIZE_FAKE', 'ARTICLE_COUNTRY_WILL_NOT_COLONIZE_REAL'))][StrategicRegion.GetName]"
+ ARTICLE_COUNTRY_WILL_NOT_COLONIZE_REAL: "#b 植民地化しません#! [Concept('concept_colony', '$concept_colonize$')] "
+ ARTICLE_COUNTRY_WILL_NOT_COLONIZE_FAKE: "#b 請求権を移譲します#! "
+
+ concept_war_support: "戦争スコア"
+ concept_war_support_desc: "国家が[concept_war]で戦闘作戦を継続できる軍事能力の指標です。$concept_war_support$が[GetDefine('NWar','AUTO_CAPITULATE_WAR_SUPPORT')|v0]に達すると、$concept_country$は即座に降伏し、すべての[Concept('concept_war_goal','$concept_war_goals$')]を押し付けられるようになります。"
+
+ WAR_PANEL_WAR_SUPPORT_DESC:0 "#HEADER 戦争スコア#!（$COUNTRY_NAME$）\n現在値：#variable $SUPPORT|1+=$#!"
+ WAR_PANEL_WAR_SUPPORT_DESC_INITIAL:1 "初期[concept_war_support]：#variable [GetDefine('NDiplomacy','BASE_WAR_SUPPORT')|+=1]#!"
+ WAR_PANEL_WAR_SUPPORT_DESC_BATTLES:0 "\n戦闘から：#variable $BATTLES|1+=$#!"
+ WAR_PANEL_WAR_SUPPORT_DESC_EXHAUSTION:0 "\n疲弊から：#variable $EXHAUSTION|1+=$#!"
+ WAR_PANEL_WAR_SUPPORT_DESC_SITUATIONS:1 "\nイベントから：#variable $SITUATIONS|1+=$#!"
+ WAR_PANEL_WAR_SUPPORT_UNABLE_TO_CAPITULATE: ""
+
+ WAR_SUPPORT_CANNOT_BE_NEGATIVE: "相手側が以下の[Concept('concept_war_goal','$concept_war_goals$')]を[Concept('concept_controlled_war_goal','$concept_controlled_war_goal_short$')]として#b支配していません#!:"

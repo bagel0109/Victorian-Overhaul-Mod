@@ -1,0 +1,8 @@
+﻿REPLACE_OR_CREATE:demilitarised_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	state_conscription_rate_mult = -10000
+	state_building_barrack_max_level_add = -1000000
+	state_building_naval_base_max_level_add = -1000000
+	unit_army_experience_gain_mult = -1
+	country_disallow_aggressive_plays_bool = yes
+}

@@ -1,0 +1,79 @@
+﻿REPLACE:violate_sovereignty_war_check = {
+	save_temporary_scope_as = relevant_war
+
+	OR = {
+		# Target country's own land theaters.
+		scope:target_country = {
+			any_scope_theater = {
+				is_land_theater = yes
+
+				save_temporary_scope_as = target_theater
+
+				OR = {
+					scope:relevant_war.attacker_warleader = {
+						any_scope_theater = {
+							is_land_theater = yes
+
+							check_area = {
+								mode = adjacent
+								target = scope:target_theater
+							}
+						}
+					}
+
+					scope:relevant_war.defender_warleader = {
+						any_scope_theater = {
+							is_land_theater = yes
+
+							check_area = {
+								mode = adjacent
+								target = scope:target_theater
+							}
+						}
+					}
+				}
+			}
+		}
+
+		# Target country's colonial / dominion subjects' land theaters.
+		scope:target_country = {
+			any_subject_or_below = {
+				OR = {
+					is_subject_type = subject_type_chartered_company
+					is_subject_type = subject_type_colony
+					is_subject_type = subject_type_dominion
+				}
+
+				any_scope_theater = {
+					is_land_theater = yes
+
+					save_temporary_scope_as = target_theater
+
+					OR = {
+						scope:relevant_war.attacker_warleader = {
+							any_scope_theater = {
+								is_land_theater = yes
+
+								check_area = {
+									mode = adjacent
+									target = scope:target_theater
+								}
+							}
+						}
+
+						scope:relevant_war.defender_warleader = {
+							any_scope_theater = {
+								is_land_theater = yes
+
+								check_area = {
+									mode = adjacent
+									target = scope:target_theater
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

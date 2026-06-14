@@ -1,0 +1,2945 @@
+INJECT_OR_CREATE:WES = {
+	states = {
+		STATE_WESTPHALIA
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:POM = {
+	states = {
+		STATE_POMERANIA
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:AUS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CSA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ASA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:LOU = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:AGJ = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:AMZ = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:GRI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:JAP = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:DEN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:FIN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NOR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SCN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BEL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CAT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:FLA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NET = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:POR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SCO = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ULS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:WLS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NAV = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:WLL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ANH = {
+	states = {
+		STATE_ANHALT
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BAD = {
+	states = {
+		STATE_BADEN
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BAV = {
+	states = {
+		STATE_BAVARIA
+		STATE_FRANCONIA
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BRA = {
+	states = {
+		STATE_BRUNSWICK
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BRE = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:DZG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:FRM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:HAM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:HES = {
+	states = {
+		STATE_HESSE
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:HOL = {
+	states = {
+		STATE_SCHLESWIG_HOLSTEIN
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:LOM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:LUC = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MOD = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PAP = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PAR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PRA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SAR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SIC = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TRE = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TUS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:VEN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BOH = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KRA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CRI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:EST = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:HUN = {
+	use_culture_states = yes
+	required_states_fraction = 0.5
+	ai_will_do = {
+		NOT = { c:KUK ?= this }
+	}
+}
+
+INJECT_OR_CREATE:LIT = {
+	use_culture_states = yes
+	required_states_fraction = 0.45
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:LAT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:GAL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SLV = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SWI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TRS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:UKR = {
+	use_culture_states = yes
+	required_states_fraction = 0.4
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ALB = {
+	use_culture_states = yes
+	required_states_fraction = 0.4
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BOS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BUL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CRE = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CRO = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CYP = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ION = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MOL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MON = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:WAL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ABU = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:DAG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:AZB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BUK = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:GEO = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:HDJ = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:IRQ = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KHI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KOK = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NEJ = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:OMA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:JAB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MAH = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KAT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ZAI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:LAH = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BHN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:HND = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:AWA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BAS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BER = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BHO = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BIK = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BUN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:GWA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:JAI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:JAS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:JOD = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KAL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KUT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:LAD = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MAK = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MEW = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NAG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SIK = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SIN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TRA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ACE = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BAL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BHU = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:LAN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BRU = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BUR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CAM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:DAI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:JAV = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:LUA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CHP = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:JOH = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SIA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CMI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MGL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:XIN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PHI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MCH = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CAL = {
+	states = {
+		STATE_CALIFORNIA
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:COS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CUB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:DES = {
+	states = {
+		STATE_UTAH
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:DOM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ELS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:GUA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ALT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MTC = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:HON = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NEN = {
+	states = {
+		STATE_MAINE
+		STATE_NEW_HAMPSHIRE
+		STATE_VERMONT
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NEW = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NIC = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PNM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:QUE = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ONT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NBS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NVS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PRG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:VNZ = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ISR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BYE = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:JAN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BRI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MAY = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ORG = {
+	states = {
+		STATE_OREGON
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:JAM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BAH = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PCO = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MKT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NAH = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:GRN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ANL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CAS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SMI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MLT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PRM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:HZJ = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TRC = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SIB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:YAK = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ASM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MNP = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TOB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KLT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:HTH = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KRN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KHM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KHN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:EZO = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:QIA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:FRS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:YUN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:YUE = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:AYM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PUE = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NNV = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MSC = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SRB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:YUC = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:RIO = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PNI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CEY = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:OCC = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TUV = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:COR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TNS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:FER = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:IUS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NCA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:DON = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:EOT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:LEB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KUR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:GLI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PAL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:HEK = {
+	states = {
+		STATE_HESSE
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:UOM = {
+	states = {
+		STATE_MICHIGAN
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CIR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CHC = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ASS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KLM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SCH = {
+	states = {
+		STATE_SCHLESWIG_HOLSTEIN
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KZH = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:UZH = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:OZH = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SAV = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:RHE = {
+	states = {
+		STATE_NORTH_RHINE
+		STATE_RHINELAND
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PRC = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KRL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TAR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BKR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BRY = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KMC = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CKC = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ALI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:URL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KNT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:UDM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CHV = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MRD = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MRI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TJI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:UZB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KYR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PAU = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:EQT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CTR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NPU = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SPU = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:RSM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:GRG = {
+	states = {
+		STATE_GEORGIA
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:FLR = {
+	states = {
+		STATE_FLORIDA
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TIS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KAB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KAN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:HER = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CHT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MAI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KUN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ARB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BHW = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ABK = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:LUR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MAZ = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BEI = {
+	use_culture_states = yes
+	required_states_fraction = 0.6
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KAF = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:LIM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:GAR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PTA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ALW = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:COO = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SHS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:JHN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PUD = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KOT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:IDA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NAW = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:DHA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:JUN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BHV = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PLP = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SAT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KHP = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BAG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SUR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KNO = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:JEY = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MYB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PTN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NAR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KHR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:LBL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KPR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:DIR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SWT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:COC = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ALK = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MLD = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BIH = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ARK = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:IDS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+
+
+INJECT_OR_CREATE:CON = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:EGY = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ETH = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MAD = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MAS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:LIB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MOR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NAL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ORA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SAF = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SOK = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TRI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TRN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TUN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ZAN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ZUL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SIL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MTB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MSH = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MNC = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MSK = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NAM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:HRO = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:LZO = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TSW = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:WBL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KZM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BMB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KSN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:OVM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:LND = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KBA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MNB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NYM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:HHE = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:FTJ = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BUG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ASH = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:YKA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KON = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:LNG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:FNG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BNG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BST = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TKE = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BOB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:LGA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:HMB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:LBA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BNY = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ANK = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ACH = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KRG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:RWD = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BRD = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MSI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TRK = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:LUO = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:GGO = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SNG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KKY = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:WSG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:GLD = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MJT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:DFR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ISQ = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:HOB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:DAK = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ZND = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:DFT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:DNK = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NUE = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TPS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:AWS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SHW = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:HAR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BRN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KFA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SDM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:WLG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TGR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:GJM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:WLO = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BGM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BOR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BGI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:WAD = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:AIR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MSN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:OYO = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BEN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CAY = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:JLF = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:FTR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KNG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:DAH = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MOS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KRT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SGU = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TRZ = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KBU = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BND = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SRR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SSU = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MDK = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:HAU = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BLE = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KRU = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KBD = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:AYI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:EWE = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:IBO = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:DLA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TBI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:AHG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TUA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:OUA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ADG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BSS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TIR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:IBL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KSS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:GAO = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TIV = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SRA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:EQU = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BJA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NBA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SUD = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SKM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CHW = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:LMW = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MKU = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SNA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BTG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:XHO = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:UYA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ZIM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MAL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:AFS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SAH = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TUG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:AIT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:GZA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MRV = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BRG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BMM = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MGB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INJECT_OR_CREATE:NTU = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NTO = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KNK = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PPU = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:HLA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BLA = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BLG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KTI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:FJI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SKH = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MCR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:VNT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NRU = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PLY = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:ULR = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NSW = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:WAS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SAS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:UNT = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NNG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:KAU = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:GML = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:NZL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TAS = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:DEI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SAK = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PON = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SMB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:JMB = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:YOG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SRK = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BTN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SEL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PRK = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SUL = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:SLW = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TID = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:STG = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:BNJ = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MGD = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:YUZ = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:WTI = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:MRN = {
+	use_culture_states = yes
+	required_states_fraction = 0.75
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:PRU = {
+	states = {
+		STATE_BRANDENBURG
+		STATE_POMERANIA
+		STATE_WEST_PRUSSIA
+		STATE_EAST_PRUSSIA
+		STATE_SILESIA
+		STATE_POSEN
+		STATE_GREATER_POLAND
+		STATE_MAZOVIA
+	}
+	required_states_fraction = 0.8
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:POL = {
+	use_culture_states = yes
+	required_states_fraction = 0.3
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:TEX = {
+	states = {
+		STATE_TEXAS
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}
+
+INJECT_OR_CREATE:CLI = {
+	states = {
+		STATE_NORTH_CAROLINA
+		STATE_SOUTH_CAROLINA
+	}
+	required_states_fraction = 1
+	ai_will_do = { always = yes }
+}

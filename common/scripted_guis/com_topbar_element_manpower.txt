@@ -1,0 +1,7 @@
+REPLACE_OR_CREATE:com_topbar_element_manpower = {
+    scope = country
+
+    is_shown = {
+        always = yes
+    }
+}

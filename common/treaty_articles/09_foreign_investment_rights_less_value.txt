@@ -1,0 +1,10 @@
+﻿INJECT:foreign_investment_rights = {
+
+	ai = {
+
+		wargoal_score_multiplier = {
+			min = 0
+			max = 0.01
+		}
+	}
+}

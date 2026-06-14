@@ -1,0 +1,132 @@
+﻿je_waddle_martial_law = {
+	icon = "gfx/interface/icons/event_icons/battalions_100.dds"
+
+	group = je_group_crises
+
+	immediate = {
+		set_variable = { name = waddle_martial_law_length value = 0 }
+		set_variable = { name = waddle_martial_law_control_extra value = 0 }
+		remove_variable = waddle_martial_law_ended
+		scope:journal_entry = { add_modifier = base_martial_law_modifier }
+
+		scope:journal_entry = {
+			    hidden_effect = {
+			        remove_modifier = base_martial_law_modifier_scaled_half
+			    }
+			    add_modifier = {
+			        name = base_martial_law_modifier_scaled_half
+			        multiplier = 0
+			    }
+			}
+			scope:journal_entry = {
+			    hidden_effect = {
+			        remove_modifier = base_martial_law_modifier_scaled_full
+			    }
+			    add_modifier = {
+			        name = base_martial_law_modifier_scaled_full
+			        multiplier = 0
+			    }
+			}
+			scope:journal_entry = {
+			    hidden_effect = {
+			        remove_modifier = base_martial_law_modifier_scaled_time
+			    }
+			    add_modifier = {
+			        name = base_martial_law_modifier_scaled_time
+			        multiplier = 0
+			    }
+			}
+	}
+
+	scripted_button = waddle_end_martial_law_button
+
+	scripted_progress_bar = je_martial_law_progress_bar
+
+	on_weekly_pulse = {
+		events = {
+		}
+	}
+
+	on_monthly_pulse = {
+		random_events = {
+			150 = 0
+		}
+		effect = {
+			change_variable = { name = waddle_martial_law_length add = 1 }
+			scope:journal_entry = {
+			    hidden_effect = {
+			        remove_modifier = base_martial_law_modifier_scaled_half
+			    }
+			    add_modifier = {
+			        name = base_martial_law_modifier_scaled_half
+			        multiplier = {
+						value = root.waddle_martial_law_control_target
+						subtract = 50
+						divide = 50
+					}
+			    }
+			}
+			scope:journal_entry = {
+			    hidden_effect = {
+			        remove_modifier = base_martial_law_modifier_scaled_full
+			    }
+			    add_modifier = {
+			        name = base_martial_law_modifier_scaled_full
+			        multiplier = {
+						value = root.waddle_martial_law_control_target
+						divide = 100
+					}
+			    }
+			}
+			scope:journal_entry = {
+			    hidden_effect = {
+			        remove_modifier = base_martial_law_modifier_scaled_time
+			    }
+			    add_modifier = {
+			        name = base_martial_law_modifier_scaled_time
+			        multiplier = {
+						value = root.var:waddle_martial_law_length
+					}
+			    }
+			}
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = waddle_martial_law_ended_tt
+			has_variable = waddle_martial_law_ended
+		}
+	}
+
+	on_complete = {
+		
+	}
+
+	fail = {
+
+	}
+
+	on_fail = {
+
+	}
+
+	invalid = {
+
+	}
+
+	on_invalid = {
+
+	}
+
+	status_desc = {
+
+	}
+
+	should_be_pinned_by_default = yes
+
+	transferable = no
+	can_revolution_inherit = no
+
+	weight = 100
+}

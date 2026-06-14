@@ -1,0 +1,816 @@
+﻿REPLACE_OR_CREATE:join_wars = {
+    kind = directed
+    cost = 0
+
+    relations_progress_per_day = 0.5
+    relations_improvement_max = 20
+
+	icon = "gfx/interface/icons/alert_icons/unused/can_mobilize.dds"
+
+	flags = {
+
+	}
+
+	maintenance_paid_by = target_country
+	usage_limit = once_per_side
+
+	required_inputs = {
+
+    }
+
+    unlocked_by_technologies = {
+        international_relations
+    }
+
+	visible = {
+
+	}
+
+	possible = {
+		is_in_guerilla_war = no
+		scope:other_country = {
+			is_in_guerilla_war = no
+		}
+		any_diplomatic_play = {
+			AND = {
+				is_war = yes
+				any_scope_play_involved = {
+					this = scope:other_country
+				}
+				NOT = {
+					any_scope_play_involved = {
+						this = root
+					}
+				}
+				OR = {
+					AND = {
+						OR = {
+							target_is = scope:other_country
+							any_scope_target_ally = {
+								this = scope:other_country
+							}
+						}
+						any_scope_initiator_ally = {
+							count = all
+							NOT = { is_subject_of = root }
+							NOT = {
+								any_scope_treaty = {
+									binds = root
+									any_scope_article = {
+										has_type = defensive_pact
+									}
+								}
+							}	
+							NOT = {
+								any_scope_treaty = {
+									binds = root
+									any_scope_article = {
+										has_type = guarantee_independence
+									}
+								}
+							}	
+							NOT = {
+								any_scope_treaty = {
+									binds = root
+									any_scope_article = {
+										has_type = alliance
+									}
+								}
+							}	
+							NOT = { has_truce_with = root }
+						}
+						initiator = {
+							NOT = { is_subject_of = root }
+							NOT = {
+								any_scope_treaty = {
+									binds = root
+									any_scope_article = {
+										has_type = defensive_pact
+									}
+								}
+							}	
+							NOT = {
+								any_scope_treaty = {
+									binds = root
+									any_scope_article = {
+										has_type = guarantee_independence
+									}
+								}
+							}	
+							NOT = {
+								any_scope_treaty = {
+									binds = root
+									any_scope_article = {
+										has_type = alliance
+									}
+								}
+							}	
+							NOT = { has_truce_with = root }
+						}
+					}
+					AND = {
+						OR = {
+							initiator_is = scope:other_country
+							any_scope_initiator_ally = {
+								this = scope:other_country
+							}
+						}
+						any_scope_target_ally = {
+							count = all
+							NOT = { is_subject_of = root }
+							NOT = {
+								any_scope_treaty = {
+									binds = root
+									any_scope_article = {
+										has_type = defensive_pact
+									}
+								}
+							}	
+							NOT = {
+								any_scope_treaty = {
+									binds = root
+									any_scope_article = {
+										has_type = guarantee_independence
+									}
+								}
+							}	
+							NOT = {
+								any_scope_treaty = {
+									binds = root
+									any_scope_article = {
+										has_type = alliance
+									}
+								}
+							}	
+							NOT = { has_truce_with = root }
+						}
+						target = {
+							NOT = { is_subject_of = root }
+							NOT = {
+								any_scope_treaty = {
+									binds = root
+									any_scope_article = {
+										has_type = defensive_pact
+									}
+								}
+							}	
+							NOT = {
+								any_scope_treaty = {
+									binds = root
+									any_scope_article = {
+										has_type = guarantee_independence
+									}
+								}
+							}	
+							NOT = {
+								any_scope_treaty = {
+									binds = root
+									any_scope_article = {
+										has_type = alliance
+									}
+								}
+							}	
+							NOT = { has_truce_with = root }
+						}
+					}
+				}
+			}
+		}
+		OR = {
+			aggressive_diplomatic_plays_permitted = yes
+			is_subject_of = scope:other_country
+		}
+	}
+
+    can_ratify = {
+        
+    }
+
+    on_entry_into_force = {
+		every_diplomatic_play = {
+			limit = {
+				AND = {
+					is_war = yes
+					any_scope_play_involved = {
+						this = scope:article_options.target_country
+					}
+					NOT = {
+						any_scope_play_involved = {
+							this = scope:article_options.source_country
+						}
+					}
+					OR = {
+						# target_country is on target side, so source_country joins target side
+						# Therefore source_country must be allowed to fight initiator side
+						AND = {
+							OR = {
+								target_is = scope:article_options.target_country
+								any_scope_target_ally = {
+									this = scope:article_options.target_country
+								}
+							}
+							any_scope_initiator_ally = {
+								count = all
+								NOT = { is_subject_of = scope:article_options.source_country }
+								NOT = {
+									any_scope_treaty = {
+										binds = scope:article_options.source_country
+										any_scope_article = {
+											has_type = defensive_pact
+										}
+									}
+								}
+								NOT = {
+									any_scope_treaty = {
+										binds = scope:article_options.source_country
+										any_scope_article = {
+											has_type = guarantee_independence
+										}
+									}
+								}
+								NOT = {
+									any_scope_treaty = {
+										binds = scope:article_options.source_country
+										any_scope_article = {
+											has_type = alliance
+										}
+									}
+								}
+								NOT = { has_truce_with = scope:article_options.source_country }
+							}
+							initiator = {
+								NOT = { is_subject_of = scope:article_options.source_country }
+								NOT = {
+									any_scope_treaty = {
+										binds = scope:article_options.source_country
+										any_scope_article = {
+											has_type = defensive_pact
+										}
+									}
+								}
+								NOT = {
+									any_scope_treaty = {
+										binds = scope:article_options.source_country
+										any_scope_article = {
+											has_type = guarantee_independence
+										}
+									}
+								}
+								NOT = {
+									any_scope_treaty = {
+										binds = scope:article_options.source_country
+										any_scope_article = {
+											has_type = alliance
+										}
+									}
+								}
+								NOT = { has_truce_with = scope:article_options.source_country }
+							}
+						}
+
+						# target_country is on initiator side, so source_country joins initiator side
+						# Therefore source_country must be allowed to fight target side
+						AND = {
+							OR = {
+								initiator_is = scope:article_options.target_country
+								any_scope_initiator_ally = {
+									this = scope:article_options.target_country
+								}
+							}
+							any_scope_target_ally = {
+								count = all
+								NOT = { is_subject_of = scope:article_options.source_country }
+								NOT = {
+									any_scope_treaty = {
+										binds = scope:article_options.source_country
+										any_scope_article = {
+											has_type = defensive_pact
+										}
+									}
+								}
+								NOT = {
+									any_scope_treaty = {
+										binds = scope:article_options.source_country
+										any_scope_article = {
+											has_type = guarantee_independence
+										}
+									}
+								}
+								NOT = {
+									any_scope_treaty = {
+										binds = scope:article_options.source_country
+										any_scope_article = {
+											has_type = alliance
+										}
+									}
+								}
+								NOT = { has_truce_with = scope:article_options.source_country }
+							}
+							target = {
+								NOT = { is_subject_of = scope:article_options.source_country }
+								NOT = {
+									any_scope_treaty = {
+										binds = scope:article_options.source_country
+										any_scope_article = {
+											has_type = defensive_pact
+										}
+									}
+								}
+								NOT = {
+									any_scope_treaty = {
+										binds = scope:article_options.source_country
+										any_scope_article = {
+											has_type = guarantee_independence
+										}
+									}
+								}
+								NOT = {
+									any_scope_treaty = {
+										binds = scope:article_options.source_country
+										any_scope_article = {
+											has_type = alliance
+										}
+									}
+								}
+								NOT = { has_truce_with = scope:article_options.source_country }
+							}
+						}
+					}
+				}
+			}
+			war = {
+				join_war = {
+					target = scope:article_options.source_country
+					side = scope:article_options.target_country
+				}
+			}
+			# if = {
+			# 	limit = {
+			# 		OR = {
+			# 			initiator_is = scope:article_options.target_country
+			# 			any_scope_initiator_ally = {
+			# 				this = scope:article_options.target_country
+			# 			}
+			# 		}
+			# 	}
+			# 	#intiaitor
+			# 	add_initiator_backers = {
+			# 		scope:article_options.source_country
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		OR = {
+			# 			target_is = scope:article_options.target_country
+			# 			any_scope_target_ally = {
+			# 				this = scope:article_options.target_country
+			# 			}
+			# 		}
+			# 	}
+			# 	#target
+			# 	add_target_backers = {
+			# 		scope:article_options.source_country
+			# 	}
+			# }
+		}
+	}
+
+	on_withdrawal = {}
+	on_break = {
+		
+	}
+
+	ai = {
+
+		treaty_categories = {
+			military
+		}
+
+		evaluation_chance = {
+			value = 0
+
+			if = {
+				limit = {
+					country_rank >= rank_value:unrecognized_major_power
+				}
+				add = {
+					value = country_rank
+					multiply = 0.025
+				}
+			}
+		}
+
+		article_ai_usage = {
+			request
+			offer
+		}
+
+		inherent_accept_score = {
+			value = 0
+
+			if = {
+				limit = {
+					scope:source_country ?= this
+				}
+
+				# We are doing this to be able to reuse loc across treaties and diplomatic actions
+				scope:source_country = {
+					save_temporary_scope_as = target
+				}
+				scope:target_country = {
+					save_temporary_scope_as = actor
+				}
+
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_BASE_ADDITIONAL"
+					value = -10
+				}
+
+				if = {
+					limit = {
+						has_strategy = ai_strategy_armed_isolationism
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_ISOLATIONIST"
+						add = -25
+					}
+				}
+
+				if = {
+					limit = {
+						"num_alliances_and_defensive_pacts_with_rivals(scope:target_country)" > 0
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_ALLIED_TO_RIVALS"
+						value = "num_alliances_and_defensive_pacts_with_rivals(scope:target_country)"
+						multiply = -15
+					}
+				}
+
+				if = {
+					limit = {
+						"num_alliances_and_defensive_pacts_with_allies(scope:target_country)" > 0
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_ALLIED_TO_ALLIES"
+						value = "num_alliances_and_defensive_pacts_with_allies(scope:target_country)"
+						multiply = 10
+					}
+				}
+
+				if = {
+					limit = {
+						"num_shared_rivals(scope:target_country)" > 0
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_SHARED_RIVALS"
+						value = "num_shared_rivals(scope:target_country)"
+						multiply = 10
+						max = 30
+					}
+				}
+
+				if = {
+					limit = {
+						exists = power_bloc
+						exists = scope:target_country.power_bloc
+					}
+					if = {
+						limit = {
+							power_bloc = scope:target_country.power_bloc
+						}
+						add = {
+							desc = "DIPLOMATIC_ACCEPTANCE_SAME_POWER_BLOC"
+							value = 25
+						}
+					}
+					else = {
+						add = {
+							desc = "DIPLOMATIC_ACCEPTANCE_DIFFERENT_POWER_BLOC"
+							value = -25
+						}
+					}
+				}
+
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_ATTITUDE"
+					if = {
+						limit = {
+							OR = {
+								has_attitude = {
+									who = scope:target_country
+									attitude = antagonistic
+								}
+								has_attitude = {
+									who = scope:target_country
+									attitude = domineering
+								}
+								has_attitude = {
+									who = scope:target_country
+									attitude = belligerent
+								}
+								has_attitude = {
+									who = scope:target_country
+									attitude = rebellious
+								}
+							}
+						}
+						value = -1000
+					}
+				}
+			}
+			else = {
+				scope:source_country = {
+					save_temporary_scope_as = actor
+				}
+				scope:target_country = {
+					save_temporary_scope_as = target
+				}
+
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_BASE_ADDITIONAL"
+					value = -10
+				}
+
+				if = {
+					limit = {
+						"num_alliances_and_defensive_pacts_with_rivals(scope:source_country)" > 0
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_ALLIED_TO_RIVALS"
+						value = "num_alliances_and_defensive_pacts_with_rivals(scope:source_country)"
+						multiply = -15
+					}
+				}
+
+				if = {
+					limit = {
+						"num_alliances_and_defensive_pacts_with_allies(scope:source_country)" > 0
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_ALLIED_TO_ALLIES"
+						value = "num_alliances_and_defensive_pacts_with_allies(scope:source_country)"
+						multiply = 10
+					}
+				}
+
+				if = {
+					limit = {
+						"num_shared_rivals(scope:source_country)" > 0
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_SHARED_RIVALS"
+						value = "num_shared_rivals(scope:source_country)"
+						multiply = 10
+						max = 30
+					}
+				}
+
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_ATTITUDE"
+					if = {
+						limit = {
+							OR = {
+								has_attitude = {
+									who = scope:source_country
+									attitude = antagonistic
+								}
+								has_attitude = {
+									who = scope:source_country
+									attitude = domineering
+								}
+								has_attitude = {
+									who = scope:source_country
+									attitude = belligerent
+								}
+								has_attitude = {
+									who = scope:source_country
+									attitude = rebellious
+								}
+							}
+						}
+						value = -1000
+					}
+					if = {
+						limit = {
+							OR = {
+								has_attitude = {
+									who = scope:source_country
+									attitude = loyal
+								}
+								has_attitude = {
+									who = scope:source_country
+									attitude = genial
+								}
+								has_attitude = {
+									who = scope:source_country
+									attitude = cooperative
+								}
+								has_attitude = {
+									who = scope:source_country
+									attitude = conciliatory
+								}
+							}
+						}
+						value = 20
+					}
+					if = {
+						limit = {
+							OR = {
+								has_attitude = {
+									who = scope:source_country
+									attitude = protective
+								}
+							}
+						}
+						value = 50
+					}
+				}
+			}
+
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_ATTITUDE"
+				scope:target_country = {
+					every_cobelligerent_in_war = {
+						if = {
+							limit = {
+								OR = {
+									scope:source_country = {
+										has_attitude = {
+											who = prev
+											attitude = antagonistic
+										}
+										has_attitude = {
+											who = prev
+											attitude = domineering
+										}
+										has_attitude = {
+											who = prev
+											attitude = belligerent
+										}
+										has_attitude = {
+											who = prev
+											attitude = rebellious
+										}
+									}
+								}
+							}
+							value = -10
+						}
+						if = {
+							limit = {
+								OR = {
+									scope:source_country = {
+										has_attitude = {
+											who = prev
+											attitude = loyal
+										}
+										has_attitude = {
+											who = prev
+											attitude = genial
+										}
+										has_attitude = {
+											who = prev
+											attitude = cooperative
+										}
+										has_attitude = {
+											who = prev
+											attitude = conciliatory
+										}
+									}
+								}
+							}
+							value = 10
+						}
+					}
+					every_enemy_in_war = {
+						if = {
+							limit = {
+								OR = {
+									scope:source_country = {
+										has_attitude = {
+											who = prev
+											attitude = antagonistic
+										}
+										has_attitude = {
+											who = prev
+											attitude = domineering
+										}
+										has_attitude = {
+											who = prev
+											attitude = belligerent
+										}
+										has_attitude = {
+											who = prev
+											attitude = rebellious
+										}
+									}
+								}
+							}
+							value = 10
+						}
+						if = {
+							limit = {
+								OR = {
+									scope:source_country = {
+										has_attitude = {
+											who = prev
+											attitude = loyal
+										}
+										has_attitude = {
+											who = prev
+											attitude = genial
+										}
+										has_attitude = {
+											who = prev
+											attitude = cooperative
+										}
+										has_attitude = {
+											who = prev
+											attitude = conciliatory
+										}
+									}
+								}
+							}
+							value = -10
+						}
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					scope:target_country ?= this
+				}
+				subtract = {
+					add = {
+						scope:target_country = {
+							every_cobelligerent_in_war = {
+								add = army_power_projection
+							}
+							add = army_power_projection
+						}
+					}
+					subtract = {
+						scope:target_country = {
+							every_enemy_in_war = {
+								add = army_power_projection
+							}
+						}
+					}
+					divide = {
+						scope:target_country = {
+							every_cobelligerent_in_war = {
+								add = army_power_projection
+							}
+							add = army_power_projection
+							every_enemy_in_war = {
+								add = army_power_projection
+							}
+						}
+					}
+					multiply = 100
+					desc = "DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_FORCE_BALANCE"
+				}
+			}
+
+			if = {
+				limit = {
+					scope:source_country ?= this
+				}
+				add = {
+					add = {
+						scope:target_country = {
+							every_cobelligerent_in_war = {
+								add = army_power_projection
+							}
+							add = army_power_projection
+						}
+					}
+					subtract = {
+						scope:target_country = {
+							every_enemy_in_war = {
+								add = army_power_projection
+							}
+						}
+					}
+					divide = {
+						scope:target_country = {
+							every_cobelligerent_in_war = {
+								add = army_power_projection
+							}
+							add = army_power_projection
+							every_enemy_in_war = {
+								add = army_power_projection
+							}
+						}
+					}
+					multiply = 100
+					desc = "DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_FORCE_BALANCE"
+					max = 0
+				}
+			}
+			max = 20
+		}
+	}
+}

@@ -1,0 +1,21 @@
+﻿# This is executed last among all history
+GLOBAL = {
+	add_com_topbar_element = {
+		element_name = com_topbar_element_manpower
+	}
+	c:GBR = {
+		add_to_variable_list = {
+			name = com_topbar_second_line
+			target = scope:com_topbar_element_manpower
+		}
+	}
+	add_com_topbar_element = {
+		element_name = com_topbar_element_waddle_war_support
+	}
+	c:GBR = {
+		add_to_variable_list = {
+			name = com_topbar_second_line
+			target = scope:com_topbar_element_waddle_war_support
+		}
+	}
+}

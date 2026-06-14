@@ -1,0 +1,123 @@
+﻿REPLACE_OR_CREATE:waddle_martial_law_control_target = {
+	value = 0
+	add = {
+		value = 60
+		desc = "WADDLE_MARTIAL_LAW_BASE"
+	}
+
+	#capacity
+	add = {
+		value = total_manpower
+		divide = total_population
+		multiply = 1500
+		desc = "WADDLE_MARTIAL_LAW_MILITARY_PRESENCE"
+	}
+
+	add = {
+		value = owner.institution:institution_police.investment
+		multiply = 3.5
+		desc = "WADDLE_MARTIAL_LAW_BUREAUCRACY"
+	}
+
+	add = {
+		value = loyalist_fraction
+		multiply = 65
+		desc = "WADDLE_MARTIAL_LAW_LOYALISTS"
+	}
+
+	add = {
+		value = has_government_clout
+		multiply = 10
+		desc = "WADDLE_MARTIAL_LAW_GOVERNMENT_CLOUT"
+	}
+
+	add = {
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_outlawed_dissent
+			}
+			add = 2
+		}
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_censorship
+			}
+			add = 1
+		}
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_militarized_police
+			}
+			add = 2
+		}
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_dedicated_police
+			}
+			add = 1
+		}
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_secret_police
+			}
+			add = 1
+		}
+		multiply = 1.8
+		desc = "WADDLE_MARTIAL_LAW_REPRESSIVE_LAWS"
+	}
+
+
+
+
+	#pressure
+
+	subtract = {
+		value = country_turmoil
+		multiply = 28
+		desc = "WADDLE_MARTIAL_LAW_TURMOIL"
+	}
+
+	subtract = {
+		value = radical_fraction
+		multiply = 20
+		desc = "WADDLE_MARTIAL_LAW_RADICALS"
+	}
+
+	subtract = {
+		value = owner.var:waddle_martial_law_length
+		divide = 2
+		max = 12
+		desc = "WADDLE_MARTIAL_LAW_LENGTH"
+	}
+
+	subtract = {
+		value = literacy_rate
+		multiply = 5
+		desc = "WADDLE_MARTIAL_LAW_LITERACY"
+	}
+
+
+
+	#misc
+
+	add = {
+		value = net_fixed_income
+		divide = total_income
+		multiply = 10
+		desc = "WADDLE_MARTIAL_LAW_BUDGET"
+	}
+
+	add = {
+		add = var:waddle_martial_law_control_extra
+		desc = "WADDLE_MARTIAL_LAW_EXTRA"
+	}
+
+	multiply = {
+		value = 1
+		subtract = enemy_occupation
+		desc = "WADDLE_MARTIAL_LAW_OCCUPATION"
+	}
+
+	min = 0
+	max = 100
+}

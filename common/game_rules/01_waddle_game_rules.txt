@@ -1,0 +1,55 @@
+﻿waddle_dismantle_allowed = {
+	default = waddle_dismantle_allowed
+
+	waddle_dismantle_allowed = {
+		flag = waddle_dismantle_allowed
+	}
+
+	waddle_dismantle_allowed_player = {
+		flag = waddle_dismantle_allowed_player
+	}
+
+	waddle_dismantle_blocked = {
+	}
+}
+
+waddle_demilitarise_allowed = {
+	default = waddle_demilitarise_allowed
+
+	waddle_demilitarise_allowed = {
+		flag = waddle_demilitarise_allowed
+	}
+
+	waddle_demilitarise_allowed_player = {
+		flag = waddle_demilitarise_allowed_player
+	}
+
+	waddle_demilitarise_blocked = {
+	}
+}
+
+waddle_liberate_country_subject_allowed = {
+	default = waddle_liberate_country_subject_allowed
+
+	waddle_liberate_country_subject_allowed = {
+		flag = waddle_liberate_country_subject_allowed
+	}
+
+	waddle_liberate_country_subject_allowed_player = {
+		flag = waddle_liberate_country_subject_allowed_player
+	}
+
+	waddle_liberate_country_subject_blocked = {
+	}
+}
+
+waddle_colonies_join = {
+	default = waddle_colonies_do_not
+
+	waddle_colonies_do = {
+		flag = waddle_colonies_do
+	}
+
+	waddle_colonies_do_not = {
+	}
+}

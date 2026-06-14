@@ -1,0 +1,59 @@
+# Adding base game elements if they are missing
+on_monthly_pulse = {
+    on_actions = {
+        add_waddle_war_support_to_bar
+    }
+}
+
+# Adding base game elements if they are missing
+add_waddle_war_support_to_bar = {
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    any_in_global_list = {
+                        variable = com_topbar_items
+                        this = flag:com_topbar_element_waddle_war_support
+                    }
+                }
+            }
+            add_com_topbar_element = {
+                element_name = com_topbar_element_waddle_war_support
+            }
+            every_country = {
+                add_to_variable_list = {
+                    name = com_topbar_second_line
+                    target = scope:com_topbar_element_waddle_war_support
+                }
+            }
+        }
+    }
+}
+
+on_game_started_after_lobby = {
+	on_actions = { waddle_war_support_topbar_activate }
+}
+
+waddle_war_support_topbar_activate = {
+	effect = {
+        if = {
+            limit = {
+                NOT = {
+                    any_in_global_list = {
+                        variable = com_topbar_items
+                        this = flag:com_topbar_element_waddle_war_support
+                    }
+                }
+            }
+            add_com_topbar_element = {
+                element_name = com_topbar_element_waddle_war_support
+            }
+            every_country = {
+                add_to_variable_list = {
+                    name = com_topbar_second_line
+                    target = scope:com_topbar_element_waddle_war_support
+                }
+            }
+        }
+	}
+}

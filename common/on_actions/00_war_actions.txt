@@ -1,0 +1,751 @@
+on_secession_start = {
+    on_actions = {
+		minorities
+	}
+}
+
+minorities = {
+    effect = {
+        scope:target = {
+            every_primary_culture = {
+                save_temporary_scope_as = temp_culture_scope
+                every_country = {
+                    limit = {
+                        country_rank >= rank_value:major_power
+                        NOT = {
+                            country_has_primary_culture = scope:temp_culture_scope
+                        }
+                    }
+                    add_radicals = {
+                        value = 0.3
+                        culture = scope:temp_culture_scope
+                    }
+                }
+            }
+        }
+    }
+}
+
+on_game_started = {
+    on_actions = {
+        set_war_start_date_beginning
+    }
+}
+
+set_war_start_date_beginning = {
+    effect = {
+        every_diplomatic_play = {
+            limit = {
+                is_war = yes
+            }
+            set_variable = {
+                name = waddle_start_date
+                value = year
+            }
+            set_variable = {
+                name = waddle_war_length
+                value = {
+                    value = year
+                    subtract = var:waddle_start_date
+                }
+            }
+            set_variable = {
+                name = waddle_war_balance
+                value = {
+                    war = {
+                        value = waddle_war_progress
+                    }
+                }
+            }
+            set_variable = {
+                name = waddle_war_balance_change
+                value = 0
+            }
+        }
+        random_diplomatic_play = {
+            limit = {
+                is_war = yes
+                war = {
+                    any_war_participant = {
+                        c:SPA ?= this
+                    }
+                }
+            }
+            set_variable = {
+                name = waddle_start_date
+                value = 1833
+            }
+        }
+        random_diplomatic_play = {
+            limit = {
+                is_war = yes
+                war = {
+                    any_war_participant = {
+                        c:TEX ?= this
+                    }
+                }
+            }
+            set_variable = {
+                name = waddle_start_date
+                value = 1835
+            }
+        }
+    }
+}
+
+on_diplo_play_war_start = {
+    on_actions = {
+		set_war_start_date
+	}
+}
+
+set_war_start_date = {
+    effect = {
+        set_variable = {
+            name = waddle_start_date
+            value = year
+        }
+        set_variable = {
+            name = waddle_war_length
+            value = {
+                value = year
+                subtract = var:waddle_start_date
+            }
+        }
+        set_variable = {
+            name = waddle_war_balance
+            value = {
+                war = {
+                    value = waddle_war_progress
+                }
+            }
+        }
+        set_variable = {
+            name = waddle_war_balance_change
+            value = 0
+        }
+    }
+}
+
+on_yearly_pulse = {
+    on_actions = {
+        set_war_length
+    }
+}
+
+set_war_length = {
+    effect = {
+        every_diplomatic_play = {
+            limit = {
+                is_war = yes
+            }
+            set_variable = {
+                name = waddle_war_length
+                value = {
+                    value = year
+                    subtract = var:waddle_start_date
+                }
+            }
+            set_variable = {
+                name = waddle_war_balance_change
+                value = {
+                    war = {
+                        value = waddle_war_progress
+                    }
+                    subtract = {
+                        value = var:waddle_war_balance
+                    }
+                }
+            }
+            set_variable = {
+                name = waddle_war_balance
+                value = {
+                    war = {
+                        value = waddle_war_progress
+                    }
+                }
+            }
+        }
+    }
+}
+
+on_monthly_pulse_country = {
+    random_events = {
+        chance_to_happen = 8
+        1 = war_stuff.4
+        1 = war_stuff.6
+        1 = war_stuff.11
+        1 = war_stuff.12
+        1 = war_stuff.13
+        1 = war_stuff.14
+        1 = war_stuff.15
+        1 = war_stuff.16
+        1 = war_stuff.17
+        1 = war_stuff.18
+        1 = war_stuff.19
+        1 = war_stuff.20
+        1 = war_stuff.21
+        1 = war_stuff.22
+        1 = war_stuff.23
+        1 = war_stuff.24
+        1 = war_stuff.25
+        1 = war_stuff.26
+        50 = war_stuff.9
+    }
+    on_actions = {
+        clear_occupation
+    }
+}
+
+clear_occupation = {
+    effect = {
+        if = {
+			limit = {
+                capital = {
+                    has_variable = occupied
+                }
+                is_at_war = no
+            }
+            capital = {
+                remove_variable = occupied
+            }
+        }
+    }
+}
+
+on_battle_won = {
+    on_actions = {
+        ai_on_battle_won
+    }
+    events = {
+        war_stuff.1
+    }
+}
+
+ai_on_battle_won = {
+    effect = {
+        if = {
+			limit = {
+                scope:attacker.owner ?= root
+            }
+            random_scope_war = {
+                limit = {
+                    any_scope_front = {
+                        any_scope_general = {
+                            this = scope:attacker
+                        }
+                    }
+                }
+                add_war_war_support = {
+                    target = scope:attacker.owner
+                    value = 1
+                }
+            }
+        }
+		if = {
+			limit = {
+                scope:defender.owner ?= root
+            }
+            random_scope_war = {
+                limit = {
+                    any_scope_front = {
+                        any_scope_general = {
+                            this = scope:defender
+                        }
+                    }
+                }
+                add_war_war_support = {
+                    target = scope:defender.owner
+                    value = 0.5
+                }
+            }
+        }
+    }
+}
+
+on_battle_lost = {
+    on_actions = {
+        ai_on_battle_lost
+    }
+}
+
+ai_on_battle_lost = {
+    effect = {
+		if = {
+			limit = {
+                scope:defender.owner ?= root
+            }
+            random_scope_war = {
+                limit = {
+                    any_scope_front = {
+                        any_scope_general = {
+                            this = scope:defender
+                        }
+                    }
+                }
+                add_war_war_support = {
+                    target = scope:defender.owner
+                    value = -0.5
+                }
+            }
+        }
+        
+    }
+}
+
+anschluss = {
+    effect = {
+        if = {
+            limit = {
+                OR = {
+                    AND = {
+                        exists = c:NGF
+                        c:NGF = {
+                            country_rank >= rank_value:great_power
+                            is_at_war = no
+                            is_subject = no
+                        }
+                    }
+                    AND = {
+                        exists = c:GER
+                        c:GER = {
+                            country_rank >= rank_value:great_power
+                            is_at_war = no
+                            is_subject = no
+                        }
+                    }
+                }
+                AND = {
+                    exists = c:AUS
+                    c:AUS = {
+                        country_rank <= rank_value:minor_power
+                        is_at_war = no
+                        is_ai = yes
+                        num_states <= 6
+                    }
+                    OR = {
+                        c:AUS = {
+                            is_subject = no
+                        }
+                        OR = {
+                            AND = {
+                                exists = c:GER
+                                c:AUS = {
+                                    is_subject_of = c:GER
+                                }
+                            }
+                            AND = {
+                                exists = c:NGF
+                                c:AUS = {
+                                    is_subject_of = c:NGF
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            c:GER ?= {
+                trigger_event = { id = war_stuff.7 }
+            }
+            c:NGF ?= {
+                trigger_event = { id = war_stuff.7 }
+            }
+        }
+    }
+}
+
+on_monthly_pulse_state = {
+    on_actions = {
+        deportations
+    }
+}
+
+deportations = {
+    effect = {
+        if = {
+            limit = {
+                has_decree = decree_violent_suppression
+            }
+
+            save_temporary_scope_as = temp_state_scope
+            every_scope_culture = {
+                save_temporary_scope_as = temp_culture_scope
+                if = {
+                    limit = {
+                        scope:temp_state_scope = {
+                            owner = {
+                                country_average_cultural_acceptance = {  
+                                    target = scope:temp_culture_scope
+                                    value < 50
+                                }
+                            }
+                        }
+                        NOT = {
+                            is_primary_culture_of = owner
+                        }
+                    }
+                    
+                    scope:temp_state_scope = {
+                        owner = {
+                            change_infamy = {
+                                value = 0.01
+                            }
+                        }
+                        kill_population_percent_in_state = {
+                            percent = 0.005
+                            culture = scope:temp_culture_scope
+                        }
+                        add_culture_standard_of_living_modifier = {
+                            culture = scope:temp_culture_scope
+                            months = 1
+                            multiplier = -10
+                        }
+                    }
+                }
+                
+            }
+        }
+        
+    }
+}
+
+# on_monthly_pulse_country = {
+#     on_actions = {
+#         civil_war_annex
+#     }
+# }
+
+civil_war_annex = {
+    effect = {
+        if = {
+            limit = {
+                c:CHI ?= this
+                exists = c:TPG
+                any_enemy_in_war = {
+                    has_journal_entry = je_taiping_revolution
+                }
+            }
+            every_scope_state = {
+                limit = {
+                    controller = {
+                        has_journal_entry = je_taiping_revolution
+                    }
+                    is_capital = no
+                }
+                set_state_owner = c:TPG
+            }
+        }
+        if = {
+            limit = {
+                c:TPG ?= this
+                exists = c:CHI
+                any_enemy_in_war = {
+                    has_journal_entry = je_taiping
+                }
+            }
+            every_scope_state = {
+                limit = {
+                    controller = {
+                        has_journal_entry = je_taiping
+                    }
+                    is_capital = no
+                }
+                set_state_owner = c:CHI
+            }
+        }
+    }
+}
+
+# on_secession_start = {
+#     on_actions = {
+#         china_death
+#     }
+# }
+
+# on_revolution_start = {
+#     on_actions = {
+#         china_death
+#     }
+# }
+
+# on_country_default = {
+# 	on_actions = {
+#         china_death
+#     }
+# }
+
+china_death = {
+    effect = {
+		if = {
+			limit = {
+				has_journal_entry = je_warlord_china
+			}
+			chi_remove_1_fragile_unity = yes
+		}
+    }
+}
+
+on_diplomatic_play_started = {
+	on_actions = {
+		colonies_join
+	}
+}
+
+on_diplo_play_join_side = {
+	on_actions = {
+		colonies_join_side
+	}
+}
+
+on_diplo_play_abandon_side = {
+	on_actions = {
+		colonies_abandon_side
+	}
+}
+
+# on_diplo_play_switch_sides = {
+# 	on_actions = {
+# 		colonies_switch_sides
+# 	}
+# }
+
+colonies_join = {
+	effect = {
+		if = {
+			limit = {
+				has_game_rule = waddle_colonies_do
+				NOT = { has_variable = waddle_colonies_updating_backers }
+			}
+
+			set_variable = { name = waddle_colonies_updating_backers value = yes }
+
+			scope:initiator = {
+				every_direct_subject = {
+					limit = {
+						NOT = {
+							has_diplomatic_pact = {
+								who = scope:initiator
+								type = exempt_from_service
+							}
+						}
+						OR = {
+							is_subject_type = subject_type_chartered_company
+							is_subject_type = subject_type_colony
+							is_subject_type = subject_type_dominion
+						}
+					}
+					root = {
+						add_initiator_backers = {
+							prev
+						}
+					}
+				}
+			}
+
+			scope:target = {
+				every_direct_subject = {
+					limit = {
+						NOT = {
+							has_diplomatic_pact = {
+								who = scope:target
+								type = exempt_from_service
+							}
+						}
+						OR = {
+							is_subject_type = subject_type_chartered_company
+							is_subject_type = subject_type_colony
+							is_subject_type = subject_type_dominion
+						}
+					}
+					root = {
+						add_target_backers = {
+							prev
+						}
+					}
+				}
+			}
+
+			remove_variable = waddle_colonies_updating_backers
+		}
+	}
+}
+
+colonies_join_side = {
+	effect = {
+		if = {
+			limit = {
+				has_game_rule = waddle_colonies_do
+				NOT = { has_variable = waddle_colonies_updating_backers }
+			}
+
+			set_variable = { name = waddle_colonies_updating_backers value = yes }
+
+			scope:actor = {
+				every_direct_subject = {
+					limit = {
+						NOT = {
+							has_diplomatic_pact = {
+								who = scope:actor
+								type = exempt_from_service
+							}
+						}
+						OR = {
+							is_subject_type = subject_type_chartered_company
+							is_subject_type = subject_type_colony
+							is_subject_type = subject_type_dominion
+						}
+					}
+
+					if = {
+						limit = {
+							root = {
+								OR = {
+									root.initiator ?= scope:actor
+									any_scope_initiator_ally = {
+										this = scope:actor
+									}
+								}
+							}
+						}
+						root = {
+							add_initiator_backers = {
+								prev
+							}
+						}
+					}
+
+					if = {
+						limit = {
+							root = {
+								OR = {
+									root.target ?= scope:actor
+									any_scope_target_ally = {
+										this = scope:actor
+									}
+								}
+							}
+						}
+						root = {
+							add_target_backers = {
+								prev
+							}
+						}
+					}
+				}
+			}
+
+			remove_variable = waddle_colonies_updating_backers
+		}
+	}
+}
+
+colonies_abandon_side = {
+	effect = {
+		if = {
+			limit = {
+				has_game_rule = waddle_colonies_do
+				NOT = { has_variable = waddle_colonies_updating_backers }
+			}
+
+			set_variable = { name = waddle_colonies_updating_backers value = yes }
+
+			scope:actor = {
+				every_direct_subject = {
+					limit = {
+						OR = {
+							is_subject_type = subject_type_chartered_company
+							is_subject_type = subject_type_colony
+							is_subject_type = subject_type_dominion
+						}
+					}
+
+					root = {
+						remove_initiator_backers = {
+							prev
+						}
+						remove_target_backers = {
+							prev
+						}
+					}
+				}
+			}
+
+			remove_variable = waddle_colonies_updating_backers
+		}
+	}
+}
+
+colonies_switch_sides = {
+	effect = {
+		if = {
+			limit = {
+				has_game_rule = waddle_colonies_do
+				NOT = { has_variable = waddle_colonies_updating_backers }
+			}
+
+			set_variable = { name = waddle_colonies_updating_backers value = yes }
+
+			scope:actor = {
+				every_direct_subject = {
+					limit = {
+						NOT = {
+							has_diplomatic_pact = {
+								who = scope:actor
+								type = exempt_from_service
+							}
+						}
+						OR = {
+							is_subject_type = subject_type_chartered_company
+							is_subject_type = subject_type_colony
+							is_subject_type = subject_type_dominion
+						}
+					}
+
+					if = {
+						limit = {
+							root = {
+								OR = {
+									root.initiator ?= scope:actor
+									any_scope_initiator_ally = {
+										this = scope:actor
+									}
+								}
+							}
+						}
+						root = {
+							remove_target_backers = {
+								prev
+							}
+							add_initiator_backers = {
+								prev
+							}
+						}
+					}
+
+					if = {
+						limit = {
+							root = {
+								OR = {
+									root.target ?= scope:actor
+									any_scope_target_ally = {
+										this = scope:actor
+									}
+								}
+							}
+						}
+						root = {
+							remove_initiator_backers = {
+								prev
+							}
+							add_target_backers = {
+								prev
+							}
+						}
+					}
+				}
+			}
+
+			remove_variable = waddle_colonies_updating_backers
+		}
+	}
+}

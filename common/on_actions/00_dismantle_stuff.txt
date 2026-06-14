@@ -1,0 +1,70 @@
+on_wargoal_enforced = {
+    on_actions = {
+		ai_win_war
+	}
+}
+
+ai_win_war = {
+	effect = {
+        root = {
+            clear_variable_list = allies
+            add_to_variable_list = { name = allies target = root } 
+            scope:diplomatic_play = {
+                every_scope_play_involved = {
+                    limit = {
+                        is_diplomatic_play_ally_of = root
+                        is_subject = no
+                    }
+                    root = {
+                        add_to_variable_list = { name = allies target = prev } 
+                    }
+                }
+            }
+            every_subject_or_below = {
+                add_liberty_desire = {
+                    value = {
+                        value = scope:wargoal_impact
+                        multiply = 0.2
+                        multiply = -1
+                    }
+                }
+            }
+            every_scope_culture = {
+                limit = {
+                    is_primary_culture_of = ROOT
+                }
+                save_temporary_scope_as = temp_culture_scope
+                every_state = {
+                    limit = {
+                        owner = ROOT
+                        state_region = {is_homeland = scope:temp_culture_scope}
+                    }
+                    add_loyalists_in_state = {
+                        culture = prev
+                        value = {
+                            value = scope:wargoal_impact
+                            multiply = 0.0001
+                        }
+                        
+                    }
+                }
+            }
+        }
+        scope:target = {
+            every_subject_or_below = {
+                add_liberty_desire = {
+                    value = {
+                        value = scope:wargoal_impact
+                        multiply = 0.2
+                    }
+                }
+            }
+            add_radicals = {
+                value = {
+                    value = scope:wargoal_impact
+                    multiply = 0.0005
+                }
+            }
+        }
+	}
+}

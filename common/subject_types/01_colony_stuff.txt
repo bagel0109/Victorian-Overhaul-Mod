@@ -1,0 +1,11 @@
+﻿INJECT_OR_CREATE:subject_type_dominion = {
+	join_overlord_wars = no
+}
+
+INJECT_OR_CREATE:subject_type_colony = {
+	join_overlord_wars = no
+}
+
+INJECT_OR_CREATE:subject_type_chartered_company = {
+	join_overlord_wars = no
+}

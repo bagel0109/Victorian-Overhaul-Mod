@@ -1,0 +1,2630 @@
+﻿namespace = war_stuff
+
+#capital occupied
+war_stuff.1 = {
+	type = country_event
+	placement = scope:war_stuff_state
+
+	title = war_stuff.1.t
+	desc = war_stuff.1.d
+	flavor = war_stuff.1.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	cooldown = { days = 1 }
+
+	duration = 3
+
+	trigger = {
+		any_scope_war = {
+			any_scope_front = {
+				any_military_formation = {
+					owner = ROOT
+				}
+			}
+		}
+		any_enemy_in_war = {
+			country_rank >= root.country_rank
+			capital = {
+				NOT = { has_variable = occupied }
+				controller = {
+					this = root
+				}
+			}
+		}
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_home }
+		
+		random_enemy_in_war = {
+			limit = {
+				capital = {
+					controller = {
+						this = root
+					}
+				}
+				country_rank >= root.country_rank
+			}
+			save_scope_as = war_stuff_enemy
+			capital = {
+				save_scope_as = war_stuff_state
+				set_variable = occupied
+			}
+			random_primary_culture = {
+				save_scope_as = war_stuff_culture
+			}
+		}
+		random_scope_war = {
+			limit = {
+				any_scope_front = {
+					any_military_formation = {
+						owner = ROOT
+					}
+				}
+			}
+			save_scope_as = war_stuff_war
+			random_scope_front = {
+				limit = {
+					any_military_formation = {
+						owner = ROOT
+					}
+				}
+				random_scope_general = {
+					limit = {
+						owner = ROOT
+						commander_military_formation = {
+							owner = ROOT
+						}
+					}
+					save_scope_as = war_stuff_general
+				}
+			}
+		}
+	}
+
+	option = { # leave them
+		name = war_stuff.1.a
+		default_option = yes
+
+		scope:war_stuff_general = {
+			add_trait = honorable
+		}
+		change_relations = {
+			country = scope:war_stuff_enemy
+			value = 5
+		}
+		scope:war_stuff_enemy = {
+			trigger_event = { id = war_stuff.2 }
+		}
+		every_political_lobby = {
+			limit = {
+				target = scope:war_stuff_enemy
+				is_political_lobby_type = lobby_pro_country
+			}
+			change_appeasement = {
+				amount = 5
+				factor = appeasement_special_events_positive
+			}
+		}
+		every_political_lobby = {
+			limit = {
+				target = scope:war_stuff_enemy
+				is_political_lobby_type = lobby_anti_country
+			}
+			change_appeasement = {
+				amount = -5
+				factor = appeasement_special_events_negative
+			}
+		}
+		ai_chance = {
+			base = 60
+		}
+	}
+
+	option = { # kill
+		name = war_stuff.1.b
+
+		scope:war_stuff_state = {
+			state_region = {
+				add_devastation = 40
+			}
+			kill_population_percent_in_state = {
+				percent = 0.1
+				culture = scope:war_stuff_culture
+			}
+		}
+		scope:war_stuff_general = {
+			add_trait = cruel
+		}
+		change_infamy = 15
+		set_variable = waddle_recent_atrocity
+		change_relations = {
+			country = scope:war_stuff_enemy
+			value = -30
+		}
+		scope:war_stuff_enemy = {
+			trigger_event = { id = war_stuff.3 }
+		}
+		every_political_lobby = {
+			limit = {
+				target = scope:war_stuff_enemy
+				is_political_lobby_type = lobby_pro_country
+			}
+			change_appeasement = {
+				amount = -5
+				factor = appeasement_special_events_negative
+			}
+		}
+		every_political_lobby = {
+			limit = {
+				target = scope:war_stuff_enemy
+				is_political_lobby_type = lobby_anti_country
+			}
+			change_appeasement = {
+				amount = 5
+				factor = appeasement_special_events_positive
+			}
+		}
+		ai_chance = {
+			base = 40
+		}
+	}
+}
+
+#YOUR capital left alone
+war_stuff.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = war_stuff.2.t
+	desc = war_stuff.2.d
+	flavor = war_stuff.2.f
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	cooldown = { days = 10 }
+
+	duration = 3
+
+	trigger = {
+		capital = {
+			NOT = { controller = root }
+		}
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_home }
+		
+		capital = {
+			controller = {
+				save_scope_as = war_stuff_enemy
+			}
+		}
+	}
+
+	option = { # guh
+		name = war_stuff.2.a
+		default_option = yes
+	}
+}
+
+#YOUR capital sacked
+war_stuff.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = war_stuff.3.t
+	desc = war_stuff.3.d
+	flavor = war_stuff.3.f
+
+	event_image = {
+		video = "unspecific_devastation"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	cooldown = { days = 10 }
+
+	duration = 3
+
+	trigger = {
+		capital = {
+			NOT = { controller = root }
+		}
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_home }
+		
+		capital = {
+			controller = {
+				save_scope_as = war_stuff_enemy
+			}
+		}
+	}
+
+	option = { # guh
+		name = war_stuff.3.a
+		default_option = yes
+	}
+}
+
+#occupied riots
+war_stuff.4 = {
+	type = country_event
+	placement = scope:war_stuff_state
+
+	title = war_stuff.4.t
+	desc = war_stuff.4.d
+	flavor = war_stuff.4.f
+
+	event_image = {
+		video = "unspecific_fire"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	cooldown = { days = long_modifier_time }
+
+	duration = 3
+
+	trigger = {
+		any_scope_war = {
+			any_scope_front = {
+				any_military_formation = {
+					owner = ROOT
+				}
+			}
+		}
+		any_enemy_in_war = {
+			country_rank >= root.country_rank
+			any_scope_state = {
+				is_incorporated = yes
+				controller = {
+					this = root
+				}
+			} 
+		}
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_home }
+		
+		random_enemy_in_war = {
+			limit = {
+				any_scope_state = {
+					controller = {
+						this = root
+					}
+				}
+				country_rank >= root.country_rank
+			}
+			save_scope_as = war_stuff_enemy
+			random_primary_culture = {
+				save_scope_as = war_stuff_culture
+			}
+			random_scope_state = {
+				limit = {
+					is_incorporated = yes
+					controller = {
+						this = root
+					}
+				}
+				save_scope_as = war_stuff_state
+			}
+		}
+		random_scope_war = {
+			limit = {
+				any_scope_front = {
+					any_military_formation = {
+						owner = ROOT
+					}
+				}
+			}
+			save_scope_as = war_stuff_war
+			random_scope_front = {
+				limit = {
+					any_military_formation = {
+						owner = ROOT
+					}
+				}
+				random_scope_general = {
+					limit = {
+						owner = ROOT
+						commander_military_formation = {
+							owner = ROOT
+						}
+					}
+					save_scope_as = war_stuff_general
+				}
+			}
+		}
+	}
+
+	option = { # oppression
+		name = war_stuff.4.a
+		default_option = yes
+
+		scope:war_stuff_general = {
+			add_trait = ruthless
+			add_experience = 2
+		}
+
+		scope:war_stuff_state = {
+			state_region = {
+				add_devastation = 10
+			}
+			kill_population_percent_in_state = {
+				percent = 0.01
+				culture = scope:war_stuff_culture
+			}
+		}
+		change_infamy = 1
+		set_variable = waddle_recent_atrocity
+		change_relations = {
+			country = scope:war_stuff_enemy
+			value = -5
+		}
+		every_political_lobby = {
+			limit = {
+				target = scope:war_stuff_enemy
+				is_political_lobby_type = lobby_pro_country
+			}
+			change_appeasement = {
+				amount = -1
+				factor = appeasement_special_events_negative
+			}
+		}
+		every_political_lobby = {
+			limit = {
+				target = scope:war_stuff_enemy
+				is_political_lobby_type = lobby_anti_country
+			}
+			change_appeasement = {
+				amount = 1
+				factor = appeasement_special_events_positive
+			}
+		}
+		ai_chance = {
+			base = 80
+		}
+	}
+
+	option = { # peace
+		name = war_stuff.4.b
+		
+		scope:war_stuff_state = {
+			state_region = {
+				add_devastation = -5
+			}
+		}
+		change_infamy = -1
+		change_relations = {
+			country = scope:war_stuff_enemy
+			value = 1
+		}
+		every_political_lobby = {
+			limit = {
+				target = scope:war_stuff_enemy
+				is_political_lobby_type = lobby_pro_country
+			}
+			change_appeasement = {
+				amount = 1
+				factor = appeasement_special_events_positive
+			}
+		}
+		every_political_lobby = {
+			limit = {
+				target = scope:war_stuff_enemy
+				is_political_lobby_type = lobby_anti_country
+			}
+			change_appeasement = {
+				amount = -1
+				factor = appeasement_special_events_negative
+			}
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+}
+
+#propaganda
+war_stuff.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = war_stuff.5.t
+	desc = war_stuff.5.d
+	flavor = war_stuff.5.f
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	cooldown = { days = long_modifier_time }
+
+	duration = 3
+
+	trigger = {
+		any_scope_war = {
+			any_scope_front = {
+				any_military_formation = {
+					owner = ROOT
+				}
+			}
+		}
+		any_enemy_in_war = {
+			country_rank >= root.country_rank
+		}
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_home }
+	}
+
+	option = { # damn thats crazy
+		name = war_stuff.5.a
+		default_option = yes
+
+		every_scope_war = {
+			add_war_war_support = { target = scope:war_stuff_home value = 10 }
+		}
+	}
+}
+
+#racism
+war_stuff.6 = {
+	type = country_event
+	placement = scope:war_stuff_state
+
+	title = war_stuff.6.t
+	desc = war_stuff.6.d
+	flavor = war_stuff.6.f
+
+	event_image = {
+		video = "unspecific_vandalized_storefront"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	cooldown = { days = long_modifier_time }
+
+	duration = 3
+
+	trigger = {
+		any_scope_war = {
+			any_scope_front = {
+				any_military_formation = {
+					owner = ROOT
+				}
+			}
+		}
+		any_enemy_in_war = {
+			country_rank >= root.country_rank
+			any_primary_culture = {
+				count = 0
+				root = {
+					country_has_primary_culture = prev
+				}
+			}
+		}
+		any_scope_state = {
+			is_incorporated = yes
+		}
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_home }
+		random_enemy_in_war = {
+			limit = {
+				country_rank >= root.country_rank
+			}
+			random_primary_culture = {
+				save_scope_as = war_stuff_culture
+			}
+		}
+		random_primary_culture = {
+			save_scope_as = war_stuff_culture_other
+		}
+		random_scope_state = {
+			limit = {
+				is_incorporated = yes
+			}
+			save_scope_as = war_stuff_state
+		}
+	}
+
+	option = { # it is what it is
+		name = war_stuff.6.a
+		default_option = yes
+
+		scope:war_stuff_state = {
+			add_culture_standard_of_living_modifier = {
+				culture = scope:war_stuff_culture
+				days = short_modifier_time
+				multiplier = -5
+			}
+			add_loyalists_in_state = {
+				value = 0.2
+				culture = scope:war_stuff_culture_other
+			}
+		}
+	}
+	option = { # do something
+		name = war_stuff.6.b
+
+		scope:war_stuff_state = {
+			add_radicals_in_state = {
+				value = 0.1
+				culture = scope:war_stuff_culture_other
+			}
+			add_loyalists_in_state = {
+				value = 0.1
+				culture = scope:war_stuff_culture
+			}
+		}
+	}
+}
+
+#miracle
+# war_stuff.2 = {
+# 	type = country_event
+# 	placement = ROOT
+
+# 	title = war_stuff.1.t
+# 	desc = war_stuff.1.d
+# 	flavor = war_stuff.1.f
+
+# 	event_image = {
+# 		video = "middleeast_battlefield_trenches"
+# 	}
+
+# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+# 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+# 	cooldown = { days = normal_modifier_time }
+
+# 	duration = 3
+
+# 	trigger = {
+# 		any_scope_war = {
+# 			any_scope_front = {
+# 				any_military_formation = {
+# 					owner = ROOT
+# 				}
+# 			}
+# 		}
+# 	}
+
+# 	immediate = {
+# 		ROOT = { save_scope_as = war_stuff_home }
+# 		random_scope_war = {
+# 			limit = {
+# 				any_scope_front = {
+# 					any_military_formation = {
+# 						owner = ROOT
+# 					}
+# 				}
+# 			}
+# 			save_scope_as = war_stuff_war
+# 			random_scope_front = {
+# 				limit = {
+# 					any_military_formation = {
+# 						owner = ROOT
+# 					}
+# 				}
+# 				random_scope_general = {
+# 					limit = {
+# 						owner = ROOT
+# 						commander_military_formation = {
+# 							owner = ROOT
+# 						}
+# 					}
+# 					save_scope_as = war_stuff_general
+# 				}
+# 				random_scope_state = {
+# 					save_scope_as = war_stuff_state
+# 				}
+# 			}
+# 		}
+# 	}
+
+# 	option = { # We must entrench, entrench, and entrench some more!
+# 		name = war_stuff.1.a
+# 		default_option = yes
+
+# 		scope:war_stuff_state = {
+# 			state_region = {
+# 				add_devastation = 5
+# 			}
+# 		}
+# 		scope:war_stuff_general = {
+# 			add_trait = popular_commander
+# 		}
+# 	}
+# }
+
+#anschluss
+war_stuff.7 = {
+	type = country_event
+	placement = ROOT
+
+	title = war_stuff.7.t
+	desc = war_stuff.7.d
+	flavor = war_stuff.7.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	cooldown = { days = never_fire_again_modifier_time }
+
+	duration = 3
+
+	trigger = {
+
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_home }
+		c:AUS = { save_scope_as = war_stuff_enemy }
+	}
+
+	option = { # accept
+		name = war_stuff.7.a
+		default_option = yes
+		every_state = {
+			limit = {
+				has_claim_by = c:AUS
+			}
+			state_region = {
+				remove_claim = c:AUS
+			}
+		}
+		annex_with_incorporation = c:AUS
+		change_infamy = 20
+		add_loyalists = {
+			value = 0.2
+			culture = cu:north_german
+		}
+		add_loyalists = {
+			value = 0.2
+			culture = cu:south_german
+		}
+		add_radicals = {
+			value = 0.2
+			culture = cu:hungarian
+		}
+		add_radicals = {
+			value = 0.1
+			culture = cu:czech
+		}
+		add_radicals = {
+			value = 0.1
+			culture = cu:polish
+		}
+		every_country = {
+			limit = {
+				country_rank >= rank_value:great_power
+			}
+			trigger_event = { id = war_stuff.8 }
+		}
+		ai_chance = {
+			base = 99
+		}
+	}
+	option = { # deny
+		name = war_stuff.7.b
+		every_country = {
+			limit = {
+				country_rank >= rank_value:great_power
+			}
+			change_relations = {
+				country = root
+				value = 10
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+#anschluss notif
+war_stuff.8 = {
+	type = country_event
+	placement = ROOT
+
+	title = war_stuff.8.t
+	desc = war_stuff.8.d
+	flavor = war_stuff.8.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	cooldown = { days = long_modifier_time }
+
+	duration = 3
+
+	trigger = {
+
+	}
+
+	immediate = {
+		c:NGF ?= { save_scope_as = war_stuff_home }
+		c:GER ?= { save_scope_as = war_stuff_home }
+		c:AUS ?= { save_scope_as = war_stuff_enemy }
+	}
+
+	option = { # wo cao
+		name = war_stuff.8.a
+		default_option = yes
+
+		c:NGF ?= {
+			change_relations = {
+				country = root
+				value = -10
+			}
+		}
+		c:GER ?= {
+			change_relations = {
+				country = root
+				value = -10
+			}
+		}
+	}
+}
+
+#white peace event
+war_stuff.9 = {
+	type = country_event
+	placement = ROOT
+
+	title = war_stuff.9.t
+	desc = war_stuff.9.d
+	flavor = war_stuff.9.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	cooldown = { days = short_modifier_time }
+
+	duration = 3
+
+	trigger = {
+		any_scope_war = {
+			diplomatic_play = {
+				var:waddle_war_length > 1
+				initiator = {
+					this = root
+				}
+				NOT = {
+					has_variable = waddle_white_peace_offered
+				}
+			}
+			any_scope_front = {
+				count = 0
+				any_military_formation = {
+					owner = ROOT
+				}
+			}
+		}
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_home }
+		random_scope_war = {
+			limit = {
+				diplomatic_play = {
+					var:waddle_war_length > 0
+					initiator = {
+						this = root
+					}
+					NOT = {
+						has_variable = waddle_white_peace_offered
+					}
+				}
+				any_scope_front = {
+					count = 0
+				}
+			}
+			save_scope_as = war_stuff_war
+			diplomatic_play = {
+				target = {
+					save_scope_as = war_stuff_enemy
+				}
+				set_variable = waddle_white_peace_offered
+			}
+		}
+	}
+
+	option = { #end war
+		name = war_stuff.9.a
+		default_option = yes
+		ai_chance = { base = 100 }
+
+		scope:war_stuff_war = {
+			diplomatic_play = {
+				target = {
+					trigger_event = {
+						id = war_stuff.10
+					}
+				}
+			}
+		}
+	}
+	option = { #do not
+		name = war_stuff.9.b
+		ai_chance = { base = 1 }
+
+	}
+}
+
+#white peace request
+war_stuff.10 = {
+	type = country_event
+	placement = ROOT
+
+	title = war_stuff.10.t
+	desc = war_stuff.10.d
+	flavor = war_stuff.10.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	cooldown = { days = 10 }
+
+	duration = 3
+
+	trigger = {
+		any_scope_war = {
+			diplomatic_play = {
+				var:waddle_war_length > 0
+				target = {
+					this = root
+				}
+				# NOT = {
+				# 	has_variable = waddle_white_peace_offered
+				# }
+			}
+			any_scope_front = {
+				any_military_formation = {
+					owner = ROOT
+				}
+			}
+		}
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_enemy }
+		random_scope_war = {
+			limit = {
+				diplomatic_play = {
+					var:waddle_war_length > 0
+					target = {
+						this = root
+					}
+					NOT = {
+						has_variable = waddle_white_peace_offered
+					}
+				}
+				any_scope_front = {
+					any_military_formation = {
+						owner = ROOT
+					}
+				}
+			}
+			save_scope_as = war_stuff_war
+			diplomatic_play = {
+				initiator = {
+					save_scope_as = war_stuff_home
+				}
+			}
+		}
+	}
+
+	option = { #end war
+		name = war_stuff.10.a
+		default_option = yes
+		ai_chance = { base = 100 }
+
+		scope:war_stuff_war = {
+			diplomatic_play = {
+				end_play = yes
+			}
+		}
+	}
+	option = { #do not
+		name = war_stuff.10.b
+		ai_chance = { base = 1 }
+	}
+}
+
+#mutinies like the french
+war_stuff.11 = {
+	type = country_event
+	placement = scope:war_stuff_state
+	title = war_stuff.11.t
+	desc = war_stuff.11.d
+	flavor = war_stuff.11.f
+
+	cooldown = { days = long_modifier_time }
+	duration = 3
+	
+	event_image = {
+		video = "middleeast_battlefield_trenches"
+	}
+
+	trigger = {
+		any_scope_war = {
+			diplomatic_play = {
+				var:waddle_war_length > 1
+				var:waddle_war_balance_change < 0.1
+			}
+			any_scope_front = {
+				any_military_formation = {
+					owner = ROOT
+				}
+			}
+		}
+		waddle_war_support < 64
+		any_military_formation = {
+			count = all
+			is_fully_mobilized = yes
+		}
+	}
+
+	immediate = {
+		random_scope_war = {
+			limit = {
+				diplomatic_play = {
+					var:waddle_war_length > 1
+				}
+				any_scope_front = {
+					any_military_formation = {
+						owner = ROOT
+					}
+				}
+			}
+			random_scope_front = {
+				limit = {
+					any_military_formation = {
+						owner = ROOT
+					}
+				}
+				save_scope_as = war_stuff_front
+				random_scope_state = {
+					save_scope_as = war_stuff_state
+				}
+			}
+		}
+	}
+
+	option = {
+		name = war_stuff.11.a
+		default_option = yes
+		
+		kill_population_percent = {
+			pop_type = soldiers
+			percent = 0.01
+		}
+		
+		add_radicals = {
+			value = 0.05
+			pop_type = soldiers
+		}
+		
+		add_modifier = {
+			name = waddle_modifier_brutal_discipline
+			months = 12
+			is_decaying = yes
+		}
+	}
+
+	option = {
+		name = war_stuff.11.b
+		
+		add_modifier = {
+			name = waddle_modifier_war_concessions
+			months = 18
+			is_decaying = yes
+		}
+	}
+}
+
+# The Munitions Scandal
+war_stuff.12 = {
+    type = country_event
+    title = war_stuff.12.t
+    desc = war_stuff.12.d
+    flavor = war_stuff.12.f
+
+	cooldown = { days = long_modifier_time }
+	duration = 3
+    
+    event_image = {
+        video = "asia_factory_accident"
+    }
+
+    trigger = {
+        any_scope_war = {
+            diplomatic_play = {
+                var:waddle_war_length > 0
+            }
+			any_scope_front = {
+				any_military_formation = {
+					owner = ROOT
+				}
+			}
+        }
+        any_military_formation = {
+			count = all
+			is_fully_mobilized = yes
+		}
+
+        capital.market = {
+			owner = root
+			mg:ammunition = { market_goods_pricier > 0.25 }
+		}
+    }
+
+    option = {
+        name = war_stuff.12.a
+		default_option = yes
+        
+        add_modifier = {
+            name = waddle_modifier_industrial_seizure
+            months = 12
+            is_decaying = yes
+        }
+        
+    }
+
+    option = {
+        name = war_stuff.12.b
+        
+        add_modifier = {
+            name = waddle_modifier_careful_supply
+            months = 12
+            is_decaying = yes
+        }
+        add_radicals = {
+            value = 0.05
+            pop_type = capitalists
+        }
+    }
+}
+
+#stalemate
+war_stuff.13 = {
+	type = country_event
+	title = war_stuff.13.t
+	desc = war_stuff.13.d
+	flavor = war_stuff.13.f
+
+	cooldown = { days = long_modifier_time }
+	duration = 3
+	
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	trigger = {
+		is_at_war = yes
+		any_scope_war = {
+			diplomatic_play = {
+				var:waddle_war_length > 2 # At least 2 years of war
+				var:waddle_war_balance_change > -0.05
+				var:waddle_war_balance_change < 0.05
+			}
+			any_scope_front = {
+				any_military_formation = {
+					owner = ROOT
+				}
+			}
+		}
+		any_military_formation = {
+			count = all
+			is_fully_mobilized = yes
+		}
+	}
+
+	immediate = {
+		random_scope_war = {
+			save_scope_as = war_stuff_war
+			limit = {
+				diplomatic_play = {
+					var:waddle_war_length > 2 # At least 2 years of war
+					var:waddle_war_balance_change > -0.05
+					var:waddle_war_balance_change < 0.05
+				}
+				any_scope_front = {
+					any_military_formation = {
+						owner = ROOT
+					}
+				}
+			}
+			random_scope_front = {
+				limit = {
+					any_military_formation = {
+						owner = ROOT
+					}
+				}
+				random_scope_state = {
+					limit = {
+						NOT = {
+							owner = {
+								this = ROOT
+							}
+						}
+					}
+					owner = {
+						save_scope_as = war_stuff_enemy
+					}
+				}
+				save_scope_as = war_stuff_front
+				random_scope_general = {
+					limit = {
+						owner = ROOT
+						commander_military_formation = {
+							owner = ROOT
+						}
+					}
+					save_scope_as = war_stuff_general_offensive
+				}
+			}
+		}
+	}
+
+	option = {
+		name = war_stuff.13.a # We must break the deadlock!
+		
+		# High risk, high reward
+		add_modifier = {
+			name = waddle_modifier_desperate_offensive
+			months = 6
+			is_decaying = yes
+		}
+		set_variable = waddle_recent_desperate_offensive
+		scope:war_stuff_war = {
+			diplomatic_play = {
+				set_variable = waddle_recent_desperate_offensive
+			}
+		}
+		
+		# Significant manpower cost for the "Big Push"
+		add_radicals = {
+			value = 0.02
+			pop_type = soldiers
+		}
+	}
+
+	option = {
+		name = war_stuff.13.b # Dig in and wait
+		default_option = yes
+		
+		add_modifier = {
+			name = waddle_modifier_trench_attrition
+			months = 12
+			is_decaying = yes
+		}
+	}
+}
+
+# Liberation Offensive (Reclaiming Owned States)
+war_stuff.14 = {
+    type = country_event
+    title = war_stuff.14.t
+    desc = war_stuff.14.d
+    flavor = war_stuff.14.f
+
+    cooldown = { days = long_modifier_time }
+    duration = 3
+    
+    event_image = {
+        video = "europenorthamerica_before_the_battle"
+    }
+
+    trigger = {
+        is_at_war = yes
+        any_scope_war = {
+            # Check for stalemate
+            diplomatic_play = {
+                var:waddle_war_length > 1
+                var:waddle_war_balance_change > -0.05
+                var:waddle_war_balance_change < 0.05
+            }
+            # The Front must contain an incorporated state owned by ROOT but NOT controlled by ROOT
+			any_scope_front = {
+				any_military_formation = { owner = ROOT }
+				any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					NOT = {
+						controller = {
+							this = root
+						}
+					}
+				}
+			}
+        }
+        any_military_formation = {
+			count = all
+			is_fully_mobilized = yes
+		}
+    }
+
+    immediate = {
+        random_scope_war = {
+            save_scope_as = war_stuff_war
+            limit = {
+                any_scope_front = {
+                    any_military_formation = { owner = ROOT }
+                    any_scope_state = {
+                        is_incorporated = yes
+						owner = ROOT
+                        NOT = {
+							controller = {
+								this = root
+							}
+						}
+                    }
+                }
+            }
+            random_scope_front = {
+                limit = {
+                    any_military_formation = { owner = ROOT }
+                    any_scope_state = {
+                        is_incorporated = yes
+                        owner = ROOT
+                        NOT = {
+							controller = {
+								this = root
+							}
+						}
+                    }
+                }
+                save_scope_as = war_stuff_front
+				random_scope_state = {
+                    limit = {
+						is_incorporated = yes
+                        owner = ROOT
+                        NOT = {
+							controller = {
+								this = root
+							}
+						}
+					}
+					save_scope_as = war_stuff_liberation_state
+					controller = {
+						save_scope_as = war_stuff_enemy
+					}
+                }
+
+                random_scope_general = {
+                    limit = {
+                        owner = ROOT
+                        commander_military_formation = { owner = ROOT }
+                    }
+                    save_scope_as = war_stuff_general_liberation
+                }
+            }
+        }
+    }
+
+    option = {
+        name = war_stuff.14.a # Liberate our people!
+        
+        add_modifier = {
+            name = waddle_modifier_liberation_drive
+            months = 6
+            is_decaying = yes
+        }
+        set_variable = waddle_recent_liberation_offensive
+        scope:war_stuff_war = {
+            diplomatic_play = {
+                set_variable = waddle_recent_liberation_offensive
+            }
+        }
+        
+    }
+
+    option = {
+        name = war_stuff.14.b # It is too risky.
+        default_option = yes
+        
+        add_modifier = {
+            name = waddle_modifier_trench_attrition
+            months = 12
+            is_decaying = yes
+        }
+        every_scope_state = {
+			limit = {
+				is_incorporated = yes
+				owner = ROOT
+                NOT = { controller = ROOT }
+			}
+			add_radicals_in_state = {
+				value = 0.05
+			}
+		}
+    }
+}
+
+war_stuff.15 = {
+	type = country_event
+	placement = ROOT
+
+	title = war_stuff.15.t
+	desc = war_stuff.15.d
+	flavor = war_stuff.15.f
+
+	event_image = { video = "europenorthamerica_before_the_battle" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	cooldown = { days = long_modifier_time }
+	duration = 3
+
+	trigger = {
+		is_at_war = yes
+		OR = {
+			has_law_or_variant = law_type:law_peasant_levies
+			has_law_or_variant = law_type:law_national_militia
+			has_law_or_variant = law_type:law_mass_conscription
+		}
+		country_turmoil > 0.10
+		waddle_war_support < 80
+		any_military_formation = { is_mobilized = yes }
+		any_scope_war = {
+			diplomatic_play = { var:waddle_war_length > 1 }
+			num_country_casualties = { target = ROOT value > 10000 }
+			any_scope_front = {
+				any_military_formation = { owner = ROOT is_mobilized = yes }
+			}
+		}
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_home }
+		random_scope_war = {
+			limit = {
+				diplomatic_play = { var:waddle_war_length > 1 }
+				num_country_casualties = { target = ROOT value > 10000 }
+				any_scope_front = {
+					any_military_formation = { owner = ROOT is_mobilized = yes }
+				}
+			}
+			save_scope_as = war_stuff_war
+			random_scope_front = {
+				limit = { any_military_formation = { owner = ROOT is_mobilized = yes } }
+				save_scope_as = war_stuff_front
+				random_scope_general = {
+					limit = {
+						owner = ROOT
+						commander_military_formation = { owner = ROOT }
+					}
+					save_scope_as = war_stuff_general
+				}
+			}
+		}
+	}
+
+	option = {
+		name = war_stuff.15.a
+		default_option = yes
+		add_modifier = { name = waddle_modifier_forced_conscription months = 12 is_decaying = yes }
+		add_radicals = { value = 0.05 pop_type = soldiers }
+		scope:war_stuff_war = { add_war_war_support = { target = scope:war_stuff_home value = 3 } }
+		ai_chance = {
+			base = 65
+			modifier = { add = 25 waddle_war_support < 50 }
+			modifier = { add = -25 country_turmoil > 0.25 }
+		}
+	}
+
+	option = {
+		name = war_stuff.15.b
+		add_modifier = { name = waddle_modifier_conscription_exemptions months = 12 is_decaying = yes }
+		add_loyalists = { value = 0.03 }
+		scope:war_stuff_war = { add_war_war_support = { target = scope:war_stuff_home value = -5 } }
+		ai_chance = { base = 35 modifier = { add = 25 country_turmoil > 0.25 } }
+	}
+}
+
+
+
+war_stuff.16 = {
+	type = country_event
+	placement = scope:war_stuff_refugee_state
+
+	title = war_stuff.16.t
+	desc = war_stuff.16.d
+	flavor = war_stuff.16.f
+
+	event_image = { video = "unspecific_devastation" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	cooldown = { days = long_modifier_time }
+	duration = 3
+
+	trigger = {
+		is_at_war = yes
+		any_scope_war = {
+			any_scope_front = {
+				any_military_formation = { owner = ROOT is_mobilized = yes }
+				any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					devastation > 15
+					NOT = { controller = { this = root } }
+				}
+			}
+		}
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_home }
+		random_scope_war = {
+			limit = {
+				any_scope_front = {
+					any_military_formation = { owner = ROOT is_mobilized = yes }
+					any_scope_state = {
+						owner = ROOT
+						is_incorporated = yes
+						devastation > 15
+						NOT = { controller = { this = root } }
+					}
+				}
+			}
+			save_scope_as = war_stuff_war
+			random_scope_front = {
+				limit = {
+					any_military_formation = { owner = ROOT is_mobilized = yes }
+					any_scope_state = {
+						owner = ROOT
+						is_incorporated = yes
+						devastation > 15
+						NOT = { controller = { this = root } }
+					}
+				}
+				save_scope_as = war_stuff_front
+				random_scope_state = {
+					limit = {
+						owner = ROOT
+						is_incorporated = yes
+						devastation > 15
+						NOT = { controller = { this = root } }
+					}
+					save_scope_as = war_stuff_refugee_state
+					controller = { save_scope_as = war_stuff_enemy }
+				}
+				random_scope_general = {
+					limit = { owner = ROOT commander_military_formation = { owner = ROOT } }
+					save_scope_as = war_stuff_general
+				}
+			}
+		}
+	}
+
+	option = {
+		name = war_stuff.16.a
+		default_option = yes
+		add_modifier = { name = waddle_modifier_refugee_relief months = 12 is_decaying = yes }
+		scope:war_stuff_refugee_state = {
+			add_loyalists_in_state = { value = 0.04 }
+			state_region = { add_devastation = -5 }
+		}
+		ai_chance = { base = 60 }
+	}
+	option = {
+		name = war_stuff.16.b
+		scope:war_stuff_refugee_state = { add_radicals_in_state = { value = 0.05 } }
+		scope:war_stuff_war = { add_war_war_support = { target = scope:war_stuff_home value = 2 } }
+		ai_chance = { base = 40 modifier = { add = 20 waddle_war_support < 50 } }
+	}
+}
+
+
+
+war_stuff.17 = {
+	type = country_event
+	placement = ROOT
+
+	title = war_stuff.17.t
+	desc = war_stuff.17.d
+	flavor = war_stuff.17.f
+
+	event_image = { video = "unspecific_vandalized_storefront" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	cooldown = { days = normal_modifier_time }
+	duration = 3
+
+	trigger = {
+		is_at_war = yes
+		has_variable = waddle_recent_atrocity
+		any_scope_war = { any_scope_front = { any_military_formation = { owner = ROOT } } }
+		any_enemy_in_war = { country_rank >= root.country_rank }
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_home }
+		random_enemy_in_war = {
+			limit = { country_rank >= root.country_rank }
+			save_scope_as = war_stuff_enemy
+		}
+		random_scope_war = {
+			limit = { any_scope_front = { any_military_formation = { owner = ROOT } } }
+			save_scope_as = war_stuff_war
+			random_scope_front = {
+				limit = { any_military_formation = { owner = ROOT } }
+				save_scope_as = war_stuff_front
+				random_scope_general = {
+					limit = { owner = ROOT commander_military_formation = { owner = ROOT } }
+					save_scope_as = war_stuff_general
+				}
+			}
+		}
+	}
+
+	option = {
+		name = war_stuff.17.a
+		default_option = yes
+		add_modifier = { name = waddle_modifier_wartime_censorship months = 12 is_decaying = yes }
+		add_radicals = { value = 0.03 pop_type = academics }
+		remove_variable = waddle_recent_atrocity
+		ai_chance = { base = 65 }
+	}
+	option = {
+		name = war_stuff.17.b
+		change_infamy = -2
+		add_radicals = { value = 0.02 pop_type = officers }
+		scope:war_stuff_war = { add_war_war_support = { target = scope:war_stuff_home value = -5 } }
+		remove_variable = waddle_recent_atrocity
+		ai_chance = { base = 35 modifier = { add = 25 infamy > 25 } }
+	}
+}
+
+
+
+war_stuff.18 = {
+	type = country_event
+	placement = ROOT
+
+	title = war_stuff.18.t
+	desc = war_stuff.18.d
+	flavor = war_stuff.18.f
+
+	event_image = { video = "middleeast_battlefield_trenches" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	cooldown = { days = long_modifier_time }
+	duration = 3
+
+	trigger = {
+		is_at_war = yes
+		waddle_war_support < 80
+		any_scope_war = {
+			diplomatic_play = {
+				var:waddle_war_length > 2
+				var:waddle_war_balance_change > -0.03
+				var:waddle_war_balance_change < 0.03
+			}
+			any_scope_front = { any_military_formation = { owner = ROOT is_mobilized = yes } }
+		}
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_home }
+		random_enemy_in_war = { save_scope_as = war_stuff_enemy }
+		random_scope_war = {
+			limit = {
+				diplomatic_play = {
+					var:waddle_war_length > 2
+					var:waddle_war_balance_change > -0.03
+					var:waddle_war_balance_change < 0.03
+				}
+				any_scope_front = { any_military_formation = { owner = ROOT is_mobilized = yes } }
+			}
+			save_scope_as = war_stuff_war
+			random_scope_front = {
+				limit = { any_military_formation = { owner = ROOT is_mobilized = yes } }
+				save_scope_as = war_stuff_front
+				random_scope_general = {
+					limit = { owner = ROOT commander_military_formation = { owner = ROOT } }
+					save_scope_as = war_stuff_general
+				}
+			}
+		}
+	}
+
+	option = {
+		name = war_stuff.18.a
+		default_option = yes
+		add_modifier = { name = waddle_modifier_frontline_fraternization months = 12 is_decaying = yes }
+		scope:war_stuff_war = { add_war_war_support = { target = scope:war_stuff_home value = -3 } }
+		ai_chance = { base = 45 }
+	}
+	option = {
+		name = war_stuff.18.b
+		add_modifier = { name = waddle_modifier_brutal_discipline months = 12 is_decaying = yes }
+		add_radicals = { value = 0.03 pop_type = soldiers }
+		ai_chance = { base = 55 modifier = { add = 20 waddle_war_support < 50 } }
+	}
+}
+
+
+
+war_stuff.19 = {
+	type = country_event
+	placement = ROOT
+
+	title = war_stuff.19.t
+	desc = war_stuff.19.d
+	flavor = war_stuff.19.f
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	cooldown = { days = normal_modifier_time }
+	duration = 3
+
+	trigger = {
+		is_at_war = yes
+		has_variable = waddle_recent_desperate_offensive
+		NOT = { has_modifier = waddle_modifier_desperate_offensive }
+
+		any_scope_war = {
+			diplomatic_play = {
+				has_variable = waddle_recent_desperate_offensive
+				OR = {
+					AND = {
+						initiator = { is_in_war_together = ROOT }
+						var:waddle_war_balance_change > 0.05
+					}
+					AND = {
+						target = { is_in_war_together = ROOT }
+						var:waddle_war_balance_change < -0.05
+					}
+				}
+			}
+			any_scope_front = {
+				any_military_formation = { owner = ROOT }
+				any_scope_general = { owner = ROOT }
+			}
+		}
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_home }
+		random_scope_war = {
+			limit = {
+				diplomatic_play = {
+					has_variable = waddle_recent_desperate_offensive
+					OR = {
+						AND = {
+							initiator = { is_in_war_together = ROOT }
+							var:waddle_war_balance_change > 0.05
+						}
+						AND = {
+							target = { is_in_war_together = ROOT }
+							var:waddle_war_balance_change < -0.05
+						}
+					}
+				}
+				any_scope_front = {
+					any_military_formation = { owner = ROOT }
+					any_scope_general = { owner = ROOT }
+				}
+			}
+			save_scope_as = war_stuff_war
+			random_scope_front = {
+				limit = { any_military_formation = { owner = ROOT } any_scope_general = { owner = ROOT } }
+				save_scope_as = war_stuff_front
+				random_scope_general = {
+					limit = { owner = ROOT commander_military_formation = { owner = ROOT } }
+					save_scope_as = war_stuff_general
+				}
+			}
+		}
+	}
+
+	option = {
+		name = war_stuff.19.a
+		default_option = yes
+
+		add_modifier = {
+			name = waddle_modifier_breakthrough_momentum
+			months = 6
+			is_decaying = yes
+		}
+		add_loyalists = {
+			value = 0.03
+		}
+		scope:war_stuff_war = {
+			add_war_war_support = { target = scope:war_stuff_home value = 5 }
+			diplomatic_play = {
+				remove_variable = waddle_recent_desperate_offensive
+			}
+		}
+		remove_variable = waddle_recent_desperate_offensive
+	}
+}
+
+
+
+war_stuff.20 = {
+	type = country_event
+	placement = ROOT
+
+	title = war_stuff.20.t
+	desc = war_stuff.20.d
+	flavor = war_stuff.20.f
+
+	event_image = {
+		video = "unspecific_devastation"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	cooldown = { days = normal_modifier_time }
+	duration = 3
+
+	trigger = {
+		is_at_war = yes
+		has_variable = waddle_recent_desperate_offensive
+		NOT = { has_modifier = waddle_modifier_desperate_offensive }
+
+		any_scope_war = {
+			diplomatic_play = {
+				has_variable = waddle_recent_desperate_offensive
+				OR = {
+					AND = {
+						initiator = { is_in_war_together = ROOT }
+						var:waddle_war_balance_change < -0.05
+					}
+					AND = {
+						target = { is_in_war_together = ROOT }
+						var:waddle_war_balance_change > 0.05
+					}
+				}
+			}
+			any_scope_front = {
+				any_military_formation = {
+					owner = ROOT
+				}
+			}
+		}
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_home }
+		random_scope_war = {
+			limit = {
+				diplomatic_play = {
+					has_variable = waddle_recent_desperate_offensive
+					OR = {
+						AND = {
+							initiator = { is_in_war_together = ROOT }
+							var:waddle_war_balance_change < -0.05
+						}
+						AND = {
+							target = { is_in_war_together = ROOT }
+							var:waddle_war_balance_change > 0.05
+						}
+					}
+				}
+				any_scope_front = { any_military_formation = { owner = ROOT } }
+			}
+			save_scope_as = war_stuff_war
+			random_scope_front = {
+				limit = { any_military_formation = { owner = ROOT } }
+				save_scope_as = war_stuff_front
+				random_scope_general = {
+					limit = { owner = ROOT commander_military_formation = { owner = ROOT } }
+					save_scope_as = war_stuff_general
+				}
+			}
+		}
+	}
+
+	option = {
+		name = war_stuff.20.a
+		default_option = yes
+
+		add_modifier = {
+			name = waddle_modifier_offensive_exhaustion
+			months = 12
+			is_decaying = yes
+		}
+		add_radicals = {
+			value = 0.04
+			pop_type = soldiers
+		}
+		add_radicals = {
+			value = 0.02
+			pop_type = officers
+		}
+		scope:war_stuff_war = {
+			add_war_war_support = { target = scope:war_stuff_home value = -5 }
+			diplomatic_play = {
+				remove_variable = waddle_recent_desperate_offensive
+			}
+		}
+		remove_variable = waddle_recent_desperate_offensive
+	}
+
+	option = {
+		name = war_stuff.20.b
+
+		add_modifier = {
+			name = waddle_modifier_desperate_offensive
+			months = 6
+			is_decaying = yes
+		}
+		add_radicals = {
+			value = 0.06
+			pop_type = soldiers
+		}
+		set_variable = waddle_recent_desperate_offensive
+		scope:war_stuff_war = {
+			diplomatic_play = {
+				set_variable = waddle_recent_desperate_offensive
+			}
+		}
+	}
+}
+
+
+
+war_stuff.21 = {
+	type = country_event
+	placement = ROOT
+
+	title = war_stuff.21.t
+	desc = war_stuff.21.d
+	flavor = war_stuff.21.f
+
+	event_image = {
+		video = "europenorthamerica_before_the_battle"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	cooldown = { days = normal_modifier_time }
+	duration = 3
+
+	trigger = {
+		is_at_war = yes
+		has_variable = waddle_recent_liberation_offensive
+		NOT = { has_modifier = waddle_modifier_liberation_drive }
+
+		any_scope_war = {
+			diplomatic_play = {
+				has_variable = waddle_recent_liberation_offensive
+			}
+			any_scope_front = {
+				any_military_formation = { owner = ROOT }
+			}
+			OR = {
+				# Direct success: no incorporated owned states remain occupied on this war's fronts.
+				NOT = {
+					any_scope_front = {
+						any_scope_state = {
+							owner = ROOT
+							is_incorporated = yes
+							NOT = {
+								controller = {
+									this = ROOT
+								}
+							}
+						}
+					}
+				}
+
+				# Fallback success: the war balance moved in ROOT's side's favor.
+				diplomatic_play = {
+					OR = {
+						AND = {
+							initiator = { is_in_war_together = ROOT }
+							var:waddle_war_balance_change > 0.05
+						}
+						AND = {
+							target = { is_in_war_together = ROOT }
+							var:waddle_war_balance_change < -0.05
+						}
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_home }
+		random_scope_war = {
+			limit = {
+				diplomatic_play = {
+					has_variable = waddle_recent_liberation_offensive
+				}
+				any_scope_front = { any_military_formation = { owner = ROOT } }
+			}
+			save_scope_as = war_stuff_war
+			random_scope_front = {
+				limit = { any_military_formation = { owner = ROOT } }
+				save_scope_as = war_stuff_front
+				random_scope_general = {
+					limit = { owner = ROOT commander_military_formation = { owner = ROOT } }
+					save_scope_as = war_stuff_general
+				}
+			}
+		}
+	}
+
+	option = {
+		name = war_stuff.21.a
+		default_option = yes
+
+		add_modifier = {
+			name = waddle_modifier_victorious_liberation
+			months = 12
+			is_decaying = yes
+		}
+		add_loyalists = {
+			value = 0.04
+		}
+		scope:war_stuff_war = {
+			add_war_war_support = { target = scope:war_stuff_home value = 5 }
+			diplomatic_play = {
+				remove_variable = waddle_recent_liberation_offensive
+			}
+		}
+		remove_variable = waddle_recent_liberation_offensive
+	}
+}
+
+
+
+war_stuff.22 = {
+	type = country_event
+	placement = ROOT
+
+	title = war_stuff.22.t
+	desc = war_stuff.22.d
+	flavor = war_stuff.22.f
+
+	event_image = {
+		video = "unspecific_devastation"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	cooldown = { days = normal_modifier_time }
+	duration = 3
+
+	trigger = {
+		is_at_war = yes
+		has_variable = waddle_recent_liberation_offensive
+		NOT = { has_modifier = waddle_modifier_liberation_drive }
+
+		any_scope_war = {
+			diplomatic_play = {
+				has_variable = waddle_recent_liberation_offensive
+			}
+			any_scope_front = {
+				any_military_formation = { owner = ROOT }
+				any_scope_state = {
+					owner = ROOT
+					is_incorporated = yes
+					NOT = {
+						controller = {
+							this = ROOT
+						}
+					}
+				}
+			}
+			diplomatic_play = {
+				OR = {
+					AND = {
+						initiator = { is_in_war_together = ROOT }
+						var:waddle_war_balance_change <= 0.05
+					}
+					AND = {
+						target = { is_in_war_together = ROOT }
+						var:waddle_war_balance_change >= -0.05
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_home }
+		random_scope_war = {
+			limit = {
+				diplomatic_play = {
+					has_variable = waddle_recent_liberation_offensive
+				}
+				any_scope_front = {
+					any_military_formation = { owner = ROOT }
+					any_scope_state = {
+						owner = ROOT
+						is_incorporated = yes
+						NOT = {
+							controller = {
+								this = ROOT
+							}
+						}
+					}
+				}
+			}
+			save_scope_as = war_stuff_war
+			random_scope_front = {
+				limit = { any_military_formation = { owner = ROOT } any_scope_state = { owner = ROOT is_incorporated = yes NOT = { controller = { this = ROOT } } } }
+				save_scope_as = war_stuff_front
+				random_scope_general = {
+					limit = { owner = ROOT commander_military_formation = { owner = ROOT } }
+					save_scope_as = war_stuff_general
+				}
+			}
+		}
+	}
+
+	option = {
+		name = war_stuff.22.a
+		default_option = yes
+
+		add_modifier = {
+			name = waddle_modifier_shattered_liberation_drive
+			months = 12
+			is_decaying = yes
+		}
+		every_scope_state = {
+			limit = {
+				owner = ROOT
+				is_incorporated = yes
+				NOT = { controller = ROOT }
+			}
+			add_radicals_in_state = {
+				value = 0.05
+			}
+		}
+		scope:war_stuff_war = {
+			add_war_war_support = { target = scope:war_stuff_home value = -4 }
+			diplomatic_play = {
+				remove_variable = waddle_recent_liberation_offensive
+			}
+		}
+		remove_variable = waddle_recent_liberation_offensive
+	}
+}
+
+
+
+war_stuff.23 = {
+	type = country_event
+	placement = ROOT
+
+	title = war_stuff.23.t
+	desc = war_stuff.23.d
+	flavor = war_stuff.23.f
+
+	event_image = {
+		video = "asia_factory_accident"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	cooldown = { days = long_modifier_time }
+
+	duration = 3
+
+	trigger = {
+		is_at_war = yes
+		any_military_formation = {
+			is_mobilized = yes
+		}
+		any_scope_war = {
+			diplomatic_play = {
+				var:waddle_war_length > 0
+			}
+			any_scope_front = {
+				any_military_formation = {
+					owner = ROOT
+					is_mobilized = yes
+				}
+				any_scope_general = { owner = ROOT }
+			}
+		}
+		capital.market = {
+			owner = root
+			mg:small_arms = {
+				OR = {
+					market_goods_pricier > 0.25
+					market_goods_has_goods_shortage = yes
+				}
+			}
+		}
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_home }
+		random_scope_war = {
+			limit = {
+				diplomatic_play = { var:waddle_war_length > 0 }
+				any_scope_front = { any_military_formation = { owner = ROOT is_mobilized = yes } any_scope_general = { owner = ROOT } }
+			}
+			save_scope_as = war_stuff_war
+			random_scope_front = {
+				limit = { any_military_formation = { owner = ROOT is_mobilized = yes } any_scope_general = { owner = ROOT } }
+				save_scope_as = war_stuff_front
+				random_scope_general = {
+					limit = { owner = ROOT commander_military_formation = { owner = ROOT } }
+					save_scope_as = war_stuff_general
+				}
+			}
+		}
+	}
+
+	option = { # Seize the stockpiles.
+		name = war_stuff.23.a
+		default_option = yes
+
+		add_modifier = {
+			name = waddle_modifier_small_arms_seizure
+			months = 12
+			is_decaying = yes
+		}
+		add_radicals = {
+			value = 0.03
+			pop_type = capitalists
+		}
+
+		ai_chance = { base = 65 }
+	}
+
+	option = { # Ration the rifles.
+		name = war_stuff.23.b
+
+		add_modifier = {
+			name = waddle_modifier_small_arms_rationing
+			months = 12
+			is_decaying = yes
+		}
+		scope:war_stuff_war = {
+			add_war_war_support = { target = scope:war_stuff_home value = -3 }
+		}
+
+		ai_chance = { base = 35 }
+	}
+}
+
+
+
+war_stuff.24 = {
+	type = country_event
+	placement = ROOT
+
+	title = war_stuff.24.t
+	desc = war_stuff.24.d
+	flavor = war_stuff.24.f
+
+	event_image = {
+		video = "asia_factory_accident"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	cooldown = { days = long_modifier_time }
+
+	duration = 3
+
+	trigger = {
+		is_at_war = yes
+		any_military_formation = {
+			is_mobilized = yes
+		}
+		any_scope_war = {
+			diplomatic_play = {
+				var:waddle_war_length > 0
+			}
+			any_scope_front = {
+				any_military_formation = {
+					owner = ROOT
+					is_mobilized = yes
+				}
+			}
+		}
+		capital.market = {
+			owner = root
+			mg:artillery = {
+				OR = {
+					market_goods_pricier > 0.25
+					market_goods_has_goods_shortage = yes
+				}
+			}
+		}
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_home }
+		random_scope_war = {
+			limit = {
+				diplomatic_play = { var:waddle_war_length > 0 }
+				any_scope_front = { any_military_formation = { owner = ROOT is_mobilized = yes } }
+			}
+			save_scope_as = war_stuff_war
+			random_scope_front = {
+				limit = { any_military_formation = { owner = ROOT is_mobilized = yes } }
+				save_scope_as = war_stuff_front
+				random_scope_general = {
+					limit = { owner = ROOT commander_military_formation = { owner = ROOT } }
+					save_scope_as = war_stuff_general
+				}
+			}
+		}
+	}
+
+	option = { # Feed the guns.
+		name = war_stuff.24.a
+		default_option = yes
+
+		add_modifier = {
+			name = waddle_modifier_artillery_priority
+			months = 12
+			is_decaying = yes
+		}
+		add_radicals = {
+			value = 0.03
+			pop_type = machinists
+		}
+
+		ai_chance = { base = 60 }
+	}
+
+	option = { # Conserve shells.
+		name = war_stuff.24.b
+
+		add_modifier = {
+			name = waddle_modifier_artillery_conservation
+			months = 12
+			is_decaying = yes
+		}
+		scope:war_stuff_war = {
+			add_war_war_support = { target = scope:war_stuff_home value = -3 }
+		}
+
+		ai_chance = { base = 40 }
+	}
+}
+
+
+
+war_stuff.25 = {
+	type = country_event
+	placement = ROOT
+
+	title = war_stuff.25.t
+	desc = war_stuff.25.d
+	flavor = war_stuff.25.f
+
+	event_image = {
+		video = "asia_factory_accident"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	cooldown = { days = long_modifier_time }
+
+	duration = 3
+
+	trigger = {
+		is_at_war = yes
+		any_military_formation = {
+			is_mobilized = yes
+		}
+		any_scope_war = {
+			diplomatic_play = {
+				var:waddle_war_length > 0
+			}
+			any_scope_front = {
+				any_military_formation = {
+					owner = ROOT
+					is_mobilized = yes
+				}
+			}
+		}
+		capital.market = {
+			owner = root
+			mg:explosives = {
+				OR = {
+					market_goods_pricier > 0.25
+					market_goods_has_goods_shortage = yes
+				}
+			}
+		}
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_home }
+		random_scope_war = {
+			limit = {
+				diplomatic_play = { var:waddle_war_length > 0 }
+				any_scope_front = { any_military_formation = { owner = ROOT is_mobilized = yes } }
+			}
+			save_scope_as = war_stuff_war
+			random_scope_front = {
+				limit = { any_military_formation = { owner = ROOT is_mobilized = yes } }
+				save_scope_as = war_stuff_front
+				random_scope_general = {
+					limit = { owner = ROOT commander_military_formation = { owner = ROOT } }
+					save_scope_as = war_stuff_general
+				}
+			}
+		}
+	}
+
+	option = { # Commandeer the chemical works.
+		name = war_stuff.25.a
+		default_option = yes
+
+		add_modifier = {
+			name = waddle_modifier_explosives_seizure
+			months = 12
+			is_decaying = yes
+		}
+		add_radicals = {
+			value = 0.03
+			pop_type = capitalists
+		}
+
+		ai_chance = { base = 60 }
+	}
+
+	option = { # Save powder for decisive battles.
+		name = war_stuff.25.b
+
+		add_modifier = {
+			name = waddle_modifier_powder_conservation
+			months = 12
+			is_decaying = yes
+		}
+		scope:war_stuff_war = {
+			add_war_war_support = { target = scope:war_stuff_home value = -2 }
+		}
+
+		ai_chance = { base = 40 }
+	}
+}
+
+
+
+war_stuff.26 = {
+	type = country_event
+	placement = ROOT
+
+	title = war_stuff.26.t
+	desc = war_stuff.26.d
+	flavor = war_stuff.26.f
+
+	event_image = {
+		video = "middleeast_battlefield_trenches"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	cooldown = { days = long_modifier_time }
+	duration = 3
+
+	trigger = {
+		is_at_war = yes
+		waddle_war_support > 40
+
+		any_scope_war = {
+			diplomatic_play = {
+				OR = {
+					AND = {
+						initiator = { is_in_war_together = ROOT }
+						var:waddle_war_balance_change > 0.05
+					}
+					AND = {
+						target = { is_in_war_together = ROOT }
+						var:waddle_war_balance_change < -0.05
+					}
+				}
+			}
+			num_country_casualties = {
+				target = ROOT
+				value > 5000
+			}
+			any_scope_front = {
+				any_military_formation = {
+					owner = ROOT
+					is_mobilized = yes
+				}
+				any_scope_general = { owner = ROOT }
+			}
+		}
+
+		any_enemy_in_war = {
+			country_rank >= root.country_rank
+		}
+	}
+
+	immediate = {
+		ROOT = { save_scope_as = war_stuff_home }
+		random_enemy_in_war = {
+			limit = {
+				country_rank >= root.country_rank
+			}
+			save_scope_as = war_stuff_enemy
+		}
+		random_scope_war = {
+			limit = {
+				diplomatic_play = {
+					OR = {
+						AND = {
+							initiator = { is_in_war_together = ROOT }
+							var:waddle_war_balance_change > 0.05
+						}
+						AND = {
+							target = { is_in_war_together = ROOT }
+							var:waddle_war_balance_change < -0.05
+						}
+					}
+				}
+				num_country_casualties = {
+					target = ROOT
+					value > 5000
+				}
+				any_scope_front = {
+					any_military_formation = {
+						owner = ROOT
+						is_mobilized = yes
+					}
+					any_scope_general = { owner = ROOT }
+				}
+			}
+			save_scope_as = war_stuff_war
+			random_scope_front = {
+				limit = {
+					any_military_formation = {
+						owner = ROOT
+						is_mobilized = yes
+					}
+					any_scope_general = { owner = ROOT }
+				}
+				save_scope_as = war_stuff_front
+				random_scope_general = {
+					limit = {
+						owner = ROOT
+						commander_military_formation = {
+							owner = ROOT
+						}
+					}
+					save_scope_as = war_stuff_general
+				}
+			}
+		}
+	}
+
+	option = {
+		name = war_stuff.26.a
+		default_option = yes
+
+		scope:war_stuff_general = {
+			add_trait = honorable
+		}
+		change_relations = {
+			country = scope:war_stuff_enemy
+			value = 5
+		}
+		every_political_lobby = {
+			limit = {
+				target = scope:war_stuff_enemy
+				is_political_lobby_type = lobby_pro_country
+			}
+			change_appeasement = {
+				amount = 3
+				factor = appeasement_special_events_positive
+			}
+		}
+
+		ai_chance = { base = 55 }
+	}
+
+	option = {
+		name = war_stuff.26.b
+
+		add_modifier = {
+			name = waddle_modifier_pow_labor
+			months = 12
+			is_decaying = yes
+		}
+		change_infamy = 2
+		change_relations = {
+			country = scope:war_stuff_enemy
+			value = -10
+		}
+		set_variable = waddle_recent_atrocity
+
+		ai_chance = { 
+			base = 25 
+			modifier = {
+				add = 20
+				waddle_war_support < 60
+			}
+		}
+	}
+
+	option = {
+		name = war_stuff.26.c
+
+		change_relations = {
+			country = scope:war_stuff_enemy
+			value = 3
+		}
+		scope:war_stuff_war = {
+			add_war_war_support = { target = scope:war_stuff_home value = 2 }
+		}
+
+		ai_chance = { base = 20 }
+	}
+}

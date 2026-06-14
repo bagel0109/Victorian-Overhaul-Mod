@@ -1,0 +1,638 @@
+﻿# root = country
+# scope:war = the war we're evaluating war exhaustion for
+# No randomness is allowed in this script value
+
+REPLACE_OR_CREATE:war_exhaustion_from_enemy_contested_wargoals = {
+	# add = define:NWar|WAR_EXHAUSTION_CONTESTED_ENEMY_WARGOALS
+	add = 8
+	multiply = "enemy_contested_wargoals(scope:war)"
+}
+
+REPLACE_OR_CREATE:military_size = {
+	add = army_size_including_conscripts
+	add = navy_size
+}
+
+REPLACE_OR_CREATE:war_exhaustion_from_casualties = {
+	if = {
+		limit = {
+			"scope:war.num_country_casualties(root)" > 0
+			"scope:war.num_casualties" > 0
+		}
+
+		add = "scope:war.num_country_casualties(root)"
+		multiply = "scope:war.num_country_casualties(root)"
+		divide = "scope:war.num_casualties"
+
+		if = {
+			limit = { military_size > 0 }
+			divide = {
+				add = total_population_share
+				min = 0.02
+				multiply = 50
+				multiply = military_size
+			}
+		}
+
+		divide = 1000
+		multiply = define:NWar|WAR_EXHAUSTION_KIA_FACTOR
+		multiply = {
+			add = define:NWar|WAR_EXHAUSTION_KIA_BASE_MULTIPLIER
+			add = {
+				add = 1
+				#"size_weighted_lost_battles_fraction(scope:war)"
+				multiply = define:NWar|WAR_EXHAUSTION_KIA_BATTLES_LOST_MULTIPLIER
+			}
+		}
+	}
+}
+
+REPLACE_OR_CREATE:war_exhaustion_from_lobby_clout = {
+	add = "lobby_war_opposition(scope:war)"
+	multiply = define:NWar|WAR_EXHAUSTION_ANTI_WAR_LOBBY_CLOUT_FACTOR
+}
+
+REPLACE_OR_CREATE:war_support_from_lobby_clout = {
+	add = "lobby_war_support(scope:war)"
+	multiply = define:NWar|WAR_EXHAUSTION_PRO_WAR_LOBBY_CLOUT_FACTOR
+}
+
+REPLACE_OR_CREATE:war_exhaustion_from_country_turmoil = {
+	add = country_turmoil
+	multiply = define:NWar|WAR_EXHAUSTION_TURMOIL_FACTOR
+}
+
+REPLACE_OR_CREATE:war_support_from_fervor = {
+	if = {
+		limit = {
+			scope:war = {
+				OR = {
+					is_target_of_wargoal_in_war = root
+					# is_holder_of_wargoal_in_war = root
+				}
+			}
+		}
+		subtract = country_fervor_primary_culture
+		multiply = define:NPops|CULTURAL_FERVOR_WAR_SUPPORT_EFFECT
+	}
+}
+
+REPLACE_OR_CREATE:war_exhaustion = {
+	# save all values that make up the war exhaustion calculation since we frequently refer to them numerous times below
+	value = enemy_occupation
+	save_temporary_value_as = temp_enemy_occupation
+	value = "enemy_contested_wargoals(scope:war)"
+	save_temporary_value_as = temp_enemy_contested_wargoals_fraction
+	value = war_exhaustion_from_casualties 
+	save_temporary_value_as = temp_war_exhaustion_from_casualties
+	value = war_exhaustion_from_enemy_contested_wargoals
+	save_temporary_value_as = temp_war_exhaustion_from_enemy_contested_wargoals
+	value = "scope:war.war_exhaustion_from_acceptance_of_dead(root)"
+	save_temporary_value_as = temp_war_exhaustion_from_acceptance_of_dead
+	value = war_exhaustion_from_country_turmoil
+	save_temporary_value_as = temp_war_exhaustion_from_country_turmoil
+	value = war_exhaustion_from_lobby_clout
+	save_temporary_value_as = temp_war_exhaustion_from_lobby_clout
+	value = war_support_from_lobby_clout
+	save_temporary_value_as = temp_war_support_from_lobby_clout
+	value = "size_weighted_lost_battles_fraction(scope:war)"
+	save_temporary_value_as = temp_size_weighted_lost_battles_fraction
+	value = war_support_from_fervor
+	save_temporary_value_as = temp_war_support_from_fervor
+	# end save temp values
+
+	# reset the calculation to the base
+	value = {
+		add = define:NWar|WAR_EXHAUSTION_BASE
+		desc = "WAR_EXHAUSTION_BASE"
+	}
+
+	if = {
+		limit = {
+			is_in_guerilla_war = yes
+		}
+		add = {
+			value = -10
+			desc = "concept_guerilla_war"
+		}
+	}
+	
+	if = {
+		limit = {
+			# NOT = {
+			# 	scope:war = {
+			# 		diplomatic_play = {
+			# 			is_diplomatic_play_type = dp_revolution
+			# 		}
+			# 	}
+			# }
+			always = yes
+		}
+		if = {
+			limit = {
+				# NOT = {scope:temp_size_weighted_lost_battles_fraction = 0}
+				OR = {
+					scope:war = {
+						is_target_of_wargoal_in_war = prev
+					}
+					any_subject_or_below = {
+						scope:war = {
+							is_target_of_wargoal_in_war = prev
+						}
+					}
+				}
+			}
+			add = {
+				add = scope:temp_war_exhaustion_from_enemy_contested_wargoals
+				
+				# multiply = scope:temp_size_weighted_lost_battles_fraction
+				# multiply = 2
+				add = -4
+				desc = "WAR_EXHAUSTION_FROM_ENEMY_CONTESTED_WARGOALS"
+			}
+		}
+		else = {
+			add = {
+				add = 8
+				multiply = scope:temp_size_weighted_lost_battles_fraction
+				if = {
+					limit = {
+						scope:temp_enemy_occupation <= 0.005
+					}
+					multiply = 0.67
+				}
+				
+				desc = "WAR_EXHAUSTION_NO_WARGOALS"
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						scope:war = {
+							is_target_of_wargoal_in_war = prev
+						}
+						any_subject_or_below = {
+							scope:war = {
+								is_target_of_wargoal_in_war = prev
+							}
+						}
+					}
+				}
+			}
+			add = {
+				add = 8
+				multiply = scope:temp_size_weighted_lost_battles_fraction
+				if = {
+					limit = {
+						scope:temp_enemy_occupation <= 0.005
+					}
+					multiply = 0.67
+				}
+				
+				desc = "WAR_EXHAUSTION_NO_WARGOALS"
+			}
+		}
+	}
+
+	add = {
+		# if = {
+		# 	limit = {
+		# 		scope:temp_enemy_occupation <= 0.001
+		# 	}
+		# 	if = {
+		# 		limit = {
+		# 			scope:temp_size_weighted_lost_battles_fraction = 0
+		# 		}
+		# 		add = {
+		# 			add = -4.0
+		# 			desc = "WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_NONE"
+		# 		}
+		# 	}
+		# 	else = {
+		# 		add = {
+		# 			add = -5.0
+		# 			multiply = {
+		# 				value = 1
+		# 				subtract = scope:temp_size_weighted_lost_battles_fraction
+		# 			}
+		# 			desc = "WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_NONE"
+		# 		}
+		# 	}
+		# }
+		if = {
+			limit = {
+				scope:temp_enemy_occupation <= 0.001
+			}
+			if = {
+				limit = {
+					scope:temp_size_weighted_lost_battles_fraction = 0
+				}
+				add = {
+					add = -4.0
+					desc = "WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_NONE"
+				}
+			}
+			else = {
+				add = {
+					add = -5.0
+					multiply = {
+						value = 1
+						subtract = scope:temp_size_weighted_lost_battles_fraction
+					}
+					desc = "WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_NONE"
+				}
+			}
+
+			# If the enemy has mostly achieved its wargoals, no occupation should not fully cancel that.
+			if = {
+				limit = {
+					scope:temp_enemy_contested_wargoals_fraction >= 0.75
+				}
+				min = -3.5
+			}
+			if = {
+				limit = {
+					scope:temp_enemy_contested_wargoals_fraction >= 0.90
+				}
+				min = -3.25
+			}
+			if = {
+				limit = {
+					scope:temp_enemy_contested_wargoals_fraction >= 0.98
+				}
+				min = -3.0
+			}
+		}
+		else_if = {
+			limit = {
+				scope:temp_enemy_occupation < 0.1
+			}
+			if = {
+				limit = {
+					scope:temp_size_weighted_lost_battles_fraction = 0
+				}
+				add = {
+					add = -3.0
+					desc = "WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_LOW"
+				}
+			}
+			else = {
+				add = {
+					add = -4.0
+					multiply = {
+						value = 1
+						subtract = scope:temp_size_weighted_lost_battles_fraction
+					}
+					desc = "WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_LOW"
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				scope:temp_enemy_occupation < 0.2
+			}
+			if = {
+				limit = {
+					scope:temp_size_weighted_lost_battles_fraction = 0
+				}
+				add = {
+					add = -1.0
+					desc = "WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_LOW"
+				}
+			}
+			else = {
+				add = {
+					add = -2.0
+					multiply = {
+						value = 1
+						subtract = scope:temp_size_weighted_lost_battles_fraction
+					}
+					desc = "WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_LOW"
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				scope:temp_enemy_occupation < 0.3
+			}
+			add = {
+				add = scope:temp_enemy_occupation
+				multiply = scope:temp_enemy_occupation
+				multiply = 7
+				desc = "WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_MODERATE"
+			
+			}
+		}
+		else_if = {
+			limit = {
+				scope:temp_enemy_occupation < 0.4
+			}
+			add = {
+				add = scope:temp_enemy_occupation
+				multiply = scope:temp_enemy_occupation
+				multiply = 7
+				desc = "WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_SUBSTANTIAL"
+			
+			}
+		}
+		else_if = {
+			limit = {
+				scope:temp_enemy_occupation < 0.5
+			}
+			add = {
+				add = scope:temp_enemy_occupation
+				multiply = scope:temp_enemy_occupation
+				multiply = 7
+				desc = "WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_SUBSTANTIAL"
+			
+			}
+		}
+		else_if = {
+			limit = {
+				scope:temp_enemy_occupation < 0.6
+			}
+			add = {
+				add = scope:temp_enemy_occupation
+				multiply = scope:temp_enemy_occupation
+				multiply = 7
+				desc = "WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_HIGH"
+			
+			}
+		}
+		else_if = {
+			limit = {
+				scope:temp_enemy_occupation < 0.7
+			}
+			add = {
+				add = scope:temp_enemy_occupation
+				multiply = scope:temp_enemy_occupation
+				multiply = 7
+				desc = "WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_HIGH"
+			
+			}
+		}
+		else_if = {
+			limit = {
+				scope:temp_enemy_occupation < 0.8
+			}
+			add = {
+				add = scope:temp_enemy_occupation
+				multiply = scope:temp_enemy_occupation
+				multiply = 7
+				desc = "WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_EXTREME"
+			
+			}
+		}
+		else_if = {
+			limit = {
+				scope:temp_enemy_occupation < 0.9
+			}
+			add = {
+				add = scope:temp_enemy_occupation
+				multiply = scope:temp_enemy_occupation
+				multiply = 7
+				desc = "WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_EXTREME"
+			
+			}
+		}
+		else_if = {
+			limit = {
+				scope:temp_enemy_occupation <= 1.0
+			}
+			add = {
+				add = scope:temp_enemy_occupation
+				multiply = scope:temp_enemy_occupation
+				multiply = 7
+				desc = "WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_TOTAL"
+			
+			}
+		}
+		if = {
+			limit = {
+				any_scope_state = {
+					is_incorporated = yes
+					is_target_of_wargoal = root
+				}
+			}
+			min = -2
+		}
+	}
+
+	if = {
+		limit = { scope:temp_war_exhaustion_from_casualties >= 0.01 }
+		add = {
+			add = scope:temp_war_exhaustion_from_casualties
+			desc = "WAR_EXHAUSTION_FROM_CASUALTIES"
+
+			multiply = {
+				add = 1
+				add = modifier:country_war_exhaustion_casualties_mult
+				min = 0
+				desc = "WAR_EXHAUSTION_FROM_country_war_exhaustion_casualties_mult"
+			}
+
+			multiply = {
+			add = 0.25
+			add = {
+				add = scope:temp_size_weighted_lost_battles_fraction
+				multiply = 0.75
+			}
+			desc = "WADDLE_CASUALTY_SUCCESS_FACTOR"
+		}
+
+		multiply = {
+			add = 1
+			add = {
+				add = scope:war.diplomatic_play.var:waddle_war_length
+				subtract = 2
+				min = 0
+				multiply = 0.6
+				divide = {
+					add = scope:war.diplomatic_play.var:waddle_war_length
+					add = 3
+				}
+			}
+			desc = "WADDLE_LONG_WAR_CASUALTY_MULT"
+		}
+
+		multiply = 0.6
+		}
+	}
+	
+	if = {
+		limit = { scope:temp_war_exhaustion_from_acceptance_of_dead >= 0.01 }
+		add = {
+			add = scope:temp_war_exhaustion_from_acceptance_of_dead
+			multiply = 0.3
+			desc = "WAR_EXHAUSTION_FROM_ACCEPTANCE_OF_DEAD"
+		}
+	}
+	
+	# save_temporary_value_as = temp_value
+
+	# if = {
+	# 	limit = {
+	# 		scope:temp_value > 0
+	# 		"scope:war.num_country_casualties(root)" > 1
+	# 		"scope:war.num_casualties" > 1
+	# 	}
+	# 	multiply = {
+	# 		add = "scope:war.num_country_casualties(root)"
+	# 		divide = "scope:war.num_casualties"
+	# 		multiply = {
+	# 			value = 1
+	# 			every_cobelligerent_in_war = {
+	# 				add = 1
+	# 			}
+	# 		}
+	# 		max = 1.25
+	# 		min = 0.75
+	# 		desc = "WAR_EXHAUSTION_RATIO"
+	# 	}
+	# }
+	
+	if = {
+		limit = { scope:temp_war_exhaustion_from_country_turmoil >= 0.01 }
+		add = {
+			add = scope:temp_war_exhaustion_from_country_turmoil
+			multiply = 5
+			multiply = 0.3
+			desc = "WAR_EXHAUSTION_FROM_TURMOIL"
+		}
+	}	
+
+	if = {
+		limit = { scope:temp_war_support_from_fervor <= -0.01 }
+		add = {
+			add = scope:temp_war_support_from_fervor
+			add = 0.5
+			desc = "WAR_SUPPORT_FROM_FERVOR"
+		}
+	}
+	
+	if = {
+		limit = { scope:temp_war_exhaustion_from_lobby_clout >= 0.01 }
+		add = {
+			add = scope:temp_war_exhaustion_from_lobby_clout
+			multiply = 0.3
+			desc = "WAR_OPPOSITION_FROM_LOBBIES"
+		}
+	}			
+	
+	add = {
+		add = "additional_war_exhaustion(scope:war.diplomatic_play)"
+		multiply = 0.3
+		desc = "WAR_EXHAUSTION_FROM_EVENTS"
+	}
+
+	if = {
+		limit = {
+			capital = {
+				controller = {
+					has_war_with = root
+				}
+			}
+		}
+		add = {
+			add = 2
+			desc = "WAR_EXHAUSTION_FROM_OCCUPIED_CAPITAL"
+		}
+	}
+
+	
+
+
+	if = {
+		limit = { scope:temp_war_support_from_lobby_clout <= -0.01 }
+		add = {
+			add = scope:temp_war_support_from_lobby_clout
+			multiply = 0.3
+			desc = "WAR_SUPPORT_FROM_LOBBIES"
+		}
+	}
+
+	subtract = {
+		every_cobelligerent_in_war = {
+			if = {
+				limit = {
+					country_rank >= 7
+				}
+				add = 0.5
+			}
+		}
+		# divide = 5
+		# multiply = 0.3
+		desc = "WAR_EXHAUSTION_ALLIED_SUPPORT"
+	}
+
+	if = {
+		limit = {
+			has_journal_entry = je_waddle_martial_law
+		}
+		subtract = {
+			value = waddle_martial_law_control_target
+			divide = 3
+			desc = "WADDLE_MARTIAL_LAW_BASE"
+		}
+	}
+
+	if = {
+		limit = {
+			scope:war = {
+				diplomatic_play = {
+					has_variable = waddle_war_length
+				}
+			}
+		}
+		subtract = {
+			value = 1.5
+			scope:war = {
+				diplomatic_play = {
+					subtract = {
+						value = var:waddle_war_length
+						divide = 2
+					}
+				}
+			}
+			min = -2
+			desc = "WAR_EXHAUSTION_SHORT_WAR"
+		}
+	}
+
+	# multiply = 0.3
+	if = {
+		limit = {
+			scope:temp_enemy_occupation <= 0.001
+			any_scope_state = {
+				is_incorporated = yes
+				is_target_of_wargoal = root
+			}
+			# NOT = { "enemy_contested_wargoals(scope:war)" = 1 }
+			scope:temp_enemy_contested_wargoals_fraction < 0.90
+			legitimacy > 0
+		}
+		max = {
+			add = 100
+			divide = legitimacy
+			multiply = {
+				add = 100
+				divide = legitimacy
+			}
+			multiply = {
+				add = 100
+				divide = legitimacy
+			}
+			multiply = {
+				add = 100
+				divide = legitimacy
+			}
+			multiply = 0.4
+			desc = "concept_legitimacy"
+		}
+	}
+
+	max = define:NWar|WAR_EXHAUSTION_MAX
+}

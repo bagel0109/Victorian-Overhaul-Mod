@@ -1,0 +1,141 @@
+﻿NEconomy = {
+	TRADE_CENTER_ADVANTAGE_EMBARGO_FACTOR = -100
+	TRADE_CENTER_ADVANTAGE_AT_WAR_FACTOR = -90
+}
+
+NMilitary = {
+	BATTLE_LETHALITY_MIN = 0.0001
+	BATTLE_CONDITION_MIN_TICKS_BETWEEN_UPDATE_DEFAULT = 20
+	MIN_MOBILIZATION_PER_DAY = 0.0025
+	INITIAL_MANPOWER_COST_MULTIPLIER = 5
+	BATTLE_LETHALITY_MIN = 0.00
+	BATTLE_LETHALITY_MAX = 0.005
+	ATTRITION_RISK_ON_ENEMY_TERRITORY_ADD = 99.7 
+	ATTRITION_RISK_EXILED_ARMY_ADD = 0.1
+	# BATTLE_RAW_MANPOWER_INFLICTED_CASUALTY_RATIO = 0.2
+	# CONVOY_RAIDING_RECOVERY_RATE_PEACETIME_FACTOR = 8
+	# MAX_NUM_COMMANDERS_PER_FORMATION = 4
+	MILITARY_FORMATION_COMMAND_LIMIT_NO_COMMANDER = 20
+	MANPOWER_RATIO_REQUIRED_TO_CLEAR_DEFEATED_ADMIRALS = 0.9	# A Defeated fleet without at least this ratio of current/max manpower will remain Defeated
+	# MAX_CE_ADVANTAGE = 1
+	MIN_MANPOWER_CASUALTY_PER_ROUND = 1
+	MANPOWER_LOST_DUE_TO_ATTRITION_PER_WEEK_MIN = 0	# The minimum percentage of manpower a unit can lose each week due to attrition
+	# MANPOWER_LOST_DUE_TO_ATTRITION_PER_WEEK_MAX = 1 	# The maximum percentage of manpower a unit can lose each week due to attrition
+	MILITARY_FORMATION_ORGANIZATION_EXILE_MULT = -10
+	# MIN_OFFENSE_DEFENSE = 0
+}
+
+# NPowerBlocs = {
+# 	POWER_BLOC_INFLUENCE_COST = 10
+# }
+
+NDiplomacy = {
+	WAR_GOAL_HUMILIATION_TYPE = "status_quo"
+	# WAR_GOAL_INFAMY_CONQUER_STATE = 4.0
+	# WAR_GOAL_INFAMY_RETURN_STATE = 1.0
+	# WAR_GOAL_INFAMY_MAKE_PROTECTORATE = 2.0
+	# WAR_GOAL_INFAMY_MAKE_TRIBUTARY = 3.0
+	# WAR_GOAL_INFAMY_MAKE_DOMINION = 3.0
+	# WAR_GOAL_INFAMY_REDUCE_AUTONOMY = 1.0
+	# WAR_GOAL_INFAMY_TRANSFER_SUBJECT = 2.0
+	# WAR_GOAL_INFAMY_ANNEX_COUNTRY = 4.0
+	# WAR_GOAL_INFAMY_REGIME_CHANGE = 0.1
+	# WAR_GOAL_INFAMY_FORCE_NATIONALIZATION = 3.0
+
+	BASE_YEARLY_INFAMY_DECAY_RATE = 6.0
+
+	WAR_GOAL_INFAMY_CONQUER_STATE = 4.0
+	WAR_GOAL_INFAMY_RETURN_STATE = 2.0
+	WAR_GOAL_INFAMY_MAKE_PROTECTORATE = 2.0
+	WAR_GOAL_INFAMY_MAKE_TRIBUTARY = 2.0
+	WAR_GOAL_INFAMY_MAKE_DOMINION = 2.0
+	WAR_GOAL_INFAMY_REDUCE_AUTONOMY = 2.0
+	WAR_GOAL_INFAMY_TRANSFER_SUBJECT = 2.0
+	WAR_GOAL_INFAMY_ANNEX_COUNTRY = 4.0
+	WAR_GOAL_INFAMY_REGIME_CHANGE = 0.2
+	WAR_GOAL_INFAMY_FORCE_NATIONALIZATION = 4
+	# WAR_GOAL_INFAMY_FOREIGN_INVESTMENT_RIGHTS = 0.25
+	WAR_GOAL_INFAMY_HOMELAND_FACTOR = -0.8
+	MAKE_WARGOAL_PRIMARY_DEMAND_INFAMY_AMOUNT = 0.2
+	MAKE_WARGOAL_PRIMARY_DEMAND_MANEUVERS_COST = 0.4
+	WAR_GOAL_INFAMY_PEACE_REFUND = -0.8
+
+	ALLY_WARGOAL_MAX_MANEUVERS_COST = 100
+	MIN_WAR_SUPPORT = -999
+}
+
+NBattle = {
+	CASUALTY_MAJORITY_CULTURE_WEIGHT = 1.5			# Majority culture pops will be weighted to take 1.5x more casualties
+	CASUALTY_ROLL_MIN = 10							# min ...
+	CASUALTY_ROLL_MAX = 200							# max amount of casualties a unit can take each roll when applying casualties to units
+	SURVIVAL_RATE = 0.6
+	DEPENDENTS_ROLL_MIN_PERCENT = 0.01				# min ...
+	DEPENDENTS_ROLL_MAX_PERCENT = 0.1				# max percentage of Pops Size it can take as Dependents each roll
+	MIN_DEPENDENTS_PER_ROLL = 10					# Minimum amount of dependents to added to a random pop
+
+	CHANCE_OF_POPULARITY_NARROW_VICTORY = 0.5		# The chance (0-1) to be affected by popularity for a narrow victory (start with numeric advantage, end with numeric disadvantage)
+	CHANCE_OF_POPULARITY_NORMAL_VICTORY	= 0.5		# The chance (0-1) to be affected by popularity for a normal victory (any victory that's not narrow or heroic)
+	CHANCE_OF_POPULARITY_HEROIC_VICTORY	= 1.0		# The chance (0-1) to be affected by popularity for a heroic victory (start with numeric disadvantage against a more prestigious nation)
+	POPULARITY_GAIN_NARROW_VICTORY = 3				# Multiple of commander_battle_end_victory modifier the winner should get for a narrow victory if the random chance roll is true
+	POPULARITY_GAIN_NORMAL_VICTORY = 2				# Multiple of commander_battle_end_victory modifier the winner should get for a normal victory if the random chance roll is true
+	POPULARITY_GAIN_HEROIC_VICTORY = 5				# Multiple of commander_battle_end_victory modifier the winner should get for a heroic victory if the random chance roll is true
+	POPULARITY_GAIN_NARROW_LOSS	= -3				# Multiple of commander_battle_end_loss modifier the loser should get for a narrow victory for the other side if the random chance roll is true
+	POPULARITY_GAIN_NORMAL_LOSS	= -2				# Multiple of commander_battle_end_loss modifier the loser should get for a normal victory for the other side if the random chance roll is true
+	POPULARITY_GAIN_HEROIC_LOSS = -5				# Multiple of commander_battle_end_loss modifier the loser should get for a heroic victory for the other side if the random chance roll is true
+	POPULARITY_DECAY_MONTHS = 120					# The number of months battle popularity modifiers decay over
+}
+
+NWar = {
+	DEVASTATION_FROM_BATTLES = 2 # For each battle
+
+	AUTO_CAPITULATE_WAR_SUPPORT = 0 # When war support is this low, the country will auto capitulate
+	DAYS_BETWEEN_WAR_EXHAUSTION = 9 # Every this many days war support will be reduced by the war exhaustion formula
+	WAR_EXHAUSTION_BASE = 0
+	WAR_EXHAUSTION_KIA_FACTOR = 1.0 # Scaled by casualties compared to total manpower
+	WAR_EXHAUSTION_KIA_BASE_MULTIPLIER = 0.01	# War Exhaustion from casualties is always multiplied by at least this
+	WAR_EXHAUSTION_KIA_BATTLES_LOST_MULTIPLIER = 5 	# At 100% of battles lost by our side, War Exhaustion from casualties is further multiplied by this
+	WAR_EXHAUSTION_TURMOIL_FACTOR = 1.0 # At 100% turmoil
+	WAR_EXHAUSTION_CONTESTED_ENEMY_WARGOALS = 10.0
+	WAR_EXHAUSTION_ANTI_WAR_LOBBY_CLOUT_FACTOR = 5.0 # At 100% lobby clout opposed to the war
+	WAR_EXHAUSTION_PRO_WAR_LOBBY_CLOUT_FACTOR = -8.0 # At 100% lobby clout supporting to the war
+	WAR_EXHAUSTION_MAX = 100 # War Exhaustion can never exceed this
+	OCCUPATION_STATE_BASE_WEIGHT = 1
+	OCCUPATION_STATE_POP_WEIGHT = 1
+	OCCUPATION_STATE_INCORPORATED_WEIGHT = 1000000
+	OCCUPATION_STATE_DEFENSIVE_BATTLE_VICTORY_SCORE = 5 # How many occupation "points" each country receives after winning a defensive battle
+	OCCUPATION_STATE_CLEAR_OCCUPATION_FRACTION = 0.7 # Fraction of occupation score dedicated to clear occupation from your own States (if any).
+	NUM_PROVINCES_FOR_ADVANCEMENT_SELECTION = 8
+}
+
+NAI = {
+
+	AI_PEACE_AGREEMENT_BASE_VALUE = 0
+	AI_PEACE_AGREEMENT_WAR_SUPPORT_FACTOR = -0.1	# Each point of war support affects peace acceptance by this amoun
+	AI_PEACE_AGREEMENT_WHITE_PEACE_BASE = 0
+	AI_PEACE_AGREEMENT_WAR_SUPPORT_TO_HOLD_ON_TO_ACHIEVABLE_WARGOALS = 50
+
+	RECRUITABLE_COMMANDER_BASE_SCORE = 100 				# The base score assigned to each recruitable commander in the pool
+	RECRUITABLE_COMMANDER_RANDOM_FACTOR = 1.0			# The higher this is, the more random AI recruitment selection will be
+	RECRUITABLE_COMMANDER_SKILL_TRAIT_SCORE = 100		# A recruitable commander's total value of skill traits is multiplied by this
+	RECRUITABLE_COMMANDER_PERSONALITY_TRAIT_SCORE = 0	# A recruitable commander's total value of personality traits is multiplied by this
+	RECRUITABLE_COMMANDER_CONDITION_TRAIT_SCORE = -100	# A recruitable commander's total value of condition traits is multiplied by this
+	RECRUITABLE_COMMANDER_FAVORED_IG_FACTOR	= 1.1		# If a recruitable commander comes from an IG the AI likes, multiply score by this
+	RECRUITABLE_COMMANDER_DISFAVORED_IG_FACTOR = 1.0	# If a recruitable commander comes from an IG the AI dislikes, multiply score by this
+
+	FRONT_MIN_OVERALL_STRENGTH_FACTOR_TO_ATTACK = 1
+	FRONT_MIN_INDIVIDUAL_ARMY_STRENGTH_FACTOR_TO_ATTACK = 0.5
+	FRONT_MIN_MORALE_TO_ATTACK = 0.9
+	FRONT_MIN_ORGANIZATION_TO_ATTACK = 0
+
+	INVADE_STATE_BARRACKS_WEIGHT = 1 # Per level of barracks
+	INVADE_STATE_BARRACKS_MAX_WEIGHT = 5 # Per state
+	INVADE_STATE_NAVAL_BASE_WEIGHT = 0.5 # Per level of naval base
+	INVADE_STATE_NAVAL_BASE_MAX_WEIGHT = 5 # Per state
+	INVADE_STATE_CAPITAL_WEIGHT = 25
+	INVADE_STATE_CAPITAL_WAR_NEGOTIATOR_WEIGHT = 10
+	INVADE_STATE_OWN_CAPITAL_WEIGHT_MULT = 10
+	INVADE_STATE_WARGOAL_WEIGHT = 20
+	INVADE_STATE_INCORPORATED_WEIGHT_MULT = 1.5
+
+	FRONT_IMPORTANCE_OWN_FRONT_WEIGHT_MULT = 10
+}

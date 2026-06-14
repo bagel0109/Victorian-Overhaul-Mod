@@ -1,0 +1,3421 @@
+﻿# dismantle = {
+#     kind = directed
+#     cost = 0
+
+#     relations_progress_per_day = -0.1
+#     relations_improvement_min = 0
+
+# 	icon = "gfx/interface/icons/wargoals/dismantle.dds"
+
+# 	flags = {
+# 		# is_treaty_port
+# 		can_be_enforced
+# 		is_dismantle_empire
+# 	}
+
+# 	usage_limit = once_per_side
+
+# 	maintenance_paid_by = target_country
+
+#     # required_inputs = {
+#     #     state
+#     # }
+
+#     unlocked_by_technologies = {
+#         political_agitation
+#     }
+
+# 	source_modifier = {
+# 		country_prestige_mult = -0.5
+# 		country_legitimacy_base_add = -10
+# 		country_military_tech_research_speed_mult = 0.2
+# 		country_standard_of_living_violent_hostility_add = -4
+# 		country_standard_of_living_cultural_erasure_add = -3
+# 		country_standard_of_living_open_prejudice_add = -2
+# 		country_standard_of_living_second_rate_citizen_add = -1
+# 		state_pop_support_movement_anarchist_mult = 1.0
+# 		state_pop_support_movement_communist_mult = 1.0
+# 		state_pop_support_movement_cultural_minority_mult = 1.0
+# 		state_pop_support_movement_fascist_mult = 1.0
+# 		state_pop_support_movement_modernizer_mult = 1.0
+# 		state_pop_support_movement_socialist_mult = 1.0
+# 		state_pop_support_movement_corporatist_mult = 1.0
+# 	}
+
+# 	target_modifier = {
+# 		country_prestige_mult = 0.5
+# 		country_legitimacy_base_add = 10
+# 		country_military_tech_research_speed_mult = -0.2
+# 	}
+
+# 	visible = {
+# 		# root = {
+# 		# 	any_enemy_in_diplo_play = {
+# 		# 		this = scope:other_country
+# 		# 	}
+# 		# }
+# 	}
+
+# 	possible = {
+# 		root = {
+# 			any_enemy_in_diplo_play = {
+# 				this = scope:other_country
+# 			}
+# 			OR = {
+# 				country_rank >= rank_value:major_power
+# 				has_journal_entry = je_warlord_china
+# 			}
+			
+# 		}
+# 		scope:other_country = {
+# 			OR = {
+# 				any_cobelligerent_in_diplo_play = {
+# 					country_rank >= rank_value:great_power
+# 				}
+# 				country_rank >= rank_value:great_power
+# 			}
+# 			has_technology_researched = political_agitation
+# 			any_enemy_in_diplo_play = {
+# 				this = root
+# 			}
+# 		}
+# 	}
+	
+#     on_entry_into_force = {
+# 		if = {
+# 			limit = {
+# 				NOT = { scope:article_options.source_country = { has_journal_entry = je_warlord_china } } #china has its own shatter thing
+# 			}
+# 			scope:article_options.target_country = {
+# 				set_country_type = recognized
+# 				every_in_list = {
+# 					variable = allies
+# 					set_country_type = recognized
+# 				}
+# 			}
+# 			scope:article_options.source_country = {
+# 				#SUBJECT STUFF
+# 				every_subject_or_below = {
+# 					set_variable = ceded_states
+# 					save_scope_as = temp_subject_scope
+# 					if = {
+# 						limit = {
+# 							any_in_list = {
+# 								variable = allies
+# 								OR = {
+# 									any_neighbouring_state = {
+# 										owner = scope:temp_subject_scope
+# 									}
+# 									any_subject_or_below = {
+# 										NOT = { has_variable = ceded_states }
+# 										any_neighbouring_state = {
+# 											owner = scope:temp_subject_scope
+# 										}
+# 									}
+# 								}
+# 							}
+# 							NOT = {
+# 								any_scope_state = {
+# 									is_coastal = yes
+# 								}
+# 							}
+# 						}
+# 						scope:article_options.target_country = {
+# 							random_in_list = {
+# 								variable = allies
+# 								limit = {
+# 									OR = {
+# 										any_neighbouring_state = {
+# 											owner = scope:temp_subject_scope
+# 										}
+# 										any_subject_or_below = {
+# 											NOT = { has_variable = ceded_states }
+# 											any_neighbouring_state = {
+# 												owner = scope:temp_subject_scope
+# 											}
+# 										}
+# 									}
+# 								}
+# 								scope:temp_subject_scope = {
+# 									if = {
+# 										limit = {
+# 											has_diplomatic_pact = {
+# 												who = scope:article_options.source_country
+# 												type = personal_union
+# 											}
+# 										}
+# 										remove_diplomatic_pact = {
+# 											country = scope:article_options.source_country
+# 											type = personal_union
+# 										}
+# 										prev = {
+# 											create_diplomatic_pact = {
+# 												country = scope:temp_subject_scope
+# 												type = puppet
+# 											}
+# 										}
+# 									}
+# 									else_if = {
+# 										limit = {
+# 											has_diplomatic_pact = {
+# 												who = scope:article_options.source_country
+# 												type = protectorate
+# 											}
+# 										}
+# 										remove_diplomatic_pact = {
+# 											country = scope:article_options.source_country
+# 											type = protectorate
+# 										}
+# 										prev = {
+# 											create_diplomatic_pact = {
+# 												country = scope:temp_subject_scope
+# 												type = protectorate
+# 											}
+# 										}
+# 									}
+# 									else_if = {
+# 										limit = {
+# 											has_diplomatic_pact = {
+# 												who = scope:article_options.source_country
+# 												type = puppet
+# 											}
+# 										}
+# 										remove_diplomatic_pact = {
+# 											country = scope:article_options.source_country
+# 											type = puppet
+# 										}
+# 										prev = {
+# 											create_diplomatic_pact = {
+# 												country = scope:temp_subject_scope
+# 												type = puppet
+# 											}
+# 										}
+# 									}
+# 									else_if = {
+# 										limit = {
+# 											has_diplomatic_pact = {
+# 												who = scope:article_options.source_country
+# 												type = tributary
+# 											}
+# 										}
+# 										remove_diplomatic_pact = {
+# 											country = scope:article_options.source_country
+# 											type = tributary
+# 										}
+# 										prev = {
+# 											create_diplomatic_pact = {
+# 												country = scope:temp_subject_scope
+# 												type = protectorate
+# 											}
+# 										}
+# 									}
+# 									else_if = {
+# 										limit = {
+# 											has_diplomatic_pact = {
+# 												who = scope:article_options.source_country
+# 												type = vassal
+# 											}
+# 										}
+# 										remove_diplomatic_pact = {
+# 											country = scope:article_options.source_country
+# 											type = vassal
+# 										}
+# 										prev = {
+# 											create_diplomatic_pact = {
+# 												country = scope:temp_subject_scope
+# 												type = puppet
+# 											}
+# 										}
+# 									}
+# 									else_if = {
+# 										limit = {
+# 											has_diplomatic_pact = {
+# 												who = scope:article_options.source_country
+# 												type = dominion
+# 											}
+# 										}
+# 										remove_diplomatic_pact = {
+# 											country = scope:article_options.source_country
+# 											type = dominion
+# 										}
+# 										every_primary_culture = {
+# 											limit = { is_primary_culture_of = scope:article_options.source_country }
+# 											scope:temp_subject_scope = {
+# 												remove_primary_culture = prev
+# 											}
+# 										}
+# 										prev = {
+# 											create_diplomatic_pact = {
+# 												country = scope:temp_subject_scope
+# 												type = dominion
+# 											}
+# 											every_primary_culture = {
+# 												scope:temp_subject_scope = {
+# 													add_primary_culture = prev
+# 												}
+# 											}
+# 										}
+# 									}
+# 									else_if = {
+# 										limit = {
+# 											has_diplomatic_pact = {
+# 												who = scope:article_options.source_country
+# 												type = colony
+# 											}
+# 										}
+# 										remove_diplomatic_pact = {
+# 											country = scope:article_options.source_country
+# 											type = colony
+# 										}
+# 										every_primary_culture = {
+# 											limit = { is_primary_culture_of = scope:article_options.source_country }
+# 											scope:temp_subject_scope = {
+# 												remove_primary_culture = prev
+# 											}
+# 										}
+# 										prev = {
+# 											create_diplomatic_pact = {
+# 												country = scope:temp_subject_scope
+# 												type = colony
+# 											}
+# 											every_primary_culture = {
+# 												scope:temp_subject_scope = {
+# 													add_primary_culture = prev
+# 												}
+# 											}
+# 										}
+# 									}
+# 									else_if = {
+# 										limit = {
+# 											has_diplomatic_pact = {
+# 												who = scope:article_options.source_country
+# 												type = chartered_company
+# 											}
+# 										}
+# 										remove_diplomatic_pact = {
+# 											country = scope:article_options.source_country
+# 											type = chartered_company
+# 										}
+# 										every_primary_culture = {
+# 											limit = { is_primary_culture_of = scope:article_options.source_country }
+# 											scope:temp_subject_scope = {
+# 												remove_primary_culture = prev
+# 											}
+# 										}
+# 										prev = {
+# 											create_diplomatic_pact = {
+# 												country = scope:temp_subject_scope
+# 												type = chartered_company
+# 											}
+# 											every_primary_culture = {
+# 												scope:temp_subject_scope = {
+# 													add_primary_culture = prev
+# 												}
+# 											}
+# 										}
+# 									}
+# 									else_if = {
+# 										limit = {
+# 											NOT = {
+# 												any_in_list = {
+# 													variable = allies
+# 													scope:temp_subject_scope = {
+# 														is_subject_of = prev
+# 													}
+# 												}
+# 											}
+# 										}
+# 										prev = {
+# 											create_diplomatic_pact = {
+# 												country = scope:temp_subject_scope
+# 												type = puppet
+# 											}
+# 										}
+# 									}
+# 									else = {
+# 										make_independent = yes
+# 									}
+# 								}
+# 							}
+# 						}
+# 					}
+# 					else = {
+# 						scope:article_options.target_country = {
+# 							random_in_list = {
+# 								variable = allies
+# 								scope:temp_subject_scope = {
+# 									if = {
+# 										limit = {
+# 											has_diplomatic_pact = {
+# 												who = scope:article_options.source_country
+# 												type = personal_union
+# 											}
+# 										}
+# 										remove_diplomatic_pact = {
+# 											country = scope:article_options.source_country
+# 											type = personal_union
+# 										}
+# 										prev = {
+# 											create_diplomatic_pact = {
+# 												country = scope:temp_subject_scope
+# 												type = puppet
+# 											}
+# 										}
+# 									}
+# 									else_if = {
+# 										limit = {
+# 											has_diplomatic_pact = {
+# 												who = scope:article_options.source_country
+# 												type = protectorate
+# 											}
+# 										}
+# 										remove_diplomatic_pact = {
+# 											country = scope:article_options.source_country
+# 											type = protectorate
+# 										}
+# 										prev = {
+# 											create_diplomatic_pact = {
+# 												country = scope:temp_subject_scope
+# 												type = protectorate
+# 											}
+# 										}
+# 									}
+# 									else_if = {
+# 										limit = {
+# 											has_diplomatic_pact = {
+# 												who = scope:article_options.source_country
+# 												type = puppet
+# 											}
+# 										}
+# 										remove_diplomatic_pact = {
+# 											country = scope:article_options.source_country
+# 											type = puppet
+# 										}
+# 										prev = {
+# 											create_diplomatic_pact = {
+# 												country = scope:temp_subject_scope
+# 												type = puppet
+# 											}
+# 										}
+# 									}
+# 									else_if = {
+# 										limit = {
+# 											has_diplomatic_pact = {
+# 												who = scope:article_options.source_country
+# 												type = tributary
+# 											}
+# 										}
+# 										remove_diplomatic_pact = {
+# 											country = scope:article_options.source_country
+# 											type = tributary
+# 										}
+# 										prev = {
+# 											create_diplomatic_pact = {
+# 												country = scope:temp_subject_scope
+# 												type = protectorate
+# 											}
+# 										}
+# 									}
+# 									else_if = {
+# 										limit = {
+# 											has_diplomatic_pact = {
+# 												who = scope:article_options.source_country
+# 												type = vassal
+# 											}
+# 										}
+# 										remove_diplomatic_pact = {
+# 											country = scope:article_options.source_country
+# 											type = vassal
+# 										}
+# 										prev = {
+# 											create_diplomatic_pact = {
+# 												country = scope:temp_subject_scope
+# 												type = puppet
+# 											}
+# 										}
+# 									}
+# 									else_if = {
+# 										limit = {
+# 											has_diplomatic_pact = {
+# 												who = scope:article_options.source_country
+# 												type = dominion
+# 											}
+# 										}
+# 										remove_diplomatic_pact = {
+# 											country = scope:article_options.source_country
+# 											type = dominion
+# 										}
+# 										every_primary_culture = {
+# 											limit = { is_primary_culture_of = scope:article_options.source_country }
+# 											scope:temp_subject_scope = {
+# 												remove_primary_culture = prev
+# 											}
+# 										}
+# 										prev = {
+# 											create_diplomatic_pact = {
+# 												country = scope:temp_subject_scope
+# 												type = dominion
+# 											}
+# 											every_primary_culture = {
+# 												scope:temp_subject_scope = {
+# 													add_primary_culture = prev
+# 												}
+# 											}
+# 										}
+# 									}
+# 									else_if = {
+# 										limit = {
+# 											has_diplomatic_pact = {
+# 												who = scope:article_options.source_country
+# 												type = colony
+# 											}
+# 										}
+# 										remove_diplomatic_pact = {
+# 											country = scope:article_options.source_country
+# 											type = colony
+# 										}
+# 										every_primary_culture = {
+# 											limit = { is_primary_culture_of = scope:article_options.source_country }
+# 											scope:temp_subject_scope = {
+# 												remove_primary_culture = prev
+# 											}
+# 										}
+# 										prev = {
+# 											create_diplomatic_pact = {
+# 												country = scope:temp_subject_scope
+# 												type = colony
+# 											}
+# 											every_primary_culture = {
+# 												scope:temp_subject_scope = {
+# 													add_primary_culture = prev
+# 												}
+# 											}
+# 										}
+# 									}
+# 									else_if = {
+# 										limit = {
+# 											has_diplomatic_pact = {
+# 												who = scope:article_options.source_country
+# 												type = chartered_company
+# 											}
+# 										}
+# 										remove_diplomatic_pact = {
+# 											country = scope:article_options.source_country
+# 											type = chartered_company
+# 										}
+# 										every_primary_culture = {
+# 											limit = { is_primary_culture_of = scope:article_options.source_country }
+# 											scope:temp_subject_scope = {
+# 												remove_primary_culture = prev
+# 											}
+# 										}
+# 										prev = {
+# 											create_diplomatic_pact = {
+# 												country = scope:temp_subject_scope
+# 												type = chartered_company
+# 											}
+# 											every_primary_culture = {
+# 												scope:temp_subject_scope = {
+# 													add_primary_culture = prev
+# 												}
+# 											}
+# 										}
+# 									}
+# 									else_if = {
+# 										limit = {
+# 											NOT = {
+# 												any_in_list = {
+# 													variable = allies
+# 													scope:temp_subject_scope = {
+# 														is_subject_of = prev
+# 													}
+# 												}
+# 											}
+# 										}
+# 										prev = {
+# 											create_diplomatic_pact = {
+# 												country = scope:temp_subject_scope
+# 												type = puppet
+# 											}
+# 										}
+# 									}
+# 									else = {
+# 										make_independent = yes
+# 									}
+# 								}
+# 							}
+# 						}
+# 					}
+# 				}
+
+# 				save_scope_as = temp_country_scope
+
+# 				#do list stuff
+# 				cu:hungarian ?= { add_to_list = cu_todo_later }
+# 				cu:szekely ?= { add_to_list = cu_todo_later }
+# 				#generic
+# 				every_scope_culture = {
+# 					limit = {
+# 						OR = {
+# 							NOT = { is_primary_culture_of = scope:article_options.source_country }
+# 							cu:south_italian ?= this
+# 						}
+# 						OR = {
+# 							scope:article_options.source_country = {
+# 								culture_percent_country = {  
+# 									target = prev
+# 									value >= 0.0001
+# 								}  
+# 								OR = {
+# 									cultural_acceptance_base = {  
+# 										target = prev
+# 										value <= 80 
+# 									}
+# 									cu:south_italian ?= prev
+# 								}
+# 							}
+# 						}
+# 						NOT = {
+# 							any_in_list = {
+# 								list = cu_todo_later
+# 								prev = this
+# 							}
+# 						}
+# 					}
+# 					debug_log_scopes = no
+# 					save_scope_as = temp_culture_scope
+# 					scope:article_options.source_country = {
+# 						every_scope_state = {
+# 							limit = {
+# 								OR = {
+# 									NOT = { is_homeland_of_country_cultures = scope:article_options.source_country }
+# 									culture_percent_state = {  
+# 										target = scope:temp_culture_scope
+# 										value >= 0.33
+# 									}
+# 								}
+# 								OR = {
+# 									state_region = { is_homeland = scope:temp_culture_scope }
+# 									culture_percent_state = {  
+# 										target = scope:temp_culture_scope
+# 										value >= 0.5
+# 									}
+# 								}
+# 							}
+# 							set_variable = state_to_cede
+# 							debug_log_scopes = no
+# 						}
+# 						if = {
+# 							limit = {
+# 								any_scope_state = {
+# 									has_variable = state_to_cede
+# 								}
+# 							}
+# 							debug_log_scopes = yes
+# 							# create_dynamic_country = {
+# 							# 	origin = scope:article_options.target_country 
+# 							# 	culture = scope:temp_culture_scope 
+# 							# 	tier = city_state 
+# 							# 	cede_state_trigger = { 
+# 							# 		has_variable = state_to_cede 
+# 							# 	} 
+# 							# 	on_created = { 
+# 							# 		save_scope_as = new_country_scope 
+# 							# 		every_scope_state = { 
+# 							# 			remove_variable = state_to_cede 
+# 							# 		} 
+# 							# 		set_variable = ceded_states 
+# 							# 	}
+# 							# 	# color = {  }
+# 							# }
+# 							random_list = {
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 63 112 186 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 186 74 74 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 58 141 95 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 142 92 163 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 209 146 73 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 78 163 196 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 192 100 119 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 100 128 64 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 175 98 160 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 85 152 202 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 200 120 70 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 72 105 152 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 165 76 86 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 70 140 120 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 160 115 180 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 210 150 60 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 55 125 140 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 180 95 110 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 90 110 70 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 150 110 170 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 48 98 120 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 190 80 90 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 100 160 140 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 170 125 195 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 220 160 80 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 75 130 170 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 200 140 120 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 85 95 130 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 140 180 100 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 180 140 200 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 190 100 60 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 65 110 140 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 170 70 80 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 120 160 130 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 150 100 140 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 230 170 90 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 50 140 180 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 210 110 130 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 110 130 90 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 140 110 170 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 180 150 100 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 95 150 180 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 160 60 70 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 70 160 150 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 190 130 170 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 130 100 60 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 115 165 200 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 200 70 80 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 80 170 120 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 170 90 150 }
+# 								    }
+# 								}
+# 							}
+# 						}
+# 					}
+# 				}
+
+# 				#ones later
+# 				every_scope_culture = {
+# 					limit = {
+# 						OR = {
+# 							NOT = { is_primary_culture_of = scope:article_options.source_country }
+# 							cu:south_italian ?= this
+# 						}
+# 						OR = {
+# 							scope:article_options.source_country = {
+# 								culture_percent_country = {  
+# 									target = prev
+# 									value >= 0.0001
+# 								}  
+# 								OR = {
+# 									cultural_acceptance_base = {  
+# 										target = prev
+# 										value <= 80 
+# 									}
+# 									cu:south_italian ?= prev
+# 								}
+# 							}
+# 						}
+# 						any_in_list = {
+# 							list = cu_todo_later
+# 							prev = this
+# 						}
+# 					}
+# 					debug_log_scopes = no
+# 					save_scope_as = temp_culture_scope
+# 					scope:article_options.source_country = {
+# 						every_scope_state = {
+# 							limit = {
+# 								OR = {
+# 									NOT = { is_homeland_of_country_cultures = scope:article_options.source_country }
+# 									culture_percent_state = {  
+# 										target = scope:temp_culture_scope
+# 										value >= 0.33
+# 									}
+# 								}
+# 								OR = {
+# 									state_region = { is_homeland = scope:temp_culture_scope }
+# 									culture_percent_state = {  
+# 										target = scope:temp_culture_scope
+# 										value >= 0.5
+# 									}
+# 								}
+# 							}
+# 							set_variable = state_to_cede
+# 							debug_log_scopes = no
+# 						}
+# 						if = {
+# 							limit = {
+# 								any_scope_state = {
+# 									has_variable = state_to_cede
+# 								}
+# 							}
+# 							debug_log_scopes = yes
+# 							# create_dynamic_country = {
+# 							# 	origin = scope:article_options.target_country 
+# 							# 	culture = scope:temp_culture_scope 
+# 							# 	tier = city_state 
+# 							# 	cede_state_trigger = { 
+# 							# 		has_variable = state_to_cede 
+# 							# 	} 
+# 							# 	on_created = { 
+# 							# 		save_scope_as = new_country_scope 
+# 							# 		every_scope_state = { 
+# 							# 			remove_variable = state_to_cede 
+# 							# 		} 
+# 							# 		set_variable = ceded_states 
+# 							# 	}
+# 							# 	# color = {  }
+# 							# }
+# 							random_list = {
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 63 112 186 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 186 74 74 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 58 141 95 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 142 92 163 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 209 146 73 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 78 163 196 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 192 100 119 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 100 128 64 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 175 98 160 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 85 152 202 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 200 120 70 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 72 105 152 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 165 76 86 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 70 140 120 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 160 115 180 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 210 150 60 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 55 125 140 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 180 95 110 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 90 110 70 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 150 110 170 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 48 98 120 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 190 80 90 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 100 160 140 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 170 125 195 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 220 160 80 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 75 130 170 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 200 140 120 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 85 95 130 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 140 180 100 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 180 140 200 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 190 100 60 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 65 110 140 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 170 70 80 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 120 160 130 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 150 100 140 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 230 170 90 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 50 140 180 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 210 110 130 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 110 130 90 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 140 110 170 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 180 150 100 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 95 150 180 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 160 60 70 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 70 160 150 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 190 130 170 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 130 100 60 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 115 165 200 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 200 70 80 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 80 170 120 }
+# 								    }
+# 								}
+
+# 								1 = {
+# 								    create_dynamic_country = {
+# 								        origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 								        color = { 170 90 150 }
+# 								    }
+# 								}
+# 							}
+# 						}
+# 					}
+# 				}
+
+# 				#austrian stuff
+# 				if = {
+# 					limit = {
+# 						NOT = { exists = c:AUS }
+# 						NOT = { exists = c:SGF }
+# 					}
+# 					cu:south_german = {
+# 						save_scope_as = temp_culture_scope
+# 						scope:article_options.source_country = {
+# 							every_scope_state = {
+# 								limit = {
+# 									OR = {
+# 										NOT = { is_homeland_of_country_cultures = scope:article_options.source_country }
+# 										culture_percent_state = {  
+# 											target = scope:temp_culture_scope
+# 											value >= 0.33
+# 										}
+# 									}
+# 									OR = {
+# 										state_region = { is_homeland = scope:temp_culture_scope }
+# 										culture_percent_state = {  
+# 											target = scope:temp_culture_scope
+# 											value >= 0.5
+# 										}
+# 									}
+# 								}
+# 								set_variable = state_to_cede
+# 							}
+# 							if = {
+# 								limit = {
+# 									any_scope_state = {
+# 										has_variable = state_to_cede
+# 									}
+# 								}
+# 								random_list = {
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 63 112 186 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 186 74 74 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 58 141 95 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 142 92 163 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 209 146 73 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 78 163 196 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 192 100 119 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 100 128 64 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 175 98 160 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 85 152 202 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 200 120 70 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 72 105 152 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 165 76 86 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 70 140 120 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 160 115 180 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 210 150 60 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 55 125 140 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 180 95 110 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 90 110 70 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 150 110 170 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 48 98 120 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 190 80 90 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 100 160 140 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 170 125 195 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 220 160 80 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 75 130 170 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 200 140 120 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 85 95 130 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 140 180 100 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 180 140 200 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 190 100 60 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 65 110 140 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 170 70 80 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 120 160 130 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 150 100 140 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 230 170 90 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 50 140 180 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 210 110 130 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 110 130 90 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 140 110 170 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 180 150 100 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 95 150 180 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 160 60 70 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 70 160 150 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 190 130 170 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 130 100 60 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 115 165 200 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 200 70 80 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 80 170 120 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 170 90 150 }
+# 										}
+# 									}
+# 								}
+# 							}
+# 						}
+# 					}
+# 				}
+
+# 				if = {
+# 					limit = {
+# 						NOT = { exists = c:SCO }
+# 					}
+# 					cu:scottish = {
+# 						save_scope_as = temp_culture_scope
+# 						scope:article_options.source_country = {
+# 							every_scope_state = {
+# 								limit = {
+# 									state_region = { is_homeland = scope:temp_culture_scope }
+# 								}
+# 								set_variable = state_to_cede
+# 							}
+# 							if = {
+# 								limit = {
+# 									any_scope_state = {
+# 										has_variable = state_to_cede
+# 									}
+# 								}
+# 								random_list = {
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 63 112 186 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 186 74 74 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 58 141 95 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 142 92 163 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 209 146 73 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 78 163 196 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 192 100 119 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 100 128 64 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 175 98 160 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 85 152 202 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 200 120 70 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 72 105 152 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 165 76 86 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 70 140 120 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 160 115 180 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 210 150 60 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 55 125 140 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 180 95 110 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 90 110 70 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 150 110 170 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 48 98 120 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 190 80 90 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 100 160 140 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 170 125 195 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 220 160 80 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 75 130 170 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 200 140 120 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 85 95 130 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 140 180 100 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 180 140 200 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 190 100 60 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 65 110 140 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 170 70 80 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 120 160 130 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 150 100 140 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 230 170 90 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 50 140 180 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 210 110 130 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 110 130 90 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 140 110 170 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 180 150 100 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 95 150 180 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 160 60 70 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 70 160 150 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 190 130 170 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 130 100 60 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 115 165 200 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 200 70 80 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 80 170 120 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 170 90 150 }
+# 										}
+# 									}
+# 								}
+# 							}
+# 						}
+# 					}
+# 				}
+				
+# 				every_country = {
+# 					limit = {
+# 						has_variable = ceded_states
+# 					}
+# 					save_scope_as = ceded_state_temp
+# 					random_primary_culture = {
+# 						save_scope_as = temp_culture_scope
+# 					}
+# 					change_relations = {
+# 						country = scope:article_options.source_country
+# 						value = -100
+# 					}
+# 					change_relations = {
+# 						country = scope:article_options.target_country
+# 						value = 100
+# 					}
+# 					scope:article_options.target_country = {
+# 						every_in_list = {
+# 							variable = allies
+# 							limit = {
+# 								exists = power_bloc
+# 							}
+# 							power_bloc = {
+# 								add_leverage = {
+# 									target = scope:ceded_state_temp
+# 									value = {
+# 										add = 700
+# 										# add = 1000
+# 										# divide = {
+# 										# 	scope:article_options.target_country = {
+# 										# 		every_in_list = {
+# 										# 			limit = {
+# 										# 				exists = power_bloc
+# 										# 			}
+# 										# 			variable = allies
+# 										# 			add = 1
+# 										# 		}
+# 										# 	}
+# 										# }
+# 									}
+# 								}
+# 							}
+# 						}
+# 					}
+					
+# 					every_state = {
+# 						limit = {
+# 							is_homeland_of_country_cultures = scope:ceded_state_temp
+# 						}
+# 						state_region = {
+# 							add_claim = scope:ceded_state_temp
+# 						}
+# 					}
+					
+# 					every_scope_state = {
+# 						state_region = {
+# 							add_claim = scope:article_options.source_country
+# 						}
+# 					}
+					
+# 					scope:article_options.source_country = {
+# 						set_secret_goal = {
+# 							country = scope:ceded_state_temp
+# 							secret_goal = conquer
+# 						}
+# 					}
+# 					set_secret_goal = {
+# 						country = scope:article_options.source_country
+# 						secret_goal = conquer
+# 					}
+# 				}
+
+# 				#do it two times
+# 				while = {
+# 					count = 2
+# 					every_country = {
+# 						limit = {
+# 							has_variable = ceded_states
+# 							NOT = { is_subject_type = subject_type_colony }
+# 							NOT = { is_subject_type = subject_type_chartered_company }
+# 						}
+# 						save_scope_as = ceded_state_temp
+# 						random_primary_culture = {
+# 							save_scope_as = temp_culture_scope
+# 						}
+# 						if = {
+# 							limit = {
+# 								any_country = {
+# 									country_has_primary_culture = scope:temp_culture_scope
+# 									any_neighbouring_state = { owner = scope:ceded_state_temp is_incorporated = yes }
+# 									NOT = { this = scope:ceded_state_temp }
+# 									NOT = { this = scope:article_options.source_country }
+# 									NOT = { is_diplomatic_play_enemy_of = scope:article_options.target_country }
+# 									OR = {
+# 										is_subject_of = scope:article_options.target_country
+# 										is_subject = no
+# 									}
+# 								}
+# 							}
+# 							random_country = {
+# 								limit = {
+# 									country_has_primary_culture = scope:temp_culture_scope
+# 									any_neighbouring_state = { owner = scope:ceded_state_temp is_incorporated = yes }
+# 									NOT = { this = scope:ceded_state_temp }
+# 									NOT = { this = scope:article_options.source_country }
+# 									NOT = { is_diplomatic_play_enemy_of = scope:article_options.target_country }
+# 									OR = {
+# 										is_subject_of = scope:article_options.target_country
+# 										is_subject = no
+# 									}
+# 								}
+# 								annex_with_incorporation = scope:ceded_state_temp
+# 							}
+# 						}
+# 					}
+# 				}
+
+# 				#get rid of isolated states
+# 				while = {
+# 					count = 5
+# 					scope:article_options.source_country = {
+# 						every_scope_state = {
+# 							limit = {
+# 								NOT = {
+# 									any_neighbouring_state = {
+# 										count > 1
+# 										owner = { this = scope:article_options.source_country }
+# 									}
+# 								}
+# 								NOT = {
+# 									any_neighbouring_state = {
+# 										OR = {
+# 											AND = {
+# 												owner = { this = scope:article_options.source_country }
+# 												is_capital = yes
+# 											}
+# 											AND = {
+# 												NOT = { owner = { has_variable = ceded_states } }
+# 												any_neighbouring_state = {
+# 													OR = {
+# 														AND = {
+# 															owner = { this = scope:article_options.source_country }
+# 															is_capital = yes
+# 														}
+# 														AND = {
+# 															NOT = { owner = { has_variable = ceded_states } }
+# 															any_neighbouring_state = {
+# 																AND = {
+# 																	owner = { this = scope:article_options.source_country }
+# 																	is_capital = yes
+# 																}
+# 																AND = {
+# 																	NOT = { owner = { has_variable = ceded_states } }
+# 																}
+# 															}
+# 														}
+# 													}
+# 												}
+# 											}
+# 										}
+# 									}
+# 								}
+# 								any_neighbouring_state = {
+# 									owner = {
+# 										has_variable = ceded_states
+# 									}
+# 								}
+# 							}
+# 							save_scope_as = state_scope
+# 							random_neighbouring_state = {
+# 								limit = {
+# 									owner = {
+# 										has_variable = ceded_states
+# 									}
+# 								}
+# 								owner = {
+# 									scope:state_scope = {
+# 										set_state_owner = prev
+# 									}
+# 								}
+# 							}
+# 						}
+# 					}
+# 				}
+					
+# 				every_country = {
+# 					limit = {
+# 						has_variable = ceded_states
+# 					}
+# 					create_bidirectional_truce = {
+# 						country = scope:article_options.source_country
+# 						months = 60
+# 					}
+# 					remove_variable = ceded_states
+# 				}
+
+# 				#special german gets cucked
+# 				if = {
+# 					limit = {
+# 						OR = {
+# 							c:GER ?= this
+# 							c:NGF ?= this
+# 						}
+# 					}
+# 					debug_log_scopes = no
+# 					while = {
+# 						count = 50
+# 						scope:article_options.source_country = {
+# 							cu:north_german = {
+# 								save_scope_as = temp_culture_scope
+# 							}
+# 							random_scope_state = {
+# 								limit = {
+# 									NOT = { state_region = s:STATE_BRANDENBURG }
+# 									NOT = { state_region = s:STATE_POMERANIA }
+# 									NOT = { state_region = s:STATE_WEST_PRUSSIA }
+# 									NOT = { state_region = s:STATE_EAST_PRUSSIA }
+# 									NOT = { state_region = s:STATE_LOWER_SILESIA }
+# 									NOT = { state_region = s:STATE_UPPER_SILESIA }
+# 									NOT = { state_region = s:STATE_POSEN }
+# 									NOT = { state_region = s:STATE_BRUNSWICK }
+# 									NOT = { state_region = s:STATE_ANHALT }
+# 									# NOT = { state_region = s:STATE_SAXONY }
+# 								}
+# 								set_variable = state_to_cede
+# 								random_list = {
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 63 112 186 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 186 74 74 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 58 141 95 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 142 92 163 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 209 146 73 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 78 163 196 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 192 100 119 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 100 128 64 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 175 98 160 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 85 152 202 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 200 120 70 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 72 105 152 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 165 76 86 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 70 140 120 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 160 115 180 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 210 150 60 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 55 125 140 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 180 95 110 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 90 110 70 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 150 110 170 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 48 98 120 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 190 80 90 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 100 160 140 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 170 125 195 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 220 160 80 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 75 130 170 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 200 140 120 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 85 95 130 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 140 180 100 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 180 140 200 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 190 100 60 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 65 110 140 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 170 70 80 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 120 160 130 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 150 100 140 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 230 170 90 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 50 140 180 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 210 110 130 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 110 130 90 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 140 110 170 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 180 150 100 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 95 150 180 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 160 60 70 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 70 160 150 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 190 130 170 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 130 100 60 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 115 165 200 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 200 70 80 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 80 170 120 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.source_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope every_scope_state = { remove_variable = state_to_cede } set_variable = ceded_states }
+# 											color = { 170 90 150 }
+# 										}
+# 									}
+# 								}
+# 							}
+# 						}
+# 					}
+
+# 					every_country = {
+# 						limit = {
+# 							has_variable = ceded_states
+# 						}
+# 						every_scope_state = {
+# 							state_region = {
+# 								add_claim = scope:article_options.source_country
+# 							}
+# 						}
+# 						create_bidirectional_truce = {
+# 							country = scope:article_options.source_country
+# 							months = 60
+# 						}
+# 						remove_variable = ceded_states
+# 					}
+# 				}
+
+# 				#USA STUFF AHAHAHGHAHAHAHGAJAHFJHAHFAUYFHAGVUGVFAGUF
+# 				if = {
+# 					limit = {
+# 						OR = {
+# 							c:USA ?= this
+# 							c:CSA ?= this
+# 						}
+# 					}
+# 					capital = { set_variable = us_no_take }
+# 					while = {
+# 						count = 2
+# 						scope:article_options.source_country = {
+# 							every_scope_state = {
+# 								limit = {
+# 									has_variable = us_no_take
+# 								}
+# 								every_neighbouring_state = {
+# 									limit = {
+# 										owner = scope:article_options.source_country
+# 										NOT = { has_variable = us_no_take }
+# 									}
+# 									set_variable = us_no_take
+# 								}
+# 							}
+# 						}
+# 					}
+# 					while = {
+# 						count = 5
+# 						scope:article_options.source_country = {
+# 							cu:yankee = {
+# 								save_scope_as = temp_culture_scope
+# 							}
+# 							random_scope_state = {
+# 								limit = {
+# 									is_capital = no
+# 									is_incorporated = yes
+# 									NOT = { has_variable = us_no_take }
+# 								# 	state_region = {
+# 								# 		OR = {
+# 								# 			s:STATE_SOUTH_CAROLINA ?= this
+# 								# 			s:STATE_CALIFORNIA ?= this
+# 								# 			s:STATE_UTAH ?= this
+# 								# 			s:STATE_MAINE ?= this
+# 								# 			s:STATE_OREGON ?= this
+# 								# 			s:STATE_MICHIGAN ?= this
+# 								# 			s:STATE_GEORGIA ?= this
+# 								# 			s:STATE_FLORIDA ?= this
+# 								# 			s:STATE_TEXAS ?= this
+# 								# 		}
+# 								# 	}
+# 								}
+# 								set_variable = state_to_cede
+# 								random_list = {
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 63 112 186 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 186 74 74 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 58 141 95 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 142 92 163 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 209 146 73 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 78 163 196 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 192 100 119 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 100 128 64 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 175 98 160 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 85 152 202 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 200 120 70 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 72 105 152 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 165 76 86 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 70 140 120 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 160 115 180 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 210 150 60 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 55 125 140 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 180 95 110 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 90 110 70 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 150 110 170 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 48 98 120 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 190 80 90 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 100 160 140 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 170 125 195 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 220 160 80 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 75 130 170 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 200 140 120 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 85 95 130 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 140 180 100 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 180 140 200 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 190 100 60 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 65 110 140 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 170 70 80 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 120 160 130 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 150 100 140 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 230 170 90 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 50 140 180 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 210 110 130 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 110 130 90 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 140 110 170 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 180 150 100 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 95 150 180 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 160 60 70 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 70 160 150 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 190 130 170 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 130 100 60 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 115 165 200 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 200 70 80 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 80 170 120 }
+# 										}
+# 									}
+
+# 									1 = {
+# 										create_dynamic_country = {
+# 											origin = scope:article_options.target_country culture = scope:temp_culture_scope tier = city_state cede_state_trigger = { has_variable = state_to_cede } on_created = { save_scope_as = new_country_scope add_primary_culture = cu:dixie every_scope_state = { remove_variable = state_to_cede } set_variable = us_warlord_state }
+# 											color = { 170 90 150 }
+# 										}
+# 									}
+# 								}
+# 							}
+# 						}
+# 					}
+# 					while = {
+# 						limit = {
+# 							scope:article_options.source_country = {
+# 								any_scope_state = {
+# 									NOT = { is_capital = yes }
+# 									NOT = { has_variable = us_no_take }
+# 									any_neighbouring_state = {
+# 										owner = {
+# 											has_variable = us_warlord_state
+# 										}
+# 									}
+# 								}
+# 							}
+# 						}
+# 						every_country = {
+# 							limit = {
+# 								has_variable = us_warlord_state
+# 								any_neighbouring_state = {
+# 									NOT = { is_capital = yes }
+# 									NOT = { has_variable = us_no_take }
+# 									owner = scope:article_options.source_country
+# 								}
+# 							}
+# 							random_neighbouring_state = {
+# 								limit = {
+# 									NOT = { is_capital = yes }
+# 									NOT = { has_variable = us_no_take }
+# 									owner = scope:article_options.source_country
+# 								}
+# 								set_state_owner = prev
+# 								set_state_type = incorporated
+# 							}
+# 						}
+# 					}
+					
+# 					every_scope_state = {
+# 						limit = {
+# 							has_variable = us_no_take
+# 						}
+# 						remove_variable = us_no_take
+# 					}
+# 					set_variable = us_warlord_state
+
+# 					every_country = {
+# 						limit = {
+# 							has_variable = us_warlord_state
+# 						}
+# 						save_scope_as = ceded_state_temp
+# 						random_primary_culture = {
+# 							save_scope_as = temp_culture_scope
+# 						}
+# 						change_relations = {
+# 							country = scope:article_options.source_country
+# 							value = -100
+# 						}
+# 						change_relations = {
+# 							country = scope:article_options.target_country
+# 							value = 100
+# 						}
+
+# 						every_state = {
+# 							limit = {
+# 								is_homeland_of_country_cultures = scope:ceded_state_temp
+# 							}
+# 							state_region = {
+# 								add_claim = scope:ceded_state_temp
+# 							}
+# 						}
+
+# 						every_scope_state = {
+# 							state_region = {
+# 								add_claim = scope:article_options.source_country
+# 							}
+# 						}
+
+# 						scope:article_options.source_country = {
+# 							set_secret_goal = {
+# 								country = scope:ceded_state_temp
+# 								secret_goal = conquer
+# 							}
+# 						}
+# 						set_secret_goal = {
+# 							country = scope:article_options.source_country
+# 							secret_goal = conquer
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# 	on_enforced = {
+		
+# 	}
+
+# 	on_withdrawal = {
+		
+# 	}
+# 	on_break = {
+		
+# 	}
+
+# 	ai = {
+# 		treaty_categories = {
+# 			expansion
+# 		}
+
+# 		evaluation_chance = {
+# 			value = 1.0
+# 		}
+
+# 		article_ai_usage = {
+#             request
+#         }
+
+# 		inherent_accept_score = {
+# 			value = 0
+# 			if = {
+# 				limit = {
+# 					scope:target_country ?= this
+# 				}
+# 				add = 1000
+# 			}
+# 			else = {
+# 				add = -10000
+# 			}
+# 		}
+
+# 		wargoal_score_multiplier = {
+# 			value = 10
+
+# 			if = {
+# 				limit = {
+# 					# scope:target_country.country_rank >= rank_value:great_power
+# 					OR = {
+# 						any_enemy_in_diplo_play = {
+# 							count >= 2
+# 							country_rank >= rank_value:great_power
+# 						}
+# 						scope:target_country = {
+# 							infamy >= infamy_threshold:pariah
+# 						}
+# 					}
+# 				}
+# 				multiply = 1000000
+# 			}
+# 		}
+# 	}
+
+# 	wargoal = {
+# 		execution_priority = 2000
+# 		contestion_type = control_target_country_capital
+
+# 		maneuvers = {
+# 			value = 0
+
+# 			add = {
+# 				scope:target_country = {
+# 					add = {
+# 						value = gdp
+# 						# divide = 7
+# 					}
+# 					every_subject_or_below = {
+# 						add = {
+# 							value = gdp
+# 						}
+# 					}
+# 				}
+# 				divide = {
+# 					every_country = {
+# 						add = gdp
+# 					}
+# 				}
+# 				multiply = 800
+# 				desc = "[concept_gdp]"
+# 			}
+			
+# 			if = {
+# 				limit = {
+# 					any_rival_country = {
+# 						this = scope:target_country
+# 					}
+					
+# 				}
+# 				multiply = 0.5
+# 			}
+# 			min = 10
+# 			max = 80
+# 		}
+
+# 		infamy = {
+# 			value = 0
+
+			
+
+# 			scope:target_country = {
+# 				add = {
+# 					value = total_population
+# 					# divide = 7
+# 					# divide = define:NDiplomacy|SWAY_OFFER_WARGOAL_MANEUVERS_COST_POPULATION_SCALING_FACTOR
+# 					# multiply = define:NDiplomacy|SWAY_OFFER_WARGOAL_MANEUVERS_COST_POPULATION_SCALING_MULTIPLIER
+# 				}
+# 				every_subject_or_below = {
+# 					add = {
+# 						value = total_population
+# 						# divide = 6
+# 						# divide = define:NDiplomacy|SWAY_OFFER_WARGOAL_MANEUVERS_COST_POPULATION_SCALING_FACTOR
+# 						# multiply = define:NDiplomacy|SWAY_OFFER_WARGOAL_MANEUVERS_COST_POPULATION_SCALING_MULTIPLIER
+# 					}
+# 				}
+# 			}
+# 			divide = {
+# 				every_country = {
+# 					add = total_population
+# 				}
+# 			}
+# 			multiply = 1500
+
+# 			# scope:target_country = {
+# 			# 	add = {
+# 			# 		value = total_population
+# 			# 		divide = 5
+# 			# 		divide = define:NDiplomacy|SWAY_OFFER_WARGOAL_MANEUVERS_COST_POPULATION_SCALING_FACTOR
+# 			# 		multiply = define:NDiplomacy|SWAY_OFFER_WARGOAL_MANEUVERS_COST_POPULATION_SCALING_MULTIPLIER
+# 			# 	}
+# 			# }
+# 			if = {
+# 				limit = {
+# 					any_rival_country = {
+# 						this = scope:target_country
+# 					}
+					
+# 				}
+# 				multiply = 0.5
+# 			}			
+			
+# 			min = 5
+# 			max = 85.715
+# 		}
+# 	}
+# }

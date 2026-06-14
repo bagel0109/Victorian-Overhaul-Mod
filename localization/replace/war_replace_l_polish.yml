@@ -1,0 +1,23 @@
+﻿l_polish:
+ WAR_EXHAUSTION_FROM_CASUALTIES: "[SCOPE.sWar('war').GetCasualties(SCOPE.GetRootScope.GetCountry.Self)|Dv] [concept_casualties] [SCOPE.GetRootScope.GetCountry.GetAdjective] poniesionych względem maksymalnej wielkości armii wynoszącej #v [Multiply_int32(SCOPE.GetRootScope.GetCountry.GetNumBattalions,'(int32)1000')|kv]#!, a [SCOPE.GetRootScope.GetCountry.GetName] przegrało [SCOPE.sWar('war').GetSizeWeightedLostBattlesFraction(SCOPE.GetRootScope.GetCountry.Self)|%1v] bitew"
+ WAR_EXHAUSTION_FROM_TURMOIL: "Populacja [concept_radical] ([SCOPE.GetRootScope.GetCountry.CalcTurmoil|%1v]) w państwie [SCOPE.GetRootScope.GetCountry.GetName]"
+ WAR_EXHAUSTION_FROM_EVENTS: "Inne"
+
+ MARKER_COMBAT_UNITS_TYPE_AND_NUM: "[SelectLocalization(GreaterThan_int64(FormationMarker.CalcCurrentManpower, '(int64)100000'), 'MARKER_ARMY_BIG', 'MARKER_ARMY_SMALL')]"
+ MARKER_ARMY_SMALL: "[FormationMarker.CalcCurrentManpower|0*v]"
+ MARKER_ARMY_BIG: "[FormationMarker.CalcCurrentManpower|Dv]"
+ ARTICLE_COUNTRY_WILL_NOT_COLONIZE: "[Country.GetName][ConcatIfNeitherEmpty(' ', AddLocalizationIf(Country.IsLocalPlayer, 'YOU'))][ConcatIfNeitherEmpty(' ', SelectLocalization(EqualTo_string(ArticleDraft.GetArticleType.GetNameNoFormatting, Localize('transfer_claims')), 'ARTICLE_COUNTRY_WILL_NOT_COLONIZE_FAKE', 'ARTICLE_COUNTRY_WILL_NOT_COLONIZE_REAL'))][StrategicRegion.GetName]"
+ ARTICLE_COUNTRY_WILL_NOT_COLONIZE_REAL: "#b nie będzie#! [Concept('concept_colony', '$concept_colonize$')] "
+ ARTICLE_COUNTRY_WILL_NOT_COLONIZE_FAKE: "#b przekaże roszczenia#! w "
+
+ concept_war_support: "Wynik wojny"
+ concept_war_support_desc: "Miara zdolności wojskowej państwa do podtrzymywania działań bojowych w [concept_war]. Gdy $concept_war_support$ osiągnie [GetDefine('NWar','AUTO_CAPITULATE_WAR_SUPPORT')|v0], $concept_country$ natychmiast skapituje, co pozwoli narzucić mu wszystkie [Concept('concept_war_goal','$concept_war_goals$')]."
+
+ WAR_PANEL_WAR_SUPPORT_DESC:0 "#HEADER Wynik wojny#! ($COUNTRY_NAME$)\nBieżąca wartość: #variable $SUPPORT|1+=$#!"
+ WAR_PANEL_WAR_SUPPORT_DESC_INITIAL:1 "Początkowy [concept_war_support]: #variable [GetDefine('NDiplomacy','BASE_WAR_SUPPORT')|+=1]#!"
+ WAR_PANEL_WAR_SUPPORT_DESC_BATTLES:0 "\nZ bitew: #variable $BATTLES|1+=$#!"
+ WAR_PANEL_WAR_SUPPORT_DESC_EXHAUSTION:0 "\nZ wyczerpania: #variable $EXHAUSTION|1+=$#!"
+ WAR_PANEL_WAR_SUPPORT_DESC_SITUATIONS:1 "\nZ wydarzeń: #variable $SITUATIONS|1+=$#!"
+ WAR_PANEL_WAR_SUPPORT_UNABLE_TO_CAPITULATE: ""
+
+ WAR_SUPPORT_CANNOT_BE_NEGATIVE: "Następujące [Concept('concept_war_goal','$concept_war_goals$')] #b nie są#! kontrolowane przez stronę przeciwną jako [Concept('concept_controlled_war_goal','$concept_controlled_war_goal_short$')]:"

@@ -1,0 +1,70 @@
+﻿# This play is only used as a 'default diplomatic play' for certain triggers etc, and potentially for scripted content
+# It can never actually be launched in the normal way
+
+dp_dismantle = {
+	requires_interest_marker = yes
+	initiator_can_add_war_goals = yes
+	target_can_add_war_goals = yes
+
+	war_goal = dismantle
+
+	texture = "gfx/interface/icons/wargoals/dismantle.dds"
+
+	selectable_in_lens = {
+		OR = {
+			has_game_rule = waddle_dismantle_allowed
+			AND = {
+				is_player = yes
+				has_game_rule = waddle_dismantle_allowed_player
+			}
+		}
+	}
+
+	possible = {
+		is_ai = no
+		OR = {
+			has_game_rule = waddle_dismantle_allowed
+			AND = {
+				is_player = yes
+				has_game_rule = waddle_dismantle_allowed_player
+			}
+		}
+		NOT = { is_country_type = decentralized }
+		aggressive_diplomatic_plays_permitted = yes
+		NOT = { is_subject_of = scope:target_country }
+		scope:target_country = {
+			NOT = { is_country_type = decentralized }
+			NOT = { is_subject_of = root }
+		}
+		scope:target_country = {
+			OR = {
+				country_rank >= rank_value:major_power
+				has_journal_entry = je_warlord_china
+			}
+			
+		}
+		root = {
+			OR = {
+				any_cobelligerent_in_diplo_play = {
+					country_rank >= rank_value:great_power
+				}
+				country_rank >= rank_value:great_power
+			}
+			has_technology_researched = political_agitation
+		}
+	}
+
+	additional_involvement_trigger = {
+		NOT = { is_country_type = decentralized }
+		country_rank >= rank_value:great_power
+		aggressive_diplomatic_plays_permitted = yes
+	}
+
+	ai_acceptance_max = 100
+
+	on_weekly_pulse = {}
+
+	on_war_begins = {}
+
+	on_war_end = {}
+}

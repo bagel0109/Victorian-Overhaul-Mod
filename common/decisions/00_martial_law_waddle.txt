@@ -1,0 +1,23 @@
+REPLACE_OR_CREATE:waddle_martial_law_decision = {
+	is_shown = {
+		always = no
+	}
+
+	possible = {
+		always = no
+		OR = {
+			any_enemy_in_war = {
+				country_rank >= root.country_rank
+			}
+			any_civil_war = {
+				civil_war_progress > 0.1
+			}
+			radical_population_fraction > 0.5
+		}
+		NOT = { has_journal_entry = je_waddle_martial_law }
+	}
+
+	when_taken = {
+		add_journal_entry = { type = je_waddle_martial_law }
+	}
+}

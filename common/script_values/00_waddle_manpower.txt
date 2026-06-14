@@ -1,0 +1,11 @@
+﻿REPLACE_OR_CREATE:total_manpower = {
+    value = 0
+	every_military_formation = {
+		limit = {
+			is_army = yes
+		}
+		every_combat_unit = {
+			add = manpower
+		}
+	}
+}

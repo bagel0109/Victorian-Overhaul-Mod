@@ -1,0 +1,99 @@
+﻿pro_war_ig_trigger = {
+	OR = {
+		has_ideology = ideology:ideology_jingoist
+		has_ideology = ideology:ideology_jingoist_leader
+		has_ideology = ideology:ideology_stratocratic
+		has_ideology = ideology:ideology_patriotic
+		has_ideology = ideology:ideology_sikh_militancy
+		has_ideology = ideology:ideology_fascist
+		has_ideology = ideology:ideology_fascist_movement
+		has_ideology = ideology:ideology_vanguardist
+		has_ideology = ideology:ideology_vanguardist_movement
+		has_ideology = ideology:ideology_ethno_nationalist
+		has_ideology = ideology:ideology_ethno_nationalist_movement
+		has_ideology = ideology:ideology_colonialist
+		has_ideology = ideology:ideology_sovereignist
+		has_ideology = ideology:ideology_sovereignist_movement
+		has_ideology = ideology:ideology_bonapartist
+		has_ideology = ideology:ideology_bonapartist_movement
+		has_ideology = ideology:ideology_austrian_hegemony
+		has_ideology = ideology:ideology_royalist
+		has_ideology = ideology:ideology_authoritarian
+		has_ideology = ideology:ideology_loyalist
+		has_ideology = ideology:ideology_radical
+		has_ideology = ideology:ideology_populist
+		has_ideology = ideology:ideology_meritocratic
+	}
+}
+
+anti_war_ig_trigger = {
+    OR = {
+        has_ideology = ideology:ideology_pacifist
+		has_ideology = ideology:ideology_luddite
+		has_ideology = ideology:ideology_isolationist
+		has_ideology = ideology:ideology_humanitarian
+		has_ideology = ideology:ideology_humanitarian_royalist
+		has_ideology = ideology:ideology_moralist
+		has_ideology = ideology:ideology_papal_moralist
+		has_ideology = ideology:ideology_buddhist_moralist
+		has_ideology = ideology:ideology_hindu_moralist
+		has_ideology = ideology:ideology_shinto_moralist
+		has_ideology = ideology:ideology_sikh_moralist
+		has_ideology = ideology:ideology_anarchist
+		has_ideology = ideology:ideology_anarchist_movement
+    }
+}
+
+pro_war_pm_trigger = {
+	OR = {
+		has_core_ideology = ideology:ideology_jingoist
+		has_core_ideology = ideology:ideology_jingoist_leader
+		has_core_ideology = ideology:ideology_stratocratic
+		has_core_ideology = ideology:ideology_patriotic
+		has_core_ideology = ideology:ideology_sikh_militancy
+		has_core_ideology = ideology:ideology_vanguardist
+		has_core_ideology = ideology:ideology_vanguardist_movement
+		has_core_ideology = ideology:ideology_ethno_nationalist
+		has_core_ideology = ideology:ideology_ethno_nationalist_movement
+		has_core_ideology = ideology:ideology_colonialist
+		has_core_ideology = ideology:ideology_sovereignist
+		has_core_ideology = ideology:ideology_sovereignist_movement
+		has_core_ideology = ideology:ideology_bonapartist
+		has_core_ideology = ideology:ideology_bonapartist_movement
+		has_core_ideology = ideology:ideology_austrian_hegemony
+		has_core_ideology = ideology:ideology_royalist_movement
+		has_core_ideology = ideology:ideology_authoritarian_movement
+		is_political_movement_type = movement_cultural_majority
+		is_political_movement_type = movement_fascist
+		is_political_movement_type = movement_radical
+		is_political_movement_type = movement_nihilist
+		is_political_movement_type = movement_bonapartist
+		is_political_movement_type = movement_legitimist
+		is_political_movement_type = movement_corporatist
+		is_political_movement_type = movement_reactionary
+		is_political_movement_type = movement_royalist_absolutist
+	}
+}
+
+anti_war_pm_trigger = {
+    OR = {
+        has_core_ideology = ideology:ideology_pacifist
+		has_core_ideology = ideology:ideology_luddite
+		has_core_ideology = ideology:ideology_isolationist
+		has_core_ideology = ideology:ideology_humanitarian
+		has_core_ideology = ideology:ideology_humanitarian_royalist
+		has_core_ideology = ideology:ideology_moralist
+		has_core_ideology = ideology:ideology_papal_moralist
+		has_core_ideology = ideology:ideology_buddhist_moralist
+		has_core_ideology = ideology:ideology_hindu_moralist
+		has_core_ideology = ideology:ideology_shinto_moralist
+		has_core_ideology = ideology:ideology_sikh_moralist
+		has_core_ideology = ideology:ideology_anarchist
+		has_core_ideology = ideology:ideology_anarchist_movement
+		is_political_movement_type = movement_cultural_minority
+		# is_political_movement_type = movement_pacifist nor work???
+		is_political_movement_type = movement_minority_rights
+		is_political_movement_type = movement_anarchist
+		is_political_movement_type = movement_land_reform
+    }
+}

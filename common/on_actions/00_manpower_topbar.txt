@@ -1,0 +1,59 @@
+# Adding base game elements if they are missing
+on_monthly_pulse = {
+    on_actions = {
+        add_manpower_to_bar
+    }
+}
+
+# Adding base game elements if they are missing
+add_manpower_to_bar = {
+    effect = {
+        if = {
+            limit = {
+                NOT = {
+                    any_in_global_list = {
+                        variable = com_topbar_items
+                        this = flag:com_topbar_element_manpower
+                    }
+                }
+            }
+            add_com_topbar_element = {
+                element_name = com_topbar_element_manpower
+            }
+            every_country = {
+                add_to_variable_list = {
+                    name = com_topbar_second_line
+                    target = scope:com_topbar_element_manpower
+                }
+            }
+        }
+    }
+}
+
+on_game_started_after_lobby = {
+	on_actions = { manpower_topbar_activate }
+}
+
+manpower_topbar_activate = {
+	effect = {
+        if = {
+            limit = {
+                NOT = {
+                    any_in_global_list = {
+                        variable = com_topbar_items
+                        this = flag:com_topbar_element_manpower
+                    }
+                }
+            }
+            add_com_topbar_element = {
+                element_name = com_topbar_element_manpower
+            }
+            every_country = {
+                add_to_variable_list = {
+                    name = com_topbar_second_line
+                    target = scope:com_topbar_element_manpower
+                }
+            }
+        }
+	}
+}

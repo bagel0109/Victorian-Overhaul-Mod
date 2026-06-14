@@ -1,0 +1,151 @@
+﻿REPLACE_OR_CREATE:break_truce = {
+	groups= {
+		general
+	}
+
+	requires_approval = no
+	should_notify_third_parties = no
+	show_effect_in_tooltip = yes
+
+	selectable = {
+		NOT = { is_country_type = decentralized }
+		is_revolutionary = no
+	}
+
+	potential = {
+		scope:target_country = {
+			NOT = { is_country_type = decentralized }
+			is_revolutionary = no
+		}
+		has_truce_with = scope:target_country
+		NOT = {
+			any_scope_treaty = {
+				binds = scope:target_country
+				any_scope_article = {
+					has_type = alliance
+				}
+			}
+		}
+		NOT = {
+			any_scope_treaty = {
+				binds = scope:target_country
+				any_scope_article = {
+					has_type = defensive_pact
+				}
+			}
+		}
+		NOT = {
+			has_modifier = country_humiliated
+		}
+	}
+
+	possible = {
+		NOT = { has_war_with = scope:target_country }
+		is_revolutionary = no
+		has_diplomatic_relevance = scope:target_country
+		NOT = { has_diplomatic_pact = { who = scope:target_country type = increase_relations } }
+		has_truce_with = scope:target_country
+		OR = {
+			NOT = {
+				is_subject_of = scope:target_country
+			}
+			liberty_desire >= 50
+		}
+		NOT = {
+			any_scope_treaty = {
+				binds = scope:target_country
+				any_scope_article = {
+					has_type = alliance
+				}
+			}
+		}
+		NOT = {
+			any_scope_treaty = {
+				binds = scope:target_country
+				any_scope_article = {
+					has_type = defensive_pact
+				}
+			}
+		}
+		NOT = {
+			has_modifier = country_humiliated
+		}
+	}
+
+	accept_effect = {
+		change_relations = { country = scope:target_country value = -20 }
+		end_truce = scope:target_country
+		if = {
+			limit = {
+				prestige < scope:target_country.prestige
+			}
+			save_scope_as = smaller_country
+		}
+		else = {
+			scope:target_country = {
+				save_scope_as = smaller_country
+			}
+		}
+		root = {
+			create_incident = {
+				country = scope:target_country
+				value = {
+					add = 0.4
+					scope:smaller_country = {
+						multiply = {
+							desc = "INFAMY_TARGET_COUNTRY_POPULATION_FACTOR"
+							value = total_population
+							divide = define:NDiplomacy|WAR_GOAL_INFAMY_POPULATION_SCALING_FACTOR
+							multiply = define:NDiplomacy|WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER
+							min = 50
+						}
+					}
+				}
+			}
+		}
+		
+	}
+
+	ai = {
+		evaluation_chance = {
+			value = 0.0
+
+			# if = {
+			# 	limit = { is_at_war = no }
+			# 	add = 0.416
+			# }
+		}
+
+		propose_score = {
+			value = 100
+		}
+
+		will_propose = {
+			always = no
+			infamy <= infamy_threshold:infamous
+			OR = {
+				AND = {
+					country_rank >= rank_value:great_power
+					OR = {
+						scope:target_country = { infamy >= infamy_threshold:pariah }
+						AND = {
+							any_rival_country = {
+								this = scope:target_country
+							}
+							scope:target_country = { infamy >= infamy_threshold:notorious }
+						}
+					}
+				}
+			}
+			any_diplomatic_play = {
+				any_scope_play_involved = {
+					this = scope:target_country
+				}
+				any_scope_play_involved = {
+					NOT = { this = scope:target_country }
+					country_rank >= rank_value:great_power
+				}
+			}
+		}
+	}
+}

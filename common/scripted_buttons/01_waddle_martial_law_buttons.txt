@@ -1,0 +1,30 @@
+﻿waddle_end_martial_law_button = {
+	name = waddle_end_martial_law_button
+	desc = waddle_end_martial_law_button_desc
+
+	visible = {
+		
+	}
+
+	possible = {
+		hidden_trigger = {
+			text = waddle_martial_law_end_tt
+			NOT = { has_variable = waddle_martial_law_ended }
+		}
+		custom_tooltip = {
+			text = waddle_martial_law_cooldown
+			var:waddle_martial_law_length > 1
+		}
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = waddle_martial_law_end_tt_desc
+			set_variable = waddle_martial_law_ended
+		}
+	}
+
+	ai_chance = {
+
+	}
+}
