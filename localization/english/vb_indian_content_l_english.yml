@@ -1,0 +1,10 @@
+﻿l_english:
+
+  je_group_british_india_global: "British India"
+
+  je_jewel_in_crown: "The Jewel in the Crown"
+  je_jewel_in_crown_reason: "The [SCOPE.sCountry('india_scope').GetNameNoFlag] stands as the centerpiece of [SCOPE.sCountry('britain_scope').GetAdjective] imperial power. Through the [SCOPE.sCountry('india_scope').GetNameNoFlag] and the authority of the Crown, vast wealth, resources, and manpower flow from the subcontinent into the [SCOPE.sCountry('britain_scope').GetAdjective] Empire. Yet beneath this prosperity lies political fragmentation, economic exploitation, and growing unrest. The future of [SCOPE.sCountry('britain_scope').GetNameNoFlag]'s rule in [SCOPE.sCountry('india_scope').GetNameNoFlag] will depend on balancing imperial ambition with the realities of governing one of the world's largest and most diverse populations."
+
+  vb_indian_political_illiteracy: "Political Illiteracy"
+
+  vb_forced_deindustrialization: "Forced Deindustrialization"

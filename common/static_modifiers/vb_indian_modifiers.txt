@@ -1,0 +1,12 @@
+vb_indian_political_illiteracy = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_academic_negative.dds
+	political_movement_radicalism_add = -0.25
+	state_radicals_from_political_movements_mult = -0.50
+	state_education_access_add = -0.2
+}
+
+vb_forced_deindustrialization = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_country_formation_negative.dds
+	building_group_bg_manufacturing_throughput_add = -0.5
+	state_construction_mult = -0.1
+}

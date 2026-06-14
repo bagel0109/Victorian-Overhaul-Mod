@@ -1,0 +1,49 @@
+je_jewel_in_crown = {
+	icon = "gfx/interface/icons/event_icons/british_india.dds"
+
+	group = je_group_british_india_global
+
+	modifiers_while_active = {
+		vb_indian_political_illiteracy
+		vb_forced_deindustrialization
+	}
+
+	immediate = {
+		c:GBR = {
+			save_scope_as = britain_scope
+		}
+		c:BIC = {
+			save_scope_as = india_scope
+		}
+	}
+
+    should_be_involved = {
+		this = c:BIC
+	}
+
+	should_show_when_not_involved = {
+		OR = {
+			is_in_geographic_region = geographic_region_india
+			any_subject_or_below = {
+				is_in_geographic_region = geographic_region_india
+			}
+		}
+	}
+
+    fail = {
+		c:BIC = {
+			NOT = {
+				is_subject_of = c:GBR
+			}
+		}
+    }
+
+	weight = 100
+
+	should_be_pinned_by_default_involved = no
+	should_be_pinned_by_default_uninvolved_or_context = no
+
+	can_revolution_inherit = no
+
+
+}

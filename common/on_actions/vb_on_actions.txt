@@ -16,6 +16,11 @@ vb_on_game_start = {
 					sponsor = PREV.ig:ig_landowners
 				}
 			}
+			add_contextless_journal_entry = je_jewel_in_crown
+			add_journal_entry = je_britain_industrialize
+		}
+		c:BIC = {
+			add_contextless_journal_entry = je_jewel_in_crown
 		}
 	}
 }

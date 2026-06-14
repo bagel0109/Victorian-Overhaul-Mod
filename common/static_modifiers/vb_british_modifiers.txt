@@ -1,0 +1,6 @@
+industrialized_britain = { 
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_machinist_positive.dds
+	state_construction_mult = 0.10
+	state_capitalists_investment_pool_efficiency_mult = 0.15
+	state_shopkeepers_investment_pool_efficiency_mult = 0.15
+}
